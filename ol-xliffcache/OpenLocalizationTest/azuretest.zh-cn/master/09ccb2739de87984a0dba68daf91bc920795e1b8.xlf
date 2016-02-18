@@ -1,0 +1,667 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="zh-cn" original="2/18/2016 5:26:01 PM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">09ccb2739de87984a0dba68daf91bc920795e1b8</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Troubleshooting Service Fabric application upgrades</source>
+            <target state="new">Troubleshooting Service Fabric application upgrades</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>This article covers some common issues around upgrading a Service Fabric application and how to resolve them.</source>
+            <target state="new">This article covers some common issues around upgrading a Service Fabric application and how to resolve them.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Troubleshoot application upgrades</source>
+            <target state="new">Troubleshoot application upgrades</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source>This article covers some of the common issues around upgrading a Service Fabric application and how to resolve them.</source>
+            <target state="new">This article covers some of the common issues around upgrading a Service Fabric application and how to resolve them.</target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>Troubleshoot a failed application upgrade</source>
+            <target state="new">Troubleshoot a failed application upgrade</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>When an upgrade fails, the output of the <bpt id="2">&lt;strong&gt;</bpt>Get-ServiceFabricApplicationUpgrade<ept id="2">&lt;/strong&gt;</ept> command will contain some additional information for debugging the failure.</source>
+            <target state="new">When an upgrade fails, the output of the <bpt id="2">&lt;strong&gt;</bpt>Get-ServiceFabricApplicationUpgrade<ept id="2">&lt;/strong&gt;</ept> command will contain some additional information for debugging the failure.</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>This information can be used to:</source>
+            <target state="new">This information can be used to:</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>Identify the failure type</source>
+            <target state="new">Identify the failure type</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source>Identify the failure reason</source>
+            <target state="new">Identify the failure reason</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source>Isolate the failing component(s) for further investigation</source>
+            <target state="new">Isolate the failing component(s) for further investigation</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>This information will be available as soon as Service Fabric detects the failure regardless of whether the <bpt id="2">&lt;strong&gt;</bpt>FailureAction<ept id="2">&lt;/strong&gt;</ept> is to rollback or suspend the upgrade.</source>
+            <target state="new">This information will be available as soon as Service Fabric detects the failure regardless of whether the <bpt id="2">&lt;strong&gt;</bpt>FailureAction<ept id="2">&lt;/strong&gt;</ept> is to rollback or suspend the upgrade.</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source>Identify the failure type</source>
+            <target state="new">Identify the failure type</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>In the output of <bpt id="2">&lt;strong&gt;</bpt>Get-ServiceFabricApplicationUpgrade<ept id="2">&lt;/strong&gt;</ept>, <bpt id="4">&lt;strong&gt;</bpt>FailureTimestampUtc<ept id="4">&lt;/strong&gt;</ept> identifies the timestamp (in UTC) at which an upgrade failure was detected by Service Fabric and the <bpt id="6">&lt;strong&gt;</bpt>FailureAction<ept id="6">&lt;/strong&gt;</ept> was triggered.</source>
+            <target state="new">In the output of <bpt id="2">&lt;strong&gt;</bpt>Get-ServiceFabricApplicationUpgrade<ept id="2">&lt;/strong&gt;</ept>, <bpt id="4">&lt;strong&gt;</bpt>FailureTimestampUtc<ept id="4">&lt;/strong&gt;</ept> identifies the timestamp (in UTC) at which an upgrade failure was detected by Service Fabric and the <bpt id="6">&lt;strong&gt;</bpt>FailureAction<ept id="6">&lt;/strong&gt;</ept> was triggered.</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source>The <bpt id="2">&lt;strong&gt;</bpt>FailureReason<ept id="2">&lt;/strong&gt;</ept> identifies one of three potential high-level causes of the failure:</source>
+            <target state="new">The <bpt id="2">&lt;strong&gt;</bpt>FailureReason<ept id="2">&lt;/strong&gt;</ept> identifies one of three potential high-level causes of the failure:</target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>UpgradeDomainTimeout - Indicates that a particular upgrade domain took too long to complete and <bpt id="2">&lt;strong&gt;</bpt>UpgradeDomainTimeout<ept id="2">&lt;/strong&gt;</ept> expired.</source>
+            <target state="new">UpgradeDomainTimeout - Indicates that a particular upgrade domain took too long to complete and <bpt id="2">&lt;strong&gt;</bpt>UpgradeDomainTimeout<ept id="2">&lt;/strong&gt;</ept> expired.</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source>OverallUpgradeTimeout - Indicates that the overall upgrade took too long to complete and <bpt id="2">&lt;strong&gt;</bpt>UpgradeTimeout<ept id="2">&lt;/strong&gt;</ept> expired.</source>
+            <target state="new">OverallUpgradeTimeout - Indicates that the overall upgrade took too long to complete and <bpt id="2">&lt;strong&gt;</bpt>UpgradeTimeout<ept id="2">&lt;/strong&gt;</ept> expired.</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>HealthCheck - Indicates that after upgrading an Upgrade Domain, the application remained unhealthy according to the specified health policies and <bpt id="2">&lt;strong&gt;</bpt>HealthCheckRetryTimeout<ept id="2">&lt;/strong&gt;</ept> expired.</source>
+            <target state="new">HealthCheck - Indicates that after upgrading an Upgrade Domain, the application remained unhealthy according to the specified health policies and <bpt id="2">&lt;strong&gt;</bpt>HealthCheckRetryTimeout<ept id="2">&lt;/strong&gt;</ept> expired.</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>These entries will only show up in the output when the upgrade fails and starts rolling back.</source>
+            <target state="new">These entries will only show up in the output when the upgrade fails and starts rolling back.</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source>Further information will be displayed depending on the type of the failure.</source>
+            <target state="new">Further information will be displayed depending on the type of the failure.</target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source>Investigate upgrade timeouts</source>
+            <target state="new">Investigate upgrade timeouts</target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source>Upgrade timeout failures are most commonly caused by service availability issues.</source>
+            <target state="new">Upgrade timeout failures are most commonly caused by service availability issues.</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source>The output below is typical of upgrades where service replicas or instances fail to start in the new code version.</source>
+            <target state="new">The output below is typical of upgrades where service replicas or instances fail to start in the new code version.</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>The <bpt id="2">&lt;strong&gt;</bpt>UpgradeDomainProgressAtFailure<ept id="2">&lt;/strong&gt;</ept> field captures a snapshot of any pending upgrade work at the time of failure.</source>
+            <target state="new">The <bpt id="2">&lt;strong&gt;</bpt>UpgradeDomainProgressAtFailure<ept id="2">&lt;/strong&gt;</ept> field captures a snapshot of any pending upgrade work at the time of failure.</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source>~~~</source>
+            <target state="new">~~~</target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>PS D:\temp&gt; Get-ServiceFabricApplicationUpgrade fabric:/DemoApp</source>
+            <target state="new">PS D:\temp&gt; Get-ServiceFabricApplicationUpgrade fabric:/DemoApp</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>ApplicationName                : fabric:/DemoApp</source>
+            <target state="new">ApplicationName                : fabric:/DemoApp</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source>ApplicationTypeName            : DemoAppType</source>
+            <target state="new">ApplicationTypeName            : DemoAppType</target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source>TargetApplicationTypeVersion   : v2</source>
+            <target state="new">TargetApplicationTypeVersion   : v2</target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source>ApplicationParameters          : {}</source>
+            <target state="new">ApplicationParameters          : {}</target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source>StartTimestampUtc              : 4/14/2015 9:26:38 PM</source>
+            <target state="new">StartTimestampUtc              : 4/14/2015 9:26:38 PM</target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source>FailureTimestampUtc            : 4/14/2015 9:27:05 PM</source>
+            <target state="new">FailureTimestampUtc            : 4/14/2015 9:27:05 PM</target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source>FailureReason                  : UpgradeDomainTimeout</source>
+            <target state="new">FailureReason                  : UpgradeDomainTimeout</target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source>UpgradeDomainProgressAtFailure : MYUD1</source>
+            <target state="new">UpgradeDomainProgressAtFailure : MYUD1</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source>UpgradeState                   : RollingBackCompleted</source>
+            <target state="new">UpgradeState                   : RollingBackCompleted</target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source>UpgradeDuration                : 00:00:46</source>
+            <target state="new">UpgradeDuration                : 00:00:46</target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source>CurrentUpgradeDomainDuration   : 00:00:00</source>
+            <target state="new">CurrentUpgradeDomainDuration   : 00:00:00</target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source>NextUpgradeDomain              :</source>
+            <target state="new">NextUpgradeDomain              :</target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source>UpgradeDomainsStatus           : { "MYUD1" = "Completed";</source>
+            <target state="new">UpgradeDomainsStatus           : { "MYUD1" = "Completed";</target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source>"MYUD2" = "Completed";</source>
+            <target state="new">"MYUD2" = "Completed";</target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source>"MYUD3" = "Completed" }</source>
+            <target state="new">"MYUD3" = "Completed" }</target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source>UpgradeKind                    : Rolling</source>
+            <target state="new">UpgradeKind                    : Rolling</target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source>RollingUpgradeMode             : UnmonitoredAuto</source>
+            <target state="new">RollingUpgradeMode             : UnmonitoredAuto</target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source>ForceRestart                   : False</source>
+            <target state="new">ForceRestart                   : False</target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source>UpgradeReplicaSetCheckTimeout  : 00:00:00</source>
+            <target state="new">UpgradeReplicaSetCheckTimeout  : 00:00:00</target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source>~~~</source>
+            <target state="new">~~~</target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source>In this example, we can see that the upgrade failed at upgrade domain <bpt id="2">&lt;em&gt;</bpt>MYUD1<ept id="2">&lt;/em&gt;</ept> and two partitions (<bpt id="4">&lt;em&gt;</bpt>744c8d9f-1d26-417e-a60e-cd48f5c098f0<ept id="4">&lt;/em&gt;</ept> and <bpt id="6">&lt;em&gt;</bpt>4b43f4d8-b26b-424e-9307-7a7a62e79750<ept id="6">&lt;/em&gt;</ept>) were stuck, unable to place primary replicas (<bpt id="8">&lt;em&gt;</bpt>WaitForPrimaryPlacement<ept id="8">&lt;/em&gt;</ept>) on target nodes <bpt id="10">&lt;em&gt;</bpt>Node1<ept id="10">&lt;/em&gt;</ept> and <bpt id="12">&lt;em&gt;</bpt>Node4<ept id="12">&lt;/em&gt;</ept>.</source>
+            <target state="new">In this example, we can see that the upgrade failed at upgrade domain <bpt id="2">&lt;em&gt;</bpt>MYUD1<ept id="2">&lt;/em&gt;</ept> and two partitions (<bpt id="4">&lt;em&gt;</bpt>744c8d9f-1d26-417e-a60e-cd48f5c098f0<ept id="4">&lt;/em&gt;</ept> and <bpt id="6">&lt;em&gt;</bpt>4b43f4d8-b26b-424e-9307-7a7a62e79750<ept id="6">&lt;/em&gt;</ept>) were stuck, unable to place primary replicas (<bpt id="8">&lt;em&gt;</bpt>WaitForPrimaryPlacement<ept id="8">&lt;/em&gt;</ept>) on target nodes <bpt id="10">&lt;em&gt;</bpt>Node1<ept id="10">&lt;/em&gt;</ept> and <bpt id="12">&lt;em&gt;</bpt>Node4<ept id="12">&lt;/em&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="147" xml:space="preserve">
+            <source>The <bpt id="2">&lt;strong&gt;</bpt>Get-ServiceFabricNode<ept id="2">&lt;/strong&gt;</ept> command can be used to verify that these two nodes are in upgrade domain <bpt id="4">&lt;em&gt;</bpt>MYUD1<ept id="4">&lt;/em&gt;</ept>.</source>
+            <target state="new">The <bpt id="2">&lt;strong&gt;</bpt>Get-ServiceFabricNode<ept id="2">&lt;/strong&gt;</ept> command can be used to verify that these two nodes are in upgrade domain <bpt id="4">&lt;em&gt;</bpt>MYUD1<ept id="4">&lt;/em&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="148" xml:space="preserve">
+            <source>The <bpt id="2">&lt;em&gt;</bpt>UpgradePhase<ept id="2">&lt;/em&gt;</ept> says <bpt id="4">&lt;em&gt;</bpt>PostUpgradeSafetyCheck<ept id="4">&lt;/em&gt;</ept>, which means that these safety checks are occurring after all nodes in the upgrade domain had finished upgrading.</source>
+            <target state="new">The <bpt id="2">&lt;em&gt;</bpt>UpgradePhase<ept id="2">&lt;/em&gt;</ept> says <bpt id="4">&lt;em&gt;</bpt>PostUpgradeSafetyCheck<ept id="4">&lt;/em&gt;</ept>, which means that these safety checks are occurring after all nodes in the upgrade domain had finished upgrading.</target>
+          </trans-unit>
+          <trans-unit id="149" xml:space="preserve">
+            <source>All this information combined points to a potential issue with the new version of the application code.</source>
+            <target state="new">All this information combined points to a potential issue with the new version of the application code.</target>
+          </trans-unit>
+          <trans-unit id="150" xml:space="preserve">
+            <source>The most common issues are service errors in the open or promotion to primary code paths.</source>
+            <target state="new">The most common issues are service errors in the open or promotion to primary code paths.</target>
+          </trans-unit>
+          <trans-unit id="151" xml:space="preserve">
+            <source>An <bpt id="2">&lt;em&gt;</bpt>UpgradePhase<ept id="2">&lt;/em&gt;</ept> of <bpt id="4">&lt;em&gt;</bpt>PreUpgradeSafetyCheck<ept id="4">&lt;/em&gt;</ept> means there were issues preparing the upgrade domain before actually performing the upgrade.</source>
+            <target state="new">An <bpt id="2">&lt;em&gt;</bpt>UpgradePhase<ept id="2">&lt;/em&gt;</ept> of <bpt id="4">&lt;em&gt;</bpt>PreUpgradeSafetyCheck<ept id="4">&lt;/em&gt;</ept> means there were issues preparing the upgrade domain before actually performing the upgrade.</target>
+          </trans-unit>
+          <trans-unit id="152" xml:space="preserve">
+            <source>The most common issues in this case are service errors in the close or demotion from primary code paths.</source>
+            <target state="new">The most common issues in this case are service errors in the close or demotion from primary code paths.</target>
+          </trans-unit>
+          <trans-unit id="153" xml:space="preserve">
+            <source>The current <bpt id="2">&lt;strong&gt;</bpt>UpgradeState<ept id="2">&lt;/strong&gt;</ept> is <bpt id="4">&lt;em&gt;</bpt>RollingBackCompleted<ept id="4">&lt;/em&gt;</ept>, so the original upgrade must have been performed with a rollback <bpt id="6">&lt;strong&gt;</bpt>FailureAction<ept id="6">&lt;/strong&gt;</ept>, which automatically rolled back the upgrade upon failure.</source>
+            <target state="new">The current <bpt id="2">&lt;strong&gt;</bpt>UpgradeState<ept id="2">&lt;/strong&gt;</ept> is <bpt id="4">&lt;em&gt;</bpt>RollingBackCompleted<ept id="4">&lt;/em&gt;</ept>, so the original upgrade must have been performed with a rollback <bpt id="6">&lt;strong&gt;</bpt>FailureAction<ept id="6">&lt;/strong&gt;</ept>, which automatically rolled back the upgrade upon failure.</target>
+          </trans-unit>
+          <trans-unit id="154" xml:space="preserve">
+            <source>If the original upgrade had been performed with a manual <bpt id="2">&lt;strong&gt;</bpt>FailureAction<ept id="2">&lt;/strong&gt;</ept>, then the upgrade would instead be in a suspended state to allow live debugging of the application.</source>
+            <target state="new">If the original upgrade had been performed with a manual <bpt id="2">&lt;strong&gt;</bpt>FailureAction<ept id="2">&lt;/strong&gt;</ept>, then the upgrade would instead be in a suspended state to allow live debugging of the application.</target>
+          </trans-unit>
+          <trans-unit id="155" xml:space="preserve">
+            <source>Investigate health check failures</source>
+            <target state="new">Investigate health check failures</target>
+          </trans-unit>
+          <trans-unit id="156" xml:space="preserve">
+            <source>Health check failures can be triggered by a variety of additional issues that can happen after all nodes in an upgrade domain finish upgrading, passing all safety checks.</source>
+            <target state="new">Health check failures can be triggered by a variety of additional issues that can happen after all nodes in an upgrade domain finish upgrading, passing all safety checks.</target>
+          </trans-unit>
+          <trans-unit id="157" xml:space="preserve">
+            <source>The output below is typical of an upgrade failure due to failed health checks.</source>
+            <target state="new">The output below is typical of an upgrade failure due to failed health checks.</target>
+          </trans-unit>
+          <trans-unit id="158" xml:space="preserve">
+            <source>The <bpt id="2">&lt;strong&gt;</bpt>UnhealthyEvaluations<ept id="2">&lt;/strong&gt;</ept> field captures a snapshot of all failing health checks at the time of the upgrade failure according the user-specified <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Health Policy<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">The <bpt id="2">&lt;strong&gt;</bpt>UnhealthyEvaluations<ept id="2">&lt;/strong&gt;</ept> field captures a snapshot of all failing health checks at the time of the upgrade failure according the user-specified <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Health Policy<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="159" xml:space="preserve">
+            <source>~~~</source>
+            <target state="new">~~~</target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
+            <source>PS D:\temp&gt; Get-ServiceFabricApplicationUpgrade fabric:/DemoApp</source>
+            <target state="new">PS D:\temp&gt; Get-ServiceFabricApplicationUpgrade fabric:/DemoApp</target>
+          </trans-unit>
+          <trans-unit id="161" xml:space="preserve">
+            <source>ApplicationName                         : fabric:/DemoApp</source>
+            <target state="new">ApplicationName                         : fabric:/DemoApp</target>
+          </trans-unit>
+          <trans-unit id="162" xml:space="preserve">
+            <source>ApplicationTypeName                     : DemoAppType</source>
+            <target state="new">ApplicationTypeName                     : DemoAppType</target>
+          </trans-unit>
+          <trans-unit id="163" xml:space="preserve">
+            <source>TargetApplicationTypeVersion            : v4</source>
+            <target state="new">TargetApplicationTypeVersion            : v4</target>
+          </trans-unit>
+          <trans-unit id="164" xml:space="preserve">
+            <source>ApplicationParameters                   : {}</source>
+            <target state="new">ApplicationParameters                   : {}</target>
+          </trans-unit>
+          <trans-unit id="165" xml:space="preserve">
+            <source>StartTimestampUtc                       : 4/24/2015 2:42:31 AM</source>
+            <target state="new">StartTimestampUtc                       : 4/24/2015 2:42:31 AM</target>
+          </trans-unit>
+          <trans-unit id="166" xml:space="preserve">
+            <source>UpgradeState                            : RollingForwardPending</source>
+            <target state="new">UpgradeState                            : RollingForwardPending</target>
+          </trans-unit>
+          <trans-unit id="167" xml:space="preserve">
+            <source>UpgradeDuration                         : 00:00:27</source>
+            <target state="new">UpgradeDuration                         : 00:00:27</target>
+          </trans-unit>
+          <trans-unit id="168" xml:space="preserve">
+            <source>CurrentUpgradeDomainDuration            : 00:00:27</source>
+            <target state="new">CurrentUpgradeDomainDuration            : 00:00:27</target>
+          </trans-unit>
+          <trans-unit id="169" xml:space="preserve">
+            <source>NextUpgradeDomain                       : MYUD2</source>
+            <target state="new">NextUpgradeDomain                       : MYUD2</target>
+          </trans-unit>
+          <trans-unit id="170" xml:space="preserve">
+            <source>UpgradeDomainsStatus                    : { "MYUD1" = "Completed";</source>
+            <target state="new">UpgradeDomainsStatus                    : { "MYUD1" = "Completed";</target>
+          </trans-unit>
+          <trans-unit id="171" xml:space="preserve">
+            <source>"MYUD2" = "Pending";</source>
+            <target state="new">"MYUD2" = "Pending";</target>
+          </trans-unit>
+          <trans-unit id="172" xml:space="preserve">
+            <source>"MYUD3" = "Pending" }</source>
+            <target state="new">"MYUD3" = "Pending" }</target>
+          </trans-unit>
+          <trans-unit id="173" xml:space="preserve">
+            <source>UnhealthyEvaluations                    :</source>
+            <target state="new">UnhealthyEvaluations                    :</target>
+          </trans-unit>
+          <trans-unit id="174" xml:space="preserve">
+            <source>Unhealthy services: 50% (2/4), ServiceType='PersistedServiceType', MaxPercentUnhealthyServices=0%.</source>
+            <target state="new">Unhealthy services: 50% (2/4), ServiceType='PersistedServiceType', MaxPercentUnhealthyServices=0%.</target>
+          </trans-unit>
+          <trans-unit id="175" xml:space="preserve">
+            <source>UpgradeKind                             : Rolling</source>
+            <target state="new">UpgradeKind                             : Rolling</target>
+          </trans-unit>
+          <trans-unit id="176" xml:space="preserve">
+            <source>RollingUpgradeMode                      : Monitored</source>
+            <target state="new">RollingUpgradeMode                      : Monitored</target>
+          </trans-unit>
+          <trans-unit id="177" xml:space="preserve">
+            <source>FailureAction                           : Manual</source>
+            <target state="new">FailureAction                           : Manual</target>
+          </trans-unit>
+          <trans-unit id="178" xml:space="preserve">
+            <source>ForceRestart                            : False</source>
+            <target state="new">ForceRestart                            : False</target>
+          </trans-unit>
+          <trans-unit id="179" xml:space="preserve">
+            <source>UpgradeReplicaSetCheckTimeout           : 49710.06:28:15</source>
+            <target state="new">UpgradeReplicaSetCheckTimeout           : 49710.06:28:15</target>
+          </trans-unit>
+          <trans-unit id="180" xml:space="preserve">
+            <source>HealthCheckWaitDuration                 : 00:00:00</source>
+            <target state="new">HealthCheckWaitDuration                 : 00:00:00</target>
+          </trans-unit>
+          <trans-unit id="181" xml:space="preserve">
+            <source>HealthCheckStableDuration               : 00:00:10</source>
+            <target state="new">HealthCheckStableDuration               : 00:00:10</target>
+          </trans-unit>
+          <trans-unit id="182" xml:space="preserve">
+            <source>HealthCheckRetryTimeout                 : 00:00:10</source>
+            <target state="new">HealthCheckRetryTimeout                 : 00:00:10</target>
+          </trans-unit>
+          <trans-unit id="183" xml:space="preserve">
+            <source>UpgradeDomainTimeout                    : 10675199.02:48:05.4775807</source>
+            <target state="new">UpgradeDomainTimeout                    : 10675199.02:48:05.4775807</target>
+          </trans-unit>
+          <trans-unit id="184" xml:space="preserve">
+            <source>UpgradeTimeout                          : 10675199.02:48:05.4775807</source>
+            <target state="new">UpgradeTimeout                          : 10675199.02:48:05.4775807</target>
+          </trans-unit>
+          <trans-unit id="185" xml:space="preserve">
+            <source>ConsiderWarningAsError                  :</source>
+            <target state="new">ConsiderWarningAsError                  :</target>
+          </trans-unit>
+          <trans-unit id="186" xml:space="preserve">
+            <source>MaxPercentUnhealthyPartitionsPerService :</source>
+            <target state="new">MaxPercentUnhealthyPartitionsPerService :</target>
+          </trans-unit>
+          <trans-unit id="187" xml:space="preserve">
+            <source>MaxPercentUnhealthyReplicasPerPartition :</source>
+            <target state="new">MaxPercentUnhealthyReplicasPerPartition :</target>
+          </trans-unit>
+          <trans-unit id="188" xml:space="preserve">
+            <source>MaxPercentUnhealthyServices             :</source>
+            <target state="new">MaxPercentUnhealthyServices             :</target>
+          </trans-unit>
+          <trans-unit id="189" xml:space="preserve">
+            <source>MaxPercentUnhealthyDeployedApplications :</source>
+            <target state="new">MaxPercentUnhealthyDeployedApplications :</target>
+          </trans-unit>
+          <trans-unit id="190" xml:space="preserve">
+            <source>ServiceTypeHealthPolicyMap              :</source>
+            <target state="new">ServiceTypeHealthPolicyMap              :</target>
+          </trans-unit>
+          <trans-unit id="191" xml:space="preserve">
+            <source>~~~</source>
+            <target state="new">~~~</target>
+          </trans-unit>
+          <trans-unit id="192" xml:space="preserve">
+            <source>Investigating health check failures first requires an understanding of the Service Fabric health model, but even without such an in-depth understanding, we can see that two services are unhealthy: <bpt id="2">&lt;em&gt;</bpt>fabric:/DemoApp/Svc3<ept id="2">&lt;/em&gt;</ept> and <bpt id="4">&lt;em&gt;</bpt>fabric:/DemoApp/Svc2<ept id="4">&lt;/em&gt;</ept> along with the error health reports ("InjectedFault" in this case).</source>
+            <target state="new">Investigating health check failures first requires an understanding of the Service Fabric health model, but even without such an in-depth understanding, we can see that two services are unhealthy: <bpt id="2">&lt;em&gt;</bpt>fabric:/DemoApp/Svc3<ept id="2">&lt;/em&gt;</ept> and <bpt id="4">&lt;em&gt;</bpt>fabric:/DemoApp/Svc2<ept id="4">&lt;/em&gt;</ept> along with the error health reports ("InjectedFault" in this case).</target>
+          </trans-unit>
+          <trans-unit id="193" xml:space="preserve">
+            <source>In this example, 2 out of 4 services are unhealthy, below the default target of 0% unhealthy (<bpt id="2">&lt;em&gt;</bpt>MaxPercentUnhealthyServices<ept id="2">&lt;/em&gt;</ept>).</source>
+            <target state="new">In this example, 2 out of 4 services are unhealthy, below the default target of 0% unhealthy (<bpt id="2">&lt;em&gt;</bpt>MaxPercentUnhealthyServices<ept id="2">&lt;/em&gt;</ept>).</target>
+          </trans-unit>
+          <trans-unit id="194" xml:space="preserve">
+            <source>The upgrade was suspended upon failing by specifying a <bpt id="2">&lt;strong&gt;</bpt>FailureAction<ept id="2">&lt;/strong&gt;</ept> of manual when starting the upgrade, so we can investigate the live system in the failed state if desired before taking any further actions.</source>
+            <target state="new">The upgrade was suspended upon failing by specifying a <bpt id="2">&lt;strong&gt;</bpt>FailureAction<ept id="2">&lt;/strong&gt;</ept> of manual when starting the upgrade, so we can investigate the live system in the failed state if desired before taking any further actions.</target>
+          </trans-unit>
+          <trans-unit id="195" xml:space="preserve">
+            <source>Recover from a suspended upgrade</source>
+            <target state="new">Recover from a suspended upgrade</target>
+          </trans-unit>
+          <trans-unit id="196" xml:space="preserve">
+            <source>With a rollback <bpt id="2">&lt;strong&gt;</bpt>FailureAction<ept id="2">&lt;/strong&gt;</ept>, there is no recovery needed since the upgrade will automatically rollback upon failing.</source>
+            <target state="new">With a rollback <bpt id="2">&lt;strong&gt;</bpt>FailureAction<ept id="2">&lt;/strong&gt;</ept>, there is no recovery needed since the upgrade will automatically rollback upon failing.</target>
+          </trans-unit>
+          <trans-unit id="197" xml:space="preserve">
+            <source>With a manual <bpt id="2">&lt;strong&gt;</bpt>FailureAction<ept id="2">&lt;/strong&gt;</ept>, there are several recovery options:</source>
+            <target state="new">With a manual <bpt id="2">&lt;strong&gt;</bpt>FailureAction<ept id="2">&lt;/strong&gt;</ept>, there are several recovery options:</target>
+          </trans-unit>
+          <trans-unit id="198" xml:space="preserve">
+            <source>Manually trigger a rollback</source>
+            <target state="new">Manually trigger a rollback</target>
+          </trans-unit>
+          <trans-unit id="199" xml:space="preserve">
+            <source>Proceed through the remainder of the upgrade manually</source>
+            <target state="new">Proceed through the remainder of the upgrade manually</target>
+          </trans-unit>
+          <trans-unit id="200" xml:space="preserve">
+            <source>Resume the monitored upgrade</source>
+            <target state="new">Resume the monitored upgrade</target>
+          </trans-unit>
+          <trans-unit id="201" xml:space="preserve">
+            <source>The <bpt id="2">&lt;strong&gt;</bpt>Start-ServiceFabricApplicationRollback<ept id="2">&lt;/strong&gt;</ept> command can be used at any time to start rolling back the application.</source>
+            <target state="new">The <bpt id="2">&lt;strong&gt;</bpt>Start-ServiceFabricApplicationRollback<ept id="2">&lt;/strong&gt;</ept> command can be used at any time to start rolling back the application.</target>
+          </trans-unit>
+          <trans-unit id="202" xml:space="preserve">
+            <source>Once the command returns successfully, the rollback request has been registered in the system and will start shortly.</source>
+            <target state="new">Once the command returns successfully, the rollback request has been registered in the system and will start shortly.</target>
+          </trans-unit>
+          <trans-unit id="203" xml:space="preserve">
+            <source>The <bpt id="2">&lt;strong&gt;</bpt>Resume-ServiceFabricApplicationUpgrade<ept id="2">&lt;/strong&gt;</ept> command can be used to proceed through the remainder of the upgrade manually, one upgrade domain at a time.</source>
+            <target state="new">The <bpt id="2">&lt;strong&gt;</bpt>Resume-ServiceFabricApplicationUpgrade<ept id="2">&lt;/strong&gt;</ept> command can be used to proceed through the remainder of the upgrade manually, one upgrade domain at a time.</target>
+          </trans-unit>
+          <trans-unit id="204" xml:space="preserve">
+            <source>In this mode, only safety checks will be performed by the system - no more health checks will be performed.</source>
+            <target state="new">In this mode, only safety checks will be performed by the system - no more health checks will be performed.</target>
+          </trans-unit>
+          <trans-unit id="205" xml:space="preserve">
+            <source>This command can only be used when the <bpt id="2">&lt;em&gt;</bpt>UpgradeState<ept id="2">&lt;/em&gt;</ept> shows <bpt id="4">&lt;em&gt;</bpt>RollingForwardPending<ept id="4">&lt;/em&gt;</ept>, which means that the current upgrade domain has finished upgrading but the next upgrade domain has not started yet (pending).</source>
+            <target state="new">This command can only be used when the <bpt id="2">&lt;em&gt;</bpt>UpgradeState<ept id="2">&lt;/em&gt;</ept> shows <bpt id="4">&lt;em&gt;</bpt>RollingForwardPending<ept id="4">&lt;/em&gt;</ept>, which means that the current upgrade domain has finished upgrading but the next upgrade domain has not started yet (pending).</target>
+          </trans-unit>
+          <trans-unit id="206" xml:space="preserve">
+            <source>The <bpt id="2">&lt;strong&gt;</bpt>Update-ServiceFabricApplicationUpgrade<ept id="2">&lt;/strong&gt;</ept> command can be used to resume the monitored upgrade with both safety and health checks being performed.</source>
+            <target state="new">The <bpt id="2">&lt;strong&gt;</bpt>Update-ServiceFabricApplicationUpgrade<ept id="2">&lt;/strong&gt;</ept> command can be used to resume the monitored upgrade with both safety and health checks being performed.</target>
+          </trans-unit>
+          <trans-unit id="207" xml:space="preserve">
+            <source>~~~</source>
+            <target state="new">~~~</target>
+          </trans-unit>
+          <trans-unit id="208" xml:space="preserve">
+            <source>PS D:\temp&gt; Update-ServiceFabricApplicationUpgrade fabric:/DemoApp -UpgradeMode Monitored</source>
+            <target state="new">PS D:\temp&gt; Update-ServiceFabricApplicationUpgrade fabric:/DemoApp -UpgradeMode Monitored</target>
+          </trans-unit>
+          <trans-unit id="209" xml:space="preserve">
+            <source>UpgradeMode                             : Monitored</source>
+            <target state="new">UpgradeMode                             : Monitored</target>
+          </trans-unit>
+          <trans-unit id="210" xml:space="preserve">
+            <source>ForceRestart                            :</source>
+            <target state="new">ForceRestart                            :</target>
+          </trans-unit>
+          <trans-unit id="211" xml:space="preserve">
+            <source>UpgradeReplicaSetCheckTimeout           :</source>
+            <target state="new">UpgradeReplicaSetCheckTimeout           :</target>
+          </trans-unit>
+          <trans-unit id="212" xml:space="preserve">
+            <source>FailureAction                           :</source>
+            <target state="new">FailureAction                           :</target>
+          </trans-unit>
+          <trans-unit id="213" xml:space="preserve">
+            <source>HealthCheckWaitDuration                 :</source>
+            <target state="new">HealthCheckWaitDuration                 :</target>
+          </trans-unit>
+          <trans-unit id="214" xml:space="preserve">
+            <source>HealthCheckStableDuration               :</source>
+            <target state="new">HealthCheckStableDuration               :</target>
+          </trans-unit>
+          <trans-unit id="215" xml:space="preserve">
+            <source>HealthCheckRetryTimeout                 :</source>
+            <target state="new">HealthCheckRetryTimeout                 :</target>
+          </trans-unit>
+          <trans-unit id="216" xml:space="preserve">
+            <source>UpgradeTimeout                          :</source>
+            <target state="new">UpgradeTimeout                          :</target>
+          </trans-unit>
+          <trans-unit id="217" xml:space="preserve">
+            <source>UpgradeDomainTimeout                    :</source>
+            <target state="new">UpgradeDomainTimeout                    :</target>
+          </trans-unit>
+          <trans-unit id="218" xml:space="preserve">
+            <source>ConsiderWarningAsError                  :</source>
+            <target state="new">ConsiderWarningAsError                  :</target>
+          </trans-unit>
+          <trans-unit id="219" xml:space="preserve">
+            <source>MaxPercentUnhealthyPartitionsPerService :</source>
+            <target state="new">MaxPercentUnhealthyPartitionsPerService :</target>
+          </trans-unit>
+          <trans-unit id="220" xml:space="preserve">
+            <source>MaxPercentUnhealthyReplicasPerPartition :</source>
+            <target state="new">MaxPercentUnhealthyReplicasPerPartition :</target>
+          </trans-unit>
+          <trans-unit id="221" xml:space="preserve">
+            <source>MaxPercentUnhealthyServices             :</source>
+            <target state="new">MaxPercentUnhealthyServices             :</target>
+          </trans-unit>
+          <trans-unit id="222" xml:space="preserve">
+            <source>MaxPercentUnhealthyDeployedApplications :</source>
+            <target state="new">MaxPercentUnhealthyDeployedApplications :</target>
+          </trans-unit>
+          <trans-unit id="223" xml:space="preserve">
+            <source>ServiceTypeHealthPolicyMap              :</source>
+            <target state="new">ServiceTypeHealthPolicyMap              :</target>
+          </trans-unit>
+          <trans-unit id="224" xml:space="preserve">
+            <source>PS D:\temp&gt;</source>
+            <target state="new">PS D:\temp&gt;</target>
+          </trans-unit>
+          <trans-unit id="225" xml:space="preserve">
+            <source>~~~</source>
+            <target state="new">~~~</target>
+          </trans-unit>
+          <trans-unit id="226" xml:space="preserve">
+            <source>The upgrade will continue from the upgrade domain where it was last suspended and use the same upgrade parameters and health policies as before.</source>
+            <target state="new">The upgrade will continue from the upgrade domain where it was last suspended and use the same upgrade parameters and health policies as before.</target>
+          </trans-unit>
+          <trans-unit id="227" xml:space="preserve">
+            <source>If needed, any of the upgrade parameters and health policies shown in the output above can be changed in the same command when resuming the upgrade.</source>
+            <target state="new">If needed, any of the upgrade parameters and health policies shown in the output above can be changed in the same command when resuming the upgrade.</target>
+          </trans-unit>
+          <trans-unit id="228" xml:space="preserve">
+            <source>In this example, the upgrade was resumed in Monitored mode leaving all other parameters unchanged, thereby using the same parameters and health policies as before.</source>
+            <target state="new">In this example, the upgrade was resumed in Monitored mode leaving all other parameters unchanged, thereby using the same parameters and health policies as before.</target>
+          </trans-unit>
+          <trans-unit id="229" xml:space="preserve">
+            <source>Further troubleshooting</source>
+            <target state="new">Further troubleshooting</target>
+          </trans-unit>
+          <trans-unit id="230" xml:space="preserve">
+            <source>Service Fabric is not following the health policies specified</source>
+            <target state="new">Service Fabric is not following the health policies specified</target>
+          </trans-unit>
+          <trans-unit id="231" xml:space="preserve">
+            <source>Possible Cause 1:</source>
+            <target state="new">Possible Cause 1:</target>
+          </trans-unit>
+          <trans-unit id="232" xml:space="preserve">
+            <source>Service Fabric translates all percentages into actual numbers of entities (e.g. replicas, partitions, and services) for health evaluation and always rounds up to the nearest number of whole entities.</source>
+            <target state="new">Service Fabric translates all percentages into actual numbers of entities (e.g. replicas, partitions, and services) for health evaluation and always rounds up to the nearest number of whole entities.</target>
+          </trans-unit>
+          <trans-unit id="233" xml:space="preserve">
+            <source>For example, if the maximum <bpt id="2">&lt;em&gt;</bpt>MaxPercentUnhealthyReplicasPerPartition<ept id="2">&lt;/em&gt;</ept> is 21% and there are 5 replicas, then Service Fabric will allow up to 2 replicas (i.e., <bpt id="4">&lt;code&gt;</bpt>Math.Ceiling (5\*0.21)<ept id="4">&lt;/code&gt;</ept>) to be unhealthy when evaluating partition health.</source>
+            <target state="new">For example, if the maximum <bpt id="2">&lt;em&gt;</bpt>MaxPercentUnhealthyReplicasPerPartition<ept id="2">&lt;/em&gt;</ept> is 21% and there are 5 replicas, then Service Fabric will allow up to 2 replicas (i.e., <bpt id="4">&lt;code&gt;</bpt>Math.Ceiling (5\*0.21)<ept id="4">&lt;/code&gt;</ept>) to be unhealthy when evaluating partition health.</target>
+          </trans-unit>
+          <trans-unit id="234" xml:space="preserve">
+            <source>Health policies should be set accordingly to account for this.</source>
+            <target state="new">Health policies should be set accordingly to account for this.</target>
+          </trans-unit>
+          <trans-unit id="235" xml:space="preserve">
+            <source>Possible Cause 2:</source>
+            <target state="new">Possible Cause 2:</target>
+          </trans-unit>
+          <trans-unit id="236" xml:space="preserve">
+            <source>Health policies are specified in terms of percentages of total services and not specific service instances.</source>
+            <target state="new">Health policies are specified in terms of percentages of total services and not specific service instances.</target>
+          </trans-unit>
+          <trans-unit id="237" xml:space="preserve">
+            <source>For example, before an upgrade, assume that an application has four service instances A, B, C, and D, where service D is unhealthy but with no significant impact on the application.</source>
+            <target state="new">For example, before an upgrade, assume that an application has four service instances A, B, C, and D, where service D is unhealthy but with no significant impact on the application.</target>
+          </trans-unit>
+          <trans-unit id="238" xml:space="preserve">
+            <source>We want to ignore the known unhealthy service D during upgrade and set the parameter <bpt id="2">&lt;em&gt;</bpt>MaxPercentUnhealthyServices<ept id="2">&lt;/em&gt;</ept> to be 25% assuming only A, B, and C need to be healthy.</source>
+            <target state="new">We want to ignore the known unhealthy service D during upgrade and set the parameter <bpt id="2">&lt;em&gt;</bpt>MaxPercentUnhealthyServices<ept id="2">&lt;/em&gt;</ept> to be 25% assuming only A, B, and C need to be healthy.</target>
+          </trans-unit>
+          <trans-unit id="239" xml:space="preserve">
+            <source>However, during the upgrade, D may become healthy while C becomes unhealthy.</source>
+            <target state="new">However, during the upgrade, D may become healthy while C becomes unhealthy.</target>
+          </trans-unit>
+          <trans-unit id="240" xml:space="preserve">
+            <source>The upgrade would still complete successfully in this case since only 25% of the services are unhealthy, which might result in unanticipated errors due to C being unexpectedly unhealthy instead of D. In this situation, D should be modeled as a different Service Type from A, B, and C. Since health policies can be specified on a per-Service Type basis, this would allow applying different unhealthy percentage thresholds to different services based on their roles in the application.</source>
+            <target state="new">The upgrade would still complete successfully in this case since only 25% of the services are unhealthy, which might result in unanticipated errors due to C being unexpectedly unhealthy instead of D. In this situation, D should be modeled as a different Service Type from A, B, and C. Since health policies can be specified on a per-Service Type basis, this would allow applying different unhealthy percentage thresholds to different services based on their roles in the application.</target>
+          </trans-unit>
+          <trans-unit id="241" xml:space="preserve">
+            <source>I did not specify a health policy for application upgrade, but the upgrade still fails for some timeouts which I never specified</source>
+            <target state="new">I did not specify a health policy for application upgrade, but the upgrade still fails for some timeouts which I never specified</target>
+          </trans-unit>
+          <trans-unit id="242" xml:space="preserve">
+            <source>When health policies aren't provided to the upgrade request, they are taken from the <bpt id="2">&lt;em&gt;</bpt>ApplicationManifest.xml<ept id="2">&lt;/em&gt;</ept> of the current application version (for example, if upgrading Application X from v1 to v2, application health policies specified for Application X in v1 are used).</source>
+            <target state="new">When health policies aren't provided to the upgrade request, they are taken from the <bpt id="2">&lt;em&gt;</bpt>ApplicationManifest.xml<ept id="2">&lt;/em&gt;</ept> of the current application version (for example, if upgrading Application X from v1 to v2, application health policies specified for Application X in v1 are used).</target>
+          </trans-unit>
+          <trans-unit id="243" xml:space="preserve">
+            <source>If a different health policy should be used for the upgrade, then the policy needs to be specified as part of the application upgrade API call.</source>
+            <target state="new">If a different health policy should be used for the upgrade, then the policy needs to be specified as part of the application upgrade API call.</target>
+          </trans-unit>
+          <trans-unit id="244" xml:space="preserve">
+            <source>Note that the policies specified as part of the API call only apply for the duration of the upgrade.</source>
+            <target state="new">Note that the policies specified as part of the API call only apply for the duration of the upgrade.</target>
+          </trans-unit>
+          <trans-unit id="245" xml:space="preserve">
+            <source>Once the upgrade is completed, the policies specified in the <bpt id="2">&lt;em&gt;</bpt>ApplicationManifest.xml<ept id="2">&lt;/em&gt;</ept> are used.</source>
+            <target state="new">Once the upgrade is completed, the policies specified in the <bpt id="2">&lt;em&gt;</bpt>ApplicationManifest.xml<ept id="2">&lt;/em&gt;</ept> are used.</target>
+          </trans-unit>
+          <trans-unit id="246" xml:space="preserve">
+            <source>Incorrect Timeouts specified.</source>
+            <target state="new">Incorrect Timeouts specified.</target>
+          </trans-unit>
+          <trans-unit id="247" xml:space="preserve">
+            <source>Users may have wondered about what happens if the timeouts are set inconsistently, for example, having an <bpt id="2">&lt;em&gt;</bpt>UpgradeTimeout<ept id="2">&lt;/em&gt;</ept> less than the <bpt id="4">&lt;em&gt;</bpt>UpgradeDomainTimeout<ept id="4">&lt;/em&gt;</ept>.</source>
+            <target state="new">Users may have wondered about what happens if the timeouts are set inconsistently, for example, having an <bpt id="2">&lt;em&gt;</bpt>UpgradeTimeout<ept id="2">&lt;/em&gt;</ept> less than the <bpt id="4">&lt;em&gt;</bpt>UpgradeDomainTimeout<ept id="4">&lt;/em&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="248" xml:space="preserve">
+            <source>The answer is that an error is returned.</source>
+            <target state="new">The answer is that an error is returned.</target>
+          </trans-unit>
+          <trans-unit id="249" xml:space="preserve">
+            <source>Other cases where this may happen is if <bpt id="2">&lt;em&gt;</bpt>UpgradeDomainTimeout<ept id="2">&lt;/em&gt;</ept> is less than the sum of <bpt id="4">&lt;em&gt;</bpt>HealthCheckWaitDuration<ept id="4">&lt;/em&gt;</ept> and <bpt id="6">&lt;em&gt;</bpt>HealthCheckRetryTimeout<ept id="6">&lt;/em&gt;</ept> or if <bpt id="8">&lt;em&gt;</bpt>UpgradeDomainTimeout<ept id="8">&lt;/em&gt;</ept> is less than the sum of <bpt id="10">&lt;em&gt;</bpt>HealthCheckWaitDuration<ept id="10">&lt;/em&gt;</ept> and <bpt id="12">&lt;em&gt;</bpt>HealthCheckStableDuration<ept id="12">&lt;/em&gt;</ept>.</source>
+            <target state="new">Other cases where this may happen is if <bpt id="2">&lt;em&gt;</bpt>UpgradeDomainTimeout<ept id="2">&lt;/em&gt;</ept> is less than the sum of <bpt id="4">&lt;em&gt;</bpt>HealthCheckWaitDuration<ept id="4">&lt;/em&gt;</ept> and <bpt id="6">&lt;em&gt;</bpt>HealthCheckRetryTimeout<ept id="6">&lt;/em&gt;</ept> or if <bpt id="8">&lt;em&gt;</bpt>UpgradeDomainTimeout<ept id="8">&lt;/em&gt;</ept> is less than the sum of <bpt id="10">&lt;em&gt;</bpt>HealthCheckWaitDuration<ept id="10">&lt;/em&gt;</ept> and <bpt id="12">&lt;em&gt;</bpt>HealthCheckStableDuration<ept id="12">&lt;/em&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="250" xml:space="preserve">
+            <source>My upgrades are taking too long</source>
+            <target state="new">My upgrades are taking too long</target>
+          </trans-unit>
+          <trans-unit id="251" xml:space="preserve">
+            <source>The time it takes for an upgrade to complete is dependent on the various health checks and timeouts specified, which in turn are dependent on the time it takes for your application to upgrade (including copying the package, deploying, and stabilizing).</source>
+            <target state="new">The time it takes for an upgrade to complete is dependent on the various health checks and timeouts specified, which in turn are dependent on the time it takes for your application to upgrade (including copying the package, deploying, and stabilizing).</target>
+          </trans-unit>
+          <trans-unit id="252" xml:space="preserve">
+            <source>Being too aggressive with timeouts might mean more failed upgrades, and thus starting conservatively with longer timeouts is recommended.</source>
+            <target state="new">Being too aggressive with timeouts might mean more failed upgrades, and thus starting conservatively with longer timeouts is recommended.</target>
+          </trans-unit>
+          <trans-unit id="253" xml:space="preserve">
+            <source>A quick refresher on how the timeouts interact with the upgrade times:</source>
+            <target state="new">A quick refresher on how the timeouts interact with the upgrade times:</target>
+          </trans-unit>
+          <trans-unit id="254" xml:space="preserve">
+            <source>Upgrade for a upgrade domain cannot complete faster than <bpt id="2">&lt;em&gt;</bpt>HealthCheckWaitDuration<ept id="2">&lt;/em&gt;</ept> + <bpt id="4">&lt;em&gt;</bpt>HealthCheckStableDuration<ept id="4">&lt;/em&gt;</ept>.</source>
+            <target state="new">Upgrade for a upgrade domain cannot complete faster than <bpt id="2">&lt;em&gt;</bpt>HealthCheckWaitDuration<ept id="2">&lt;/em&gt;</ept> + <bpt id="4">&lt;em&gt;</bpt>HealthCheckStableDuration<ept id="4">&lt;/em&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="255" xml:space="preserve">
+            <source>Upgrade failure cannot occur faster than <bpt id="2">&lt;em&gt;</bpt>HealthCheckWaitDuration<ept id="2">&lt;/em&gt;</ept> + <bpt id="4">&lt;em&gt;</bpt>HealthCheckRetryTimeout<ept id="4">&lt;/em&gt;</ept>.</source>
+            <target state="new">Upgrade failure cannot occur faster than <bpt id="2">&lt;em&gt;</bpt>HealthCheckWaitDuration<ept id="2">&lt;/em&gt;</ept> + <bpt id="4">&lt;em&gt;</bpt>HealthCheckRetryTimeout<ept id="4">&lt;/em&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="256" xml:space="preserve">
+            <source>The upgrade time for a upgrade domain is limited by <bpt id="2">&lt;em&gt;</bpt>UpgradeDomainTimeout<ept id="2">&lt;/em&gt;</ept>.</source>
+            <target state="new">The upgrade time for a upgrade domain is limited by <bpt id="2">&lt;em&gt;</bpt>UpgradeDomainTimeout<ept id="2">&lt;/em&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="257" xml:space="preserve">
+            <source>If <bpt id="2">&lt;em&gt;</bpt>HealthCheckRetryTimeout<ept id="2">&lt;/em&gt;</ept> and <bpt id="4">&lt;em&gt;</bpt>HealthCheckStableDuration<ept id="4">&lt;/em&gt;</ept> are both non-zero and the health of the application keeps switching back and forth, then the upgrade will eventually timeout on <bpt id="6">&lt;em&gt;</bpt>UpgradeDomainTimeout<ept id="6">&lt;/em&gt;</ept>.</source>
+            <target state="new">If <bpt id="2">&lt;em&gt;</bpt>HealthCheckRetryTimeout<ept id="2">&lt;/em&gt;</ept> and <bpt id="4">&lt;em&gt;</bpt>HealthCheckStableDuration<ept id="4">&lt;/em&gt;</ept> are both non-zero and the health of the application keeps switching back and forth, then the upgrade will eventually timeout on <bpt id="6">&lt;em&gt;</bpt>UpgradeDomainTimeout<ept id="6">&lt;/em&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="258" xml:space="preserve">
+            <source><bpt id="1">&lt;em&gt;</bpt>UpgradeDomainTimeout<ept id="1">&lt;/em&gt;</ept> starts counting down once the upgrade for the current upgrade domain begins.</source>
+            <target state="new"><bpt id="1">&lt;em&gt;</bpt>UpgradeDomainTimeout<ept id="1">&lt;/em&gt;</ept> starts counting down once the upgrade for the current upgrade domain begins.</target>
+          </trans-unit>
+          <trans-unit id="259" xml:space="preserve">
+            <source>Next steps</source>
+            <target state="new">Next steps</target>
+          </trans-unit>
+          <trans-unit id="260" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Upgrade Tutorial<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Upgrade Tutorial<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="261" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Upgrade Parameters<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Upgrade Parameters<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="262" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Advanced Topics<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Advanced Topics<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="263" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Data Serialization<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Data Serialization<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>

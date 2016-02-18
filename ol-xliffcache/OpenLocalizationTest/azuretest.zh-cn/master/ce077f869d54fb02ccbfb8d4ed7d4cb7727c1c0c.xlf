@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="zh-cn" original="2/18/2016 5:28:51 PM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ce077f869d54fb02ccbfb8d4ed7d4cb7727c1c0c</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Federations migration</source>
+            <target state="new">Federations migration</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>Outlines the steps to migrate an existing app built with Federations feature to the elastic database model.</source>
+            <target state="new">Outlines the steps to migrate an existing app built with Federations feature to the elastic database model.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Federations migration</source>
+            <target state="new">Federations migration</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source>The Azure SQL Database Federations feature is being retired along with the Web/Business editions in September 2015.</source>
+            <target state="new">The Azure SQL Database Federations feature is being retired along with the Web/Business editions in September 2015.</target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>At that point in time, applications that utilize the Federations feature will cease to execute.</source>
+            <target state="new">At that point in time, applications that utilize the Federations feature will cease to execute.</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>To ensure a successful migration, it is highly encouraged that migration efforts begin as soon as possible to allow for sufficient planning and execution.</source>
+            <target state="new">To ensure a successful migration, it is highly encouraged that migration efforts begin as soon as possible to allow for sufficient planning and execution.</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>If your application is not yet ready to work without Federations, then contact Microsoft Support using instructions mentioned <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>here<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">If your application is not yet ready to work without Federations, then contact Microsoft Support using instructions mentioned <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>here<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>This document provides the context, examples, and introduction to the Federations Migration Utility that illustrates how to successfully migrate a current Federations application seamlessly to the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Elastic database client library<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> APIs for sharding.</source>
+            <target state="new">This document provides the context, examples, and introduction to the Federations Migration Utility that illustrates how to successfully migrate a current Federations application seamlessly to the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Elastic database client library<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> APIs for sharding.</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source>The objective of the document is to walk you through the suggested steps to migrate a Federations application without any data movement.</source>
+            <target state="new">The objective of the document is to walk you through the suggested steps to migrate a Federations application without any data movement.</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source>There are three major steps for migrating an existing Federations application to one that uses elastic database tools.</source>
+            <target state="new">There are three major steps for migrating an existing Federations application to one that uses elastic database tools.</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Create a Shard Map Manager from a Federation Root<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Create a Shard Map Manager from a Federation Root<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Modify the Existing Application<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Modify the Existing Application<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Switch Out Existing Federation Members<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Switch Out Existing Federation Members<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source>The migration sample tool</source>
+            <target state="new">The migration sample tool</target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>To assist in this process, a <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Federations Migration Utility<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> has been created.</source>
+            <target state="new">To assist in this process, a <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Federations Migration Utility<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> has been created.</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source>The utility accomplishes steps 1 and 3.</source>
+            <target state="new">The utility accomplishes steps 1 and 3.</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>Create a Shard Map Manager from a federation root</source>
+            <target state="new">Create a Shard Map Manager from a federation root</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>The first step in migrating a Federations application is to clone the metadata of a federation root to the constructs of a shard map manager.</source>
+            <target state="new">The first step in migrating a Federations application is to clone the metadata of a federation root to the constructs of a shard map manager.</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Clone the federation root to the shard map manager<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Clone the federation root to the shard map manager<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source>Start with an existing Federations application in a test environment.</source>
+            <target state="new">Start with an existing Federations application in a test environment.</target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source>Use the <bpt id="2">&lt;strong&gt;</bpt>Federations Migration Utility<ept id="2">&lt;/strong&gt;</ept> to clone the federation root metadata into the constructs of the elastic database client library's <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Shard Map Manager<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">Use the <bpt id="2">&lt;strong&gt;</bpt>Federations Migration Utility<ept id="2">&lt;/strong&gt;</ept> to clone the federation root metadata into the constructs of the elastic database client library's <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Shard Map Manager<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source>Analogous to a federation root, the Shard Map Manager database is a standalone database that contains the shard maps (i.e., federations), references to shards (i.e., federation members) and respective range mappings.</source>
+            <target state="new">Analogous to a federation root, the Shard Map Manager database is a standalone database that contains the shard maps (i.e., federations), references to shards (i.e., federation members) and respective range mappings.</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>The cloning of the federation root to the Shard Map Manager is a copy and translation of metadata.</source>
+            <target state="new">The cloning of the federation root to the Shard Map Manager is a copy and translation of metadata.</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source>No metadata is altered on the federation root.</source>
+            <target state="new">No metadata is altered on the federation root.</target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>Note that the cloning of the federation root with the Federations Migration Utility is a point-in-time operation, and any changes to either the federation root or the shard maps will not be reflected in the other respective data store.</source>
+            <target state="new">Note that the cloning of the federation root with the Federations Migration Utility is a point-in-time operation, and any changes to either the federation root or the shard maps will not be reflected in the other respective data store.</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>If changes are made to the federation root during the testing of the new APIs, the Federations Migration Utility can be used to refresh the shard maps to represent the current state.</source>
+            <target state="new">If changes are made to the federation root during the testing of the new APIs, the Federations Migration Utility can be used to refresh the shard maps to represent the current state.</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Migrate the existing app to use the Elastic database tools APIs<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Migrate the existing app to use the Elastic database tools APIs<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source>Modify the existing application</source>
+            <target state="new">Modify the existing application</target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source>With Shard Map Manager in place and the federation members and ranges registered with the Shard Map Manager (done via the migration utility), one can modify the existing Federations application to utilize the elastic database client library.</source>
+            <target state="new">With Shard Map Manager in place and the federation members and ranges registered with the Shard Map Manager (done via the migration utility), one can modify the existing Federations application to utilize the elastic database client library.</target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source>As shown in the figure above, the application connections via these APIs will be routed through the Shard Map Manager to appropriate federation members (now also a shard).</source>
+            <target state="new">As shown in the figure above, the application connections via these APIs will be routed through the Shard Map Manager to appropriate federation members (now also a shard).</target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source>Mapping federation members to the Shard Map Manager enables two versions of an application – one that uses Federations and one that uses the elastic database client library — to be executed side-by-side to verify functionality.</source>
+            <target state="new">Mapping federation members to the Shard Map Manager enables two versions of an application – one that uses Federations and one that uses the elastic database client library — to be executed side-by-side to verify functionality.</target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source>During the migration of the application, there will be two core modifications to the existing application that will need to be made.</source>
+            <target state="new">During the migration of the application, there will be two core modifications to the existing application that will need to be made.</target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source>Change 1: Instantiate a Shard Map Manager object:</source>
+            <target state="new">Change 1: Instantiate a Shard Map Manager object:</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source>Unlike Federations, Elastic database tools APIs interact with the Shard Map Manager through the <bpt id="2">&lt;strong&gt;</bpt>ShardMapManager<ept id="2">&lt;/strong&gt;</ept> class.</source>
+            <target state="new">Unlike Federations, Elastic database tools APIs interact with the Shard Map Manager through the <bpt id="2">&lt;strong&gt;</bpt>ShardMapManager<ept id="2">&lt;/strong&gt;</ept> class.</target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source>The instantiation of a <bpt id="2">&lt;strong&gt;</bpt>ShardMapManager<ept id="2">&lt;/strong&gt;</ept> object and a shard map can be done as follows:</source>
+            <target state="new">The instantiation of a <bpt id="2">&lt;strong&gt;</bpt>ShardMapManager<ept id="2">&lt;/strong&gt;</ept> object and a shard map can be done as follows:</target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source>Change 2: Route connections to the appropriate shard</source>
+            <target state="new">Change 2: Route connections to the appropriate shard</target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source>With Federations, a connection is established to a particular federation member with the USE FEDERATION command as follows:</source>
+            <target state="new">With Federations, a connection is established to a particular federation member with the USE FEDERATION command as follows:</target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source>With the Elastic database tools APIs, a connection to a particular shard is established via <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>data dependent routing<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> with the  <bpt id="4">&lt;strong&gt;</bpt>OpenConnectionForKey<ept id="4">&lt;/strong&gt;</ept> method on the <bpt id="6">&lt;strong&gt;</bpt>RangeShardMap<ept id="6">&lt;/strong&gt;</ept> class.</source>
+            <target state="new">With the Elastic database tools APIs, a connection to a particular shard is established via <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>data dependent routing<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> with the  <bpt id="4">&lt;strong&gt;</bpt>OpenConnectionForKey<ept id="4">&lt;/strong&gt;</ept> method on the <bpt id="6">&lt;strong&gt;</bpt>RangeShardMap<ept id="6">&lt;/strong&gt;</ept> class.</target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source>The steps in this section are necessary but may not address all migration scenarios that arise.</source>
+            <target state="new">The steps in this section are necessary but may not address all migration scenarios that arise.</target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source>For more information, please see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>conceptual overview of elastic database tools<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> and the <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>API reference<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information, please see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>conceptual overview of elastic database tools<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> and the <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>API reference<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source>Switch out existing federation members</source>
+            <target state="new">Switch out existing federation members</target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Switch out the federation members for the shards<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Switch out the federation members for the shards<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source>Once the application has been modified with the inclusion of the Elastic database tools APIs, the last step in the migration of a Federations application is to <bpt id="2">&lt;strong&gt;</bpt>SWITCH OUT<ept id="2">&lt;/strong&gt;</ept> the federation members (for more information, please see the MSDN reference for <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>ALTER FEDERATION (Azure SQL Database<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">Once the application has been modified with the inclusion of the Elastic database tools APIs, the last step in the migration of a Federations application is to <bpt id="2">&lt;strong&gt;</bpt>SWITCH OUT<ept id="2">&lt;/strong&gt;</ept> the federation members (for more information, please see the MSDN reference for <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>ALTER FEDERATION (Azure SQL Database<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source>The end result of issuing a <bpt id="2">&lt;strong&gt;</bpt>SWITCH OUT<ept id="2">&lt;/strong&gt;</ept> against a particular federation member is the removal of all federation constraints and metadata rendering the federation member as a regular Azure SQL Database, no different than any other Azure SQL Database.</source>
+            <target state="new">The end result of issuing a <bpt id="2">&lt;strong&gt;</bpt>SWITCH OUT<ept id="2">&lt;/strong&gt;</ept> against a particular federation member is the removal of all federation constraints and metadata rendering the federation member as a regular Azure SQL Database, no different than any other Azure SQL Database.</target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source>Note that issuing a <bpt id="2">&lt;strong&gt;</bpt>SWITCH OUT<ept id="2">&lt;/strong&gt;</ept> against a federation member is a one-way operation and cannot be undone.</source>
+            <target state="new">Note that issuing a <bpt id="2">&lt;strong&gt;</bpt>SWITCH OUT<ept id="2">&lt;/strong&gt;</ept> against a federation member is a one-way operation and cannot be undone.</target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source>Once performed, the resulting database cannot be added back to a federation, and the USE FEDERATION commands will no longer work for this database.</source>
+            <target state="new">Once performed, the resulting database cannot be added back to a federation, and the USE FEDERATION commands will no longer work for this database.</target>
+          </trans-unit>
+          <trans-unit id="147" xml:space="preserve">
+            <source>To perform the switch, an additional argument has been added to the ALTER FEDERATION command in order to SWITCH OUT a federation member.</source>
+            <target state="new">To perform the switch, an additional argument has been added to the ALTER FEDERATION command in order to SWITCH OUT a federation member.</target>
+          </trans-unit>
+          <trans-unit id="148" xml:space="preserve">
+            <source>While the command can be issued against individual Federation members, the Federations Migration Utility provides the functionality to programmatically iterate through each federation member and perform the switch operation.</source>
+            <target state="new">While the command can be issued against individual Federation members, the Federations Migration Utility provides the functionality to programmatically iterate through each federation member and perform the switch operation.</target>
+          </trans-unit>
+          <trans-unit id="149" xml:space="preserve">
+            <source>Once the switch has been performed on all existing federation members, the migration of the application is done.</source>
+            <target state="new">Once the switch has been performed on all existing federation members, the migration of the application is done.</target>
+          </trans-unit>
+          <trans-unit id="150" xml:space="preserve">
+            <source>When all federation members have been switched out, we suggest performing a DROP FEDERATION operation on the root.</source>
+            <target state="new">When all federation members have been switched out, we suggest performing a DROP FEDERATION operation on the root.</target>
+          </trans-unit>
+          <trans-unit id="151" xml:space="preserve">
+            <source>This will not affect any of the former members, but will allow the root database to easily migrate off of the Web and Business edition.</source>
+            <target state="new">This will not affect any of the former members, but will allow the root database to easily migrate off of the Web and Business edition.</target>
+          </trans-unit>
+          <trans-unit id="152" xml:space="preserve">
+            <source>The Federations Migration Utility provides the abilities to:</source>
+            <target state="new">The Federations Migration Utility provides the abilities to:</target>
+          </trans-unit>
+          <trans-unit id="153" xml:space="preserve">
+            <source>Feature comparison</source>
+            <target state="new">Feature comparison</target>
+          </trans-unit>
+          <trans-unit id="154" xml:space="preserve">
+            <source>Although Elastic database tools offers many additional features (for example, <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>multi-shard querying<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>splitting and merging shards<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>, <bpt id="6CapsExtId1">&lt;link&gt;</bpt><bpt id="6CapsExtId2">&lt;linkText&gt;</bpt>shard elasticity<ept id="6CapsExtId2">&lt;/linkText&gt;</ept><bpt id="6CapsExtId3">&lt;title&gt;</bpt><ept id="6CapsExtId3">&lt;/title&gt;</ept><ept id="6CapsExtId1">&lt;/link&gt;</ept>, <bpt id="8CapsExtId1">&lt;link&gt;</bpt><bpt id="8CapsExtId2">&lt;linkText&gt;</bpt>client-side caching<ept id="8CapsExtId2">&lt;/linkText&gt;</ept><bpt id="8CapsExtId3">&lt;title&gt;</bpt><ept id="8CapsExtId3">&lt;/title&gt;</ept><ept id="8CapsExtId1">&lt;/link&gt;</ept>, and more), there are a few noteworthy Federations features that are not supported in elastic database tools.</source>
+            <target state="new">Although Elastic database tools offers many additional features (for example, <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>multi-shard querying<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>splitting and merging shards<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>, <bpt id="6CapsExtId1">&lt;link&gt;</bpt><bpt id="6CapsExtId2">&lt;linkText&gt;</bpt>shard elasticity<ept id="6CapsExtId2">&lt;/linkText&gt;</ept><bpt id="6CapsExtId3">&lt;title&gt;</bpt><ept id="6CapsExtId3">&lt;/title&gt;</ept><ept id="6CapsExtId1">&lt;/link&gt;</ept>, <bpt id="8CapsExtId1">&lt;link&gt;</bpt><bpt id="8CapsExtId2">&lt;linkText&gt;</bpt>client-side caching<ept id="8CapsExtId2">&lt;/linkText&gt;</ept><bpt id="8CapsExtId3">&lt;title&gt;</bpt><ept id="8CapsExtId3">&lt;/title&gt;</ept><ept id="8CapsExtId1">&lt;/link&gt;</ept>, and more), there are a few noteworthy Federations features that are not supported in elastic database tools.</target>
+          </trans-unit>
+          <trans-unit id="155" xml:space="preserve">
+            <source>The use of <bpt id="2">&lt;strong&gt;</bpt>FILTERING=ON<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">The use of <bpt id="2">&lt;strong&gt;</bpt>FILTERING=ON<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="156" xml:space="preserve">
+            <source>Instead, it is recommended that you use row-level security (RLS) for row filtering.</source>
+            <target state="new">Instead, it is recommended that you use row-level security (RLS) for row filtering.</target>
+          </trans-unit>
+          <trans-unit id="157" xml:space="preserve">
+            <source>Like filtering in Federations, RLS automatically adds a predicate to all queries on a sharded table.</source>
+            <target state="new">Like filtering in Federations, RLS automatically adds a predicate to all queries on a sharded table.</target>
+          </trans-unit>
+          <trans-unit id="158" xml:space="preserve">
+            <source>For details, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Multi-tenant applications with elastic database tools and row-level security<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For details, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Multi-tenant applications with elastic database tools and row-level security<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="159" xml:space="preserve">
+            <source>Alternatively, you can build the filtering logic into the query issued against the shard.</source>
+            <target state="new">Alternatively, you can build the filtering logic into the query issued against the shard.</target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
+            <source>For example:</source>
+            <target state="new">For example:</target>
+          </trans-unit>
+          <trans-unit id="161" xml:space="preserve">
+            <source>Yields the same result as:</source>
+            <target state="new">Yields the same result as:</target>
+          </trans-unit>
+          <trans-unit id="162" xml:space="preserve">
+            <source>The Elastic database tools <bpt id="2">&lt;strong&gt;</bpt>Split<ept id="2">&lt;/strong&gt;</ept> feature is not fully online.</source>
+            <target state="new">The Elastic database tools <bpt id="2">&lt;strong&gt;</bpt>Split<ept id="2">&lt;/strong&gt;</ept> feature is not fully online.</target>
+          </trans-unit>
+          <trans-unit id="163" xml:space="preserve">
+            <source>During a split operation, each individual shardlet is taken offline during the duration of the move.</source>
+            <target state="new">During a split operation, each individual shardlet is taken offline during the duration of the move.</target>
+          </trans-unit>
+          <trans-unit id="164" xml:space="preserve">
+            <source>The Split feature requires manual database provisioning and schema management.</source>
+            <target state="new">The Split feature requires manual database provisioning and schema management.</target>
+          </trans-unit>
+          <trans-unit id="165" xml:space="preserve">
+            <source>Additional considerations</source>
+            <target state="new">Additional considerations</target>
+          </trans-unit>
+          <trans-unit id="166" xml:space="preserve">
+            <source>Both the Web and Business edition and Federations are being deprecated in fall of 2015.</source>
+            <target state="new">Both the Web and Business edition and Federations are being deprecated in fall of 2015.</target>
+          </trans-unit>
+          <trans-unit id="167" xml:space="preserve">
+            <source>As part the migration of a Federations application, it is highly recommended to perform performance testing on the Basic, Standard, and Premium editions.</source>
+            <target state="new">As part the migration of a Federations application, it is highly recommended to perform performance testing on the Basic, Standard, and Premium editions.</target>
+          </trans-unit>
+          <trans-unit id="168" xml:space="preserve">
+            <source>Performing the SWITCH OUT statement on a federation member enables the resulting database to take advantage of all of the Azure SQL database features (i.e., new editions, backup, PITR, auditing, etc.)</source>
+            <target state="new">Performing the SWITCH OUT statement on a federation member enables the resulting database to take advantage of all of the Azure SQL database features (i.e., new editions, backup, PITR, auditing, etc.)</target>
+          </trans-unit>
+          <trans-unit id="169" xml:space="preserve">
+            <source>Need more time for migration?</source>
+            <target state="new">Need more time for migration?</target>
+          </trans-unit>
+          <trans-unit id="170" xml:space="preserve">
+            <source>If your application is not yet ready to work without Federations, then contact Microsoft Support using instructions mentioned <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>here<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">If your application is not yet ready to work without Federations, then contact Microsoft Support using instructions mentioned <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>here<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="171" xml:space="preserve">
+            <source><ph id="1">&lt;token href="../../includes/elastic-scale-include.md"/&gt;</ph></source>
+            <target state="new"><ph id="1">&lt;token href="../../includes/elastic-scale-include.md"/&gt;</ph></target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>

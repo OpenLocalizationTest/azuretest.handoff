@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="zh-cn" original="2/18/2016 5:36:03 PM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">aa9b0f84b66b8b45fc2f0e5fb79d37bdb07bbd31</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Configure a VPN Gateway in the Azure Portal | Microsoft Azure</source>
+            <target state="new">Configure a VPN Gateway in the Azure Portal | Microsoft Azure</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>This article walks you through configuring your virtual network VPN gateway and changing a VPN gateway routing type from static to dynamic or dynamic to static.</source>
+            <target state="new">This article walks you through configuring your virtual network VPN gateway and changing a VPN gateway routing type from static to dynamic or dynamic to static.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Configure a VPN gateway in the Azure portal</source>
+            <target state="new">Configure a VPN gateway in the Azure portal</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source>If you want to create a secure cross-premises connection between Azure and your on-premises location, you'll need to configure a VPN gateway.</source>
+            <target state="new">If you want to create a secure cross-premises connection between Azure and your on-premises location, you'll need to configure a VPN gateway.</target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>There are different types of gateways and the type of gateway you'll create depends both on your network design plan, and the on-premises VPN device you want to use.</source>
+            <target state="new">There are different types of gateways and the type of gateway you'll create depends both on your network design plan, and the on-premises VPN device you want to use.</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>For example, some connectivity options, such as a point-to-site connection, require a dynamic routing gateway.</source>
+            <target state="new">For example, some connectivity options, such as a point-to-site connection, require a dynamic routing gateway.</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>If you want to configure your gateway to support both point-to-site (P2S) connections and a site-to-site (S2S) connection, you'll have to configure a dynamic routing gateway even though site-to-site can be configured with either gateway routing type.</source>
+            <target state="new">If you want to configure your gateway to support both point-to-site (P2S) connections and a site-to-site (S2S) connection, you'll have to configure a dynamic routing gateway even though site-to-site can be configured with either gateway routing type.</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>Additionally, you'll have to make sure the device you want to use for your site-to-site connection will support the gateway type that you want to create.</source>
+            <target state="new">Additionally, you'll have to make sure the device you want to use for your site-to-site connection will support the gateway type that you want to create.</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source>See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>About VPN Gateways<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>About VPN Gateways<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source>Configuration overview</source>
+            <target state="new">Configuration overview</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>The procedure below will walk you through configuring your VPN gateway in the Azure Portal.</source>
+            <target state="new">The procedure below will walk you through configuring your VPN gateway in the Azure Portal.</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source>These steps apply to gateways for VNets that were created using the Service Management mode and are visible in the Azure Portal.</source>
+            <target state="new">These steps apply to gateways for VNets that were created using the Service Management mode and are visible in the Azure Portal.</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>They are not the steps for using the Preview Portal or for VNets configured using the Resource Manager mode.</source>
+            <target state="new">They are not the steps for using the Preview Portal or for VNets configured using the Resource Manager mode.</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source>You can find information about creating VNet gateways for virtual networks created using the Resource Manager mode in <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Create a virtual network with a site-to-site connection using Azure Resource Manager and PowerShell <ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">You can find information about creating VNet gateways for virtual networks created using the Resource Manager mode in <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Create a virtual network with a site-to-site connection using Azure Resource Manager and PowerShell <ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>Before you configure your gateway, you'll first need to create your virtual network.</source>
+            <target state="new">Before you configure your gateway, you'll first need to create your virtual network.</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source>For steps to create a virtual network for cross-premises connectivity, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Configure a virtual network with a site-to-site VPN connection<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, or <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Configure a virtual network with a point-to-site VPN connection<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For steps to create a virtual network for cross-premises connectivity, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Configure a virtual network with a site-to-site VPN connection<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, or <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Configure a virtual network with a point-to-site VPN connection<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>Then, use the steps below to configure the VPN gateway and gather the information you'll need to configure your VPN device.</source>
+            <target state="new">Then, use the steps below to configure the VPN gateway and gather the information you'll need to configure your VPN device.</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>If you already have a VPN gateway and you want to change the routing type, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>How to change your VPN gateway type<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">If you already have a VPN gateway and you want to change the routing type, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>How to change your VPN gateway type<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Create a VPN gateway<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Create a VPN gateway<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Gather information for your VPN device configuration<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Gather information for your VPN device configuration<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Configure your VPN device<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Configure your VPN device<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Verify your local network ranges and VPN gateway IP address<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Verify your local network ranges and VPN gateway IP address<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>Create a VPN gateway</source>
+            <target state="new">Create a VPN gateway</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source>In the Azure Portal,on the <bpt id="2">&lt;strong&gt;</bpt>Networks<ept id="2">&lt;/strong&gt;</ept> page, verify that the status column for your virtual network is <bpt id="4">&lt;strong&gt;</bpt>Created<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the Azure Portal,on the <bpt id="2">&lt;strong&gt;</bpt>Networks<ept id="2">&lt;/strong&gt;</ept> page, verify that the status column for your virtual network is <bpt id="4">&lt;strong&gt;</bpt>Created<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Name<ept id="2">&lt;/strong&gt;</ept> column, click the name of your virtual network.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Name<ept id="2">&lt;/strong&gt;</ept> column, click the name of your virtual network.</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Dashboard<ept id="2">&lt;/strong&gt;</ept> page, notice that this VNet doesn't have a gateway configured yet.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Dashboard<ept id="2">&lt;/strong&gt;</ept> page, notice that this VNet doesn't have a gateway configured yet.</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source>You'll see this status as you go through the steps to configure your gateway.</source>
+            <target state="new">You'll see this status as you go through the steps to configure your gateway.</target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Gateway Not Created<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Gateway Not Created<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source>Next, at the bottom of the page, click <bpt id="2">&lt;strong&gt;</bpt>Create Gateway<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Next, at the bottom of the page, click <bpt id="2">&lt;strong&gt;</bpt>Create Gateway<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source>You can select either <bpt id="2">&lt;em&gt;</bpt>Static Routing<ept id="2">&lt;/em&gt;</ept> or <bpt id="4">&lt;em&gt;</bpt>Dynamic Routing<ept id="4">&lt;/em&gt;</ept>.</source>
+            <target state="new">You can select either <bpt id="2">&lt;em&gt;</bpt>Static Routing<ept id="2">&lt;/em&gt;</ept> or <bpt id="4">&lt;em&gt;</bpt>Dynamic Routing<ept id="4">&lt;/em&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source>The routing type you select depends on a number of factors.</source>
+            <target state="new">The routing type you select depends on a number of factors.</target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source>For example, what your VPN device will support and whether you need to support point-to-site connections.</source>
+            <target state="new">For example, what your VPN device will support and whether you need to support point-to-site connections.</target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source>Check <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>About VPN Devices for Virtual Network Connectivity<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> to verify the routing type that you need.</source>
+            <target state="new">Check <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>About VPN Devices for Virtual Network Connectivity<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> to verify the routing type that you need.</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source>Once the gateway has been created, you can't change between gateway types without deleting and re-creating the gateway.</source>
+            <target state="new">Once the gateway has been created, you can't change between gateway types without deleting and re-creating the gateway.</target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source>When the system prompts you to confirm that you want the gateway created, click <bpt id="2">&lt;strong&gt;</bpt>Yes<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">When the system prompts you to confirm that you want the gateway created, click <bpt id="2">&lt;strong&gt;</bpt>Yes<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Gateway Type<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Gateway Type<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source>When your gateway is creating, notice the gateway graphic on the page changes to yellow and says <bpt id="2">&lt;em&gt;</bpt>Creating Gateway<ept id="2">&lt;/em&gt;</ept>.</source>
+            <target state="new">When your gateway is creating, notice the gateway graphic on the page changes to yellow and says <bpt id="2">&lt;em&gt;</bpt>Creating Gateway<ept id="2">&lt;/em&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source>It may take up to 25 minutes for the gateway to create.</source>
+            <target state="new">It may take up to 25 minutes for the gateway to create.</target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source>You'll have to wait until the gateway is complete before you can move forward with other configuration settings.</source>
+            <target state="new">You'll have to wait until the gateway is complete before you can move forward with other configuration settings.</target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Gateway Creating<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Gateway Creating<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source>When the gateway changes to <bpt id="2">&lt;em&gt;</bpt>Connecting<ept id="2">&lt;/em&gt;</ept>, you can gather the information you'll need for your VPN device.</source>
+            <target state="new">When the gateway changes to <bpt id="2">&lt;em&gt;</bpt>Connecting<ept id="2">&lt;/em&gt;</ept>, you can gather the information you'll need for your VPN device.</target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Gateway Connecting<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Gateway Connecting<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source>Gather information for your VPN device configuration</source>
+            <target state="new">Gather information for your VPN device configuration</target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source>After the gateway has been created, gather information for your VPN device configuration.</source>
+            <target state="new">After the gateway has been created, gather information for your VPN device configuration.</target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source>This information is located on the <bpt id="2">&lt;strong&gt;</bpt>Dashboard<ept id="2">&lt;/strong&gt;</ept> page for your virtual network:</source>
+            <target state="new">This information is located on the <bpt id="2">&lt;strong&gt;</bpt>Dashboard<ept id="2">&lt;/strong&gt;</ept> page for your virtual network:</target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Gateway IP address -<ept id="1">&lt;/strong&gt;</ept> The IP address can be found on the <bpt id="3">&lt;strong&gt;</bpt>Dashboard<ept id="3">&lt;/strong&gt;</ept> page.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Gateway IP address -<ept id="1">&lt;/strong&gt;</ept> The IP address can be found on the <bpt id="3">&lt;strong&gt;</bpt>Dashboard<ept id="3">&lt;/strong&gt;</ept> page.</target>
+          </trans-unit>
+          <trans-unit id="147" xml:space="preserve">
+            <source>You won't be able to see it until after your gateway has finished creating.</source>
+            <target state="new">You won't be able to see it until after your gateway has finished creating.</target>
+          </trans-unit>
+          <trans-unit id="148" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Shared key -<ept id="1">&lt;/strong&gt;</ept> Click <bpt id="3">&lt;strong&gt;</bpt>Manage Key<ept id="3">&lt;/strong&gt;</ept> at the bottom of the screen.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Shared key -<ept id="1">&lt;/strong&gt;</ept> Click <bpt id="3">&lt;strong&gt;</bpt>Manage Key<ept id="3">&lt;/strong&gt;</ept> at the bottom of the screen.</target>
+          </trans-unit>
+          <trans-unit id="149" xml:space="preserve">
+            <source>Click the icon next to the key in order to copy it to your clipboard, and then paste and save the key.</source>
+            <target state="new">Click the icon next to the key in order to copy it to your clipboard, and then paste and save the key.</target>
+          </trans-unit>
+          <trans-unit id="150" xml:space="preserve">
+            <source>Note that this button only works when there is a single S2S VPN tunnel.</source>
+            <target state="new">Note that this button only works when there is a single S2S VPN tunnel.</target>
+          </trans-unit>
+          <trans-unit id="151" xml:space="preserve">
+            <source>If you have multiple S2S VPN tunnels, please use the Get Virtual Network Gateway Shared Key API or PowerShell cmdlet.</source>
+            <target state="new">If you have multiple S2S VPN tunnels, please use the Get Virtual Network Gateway Shared Key API or PowerShell cmdlet.</target>
+          </trans-unit>
+          <trans-unit id="152" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Manage Key<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Manage Key<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="153" xml:space="preserve">
+            <source>Configure your VPN device</source>
+            <target state="new">Configure your VPN device</target>
+          </trans-unit>
+          <trans-unit id="154" xml:space="preserve">
+            <source>After completing the previous steps, you or your network administrator will need configure the VPN device in order to create the connection.</source>
+            <target state="new">After completing the previous steps, you or your network administrator will need configure the VPN device in order to create the connection.</target>
+          </trans-unit>
+          <trans-unit id="155" xml:space="preserve">
+            <source>See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>About VPN Devices for Virtual Network Connectivity<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for more information about VPN devices.</source>
+            <target state="new">See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>About VPN Devices for Virtual Network Connectivity<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for more information about VPN devices.</target>
+          </trans-unit>
+          <trans-unit id="156" xml:space="preserve">
+            <source>After the VPN device has been configured, you can view your updated connection information on the Dashboard page for your VNet.</source>
+            <target state="new">After the VPN device has been configured, you can view your updated connection information on the Dashboard page for your VNet.</target>
+          </trans-unit>
+          <trans-unit id="157" xml:space="preserve">
+            <source>You can also run one of the following commands to test your connection:</source>
+            <target state="new">You can also run one of the following commands to test your connection:</target>
+          </trans-unit>
+          <trans-unit id="158" xml:space="preserve">
+            <source>Cisco ASA</source>
+            <target state="new">Cisco ASA</target>
+          </trans-unit>
+          <trans-unit id="159" xml:space="preserve">
+            <source>Cisco ISR/ASR</source>
+            <target state="new">Cisco ISR/ASR</target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
+            <source>Juniper SSG/ISG</source>
+            <target state="new">Juniper SSG/ISG</target>
+          </trans-unit>
+          <trans-unit id="161" xml:space="preserve">
+            <source>Juniper SRX/J</source>
+            <target state="new">Juniper SRX/J</target>
+          </trans-unit>
+          <trans-unit id="162" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Check main mode SAs<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Check main mode SAs<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="163" xml:space="preserve">
+            <source>show crypto isakmp sa</source>
+            <target state="new">show crypto isakmp sa</target>
+          </trans-unit>
+          <trans-unit id="164" xml:space="preserve">
+            <source>show crypto isakmp sa</source>
+            <target state="new">show crypto isakmp sa</target>
+          </trans-unit>
+          <trans-unit id="165" xml:space="preserve">
+            <source>get ike cookie</source>
+            <target state="new">get ike cookie</target>
+          </trans-unit>
+          <trans-unit id="166" xml:space="preserve">
+            <source>show security ike security-association</source>
+            <target state="new">show security ike security-association</target>
+          </trans-unit>
+          <trans-unit id="167" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Check quick mode SAs<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Check quick mode SAs<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="168" xml:space="preserve">
+            <source>show crypto ipsec sa</source>
+            <target state="new">show crypto ipsec sa</target>
+          </trans-unit>
+          <trans-unit id="169" xml:space="preserve">
+            <source>show crypto ipsec sa</source>
+            <target state="new">show crypto ipsec sa</target>
+          </trans-unit>
+          <trans-unit id="170" xml:space="preserve">
+            <source>get sa</source>
+            <target state="new">get sa</target>
+          </trans-unit>
+          <trans-unit id="171" xml:space="preserve">
+            <source>show security ipsec security-association</source>
+            <target state="new">show security ipsec security-association</target>
+          </trans-unit>
+          <trans-unit id="172" xml:space="preserve">
+            <source>Verify your local network ranges and VPN gateway IP address</source>
+            <target state="new">Verify your local network ranges and VPN gateway IP address</target>
+          </trans-unit>
+          <trans-unit id="173" xml:space="preserve">
+            <source>Verify your VPN gateway IP address</source>
+            <target state="new">Verify your VPN gateway IP address</target>
+          </trans-unit>
+          <trans-unit id="174" xml:space="preserve">
+            <source>For gateway to connect properly, the IP address for your VPN device must be correctly configured for the Local Network that you specified for your cross-premises configuration.</source>
+            <target state="new">For gateway to connect properly, the IP address for your VPN device must be correctly configured for the Local Network that you specified for your cross-premises configuration.</target>
+          </trans-unit>
+          <trans-unit id="175" xml:space="preserve">
+            <source>Typically, this is configured during the site-to-site configuration process.</source>
+            <target state="new">Typically, this is configured during the site-to-site configuration process.</target>
+          </trans-unit>
+          <trans-unit id="176" xml:space="preserve">
+            <source>However, if you previously used this local network with a different device, or the IP address has changed for this local network, you'll want to edit the settings to specify the correct Gateway IP address.</source>
+            <target state="new">However, if you previously used this local network with a different device, or the IP address has changed for this local network, you'll want to edit the settings to specify the correct Gateway IP address.</target>
+          </trans-unit>
+          <trans-unit id="177" xml:space="preserve">
+            <source>To verify your gateway IP address, click <bpt id="2">&lt;strong&gt;</bpt>Networks<ept id="2">&lt;/strong&gt;</ept> on the left portal pane and then select <bpt id="4">&lt;strong&gt;</bpt>Local Networks<ept id="4">&lt;/strong&gt;</ept> at the top of the page.</source>
+            <target state="new">To verify your gateway IP address, click <bpt id="2">&lt;strong&gt;</bpt>Networks<ept id="2">&lt;/strong&gt;</ept> on the left portal pane and then select <bpt id="4">&lt;strong&gt;</bpt>Local Networks<ept id="4">&lt;/strong&gt;</ept> at the top of the page.</target>
+          </trans-unit>
+          <trans-unit id="178" xml:space="preserve">
+            <source>You'll see the VPN Gateway Address for each local network that you have created.</source>
+            <target state="new">You'll see the VPN Gateway Address for each local network that you have created.</target>
+          </trans-unit>
+          <trans-unit id="179" xml:space="preserve">
+            <source>To edit the IP address, select the VNet and click <bpt id="2">&lt;strong&gt;</bpt>Edit<ept id="2">&lt;/strong&gt;</ept> at the bottom of the page.</source>
+            <target state="new">To edit the IP address, select the VNet and click <bpt id="2">&lt;strong&gt;</bpt>Edit<ept id="2">&lt;/strong&gt;</ept> at the bottom of the page.</target>
+          </trans-unit>
+          <trans-unit id="180" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Specify your local network details<ept id="2">&lt;/strong&gt;</ept> page, edit the IP address, and then click the next arrow at the bottom of the page.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Specify your local network details<ept id="2">&lt;/strong&gt;</ept> page, edit the IP address, and then click the next arrow at the bottom of the page.</target>
+          </trans-unit>
+          <trans-unit id="181" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Specify the address space<ept id="2">&lt;/strong&gt;</ept> page, click the checkmark on the lower right to save your settings.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Specify the address space<ept id="2">&lt;/strong&gt;</ept> page, click the checkmark on the lower right to save your settings.</target>
+          </trans-unit>
+          <trans-unit id="182" xml:space="preserve">
+            <source>Verify the address ranges for your local networks</source>
+            <target state="new">Verify the address ranges for your local networks</target>
+          </trans-unit>
+          <trans-unit id="183" xml:space="preserve">
+            <source>For the correct traffic to flow through the gateway to your on-premises location, you'll need to verify that you have listed each IP address range that you want to include in your local network configuration.</source>
+            <target state="new">For the correct traffic to flow through the gateway to your on-premises location, you'll need to verify that you have listed each IP address range that you want to include in your local network configuration.</target>
+          </trans-unit>
+          <trans-unit id="184" xml:space="preserve">
+            <source>Depending on the network configuration of your on-premises location, this can be a somewhat large task because each range must be listed in your Azure <bpt id="2">&lt;strong&gt;</bpt>Local Networks<ept id="2">&lt;/strong&gt;</ept> configuration.</source>
+            <target state="new">Depending on the network configuration of your on-premises location, this can be a somewhat large task because each range must be listed in your Azure <bpt id="2">&lt;strong&gt;</bpt>Local Networks<ept id="2">&lt;/strong&gt;</ept> configuration.</target>
+          </trans-unit>
+          <trans-unit id="185" xml:space="preserve">
+            <source>Traffic that is bound for an IP address that is contained within the ranges listed will then be sent through the virtual network VPN gateway.</source>
+            <target state="new">Traffic that is bound for an IP address that is contained within the ranges listed will then be sent through the virtual network VPN gateway.</target>
+          </trans-unit>
+          <trans-unit id="186" xml:space="preserve">
+            <source>The IP address ranges that you list do not have to be private ranges, although you will want to verify that your on-premises configuration is able to receive the inbound traffic.</source>
+            <target state="new">The IP address ranges that you list do not have to be private ranges, although you will want to verify that your on-premises configuration is able to receive the inbound traffic.</target>
+          </trans-unit>
+          <trans-unit id="187" xml:space="preserve">
+            <source>To add or edit the ranges for a Local Network, follow the procedure below.</source>
+            <target state="new">To add or edit the ranges for a Local Network, follow the procedure below.</target>
+          </trans-unit>
+          <trans-unit id="188" xml:space="preserve">
+            <source>To edit the IP address ranges for a local network, click <bpt id="2">&lt;strong&gt;</bpt>Networks<ept id="2">&lt;/strong&gt;</ept> on the left portal pane and then select <bpt id="4">&lt;strong&gt;</bpt>Local Networks<ept id="4">&lt;/strong&gt;</ept> at the top of the page.</source>
+            <target state="new">To edit the IP address ranges for a local network, click <bpt id="2">&lt;strong&gt;</bpt>Networks<ept id="2">&lt;/strong&gt;</ept> on the left portal pane and then select <bpt id="4">&lt;strong&gt;</bpt>Local Networks<ept id="4">&lt;/strong&gt;</ept> at the top of the page.</target>
+          </trans-unit>
+          <trans-unit id="189" xml:space="preserve">
+            <source>In the portal, the easiest way to view the ranges that you've listed is on the <bpt id="2">&lt;strong&gt;</bpt>Edit<ept id="2">&lt;/strong&gt;</ept> page.</source>
+            <target state="new">In the portal, the easiest way to view the ranges that you've listed is on the <bpt id="2">&lt;strong&gt;</bpt>Edit<ept id="2">&lt;/strong&gt;</ept> page.</target>
+          </trans-unit>
+          <trans-unit id="190" xml:space="preserve">
+            <source>To see your ranges, select the VNet and click <bpt id="2">&lt;strong&gt;</bpt>Edit<ept id="2">&lt;/strong&gt;</ept> at the bottom of the page.</source>
+            <target state="new">To see your ranges, select the VNet and click <bpt id="2">&lt;strong&gt;</bpt>Edit<ept id="2">&lt;/strong&gt;</ept> at the bottom of the page.</target>
+          </trans-unit>
+          <trans-unit id="191" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Specify your local network details<ept id="2">&lt;/strong&gt;</ept> page, don't make any changes.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Specify your local network details<ept id="2">&lt;/strong&gt;</ept> page, don't make any changes.</target>
+          </trans-unit>
+          <trans-unit id="192" xml:space="preserve">
+            <source>Click the next arrow at the bottom of the page.</source>
+            <target state="new">Click the next arrow at the bottom of the page.</target>
+          </trans-unit>
+          <trans-unit id="193" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Specify the address space<ept id="2">&lt;/strong&gt;</ept> page, make your network address space changes.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Specify the address space<ept id="2">&lt;/strong&gt;</ept> page, make your network address space changes.</target>
+          </trans-unit>
+          <trans-unit id="194" xml:space="preserve">
+            <source>Then click the checkmark to save your configuration.</source>
+            <target state="new">Then click the checkmark to save your configuration.</target>
+          </trans-unit>
+          <trans-unit id="195" xml:space="preserve">
+            <source>How to view gateway traffic</source>
+            <target state="new">How to view gateway traffic</target>
+          </trans-unit>
+          <trans-unit id="196" xml:space="preserve">
+            <source>You can view your gateway and gateway traffic from your Virtual Network <bpt id="2">&lt;strong&gt;</bpt>Dashboard<ept id="2">&lt;/strong&gt;</ept> page.</source>
+            <target state="new">You can view your gateway and gateway traffic from your Virtual Network <bpt id="2">&lt;strong&gt;</bpt>Dashboard<ept id="2">&lt;/strong&gt;</ept> page.</target>
+          </trans-unit>
+          <trans-unit id="197" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Dashboard<ept id="2">&lt;/strong&gt;</ept> page you can view the following:</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Dashboard<ept id="2">&lt;/strong&gt;</ept> page you can view the following:</target>
+          </trans-unit>
+          <trans-unit id="198" xml:space="preserve">
+            <source>The amount of data that is flowing through your gateway, both data in and data out.</source>
+            <target state="new">The amount of data that is flowing through your gateway, both data in and data out.</target>
+          </trans-unit>
+          <trans-unit id="199" xml:space="preserve">
+            <source>The names of the DNS servers that are specified for your virtual network.</source>
+            <target state="new">The names of the DNS servers that are specified for your virtual network.</target>
+          </trans-unit>
+          <trans-unit id="200" xml:space="preserve">
+            <source>The connection between your gateway and your VPN device.</source>
+            <target state="new">The connection between your gateway and your VPN device.</target>
+          </trans-unit>
+          <trans-unit id="201" xml:space="preserve">
+            <source>The shared key that is used to configure your gateway connection to your VPN device.</source>
+            <target state="new">The shared key that is used to configure your gateway connection to your VPN device.</target>
+          </trans-unit>
+          <trans-unit id="202" xml:space="preserve">
+            <source>How to change your VPN gateway type</source>
+            <target state="new">How to change your VPN gateway type</target>
+          </trans-unit>
+          <trans-unit id="203" xml:space="preserve">
+            <source>Because some connectivity configurations are only available for certain gateway types, you may find that you need to change the gateway type of an existing VPN gateway.</source>
+            <target state="new">Because some connectivity configurations are only available for certain gateway types, you may find that you need to change the gateway type of an existing VPN gateway.</target>
+          </trans-unit>
+          <trans-unit id="204" xml:space="preserve">
+            <source>For example, you may want to add point-to-site connectivity to an already existing site-to-site connection that has a static gateway.</source>
+            <target state="new">For example, you may want to add point-to-site connectivity to an already existing site-to-site connection that has a static gateway.</target>
+          </trans-unit>
+          <trans-unit id="205" xml:space="preserve">
+            <source>Point-to-site requires a dynamic gateway, which means in order to configure it, you'll have to change your gateway type from static to dynamic.</source>
+            <target state="new">Point-to-site requires a dynamic gateway, which means in order to configure it, you'll have to change your gateway type from static to dynamic.</target>
+          </trans-unit>
+          <trans-unit id="206" xml:space="preserve">
+            <source>If you need to change a VPN gateway routing type, you'll delete the existing gateway, and then recreate it with the new routing type.</source>
+            <target state="new">If you need to change a VPN gateway routing type, you'll delete the existing gateway, and then recreate it with the new routing type.</target>
+          </trans-unit>
+          <trans-unit id="207" xml:space="preserve">
+            <source>You don't need to delete the entire virtual network in order to change the gateway routing type.</source>
+            <target state="new">You don't need to delete the entire virtual network in order to change the gateway routing type.</target>
+          </trans-unit>
+          <trans-unit id="208" xml:space="preserve">
+            <source>Before changing your gateway type, be sure to verify that your VPN device will support the routing type that you want to use.</source>
+            <target state="new">Before changing your gateway type, be sure to verify that your VPN device will support the routing type that you want to use.</target>
+          </trans-unit>
+          <trans-unit id="209" xml:space="preserve">
+            <source>To download new routing configuration samples and check VPN device requirements, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>About VPN Devices for Virtual Network Connectivity<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">To download new routing configuration samples and check VPN device requirements, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>About VPN Devices for Virtual Network Connectivity<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="210" xml:space="preserve">
+            <source>When you delete a virtual network VPN gateway, the VIP assigned to the gateway is released.</source>
+            <target state="new">When you delete a virtual network VPN gateway, the VIP assigned to the gateway is released.</target>
+          </trans-unit>
+          <trans-unit id="211" xml:space="preserve">
+            <source>When you recreate the gateway, a new VIP will be assigned to it.</source>
+            <target state="new">When you recreate the gateway, a new VIP will be assigned to it.</target>
+          </trans-unit>
+          <trans-unit id="212" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Delete the existing VPN gateway.<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Delete the existing VPN gateway.<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="213" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Dashboard<ept id="2">&lt;/strong&gt;</ept> page for your virtual network, navigate to the bottom of the page and click <bpt id="4">&lt;strong&gt;</bpt>Delete Gateway<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Dashboard<ept id="2">&lt;/strong&gt;</ept> page for your virtual network, navigate to the bottom of the page and click <bpt id="4">&lt;strong&gt;</bpt>Delete Gateway<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="214" xml:space="preserve">
+            <source>Wait for the notification that the gateway has been deleted.</source>
+            <target state="new">Wait for the notification that the gateway has been deleted.</target>
+          </trans-unit>
+          <trans-unit id="215" xml:space="preserve">
+            <source>When you receive notification on the screen that your gateway has been deleted, you can then create a new gateway.</source>
+            <target state="new">When you receive notification on the screen that your gateway has been deleted, you can then create a new gateway.</target>
+          </trans-unit>
+          <trans-unit id="216" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Create a new VPN gateway.<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Create a new VPN gateway.<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="217" xml:space="preserve">
+            <source>Use the procedure at the top of the page to create a new gateway: <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Create a VPN gateway<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">Use the procedure at the top of the page to create a new gateway: <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Create a VPN gateway<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="218" xml:space="preserve">
+            <source>Next steps</source>
+            <target state="new">Next steps</target>
+          </trans-unit>
+          <trans-unit id="219" xml:space="preserve">
+            <source>You can learn more about Virtual Network cross-premises connectivity in this article: <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>About secure cross-premises connections for virtual networks<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">You can learn more about Virtual Network cross-premises connectivity in this article: <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>About secure cross-premises connections for virtual networks<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="220" xml:space="preserve">
+            <source>You can add virtual machines to your virtual network.</source>
+            <target state="new">You can add virtual machines to your virtual network.</target>
+          </trans-unit>
+          <trans-unit id="221" xml:space="preserve">
+            <source>See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>How to create a custom virtual machine<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>How to create a custom virtual machine<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="222" xml:space="preserve">
+            <source>If you want to configure a point-to-site VPN connection, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Configure a point-to-site VPN connection<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">If you want to configure a point-to-site VPN connection, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Configure a point-to-site VPN connection<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>

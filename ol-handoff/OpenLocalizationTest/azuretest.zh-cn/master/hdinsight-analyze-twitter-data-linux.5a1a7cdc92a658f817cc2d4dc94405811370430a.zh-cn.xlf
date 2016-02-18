@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="zh-cn" original="2/18/2016 5:15:56 PM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ebb28f7a13fd577193905c711f1832ae4818f6f0</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Analyze Twitter data with Hadoop in HDInsight | Microsoft Azure</source>
+            <target state="new">Analyze Twitter data with Hadoop in HDInsight | Microsoft Azure</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>Learn how to use Hive to analyze Twitter data on Hadoop in HDInsight to find the usage frequency of a particular word.</source>
+            <target state="new">Learn how to use Hive to analyze Twitter data on Hadoop in HDInsight to find the usage frequency of a particular word.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Analyze Twitter data using Hive in HDInsight</source>
+            <target state="new">Analyze Twitter data using Hive in HDInsight</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source>In this document, you will get tweets by using a Twitter streaming API and then use Apache Hive on a Linux-based HDInsight (preview) cluster to process the JSON formatted data.</source>
+            <target state="new">In this document, you will get tweets by using a Twitter streaming API and then use Apache Hive on a Linux-based HDInsight (preview) cluster to process the JSON formatted data.</target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>The result will be a list of Twitter users who sent the most tweets that contained a certain word.</source>
+            <target state="new">The result will be a list of Twitter users who sent the most tweets that contained a certain word.</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>While individual pieces of this document can be used with Windows-based HDInsight clusters (Python and Hive for example,) many steps are based on using a Linux-based HDInsight cluster.</source>
+            <target state="new">While individual pieces of this document can be used with Windows-based HDInsight clusters (Python and Hive for example,) many steps are based on using a Linux-based HDInsight cluster.</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>For steps specific to a Windows-based cluster, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Analyze Twitter data using Hive in HDInsight<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For steps specific to a Windows-based cluster, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Analyze Twitter data using Hive in HDInsight<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>Prerequisites</source>
+            <target state="new">Prerequisites</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source>Before you begin this tutorial, you must have the following:</source>
+            <target state="new">Before you begin this tutorial, you must have the following:</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source>A <bpt id="2">&lt;strong&gt;</bpt>Linux-based Azure HDInsight cluster<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">A <bpt id="2">&lt;strong&gt;</bpt>Linux-based Azure HDInsight cluster<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>For information on creating a cluster, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Get Started with Linux-based HDInsight<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for steps on creating a cluster.</source>
+            <target state="new">For information on creating a cluster, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Get Started with Linux-based HDInsight<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for steps on creating a cluster.</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source>An <bpt id="2">&lt;strong&gt;</bpt>SSH client<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">An <bpt id="2">&lt;strong&gt;</bpt>SSH client<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>For more information on using SSH with Linux-based HDInsight, see the following articles:</source>
+            <target state="new">For more information on using SSH with Linux-based HDInsight, see the following articles:</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use SSH with Linux-based Hadoop on HDInsight from Linux, Unix, or OS X<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use SSH with Linux-based Hadoop on HDInsight from Linux, Unix, or OS X<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use SSH with Linux-based Hadoop on HDInsight from Windows<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use SSH with Linux-based Hadoop on HDInsight from Windows<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Python<ept id="1">&lt;/strong&gt;</ept> and <bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>pip<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Python<ept id="1">&lt;/strong&gt;</ept> and <bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>pip<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>The <bpt id="2">&lt;strong&gt;</bpt>Azure CLI<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">The <bpt id="2">&lt;strong&gt;</bpt>Azure CLI<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Install and configure the Azure CLI<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new">For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Install and configure the Azure CLI<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source>Get a Twitter feed</source>
+            <target state="new">Get a Twitter feed</target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source>Twitter allows you to retrieve the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>data for each tweet<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> as a JavaScript Object Notation (JSON) document through a REST API.</source>
+            <target state="new">Twitter allows you to retrieve the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>data for each tweet<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> as a JavaScript Object Notation (JSON) document through a REST API.</target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>OAuth<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept> is required for authentication to the API.</source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>OAuth<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept> is required for authentication to the API.</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source>You must also create a _Twitter Application_ that contains the settings used to access the API.</source>
+            <target state="new">You must also create a _Twitter Application_ that contains the settings used to access the API.</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>Create a Twitter application</source>
+            <target state="new">Create a Twitter application</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source>From a web browser, sign in to <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>https://apps.twitter.com/<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">From a web browser, sign in to <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>https://apps.twitter.com/<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>Click the <bpt id="2">&lt;strong&gt;</bpt>Sign up now<ept id="2">&lt;/strong&gt;</ept> link if you don't have a Twitter account.</source>
+            <target state="new">Click the <bpt id="2">&lt;strong&gt;</bpt>Sign up now<ept id="2">&lt;/strong&gt;</ept> link if you don't have a Twitter account.</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Create New App<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Create New App<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source>Enter <bpt id="2">&lt;strong&gt;</bpt>Name<ept id="2">&lt;/strong&gt;</ept>, <bpt id="4">&lt;strong&gt;</bpt>Description<ept id="4">&lt;/strong&gt;</ept>, <bpt id="6">&lt;strong&gt;</bpt>Website<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Enter <bpt id="2">&lt;strong&gt;</bpt>Name<ept id="2">&lt;/strong&gt;</ept>, <bpt id="4">&lt;strong&gt;</bpt>Description<ept id="4">&lt;/strong&gt;</ept>, <bpt id="6">&lt;strong&gt;</bpt>Website<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source>You can make up a URL for the <bpt id="2">&lt;strong&gt;</bpt>Website<ept id="2">&lt;/strong&gt;</ept> field.</source>
+            <target state="new">You can make up a URL for the <bpt id="2">&lt;strong&gt;</bpt>Website<ept id="2">&lt;/strong&gt;</ept> field.</target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source>The following table shows some sample values to use:</source>
+            <target state="new">The following table shows some sample values to use:</target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source>Field</source>
+            <target state="new">Field</target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source>Value</source>
+            <target state="new">Value</target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source>Name</source>
+            <target state="new">Name</target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source>MyHDInsightApp</source>
+            <target state="new">MyHDInsightApp</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source>Description</source>
+            <target state="new">Description</target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source>MyHDInsightApp</source>
+            <target state="new">MyHDInsightApp</target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source>Website</source>
+            <target state="new">Website</target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source>http://www.myhdinsightapp.com</source>
+            <target state="new">http://www.myhdinsightapp.com</target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source>Check <bpt id="2">&lt;strong&gt;</bpt>Yes, I agree<ept id="2">&lt;/strong&gt;</ept>, and then click <bpt id="4">&lt;strong&gt;</bpt>Create your Twitter application<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Check <bpt id="2">&lt;strong&gt;</bpt>Yes, I agree<ept id="2">&lt;/strong&gt;</ept>, and then click <bpt id="4">&lt;strong&gt;</bpt>Create your Twitter application<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source>Click the <bpt id="2">&lt;strong&gt;</bpt>Permissions<ept id="2">&lt;/strong&gt;</ept> tab.</source>
+            <target state="new">Click the <bpt id="2">&lt;strong&gt;</bpt>Permissions<ept id="2">&lt;/strong&gt;</ept> tab.</target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source>The default permission is <bpt id="2">&lt;strong&gt;</bpt>Read only<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">The default permission is <bpt id="2">&lt;strong&gt;</bpt>Read only<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source>This is sufficient for this tutorial.</source>
+            <target state="new">This is sufficient for this tutorial.</target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source>Click the <bpt id="2">&lt;strong&gt;</bpt>Keys and Access Tokens<ept id="2">&lt;/strong&gt;</ept> tab.</source>
+            <target state="new">Click the <bpt id="2">&lt;strong&gt;</bpt>Keys and Access Tokens<ept id="2">&lt;/strong&gt;</ept> tab.</target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Create my access token<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Create my access token<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Test OAuth<ept id="2">&lt;/strong&gt;</ept> in the upper-right corner of the page.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Test OAuth<ept id="2">&lt;/strong&gt;</ept> in the upper-right corner of the page.</target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source>Write down <bpt id="2">&lt;strong&gt;</bpt>consumer key<ept id="2">&lt;/strong&gt;</ept>, <bpt id="4">&lt;strong&gt;</bpt>Consumer secret<ept id="4">&lt;/strong&gt;</ept>, <bpt id="6">&lt;strong&gt;</bpt>Access token<ept id="6">&lt;/strong&gt;</ept>, and <bpt id="8">&lt;strong&gt;</bpt>Access token secret<ept id="8">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Write down <bpt id="2">&lt;strong&gt;</bpt>consumer key<ept id="2">&lt;/strong&gt;</ept>, <bpt id="4">&lt;strong&gt;</bpt>Consumer secret<ept id="4">&lt;/strong&gt;</ept>, <bpt id="6">&lt;strong&gt;</bpt>Access token<ept id="6">&lt;/strong&gt;</ept>, and <bpt id="8">&lt;strong&gt;</bpt>Access token secret<ept id="8">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source>You will need the values later.</source>
+            <target state="new">You will need the values later.</target>
+          </trans-unit>
+          <trans-unit id="147" xml:space="preserve">
+            <source>When you use the curl command in Windows, use double quotes instead of single quotes for the option values.</source>
+            <target state="new">When you use the curl command in Windows, use double quotes instead of single quotes for the option values.</target>
+          </trans-unit>
+          <trans-unit id="148" xml:space="preserve">
+            <source>Download tweets</source>
+            <target state="new">Download tweets</target>
+          </trans-unit>
+          <trans-unit id="149" xml:space="preserve">
+            <source>The following Python code will download 10,000 tweets from Twitter and save them to a file named <bpt id="2">&lt;strong&gt;</bpt>tweets.txt<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">The following Python code will download 10,000 tweets from Twitter and save them to a file named <bpt id="2">&lt;strong&gt;</bpt>tweets.txt<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="150" xml:space="preserve">
+            <source>The following steps are performed on the HDInsight cluster, since Python is already installed.</source>
+            <target state="new">The following steps are performed on the HDInsight cluster, since Python is already installed.</target>
+          </trans-unit>
+          <trans-unit id="151" xml:space="preserve">
+            <source>Connect to the HDInsight cluster using SSH:</source>
+            <target state="new">Connect to the HDInsight cluster using SSH:</target>
+          </trans-unit>
+          <trans-unit id="152" xml:space="preserve">
+            <source>If you used a password to secure your SSH user account, you will be prompted to enter it.</source>
+            <target state="new">If you used a password to secure your SSH user account, you will be prompted to enter it.</target>
+          </trans-unit>
+          <trans-unit id="153" xml:space="preserve">
+            <source>If you used a public key, you may have to use the <bpt id="2">&lt;code&gt;</bpt>-i<ept id="2">&lt;/code&gt;</ept> parameter to specify the matching private key.</source>
+            <target state="new">If you used a public key, you may have to use the <bpt id="2">&lt;code&gt;</bpt>-i<ept id="2">&lt;/code&gt;</ept> parameter to specify the matching private key.</target>
+          </trans-unit>
+          <trans-unit id="154" xml:space="preserve">
+            <source>For example, <bpt id="2">&lt;code&gt;</bpt>ssh -i ~/.ssh/id_rsa USERNAME@CLUSTERNAME-ssh.azurehdinsight.net<ept id="2">&lt;/code&gt;</ept>.</source>
+            <target state="new">For example, <bpt id="2">&lt;code&gt;</bpt>ssh -i ~/.ssh/id_rsa USERNAME@CLUSTERNAME-ssh.azurehdinsight.net<ept id="2">&lt;/code&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="155" xml:space="preserve">
+            <source>For more information on using SSH with Linux-based HDInsight, see the following articles:</source>
+            <target state="new">For more information on using SSH with Linux-based HDInsight, see the following articles:</target>
+          </trans-unit>
+          <trans-unit id="156" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use SSH with Linux-based Hadoop on HDInsight from Linux, Unix, or OS X<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use SSH with Linux-based Hadoop on HDInsight from Linux, Unix, or OS X<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="157" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use SSH with Linux-based Hadoop on HDInsight from Windows<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use SSH with Linux-based Hadoop on HDInsight from Windows<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="158" xml:space="preserve">
+            <source>By default, the <bpt id="2">&lt;strong&gt;</bpt>pip<ept id="2">&lt;/strong&gt;</ept> utility is not installed on the HDInsight head node.</source>
+            <target state="new">By default, the <bpt id="2">&lt;strong&gt;</bpt>pip<ept id="2">&lt;/strong&gt;</ept> utility is not installed on the HDInsight head node.</target>
+          </trans-unit>
+          <trans-unit id="159" xml:space="preserve">
+            <source>Use the following to install, and then update this utility:</source>
+            <target state="new">Use the following to install, and then update this utility:</target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
+            <source>The code to download tweets relies on <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Tweepy<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> and <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Progressbar<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">The code to download tweets relies on <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Tweepy<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> and <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Progressbar<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="161" xml:space="preserve">
+            <source>To install these, use the following command:</source>
+            <target state="new">To install these, use the following command:</target>
+          </trans-unit>
+          <trans-unit id="162" xml:space="preserve">
+            <source>The bits about removing python-openssl, installing python-dev, libffi-dev, libssl-dev, pyOpenSSL and requests[security] is to avoid an InsecurePlatform warning when connecting to Twitter via SSL from Python.</source>
+            <target state="new">The bits about removing python-openssl, installing python-dev, libffi-dev, libssl-dev, pyOpenSSL and requests[security] is to avoid an InsecurePlatform warning when connecting to Twitter via SSL from Python.</target>
+          </trans-unit>
+          <trans-unit id="163" xml:space="preserve">
+            <source>Tweepy v3.2.0 is used to avoid <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>an error<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> that can occur when processing tweets.</source>
+            <target state="new">Tweepy v3.2.0 is used to avoid <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>an error<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> that can occur when processing tweets.</target>
+          </trans-unit>
+          <trans-unit id="164" xml:space="preserve">
+            <source>Use the following command to create a new file named <bpt id="2">&lt;strong&gt;</bpt>gettweets.py<ept id="2">&lt;/strong&gt;</ept>:</source>
+            <target state="new">Use the following command to create a new file named <bpt id="2">&lt;strong&gt;</bpt>gettweets.py<ept id="2">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="165" xml:space="preserve">
+            <source>Use the following as the contents of the <bpt id="2">&lt;strong&gt;</bpt>gettweets.py<ept id="2">&lt;/strong&gt;</ept> file.</source>
+            <target state="new">Use the following as the contents of the <bpt id="2">&lt;strong&gt;</bpt>gettweets.py<ept id="2">&lt;/strong&gt;</ept> file.</target>
+          </trans-unit>
+          <trans-unit id="166" xml:space="preserve">
+            <source>Replace the placeholder information for <bpt id="2">&lt;strong&gt;</bpt>consumer/_secret<ept id="2">&lt;/strong&gt;</ept>, <bpt id="4">&lt;strong&gt;</bpt>consumer/_key<ept id="4">&lt;/strong&gt;</ept>, <bpt id="6">&lt;strong&gt;</bpt>access/_token<ept id="6">&lt;/strong&gt;</ept>, and <bpt id="8">&lt;strong&gt;</bpt>access/_token/_secret<ept id="8">&lt;/strong&gt;</ept> with the information from your Twitter application.</source>
+            <target state="new">Replace the placeholder information for <bpt id="2">&lt;strong&gt;</bpt>consumer/_secret<ept id="2">&lt;/strong&gt;</ept>, <bpt id="4">&lt;strong&gt;</bpt>consumer/_key<ept id="4">&lt;/strong&gt;</ept>, <bpt id="6">&lt;strong&gt;</bpt>access/_token<ept id="6">&lt;/strong&gt;</ept>, and <bpt id="8">&lt;strong&gt;</bpt>access/_token/_secret<ept id="8">&lt;/strong&gt;</ept> with the information from your Twitter application.</target>
+          </trans-unit>
+          <trans-unit id="167" xml:space="preserve">
+            <source>Use <bpt id="2">&lt;strong&gt;</bpt>Ctrl + X<ept id="2">&lt;/strong&gt;</ept>, then <bpt id="4">&lt;strong&gt;</bpt>Y<ept id="4">&lt;/strong&gt;</ept> to save the file.</source>
+            <target state="new">Use <bpt id="2">&lt;strong&gt;</bpt>Ctrl + X<ept id="2">&lt;/strong&gt;</ept>, then <bpt id="4">&lt;strong&gt;</bpt>Y<ept id="4">&lt;/strong&gt;</ept> to save the file.</target>
+          </trans-unit>
+          <trans-unit id="168" xml:space="preserve">
+            <source>Use the following command to run the file and download tweets:</source>
+            <target state="new">Use the following command to run the file and download tweets:</target>
+          </trans-unit>
+          <trans-unit id="169" xml:space="preserve">
+            <source>A progress indicator should appear, and count up to 100% as the tweets are downloaded and saved to file.</source>
+            <target state="new">A progress indicator should appear, and count up to 100% as the tweets are downloaded and saved to file.</target>
+          </trans-unit>
+          <trans-unit id="170" xml:space="preserve">
+            <source>Upload the data</source>
+            <target state="new">Upload the data</target>
+          </trans-unit>
+          <trans-unit id="171" xml:space="preserve">
+            <source>To upload the data to WASB (the distributed file system used by HDInsight,) use the following commands:</source>
+            <target state="new">To upload the data to WASB (the distributed file system used by HDInsight,) use the following commands:</target>
+          </trans-unit>
+          <trans-unit id="172" xml:space="preserve">
+            <source>This stores the data in a location that all nodes in the cluster can access.</source>
+            <target state="new">This stores the data in a location that all nodes in the cluster can access.</target>
+          </trans-unit>
+          <trans-unit id="173" xml:space="preserve">
+            <source>Run the HiveQL job</source>
+            <target state="new">Run the HiveQL job</target>
+          </trans-unit>
+          <trans-unit id="174" xml:space="preserve">
+            <source>Use the following command to create a file containing HiveQL statements:</source>
+            <target state="new">Use the following command to create a file containing HiveQL statements:</target>
+          </trans-unit>
+          <trans-unit id="175" xml:space="preserve">
+            <source>Use the following as the contents of the file:</source>
+            <target state="new">Use the following as the contents of the file:</target>
+          </trans-unit>
+          <trans-unit id="176" xml:space="preserve">
+            <source>Press <bpt id="2">&lt;strong&gt;</bpt>Ctrl + X<ept id="2">&lt;/strong&gt;</ept>, then press <bpt id="4">&lt;strong&gt;</bpt>Y<ept id="4">&lt;/strong&gt;</ept> to save the file.</source>
+            <target state="new">Press <bpt id="2">&lt;strong&gt;</bpt>Ctrl + X<ept id="2">&lt;/strong&gt;</ept>, then press <bpt id="4">&lt;strong&gt;</bpt>Y<ept id="4">&lt;/strong&gt;</ept> to save the file.</target>
+          </trans-unit>
+          <trans-unit id="177" xml:space="preserve">
+            <source>Use the following command to run the HiveQL contained in the file:</source>
+            <target state="new">Use the following command to run the HiveQL contained in the file:</target>
+          </trans-unit>
+          <trans-unit id="178" xml:space="preserve">
+            <source>This will load the Hive shell, run the HiveQL in the <bpt id="2">&lt;strong&gt;</bpt>twitter.hql<ept id="2">&lt;/strong&gt;</ept> file, and finally return a <bpt id="4">&lt;code&gt;</bpt>hive &gt;<ept id="4">&lt;/code&gt;</ept> prompt.</source>
+            <target state="new">This will load the Hive shell, run the HiveQL in the <bpt id="2">&lt;strong&gt;</bpt>twitter.hql<ept id="2">&lt;/strong&gt;</ept> file, and finally return a <bpt id="4">&lt;code&gt;</bpt>hive &gt;<ept id="4">&lt;/code&gt;</ept> prompt.</target>
+          </trans-unit>
+          <trans-unit id="179" xml:space="preserve">
+            <source>From the <bpt id="2">&lt;code&gt;</bpt>hive &gt;<ept id="2">&lt;/code&gt;</ept> prompt, use the following to verify that you can select data from the <bpt id="4">&lt;strong&gt;</bpt>tweets<ept id="4">&lt;/strong&gt;</ept> table created by the HiveQL in the <bpt id="6">&lt;strong&gt;</bpt>twitter.hql<ept id="6">&lt;/strong&gt;</ept> file:</source>
+            <target state="new">From the <bpt id="2">&lt;code&gt;</bpt>hive &gt;<ept id="2">&lt;/code&gt;</ept> prompt, use the following to verify that you can select data from the <bpt id="4">&lt;strong&gt;</bpt>tweets<ept id="4">&lt;/strong&gt;</ept> table created by the HiveQL in the <bpt id="6">&lt;strong&gt;</bpt>twitter.hql<ept id="6">&lt;/strong&gt;</ept> file:</target>
+          </trans-unit>
+          <trans-unit id="180" xml:space="preserve">
+            <source>This will return a maximum of 10 tweets that contain the word <bpt id="2">&lt;strong&gt;</bpt>Azure<ept id="2">&lt;/strong&gt;</ept> in the message text.</source>
+            <target state="new">This will return a maximum of 10 tweets that contain the word <bpt id="2">&lt;strong&gt;</bpt>Azure<ept id="2">&lt;/strong&gt;</ept> in the message text.</target>
+          </trans-unit>
+          <trans-unit id="181" xml:space="preserve">
+            <source>Next steps</source>
+            <target state="new">Next steps</target>
+          </trans-unit>
+          <trans-unit id="182" xml:space="preserve">
+            <source>In this tutorial we have seen how to transform an unstructured JSON dataset into a structured Hive table to query, explore, and analyze data from Twitter by using HDInsight on Azure.</source>
+            <target state="new">In this tutorial we have seen how to transform an unstructured JSON dataset into a structured Hive table to query, explore, and analyze data from Twitter by using HDInsight on Azure.</target>
+          </trans-unit>
+          <trans-unit id="183" xml:space="preserve">
+            <source>To learn more, see:</source>
+            <target state="new">To learn more, see:</target>
+          </trans-unit>
+          <trans-unit id="184" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Get started with HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Get started with HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="185" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Analyze flight delay data using HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Analyze flight delay data using HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>

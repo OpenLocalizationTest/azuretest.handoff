@@ -1,0 +1,531 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="zh-cn" original="2/18/2016 5:10:53 PM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7d45c50ba2105562512d6c8fd7082686fc641aba</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Walkthrough: export telemetry to SQL Database from Application Insights</source>
+            <target state="new">Walkthrough: export telemetry to SQL Database from Application Insights</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>Code your own analysis of telemetry in Application Insights by using the continuous export feature.</source>
+            <target state="new">Code your own analysis of telemetry in Application Insights by using the continuous export feature.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Walkthrough: Export to SQL from Application Insights using Stream Analytics</source>
+            <target state="new">Walkthrough: Export to SQL from Application Insights using Stream Analytics</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source>This article shows how to move your telemetry data from <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Visual Studio Application Insights[start]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> into an Azure SQL database by using <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Continuous Export[export]<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept> and <bpt id="6CapsExtId1">&lt;link&gt;</bpt><bpt id="6CapsExtId2">&lt;linkText&gt;</bpt>Azure Stream Analytics<ept id="6CapsExtId2">&lt;/linkText&gt;</ept><bpt id="6CapsExtId3">&lt;title&gt;</bpt><ept id="6CapsExtId3">&lt;/title&gt;</ept><ept id="6CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">This article shows how to move your telemetry data from <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Visual Studio Application Insights[start]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> into an Azure SQL database by using <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Continuous Export[export]<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept> and <bpt id="6CapsExtId1">&lt;link&gt;</bpt><bpt id="6CapsExtId2">&lt;linkText&gt;</bpt>Azure Stream Analytics<ept id="6CapsExtId2">&lt;/linkText&gt;</ept><bpt id="6CapsExtId3">&lt;title&gt;</bpt><ept id="6CapsExtId3">&lt;/title&gt;</ept><ept id="6CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>Continuous export moves your telemetry data into Azure Storage in JSON format.</source>
+            <target state="new">Continuous export moves your telemetry data into Azure Storage in JSON format.</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>We'll parse the JSON objects using Azure Stream Analytics and create rows in a database table.</source>
+            <target state="new">We'll parse the JSON objects using Azure Stream Analytics and create rows in a database table.</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>(More generally, Continuous Export is the way to do your own analysis of the telemetry your apps send to Application Insights.</source>
+            <target state="new">(More generally, Continuous Export is the way to do your own analysis of the telemetry your apps send to Application Insights.</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>You could adapt this code sample to do other things with the exported telemetry, such as aggregation of data and publishing the data to the PowerBI visualization suite.)</source>
+            <target state="new">You could adapt this code sample to do other things with the exported telemetry, such as aggregation of data and publishing the data to the PowerBI visualization suite.)</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source>We'll start with the assumption that you already have the app you want to monitor.</source>
+            <target state="new">We'll start with the assumption that you already have the app you want to monitor.</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source>In this example, we will be using the page view data, but the same pattern can easily be extended to other data types such as custom events and exceptions.</source>
+            <target state="new">In this example, we will be using the page view data, but the same pattern can easily be extended to other data types such as custom events and exceptions.</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>Add Application Insights SDK</source>
+            <target state="new">Add Application Insights SDK</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source>To monitor your application, you <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>add an Application Insights SDK[start]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> to your application.</source>
+            <target state="new">To monitor your application, you <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>add an Application Insights SDK[start]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> to your application.</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>There are different SDKs and helper tools for different platforms, IDEs and languages.</source>
+            <target state="new">There are different SDKs and helper tools for different platforms, IDEs and languages.</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source>You can monitor web pages, Java or ASP.NET web servers, and mobile devices of several kinds.</source>
+            <target state="new">You can monitor web pages, Java or ASP.NET web servers, and mobile devices of several kinds.</target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>All the SDKs send telemetry to the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Application Insights portal[portal]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, where you can use our powerful analysis and diagnostic tools, and export the data to storage.</source>
+            <target state="new">All the SDKs send telemetry to the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Application Insights portal[portal]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, where you can use our powerful analysis and diagnostic tools, and export the data to storage.</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source>To get started:</source>
+            <target state="new">To get started:</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>Get an <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>account in Microsoft Azure<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">Get an <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>account in Microsoft Azure<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>In the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure portal[portal]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, add a new Application Insights resource for your app:</source>
+            <target state="new">In the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure portal[portal]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, add a new Application Insights resource for your app:</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Choose New, Developer Services, Application Insights, and choose the type of application<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Choose New, Developer Services, Application Insights, and choose the type of application<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source>(Your app type and subscription might be different.)</source>
+            <target state="new">(Your app type and subscription might be different.)</target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source>Open Quick Start to find how to set up the SDK for your app type.</source>
+            <target state="new">Open Quick Start to find how to set up the SDK for your app type.</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Choose Quick Start and follow instructions<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Choose Quick Start and follow instructions<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>If your app type isn't listed, take a look at the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Getting Started[start]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> page.</source>
+            <target state="new">If your app type isn't listed, take a look at the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Getting Started[start]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> page.</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source>In this example, we're monitoring a web app, so we can use the Azure tools in Visual Studio to install the SDK.</source>
+            <target state="new">In this example, we're monitoring a web app, so we can use the Azure tools in Visual Studio to install the SDK.</target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>Tell it the name of your Application Insights resource:</source>
+            <target state="new">Tell it the name of your Application Insights resource:</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>![In Visual Studio Solution Explorer, right-click your project and choose Add Application Insights.</source>
+            <target state="new">![In Visual Studio Solution Explorer, right-click your project and choose Add Application Insights.</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source>At Send telemetry to, choose to create a new resource, or use an existing one.](./media/app-insights-code-sample-export-sql-stream-analytics/appinsights-d012-addbrown.png)</source>
+            <target state="new">At Send telemetry to, choose to create a new resource, or use an existing one.](./media/app-insights-code-sample-export-sql-stream-analytics/appinsights-d012-addbrown.png)</target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source>Publish your app, and watch telemetry data appearing in your Application Insights resource.</source>
+            <target state="new">Publish your app, and watch telemetry data appearing in your Application Insights resource.</target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source>Create storage in Azure</source>
+            <target state="new">Create storage in Azure</target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source>Continuous export always outputs data to an Azure Storage account, so you need to create the storage first.</source>
+            <target state="new">Continuous export always outputs data to an Azure Storage account, so you need to create the storage first.</target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source>Create a storage account in your subscription in the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure portal[portal]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">Create a storage account in your subscription in the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure portal[portal]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>In Azure portal, choose New, Data, Storage<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>In Azure portal, choose New, Data, Storage<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source>Create a container</source>
+            <target state="new">Create a container</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>In the new storage, select Containers and then Add<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>In the new storage, select Containers and then Add<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source>Copy the storage access key</source>
+            <target state="new">Copy the storage access key</target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source>You'll need it soon to set up the input to the stream analytics service.</source>
+            <target state="new">You'll need it soon to set up the input to the stream analytics service.</target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>In the storage, open Settings, Keys, and take a copy of the Primary Access Key<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>In the storage, open Settings, Keys, and take a copy of the Primary Access Key<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source>Start continuous export to Azure storage</source>
+            <target state="new">Start continuous export to Azure storage</target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source>In the Azure portal, browse to the Application Insights resource you created for your application.</source>
+            <target state="new">In the Azure portal, browse to the Application Insights resource you created for your application.</target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Choose Browse, Application Insights, your application<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Choose Browse, Application Insights, your application<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source>Create a continuous export.</source>
+            <target state="new">Create a continuous export.</target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Choose Settings, Continuous Export, Add<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Choose Settings, Continuous Export, Add<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source>Select the storage account you created earlier:</source>
+            <target state="new">Select the storage account you created earlier:</target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Set the export destination<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Set the export destination<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source>Set the event types you want to see:</source>
+            <target state="new">Set the event types you want to see:</target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Choose event types<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Choose event types<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="147" xml:space="preserve">
+            <source>Let some data accumulate.</source>
+            <target state="new">Let some data accumulate.</target>
+          </trans-unit>
+          <trans-unit id="148" xml:space="preserve">
+            <source>Sit back and let people use your application for a while.</source>
+            <target state="new">Sit back and let people use your application for a while.</target>
+          </trans-unit>
+          <trans-unit id="149" xml:space="preserve">
+            <source>Telemetry will come in and you'll see statistical charts in <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>metric explorer<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> and individual events in <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>diagnostic search<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">Telemetry will come in and you'll see statistical charts in <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>metric explorer<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> and individual events in <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>diagnostic search<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="150" xml:space="preserve">
+            <source>And also, the data will export to your storage.</source>
+            <target state="new">And also, the data will export to your storage.</target>
+          </trans-unit>
+          <trans-unit id="151" xml:space="preserve">
+            <source>Inspect the exported data.</source>
+            <target state="new">Inspect the exported data.</target>
+          </trans-unit>
+          <trans-unit id="152" xml:space="preserve">
+            <source>In Visual Studio, choose <bpt id="2">&lt;strong&gt;</bpt>View / Cloud Explorer<ept id="2">&lt;/strong&gt;</ept>, and open Azure / Storage.</source>
+            <target state="new">In Visual Studio, choose <bpt id="2">&lt;strong&gt;</bpt>View / Cloud Explorer<ept id="2">&lt;/strong&gt;</ept>, and open Azure / Storage.</target>
+          </trans-unit>
+          <trans-unit id="153" xml:space="preserve">
+            <source>(If you don't have this menu option, you need to install the Azure SDK: Open the New Project dialog and open Visual C# / Cloud / Get Microsoft Azure SDK for .NET.)</source>
+            <target state="new">(If you don't have this menu option, you need to install the Azure SDK: Open the New Project dialog and open Visual C# / Cloud / Get Microsoft Azure SDK for .NET.)</target>
+          </trans-unit>
+          <trans-unit id="154" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>In Visual Studio, open Server Browser, Azure, Storage<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>In Visual Studio, open Server Browser, Azure, Storage<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="155" xml:space="preserve">
+            <source>Make a note of the common part of the path name, which is derived from the application name and instrumentation key.</source>
+            <target state="new">Make a note of the common part of the path name, which is derived from the application name and instrumentation key.</target>
+          </trans-unit>
+          <trans-unit id="156" xml:space="preserve">
+            <source>The events are written to blob files in JSON format.</source>
+            <target state="new">The events are written to blob files in JSON format.</target>
+          </trans-unit>
+          <trans-unit id="157" xml:space="preserve">
+            <source>Each file may contain one or more events.</source>
+            <target state="new">Each file may contain one or more events.</target>
+          </trans-unit>
+          <trans-unit id="158" xml:space="preserve">
+            <source>So we'd like to read the event data and filter out the fields we want.</source>
+            <target state="new">So we'd like to read the event data and filter out the fields we want.</target>
+          </trans-unit>
+          <trans-unit id="159" xml:space="preserve">
+            <source>There are all kinds of things we could do with the data, but our plan today is to use Stream Analytics to move the data to a SQL database.</source>
+            <target state="new">There are all kinds of things we could do with the data, but our plan today is to use Stream Analytics to move the data to a SQL database.</target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
+            <source>That will make it easy to run lots of interesting queries.</source>
+            <target state="new">That will make it easy to run lots of interesting queries.</target>
+          </trans-unit>
+          <trans-unit id="161" xml:space="preserve">
+            <source>Create an Azure SQL Database</source>
+            <target state="new">Create an Azure SQL Database</target>
+          </trans-unit>
+          <trans-unit id="162" xml:space="preserve">
+            <source>Once again starting from your subscription in <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure portal[portal]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, create the database (and a new server, unless you've already got one) to which you'll write the data.</source>
+            <target state="new">Once again starting from your subscription in <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure portal[portal]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, create the database (and a new server, unless you've already got one) to which you'll write the data.</target>
+          </trans-unit>
+          <trans-unit id="163" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>New, Data, SQL<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>New, Data, SQL<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="164" xml:space="preserve">
+            <source>Make sure that the database server allows access to Azure services:</source>
+            <target state="new">Make sure that the database server allows access to Azure services:</target>
+          </trans-unit>
+          <trans-unit id="165" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Browse, Servers, your server, Settings, Firewall, Allow Access to Azure<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Browse, Servers, your server, Settings, Firewall, Allow Access to Azure<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="166" xml:space="preserve">
+            <source>Create a table in Azure SQL DB</source>
+            <target state="new">Create a table in Azure SQL DB</target>
+          </trans-unit>
+          <trans-unit id="167" xml:space="preserve">
+            <source>Connect to the database created in the previous section with your preferred management tool.</source>
+            <target state="new">Connect to the database created in the previous section with your preferred management tool.</target>
+          </trans-unit>
+          <trans-unit id="168" xml:space="preserve">
+            <source>In this walkthrough, we will be using <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>SQL Server Management Tools<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> (SSMS).</source>
+            <target state="new">In this walkthrough, we will be using <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>SQL Server Management Tools<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> (SSMS).</target>
+          </trans-unit>
+          <trans-unit id="169" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="170" xml:space="preserve">
+            <source>Create a new query, and execute the following T-SQL:</source>
+            <target state="new">Create a new query, and execute the following T-SQL:</target>
+          </trans-unit>
+          <trans-unit id="171" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="172" xml:space="preserve">
+            <source>In this sample, we are using data from page views.</source>
+            <target state="new">In this sample, we are using data from page views.</target>
+          </trans-unit>
+          <trans-unit id="173" xml:space="preserve">
+            <source>To see the other data available, inspect your JSON output, and see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>export data model<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">To see the other data available, inspect your JSON output, and see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>export data model<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="174" xml:space="preserve">
+            <source>Create an Azure Stream Analytics instance</source>
+            <target state="new">Create an Azure Stream Analytics instance</target>
+          </trans-unit>
+          <trans-unit id="175" xml:space="preserve">
+            <source>From the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Classic Azure Portal<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, select the Azure Stream Analytics service, and create a new Stream Analytics job:</source>
+            <target state="new">From the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Classic Azure Portal<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, select the Azure Stream Analytics service, and create a new Stream Analytics job:</target>
+          </trans-unit>
+          <trans-unit id="176" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="177" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="178" xml:space="preserve">
+            <source>When the new job is created, expand its details:</source>
+            <target state="new">When the new job is created, expand its details:</target>
+          </trans-unit>
+          <trans-unit id="179" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="180" xml:space="preserve">
+            <source>Set blob location</source>
+            <target state="new">Set blob location</target>
+          </trans-unit>
+          <trans-unit id="181" xml:space="preserve">
+            <source>Set it to take input from your Continuous Export blob:</source>
+            <target state="new">Set it to take input from your Continuous Export blob:</target>
+          </trans-unit>
+          <trans-unit id="182" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="183" xml:space="preserve">
+            <source>Now you'll need the Primary Access Key from your Storage Account, which you noted earlier.</source>
+            <target state="new">Now you'll need the Primary Access Key from your Storage Account, which you noted earlier.</target>
+          </trans-unit>
+          <trans-unit id="184" xml:space="preserve">
+            <source>Set this as the Storage Account Key.</source>
+            <target state="new">Set this as the Storage Account Key.</target>
+          </trans-unit>
+          <trans-unit id="185" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="186" xml:space="preserve">
+            <source>Set path prefix pattern</source>
+            <target state="new">Set path prefix pattern</target>
+          </trans-unit>
+          <trans-unit id="187" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="188" xml:space="preserve">
+            <source>Be sure to set the Date Format to YYYY-MM-DD (with dashes).</source>
+            <target state="new">Be sure to set the Date Format to YYYY-MM-DD (with dashes).</target>
+          </trans-unit>
+          <trans-unit id="189" xml:space="preserve">
+            <source>The Path Prefix Pattern specifies how Stream Analytics finds the input files in the storage.</source>
+            <target state="new">The Path Prefix Pattern specifies how Stream Analytics finds the input files in the storage.</target>
+          </trans-unit>
+          <trans-unit id="190" xml:space="preserve">
+            <source>You need to set it to correspond to how Continuous Export stores the data.</source>
+            <target state="new">You need to set it to correspond to how Continuous Export stores the data.</target>
+          </trans-unit>
+          <trans-unit id="191" xml:space="preserve">
+            <source>Set it like this:</source>
+            <target state="new">Set it like this:</target>
+          </trans-unit>
+          <trans-unit id="192" xml:space="preserve">
+            <source>In this example:</source>
+            <target state="new">In this example:</target>
+          </trans-unit>
+          <trans-unit id="193" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>webapplication27<ept id="1">&lt;/code&gt;</ept> is the name of the Application Insights resource, <bpt id="3">&lt;strong&gt;</bpt>all in lower case<ept id="3">&lt;/strong&gt;</ept>.</source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>webapplication27<ept id="1">&lt;/code&gt;</ept> is the name of the Application Insights resource, <bpt id="3">&lt;strong&gt;</bpt>all in lower case<ept id="3">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="194" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>1234...<ept id="1">&lt;/code&gt;</ept> is the instrumentation key of the Application Insights resource <bpt id="3">&lt;strong&gt;</bpt>with dashes removed<ept id="3">&lt;/strong&gt;</ept>.</source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>1234...<ept id="1">&lt;/code&gt;</ept> is the instrumentation key of the Application Insights resource <bpt id="3">&lt;strong&gt;</bpt>with dashes removed<ept id="3">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="195" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>PageViews<ept id="1">&lt;/code&gt;</ept> is the type of data we want to analyze.</source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>PageViews<ept id="1">&lt;/code&gt;</ept> is the type of data we want to analyze.</target>
+          </trans-unit>
+          <trans-unit id="196" xml:space="preserve">
+            <source>The available types depend on the filter you set in Continuous Export.</source>
+            <target state="new">The available types depend on the filter you set in Continuous Export.</target>
+          </trans-unit>
+          <trans-unit id="197" xml:space="preserve">
+            <source>Examine the exported data to see the other available types, and see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>export data model<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">Examine the exported data to see the other available types, and see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>export data model<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="198" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>/{date}/{time}<ept id="1">&lt;/code&gt;</ept> is a pattern written literally.</source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>/{date}/{time}<ept id="1">&lt;/code&gt;</ept> is a pattern written literally.</target>
+          </trans-unit>
+          <trans-unit id="199" xml:space="preserve">
+            <source>To get the name and iKey of your Application Insights resource, open Essentials on its overview page, or open Settings.</source>
+            <target state="new">To get the name and iKey of your Application Insights resource, open Essentials on its overview page, or open Settings.</target>
+          </trans-unit>
+          <trans-unit id="200" xml:space="preserve">
+            <source>Finish initial setup</source>
+            <target state="new">Finish initial setup</target>
+          </trans-unit>
+          <trans-unit id="201" xml:space="preserve">
+            <source>Confirm the serialization format:</source>
+            <target state="new">Confirm the serialization format:</target>
+          </trans-unit>
+          <trans-unit id="202" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Confirm and close wizard<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Confirm and close wizard<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="203" xml:space="preserve">
+            <source>Close the wizard and wait for the setup to complete.</source>
+            <target state="new">Close the wizard and wait for the setup to complete.</target>
+          </trans-unit>
+          <trans-unit id="204" xml:space="preserve">
+            <source>Set query</source>
+            <target state="new">Set query</target>
+          </trans-unit>
+          <trans-unit id="205" xml:space="preserve">
+            <source>Open the query section:</source>
+            <target state="new">Open the query section:</target>
+          </trans-unit>
+          <trans-unit id="206" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>In stream analytics, select Query<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>In stream analytics, select Query<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="207" xml:space="preserve">
+            <source>Replace the default query with:</source>
+            <target state="new">Replace the default query with:</target>
+          </trans-unit>
+          <trans-unit id="208" xml:space="preserve">
+            <source>Notice that the first few properties are specific to page view data.</source>
+            <target state="new">Notice that the first few properties are specific to page view data.</target>
+          </trans-unit>
+          <trans-unit id="209" xml:space="preserve">
+            <source>Exports of other telemetry types will have different properties.</source>
+            <target state="new">Exports of other telemetry types will have different properties.</target>
+          </trans-unit>
+          <trans-unit id="210" xml:space="preserve">
+            <source>See the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>detailed data model reference for the property types and values.<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new">See the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>detailed data model reference for the property types and values.<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="211" xml:space="preserve">
+            <source>Set up output to database</source>
+            <target state="new">Set up output to database</target>
+          </trans-unit>
+          <trans-unit id="212" xml:space="preserve">
+            <source>Select SQL as the output.</source>
+            <target state="new">Select SQL as the output.</target>
+          </trans-unit>
+          <trans-unit id="213" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>In stream analytics, select Outputs<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>In stream analytics, select Outputs<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="214" xml:space="preserve">
+            <source>Specify the SQL database.</source>
+            <target state="new">Specify the SQL database.</target>
+          </trans-unit>
+          <trans-unit id="215" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Fill in the details of your database<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Fill in the details of your database<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="216" xml:space="preserve">
+            <source>Close the wizard and wait for a notification that the output has been set up.</source>
+            <target state="new">Close the wizard and wait for a notification that the output has been set up.</target>
+          </trans-unit>
+          <trans-unit id="217" xml:space="preserve">
+            <source>Start processing</source>
+            <target state="new">Start processing</target>
+          </trans-unit>
+          <trans-unit id="218" xml:space="preserve">
+            <source>Start the job from the action bar:</source>
+            <target state="new">Start the job from the action bar:</target>
+          </trans-unit>
+          <trans-unit id="219" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>In stream analytics, click  Start<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>In stream analytics, click  Start<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="220" xml:space="preserve">
+            <source>You can choose whether to start processing the data starting from now, or to start with earlier data.</source>
+            <target state="new">You can choose whether to start processing the data starting from now, or to start with earlier data.</target>
+          </trans-unit>
+          <trans-unit id="221" xml:space="preserve">
+            <source>The latter is useful if you have had Continuous Export already running for a while.</source>
+            <target state="new">The latter is useful if you have had Continuous Export already running for a while.</target>
+          </trans-unit>
+          <trans-unit id="222" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>In stream analytics, click  Start<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>In stream analytics, click  Start<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="223" xml:space="preserve">
+            <source>After a few minutes, go back to SQL Server Management Tools and watch the data flowing in.</source>
+            <target state="new">After a few minutes, go back to SQL Server Management Tools and watch the data flowing in.</target>
+          </trans-unit>
+          <trans-unit id="224" xml:space="preserve">
+            <source>For example, use a query like this:</source>
+            <target state="new">For example, use a query like this:</target>
+          </trans-unit>
+          <trans-unit id="225" xml:space="preserve">
+            <source>Related articles</source>
+            <target state="new">Related articles</target>
+          </trans-unit>
+          <trans-unit id="226" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Export to SQL using a worker role<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Export to SQL using a worker role<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="227" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Detailed data model reference for the property types and values.<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Detailed data model reference for the property types and values.<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="228" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Continuous Export in Application Insights<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Continuous Export in Application Insights<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="229" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Application Insights<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Application Insights<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>
