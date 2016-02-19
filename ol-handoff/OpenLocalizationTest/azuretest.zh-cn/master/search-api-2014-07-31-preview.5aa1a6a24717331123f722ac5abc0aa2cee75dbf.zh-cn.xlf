@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-us" target-language="zh-cn" original="2/18/2016 5:24:52 PM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+  <file datatype="xml" source-language="en-us" target-language="zh-cn" original="2/19/2016 5:14:58 PM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
     <header>
       <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">10c9e5024a96964788c0996666c9446203dcc594</xliffext:olfilehash>
       <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
@@ -1765,830 +1765,834 @@
             <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Note<ept id="1">&lt;/strong&gt;</ept>: The results can sometimes be surprising when querying over <bpt id="3">&lt;code&gt;</bpt>searchable<ept id="3">&lt;/code&gt;</ept> fields.</target>
           </trans-unit>
           <trans-unit id="540" xml:space="preserve">
-            <source>The tokenizer includes logic to handle cases common to English text like apostrophes, commas in numbers, etc. For example, <bpt id="2">&lt;code&gt;</bpt>search=123,456<ept id="2">&lt;/code&gt;</ept> will match a single term 123,456 rather than the individual terms 123 and 456, since commas are used as thousand-separators for large numbers in English.</source>
-            <target state="new">The tokenizer includes logic to handle cases common to English text like apostrophes, commas in numbers, etc. For example, <bpt id="2">&lt;code&gt;</bpt>search=123,456<ept id="2">&lt;/code&gt;</ept> will match a single term 123,456 rather than the individual terms 123 and 456, since commas are used as thousand-separators for large numbers in English.</target>
+            <source>The tokenizer includes logic to handle cases common to English text like apostrophes, commas in numbers, etc.</source>
+            <target state="new">The tokenizer includes logic to handle cases common to English text like apostrophes, commas in numbers, etc.</target>
           </trans-unit>
           <trans-unit id="541" xml:space="preserve">
+            <source>For example, <bpt id="2">&lt;code&gt;</bpt>search=123,456<ept id="2">&lt;/code&gt;</ept> will match a single term 123,456 rather than the individual terms 123 and 456, since commas are used as thousand-separators for large numbers in English.</source>
+            <target state="new">For example, <bpt id="2">&lt;code&gt;</bpt>search=123,456<ept id="2">&lt;/code&gt;</ept> will match a single term 123,456 rather than the individual terms 123 and 456, since commas are used as thousand-separators for large numbers in English.</target>
+          </trans-unit>
+          <trans-unit id="542" xml:space="preserve">
             <source>For this reason, we recommend using white space rather than punctuation to separate terms in the <bpt id="2">&lt;code&gt;</bpt>search<ept id="2">&lt;/code&gt;</ept> parameter.</source>
             <target state="new">For this reason, we recommend using white space rather than punctuation to separate terms in the <bpt id="2">&lt;code&gt;</bpt>search<ept id="2">&lt;/code&gt;</ept> parameter.</target>
           </trans-unit>
-          <trans-unit id="542" xml:space="preserve">
+          <trans-unit id="543" xml:space="preserve">
             <source><bpt id="1">&lt;code&gt;</bpt>searchMode=any|all<ept id="1">&lt;/code&gt;</ept> (optional, defaults to <bpt id="3">&lt;code&gt;</bpt>any<ept id="3">&lt;/code&gt;</ept>) - whether any or all of the search terms must be matched in order to count the document as a match.</source>
             <target state="new"><bpt id="1">&lt;code&gt;</bpt>searchMode=any|all<ept id="1">&lt;/code&gt;</ept> (optional, defaults to <bpt id="3">&lt;code&gt;</bpt>any<ept id="3">&lt;/code&gt;</ept>) - whether any or all of the search terms must be matched in order to count the document as a match.</target>
           </trans-unit>
-          <trans-unit id="543" xml:space="preserve">
+          <trans-unit id="544" xml:space="preserve">
             <source><bpt id="1">&lt;code&gt;</bpt>searchFields=[string]<ept id="1">&lt;/code&gt;</ept> (optional) - the list of comma-separated field names to search for the specified text.</source>
             <target state="new"><bpt id="1">&lt;code&gt;</bpt>searchFields=[string]<ept id="1">&lt;/code&gt;</ept> (optional) - the list of comma-separated field names to search for the specified text.</target>
           </trans-unit>
-          <trans-unit id="544" xml:space="preserve">
+          <trans-unit id="545" xml:space="preserve">
             <source>Target fields must be marked as <bpt id="2">&lt;code&gt;</bpt>searchable<ept id="2">&lt;/code&gt;</ept>.</source>
             <target state="new">Target fields must be marked as <bpt id="2">&lt;code&gt;</bpt>searchable<ept id="2">&lt;/code&gt;</ept>.</target>
           </trans-unit>
-          <trans-unit id="545" xml:space="preserve">
+          <trans-unit id="546" xml:space="preserve">
             <source><bpt id="1">&lt;code&gt;</bpt>$skip=#<ept id="1">&lt;/code&gt;</ept> (optional) - the # of search results to skip; Cannot be greater than 100,000.</source>
             <target state="new"><bpt id="1">&lt;code&gt;</bpt>$skip=#<ept id="1">&lt;/code&gt;</ept> (optional) - the # of search results to skip; Cannot be greater than 100,000.</target>
           </trans-unit>
-          <trans-unit id="546" xml:space="preserve">
+          <trans-unit id="547" xml:space="preserve">
             <source>If you need to scan documents in sequence but cannot use <bpt id="2">&lt;code&gt;</bpt>$skip<ept id="2">&lt;/code&gt;</ept> due to this limitation, consider using <bpt id="4">&lt;code&gt;</bpt>$orderby<ept id="4">&lt;/code&gt;</ept> on a totally-ordered key and <bpt id="6">&lt;code&gt;</bpt>$filter<ept id="6">&lt;/code&gt;</ept> with a range query instead.</source>
             <target state="new">If you need to scan documents in sequence but cannot use <bpt id="2">&lt;code&gt;</bpt>$skip<ept id="2">&lt;/code&gt;</ept> due to this limitation, consider using <bpt id="4">&lt;code&gt;</bpt>$orderby<ept id="4">&lt;/code&gt;</ept> on a totally-ordered key and <bpt id="6">&lt;code&gt;</bpt>$filter<ept id="6">&lt;/code&gt;</ept> with a range query instead.</target>
           </trans-unit>
-          <trans-unit id="547" xml:space="preserve">
+          <trans-unit id="548" xml:space="preserve">
             <source><bpt id="1">&lt;code&gt;</bpt>$top=#<ept id="1">&lt;/code&gt;</ept> (optional) - the # of search results to retrieve.</source>
             <target state="new"><bpt id="1">&lt;code&gt;</bpt>$top=#<ept id="1">&lt;/code&gt;</ept> (optional) - the # of search results to retrieve.</target>
           </trans-unit>
-          <trans-unit id="548" xml:space="preserve">
+          <trans-unit id="549" xml:space="preserve">
             <source>This defaults to 50.</source>
             <target state="new">This defaults to 50.</target>
           </trans-unit>
-          <trans-unit id="549" xml:space="preserve">
+          <trans-unit id="550" xml:space="preserve">
             <source>If you specify a value greater than 1000 and there are more than 1000 results, only the first 1000 results will be returned, along with a link to the next page of results (see <bpt id="2">&lt;code&gt;</bpt>@odata.nextLink<ept id="2">&lt;/code&gt;</ept> in <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>the example below<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>.</source>
             <target state="new">If you specify a value greater than 1000 and there are more than 1000 results, only the first 1000 results will be returned, along with a link to the next page of results (see <bpt id="2">&lt;code&gt;</bpt>@odata.nextLink<ept id="2">&lt;/code&gt;</ept> in <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>the example below<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>.</target>
           </trans-unit>
-          <trans-unit id="550" xml:space="preserve">
+          <trans-unit id="551" xml:space="preserve">
             <source><bpt id="1">&lt;code&gt;</bpt>$count=true|false<ept id="1">&lt;/code&gt;</ept> (optional, defaults to <bpt id="3">&lt;code&gt;</bpt>false<ept id="3">&lt;/code&gt;</ept>) - whether to fetch the total count of results.</source>
             <target state="new"><bpt id="1">&lt;code&gt;</bpt>$count=true|false<ept id="1">&lt;/code&gt;</ept> (optional, defaults to <bpt id="3">&lt;code&gt;</bpt>false<ept id="3">&lt;/code&gt;</ept>) - whether to fetch the total count of results.</target>
           </trans-unit>
-          <trans-unit id="551" xml:space="preserve">
+          <trans-unit id="552" xml:space="preserve">
             <source>Setting this value to <bpt id="2">&lt;code&gt;</bpt>true<ept id="2">&lt;/code&gt;</ept> may have a performance impact.</source>
             <target state="new">Setting this value to <bpt id="2">&lt;code&gt;</bpt>true<ept id="2">&lt;/code&gt;</ept> may have a performance impact.</target>
           </trans-unit>
-          <trans-unit id="552" xml:space="preserve">
+          <trans-unit id="553" xml:space="preserve">
             <source>Note that the count returned is an approximation.</source>
             <target state="new">Note that the count returned is an approximation.</target>
           </trans-unit>
-          <trans-unit id="553" xml:space="preserve">
+          <trans-unit id="554" xml:space="preserve">
             <source><bpt id="1">&lt;code&gt;</bpt>$orderby=[string]<ept id="1">&lt;/code&gt;</ept> (optional) - a list of comma-separated expressions to sort the results by.</source>
             <target state="new"><bpt id="1">&lt;code&gt;</bpt>$orderby=[string]<ept id="1">&lt;/code&gt;</ept> (optional) - a list of comma-separated expressions to sort the results by.</target>
           </trans-unit>
-          <trans-unit id="554" xml:space="preserve">
+          <trans-unit id="555" xml:space="preserve">
             <source>Each expression can be either a field name or a call to the <bpt id="2">&lt;code&gt;</bpt>geo.distance()<ept id="2">&lt;/code&gt;</ept> function.</source>
             <target state="new">Each expression can be either a field name or a call to the <bpt id="2">&lt;code&gt;</bpt>geo.distance()<ept id="2">&lt;/code&gt;</ept> function.</target>
           </trans-unit>
-          <trans-unit id="555" xml:space="preserve">
+          <trans-unit id="556" xml:space="preserve">
             <source>Each expression can be followed by <bpt id="2">&lt;code&gt;</bpt>asc<ept id="2">&lt;/code&gt;</ept> to indicated ascending, and <bpt id="4">&lt;code&gt;</bpt>desc<ept id="4">&lt;/code&gt;</ept> to indicate descending.</source>
             <target state="new">Each expression can be followed by <bpt id="2">&lt;code&gt;</bpt>asc<ept id="2">&lt;/code&gt;</ept> to indicated ascending, and <bpt id="4">&lt;code&gt;</bpt>desc<ept id="4">&lt;/code&gt;</ept> to indicate descending.</target>
           </trans-unit>
-          <trans-unit id="556" xml:space="preserve">
+          <trans-unit id="557" xml:space="preserve">
             <source>The default is ascending order.</source>
             <target state="new">The default is ascending order.</target>
           </trans-unit>
-          <trans-unit id="557" xml:space="preserve">
+          <trans-unit id="558" xml:space="preserve">
             <source>Ties will be broken by the match scores of documents.</source>
             <target state="new">Ties will be broken by the match scores of documents.</target>
           </trans-unit>
-          <trans-unit id="558" xml:space="preserve">
+          <trans-unit id="559" xml:space="preserve">
             <source>If no <bpt id="2">&lt;code&gt;</bpt>$orderby<ept id="2">&lt;/code&gt;</ept> is specified, the default sort order is descending by document match score.</source>
             <target state="new">If no <bpt id="2">&lt;code&gt;</bpt>$orderby<ept id="2">&lt;/code&gt;</ept> is specified, the default sort order is descending by document match score.</target>
           </trans-unit>
-          <trans-unit id="559" xml:space="preserve">
+          <trans-unit id="560" xml:space="preserve">
             <source>There is a limit of 32 clauses for <bpt id="2">&lt;code&gt;</bpt>$orderby<ept id="2">&lt;/code&gt;</ept>.</source>
             <target state="new">There is a limit of 32 clauses for <bpt id="2">&lt;code&gt;</bpt>$orderby<ept id="2">&lt;/code&gt;</ept>.</target>
           </trans-unit>
-          <trans-unit id="560" xml:space="preserve">
+          <trans-unit id="561" xml:space="preserve">
             <source><bpt id="1">&lt;code&gt;</bpt>$select=[string]<ept id="1">&lt;/code&gt;</ept> (optional) - a list of comma-separated fields to retrieve.</source>
             <target state="new"><bpt id="1">&lt;code&gt;</bpt>$select=[string]<ept id="1">&lt;/code&gt;</ept> (optional) - a list of comma-separated fields to retrieve.</target>
           </trans-unit>
-          <trans-unit id="561" xml:space="preserve">
+          <trans-unit id="562" xml:space="preserve">
             <source>If unspecified, all fields marked as retrievable in the schema are included.</source>
             <target state="new">If unspecified, all fields marked as retrievable in the schema are included.</target>
           </trans-unit>
-          <trans-unit id="562" xml:space="preserve">
+          <trans-unit id="563" xml:space="preserve">
             <source>You can also explicitly request all fields by setting this parameter to <bpt id="2">&lt;code&gt;</bpt>*<ept id="2">&lt;/code&gt;</ept>.</source>
             <target state="new">You can also explicitly request all fields by setting this parameter to <bpt id="2">&lt;code&gt;</bpt>*<ept id="2">&lt;/code&gt;</ept>.</target>
           </trans-unit>
-          <trans-unit id="563" xml:space="preserve">
+          <trans-unit id="564" xml:space="preserve">
             <source><bpt id="1">&lt;code&gt;</bpt>facet=[string]<ept id="1">&lt;/code&gt;</ept> (zero or more) - a field to facet by.</source>
             <target state="new"><bpt id="1">&lt;code&gt;</bpt>facet=[string]<ept id="1">&lt;/code&gt;</ept> (zero or more) - a field to facet by.</target>
           </trans-unit>
-          <trans-unit id="564" xml:space="preserve">
+          <trans-unit id="565" xml:space="preserve">
             <source>Optionally the string may contain parameters to customize the faceting expressed as comma-separated <bpt id="2">&lt;code&gt;</bpt>name:value<ept id="2">&lt;/code&gt;</ept> pairs.</source>
             <target state="new">Optionally the string may contain parameters to customize the faceting expressed as comma-separated <bpt id="2">&lt;code&gt;</bpt>name:value<ept id="2">&lt;/code&gt;</ept> pairs.</target>
           </trans-unit>
-          <trans-unit id="565" xml:space="preserve">
+          <trans-unit id="566" xml:space="preserve">
             <source>Valid parameters are:</source>
             <target state="new">Valid parameters are:</target>
           </trans-unit>
-          <trans-unit id="566" xml:space="preserve">
+          <trans-unit id="567" xml:space="preserve">
             <source><bpt id="1">&lt;code&gt;</bpt>count<ept id="1">&lt;/code&gt;</ept> (max # of facet terms; default is 10).</source>
             <target state="new"><bpt id="1">&lt;code&gt;</bpt>count<ept id="1">&lt;/code&gt;</ept> (max # of facet terms; default is 10).</target>
           </trans-unit>
-          <trans-unit id="567" xml:space="preserve">
+          <trans-unit id="568" xml:space="preserve">
             <source>There is no maximum, but higher values incur a corresponding performance penalty, especially if the faceted field contains a large number of unique terms.</source>
             <target state="new">There is no maximum, but higher values incur a corresponding performance penalty, especially if the faceted field contains a large number of unique terms.</target>
           </trans-unit>
-          <trans-unit id="568" xml:space="preserve">
+          <trans-unit id="569" xml:space="preserve">
             <source>For example: <bpt id="2">&lt;code&gt;</bpt>facet=category,count:5<ept id="2">&lt;/code&gt;</ept> gets the top five categories in facet results.</source>
             <target state="new">For example: <bpt id="2">&lt;code&gt;</bpt>facet=category,count:5<ept id="2">&lt;/code&gt;</ept> gets the top five categories in facet results.</target>
           </trans-unit>
-          <trans-unit id="569" xml:space="preserve">
+          <trans-unit id="570" xml:space="preserve">
             <source><bpt id="1">&lt;strong&gt;</bpt>Note<ept id="1">&lt;/strong&gt;</ept>: If the <bpt id="3">&lt;code&gt;</bpt>count<ept id="3">&lt;/code&gt;</ept> parameter is less than the number of unique terms, the results may not be accurate.</source>
             <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Note<ept id="1">&lt;/strong&gt;</ept>: If the <bpt id="3">&lt;code&gt;</bpt>count<ept id="3">&lt;/code&gt;</ept> parameter is less than the number of unique terms, the results may not be accurate.</target>
           </trans-unit>
-          <trans-unit id="570" xml:space="preserve">
+          <trans-unit id="571" xml:space="preserve">
             <source>This is due to the way faceting queries are distributed across shards.</source>
             <target state="new">This is due to the way faceting queries are distributed across shards.</target>
           </trans-unit>
-          <trans-unit id="571" xml:space="preserve">
+          <trans-unit id="572" xml:space="preserve">
             <source>Increasing <bpt id="2">&lt;code&gt;</bpt>count<ept id="2">&lt;/code&gt;</ept> generally increases the accuracy of the term counts, but at a performance cost.</source>
             <target state="new">Increasing <bpt id="2">&lt;code&gt;</bpt>count<ept id="2">&lt;/code&gt;</ept> generally increases the accuracy of the term counts, but at a performance cost.</target>
           </trans-unit>
-          <trans-unit id="572" xml:space="preserve">
+          <trans-unit id="573" xml:space="preserve">
             <source><bpt id="1">&lt;code&gt;</bpt>sort<ept id="1">&lt;/code&gt;</ept> (one of <bpt id="3">&lt;code&gt;</bpt>count<ept id="3">&lt;/code&gt;</ept> to sort <bpt id="5">&lt;em&gt;</bpt>descending<ept id="5">&lt;/em&gt;</ept> by count, <bpt id="7">&lt;code&gt;</bpt>-count<ept id="7">&lt;/code&gt;</ept> to sort <bpt id="9">&lt;em&gt;</bpt>ascending<ept id="9">&lt;/em&gt;</ept> by count, <bpt id="11">&lt;code&gt;</bpt>value<ept id="11">&lt;/code&gt;</ept> to sort <bpt id="13">&lt;em&gt;</bpt>ascending<ept id="13">&lt;/em&gt;</ept> by value, or <bpt id="15">&lt;code&gt;</bpt>-value<ept id="15">&lt;/code&gt;</ept> to sort <bpt id="17">&lt;em&gt;</bpt>descending<ept id="17">&lt;/em&gt;</ept> by value)</source>
             <target state="new"><bpt id="1">&lt;code&gt;</bpt>sort<ept id="1">&lt;/code&gt;</ept> (one of <bpt id="3">&lt;code&gt;</bpt>count<ept id="3">&lt;/code&gt;</ept> to sort <bpt id="5">&lt;em&gt;</bpt>descending<ept id="5">&lt;/em&gt;</ept> by count, <bpt id="7">&lt;code&gt;</bpt>-count<ept id="7">&lt;/code&gt;</ept> to sort <bpt id="9">&lt;em&gt;</bpt>ascending<ept id="9">&lt;/em&gt;</ept> by count, <bpt id="11">&lt;code&gt;</bpt>value<ept id="11">&lt;/code&gt;</ept> to sort <bpt id="13">&lt;em&gt;</bpt>ascending<ept id="13">&lt;/em&gt;</ept> by value, or <bpt id="15">&lt;code&gt;</bpt>-value<ept id="15">&lt;/code&gt;</ept> to sort <bpt id="17">&lt;em&gt;</bpt>descending<ept id="17">&lt;/em&gt;</ept> by value)</target>
           </trans-unit>
-          <trans-unit id="573" xml:space="preserve">
+          <trans-unit id="574" xml:space="preserve">
             <source>For example: <bpt id="2">&lt;code&gt;</bpt>facet=category,count:3,sort:count<ept id="2">&lt;/code&gt;</ept> gets the top three categories in facet results in descending order by the number of documents with each city name.</source>
             <target state="new">For example: <bpt id="2">&lt;code&gt;</bpt>facet=category,count:3,sort:count<ept id="2">&lt;/code&gt;</ept> gets the top three categories in facet results in descending order by the number of documents with each city name.</target>
           </trans-unit>
-          <trans-unit id="574" xml:space="preserve">
+          <trans-unit id="575" xml:space="preserve">
             <source>For example, if the top three categories are Budget, Motel, and Luxury, and Budget has 5 hits, Motel has 6, and Luxury has 4, then the buckets will be in the order Motel, Budget, Luxury.</source>
             <target state="new">For example, if the top three categories are Budget, Motel, and Luxury, and Budget has 5 hits, Motel has 6, and Luxury has 4, then the buckets will be in the order Motel, Budget, Luxury.</target>
           </trans-unit>
-          <trans-unit id="575" xml:space="preserve">
+          <trans-unit id="576" xml:space="preserve">
             <source>For example: <bpt id="2">&lt;code&gt;</bpt>facet=rating,sort:-value<ept id="2">&lt;/code&gt;</ept> produces buckets for all possible ratings, in descending order by value.</source>
             <target state="new">For example: <bpt id="2">&lt;code&gt;</bpt>facet=rating,sort:-value<ept id="2">&lt;/code&gt;</ept> produces buckets for all possible ratings, in descending order by value.</target>
           </trans-unit>
-          <trans-unit id="576" xml:space="preserve">
+          <trans-unit id="577" xml:space="preserve">
             <source>For example, if the ratings are from 1 to 5, the buckets will be ordered 5, 4, 3, 2, 1, irrespective of how many documents match each rating.</source>
             <target state="new">For example, if the ratings are from 1 to 5, the buckets will be ordered 5, 4, 3, 2, 1, irrespective of how many documents match each rating.</target>
           </trans-unit>
-          <trans-unit id="577" xml:space="preserve">
+          <trans-unit id="578" xml:space="preserve">
             <source><bpt id="1">&lt;code&gt;</bpt>values<ept id="1">&lt;/code&gt;</ept> (pipe-delimited numeric or <bpt id="3">&lt;code&gt;</bpt>Edm.DateTimeOffset<ept id="3">&lt;/code&gt;</ept> values specifying a dynamic set of facet entry values)</source>
             <target state="new"><bpt id="1">&lt;code&gt;</bpt>values<ept id="1">&lt;/code&gt;</ept> (pipe-delimited numeric or <bpt id="3">&lt;code&gt;</bpt>Edm.DateTimeOffset<ept id="3">&lt;/code&gt;</ept> values specifying a dynamic set of facet entry values)</target>
           </trans-unit>
-          <trans-unit id="578" xml:space="preserve">
+          <trans-unit id="579" xml:space="preserve">
             <source>For example: <bpt id="2">&lt;code&gt;</bpt>facet=baseRate,values:10|20<ept id="2">&lt;/code&gt;</ept> produces three buckets: One for base rate 0 up to but not including 10, one for 10 up to but not including 20, and one for 20 or higher.</source>
             <target state="new">For example: <bpt id="2">&lt;code&gt;</bpt>facet=baseRate,values:10|20<ept id="2">&lt;/code&gt;</ept> produces three buckets: One for base rate 0 up to but not including 10, one for 10 up to but not including 20, and one for 20 or higher.</target>
           </trans-unit>
-          <trans-unit id="579" xml:space="preserve">
+          <trans-unit id="580" xml:space="preserve">
             <source>For example: <bpt id="2">&lt;code&gt;</bpt>facet=lastRenovationDate,values:2010-02-01T00:00:00Z<ept id="2">&lt;/code&gt;</ept> produces two buckets: One for hotels renovated before February 2010, and one for hotels renovated February 1st, 2010 or later.</source>
             <target state="new">For example: <bpt id="2">&lt;code&gt;</bpt>facet=lastRenovationDate,values:2010-02-01T00:00:00Z<ept id="2">&lt;/code&gt;</ept> produces two buckets: One for hotels renovated before February 2010, and one for hotels renovated February 1st, 2010 or later.</target>
           </trans-unit>
-          <trans-unit id="580" xml:space="preserve">
+          <trans-unit id="581" xml:space="preserve">
             <source><bpt id="1">&lt;code&gt;</bpt>interval<ept id="1">&lt;/code&gt;</ept> (integer interval greater than 0 for numbers, or <bpt id="3">&lt;code&gt;</bpt>minute<ept id="3">&lt;/code&gt;</ept>, <bpt id="5">&lt;code&gt;</bpt>hour<ept id="5">&lt;/code&gt;</ept>, <bpt id="7">&lt;code&gt;</bpt>day<ept id="7">&lt;/code&gt;</ept>, <bpt id="9">&lt;code&gt;</bpt>week<ept id="9">&lt;/code&gt;</ept>, <bpt id="11">&lt;code&gt;</bpt>month<ept id="11">&lt;/code&gt;</ept>, <bpt id="13">&lt;code&gt;</bpt>quarter<ept id="13">&lt;/code&gt;</ept>, <bpt id="15">&lt;code&gt;</bpt>year<ept id="15">&lt;/code&gt;</ept> for date time values)</source>
             <target state="new"><bpt id="1">&lt;code&gt;</bpt>interval<ept id="1">&lt;/code&gt;</ept> (integer interval greater than 0 for numbers, or <bpt id="3">&lt;code&gt;</bpt>minute<ept id="3">&lt;/code&gt;</ept>, <bpt id="5">&lt;code&gt;</bpt>hour<ept id="5">&lt;/code&gt;</ept>, <bpt id="7">&lt;code&gt;</bpt>day<ept id="7">&lt;/code&gt;</ept>, <bpt id="9">&lt;code&gt;</bpt>week<ept id="9">&lt;/code&gt;</ept>, <bpt id="11">&lt;code&gt;</bpt>month<ept id="11">&lt;/code&gt;</ept>, <bpt id="13">&lt;code&gt;</bpt>quarter<ept id="13">&lt;/code&gt;</ept>, <bpt id="15">&lt;code&gt;</bpt>year<ept id="15">&lt;/code&gt;</ept> for date time values)</target>
           </trans-unit>
-          <trans-unit id="581" xml:space="preserve">
+          <trans-unit id="582" xml:space="preserve">
             <source>For example: <bpt id="2">&lt;code&gt;</bpt>facet=baseRate,interval:100<ept id="2">&lt;/code&gt;</ept> produces buckets based on base rate ranges of size 100.</source>
             <target state="new">For example: <bpt id="2">&lt;code&gt;</bpt>facet=baseRate,interval:100<ept id="2">&lt;/code&gt;</ept> produces buckets based on base rate ranges of size 100.</target>
           </trans-unit>
-          <trans-unit id="582" xml:space="preserve">
+          <trans-unit id="583" xml:space="preserve">
             <source>For example, if base rates are all between $60 and $600, there will be buckets for 0-100, 100-200, 200-300, 300-400, 400-500, and 500-600.</source>
             <target state="new">For example, if base rates are all between $60 and $600, there will be buckets for 0-100, 100-200, 200-300, 300-400, 400-500, and 500-600.</target>
           </trans-unit>
-          <trans-unit id="583" xml:space="preserve">
+          <trans-unit id="584" xml:space="preserve">
             <source>For example: <bpt id="2">&lt;code&gt;</bpt>facet=lastRenovationDate,interval:year<ept id="2">&lt;/code&gt;</ept> produces one bucket for each year when hotels were renovated.</source>
             <target state="new">For example: <bpt id="2">&lt;code&gt;</bpt>facet=lastRenovationDate,interval:year<ept id="2">&lt;/code&gt;</ept> produces one bucket for each year when hotels were renovated.</target>
           </trans-unit>
-          <trans-unit id="584" xml:space="preserve">
+          <trans-unit id="585" xml:space="preserve">
             <source><bpt id="1">&lt;strong&gt;</bpt>Note<ept id="1">&lt;/strong&gt;</ept>: <bpt id="3">&lt;code&gt;</bpt>count<ept id="3">&lt;/code&gt;</ept> and <bpt id="5">&lt;code&gt;</bpt>sort<ept id="5">&lt;/code&gt;</ept> can be combined in the same facet specification, but they cannot be combined with <bpt id="7">&lt;code&gt;</bpt>interval<ept id="7">&lt;/code&gt;</ept> or <bpt id="9">&lt;code&gt;</bpt>values<ept id="9">&lt;/code&gt;</ept>, and <bpt id="11">&lt;code&gt;</bpt>interval<ept id="11">&lt;/code&gt;</ept> and <bpt id="13">&lt;code&gt;</bpt>values<ept id="13">&lt;/code&gt;</ept> cannot be combined together.</source>
             <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Note<ept id="1">&lt;/strong&gt;</ept>: <bpt id="3">&lt;code&gt;</bpt>count<ept id="3">&lt;/code&gt;</ept> and <bpt id="5">&lt;code&gt;</bpt>sort<ept id="5">&lt;/code&gt;</ept> can be combined in the same facet specification, but they cannot be combined with <bpt id="7">&lt;code&gt;</bpt>interval<ept id="7">&lt;/code&gt;</ept> or <bpt id="9">&lt;code&gt;</bpt>values<ept id="9">&lt;/code&gt;</ept>, and <bpt id="11">&lt;code&gt;</bpt>interval<ept id="11">&lt;/code&gt;</ept> and <bpt id="13">&lt;code&gt;</bpt>values<ept id="13">&lt;/code&gt;</ept> cannot be combined together.</target>
           </trans-unit>
-          <trans-unit id="585" xml:space="preserve">
+          <trans-unit id="586" xml:space="preserve">
             <source><bpt id="1">&lt;code&gt;</bpt>$filter=[string]<ept id="1">&lt;/code&gt;</ept> (optional) - a structured search expression in standard OData syntax.</source>
             <target state="new"><bpt id="1">&lt;code&gt;</bpt>$filter=[string]<ept id="1">&lt;/code&gt;</ept> (optional) - a structured search expression in standard OData syntax.</target>
           </trans-unit>
-          <trans-unit id="586" xml:space="preserve">
+          <trans-unit id="587" xml:space="preserve">
             <source>See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>OData Expression Syntax<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for details on the subset of the OData expression grammar that Azure Search supports.</source>
             <target state="new">See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>OData Expression Syntax<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for details on the subset of the OData expression grammar that Azure Search supports.</target>
           </trans-unit>
-          <trans-unit id="587" xml:space="preserve">
+          <trans-unit id="588" xml:space="preserve">
             <source><bpt id="1">&lt;code&gt;</bpt>highlight=[string]<ept id="1">&lt;/code&gt;</ept> (optional) - a set of comma-separated field names used for hit highlights.</source>
             <target state="new"><bpt id="1">&lt;code&gt;</bpt>highlight=[string]<ept id="1">&lt;/code&gt;</ept> (optional) - a set of comma-separated field names used for hit highlights.</target>
           </trans-unit>
-          <trans-unit id="588" xml:space="preserve">
+          <trans-unit id="589" xml:space="preserve">
             <source>Only <bpt id="2">&lt;code&gt;</bpt>searchable<ept id="2">&lt;/code&gt;</ept> fields can be used for hit highlighting.</source>
             <target state="new">Only <bpt id="2">&lt;code&gt;</bpt>searchable<ept id="2">&lt;/code&gt;</ept> fields can be used for hit highlighting.</target>
           </trans-unit>
-          <trans-unit id="589" xml:space="preserve">
+          <trans-unit id="590" xml:space="preserve">
             <source><bpt id="1">&lt;code&gt;</bpt>scoringProfile=[string]<ept id="1">&lt;/code&gt;</ept> (optional) - the name of a scoring profile to evaluate match scores for matching documents in order to sort the results.</source>
             <target state="new"><bpt id="1">&lt;code&gt;</bpt>scoringProfile=[string]<ept id="1">&lt;/code&gt;</ept> (optional) - the name of a scoring profile to evaluate match scores for matching documents in order to sort the results.</target>
           </trans-unit>
-          <trans-unit id="590" xml:space="preserve">
+          <trans-unit id="591" xml:space="preserve">
             <source><bpt id="1">&lt;code&gt;</bpt>scoringParameter=[string]<ept id="1">&lt;/code&gt;</ept> (zero or more) - indicates the value for each parameter defined in a scoring function (for example, <bpt id="3">&lt;code&gt;</bpt>referencePointParameter<ept id="3">&lt;/code&gt;</ept>) using the format name:value. For example, if the scoring profile defines a function with a parameter called "mylocation" the query string option would be &amp;scoringParameter=mylocation:-122.2,44.8</source>
             <target state="new"><bpt id="1">&lt;code&gt;</bpt>scoringParameter=[string]<ept id="1">&lt;/code&gt;</ept> (zero or more) - indicates the value for each parameter defined in a scoring function (for example, <bpt id="3">&lt;code&gt;</bpt>referencePointParameter<ept id="3">&lt;/code&gt;</ept>) using the format name:value. For example, if the scoring profile defines a function with a parameter called "mylocation" the query string option would be &amp;scoringParameter=mylocation:-122.2,44.8</target>
           </trans-unit>
-          <trans-unit id="591" xml:space="preserve">
+          <trans-unit id="592" xml:space="preserve">
             <source><bpt id="1">&lt;code&gt;</bpt>api-version=[string]<ept id="1">&lt;/code&gt;</ept> (required).</source>
             <target state="new"><bpt id="1">&lt;code&gt;</bpt>api-version=[string]<ept id="1">&lt;/code&gt;</ept> (required).</target>
           </trans-unit>
-          <trans-unit id="592" xml:space="preserve">
+          <trans-unit id="593" xml:space="preserve">
             <source>Valid values include <bpt id="2">&lt;code&gt;</bpt>2014-07-31-Preview<ept id="2">&lt;/code&gt;</ept> or <bpt id="4">&lt;code&gt;</bpt>2014-10-20-Preview<ept id="4">&lt;/code&gt;</ept>.</source>
             <target state="new">Valid values include <bpt id="2">&lt;code&gt;</bpt>2014-07-31-Preview<ept id="2">&lt;/code&gt;</ept> or <bpt id="4">&lt;code&gt;</bpt>2014-10-20-Preview<ept id="4">&lt;/code&gt;</ept>.</target>
           </trans-unit>
-          <trans-unit id="593" xml:space="preserve">
+          <trans-unit id="594" xml:space="preserve">
             <source>You can specify which one to use on each request to get version-specific behaviors, but as a best practice, use the same version throughout your code.</source>
             <target state="new">You can specify which one to use on each request to get version-specific behaviors, but as a best practice, use the same version throughout your code.</target>
           </trans-unit>
-          <trans-unit id="594" xml:space="preserve">
+          <trans-unit id="595" xml:space="preserve">
             <source>The recommended version is <bpt id="2">&lt;code&gt;</bpt>2014-07-31-Preview<ept id="2">&lt;/code&gt;</ept> for general use.</source>
             <target state="new">The recommended version is <bpt id="2">&lt;code&gt;</bpt>2014-07-31-Preview<ept id="2">&lt;/code&gt;</ept> for general use.</target>
           </trans-unit>
-          <trans-unit id="595" xml:space="preserve">
+          <trans-unit id="596" xml:space="preserve">
             <source>Alternatively, use <bpt id="2">&lt;code&gt;</bpt>2014-10-20-Preview<ept id="2">&lt;/code&gt;</ept> to evaluate experimental features.</source>
             <target state="new">Alternatively, use <bpt id="2">&lt;code&gt;</bpt>2014-10-20-Preview<ept id="2">&lt;/code&gt;</ept> to evaluate experimental features.</target>
           </trans-unit>
-          <trans-unit id="596" xml:space="preserve">
+          <trans-unit id="597" xml:space="preserve">
             <source>See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Search Service Versioning<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for details.</source>
             <target state="new">See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Search Service Versioning<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for details.</target>
           </trans-unit>
-          <trans-unit id="597" xml:space="preserve">
+          <trans-unit id="598" xml:space="preserve">
             <source>Note: For this operation, the <bpt id="2">&lt;code&gt;</bpt>api-version<ept id="2">&lt;/code&gt;</ept> is specified as a query parameter.</source>
             <target state="new">Note: For this operation, the <bpt id="2">&lt;code&gt;</bpt>api-version<ept id="2">&lt;/code&gt;</ept> is specified as a query parameter.</target>
           </trans-unit>
-          <trans-unit id="598" xml:space="preserve">
+          <trans-unit id="599" xml:space="preserve">
             <source><bpt id="1">&lt;strong&gt;</bpt>Request Headers<ept id="1">&lt;/strong&gt;</ept></source>
             <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Request Headers<ept id="1">&lt;/strong&gt;</ept></target>
           </trans-unit>
-          <trans-unit id="599" xml:space="preserve">
+          <trans-unit id="600" xml:space="preserve">
             <source>The following list describes the required and optional request headers.</source>
             <target state="new">The following list describes the required and optional request headers.</target>
           </trans-unit>
-          <trans-unit id="600" xml:space="preserve">
+          <trans-unit id="601" xml:space="preserve">
             <source><bpt id="1">&lt;code&gt;</bpt>api-key<ept id="1">&lt;/code&gt;</ept>: The <bpt id="3">&lt;code&gt;</bpt>api-key<ept id="3">&lt;/code&gt;</ept> is used to authenticate the request to your Search service.</source>
             <target state="new"><bpt id="1">&lt;code&gt;</bpt>api-key<ept id="1">&lt;/code&gt;</ept>: The <bpt id="3">&lt;code&gt;</bpt>api-key<ept id="3">&lt;/code&gt;</ept> is used to authenticate the request to your Search service.</target>
           </trans-unit>
-          <trans-unit id="601" xml:space="preserve">
+          <trans-unit id="602" xml:space="preserve">
             <source>It is a string value, unique to your service URL.</source>
             <target state="new">It is a string value, unique to your service URL.</target>
           </trans-unit>
-          <trans-unit id="602" xml:space="preserve">
+          <trans-unit id="603" xml:space="preserve">
             <source>The <bpt id="2">&lt;strong&gt;</bpt>Search<ept id="2">&lt;/strong&gt;</ept> request can specify either an admin key or query key for <bpt id="4">&lt;code&gt;</bpt>api-key<ept id="4">&lt;/code&gt;</ept>.</source>
             <target state="new">The <bpt id="2">&lt;strong&gt;</bpt>Search<ept id="2">&lt;/strong&gt;</ept> request can specify either an admin key or query key for <bpt id="4">&lt;code&gt;</bpt>api-key<ept id="4">&lt;/code&gt;</ept>.</target>
           </trans-unit>
-          <trans-unit id="603" xml:space="preserve">
+          <trans-unit id="604" xml:space="preserve">
             <source>You will also need the service name to construct the request URL.</source>
             <target state="new">You will also need the service name to construct the request URL.</target>
           </trans-unit>
-          <trans-unit id="604" xml:space="preserve">
+          <trans-unit id="605" xml:space="preserve">
             <source>You can get the service name and <bpt id="2">&lt;code&gt;</bpt>api-key<ept id="2">&lt;/code&gt;</ept> from your service dashboard in the Azure Preview Portal.</source>
             <target state="new">You can get the service name and <bpt id="2">&lt;code&gt;</bpt>api-key<ept id="2">&lt;/code&gt;</ept> from your service dashboard in the Azure Preview Portal.</target>
           </trans-unit>
-          <trans-unit id="605" xml:space="preserve">
+          <trans-unit id="606" xml:space="preserve">
             <source>See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Create an Azure Search service in the portal<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for page navigation help.</source>
             <target state="new">See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Create an Azure Search service in the portal<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for page navigation help.</target>
           </trans-unit>
-          <trans-unit id="606" xml:space="preserve">
+          <trans-unit id="607" xml:space="preserve">
             <source><bpt id="1">&lt;strong&gt;</bpt>Request Body<ept id="1">&lt;/strong&gt;</ept></source>
             <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Request Body<ept id="1">&lt;/strong&gt;</ept></target>
           </trans-unit>
-          <trans-unit id="607" xml:space="preserve">
+          <trans-unit id="608" xml:space="preserve">
             <source>None.</source>
             <target state="new">None.</target>
           </trans-unit>
-          <trans-unit id="608" xml:space="preserve">
+          <trans-unit id="609" xml:space="preserve">
             <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></source>
             <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></target>
           </trans-unit>
-          <trans-unit id="609" xml:space="preserve">
+          <trans-unit id="610" xml:space="preserve">
             <source><bpt id="1">&lt;strong&gt;</bpt>Response<ept id="1">&lt;/strong&gt;</ept></source>
             <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Response<ept id="1">&lt;/strong&gt;</ept></target>
           </trans-unit>
-          <trans-unit id="610" xml:space="preserve">
+          <trans-unit id="611" xml:space="preserve">
             <source>Status Code: 200 OK is returned for a successful response.</source>
             <target state="new">Status Code: 200 OK is returned for a successful response.</target>
           </trans-unit>
-          <trans-unit id="611" xml:space="preserve">
+          <trans-unit id="612" xml:space="preserve">
             <source><bpt id="1">&lt;strong&gt;</bpt>Examples:<ept id="1">&lt;/strong&gt;</ept></source>
             <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Examples:<ept id="1">&lt;/strong&gt;</ept></target>
           </trans-unit>
-          <trans-unit id="612" xml:space="preserve">
+          <trans-unit id="613" xml:space="preserve">
             <source>You can find additional examples on the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>OData Expression Syntax for Azure Search<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> page.</source>
             <target state="new">You can find additional examples on the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>OData Expression Syntax for Azure Search<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> page.</target>
           </trans-unit>
-          <trans-unit id="613" xml:space="preserve">
+          <trans-unit id="614" xml:space="preserve">
             <source>1)  Search the Index sorted descending by date.</source>
             <target state="new">1)  Search the Index sorted descending by date.</target>
           </trans-unit>
-          <trans-unit id="614" xml:space="preserve">
+          <trans-unit id="615" xml:space="preserve">
             <source>NOTE: Precision of DateTime fields is limited to milliseconds.</source>
             <target state="new">NOTE: Precision of DateTime fields is limited to milliseconds.</target>
           </trans-unit>
-          <trans-unit id="615" xml:space="preserve">
+          <trans-unit id="616" xml:space="preserve">
             <source>If you push a timestamp that specifies values any smaller (for example, see the seconds portion of this timestamp: 10:30:09.7552052), the return value will be rounded up (or 10:30:09.7550000, per the example).</source>
             <target state="new">If you push a timestamp that specifies values any smaller (for example, see the seconds portion of this timestamp: 10:30:09.7552052), the return value will be rounded up (or 10:30:09.7550000, per the example).</target>
           </trans-unit>
-          <trans-unit id="616" xml:space="preserve">
+          <trans-unit id="617" xml:space="preserve">
             <source>2)  In a faceted search, search the index and retrieve facets for categories, rating, tags, as well as items with baseRate in specific ranges:</source>
             <target state="new">2)  In a faceted search, search the index and retrieve facets for categories, rating, tags, as well as items with baseRate in specific ranges:</target>
           </trans-unit>
-          <trans-unit id="617" xml:space="preserve">
+          <trans-unit id="618" xml:space="preserve">
             <source>3)  Using a filter, narrow down the previous faceted query results after the user clicks on rating 3 and category "Motel":</source>
             <target state="new">3)  Using a filter, narrow down the previous faceted query results after the user clicks on rating 3 and category "Motel":</target>
           </trans-unit>
-          <trans-unit id="618" xml:space="preserve">
+          <trans-unit id="619" xml:space="preserve">
             <source>4) In a faceted search, set an upper limit on unique terms returned in a query.</source>
             <target state="new">4) In a faceted search, set an upper limit on unique terms returned in a query.</target>
           </trans-unit>
-          <trans-unit id="619" xml:space="preserve">
+          <trans-unit id="620" xml:space="preserve">
             <source>The default is 10, but you can increase or decrease this value using the <bpt id="2">&lt;code&gt;</bpt>count<ept id="2">&lt;/code&gt;</ept> parameter on the <bpt id="4">&lt;code&gt;</bpt>facet<ept id="4">&lt;/code&gt;</ept> attribute:</source>
             <target state="new">The default is 10, but you can increase or decrease this value using the <bpt id="2">&lt;code&gt;</bpt>count<ept id="2">&lt;/code&gt;</ept> parameter on the <bpt id="4">&lt;code&gt;</bpt>facet<ept id="4">&lt;/code&gt;</ept> attribute:</target>
           </trans-unit>
-          <trans-unit id="620" xml:space="preserve">
+          <trans-unit id="621" xml:space="preserve">
             <source>5)  Search the Index within specific fields; For example, a language-specific field:</source>
             <target state="new">5)  Search the Index within specific fields; For example, a language-specific field:</target>
           </trans-unit>
-          <trans-unit id="621" xml:space="preserve">
+          <trans-unit id="622" xml:space="preserve">
             <source>6) Search the Index across multiple fields.</source>
             <target state="new">6) Search the Index across multiple fields.</target>
           </trans-unit>
-          <trans-unit id="622" xml:space="preserve">
+          <trans-unit id="623" xml:space="preserve">
             <source>For example, you can store and query searchable fields in multiple languages, all within the same index.</source>
             <target state="new">For example, you can store and query searchable fields in multiple languages, all within the same index.</target>
           </trans-unit>
-          <trans-unit id="623" xml:space="preserve">
+          <trans-unit id="624" xml:space="preserve">
             <source>If English and French descriptions co-exist in the same document, you can return any or all in the query results:</source>
             <target state="new">If English and French descriptions co-exist in the same document, you can return any or all in the query results:</target>
           </trans-unit>
-          <trans-unit id="624" xml:space="preserve">
+          <trans-unit id="625" xml:space="preserve">
             <source>Note that you can only query one index at a time.</source>
             <target state="new">Note that you can only query one index at a time.</target>
           </trans-unit>
-          <trans-unit id="625" xml:space="preserve">
+          <trans-unit id="626" xml:space="preserve">
             <source>Do not create multiple indexes for each language unless you plan to query one at a time.</source>
             <target state="new">Do not create multiple indexes for each language unless you plan to query one at a time.</target>
           </trans-unit>
-          <trans-unit id="626" xml:space="preserve">
+          <trans-unit id="627" xml:space="preserve">
             <source>7)  Paging - Get the 1st page of items (page size is 10):</source>
             <target state="new">7)  Paging - Get the 1st page of items (page size is 10):</target>
           </trans-unit>
-          <trans-unit id="627" xml:space="preserve">
+          <trans-unit id="628" xml:space="preserve">
             <source>8)  Paging - Get the 2nd page of items (page size is 10):</source>
             <target state="new">8)  Paging - Get the 2nd page of items (page size is 10):</target>
           </trans-unit>
-          <trans-unit id="628" xml:space="preserve">
+          <trans-unit id="629" xml:space="preserve">
             <source>9)  Retrieve a specific set of fields:</source>
             <target state="new">9)  Retrieve a specific set of fields:</target>
           </trans-unit>
-          <trans-unit id="629" xml:space="preserve">
+          <trans-unit id="630" xml:space="preserve">
             <source>10)  Retrieve documents matching a specific query expression</source>
             <target state="new">10)  Retrieve documents matching a specific query expression</target>
           </trans-unit>
-          <trans-unit id="630" xml:space="preserve">
+          <trans-unit id="631" xml:space="preserve">
             <source>11) Search the index and return fragments with hit highlights</source>
             <target state="new">11) Search the index and return fragments with hit highlights</target>
           </trans-unit>
-          <trans-unit id="631" xml:space="preserve">
+          <trans-unit id="632" xml:space="preserve">
             <source>12) Search the index and return documents sorted from closer to farther away from a reference location</source>
             <target state="new">12) Search the index and return documents sorted from closer to farther away from a reference location</target>
           </trans-unit>
-          <trans-unit id="632" xml:space="preserve">
+          <trans-unit id="633" xml:space="preserve">
             <source>13) Search the index assuming there's a scoring profile called "geo" with two distance scoring functions, one defining a parameter called "currentLocation" and one defining a parameter called "lastLocation"</source>
             <target state="new">13) Search the index assuming there's a scoring profile called "geo" with two distance scoring functions, one defining a parameter called "currentLocation" and one defining a parameter called "lastLocation"</target>
           </trans-unit>
-          <trans-unit id="633" xml:space="preserve">
+          <trans-unit id="634" xml:space="preserve">
             <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></source>
             <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></target>
           </trans-unit>
-          <trans-unit id="634" xml:space="preserve">
+          <trans-unit id="635" xml:space="preserve">
             <source>Lookup Document</source>
             <target state="new">Lookup Document</target>
           </trans-unit>
-          <trans-unit id="635" xml:space="preserve">
+          <trans-unit id="636" xml:space="preserve">
             <source>The <bpt id="2">&lt;strong&gt;</bpt>Lookup Document<ept id="2">&lt;/strong&gt;</ept> operation retrieves a document from Azure Search.</source>
             <target state="new">The <bpt id="2">&lt;strong&gt;</bpt>Lookup Document<ept id="2">&lt;/strong&gt;</ept> operation retrieves a document from Azure Search.</target>
           </trans-unit>
-          <trans-unit id="636" xml:space="preserve">
+          <trans-unit id="637" xml:space="preserve">
             <source>This is useful when a user clicks on a specific search result, and you want to look up specific details about that document.</source>
             <target state="new">This is useful when a user clicks on a specific search result, and you want to look up specific details about that document.</target>
           </trans-unit>
-          <trans-unit id="637" xml:space="preserve">
+          <trans-unit id="638" xml:space="preserve">
             <source><bpt id="1">&lt;strong&gt;</bpt>Request<ept id="1">&lt;/strong&gt;</ept></source>
             <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Request<ept id="1">&lt;/strong&gt;</ept></target>
           </trans-unit>
-          <trans-unit id="638" xml:space="preserve">
+          <trans-unit id="639" xml:space="preserve">
             <source>HTTPS is required for service requests.</source>
             <target state="new">HTTPS is required for service requests.</target>
           </trans-unit>
-          <trans-unit id="639" xml:space="preserve">
+          <trans-unit id="640" xml:space="preserve">
             <source>The <bpt id="2">&lt;strong&gt;</bpt>Lookup Document<ept id="2">&lt;/strong&gt;</ept> request can be constructed as follows.</source>
             <target state="new">The <bpt id="2">&lt;strong&gt;</bpt>Lookup Document<ept id="2">&lt;/strong&gt;</ept> request can be constructed as follows.</target>
           </trans-unit>
-          <trans-unit id="640" xml:space="preserve">
+          <trans-unit id="641" xml:space="preserve">
             <source>Alternatively, you can use the traditional OData syntax for key lookup:</source>
             <target state="new">Alternatively, you can use the traditional OData syntax for key lookup:</target>
           </trans-unit>
-          <trans-unit id="641" xml:space="preserve">
+          <trans-unit id="642" xml:space="preserve">
             <source>The request URI includes an [index name] and [key], specifying which document to retrieve from which index.</source>
             <target state="new">The request URI includes an [index name] and [key], specifying which document to retrieve from which index.</target>
           </trans-unit>
-          <trans-unit id="642" xml:space="preserve">
+          <trans-unit id="643" xml:space="preserve">
             <source>You can only get one document at a time.</source>
             <target state="new">You can only get one document at a time.</target>
           </trans-unit>
-          <trans-unit id="643" xml:space="preserve">
+          <trans-unit id="644" xml:space="preserve">
             <source>Use <bpt id="2">&lt;strong&gt;</bpt>Search<ept id="2">&lt;/strong&gt;</ept> to get multiple documents in a single request.</source>
             <target state="new">Use <bpt id="2">&lt;strong&gt;</bpt>Search<ept id="2">&lt;/strong&gt;</ept> to get multiple documents in a single request.</target>
           </trans-unit>
-          <trans-unit id="644" xml:space="preserve">
+          <trans-unit id="645" xml:space="preserve">
             <source><bpt id="1">&lt;strong&gt;</bpt>Query Parameters<ept id="1">&lt;/strong&gt;</ept></source>
             <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Query Parameters<ept id="1">&lt;/strong&gt;</ept></target>
           </trans-unit>
-          <trans-unit id="645" xml:space="preserve">
+          <trans-unit id="646" xml:space="preserve">
             <source><bpt id="1">&lt;code&gt;</bpt>$select=[string]<ept id="1">&lt;/code&gt;</ept> (optional) - a list of comma-separated fields to retrieve.</source>
             <target state="new"><bpt id="1">&lt;code&gt;</bpt>$select=[string]<ept id="1">&lt;/code&gt;</ept> (optional) - a list of comma-separated fields to retrieve.</target>
           </trans-unit>
-          <trans-unit id="646" xml:space="preserve">
+          <trans-unit id="647" xml:space="preserve">
             <source>If unspecified or set to <bpt id="2">&lt;code&gt;</bpt>*<ept id="2">&lt;/code&gt;</ept>, all fields marked as retrievable in the schema are included in the projection.</source>
             <target state="new">If unspecified or set to <bpt id="2">&lt;code&gt;</bpt>*<ept id="2">&lt;/code&gt;</ept>, all fields marked as retrievable in the schema are included in the projection.</target>
           </trans-unit>
-          <trans-unit id="647" xml:space="preserve">
+          <trans-unit id="648" xml:space="preserve">
             <source><bpt id="1">&lt;code&gt;</bpt>api-version=[string]<ept id="1">&lt;/code&gt;</ept> (required).</source>
             <target state="new"><bpt id="1">&lt;code&gt;</bpt>api-version=[string]<ept id="1">&lt;/code&gt;</ept> (required).</target>
           </trans-unit>
-          <trans-unit id="648" xml:space="preserve">
+          <trans-unit id="649" xml:space="preserve">
             <source>Valid values include <bpt id="2">&lt;code&gt;</bpt>2014-07-31-Preview<ept id="2">&lt;/code&gt;</ept> or <bpt id="4">&lt;code&gt;</bpt>2014-10-20-Preview<ept id="4">&lt;/code&gt;</ept>.</source>
             <target state="new">Valid values include <bpt id="2">&lt;code&gt;</bpt>2014-07-31-Preview<ept id="2">&lt;/code&gt;</ept> or <bpt id="4">&lt;code&gt;</bpt>2014-10-20-Preview<ept id="4">&lt;/code&gt;</ept>.</target>
           </trans-unit>
-          <trans-unit id="649" xml:space="preserve">
+          <trans-unit id="650" xml:space="preserve">
             <source>You can specify which one to use on each request to get version-specific behaviors, but as a best practice, use the same version throughout your code.</source>
             <target state="new">You can specify which one to use on each request to get version-specific behaviors, but as a best practice, use the same version throughout your code.</target>
           </trans-unit>
-          <trans-unit id="650" xml:space="preserve">
+          <trans-unit id="651" xml:space="preserve">
             <source>The recommended version is <bpt id="2">&lt;code&gt;</bpt>2014-07-31-Preview<ept id="2">&lt;/code&gt;</ept> for general use.</source>
             <target state="new">The recommended version is <bpt id="2">&lt;code&gt;</bpt>2014-07-31-Preview<ept id="2">&lt;/code&gt;</ept> for general use.</target>
           </trans-unit>
-          <trans-unit id="651" xml:space="preserve">
+          <trans-unit id="652" xml:space="preserve">
             <source>Alternatively, use <bpt id="2">&lt;code&gt;</bpt>2014-10-20-Preview<ept id="2">&lt;/code&gt;</ept> to evaluate experimental features.</source>
             <target state="new">Alternatively, use <bpt id="2">&lt;code&gt;</bpt>2014-10-20-Preview<ept id="2">&lt;/code&gt;</ept> to evaluate experimental features.</target>
           </trans-unit>
-          <trans-unit id="652" xml:space="preserve">
+          <trans-unit id="653" xml:space="preserve">
             <source>See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Search Service Versioning<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for details.</source>
             <target state="new">See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Search Service Versioning<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for details.</target>
           </trans-unit>
-          <trans-unit id="653" xml:space="preserve">
+          <trans-unit id="654" xml:space="preserve">
             <source>Note: For this operation, the <bpt id="2">&lt;code&gt;</bpt>api-version<ept id="2">&lt;/code&gt;</ept> is specified as a query parameter.</source>
             <target state="new">Note: For this operation, the <bpt id="2">&lt;code&gt;</bpt>api-version<ept id="2">&lt;/code&gt;</ept> is specified as a query parameter.</target>
           </trans-unit>
-          <trans-unit id="654" xml:space="preserve">
+          <trans-unit id="655" xml:space="preserve">
             <source><bpt id="1">&lt;strong&gt;</bpt>Request Headers<ept id="1">&lt;/strong&gt;</ept></source>
             <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Request Headers<ept id="1">&lt;/strong&gt;</ept></target>
           </trans-unit>
-          <trans-unit id="655" xml:space="preserve">
+          <trans-unit id="656" xml:space="preserve">
             <source>The following list describes the required and optional request headers.</source>
             <target state="new">The following list describes the required and optional request headers.</target>
           </trans-unit>
-          <trans-unit id="656" xml:space="preserve">
+          <trans-unit id="657" xml:space="preserve">
             <source><bpt id="1">&lt;code&gt;</bpt>api-key<ept id="1">&lt;/code&gt;</ept>: The <bpt id="3">&lt;code&gt;</bpt>api-key<ept id="3">&lt;/code&gt;</ept> is used to authenticate the request to your Search service.</source>
             <target state="new"><bpt id="1">&lt;code&gt;</bpt>api-key<ept id="1">&lt;/code&gt;</ept>: The <bpt id="3">&lt;code&gt;</bpt>api-key<ept id="3">&lt;/code&gt;</ept> is used to authenticate the request to your Search service.</target>
           </trans-unit>
-          <trans-unit id="657" xml:space="preserve">
+          <trans-unit id="658" xml:space="preserve">
             <source>It is a string value, unique to your service URL.</source>
             <target state="new">It is a string value, unique to your service URL.</target>
           </trans-unit>
-          <trans-unit id="658" xml:space="preserve">
+          <trans-unit id="659" xml:space="preserve">
             <source>The <bpt id="2">&lt;strong&gt;</bpt>Lookup Document<ept id="2">&lt;/strong&gt;</ept> request can specify either an admin key or query key for <bpt id="4">&lt;code&gt;</bpt>api-key<ept id="4">&lt;/code&gt;</ept>.</source>
             <target state="new">The <bpt id="2">&lt;strong&gt;</bpt>Lookup Document<ept id="2">&lt;/strong&gt;</ept> request can specify either an admin key or query key for <bpt id="4">&lt;code&gt;</bpt>api-key<ept id="4">&lt;/code&gt;</ept>.</target>
           </trans-unit>
-          <trans-unit id="659" xml:space="preserve">
+          <trans-unit id="660" xml:space="preserve">
             <source>You will also need the service name to construct the request URL.</source>
             <target state="new">You will also need the service name to construct the request URL.</target>
           </trans-unit>
-          <trans-unit id="660" xml:space="preserve">
+          <trans-unit id="661" xml:space="preserve">
             <source>You can get the service name and <bpt id="2">&lt;code&gt;</bpt>api-key<ept id="2">&lt;/code&gt;</ept> from your service dashboard in the Azure Preview Portal.</source>
             <target state="new">You can get the service name and <bpt id="2">&lt;code&gt;</bpt>api-key<ept id="2">&lt;/code&gt;</ept> from your service dashboard in the Azure Preview Portal.</target>
           </trans-unit>
-          <trans-unit id="661" xml:space="preserve">
+          <trans-unit id="662" xml:space="preserve">
             <source>See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Create an Azure Search service in the portal<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for page navigation help.</source>
             <target state="new">See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Create an Azure Search service in the portal<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for page navigation help.</target>
           </trans-unit>
-          <trans-unit id="662" xml:space="preserve">
+          <trans-unit id="663" xml:space="preserve">
             <source><bpt id="1">&lt;strong&gt;</bpt>Request Body<ept id="1">&lt;/strong&gt;</ept></source>
             <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Request Body<ept id="1">&lt;/strong&gt;</ept></target>
           </trans-unit>
-          <trans-unit id="663" xml:space="preserve">
+          <trans-unit id="664" xml:space="preserve">
             <source>None.</source>
             <target state="new">None.</target>
           </trans-unit>
-          <trans-unit id="664" xml:space="preserve">
+          <trans-unit id="665" xml:space="preserve">
             <source><bpt id="1">&lt;strong&gt;</bpt>Response<ept id="1">&lt;/strong&gt;</ept></source>
             <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Response<ept id="1">&lt;/strong&gt;</ept></target>
           </trans-unit>
-          <trans-unit id="665" xml:space="preserve">
+          <trans-unit id="666" xml:space="preserve">
             <source>Status Code: 200 OK is returned for a successful response.</source>
             <target state="new">Status Code: 200 OK is returned for a successful response.</target>
           </trans-unit>
-          <trans-unit id="666" xml:space="preserve">
+          <trans-unit id="667" xml:space="preserve">
             <source><bpt id="1">&lt;strong&gt;</bpt>Example<ept id="1">&lt;/strong&gt;</ept></source>
             <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Example<ept id="1">&lt;/strong&gt;</ept></target>
           </trans-unit>
-          <trans-unit id="667" xml:space="preserve">
+          <trans-unit id="668" xml:space="preserve">
             <source>Lookup the document that has key '2'</source>
             <target state="new">Lookup the document that has key '2'</target>
           </trans-unit>
-          <trans-unit id="668" xml:space="preserve">
+          <trans-unit id="669" xml:space="preserve">
             <source>Lookup the document that has key '3' using OData syntax:</source>
             <target state="new">Lookup the document that has key '3' using OData syntax:</target>
           </trans-unit>
-          <trans-unit id="669" xml:space="preserve">
+          <trans-unit id="670" xml:space="preserve">
             <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></source>
             <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></target>
           </trans-unit>
-          <trans-unit id="670" xml:space="preserve">
+          <trans-unit id="671" xml:space="preserve">
             <source>Count Documents</source>
             <target state="new">Count Documents</target>
           </trans-unit>
-          <trans-unit id="671" xml:space="preserve">
+          <trans-unit id="672" xml:space="preserve">
             <source>The <bpt id="2">&lt;strong&gt;</bpt>Count Documents<ept id="2">&lt;/strong&gt;</ept> operation retrieves a count of the number of documents in a search index.</source>
             <target state="new">The <bpt id="2">&lt;strong&gt;</bpt>Count Documents<ept id="2">&lt;/strong&gt;</ept> operation retrieves a count of the number of documents in a search index.</target>
           </trans-unit>
-          <trans-unit id="672" xml:space="preserve">
+          <trans-unit id="673" xml:space="preserve">
             <source>The <bpt id="2">&lt;code&gt;</bpt>$count<ept id="2">&lt;/code&gt;</ept> syntax is part of the OData protocol.</source>
             <target state="new">The <bpt id="2">&lt;code&gt;</bpt>$count<ept id="2">&lt;/code&gt;</ept> syntax is part of the OData protocol.</target>
           </trans-unit>
-          <trans-unit id="673" xml:space="preserve">
+          <trans-unit id="674" xml:space="preserve">
             <source><bpt id="1">&lt;strong&gt;</bpt>Request<ept id="1">&lt;/strong&gt;</ept></source>
             <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Request<ept id="1">&lt;/strong&gt;</ept></target>
           </trans-unit>
-          <trans-unit id="674" xml:space="preserve">
+          <trans-unit id="675" xml:space="preserve">
             <source>HTTPS is required for service requests.</source>
             <target state="new">HTTPS is required for service requests.</target>
           </trans-unit>
-          <trans-unit id="675" xml:space="preserve">
+          <trans-unit id="676" xml:space="preserve">
             <source>The <bpt id="2">&lt;strong&gt;</bpt>Count Documents<ept id="2">&lt;/strong&gt;</ept> request can be constructed using the GET method.</source>
             <target state="new">The <bpt id="2">&lt;strong&gt;</bpt>Count Documents<ept id="2">&lt;/strong&gt;</ept> request can be constructed using the GET method.</target>
           </trans-unit>
-          <trans-unit id="676" xml:space="preserve">
+          <trans-unit id="677" xml:space="preserve">
             <source>The [index name] in the request URI tells the service to return a count of all items in the docs collection of the specified index.</source>
             <target state="new">The [index name] in the request URI tells the service to return a count of all items in the docs collection of the specified index.</target>
           </trans-unit>
-          <trans-unit id="677" xml:space="preserve">
+          <trans-unit id="678" xml:space="preserve">
             <source>The <bpt id="2">&lt;code&gt;</bpt>api-version<ept id="2">&lt;/code&gt;</ept> parameter is required.</source>
             <target state="new">The <bpt id="2">&lt;code&gt;</bpt>api-version<ept id="2">&lt;/code&gt;</ept> parameter is required.</target>
           </trans-unit>
-          <trans-unit id="678" xml:space="preserve">
+          <trans-unit id="679" xml:space="preserve">
             <source>Valid values include <bpt id="2">&lt;code&gt;</bpt>2014-07-31-Preview<ept id="2">&lt;/code&gt;</ept> or <bpt id="4">&lt;code&gt;</bpt>2014-10-20-Preview<ept id="4">&lt;/code&gt;</ept>.</source>
             <target state="new">Valid values include <bpt id="2">&lt;code&gt;</bpt>2014-07-31-Preview<ept id="2">&lt;/code&gt;</ept> or <bpt id="4">&lt;code&gt;</bpt>2014-10-20-Preview<ept id="4">&lt;/code&gt;</ept>.</target>
           </trans-unit>
-          <trans-unit id="679" xml:space="preserve">
+          <trans-unit id="680" xml:space="preserve">
             <source>You can specify which one to use on each request to get version-specific behaviors, but as a best practice, use the same version throughout your code.</source>
             <target state="new">You can specify which one to use on each request to get version-specific behaviors, but as a best practice, use the same version throughout your code.</target>
           </trans-unit>
-          <trans-unit id="680" xml:space="preserve">
+          <trans-unit id="681" xml:space="preserve">
             <source>The recommended version is <bpt id="2">&lt;code&gt;</bpt>2014-07-31-Preview<ept id="2">&lt;/code&gt;</ept> for general use.</source>
             <target state="new">The recommended version is <bpt id="2">&lt;code&gt;</bpt>2014-07-31-Preview<ept id="2">&lt;/code&gt;</ept> for general use.</target>
           </trans-unit>
-          <trans-unit id="681" xml:space="preserve">
+          <trans-unit id="682" xml:space="preserve">
             <source>Alternatively, use <bpt id="2">&lt;code&gt;</bpt>2014-10-20-Preview<ept id="2">&lt;/code&gt;</ept> to evaluate experimental features.</source>
             <target state="new">Alternatively, use <bpt id="2">&lt;code&gt;</bpt>2014-10-20-Preview<ept id="2">&lt;/code&gt;</ept> to evaluate experimental features.</target>
           </trans-unit>
-          <trans-unit id="682" xml:space="preserve">
+          <trans-unit id="683" xml:space="preserve">
             <source>See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Search Service Versioning<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for details.</source>
             <target state="new">See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Search Service Versioning<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for details.</target>
           </trans-unit>
-          <trans-unit id="683" xml:space="preserve">
+          <trans-unit id="684" xml:space="preserve">
             <source><bpt id="1">&lt;strong&gt;</bpt>Request Headers<ept id="1">&lt;/strong&gt;</ept></source>
             <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Request Headers<ept id="1">&lt;/strong&gt;</ept></target>
           </trans-unit>
-          <trans-unit id="684" xml:space="preserve">
+          <trans-unit id="685" xml:space="preserve">
             <source>The following list describes the required and optional request headers.</source>
             <target state="new">The following list describes the required and optional request headers.</target>
           </trans-unit>
-          <trans-unit id="685" xml:space="preserve">
+          <trans-unit id="686" xml:space="preserve">
             <source><bpt id="1">&lt;code&gt;</bpt>Accept<ept id="1">&lt;/code&gt;</ept>: This value must be set to <bpt id="3">&lt;code&gt;</bpt>text/plain<ept id="3">&lt;/code&gt;</ept>.</source>
             <target state="new"><bpt id="1">&lt;code&gt;</bpt>Accept<ept id="1">&lt;/code&gt;</ept>: This value must be set to <bpt id="3">&lt;code&gt;</bpt>text/plain<ept id="3">&lt;/code&gt;</ept>.</target>
           </trans-unit>
-          <trans-unit id="686" xml:space="preserve">
+          <trans-unit id="687" xml:space="preserve">
             <source><bpt id="1">&lt;code&gt;</bpt>api-key<ept id="1">&lt;/code&gt;</ept>: The <bpt id="3">&lt;code&gt;</bpt>api-key<ept id="3">&lt;/code&gt;</ept> is used to authenticate the request to your Search service.</source>
             <target state="new"><bpt id="1">&lt;code&gt;</bpt>api-key<ept id="1">&lt;/code&gt;</ept>: The <bpt id="3">&lt;code&gt;</bpt>api-key<ept id="3">&lt;/code&gt;</ept> is used to authenticate the request to your Search service.</target>
           </trans-unit>
-          <trans-unit id="687" xml:space="preserve">
+          <trans-unit id="688" xml:space="preserve">
             <source>It is a string value, unique to your service URL.</source>
             <target state="new">It is a string value, unique to your service URL.</target>
           </trans-unit>
-          <trans-unit id="688" xml:space="preserve">
+          <trans-unit id="689" xml:space="preserve">
             <source>The <bpt id="2">&lt;strong&gt;</bpt>Count Documents<ept id="2">&lt;/strong&gt;</ept> request can specify either an admin key or query key for <bpt id="4">&lt;code&gt;</bpt>api-key<ept id="4">&lt;/code&gt;</ept>.</source>
             <target state="new">The <bpt id="2">&lt;strong&gt;</bpt>Count Documents<ept id="2">&lt;/strong&gt;</ept> request can specify either an admin key or query key for <bpt id="4">&lt;code&gt;</bpt>api-key<ept id="4">&lt;/code&gt;</ept>.</target>
           </trans-unit>
-          <trans-unit id="689" xml:space="preserve">
+          <trans-unit id="690" xml:space="preserve">
             <source>You will also need the service name to construct the request URL.</source>
             <target state="new">You will also need the service name to construct the request URL.</target>
           </trans-unit>
-          <trans-unit id="690" xml:space="preserve">
+          <trans-unit id="691" xml:space="preserve">
             <source>You can get both the service name and <bpt id="2">&lt;code&gt;</bpt>api-key<ept id="2">&lt;/code&gt;</ept> from your service dashboard in the Azure Preview Portal.</source>
             <target state="new">You can get both the service name and <bpt id="2">&lt;code&gt;</bpt>api-key<ept id="2">&lt;/code&gt;</ept> from your service dashboard in the Azure Preview Portal.</target>
           </trans-unit>
-          <trans-unit id="691" xml:space="preserve">
+          <trans-unit id="692" xml:space="preserve">
             <source>See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Create an Azure Search service in the portal<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for page navigation help.</source>
             <target state="new">See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Create an Azure Search service in the portal<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for page navigation help.</target>
           </trans-unit>
-          <trans-unit id="692" xml:space="preserve">
+          <trans-unit id="693" xml:space="preserve">
             <source><bpt id="1">&lt;strong&gt;</bpt>Request Body<ept id="1">&lt;/strong&gt;</ept></source>
             <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Request Body<ept id="1">&lt;/strong&gt;</ept></target>
           </trans-unit>
-          <trans-unit id="693" xml:space="preserve">
+          <trans-unit id="694" xml:space="preserve">
             <source>None.</source>
             <target state="new">None.</target>
           </trans-unit>
-          <trans-unit id="694" xml:space="preserve">
+          <trans-unit id="695" xml:space="preserve">
             <source><bpt id="1">&lt;strong&gt;</bpt>Response<ept id="1">&lt;/strong&gt;</ept></source>
             <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Response<ept id="1">&lt;/strong&gt;</ept></target>
           </trans-unit>
-          <trans-unit id="695" xml:space="preserve">
+          <trans-unit id="696" xml:space="preserve">
             <source>Status Code: 200 OK is returned for a successful response.</source>
             <target state="new">Status Code: 200 OK is returned for a successful response.</target>
           </trans-unit>
-          <trans-unit id="696" xml:space="preserve">
+          <trans-unit id="697" xml:space="preserve">
             <source>The response body contains the count value as an integer formatted in plain text.</source>
             <target state="new">The response body contains the count value as an integer formatted in plain text.</target>
           </trans-unit>
-          <trans-unit id="697" xml:space="preserve">
+          <trans-unit id="698" xml:space="preserve">
             <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></source>
             <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></target>
           </trans-unit>
-          <trans-unit id="698" xml:space="preserve">
+          <trans-unit id="699" xml:space="preserve">
             <source>Suggestions</source>
             <target state="new">Suggestions</target>
           </trans-unit>
-          <trans-unit id="699" xml:space="preserve">
+          <trans-unit id="700" xml:space="preserve">
             <source>The <bpt id="2">&lt;strong&gt;</bpt>Suggestions<ept id="2">&lt;/strong&gt;</ept> operation retrieves suggestions based on partial search input.</source>
             <target state="new">The <bpt id="2">&lt;strong&gt;</bpt>Suggestions<ept id="2">&lt;/strong&gt;</ept> operation retrieves suggestions based on partial search input.</target>
           </trans-unit>
-          <trans-unit id="700" xml:space="preserve">
+          <trans-unit id="701" xml:space="preserve">
             <source>It's typically used in search boxes to provide type-ahead suggestions as users are entering search terms.</source>
             <target state="new">It's typically used in search boxes to provide type-ahead suggestions as users are entering search terms.</target>
           </trans-unit>
-          <trans-unit id="701" xml:space="preserve">
+          <trans-unit id="702" xml:space="preserve">
             <source>Suggested text may be repeated if multiple candidates match the same search input.</source>
             <target state="new">Suggested text may be repeated if multiple candidates match the same search input.</target>
           </trans-unit>
-          <trans-unit id="702" xml:space="preserve">
+          <trans-unit id="703" xml:space="preserve">
             <source>You can use <bpt id="2">&lt;code&gt;</bpt>$select<ept id="2">&lt;/code&gt;</ept> to retrieve other document fields (including the document key) so that you can tell which document is the source for each suggestion.</source>
             <target state="new">You can use <bpt id="2">&lt;code&gt;</bpt>$select<ept id="2">&lt;/code&gt;</ept> to retrieve other document fields (including the document key) so that you can tell which document is the source for each suggestion.</target>
           </trans-unit>
-          <trans-unit id="703" xml:space="preserve">
+          <trans-unit id="704" xml:space="preserve">
             <source><bpt id="1">&lt;strong&gt;</bpt>Request<ept id="1">&lt;/strong&gt;</ept></source>
             <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Request<ept id="1">&lt;/strong&gt;</ept></target>
           </trans-unit>
-          <trans-unit id="704" xml:space="preserve">
+          <trans-unit id="705" xml:space="preserve">
             <source>HTTPS is required for service requests.</source>
             <target state="new">HTTPS is required for service requests.</target>
           </trans-unit>
-          <trans-unit id="705" xml:space="preserve">
+          <trans-unit id="706" xml:space="preserve">
             <source>The <bpt id="2">&lt;strong&gt;</bpt>Suggestions<ept id="2">&lt;/strong&gt;</ept> request can be constructed using the GET method.</source>
             <target state="new">The <bpt id="2">&lt;strong&gt;</bpt>Suggestions<ept id="2">&lt;/strong&gt;</ept> request can be constructed using the GET method.</target>
           </trans-unit>
-          <trans-unit id="706" xml:space="preserve">
+          <trans-unit id="707" xml:space="preserve">
             <source>The request URI specifies the name of the index to query.</source>
             <target state="new">The request URI specifies the name of the index to query.</target>
           </trans-unit>
-          <trans-unit id="707" xml:space="preserve">
+          <trans-unit id="708" xml:space="preserve">
             <source>It also includes the partially input search term in the query string.</source>
             <target state="new">It also includes the partially input search term in the query string.</target>
           </trans-unit>
-          <trans-unit id="708" xml:space="preserve">
+          <trans-unit id="709" xml:space="preserve">
             <source><bpt id="1">&lt;strong&gt;</bpt>Query Parameters<ept id="1">&lt;/strong&gt;</ept></source>
             <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Query Parameters<ept id="1">&lt;/strong&gt;</ept></target>
           </trans-unit>
-          <trans-unit id="709" xml:space="preserve">
+          <trans-unit id="710" xml:space="preserve">
             <source><bpt id="1">&lt;code&gt;</bpt>search=[string]<ept id="1">&lt;/code&gt;</ept> - the search text to use to suggest queries.</source>
             <target state="new"><bpt id="1">&lt;code&gt;</bpt>search=[string]<ept id="1">&lt;/code&gt;</ept> - the search text to use to suggest queries.</target>
           </trans-unit>
-          <trans-unit id="710" xml:space="preserve">
+          <trans-unit id="711" xml:space="preserve">
             <source>Must be at least 3 characters, and no more than 25 characters.</source>
             <target state="new">Must be at least 3 characters, and no more than 25 characters.</target>
           </trans-unit>
-          <trans-unit id="711" xml:space="preserve">
+          <trans-unit id="712" xml:space="preserve">
             <source><bpt id="1">&lt;code&gt;</bpt>fuzzy=[boolean]<ept id="1">&lt;/code&gt;</ept> (optional, default = false) - when set to true this API will find suggestions even if there's a substituted or missing character in the search text.</source>
             <target state="new"><bpt id="1">&lt;code&gt;</bpt>fuzzy=[boolean]<ept id="1">&lt;/code&gt;</ept> (optional, default = false) - when set to true this API will find suggestions even if there's a substituted or missing character in the search text.</target>
           </trans-unit>
-          <trans-unit id="712" xml:space="preserve">
+          <trans-unit id="713" xml:space="preserve">
             <source>While this provides a better experience in some scenarios it comes at a performance cost as fuzzy suggestion searches are slower and consume more resources.</source>
             <target state="new">While this provides a better experience in some scenarios it comes at a performance cost as fuzzy suggestion searches are slower and consume more resources.</target>
           </trans-unit>
-          <trans-unit id="713" xml:space="preserve">
+          <trans-unit id="714" xml:space="preserve">
             <source><bpt id="1">&lt;code&gt;</bpt>searchFields=[string]<ept id="1">&lt;/code&gt;</ept> (optional) - the list of comma-separated field names to search for the specified search text.</source>
             <target state="new"><bpt id="1">&lt;code&gt;</bpt>searchFields=[string]<ept id="1">&lt;/code&gt;</ept> (optional) - the list of comma-separated field names to search for the specified search text.</target>
           </trans-unit>
-          <trans-unit id="714" xml:space="preserve">
+          <trans-unit id="715" xml:space="preserve">
             <source>Target fields must be enabled for suggestions.</source>
             <target state="new">Target fields must be enabled for suggestions.</target>
           </trans-unit>
-          <trans-unit id="715" xml:space="preserve">
+          <trans-unit id="716" xml:space="preserve">
             <source><bpt id="1">&lt;code&gt;</bpt>$top=#<ept id="1">&lt;/code&gt;</ept> (optional, default = 5) - the number of suggestions to retrieve.</source>
             <target state="new"><bpt id="1">&lt;code&gt;</bpt>$top=#<ept id="1">&lt;/code&gt;</ept> (optional, default = 5) - the number of suggestions to retrieve.</target>
           </trans-unit>
-          <trans-unit id="716" xml:space="preserve">
+          <trans-unit id="717" xml:space="preserve">
             <source>Must be a number between 1 and 10.</source>
             <target state="new">Must be a number between 1 and 10.</target>
           </trans-unit>
-          <trans-unit id="717" xml:space="preserve">
+          <trans-unit id="718" xml:space="preserve">
             <source><bpt id="1">&lt;code&gt;</bpt>$filter=[string]<ept id="1">&lt;/code&gt;</ept> (optional) - an expression that filters the documents considered for suggestions.</source>
             <target state="new"><bpt id="1">&lt;code&gt;</bpt>$filter=[string]<ept id="1">&lt;/code&gt;</ept> (optional) - an expression that filters the documents considered for suggestions.</target>
           </trans-unit>
-          <trans-unit id="718" xml:space="preserve">
+          <trans-unit id="719" xml:space="preserve">
             <source><bpt id="1">&lt;code&gt;</bpt>$orderby=[string]<ept id="1">&lt;/code&gt;</ept> (optional) - a list of comma-separated expressions to sort the results by.</source>
             <target state="new"><bpt id="1">&lt;code&gt;</bpt>$orderby=[string]<ept id="1">&lt;/code&gt;</ept> (optional) - a list of comma-separated expressions to sort the results by.</target>
           </trans-unit>
-          <trans-unit id="719" xml:space="preserve">
+          <trans-unit id="720" xml:space="preserve">
             <source>Each expression can be either a field name or a call to the <bpt id="2">&lt;code&gt;</bpt>geo.distance()<ept id="2">&lt;/code&gt;</ept> function.</source>
             <target state="new">Each expression can be either a field name or a call to the <bpt id="2">&lt;code&gt;</bpt>geo.distance()<ept id="2">&lt;/code&gt;</ept> function.</target>
           </trans-unit>
-          <trans-unit id="720" xml:space="preserve">
+          <trans-unit id="721" xml:space="preserve">
             <source>Each expression can be followed by <bpt id="2">&lt;code&gt;</bpt>asc<ept id="2">&lt;/code&gt;</ept> to indicated ascending, and <bpt id="4">&lt;code&gt;</bpt>desc<ept id="4">&lt;/code&gt;</ept> to indicate descending.</source>
             <target state="new">Each expression can be followed by <bpt id="2">&lt;code&gt;</bpt>asc<ept id="2">&lt;/code&gt;</ept> to indicated ascending, and <bpt id="4">&lt;code&gt;</bpt>desc<ept id="4">&lt;/code&gt;</ept> to indicate descending.</target>
           </trans-unit>
-          <trans-unit id="721" xml:space="preserve">
+          <trans-unit id="722" xml:space="preserve">
             <source>The default is ascending order.</source>
             <target state="new">The default is ascending order.</target>
           </trans-unit>
-          <trans-unit id="722" xml:space="preserve">
+          <trans-unit id="723" xml:space="preserve">
             <source>There is a limit of 32 clauses for <bpt id="2">&lt;code&gt;</bpt>$orderby<ept id="2">&lt;/code&gt;</ept>.</source>
             <target state="new">There is a limit of 32 clauses for <bpt id="2">&lt;code&gt;</bpt>$orderby<ept id="2">&lt;/code&gt;</ept>.</target>
           </trans-unit>
-          <trans-unit id="723" xml:space="preserve">
+          <trans-unit id="724" xml:space="preserve">
             <source><bpt id="1">&lt;code&gt;</bpt>$select=[string]<ept id="1">&lt;/code&gt;</ept> (optional) - a list of comma-separated fields to retrieve.</source>
             <target state="new"><bpt id="1">&lt;code&gt;</bpt>$select=[string]<ept id="1">&lt;/code&gt;</ept> (optional) - a list of comma-separated fields to retrieve.</target>
           </trans-unit>
-          <trans-unit id="724" xml:space="preserve">
+          <trans-unit id="725" xml:space="preserve">
             <source>If unspecified, only the document key and suggestion text is returned.</source>
             <target state="new">If unspecified, only the document key and suggestion text is returned.</target>
           </trans-unit>
-          <trans-unit id="725" xml:space="preserve">
+          <trans-unit id="726" xml:space="preserve">
             <source><bpt id="1">&lt;code&gt;</bpt>api-version=[string]<ept id="1">&lt;/code&gt;</ept> (required).</source>
             <target state="new"><bpt id="1">&lt;code&gt;</bpt>api-version=[string]<ept id="1">&lt;/code&gt;</ept> (required).</target>
           </trans-unit>
-          <trans-unit id="726" xml:space="preserve">
+          <trans-unit id="727" xml:space="preserve">
             <source>Valid values include <bpt id="2">&lt;code&gt;</bpt>2014-07-31-Preview<ept id="2">&lt;/code&gt;</ept> or <bpt id="4">&lt;code&gt;</bpt>2014-10-20-Preview<ept id="4">&lt;/code&gt;</ept>.</source>
             <target state="new">Valid values include <bpt id="2">&lt;code&gt;</bpt>2014-07-31-Preview<ept id="2">&lt;/code&gt;</ept> or <bpt id="4">&lt;code&gt;</bpt>2014-10-20-Preview<ept id="4">&lt;/code&gt;</ept>.</target>
           </trans-unit>
-          <trans-unit id="727" xml:space="preserve">
+          <trans-unit id="728" xml:space="preserve">
             <source>You can specify which one to use on each request to get version-specific behaviors, but as a best practice, use the same version throughout your code.</source>
             <target state="new">You can specify which one to use on each request to get version-specific behaviors, but as a best practice, use the same version throughout your code.</target>
           </trans-unit>
-          <trans-unit id="728" xml:space="preserve">
+          <trans-unit id="729" xml:space="preserve">
             <source>The recommended version is <bpt id="2">&lt;code&gt;</bpt>2014-07-31-Preview<ept id="2">&lt;/code&gt;</ept> for general use.</source>
             <target state="new">The recommended version is <bpt id="2">&lt;code&gt;</bpt>2014-07-31-Preview<ept id="2">&lt;/code&gt;</ept> for general use.</target>
           </trans-unit>
-          <trans-unit id="729" xml:space="preserve">
+          <trans-unit id="730" xml:space="preserve">
             <source>Alternatively, use <bpt id="2">&lt;code&gt;</bpt>2014-10-20-Preview<ept id="2">&lt;/code&gt;</ept> to evaluate experimental features.</source>
             <target state="new">Alternatively, use <bpt id="2">&lt;code&gt;</bpt>2014-10-20-Preview<ept id="2">&lt;/code&gt;</ept> to evaluate experimental features.</target>
           </trans-unit>
-          <trans-unit id="730" xml:space="preserve">
+          <trans-unit id="731" xml:space="preserve">
             <source>See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Search Service Versioning<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for details.</source>
             <target state="new">See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Search Service Versioning<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for details.</target>
           </trans-unit>
-          <trans-unit id="731" xml:space="preserve">
+          <trans-unit id="732" xml:space="preserve">
             <source>Note: For this operation, the <bpt id="2">&lt;code&gt;</bpt>api-version<ept id="2">&lt;/code&gt;</ept> is specified as a query parameter.</source>
             <target state="new">Note: For this operation, the <bpt id="2">&lt;code&gt;</bpt>api-version<ept id="2">&lt;/code&gt;</ept> is specified as a query parameter.</target>
           </trans-unit>
-          <trans-unit id="732" xml:space="preserve">
+          <trans-unit id="733" xml:space="preserve">
             <source><bpt id="1">&lt;strong&gt;</bpt>Request Headers<ept id="1">&lt;/strong&gt;</ept></source>
             <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Request Headers<ept id="1">&lt;/strong&gt;</ept></target>
           </trans-unit>
-          <trans-unit id="733" xml:space="preserve">
+          <trans-unit id="734" xml:space="preserve">
             <source>The following list describes the required and optional request headers</source>
             <target state="new">The following list describes the required and optional request headers</target>
           </trans-unit>
-          <trans-unit id="734" xml:space="preserve">
+          <trans-unit id="735" xml:space="preserve">
             <source><bpt id="1">&lt;code&gt;</bpt>api-key<ept id="1">&lt;/code&gt;</ept>: The <bpt id="3">&lt;code&gt;</bpt>api-key<ept id="3">&lt;/code&gt;</ept> is used to authenticate the request to your Search service.</source>
             <target state="new"><bpt id="1">&lt;code&gt;</bpt>api-key<ept id="1">&lt;/code&gt;</ept>: The <bpt id="3">&lt;code&gt;</bpt>api-key<ept id="3">&lt;/code&gt;</ept> is used to authenticate the request to your Search service.</target>
           </trans-unit>
-          <trans-unit id="735" xml:space="preserve">
+          <trans-unit id="736" xml:space="preserve">
             <source>It is a string value, unique to your service URL.</source>
             <target state="new">It is a string value, unique to your service URL.</target>
           </trans-unit>
-          <trans-unit id="736" xml:space="preserve">
+          <trans-unit id="737" xml:space="preserve">
             <source>The <bpt id="2">&lt;strong&gt;</bpt>Suggestions<ept id="2">&lt;/strong&gt;</ept> request can specify either an admin key or query key as the <bpt id="4">&lt;code&gt;</bpt>api-key<ept id="4">&lt;/code&gt;</ept>.</source>
             <target state="new">The <bpt id="2">&lt;strong&gt;</bpt>Suggestions<ept id="2">&lt;/strong&gt;</ept> request can specify either an admin key or query key as the <bpt id="4">&lt;code&gt;</bpt>api-key<ept id="4">&lt;/code&gt;</ept>.</target>
           </trans-unit>
-          <trans-unit id="737" xml:space="preserve">
+          <trans-unit id="738" xml:space="preserve">
             <source>You will also need the service name to construct the request URL.</source>
             <target state="new">You will also need the service name to construct the request URL.</target>
           </trans-unit>
-          <trans-unit id="738" xml:space="preserve">
+          <trans-unit id="739" xml:space="preserve">
             <source>You can get both the service name and <bpt id="2">&lt;code&gt;</bpt>api-key<ept id="2">&lt;/code&gt;</ept> from your service dashboard in the Azure Preview Portal.</source>
             <target state="new">You can get both the service name and <bpt id="2">&lt;code&gt;</bpt>api-key<ept id="2">&lt;/code&gt;</ept> from your service dashboard in the Azure Preview Portal.</target>
           </trans-unit>
-          <trans-unit id="739" xml:space="preserve">
+          <trans-unit id="740" xml:space="preserve">
             <source>See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Create an Azure Search service in the portal<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for page navigation help.</source>
             <target state="new">See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Create an Azure Search service in the portal<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for page navigation help.</target>
           </trans-unit>
-          <trans-unit id="740" xml:space="preserve">
+          <trans-unit id="741" xml:space="preserve">
             <source><bpt id="1">&lt;strong&gt;</bpt>Request Body<ept id="1">&lt;/strong&gt;</ept></source>
             <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Request Body<ept id="1">&lt;/strong&gt;</ept></target>
           </trans-unit>
-          <trans-unit id="741" xml:space="preserve">
+          <trans-unit id="742" xml:space="preserve">
             <source>None.</source>
             <target state="new">None.</target>
           </trans-unit>
-          <trans-unit id="742" xml:space="preserve">
+          <trans-unit id="743" xml:space="preserve">
             <source><bpt id="1">&lt;strong&gt;</bpt>Response<ept id="1">&lt;/strong&gt;</ept></source>
             <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Response<ept id="1">&lt;/strong&gt;</ept></target>
           </trans-unit>
-          <trans-unit id="743" xml:space="preserve">
+          <trans-unit id="744" xml:space="preserve">
             <source>Status Code: 200 OK is returned for a successful response.</source>
             <target state="new">Status Code: 200 OK is returned for a successful response.</target>
           </trans-unit>
-          <trans-unit id="744" xml:space="preserve">
+          <trans-unit id="745" xml:space="preserve">
             <source>If the projection option is used to retrieve fields they are included in each element of the array:</source>
             <target state="new">If the projection option is used to retrieve fields they are included in each element of the array:</target>
           </trans-unit>
-          <trans-unit id="745" xml:space="preserve">
+          <trans-unit id="746" xml:space="preserve">
             <source><bpt id="1">&lt;strong&gt;</bpt>Example<ept id="1">&lt;/strong&gt;</ept></source>
             <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Example<ept id="1">&lt;/strong&gt;</ept></target>
           </trans-unit>
-          <trans-unit id="746" xml:space="preserve">
+          <trans-unit id="747" xml:space="preserve">
             <source>Retrieve 5 suggestions where the partial search input is 'lux'</source>
             <target state="new">Retrieve 5 suggestions where the partial search input is 'lux'</target>
           </trans-unit>

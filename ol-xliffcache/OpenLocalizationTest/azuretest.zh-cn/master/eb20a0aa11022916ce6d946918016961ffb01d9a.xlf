@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-us" target-language="zh-cn" original="2/18/2016 5:23:09 PM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+  <file datatype="xml" source-language="en-us" target-language="zh-cn" original="2/19/2016 5:11:34 PM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
     <header>
       <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">eb20a0aa11022916ce6d946918016961ffb01d9a</xliffext:olfilehash>
       <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
@@ -341,146 +341,150 @@
             <target state="new">You can use the SAS tokens at the root namespace level or at the granular notification hubs level.</target>
           </trans-unit>
           <trans-unit id="184" xml:space="preserve">
-            <source>These SAS tokens can be set with different authorization rules e.g. send message permissions, listen notification permissions etc. More details here - [NH Security model]</source>
-            <target state="new">These SAS tokens can be set with different authorization rules e.g. send message permissions, listen notification permissions etc. More details here - [NH Security model]</target>
+            <source>These SAS tokens can be set with different authorization rules e.g. send message permissions, listen notification permissions etc.</source>
+            <target state="new">These SAS tokens can be set with different authorization rules e.g. send message permissions, listen notification permissions etc.</target>
           </trans-unit>
           <trans-unit id="185" xml:space="preserve">
+            <source>More details here - [NH Security model]</source>
+            <target state="new">More details here - [NH Security model]</target>
+          </trans-unit>
+          <trans-unit id="186" xml:space="preserve">
             <source>12.  How do you handle sensitive payload in the notifications?</source>
             <target state="new">12.  How do you handle sensitive payload in the notifications?</target>
           </trans-unit>
-          <trans-unit id="186" xml:space="preserve">
+          <trans-unit id="187" xml:space="preserve">
             <source>All notifications are delivered to the devices by the platforms Push Notification Services (PNS).</source>
             <target state="new">All notifications are delivered to the devices by the platforms Push Notification Services (PNS).</target>
           </trans-unit>
-          <trans-unit id="187" xml:space="preserve">
+          <trans-unit id="188" xml:space="preserve">
             <source>When a sender sends a notification to Azure Notification Hubs then we process and pass the notification to the respective PNS.</source>
             <target state="new">When a sender sends a notification to Azure Notification Hubs then we process and pass the notification to the respective PNS.</target>
           </trans-unit>
-          <trans-unit id="188" xml:space="preserve">
+          <trans-unit id="189" xml:space="preserve">
             <source>All connections from the sender to the Azure Notifications Hubs and then to the PNS use HTTPS.</source>
             <target state="new">All connections from the sender to the Azure Notifications Hubs and then to the PNS use HTTPS.</target>
           </trans-unit>
-          <trans-unit id="189" xml:space="preserve">
+          <trans-unit id="190" xml:space="preserve">
             <source>Azure Notifications Hubs does not log the payload of the message in any way.</source>
             <target state="new">Azure Notifications Hubs does not log the payload of the message in any way.</target>
           </trans-unit>
-          <trans-unit id="190" xml:space="preserve">
+          <trans-unit id="191" xml:space="preserve">
             <source>For sending sensitive payloads however we recommend a Secure Push pattern where the sender sends a 'ping' notification with a message identifier to the device without the sensitive payload and when the app on the device receives this payload then it calls a secure app backend API directly to fetch the message details.</source>
             <target state="new">For sending sensitive payloads however we recommend a Secure Push pattern where the sender sends a 'ping' notification with a message identifier to the device without the sensitive payload and when the app on the device receives this payload then it calls a secure app backend API directly to fetch the message details.</target>
           </trans-unit>
-          <trans-unit id="191" xml:space="preserve">
+          <trans-unit id="192" xml:space="preserve">
             <source>Tutorial to implement the pattern is here - [NH - Secure Push tutorial]</source>
             <target state="new">Tutorial to implement the pattern is here - [NH - Secure Push tutorial]</target>
           </trans-unit>
-          <trans-unit id="192" xml:space="preserve">
+          <trans-unit id="193" xml:space="preserve">
             <source>Operations</source>
             <target state="new">Operations</target>
           </trans-unit>
-          <trans-unit id="193" xml:space="preserve">
+          <trans-unit id="194" xml:space="preserve">
             <source>1.   What is the Disaster Recovery (DR) story?</source>
             <target state="new">1.   What is the Disaster Recovery (DR) story?</target>
           </trans-unit>
-          <trans-unit id="194" xml:space="preserve">
+          <trans-unit id="195" xml:space="preserve">
             <source>We provide a metadata Disaster Recovery at our end (Notification Hub name, connection string etc).</source>
             <target state="new">We provide a metadata Disaster Recovery at our end (Notification Hub name, connection string etc).</target>
           </trans-unit>
-          <trans-unit id="195" xml:space="preserve">
+          <trans-unit id="196" xml:space="preserve">
             <source>In the event of a DR, the registrations data is the one which will be lost so you will have to come up with a solution to re-populate this into your new hub.</source>
             <target state="new">In the event of a DR, the registrations data is the one which will be lost so you will have to come up with a solution to re-populate this into your new hub.</target>
           </trans-unit>
-          <trans-unit id="196" xml:space="preserve">
+          <trans-unit id="197" xml:space="preserve">
             <source><bpt id="1">&lt;em&gt;</bpt>Step1<ept id="1">&lt;/em&gt;</ept> - Create a secondary Notification Hub in a different DC.</source>
             <target state="new"><bpt id="1">&lt;em&gt;</bpt>Step1<ept id="1">&lt;/em&gt;</ept> - Create a secondary Notification Hub in a different DC.</target>
           </trans-unit>
-          <trans-unit id="197" xml:space="preserve">
+          <trans-unit id="198" xml:space="preserve">
             <source>You can create this on the fly at the time of DR event or you can create one from the get go.</source>
             <target state="new">You can create this on the fly at the time of DR event or you can create one from the get go.</target>
           </trans-unit>
-          <trans-unit id="198" xml:space="preserve">
+          <trans-unit id="199" xml:space="preserve">
             <source>It doesn't matter much because NH provisioning is a fast process in the order of a few seconds.</source>
             <target state="new">It doesn't matter much because NH provisioning is a fast process in the order of a few seconds.</target>
           </trans-unit>
-          <trans-unit id="199" xml:space="preserve">
+          <trans-unit id="200" xml:space="preserve">
             <source>Having one from the beginning will also shield you from the DR event impacting our management capabilities so it is recommended.</source>
             <target state="new">Having one from the beginning will also shield you from the DR event impacting our management capabilities so it is recommended.</target>
           </trans-unit>
-          <trans-unit id="200" xml:space="preserve">
+          <trans-unit id="201" xml:space="preserve">
             <source><bpt id="1">&lt;em&gt;</bpt>Step2<ept id="1">&lt;/em&gt;</ept> - Hydrate the secondary Notification Hub with the registrations from the primary Notification Hub.</source>
             <target state="new"><bpt id="1">&lt;em&gt;</bpt>Step2<ept id="1">&lt;/em&gt;</ept> - Hydrate the secondary Notification Hub with the registrations from the primary Notification Hub.</target>
           </trans-unit>
-          <trans-unit id="201" xml:space="preserve">
+          <trans-unit id="202" xml:space="preserve">
             <source>It is not recommended to try to maintain registrations on both the hubs and try to keep them in sync on the fly as registrations are coming in, as that hasn’t worked well because of the inherent nature of registrations to expire by the PNS.</source>
             <target state="new">It is not recommended to try to maintain registrations on both the hubs and try to keep them in sync on the fly as registrations are coming in, as that hasn’t worked well because of the inherent nature of registrations to expire by the PNS.</target>
           </trans-unit>
-          <trans-unit id="202" xml:space="preserve">
+          <trans-unit id="203" xml:space="preserve">
             <source>Notification Hubs clean them up as we receive PNS feedback about expired or invalid registrations.</source>
             <target state="new">Notification Hubs clean them up as we receive PNS feedback about expired or invalid registrations.</target>
           </trans-unit>
-          <trans-unit id="203" xml:space="preserve">
+          <trans-unit id="204" xml:space="preserve">
             <source>Recommendation is to use an app backend which either:</source>
             <target state="new">Recommendation is to use an app backend which either:</target>
           </trans-unit>
-          <trans-unit id="204" xml:space="preserve">
+          <trans-unit id="205" xml:space="preserve">
             <source>Maintains that set of registrations at its end so that it can do a bulk insert into the secondary notification hub in case of DR, OR</source>
             <target state="new">Maintains that set of registrations at its end so that it can do a bulk insert into the secondary notification hub in case of DR, OR</target>
           </trans-unit>
-          <trans-unit id="205" xml:space="preserve">
+          <trans-unit id="206" xml:space="preserve">
             <source>Gets a regular dump of registrations from the primary hub as a backup and then does a bulk insert into the secondary NH.</source>
             <target state="new">Gets a regular dump of registrations from the primary hub as a backup and then does a bulk insert into the secondary NH.</target>
           </trans-unit>
-          <trans-unit id="206" xml:space="preserve">
+          <trans-unit id="207" xml:space="preserve">
             <source>(Registrations Export/Import functionality available in Standard Tier is described here: [Registrations Export/Import])</source>
             <target state="new">(Registrations Export/Import functionality available in Standard Tier is described here: [Registrations Export/Import])</target>
           </trans-unit>
-          <trans-unit id="207" xml:space="preserve">
+          <trans-unit id="208" xml:space="preserve">
             <source>If you don’t have a backend then when the app starts up on the devices then they will do a new registration in the secondary NH and eventually the secondary NH will have all the active devices registered but the downside is that there will be a time period when devices where apps haven't opened up will not receive notifications.</source>
             <target state="new">If you don’t have a backend then when the app starts up on the devices then they will do a new registration in the secondary NH and eventually the secondary NH will have all the active devices registered but the downside is that there will be a time period when devices where apps haven't opened up will not receive notifications.</target>
           </trans-unit>
-          <trans-unit id="208" xml:space="preserve">
+          <trans-unit id="209" xml:space="preserve">
             <source>2.   Is there any audit log capability?</source>
             <target state="new">2.   Is there any audit log capability?</target>
           </trans-unit>
-          <trans-unit id="209" xml:space="preserve">
+          <trans-unit id="210" xml:space="preserve">
             <source>All Notification Hubs Management operations go to Operation Logs which are exposed in the Azure Management Portal.</source>
             <target state="new">All Notification Hubs Management operations go to Operation Logs which are exposed in the Azure Management Portal.</target>
           </trans-unit>
-          <trans-unit id="210" xml:space="preserve">
+          <trans-unit id="211" xml:space="preserve">
             <source>Monitoring &amp; Troubleshooting</source>
             <target state="new">Monitoring &amp; Troubleshooting</target>
           </trans-unit>
-          <trans-unit id="211" xml:space="preserve">
+          <trans-unit id="212" xml:space="preserve">
             <source>1.   What troubleshooting capabilities are available?</source>
             <target state="new">1.   What troubleshooting capabilities are available?</target>
           </trans-unit>
-          <trans-unit id="212" xml:space="preserve">
+          <trans-unit id="213" xml:space="preserve">
             <source>Azure Notification Hubs provide several features to do common troubleshooting particularly in the most common scenario around dropped notifications.</source>
             <target state="new">Azure Notification Hubs provide several features to do common troubleshooting particularly in the most common scenario around dropped notifications.</target>
           </trans-unit>
-          <trans-unit id="213" xml:space="preserve">
+          <trans-unit id="214" xml:space="preserve">
             <source>See details in this troubleshooting whitepaper - [NH - troubleshooting]</source>
             <target state="new">See details in this troubleshooting whitepaper - [NH - troubleshooting]</target>
           </trans-unit>
-          <trans-unit id="214" xml:space="preserve">
+          <trans-unit id="215" xml:space="preserve">
             <source>2.   What telemetry features are available?</source>
             <target state="new">2.   What telemetry features are available?</target>
           </trans-unit>
-          <trans-unit id="215" xml:space="preserve">
+          <trans-unit id="216" xml:space="preserve">
             <source>Azure Notification Hubs enable viewing telemetry data in the Azure management portal.</source>
             <target state="new">Azure Notification Hubs enable viewing telemetry data in the Azure management portal.</target>
           </trans-unit>
-          <trans-unit id="216" xml:space="preserve">
+          <trans-unit id="217" xml:space="preserve">
             <source>Details of the available metrics are available here - [NH - Metrics].</source>
             <target state="new">Details of the available metrics are available here - [NH - Metrics].</target>
           </trans-unit>
-          <trans-unit id="217" xml:space="preserve">
+          <trans-unit id="218" xml:space="preserve">
             <source>Note that successful notifications only mean that the notifications have been delivered to the external Push Notification Service (e.g. APNS for Apple, GCM for Google etc) and then it is upto the PNS to deliver the notification to the devices and the PNS do not expose these metrics to us.</source>
             <target state="new">Note that successful notifications only mean that the notifications have been delivered to the external Push Notification Service (e.g. APNS for Apple, GCM for Google etc) and then it is upto the PNS to deliver the notification to the devices and the PNS do not expose these metrics to us.</target>
           </trans-unit>
-          <trans-unit id="218" xml:space="preserve">
+          <trans-unit id="219" xml:space="preserve">
             <source>It also provides the capability to export the telemetry programmatically (in Standard Tier).</source>
             <target state="new">It also provides the capability to export the telemetry programmatically (in Standard Tier).</target>
           </trans-unit>
-          <trans-unit id="219" xml:space="preserve">
+          <trans-unit id="220" xml:space="preserve">
             <source>See this sample for details - [NH - Metrics sample]</source>
             <target state="new">See this sample for details - [NH - Metrics sample]</target>
           </trans-unit>

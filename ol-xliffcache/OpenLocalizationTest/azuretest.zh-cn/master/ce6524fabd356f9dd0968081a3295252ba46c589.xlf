@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-us" target-language="zh-cn" original="2/18/2016 5:26:25 PM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+  <file datatype="xml" source-language="en-us" target-language="zh-cn" original="2/19/2016 5:17:54 PM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
     <header>
       <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ce6524fabd356f9dd0968081a3295252ba46c589</xliffext:olfilehash>
       <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
@@ -237,50 +237,54 @@
             <target state="new"><bpt id="1">&lt;em&gt;</bpt>Implicit fine grain partitioning of application state.<ept id="1">&lt;/em&gt;</ept> By using actors as directly addressable entities, programmers implicitly breaks down the overall state of their applications.</target>
           </trans-unit>
           <trans-unit id="158" xml:space="preserve">
-            <source>While the Azure Fabric Actors programming model does not prescribe how big or small an actor should be, in most cases it makes sense to have a relative large number of actors – millions or more – with each representing a natural entity of the application, such as a user account, a purchase order, etc. With actors being individually addressable and their physical location abstracted away by the runtime, Azure Fabric Actors has enormous flexibility in balancing load and dealing with hot spots in a transparent and generic way without any thought from the application developer.</source>
-            <target state="new">While the Azure Fabric Actors programming model does not prescribe how big or small an actor should be, in most cases it makes sense to have a relative large number of actors – millions or more – with each representing a natural entity of the application, such as a user account, a purchase order, etc. With actors being individually addressable and their physical location abstracted away by the runtime, Azure Fabric Actors has enormous flexibility in balancing load and dealing with hot spots in a transparent and generic way without any thought from the application developer.</target>
+            <source>While the Azure Fabric Actors programming model does not prescribe how big or small an actor should be, in most cases it makes sense to have a relative large number of actors – millions or more – with each representing a natural entity of the application, such as a user account, a purchase order, etc.</source>
+            <target state="new">While the Azure Fabric Actors programming model does not prescribe how big or small an actor should be, in most cases it makes sense to have a relative large number of actors – millions or more – with each representing a natural entity of the application, such as a user account, a purchase order, etc.</target>
           </trans-unit>
           <trans-unit id="159" xml:space="preserve">
+            <source>With actors being individually addressable and their physical location abstracted away by the runtime, Azure Fabric Actors has enormous flexibility in balancing load and dealing with hot spots in a transparent and generic way without any thought from the application developer.</source>
+            <target state="new">With actors being individually addressable and their physical location abstracted away by the runtime, Azure Fabric Actors has enormous flexibility in balancing load and dealing with hot spots in a transparent and generic way without any thought from the application developer.</target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
             <source><bpt id="1">&lt;em&gt;</bpt>Adaptive resource management.<ept id="1">&lt;/em&gt;</ept> With actors making no assumption about locality of other actors they interact with and because of the location transparency, the Azure Fabric runtime can manage and adjust allocation of available HW resources in a very dynamic way by making fine grain decisions on placement/migration of actors across the compute cluster in reaction to load and communication patterns without failing incoming requests.</source>
             <target state="new"><bpt id="1">&lt;em&gt;</bpt>Adaptive resource management.<ept id="1">&lt;/em&gt;</ept> With actors making no assumption about locality of other actors they interact with and because of the location transparency, the Azure Fabric runtime can manage and adjust allocation of available HW resources in a very dynamic way by making fine grain decisions on placement/migration of actors across the compute cluster in reaction to load and communication patterns without failing incoming requests.</target>
           </trans-unit>
-          <trans-unit id="160" xml:space="preserve">
+          <trans-unit id="161" xml:space="preserve">
             <source>By creating multiple replicas of a particular actor the runtime can increase throughput of the actor if necessary without making any changes to the application code.</source>
             <target state="new">By creating multiple replicas of a particular actor the runtime can increase throughput of the actor if necessary without making any changes to the application code.</target>
           </trans-unit>
-          <trans-unit id="161" xml:space="preserve">
+          <trans-unit id="162" xml:space="preserve">
             <source><bpt id="1">&lt;em&gt;</bpt>Multiplexed communication.<ept id="1">&lt;/em&gt;</ept> Actors in Azure Fabric have logical endpoints, and messaging between them is multiplexed across a fixed set of all-to-all physical connections (TCP sockets).</source>
             <target state="new"><bpt id="1">&lt;em&gt;</bpt>Multiplexed communication.<ept id="1">&lt;/em&gt;</ept> Actors in Azure Fabric have logical endpoints, and messaging between them is multiplexed across a fixed set of all-to-all physical connections (TCP sockets).</target>
           </trans-unit>
-          <trans-unit id="162" xml:space="preserve">
+          <trans-unit id="163" xml:space="preserve">
             <source>This allows the Azure Fabric Actors runtime to host a very large number (millions) of addressable entities with zero OS overhead per actor.</source>
             <target state="new">This allows the Azure Fabric Actors runtime to host a very large number (millions) of addressable entities with zero OS overhead per actor.</target>
           </trans-unit>
-          <trans-unit id="163" xml:space="preserve">
+          <trans-unit id="164" xml:space="preserve">
             <source>In addition, activation/deactivation of an actor does not incur the cost of registering/unregistering a physical endpoint, such as a TCP port or a HTTP URL.</source>
             <target state="new">In addition, activation/deactivation of an actor does not incur the cost of registering/unregistering a physical endpoint, such as a TCP port or a HTTP URL.</target>
           </trans-unit>
-          <trans-unit id="164" xml:space="preserve">
+          <trans-unit id="165" xml:space="preserve">
             <source><bpt id="1">&lt;em&gt;</bpt>Efficient scheduling.<ept id="1">&lt;/em&gt;</ept> The Azure Fabric runtime schedules execution of a large number of single-threaded actors across a custom thread pool with a thread per physical processor core.</source>
             <target state="new"><bpt id="1">&lt;em&gt;</bpt>Efficient scheduling.<ept id="1">&lt;/em&gt;</ept> The Azure Fabric runtime schedules execution of a large number of single-threaded actors across a custom thread pool with a thread per physical processor core.</target>
           </trans-unit>
-          <trans-unit id="165" xml:space="preserve">
+          <trans-unit id="166" xml:space="preserve">
             <source>With actor code written in the non-blocking continuation-based style (a requirement of the Azure Fabric Actors programming model) application code runs in a very efficient “cooperative” multi-threaded manner with no contention.</source>
             <target state="new">With actor code written in the non-blocking continuation-based style (a requirement of the Azure Fabric Actors programming model) application code runs in a very efficient “cooperative” multi-threaded manner with no contention.</target>
           </trans-unit>
-          <trans-unit id="166" xml:space="preserve">
+          <trans-unit id="167" xml:space="preserve">
             <source>This allows the system to reach high throughput and run at very high CPU utilization (up to 90 + %) with great stability.</source>
             <target state="new">This allows the system to reach high throughput and run at very high CPU utilization (up to 90 + %) with great stability.</target>
           </trans-unit>
-          <trans-unit id="167" xml:space="preserve">
+          <trans-unit id="168" xml:space="preserve">
             <source>The fact that a growth in the number of actors in the system and the load does not lead to additional threads or other OS primitives helps scalability of individual nodes and the whole system.</source>
             <target state="new">The fact that a growth in the number of actors in the system and the load does not lead to additional threads or other OS primitives helps scalability of individual nodes and the whole system.</target>
           </trans-unit>
-          <trans-unit id="168" xml:space="preserve">
+          <trans-unit id="169" xml:space="preserve">
             <source><bpt id="1">&lt;em&gt;</bpt>Explicit asynchrony.<ept id="1">&lt;/em&gt;</ept> The Azure Fabric Actors programming model makes the asynchronous nature of a distributed application explicit and guides programmers to write non-blocking asynchronous code.</source>
             <target state="new"><bpt id="1">&lt;em&gt;</bpt>Explicit asynchrony.<ept id="1">&lt;/em&gt;</ept> The Azure Fabric Actors programming model makes the asynchronous nature of a distributed application explicit and guides programmers to write non-blocking asynchronous code.</target>
           </trans-unit>
-          <trans-unit id="169" xml:space="preserve">
+          <trans-unit id="170" xml:space="preserve">
             <source>This enables a large degree of distributed parallelism and overall throughput without the explicit use of multi-threading.</source>
             <target state="new">This enables a large degree of distributed parallelism and overall throughput without the explicit use of multi-threading.</target>
           </trans-unit>

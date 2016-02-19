@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-us" target-language="zh-cn" original="2/18/2016 5:19:22 PM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+  <file datatype="xml" source-language="en-us" target-language="zh-cn" original="2/19/2016 5:03:37 PM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
     <header>
       <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">540527c7a9d72df4d03bd3dac3036e8eedd184b1</xliffext:olfilehash>
       <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
@@ -405,386 +405,390 @@
             <target state="new">Given the nature of live streaming, good failover support is critical for ensuring the availability of the service.</target>
           </trans-unit>
           <trans-unit id="200" xml:space="preserve">
-            <source>Microsoft Azure Media Services is designed to handle various types of failures including network errors, server errors, storage problems, etc. When used in conjunction with proper failover logic from the live encoder side, customer can achieve a highly reliable live streaming service from the cloud.</source>
-            <target state="new">Microsoft Azure Media Services is designed to handle various types of failures including network errors, server errors, storage problems, etc. When used in conjunction with proper failover logic from the live encoder side, customer can achieve a highly reliable live streaming service from the cloud.</target>
+            <source>Microsoft Azure Media Services is designed to handle various types of failures including network errors, server errors, storage problems, etc.</source>
+            <target state="new">Microsoft Azure Media Services is designed to handle various types of failures including network errors, server errors, storage problems, etc.</target>
           </trans-unit>
           <trans-unit id="201" xml:space="preserve">
+            <source>When used in conjunction with proper failover logic from the live encoder side, customer can achieve a highly reliable live streaming service from the cloud.</source>
+            <target state="new">When used in conjunction with proper failover logic from the live encoder side, customer can achieve a highly reliable live streaming service from the cloud.</target>
+          </trans-unit>
+          <trans-unit id="202" xml:space="preserve">
             <source>In this section, we will discuss service failover scenarios.</source>
             <target state="new">In this section, we will discuss service failover scenarios.</target>
           </trans-unit>
-          <trans-unit id="202" xml:space="preserve">
+          <trans-unit id="203" xml:space="preserve">
             <source>In this case, the failure happens somewhere within the service and manifests itself as a network error.</source>
             <target state="new">In this case, the failure happens somewhere within the service and manifests itself as a network error.</target>
           </trans-unit>
-          <trans-unit id="203" xml:space="preserve">
+          <trans-unit id="204" xml:space="preserve">
             <source>Here are some recommendations for the encoder implementation for handling service failover:</source>
             <target state="new">Here are some recommendations for the encoder implementation for handling service failover:</target>
           </trans-unit>
-          <trans-unit id="204" xml:space="preserve">
+          <trans-unit id="205" xml:space="preserve">
             <source>Use a 10 second timeout for establishing the TCP connection.</source>
             <target state="new">Use a 10 second timeout for establishing the TCP connection.</target>
           </trans-unit>
-          <trans-unit id="205" xml:space="preserve">
+          <trans-unit id="206" xml:space="preserve">
             <source>If an attempt to establish the connection takes longer than 10 seconds, abort the operation and try again.</source>
             <target state="new">If an attempt to establish the connection takes longer than 10 seconds, abort the operation and try again.</target>
           </trans-unit>
-          <trans-unit id="206" xml:space="preserve">
+          <trans-unit id="207" xml:space="preserve">
             <source>Use a short timeout for sending the HTTP request message chunks.</source>
             <target state="new">Use a short timeout for sending the HTTP request message chunks.</target>
           </trans-unit>
-          <trans-unit id="207" xml:space="preserve">
+          <trans-unit id="208" xml:space="preserve">
             <source>If the target MP4 fragment duration is N seconds, use a send timeout between N and 2N seconds; for example, use a timeout of 6 to 12 seconds if the MP4 fragment duration is 6 seconds.</source>
             <target state="new">If the target MP4 fragment duration is N seconds, use a send timeout between N and 2N seconds; for example, use a timeout of 6 to 12 seconds if the MP4 fragment duration is 6 seconds.</target>
           </trans-unit>
-          <trans-unit id="208" xml:space="preserve">
+          <trans-unit id="209" xml:space="preserve">
             <source>If a timeout occurs, reset the connection, open a new connection, and resume stream ingest on the new connection.</source>
             <target state="new">If a timeout occurs, reset the connection, open a new connection, and resume stream ingest on the new connection.</target>
           </trans-unit>
-          <trans-unit id="209" xml:space="preserve">
+          <trans-unit id="210" xml:space="preserve">
             <source>Maintain a rolling buffer containing the last two fragments, for each track, that were successfully and completely sent to the service.</source>
             <target state="new">Maintain a rolling buffer containing the last two fragments, for each track, that were successfully and completely sent to the service.</target>
           </trans-unit>
-          <trans-unit id="210" xml:space="preserve">
+          <trans-unit id="211" xml:space="preserve">
             <source>If the HTTP POST request for a stream is terminated or times out prior to the end of the stream, open a new connection and begin another HTTP POST request, resend the stream headers, resend the last two fragments for each track, and resume the stream without introducing a discontinuity in the media timeline.</source>
             <target state="new">If the HTTP POST request for a stream is terminated or times out prior to the end of the stream, open a new connection and begin another HTTP POST request, resend the stream headers, resend the last two fragments for each track, and resume the stream without introducing a discontinuity in the media timeline.</target>
           </trans-unit>
-          <trans-unit id="211" xml:space="preserve">
+          <trans-unit id="212" xml:space="preserve">
             <source>This will reduce the chance of data loss.</source>
             <target state="new">This will reduce the chance of data loss.</target>
           </trans-unit>
-          <trans-unit id="212" xml:space="preserve">
+          <trans-unit id="213" xml:space="preserve">
             <source>It is recommended that the encoder does NOT limit the number of retries to establish a connection or resume streaming after a TCP error occurs.</source>
             <target state="new">It is recommended that the encoder does NOT limit the number of retries to establish a connection or resume streaming after a TCP error occurs.</target>
           </trans-unit>
-          <trans-unit id="213" xml:space="preserve">
+          <trans-unit id="214" xml:space="preserve">
             <source>After a TCP error:</source>
             <target state="new">After a TCP error:</target>
           </trans-unit>
-          <trans-unit id="214" xml:space="preserve">
+          <trans-unit id="215" xml:space="preserve">
             <source>The current connection MUST be closed, and a new connection MUST be created for a new HTTP POST request.</source>
             <target state="new">The current connection MUST be closed, and a new connection MUST be created for a new HTTP POST request.</target>
           </trans-unit>
-          <trans-unit id="215" xml:space="preserve">
+          <trans-unit id="216" xml:space="preserve">
             <source>The new HTTP POST URL MUST be the same as the initial POST URL.</source>
             <target state="new">The new HTTP POST URL MUST be the same as the initial POST URL.</target>
           </trans-unit>
-          <trans-unit id="216" xml:space="preserve">
+          <trans-unit id="217" xml:space="preserve">
             <source>The new HTTP POST MUST include stream headers (‘ftyp’, “Live Server Manifest Box”, and ‘moov’ box) identical to the stream headers in the initial POST.</source>
             <target state="new">The new HTTP POST MUST include stream headers (‘ftyp’, “Live Server Manifest Box”, and ‘moov’ box) identical to the stream headers in the initial POST.</target>
           </trans-unit>
-          <trans-unit id="217" xml:space="preserve">
+          <trans-unit id="218" xml:space="preserve">
             <source>The last two fragments sent for each track MUST be resent, and streaming resumed without introducing a discontinuity in the media timeline.</source>
             <target state="new">The last two fragments sent for each track MUST be resent, and streaming resumed without introducing a discontinuity in the media timeline.</target>
           </trans-unit>
-          <trans-unit id="218" xml:space="preserve">
+          <trans-unit id="219" xml:space="preserve">
             <source>The MP4 fragment timestamps must increase continuously, even across HTTP POST requests.</source>
             <target state="new">The MP4 fragment timestamps must increase continuously, even across HTTP POST requests.</target>
           </trans-unit>
-          <trans-unit id="219" xml:space="preserve">
+          <trans-unit id="220" xml:space="preserve">
             <source>The encoder SHOULD terminate the HTTP POST request if data is not being sent at a rate commensurate with the MP4 fragment duration.</source>
             <target state="new">The encoder SHOULD terminate the HTTP POST request if data is not being sent at a rate commensurate with the MP4 fragment duration.</target>
           </trans-unit>
-          <trans-unit id="220" xml:space="preserve">
+          <trans-unit id="221" xml:space="preserve">
             <source>An HTTP POST request that does not send data can prevent Azure Media Services from quickly disconnecting from the encoder in the event of a service update.</source>
             <target state="new">An HTTP POST request that does not send data can prevent Azure Media Services from quickly disconnecting from the encoder in the event of a service update.</target>
           </trans-unit>
-          <trans-unit id="221" xml:space="preserve">
+          <trans-unit id="222" xml:space="preserve">
             <source>For this reason, the HTTP POST for sparse (ad signal) tracks SHOULD be short lived, terminating as soon as the sparse fragment is sent.</source>
             <target state="new">For this reason, the HTTP POST for sparse (ad signal) tracks SHOULD be short lived, terminating as soon as the sparse fragment is sent.</target>
           </trans-unit>
-          <trans-unit id="222" xml:space="preserve">
+          <trans-unit id="223" xml:space="preserve">
             <source>Encoder Failover</source>
             <target state="new">Encoder Failover</target>
           </trans-unit>
-          <trans-unit id="223" xml:space="preserve">
+          <trans-unit id="224" xml:space="preserve">
             <source>Encoder failover is the second type of failover scenario that needs to be addressed for end-to-end live streaming delivery.</source>
             <target state="new">Encoder failover is the second type of failover scenario that needs to be addressed for end-to-end live streaming delivery.</target>
           </trans-unit>
-          <trans-unit id="224" xml:space="preserve">
+          <trans-unit id="225" xml:space="preserve">
             <source>In this scenario, the error condition happened on the encoder side.</source>
             <target state="new">In this scenario, the error condition happened on the encoder side.</target>
           </trans-unit>
-          <trans-unit id="225" xml:space="preserve">
+          <trans-unit id="226" xml:space="preserve">
             <source><bpt id="1">&lt;linkText&gt;</bpt>image5<ept id="1">&lt;/linkText&gt;</ept></source>
             <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>image5<ept id="1">&lt;/linkText&gt;</ept></target>
           </trans-unit>
-          <trans-unit id="226" xml:space="preserve">
+          <trans-unit id="227" xml:space="preserve">
             <source>Below are the expectations from the live ingestion endpoint when encoder failover happens:</source>
             <target state="new">Below are the expectations from the live ingestion endpoint when encoder failover happens:</target>
           </trans-unit>
-          <trans-unit id="227" xml:space="preserve">
+          <trans-unit id="228" xml:space="preserve">
             <source>A new encoder instance SHOULD be created in order to continue streaming, as illustrated in the diagram above (Stream for 3000k video with dashed line).</source>
             <target state="new">A new encoder instance SHOULD be created in order to continue streaming, as illustrated in the diagram above (Stream for 3000k video with dashed line).</target>
           </trans-unit>
-          <trans-unit id="228" xml:space="preserve">
+          <trans-unit id="229" xml:space="preserve">
             <source>The new encoder MUST use the same URL for HTTP POST requests as the failed instance.</source>
             <target state="new">The new encoder MUST use the same URL for HTTP POST requests as the failed instance.</target>
           </trans-unit>
-          <trans-unit id="229" xml:space="preserve">
+          <trans-unit id="230" xml:space="preserve">
             <source>The new encoder’s POST request MUST include the same fragmented MP4 header boxes as the failed instance.</source>
             <target state="new">The new encoder’s POST request MUST include the same fragmented MP4 header boxes as the failed instance.</target>
           </trans-unit>
-          <trans-unit id="230" xml:space="preserve">
+          <trans-unit id="231" xml:space="preserve">
             <source>The new encoder MUST be properly synchronized with all other running encoders for the same live presentation to generate synchronized audio/video samples with aligned fragment boundaries.</source>
             <target state="new">The new encoder MUST be properly synchronized with all other running encoders for the same live presentation to generate synchronized audio/video samples with aligned fragment boundaries.</target>
           </trans-unit>
-          <trans-unit id="231" xml:space="preserve">
+          <trans-unit id="232" xml:space="preserve">
             <source>The new stream MUST be semantically equivalent with the previous stream and interchangeable at header and fragment level.</source>
             <target state="new">The new stream MUST be semantically equivalent with the previous stream and interchangeable at header and fragment level.</target>
           </trans-unit>
-          <trans-unit id="232" xml:space="preserve">
+          <trans-unit id="233" xml:space="preserve">
             <source>The new encoder SHOULD try to minimize data loss.</source>
             <target state="new">The new encoder SHOULD try to minimize data loss.</target>
           </trans-unit>
-          <trans-unit id="233" xml:space="preserve">
+          <trans-unit id="234" xml:space="preserve">
             <source>The fragment_absolute_time and fragment_index of media fragments SHOULD increase from the point where the encoder last stopped.</source>
             <target state="new">The fragment_absolute_time and fragment_index of media fragments SHOULD increase from the point where the encoder last stopped.</target>
           </trans-unit>
-          <trans-unit id="234" xml:space="preserve">
+          <trans-unit id="235" xml:space="preserve">
             <source>The fragment_absolute_time and fragment_index SHOULD increase in a continuous fashion, but it is permissible to introduce a discontinuity if necessary.</source>
             <target state="new">The fragment_absolute_time and fragment_index SHOULD increase in a continuous fashion, but it is permissible to introduce a discontinuity if necessary.</target>
           </trans-unit>
-          <trans-unit id="235" xml:space="preserve">
+          <trans-unit id="236" xml:space="preserve">
             <source>Azure Media Services will ignore fragments that it has already received and processed, so it is better to err on the side of resending fragments than to introduce discontinuities in the media timeline.</source>
             <target state="new">Azure Media Services will ignore fragments that it has already received and processed, so it is better to err on the side of resending fragments than to introduce discontinuities in the media timeline.</target>
           </trans-unit>
-          <trans-unit id="236" xml:space="preserve">
+          <trans-unit id="237" xml:space="preserve">
             <source>Encoder Redundancy</source>
             <target state="new">Encoder Redundancy</target>
           </trans-unit>
-          <trans-unit id="237" xml:space="preserve">
+          <trans-unit id="238" xml:space="preserve">
             <source>For certain critical live events that demand even higher availability and quality of experience, it is recommended to employ active-active redundant encoders to achieve seamless failover with no data loss.</source>
             <target state="new">For certain critical live events that demand even higher availability and quality of experience, it is recommended to employ active-active redundant encoders to achieve seamless failover with no data loss.</target>
           </trans-unit>
-          <trans-unit id="238" xml:space="preserve">
+          <trans-unit id="239" xml:space="preserve">
             <source><bpt id="1">&lt;linkText&gt;</bpt>image6<ept id="1">&lt;/linkText&gt;</ept></source>
             <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>image6<ept id="1">&lt;/linkText&gt;</ept></target>
           </trans-unit>
-          <trans-unit id="239" xml:space="preserve">
+          <trans-unit id="240" xml:space="preserve">
             <source>As illustrated in the diagram above, there are two group of encoders pushing two copies of each stream simultaneously into the live service.</source>
             <target state="new">As illustrated in the diagram above, there are two group of encoders pushing two copies of each stream simultaneously into the live service.</target>
           </trans-unit>
-          <trans-unit id="240" xml:space="preserve">
+          <trans-unit id="241" xml:space="preserve">
             <source>This setup is supported because Microsoft Azure Media Services has the ability to filter out duplicate fragments based on stream ID and fragment timestamp.</source>
             <target state="new">This setup is supported because Microsoft Azure Media Services has the ability to filter out duplicate fragments based on stream ID and fragment timestamp.</target>
           </trans-unit>
-          <trans-unit id="241" xml:space="preserve">
+          <trans-unit id="242" xml:space="preserve">
             <source>The resulting live stream and archive will be a single of copy of all the streams that is the best possible aggregation from the two sources.</source>
             <target state="new">The resulting live stream and archive will be a single of copy of all the streams that is the best possible aggregation from the two sources.</target>
           </trans-unit>
-          <trans-unit id="242" xml:space="preserve">
+          <trans-unit id="243" xml:space="preserve">
             <source>For example, in a hypothetical extreme case, as long as there is one encoder (doesn’t have to be the same one) running at any given point in time for each stream, the resulting live stream from the service will be continuous without data loss.</source>
             <target state="new">For example, in a hypothetical extreme case, as long as there is one encoder (doesn’t have to be the same one) running at any given point in time for each stream, the resulting live stream from the service will be continuous without data loss.</target>
           </trans-unit>
-          <trans-unit id="243" xml:space="preserve">
+          <trans-unit id="244" xml:space="preserve">
             <source>The requirement for this scenario is almost the same as the requirements in Encoder Failover case with the exception that the second set of encoders are running at the same time as the primary encoders.</source>
             <target state="new">The requirement for this scenario is almost the same as the requirements in Encoder Failover case with the exception that the second set of encoders are running at the same time as the primary encoders.</target>
           </trans-unit>
-          <trans-unit id="244" xml:space="preserve">
+          <trans-unit id="245" xml:space="preserve">
             <source>Service Redundancy</source>
             <target state="new">Service Redundancy</target>
           </trans-unit>
-          <trans-unit id="245" xml:space="preserve">
+          <trans-unit id="246" xml:space="preserve">
             <source>For highly redundant global distribution, it is sometimes required to have cross-region backup to handle regional disasters.</source>
             <target state="new">For highly redundant global distribution, it is sometimes required to have cross-region backup to handle regional disasters.</target>
           </trans-unit>
-          <trans-unit id="246" xml:space="preserve">
+          <trans-unit id="247" xml:space="preserve">
             <source>Expanding on the “Encoder Redundancy” topology, customers can choose to have a redundant service deployment in a different region which is connected with the 2nd set of encoders.</source>
             <target state="new">Expanding on the “Encoder Redundancy” topology, customers can choose to have a redundant service deployment in a different region which is connected with the 2nd set of encoders.</target>
           </trans-unit>
-          <trans-unit id="247" xml:space="preserve">
+          <trans-unit id="248" xml:space="preserve">
             <source>Customers could also work with a CDN provider to deploy a GTM (Global Traffic Manager) in front of the two service deployments to seamlessly route client traffic.</source>
             <target state="new">Customers could also work with a CDN provider to deploy a GTM (Global Traffic Manager) in front of the two service deployments to seamlessly route client traffic.</target>
           </trans-unit>
-          <trans-unit id="248" xml:space="preserve">
+          <trans-unit id="249" xml:space="preserve">
             <source>The requirements for the encoders are the same as “Encoder Redundancy” case with the only exception that the second set of encoders need to be pointed to a different live ingest end point.</source>
             <target state="new">The requirements for the encoders are the same as “Encoder Redundancy” case with the only exception that the second set of encoders need to be pointed to a different live ingest end point.</target>
           </trans-unit>
-          <trans-unit id="249" xml:space="preserve">
+          <trans-unit id="250" xml:space="preserve">
             <source>The diagram below shows this setup:</source>
             <target state="new">The diagram below shows this setup:</target>
           </trans-unit>
-          <trans-unit id="250" xml:space="preserve">
+          <trans-unit id="251" xml:space="preserve">
             <source><bpt id="1">&lt;linkText&gt;</bpt>image7<ept id="1">&lt;/linkText&gt;</ept></source>
             <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>image7<ept id="1">&lt;/linkText&gt;</ept></target>
           </trans-unit>
-          <trans-unit id="251" xml:space="preserve">
+          <trans-unit id="252" xml:space="preserve">
             <source>Special Types of Ingestion Formats</source>
             <target state="new">Special Types of Ingestion Formats</target>
           </trans-unit>
-          <trans-unit id="252" xml:space="preserve">
+          <trans-unit id="253" xml:space="preserve">
             <source>This section discusses some special type of live ingestion formats that are designed to handle some specific scenarios.</source>
             <target state="new">This section discusses some special type of live ingestion formats that are designed to handle some specific scenarios.</target>
           </trans-unit>
-          <trans-unit id="253" xml:space="preserve">
+          <trans-unit id="254" xml:space="preserve">
             <source>Sparse Track</source>
             <target state="new">Sparse Track</target>
           </trans-unit>
-          <trans-unit id="254" xml:space="preserve">
+          <trans-unit id="255" xml:space="preserve">
             <source>When delivering a live streaming presentation with rich client experience, it is often necessary to transmit time-synchronized events or signals in-band with the main media data.</source>
             <target state="new">When delivering a live streaming presentation with rich client experience, it is often necessary to transmit time-synchronized events or signals in-band with the main media data.</target>
           </trans-unit>
-          <trans-unit id="255" xml:space="preserve">
+          <trans-unit id="256" xml:space="preserve">
             <source>One example of this is dynamic live Ads insertion.</source>
             <target state="new">One example of this is dynamic live Ads insertion.</target>
           </trans-unit>
-          <trans-unit id="256" xml:space="preserve">
+          <trans-unit id="257" xml:space="preserve">
             <source>This type of event signaling is different from regular audio/video streaming because of its sparse nature.</source>
             <target state="new">This type of event signaling is different from regular audio/video streaming because of its sparse nature.</target>
           </trans-unit>
-          <trans-unit id="257" xml:space="preserve">
+          <trans-unit id="258" xml:space="preserve">
             <source>In another words, the signaling data usually does not happen continuously and the interval can be hard to predict.</source>
             <target state="new">In another words, the signaling data usually does not happen continuously and the interval can be hard to predict.</target>
           </trans-unit>
-          <trans-unit id="258" xml:space="preserve">
+          <trans-unit id="259" xml:space="preserve">
             <source>The concept of Sparse Track was specifically designed to ingest and broadcast in-band signaling data.</source>
             <target state="new">The concept of Sparse Track was specifically designed to ingest and broadcast in-band signaling data.</target>
           </trans-unit>
-          <trans-unit id="259" xml:space="preserve">
+          <trans-unit id="260" xml:space="preserve">
             <source>Below is a recommended implementation for ingesting sparse track:</source>
             <target state="new">Below is a recommended implementation for ingesting sparse track:</target>
           </trans-unit>
-          <trans-unit id="260" xml:space="preserve">
+          <trans-unit id="261" xml:space="preserve">
             <source>Create a separate Fragmented MP4 bit-stream which just contains sparse track(s) without audio/video tracks.</source>
             <target state="new">Create a separate Fragmented MP4 bit-stream which just contains sparse track(s) without audio/video tracks.</target>
           </trans-unit>
-          <trans-unit id="261" xml:space="preserve">
+          <trans-unit id="262" xml:space="preserve">
             <source>In the “Live Server Manifest Box” as defined in Section 6 in [1], use “parentTrackName” parameter to specify the name of the parent track.</source>
             <target state="new">In the “Live Server Manifest Box” as defined in Section 6 in [1], use “parentTrackName” parameter to specify the name of the parent track.</target>
           </trans-unit>
-          <trans-unit id="262" xml:space="preserve">
+          <trans-unit id="263" xml:space="preserve">
             <source>Please refer to section 4.2.1.2.1.2 in [1] for more details.</source>
             <target state="new">Please refer to section 4.2.1.2.1.2 in [1] for more details.</target>
           </trans-unit>
-          <trans-unit id="263" xml:space="preserve">
+          <trans-unit id="264" xml:space="preserve">
             <source>In the “Live Server Manifest Box”, manifestOutput MUST be set to “true”.</source>
             <target state="new">In the “Live Server Manifest Box”, manifestOutput MUST be set to “true”.</target>
           </trans-unit>
-          <trans-unit id="264" xml:space="preserve">
+          <trans-unit id="265" xml:space="preserve">
             <source>Given the sparse nature of the signaling event, it is recommended that:</source>
             <target state="new">Given the sparse nature of the signaling event, it is recommended that:</target>
           </trans-unit>
-          <trans-unit id="265" xml:space="preserve">
+          <trans-unit id="266" xml:space="preserve">
             <source>At the beginning of the live event, encoder sends the initial header boxes to the service which would allow the service to register the sparse track in the client manifest.</source>
             <target state="new">At the beginning of the live event, encoder sends the initial header boxes to the service which would allow the service to register the sparse track in the client manifest.</target>
           </trans-unit>
-          <trans-unit id="266" xml:space="preserve">
+          <trans-unit id="267" xml:space="preserve">
             <source>The encoder SHOULD terminate the HTTP POST request when data is not being sent.</source>
             <target state="new">The encoder SHOULD terminate the HTTP POST request when data is not being sent.</target>
           </trans-unit>
-          <trans-unit id="267" xml:space="preserve">
+          <trans-unit id="268" xml:space="preserve">
             <source>A long running HTTP POST that does not send data can prevent Azure Media Services from quickly disconnecting from the encoder in the event of a service update or server reboot, as the media server will be temporarily blocked in a receive operation on the socket.</source>
             <target state="new">A long running HTTP POST that does not send data can prevent Azure Media Services from quickly disconnecting from the encoder in the event of a service update or server reboot, as the media server will be temporarily blocked in a receive operation on the socket.</target>
           </trans-unit>
-          <trans-unit id="268" xml:space="preserve">
+          <trans-unit id="269" xml:space="preserve">
             <source>During the time when signaling data is not available, the encoder SHOULD close the HTTP POST request.</source>
             <target state="new">During the time when signaling data is not available, the encoder SHOULD close the HTTP POST request.</target>
           </trans-unit>
-          <trans-unit id="269" xml:space="preserve">
+          <trans-unit id="270" xml:space="preserve">
             <source>While the POST request is active, the encoder SHOULD send data</source>
             <target state="new">While the POST request is active, the encoder SHOULD send data</target>
           </trans-unit>
-          <trans-unit id="270" xml:space="preserve">
+          <trans-unit id="271" xml:space="preserve">
             <source>When sending sparse fragments, encoder can set explicit Content-Length header if it’s available.</source>
             <target state="new">When sending sparse fragments, encoder can set explicit Content-Length header if it’s available.</target>
           </trans-unit>
-          <trans-unit id="271" xml:space="preserve">
+          <trans-unit id="272" xml:space="preserve">
             <source>When sending sparse fragment with a new connection, encoder SHOULD start sending from the header boxes followed by the new fragments.</source>
             <target state="new">When sending sparse fragment with a new connection, encoder SHOULD start sending from the header boxes followed by the new fragments.</target>
           </trans-unit>
-          <trans-unit id="272" xml:space="preserve">
+          <trans-unit id="273" xml:space="preserve">
             <source>This is to handle the case where failover happened in between and the new sparse connection is being established to a new server which has not seen the sparse track before.</source>
             <target state="new">This is to handle the case where failover happened in between and the new sparse connection is being established to a new server which has not seen the sparse track before.</target>
           </trans-unit>
-          <trans-unit id="273" xml:space="preserve">
+          <trans-unit id="274" xml:space="preserve">
             <source>The sparse track fragment will be made available to the client when the corresponding parent track fragment that has equal or bigger timestamp value is made available to the client.</source>
             <target state="new">The sparse track fragment will be made available to the client when the corresponding parent track fragment that has equal or bigger timestamp value is made available to the client.</target>
           </trans-unit>
-          <trans-unit id="274" xml:space="preserve">
+          <trans-unit id="275" xml:space="preserve">
             <source>For example, if the sparse fragment has a timestamp of t=1000, it is expected after the client sees video (assuming the parent track name is video) fragment timestamp 1000 or beyond, it can download the sparse fragment t=1000.</source>
             <target state="new">For example, if the sparse fragment has a timestamp of t=1000, it is expected after the client sees video (assuming the parent track name is video) fragment timestamp 1000 or beyond, it can download the sparse fragment t=1000.</target>
           </trans-unit>
-          <trans-unit id="275" xml:space="preserve">
+          <trans-unit id="276" xml:space="preserve">
             <source>Please note that the actual signal could very well be used for a different position in the presentation timeline for its designated purpose.</source>
             <target state="new">Please note that the actual signal could very well be used for a different position in the presentation timeline for its designated purpose.</target>
           </trans-unit>
-          <trans-unit id="276" xml:space="preserve">
+          <trans-unit id="277" xml:space="preserve">
             <source>In the example above, it’s possible that the sparse fragment of t=1000 has a XML payload which is for inserting an Ad in a position that’s a few seconds later.</source>
             <target state="new">In the example above, it’s possible that the sparse fragment of t=1000 has a XML payload which is for inserting an Ad in a position that’s a few seconds later.</target>
           </trans-unit>
-          <trans-unit id="277" xml:space="preserve">
+          <trans-unit id="278" xml:space="preserve">
             <source>The payload of sparse track fragment can be in various different formats (e.g. XML or text or binary, etc.)</source>
             <target state="new">The payload of sparse track fragment can be in various different formats (e.g. XML or text or binary, etc.)</target>
           </trans-unit>
-          <trans-unit id="278" xml:space="preserve">
+          <trans-unit id="279" xml:space="preserve">
             <source>depending on different scenarios.</source>
             <target state="new">depending on different scenarios.</target>
           </trans-unit>
-          <trans-unit id="279" xml:space="preserve">
+          <trans-unit id="280" xml:space="preserve">
             <source>Redundant Audio Track</source>
             <target state="new">Redundant Audio Track</target>
           </trans-unit>
-          <trans-unit id="280" xml:space="preserve">
+          <trans-unit id="281" xml:space="preserve">
             <source>In a typical HTTP Adaptive Streaming scenario (e.g. Smooth Streaming or DASH), there is often only one audio track in the entire presentation.</source>
             <target state="new">In a typical HTTP Adaptive Streaming scenario (e.g. Smooth Streaming or DASH), there is often only one audio track in the entire presentation.</target>
           </trans-unit>
-          <trans-unit id="281" xml:space="preserve">
+          <trans-unit id="282" xml:space="preserve">
             <source>Unlike video tracks which have multiple quality levels for the client to choose from in error conditions, the audio track can be a single point of failure if the ingestion of the stream that contains the audio track is broken.</source>
             <target state="new">Unlike video tracks which have multiple quality levels for the client to choose from in error conditions, the audio track can be a single point of failure if the ingestion of the stream that contains the audio track is broken.</target>
           </trans-unit>
-          <trans-unit id="282" xml:space="preserve">
+          <trans-unit id="283" xml:space="preserve">
             <source>To solve this problem, Microsoft Azure Media Services supports live ingestion of redundant audio tracks.</source>
             <target state="new">To solve this problem, Microsoft Azure Media Services supports live ingestion of redundant audio tracks.</target>
           </trans-unit>
-          <trans-unit id="283" xml:space="preserve">
+          <trans-unit id="284" xml:space="preserve">
             <source>The idea is that the same audio track can be sent multiple times in different streams.</source>
             <target state="new">The idea is that the same audio track can be sent multiple times in different streams.</target>
           </trans-unit>
-          <trans-unit id="284" xml:space="preserve">
+          <trans-unit id="285" xml:space="preserve">
             <source>While the service will only register the audio track once in the client manifest, it is able to use redundant audio tracks as backups for retrieving audio fragments if the primary audio track is having issues.</source>
             <target state="new">While the service will only register the audio track once in the client manifest, it is able to use redundant audio tracks as backups for retrieving audio fragments if the primary audio track is having issues.</target>
           </trans-unit>
-          <trans-unit id="285" xml:space="preserve">
+          <trans-unit id="286" xml:space="preserve">
             <source>In order to ingest redundant audio tracks, the encoder needs to:</source>
             <target state="new">In order to ingest redundant audio tracks, the encoder needs to:</target>
           </trans-unit>
-          <trans-unit id="286" xml:space="preserve">
+          <trans-unit id="287" xml:space="preserve">
             <source>Create the same audio track in multiple Fragment MP4 bit-streams.</source>
             <target state="new">Create the same audio track in multiple Fragment MP4 bit-streams.</target>
           </trans-unit>
-          <trans-unit id="287" xml:space="preserve">
+          <trans-unit id="288" xml:space="preserve">
             <source>The redundant audio tracks MUST be semantically equivalent with exactly the same fragment timestamps and interchangeable at header and fragment level.</source>
             <target state="new">The redundant audio tracks MUST be semantically equivalent with exactly the same fragment timestamps and interchangeable at header and fragment level.</target>
           </trans-unit>
-          <trans-unit id="288" xml:space="preserve">
+          <trans-unit id="289" xml:space="preserve">
             <source>Ensure that the “audio” entry in the Live Server Manifest (Section 6 in [1]) be the same for all redundant audio tracks.</source>
             <target state="new">Ensure that the “audio” entry in the Live Server Manifest (Section 6 in [1]) be the same for all redundant audio tracks.</target>
           </trans-unit>
-          <trans-unit id="289" xml:space="preserve">
+          <trans-unit id="290" xml:space="preserve">
             <source>Below is a recommended implementation for redundant audio tracks:</source>
             <target state="new">Below is a recommended implementation for redundant audio tracks:</target>
           </trans-unit>
-          <trans-unit id="290" xml:space="preserve">
+          <trans-unit id="291" xml:space="preserve">
             <source>Send each unique audio track in a stream by itself.</source>
             <target state="new">Send each unique audio track in a stream by itself.</target>
           </trans-unit>
-          <trans-unit id="291" xml:space="preserve">
+          <trans-unit id="292" xml:space="preserve">
             <source>Also send a redundant stream for each of these audio track streams, where the 2nd stream differs from the 1st only by the identifier in the HTTP POST URL:  {protocol}://{server address}/{publishing point path}/Streams({identifier}).</source>
             <target state="new">Also send a redundant stream for each of these audio track streams, where the 2nd stream differs from the 1st only by the identifier in the HTTP POST URL:  {protocol}://{server address}/{publishing point path}/Streams({identifier}).</target>
           </trans-unit>
-          <trans-unit id="292" xml:space="preserve">
+          <trans-unit id="293" xml:space="preserve">
             <source>Use separate streams to send the two lowest video bitrates.</source>
             <target state="new">Use separate streams to send the two lowest video bitrates.</target>
           </trans-unit>
-          <trans-unit id="293" xml:space="preserve">
+          <trans-unit id="294" xml:space="preserve">
             <source>Each of these streams SHOULD also contain a copy of each unique audio track.</source>
             <target state="new">Each of these streams SHOULD also contain a copy of each unique audio track.</target>
           </trans-unit>
-          <trans-unit id="294" xml:space="preserve">
+          <trans-unit id="295" xml:space="preserve">
             <source>For example, when multiple languages are supported, these streams SHOULD contain audio tracks for each language.</source>
             <target state="new">For example, when multiple languages are supported, these streams SHOULD contain audio tracks for each language.</target>
           </trans-unit>
-          <trans-unit id="295" xml:space="preserve">
+          <trans-unit id="296" xml:space="preserve">
             <source>Use separate server (encoder) instances to encode and send the redundant streams mentioned in (1) and (2).</source>
             <target state="new">Use separate server (encoder) instances to encode and send the redundant streams mentioned in (1) and (2).</target>
           </trans-unit>
