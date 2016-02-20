@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="ru-ru" original="2/20/2016 3:34:41 PM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">412ff35813554782585b362b3500ffd0e8280742</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Get Started with Event Hubs</source>
+            <target state="new">Get Started with Event Hubs</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>Follow this tutorial to get started using Azure Event Hubs; sending events in C and receiving them in an Apache Storm cluster.</source>
+            <target state="new">Follow this tutorial to get started using Azure Event Hubs; sending events in C and receiving them in an Apache Storm cluster.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Get started with Event Hubs</source>
+            <target state="new">Get started with Event Hubs</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source><ph id="1">&lt;token href="../../includes/service-bus-selector-get-started.md"/&gt;</ph></source>
+            <target state="new"><ph id="1">&lt;token href="../../includes/service-bus-selector-get-started.md"/&gt;</ph></target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>Introduction</source>
+            <target state="new">Introduction</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>Event Hubs is a highly scalable ingestion system that can intake millions of events per second, enabling an application to process and analyze the massive amounts of data produced by your connected devices and applications.</source>
+            <target state="new">Event Hubs is a highly scalable ingestion system that can intake millions of events per second, enabling an application to process and analyze the massive amounts of data produced by your connected devices and applications.</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>Once collected into Event Hubs, you can transform and store data using any real-time analytics provider or storage cluster.</source>
+            <target state="new">Once collected into Event Hubs, you can transform and store data using any real-time analytics provider or storage cluster.</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>For more information, please see [Event Hubs overview].</source>
+            <target state="new">For more information, please see [Event Hubs overview].</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source>In this tutorial, you will learn how to ingest messages into an Event Hub using a console application in C, and to retrieve them in parallel using Apache Storm.</source>
+            <target state="new">In this tutorial, you will learn how to ingest messages into an Event Hub using a console application in C, and to retrieve them in parallel using Apache Storm.</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source>In order to complete this tutorial you will need the following:</source>
+            <target state="new">In order to complete this tutorial you will need the following:</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>A C development environment.</source>
+            <target state="new">A C development environment.</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source>For this tutorial, we will assume the gcc stack on an <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Linux VM<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> with Ubuntu 14.04.</source>
+            <target state="new">For this tutorial, we will assume the gcc stack on an <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Linux VM<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> with Ubuntu 14.04.</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>Instructions for other environments will be provided in external links.</source>
+            <target state="new">Instructions for other environments will be provided in external links.</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source>A Java development environment configured to run <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Maven<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">A Java development environment configured to run <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Maven<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>For this tutorial, we will assume <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Eclipse<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For this tutorial, we will assume <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Eclipse<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source>An active Azure account.</source>
+            <target state="new">An active Azure account.</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>If you don't have an account, you can create a free trial account in just a couple of minutes.</source>
+            <target state="new">If you don't have an account, you can create a free trial account in just a couple of minutes.</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>For details, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Free Trial<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For details, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Free Trial<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source>Create an Event Hub</source>
+            <target state="new">Create an Event Hub</target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source>Log on to the [Azure portal], and click <bpt id="2">&lt;strong&gt;</bpt>NEW<ept id="2">&lt;/strong&gt;</ept> at the bottom of the screen.</source>
+            <target state="new">Log on to the [Azure portal], and click <bpt id="2">&lt;strong&gt;</bpt>NEW<ept id="2">&lt;/strong&gt;</ept> at the bottom of the screen.</target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>App Services<ept id="2">&lt;/strong&gt;</ept>, then <bpt id="4">&lt;strong&gt;</bpt>Service Bus<ept id="4">&lt;/strong&gt;</ept>, then <bpt id="6">&lt;strong&gt;</bpt>Event Hub<ept id="6">&lt;/strong&gt;</ept>, and then <bpt id="8">&lt;strong&gt;</bpt>Quick Create<ept id="8">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>App Services<ept id="2">&lt;/strong&gt;</ept>, then <bpt id="4">&lt;strong&gt;</bpt>Service Bus<ept id="4">&lt;/strong&gt;</ept>, then <bpt id="6">&lt;strong&gt;</bpt>Event Hub<ept id="6">&lt;/strong&gt;</ept>, and then <bpt id="8">&lt;strong&gt;</bpt>Quick Create<ept id="8">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>Type a name for your Even Hub, select your desired region, and then click <bpt id="2">&lt;strong&gt;</bpt>Create a new Event Hub<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Type a name for your Even Hub, select your desired region, and then click <bpt id="2">&lt;strong&gt;</bpt>Create a new Event Hub<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>Click the namespace you just created (usually <bpt id="2">&lt;strong&gt;</bpt>*event hub name*-ns<ept id="2">&lt;/strong&gt;</ept>).</source>
+            <target state="new">Click the namespace you just created (usually <bpt id="2">&lt;strong&gt;</bpt>*event hub name*-ns<ept id="2">&lt;/strong&gt;</ept>).</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source>Click the <bpt id="2">&lt;strong&gt;</bpt>Event Hubs<ept id="2">&lt;/strong&gt;</ept> tab at the top of the page, and then click the Event Hub you just created.</source>
+            <target state="new">Click the <bpt id="2">&lt;strong&gt;</bpt>Event Hubs<ept id="2">&lt;/strong&gt;</ept> tab at the top of the page, and then click the Event Hub you just created.</target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source>Click the <bpt id="2">&lt;strong&gt;</bpt>Configure<ept id="2">&lt;/strong&gt;</ept> tab at the top of the page, add a rule called <bpt id="4">&lt;strong&gt;</bpt>SendRule<ept id="4">&lt;/strong&gt;</ept> with <bpt id="6">&lt;em&gt;</bpt>Send<ept id="6">&lt;/em&gt;</ept> rights, add another rule called <bpt id="8">&lt;strong&gt;</bpt>ReceiveRule<ept id="8">&lt;/strong&gt;</ept> with <bpt id="10">&lt;em&gt;</bpt>Listen<ept id="10">&lt;/em&gt;</ept> rights, and then click <bpt id="12">&lt;strong&gt;</bpt>Save<ept id="12">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click the <bpt id="2">&lt;strong&gt;</bpt>Configure<ept id="2">&lt;/strong&gt;</ept> tab at the top of the page, add a rule called <bpt id="4">&lt;strong&gt;</bpt>SendRule<ept id="4">&lt;/strong&gt;</ept> with <bpt id="6">&lt;em&gt;</bpt>Send<ept id="6">&lt;/em&gt;</ept> rights, add another rule called <bpt id="8">&lt;strong&gt;</bpt>ReceiveRule<ept id="8">&lt;/strong&gt;</ept> with <bpt id="10">&lt;em&gt;</bpt>Listen<ept id="10">&lt;/em&gt;</ept> rights, and then click <bpt id="12">&lt;strong&gt;</bpt>Save<ept id="12">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source>On the same page, take note of the generated keys for <bpt id="2">&lt;strong&gt;</bpt>SendRule<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>ReceiveRule<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">On the same page, take note of the generated keys for <bpt id="2">&lt;strong&gt;</bpt>SendRule<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>ReceiveRule<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source>Your Event Hub is now created, and you have the connection strings you need to send and receive events.</source>
+            <target state="new">Your Event Hub is now created, and you have the connection strings you need to send and receive events.</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source><ph id="1">&lt;token href="../../includes/service-bus-event-hubs-get-started-send-c.md"/&gt;</ph></source>
+            <target state="new"><ph id="1">&lt;token href="../../includes/service-bus-event-hubs-get-started-send-c.md"/&gt;</ph></target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source><ph id="1">&lt;token href="../../includes/service-bus-event-hubs-get-started-receive-storm.md"/&gt;</ph></source>
+            <target state="new"><ph id="1">&lt;token href="../../includes/service-bus-event-hubs-get-started-receive-storm.md"/&gt;</ph></target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source>Run the applications</source>
+            <target state="new">Run the applications</target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source>Now you are ready to run the applications.</source>
+            <target state="new">Now you are ready to run the applications.</target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source>Run the <bpt id="2">&lt;strong&gt;</bpt>LogTopology<ept id="2">&lt;/strong&gt;</ept> class from Eclipse, then wait for it to start the receivers for all the partitions.</source>
+            <target state="new">Run the <bpt id="2">&lt;strong&gt;</bpt>LogTopology<ept id="2">&lt;/strong&gt;</ept> class from Eclipse, then wait for it to start the receivers for all the partitions.</target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source>Run the <bpt id="2">&lt;strong&gt;</bpt>sender<ept id="2">&lt;/strong&gt;</ept> program, and see the events appear in the receiver window.</source>
+            <target state="new">Run the <bpt id="2">&lt;strong&gt;</bpt>sender<ept id="2">&lt;/strong&gt;</ept> program, and see the events appear in the receiver window.</target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source>In this tutorial only, use Storm in local mode for development purposes.</source>
+            <target state="new">In this tutorial only, use Storm in local mode for development purposes.</target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source>Refer to the [HDInsight Storm overview] and the official [Apache Storm] documentation for more information of Storm deployments and patterns.</source>
+            <target state="new">Refer to the [HDInsight Storm overview] and the official [Apache Storm] documentation for more information of Storm deployments and patterns.</target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source>Next steps</source>
+            <target state="new">Next steps</target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source>The following resources are available for developing applications integrating Event Hubs and Storm.</source>
+            <target state="new">The following resources are available for developing applications integrating Event Hubs and Storm.</target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source>[Analyzing sensor data with Storm and HDInsight] is a full scenario tutorial using Event Hubs, Storm, and HBase to ingest sensor data in an Hadoop cluster.</source>
+            <target state="new">[Analyzing sensor data with Storm and HDInsight] is a full scenario tutorial using Event Hubs, Storm, and HBase to ingest sensor data in an Hadoop cluster.</target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source>[Develop streaming data processing applications with SCP.NET and C# on Storm and HDInsight] is a tutorial on how to write Storm pipelines using C#.</source>
+            <target state="new">[Develop streaming data processing applications with SCP.NET and C# on Storm and HDInsight] is a tutorial on how to write Storm pipelines using C#.</target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,643 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="ru-ru" original="2/20/2016 3:44:07 PM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c84bdb06f04891d981649d7383e2e4f517f03b65</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Upload data for Hadoop jobs in HDInsight | Microsoft Azure</source>
+            <target state="new">Upload data for Hadoop jobs in HDInsight | Microsoft Azure</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>Learn how to upload and access data for Hadoop jobs in HDInsight using the Azure CLI, Azure Storage Explorer, Azure PowerShell, the Hadoop command line, or Sqoop.</source>
+            <target state="new">Learn how to upload and access data for Hadoop jobs in HDInsight using the Azure CLI, Azure Storage Explorer, Azure PowerShell, the Hadoop command line, or Sqoop.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Upload data for Hadoop jobs in HDInsight</source>
+            <target state="new">Upload data for Hadoop jobs in HDInsight</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source>Azure HDInsight provides a full-featured Hadoop distributed file system (HDFS) over Azure Blob storage.</source>
+            <target state="new">Azure HDInsight provides a full-featured Hadoop distributed file system (HDFS) over Azure Blob storage.</target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>It is designed as an HDFS extension to provide a seamless experience to customers.</source>
+            <target state="new">It is designed as an HDFS extension to provide a seamless experience to customers.</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>It enables the full set of components in the Hadoop ecosystem to operate directly on the data it manages.</source>
+            <target state="new">It enables the full set of components in the Hadoop ecosystem to operate directly on the data it manages.</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>Azure Blob storage and HDFS are distinct file systems that are optimized for storage of data and computations on that data.</source>
+            <target state="new">Azure Blob storage and HDFS are distinct file systems that are optimized for storage of data and computations on that data.</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>For information about the benefits of using Azure Blob storage, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Use Azure Blob storage with HDInsight[hdinsight-storage]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For information about the benefits of using Azure Blob storage, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Use Azure Blob storage with HDInsight[hdinsight-storage]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Prerequisites<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Prerequisites<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source>Note the following requirement before you begin:</source>
+            <target state="new">Note the following requirement before you begin:</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>An Azure HDInsight cluster.</source>
+            <target state="new">An Azure HDInsight cluster.</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source>For instructions, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Get started with Azure HDInsight[hdinsight-get-started]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> or <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Provision HDInsight clusters[hdinsight-provision]<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For instructions, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Get started with Azure HDInsight[hdinsight-get-started]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> or <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Provision HDInsight clusters[hdinsight-provision]<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>Why blob storage?</source>
+            <target state="new">Why blob storage?</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source>Azure HDInsight clusters are typically deployed to run MapReduce jobs, and the clusters are dropped after these jobs complete.</source>
+            <target state="new">Azure HDInsight clusters are typically deployed to run MapReduce jobs, and the clusters are dropped after these jobs complete.</target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>Keeping the data in the HDFS clusters after computations are complete would be an expensive way to store this data.</source>
+            <target state="new">Keeping the data in the HDFS clusters after computations are complete would be an expensive way to store this data.</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source>Azure Blob storage is a highly available, highly scalable, high capacity, low cost, and shareable storage option for data that is to be processed using HDInsight.</source>
+            <target state="new">Azure Blob storage is a highly available, highly scalable, high capacity, low cost, and shareable storage option for data that is to be processed using HDInsight.</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>Storing data in a blob enables the HDInsight clusters that are used for computation to be safely released without losing data.</source>
+            <target state="new">Storing data in a blob enables the HDInsight clusters that are used for computation to be safely released without losing data.</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>Directories</source>
+            <target state="new">Directories</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source>Azure Blob storage containers store data as key/value pairs, and there is no directory hierarchy.</source>
+            <target state="new">Azure Blob storage containers store data as key/value pairs, and there is no directory hierarchy.</target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source>However the "/" character can be used within the key name to make it appear as if a file is stored within a directory structure.</source>
+            <target state="new">However the "/" character can be used within the key name to make it appear as if a file is stored within a directory structure.</target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source>HDInsight sees these as if they are actual directories.</source>
+            <target state="new">HDInsight sees these as if they are actual directories.</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source>For example, a blob's key may be <bpt id="2">&lt;em&gt;</bpt>input/log1.txt<ept id="2">&lt;/em&gt;</ept>.</source>
+            <target state="new">For example, a blob's key may be <bpt id="2">&lt;em&gt;</bpt>input/log1.txt<ept id="2">&lt;/em&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>No actual "input" directory exists, but due to the presence of the "/" character in the key name, it has the appearance of a file path.</source>
+            <target state="new">No actual "input" directory exists, but due to the presence of the "/" character in the key name, it has the appearance of a file path.</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source>Because of this, if you use Azure Explorer tools you may notice some 0 byte files.</source>
+            <target state="new">Because of this, if you use Azure Explorer tools you may notice some 0 byte files.</target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>These files serve two purposes:</source>
+            <target state="new">These files serve two purposes:</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>If there are empty folders, they mark of the existence of the folder.</source>
+            <target state="new">If there are empty folders, they mark of the existence of the folder.</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source>Azure Blob storage is clever enough to know that if a blob called foo/bar exists, there is a folder called <bpt id="2">&lt;strong&gt;</bpt>foo<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Azure Blob storage is clever enough to know that if a blob called foo/bar exists, there is a folder called <bpt id="2">&lt;strong&gt;</bpt>foo<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source>But the only way to signify an empty folder called <bpt id="2">&lt;strong&gt;</bpt>foo<ept id="2">&lt;/strong&gt;</ept> is by having this special 0 byte file in place.</source>
+            <target state="new">But the only way to signify an empty folder called <bpt id="2">&lt;strong&gt;</bpt>foo<ept id="2">&lt;/strong&gt;</ept> is by having this special 0 byte file in place.</target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source>They hold special metadata that is needed by the Hadoop file system, notably the permissions and owners for the folders.</source>
+            <target state="new">They hold special metadata that is needed by the Hadoop file system, notably the permissions and owners for the folders.</target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source>Command-line utilities</source>
+            <target state="new">Command-line utilities</target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source>Microsoft provides the following utilities to work with Azure Blob storage:</source>
+            <target state="new">Microsoft provides the following utilities to work with Azure Blob storage:</target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source>Tool</source>
+            <target state="new">Tool</target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source>Linux</source>
+            <target state="new">Linux</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source>OS X</source>
+            <target state="new">OS X</target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source>Windows</source>
+            <target state="new">Windows</target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Azure Command-Line Interface[azurecli]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Azure Command-Line Interface[azurecli]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source>✔</source>
+            <target state="new">✔</target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source>✔</source>
+            <target state="new">✔</target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source>✔</source>
+            <target state="new">✔</target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Azure PowerShell[azure-powershell]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Azure PowerShell[azure-powershell]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source>✔</source>
+            <target state="new">✔</target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>AzCopy[azure-azcopy]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>AzCopy[azure-azcopy]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source>✔</source>
+            <target state="new">✔</target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Hadoop command<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Hadoop command<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source>✔</source>
+            <target state="new">✔</target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source>✔</source>
+            <target state="new">✔</target>
+          </trans-unit>
+          <trans-unit id="147" xml:space="preserve">
+            <source>✔</source>
+            <target state="new">✔</target>
+          </trans-unit>
+          <trans-unit id="148" xml:space="preserve">
+            <source>While the Azure CLI, Azure PowerShell, and AzCopy can all be used from outside Azure, the Hadoop command is only available on the HDInsight cluster and only allows loading data from the local file system into Azure Blob storage.</source>
+            <target state="new">While the Azure CLI, Azure PowerShell, and AzCopy can all be used from outside Azure, the Hadoop command is only available on the HDInsight cluster and only allows loading data from the local file system into Azure Blob storage.</target>
+          </trans-unit>
+          <trans-unit id="149" xml:space="preserve">
+            <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Azure CLI</source>
+            <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Azure CLI</target>
+          </trans-unit>
+          <trans-unit id="150" xml:space="preserve">
+            <source>The Azure CLI is a cross-platform tool that allows you to manage Azure services.</source>
+            <target state="new">The Azure CLI is a cross-platform tool that allows you to manage Azure services.</target>
+          </trans-unit>
+          <trans-unit id="151" xml:space="preserve">
+            <source>Use the following steps to upload data to Azure Blob storage:</source>
+            <target state="new">Use the following steps to upload data to Azure Blob storage:</target>
+          </trans-unit>
+          <trans-unit id="152" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Install and configure the Azure CLI for Mac, Linux and Windows<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Install and configure the Azure CLI for Mac, Linux and Windows<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="153" xml:space="preserve">
+            <source>Open a command prompt, bash, or other shell, and use the following to authenticate to your Azure subscription.</source>
+            <target state="new">Open a command prompt, bash, or other shell, and use the following to authenticate to your Azure subscription.</target>
+          </trans-unit>
+          <trans-unit id="154" xml:space="preserve">
+            <source>When prompted, enter the user name and password for your subscription.</source>
+            <target state="new">When prompted, enter the user name and password for your subscription.</target>
+          </trans-unit>
+          <trans-unit id="155" xml:space="preserve">
+            <source>Enter the following command to list the storage accounts for your subscription:</source>
+            <target state="new">Enter the following command to list the storage accounts for your subscription:</target>
+          </trans-unit>
+          <trans-unit id="156" xml:space="preserve">
+            <source>Select the storage account that contains the blob you want to work with, then use the following command to retrieve the key for this account:</source>
+            <target state="new">Select the storage account that contains the blob you want to work with, then use the following command to retrieve the key for this account:</target>
+          </trans-unit>
+          <trans-unit id="157" xml:space="preserve">
+            <source>This should return <bpt id="2">&lt;strong&gt;</bpt>Primary<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>Secondary<ept id="4">&lt;/strong&gt;</ept> keys.</source>
+            <target state="new">This should return <bpt id="2">&lt;strong&gt;</bpt>Primary<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>Secondary<ept id="4">&lt;/strong&gt;</ept> keys.</target>
+          </trans-unit>
+          <trans-unit id="158" xml:space="preserve">
+            <source>Copy the <bpt id="2">&lt;strong&gt;</bpt>Primary<ept id="2">&lt;/strong&gt;</ept> key value because it will be used in the next steps.</source>
+            <target state="new">Copy the <bpt id="2">&lt;strong&gt;</bpt>Primary<ept id="2">&lt;/strong&gt;</ept> key value because it will be used in the next steps.</target>
+          </trans-unit>
+          <trans-unit id="159" xml:space="preserve">
+            <source>Use the following command to retrieve a list of blob containers within the storage account:</source>
+            <target state="new">Use the following command to retrieve a list of blob containers within the storage account:</target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
+            <source>Use the following commands to upload and download files to the blob:</source>
+            <target state="new">Use the following commands to upload and download files to the blob:</target>
+          </trans-unit>
+          <trans-unit id="161" xml:space="preserve">
+            <source>To upload a file:</source>
+            <target state="new">To upload a file:</target>
+          </trans-unit>
+          <trans-unit id="162" xml:space="preserve">
+            <source>To download a file:</source>
+            <target state="new">To download a file:</target>
+          </trans-unit>
+          <trans-unit id="163" xml:space="preserve">
+            <source>If you will always be working with the same storage account, you can set the following environment variables instead of specifying the account and key for every command:</source>
+            <target state="new">If you will always be working with the same storage account, you can set the following environment variables instead of specifying the account and key for every command:</target>
+          </trans-unit>
+          <trans-unit id="164" xml:space="preserve">
+            <source>* <bpt id="2">&lt;strong&gt;</bpt>AZURE\_STORAGE\_ACCOUNT<ept id="2">&lt;/strong&gt;</ept>: The storage account name</source>
+            <target state="new">* <bpt id="2">&lt;strong&gt;</bpt>AZURE\_STORAGE\_ACCOUNT<ept id="2">&lt;/strong&gt;</ept>: The storage account name</target>
+          </trans-unit>
+          <trans-unit id="165" xml:space="preserve">
+            <source>* <bpt id="2">&lt;strong&gt;</bpt>AZURE\_STORAGE\_ACCESS\_KEY<ept id="2">&lt;/strong&gt;</ept>: The storage account key</source>
+            <target state="new">* <bpt id="2">&lt;strong&gt;</bpt>AZURE\_STORAGE\_ACCESS\_KEY<ept id="2">&lt;/strong&gt;</ept>: The storage account key</target>
+          </trans-unit>
+          <trans-unit id="166" xml:space="preserve">
+            <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Azure PowerShell</source>
+            <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Azure PowerShell</target>
+          </trans-unit>
+          <trans-unit id="167" xml:space="preserve">
+            <source>Azure PowerShell is a scripting environment that you can use to control and automate the deployment and management of your workloads in Azure.</source>
+            <target state="new">Azure PowerShell is a scripting environment that you can use to control and automate the deployment and management of your workloads in Azure.</target>
+          </trans-unit>
+          <trans-unit id="168" xml:space="preserve">
+            <source>For information about configuring your workstation to run Azure PowerShell, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Install and configure Azure PowerShell<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For information about configuring your workstation to run Azure PowerShell, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Install and configure Azure PowerShell<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="169" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>To upload a local file to Azure Blob storage<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>To upload a local file to Azure Blob storage<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="170" xml:space="preserve">
+            <source>Open the Azure PowerShell console as instructed in <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Install and configure Azure PowerShell<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">Open the Azure PowerShell console as instructed in <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Install and configure Azure PowerShell<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="171" xml:space="preserve">
+            <source>Set the values of the first five variables in the following script:</source>
+            <target state="new">Set the values of the first five variables in the following script:</target>
+          </trans-unit>
+          <trans-unit id="172" xml:space="preserve">
+            <source>Paste the script into the Azure PowerShell console to run it to copy the file.</source>
+            <target state="new">Paste the script into the Azure PowerShell console to run it to copy the file.</target>
+          </trans-unit>
+          <trans-unit id="173" xml:space="preserve">
+            <source>For example PowerShell scripts created to work with HDInsight, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>HDInsight tools<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For example PowerShell scripts created to work with HDInsight, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>HDInsight tools<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="174" xml:space="preserve">
+            <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>AzCopy</source>
+            <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>AzCopy</target>
+          </trans-unit>
+          <trans-unit id="175" xml:space="preserve">
+            <source>AzCopy is a command-line tool that is designed to simplify the task of transferring data into and out of an Azure Storage account.</source>
+            <target state="new">AzCopy is a command-line tool that is designed to simplify the task of transferring data into and out of an Azure Storage account.</target>
+          </trans-unit>
+          <trans-unit id="176" xml:space="preserve">
+            <source>You can use it as a standalone tool or incorporate this tool in an existing application.</source>
+            <target state="new">You can use it as a standalone tool or incorporate this tool in an existing application.</target>
+          </trans-unit>
+          <trans-unit id="177" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Download AzCopy[azure-azcopy-download]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Download AzCopy[azure-azcopy-download]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="178" xml:space="preserve">
+            <source>The AzCopy syntax is:</source>
+            <target state="new">The AzCopy syntax is:</target>
+          </trans-unit>
+          <trans-unit id="179" xml:space="preserve">
+            <source>For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>AzCopy - Uploading/Downloading files for Azure Blobs[azure-azcopy]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>AzCopy - Uploading/Downloading files for Azure Blobs[azure-azcopy]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="180" xml:space="preserve">
+            <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Hadoop command line</source>
+            <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Hadoop command line</target>
+          </trans-unit>
+          <trans-unit id="181" xml:space="preserve">
+            <source>The Hadoop command line is only useful for storing data into blob storage when the data is already present on the cluster head node.</source>
+            <target state="new">The Hadoop command line is only useful for storing data into blob storage when the data is already present on the cluster head node.</target>
+          </trans-unit>
+          <trans-unit id="182" xml:space="preserve">
+            <source>In order to use the Hadoop command, you must first connect to the headnode using one of the following methods:</source>
+            <target state="new">In order to use the Hadoop command, you must first connect to the headnode using one of the following methods:</target>
+          </trans-unit>
+          <trans-unit id="183" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Windows-based HDInsight<ept id="1">&lt;/strong&gt;</ept>: <bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>Connect using Remote Desktop<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Windows-based HDInsight<ept id="1">&lt;/strong&gt;</ept>: <bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>Connect using Remote Desktop<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="184" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Linux-based HDInsight<ept id="1">&lt;/strong&gt;</ept>: Connect using SSH (<bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>the SSH command<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept> or <bpt id="5CapsExtId1">&lt;link&gt;</bpt><bpt id="5CapsExtId2">&lt;linkText&gt;</bpt>PuTTY<ept id="5CapsExtId2">&lt;/linkText&gt;</ept><bpt id="5CapsExtId3">&lt;title&gt;</bpt><ept id="5CapsExtId3">&lt;/title&gt;</ept><ept id="5CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Linux-based HDInsight<ept id="1">&lt;/strong&gt;</ept>: Connect using SSH (<bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>the SSH command<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept> or <bpt id="5CapsExtId1">&lt;link&gt;</bpt><bpt id="5CapsExtId2">&lt;linkText&gt;</bpt>PuTTY<ept id="5CapsExtId2">&lt;/linkText&gt;</ept><bpt id="5CapsExtId3">&lt;title&gt;</bpt><ept id="5CapsExtId3">&lt;/title&gt;</ept><ept id="5CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="185" xml:space="preserve">
+            <source>Once connected, you can use the following syntax to upload a file to storage.</source>
+            <target state="new">Once connected, you can use the following syntax to upload a file to storage.</target>
+          </trans-unit>
+          <trans-unit id="186" xml:space="preserve">
+            <source>For example, <bpt id="2">&lt;code&gt;</bpt>hadoop fs -copyFromLocal data.txt /example/data/data.txt<ept id="2">&lt;/code&gt;</ept></source>
+            <target state="new">For example, <bpt id="2">&lt;code&gt;</bpt>hadoop fs -copyFromLocal data.txt /example/data/data.txt<ept id="2">&lt;/code&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="187" xml:space="preserve">
+            <source>Because the default file system for HDInsight is in Azure Blob storage, /example/data.txt is actually in Azure Blob storage.</source>
+            <target state="new">Because the default file system for HDInsight is in Azure Blob storage, /example/data.txt is actually in Azure Blob storage.</target>
+          </trans-unit>
+          <trans-unit id="188" xml:space="preserve">
+            <source>You can also refer to the file as:</source>
+            <target state="new">You can also refer to the file as:</target>
+          </trans-unit>
+          <trans-unit id="189" xml:space="preserve">
+            <source>or</source>
+            <target state="new">or</target>
+          </trans-unit>
+          <trans-unit id="190" xml:space="preserve">
+            <source>For a list of other Hadoop commands that work with files, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>http://hadoop.apache.org/docs/r2.7.0/hadoop-project-dist/hadoop-common/FileSystemShell.html<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new">For a list of other Hadoop commands that work with files, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>http://hadoop.apache.org/docs/r2.7.0/hadoop-project-dist/hadoop-common/FileSystemShell.html<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="191" xml:space="preserve">
+            <source>Graphical clients</source>
+            <target state="new">Graphical clients</target>
+          </trans-unit>
+          <trans-unit id="192" xml:space="preserve">
+            <source>There are also several applications that provide a graphical interface for working with Azure Storage.</source>
+            <target state="new">There are also several applications that provide a graphical interface for working with Azure Storage.</target>
+          </trans-unit>
+          <trans-unit id="193" xml:space="preserve">
+            <source>The following is a list of a few of these applications:</source>
+            <target state="new">The following is a list of a few of these applications:</target>
+          </trans-unit>
+          <trans-unit id="194" xml:space="preserve">
+            <source>Client</source>
+            <target state="new">Client</target>
+          </trans-unit>
+          <trans-unit id="195" xml:space="preserve">
+            <source>Linux</source>
+            <target state="new">Linux</target>
+          </trans-unit>
+          <trans-unit id="196" xml:space="preserve">
+            <source>OS X</source>
+            <target state="new">OS X</target>
+          </trans-unit>
+          <trans-unit id="197" xml:space="preserve">
+            <source>Windows</source>
+            <target state="new">Windows</target>
+          </trans-unit>
+          <trans-unit id="198" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Azure Storage Explorer<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Azure Storage Explorer<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="199" xml:space="preserve">
+            <source>✔</source>
+            <target state="new">✔</target>
+          </trans-unit>
+          <trans-unit id="200" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Cloud Storage Studio 2<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Cloud Storage Studio 2<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="201" xml:space="preserve">
+            <source>✔</source>
+            <target state="new">✔</target>
+          </trans-unit>
+          <trans-unit id="202" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>CloudXplorer<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>CloudXplorer<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="203" xml:space="preserve">
+            <source>✔</source>
+            <target state="new">✔</target>
+          </trans-unit>
+          <trans-unit id="204" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Azure Explorer<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Azure Explorer<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="205" xml:space="preserve">
+            <source>✔</source>
+            <target state="new">✔</target>
+          </trans-unit>
+          <trans-unit id="206" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Zudio<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Zudio<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="207" xml:space="preserve">
+            <source>✔</source>
+            <target state="new">✔</target>
+          </trans-unit>
+          <trans-unit id="208" xml:space="preserve">
+            <source>✔</source>
+            <target state="new">✔</target>
+          </trans-unit>
+          <trans-unit id="209" xml:space="preserve">
+            <source>✔</source>
+            <target state="new">✔</target>
+          </trans-unit>
+          <trans-unit id="210" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Cyberduck<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Cyberduck<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="211" xml:space="preserve">
+            <source>✔</source>
+            <target state="new">✔</target>
+          </trans-unit>
+          <trans-unit id="212" xml:space="preserve">
+            <source>✔</source>
+            <target state="new">✔</target>
+          </trans-unit>
+          <trans-unit id="213" xml:space="preserve">
+            <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Azure Storage Explorer</source>
+            <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Azure Storage Explorer</target>
+          </trans-unit>
+          <trans-unit id="214" xml:space="preserve">
+            <source><bpt id="1">&lt;em&gt;</bpt>Azure Storage Explorer<ept id="1">&lt;/em&gt;</ept> is a useful tool for inspecting and altering the data in Azure Storage.</source>
+            <target state="new"><bpt id="1">&lt;em&gt;</bpt>Azure Storage Explorer<ept id="1">&lt;/em&gt;</ept> is a useful tool for inspecting and altering the data in Azure Storage.</target>
+          </trans-unit>
+          <trans-unit id="215" xml:space="preserve">
+            <source>It is a free tool that can be downloaded from CodePlex: <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Storage Explorer<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt>Azure Storage Explorer<ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">It is a free tool that can be downloaded from CodePlex: <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Storage Explorer<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt>Azure Storage Explorer<ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="216" xml:space="preserve">
+            <source>Before using the tool, you must know your Azure storage account name and account key.</source>
+            <target state="new">Before using the tool, you must know your Azure storage account name and account key.</target>
+          </trans-unit>
+          <trans-unit id="217" xml:space="preserve">
+            <source>For instructions about getting this information, see the "How to: View, copy and regenerate storage access keys" section of <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Create, manage, or delete a storage account[azure-create-storage-account]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For instructions about getting this information, see the "How to: View, copy and regenerate storage access keys" section of <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Create, manage, or delete a storage account[azure-create-storage-account]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="218" xml:space="preserve">
+            <source>Run Azure Storage Explorer.</source>
+            <target state="new">Run Azure Storage Explorer.</target>
+          </trans-unit>
+          <trans-unit id="219" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>HDI.AzureStorageExplorer<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>HDI.AzureStorageExplorer<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="220" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Add Account<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Add Account<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="221" xml:space="preserve">
+            <source>After an account is added to Azure Storage Explorer, you don't need to go through this step again.</source>
+            <target state="new">After an account is added to Azure Storage Explorer, you don't need to go through this step again.</target>
+          </trans-unit>
+          <trans-unit id="222" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>HDI.ASEAddAccount<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>HDI.ASEAddAccount<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="223" xml:space="preserve">
+            <source>Enter your <bpt id="2">&lt;strong&gt;</bpt>Storage account name<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>Storage account key<ept id="4">&lt;/strong&gt;</ept>, and then click <bpt id="6">&lt;strong&gt;</bpt>Add Storage Account<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Enter your <bpt id="2">&lt;strong&gt;</bpt>Storage account name<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>Storage account key<ept id="4">&lt;/strong&gt;</ept>, and then click <bpt id="6">&lt;strong&gt;</bpt>Add Storage Account<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="224" xml:space="preserve">
+            <source>You can add multiple storage accounts, and each account will be displayed on a tab.</source>
+            <target state="new">You can add multiple storage accounts, and each account will be displayed on a tab.</target>
+          </trans-unit>
+          <trans-unit id="225" xml:space="preserve">
+            <source>Under <bpt id="2">&lt;strong&gt;</bpt>Storage Type<ept id="2">&lt;/strong&gt;</ept>, click <bpt id="4">&lt;strong&gt;</bpt>Blobs<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Under <bpt id="2">&lt;strong&gt;</bpt>Storage Type<ept id="2">&lt;/strong&gt;</ept>, click <bpt id="4">&lt;strong&gt;</bpt>Blobs<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="226" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>HDI.ASEBlob<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>HDI.ASEBlob<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="227" xml:space="preserve">
+            <source>Under <bpt id="2">&lt;strong&gt;</bpt>Container<ept id="2">&lt;/strong&gt;</ept>, click the name of the container that is associated with your HDInsight cluster.</source>
+            <target state="new">Under <bpt id="2">&lt;strong&gt;</bpt>Container<ept id="2">&lt;/strong&gt;</ept>, click the name of the container that is associated with your HDInsight cluster.</target>
+          </trans-unit>
+          <trans-unit id="228" xml:space="preserve">
+            <source>When you create an HDInsight cluster, you must specify a container.</source>
+            <target state="new">When you create an HDInsight cluster, you must specify a container.</target>
+          </trans-unit>
+          <trans-unit id="229" xml:space="preserve">
+            <source>Otherwise, the cluster creation process creates one for you.</source>
+            <target state="new">Otherwise, the cluster creation process creates one for you.</target>
+          </trans-unit>
+          <trans-unit id="230" xml:space="preserve">
+            <source>Under <bpt id="2">&lt;strong&gt;</bpt>Blob<ept id="2">&lt;/strong&gt;</ept>, click <bpt id="4">&lt;strong&gt;</bpt>Upload<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Under <bpt id="2">&lt;strong&gt;</bpt>Blob<ept id="2">&lt;/strong&gt;</ept>, click <bpt id="4">&lt;strong&gt;</bpt>Upload<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="231" xml:space="preserve">
+            <source>Specify a file to upload, and then click <bpt id="2">&lt;strong&gt;</bpt>Open<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Specify a file to upload, and then click <bpt id="2">&lt;strong&gt;</bpt>Open<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="232" xml:space="preserve">
+            <source>Mount Azure Blob Storage as Local Drive</source>
+            <target state="new">Mount Azure Blob Storage as Local Drive</target>
+          </trans-unit>
+          <trans-unit id="233" xml:space="preserve">
+            <source>See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Mount Azure Blob Storage as Local Drive<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Mount Azure Blob Storage as Local Drive<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="234" xml:space="preserve">
+            <source>Services</source>
+            <target state="new">Services</target>
+          </trans-unit>
+          <trans-unit id="235" xml:space="preserve">
+            <source>Azure Data Factory</source>
+            <target state="new">Azure Data Factory</target>
+          </trans-unit>
+          <trans-unit id="236" xml:space="preserve">
+            <source>The Azure Data Factory service is a fully managed service for composing data storage, data processing, and data movement services into streamlined, scalable, and reliable data production pipelines.</source>
+            <target state="new">The Azure Data Factory service is a fully managed service for composing data storage, data processing, and data movement services into streamlined, scalable, and reliable data production pipelines.</target>
+          </trans-unit>
+          <trans-unit id="237" xml:space="preserve">
+            <source>Azure Data Factory can be used to move data into Azure Blob storage, or to create data pipelines that directly use HDInsight features such as Hive and Pig.</source>
+            <target state="new">Azure Data Factory can be used to move data into Azure Blob storage, or to create data pipelines that directly use HDInsight features such as Hive and Pig.</target>
+          </trans-unit>
+          <trans-unit id="238" xml:space="preserve">
+            <source>For more information, see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Data Factory documentation<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information, see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Data Factory documentation<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="239" xml:space="preserve">
+            <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Apache Sqoop</source>
+            <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Apache Sqoop</target>
+          </trans-unit>
+          <trans-unit id="240" xml:space="preserve">
+            <source>Sqoop is a tool designed to transfer data between Hadoop and relational databases.</source>
+            <target state="new">Sqoop is a tool designed to transfer data between Hadoop and relational databases.</target>
+          </trans-unit>
+          <trans-unit id="241" xml:space="preserve">
+            <source>You can use it to import data from a relational database management system (RDBMS), such as SQL Server, MySQL, or Oracle into the Hadoop distributed file system (HDFS), transform the data in Hadoop with MapReduce or Hive, and then export the data back into an RDBMS.</source>
+            <target state="new">You can use it to import data from a relational database management system (RDBMS), such as SQL Server, MySQL, or Oracle into the Hadoop distributed file system (HDFS), transform the data in Hadoop with MapReduce or Hive, and then export the data back into an RDBMS.</target>
+          </trans-unit>
+          <trans-unit id="242" xml:space="preserve">
+            <source>For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Use Sqoop with HDInsight[hdinsight-use-sqoop]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Use Sqoop with HDInsight[hdinsight-use-sqoop]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="243" xml:space="preserve">
+            <source>Development SDKs</source>
+            <target state="new">Development SDKs</target>
+          </trans-unit>
+          <trans-unit id="244" xml:space="preserve">
+            <source>Azure Blob storage can also be accessed using an Azure SDK from the following programming languages:</source>
+            <target state="new">Azure Blob storage can also be accessed using an Azure SDK from the following programming languages:</target>
+          </trans-unit>
+          <trans-unit id="245" xml:space="preserve">
+            <source>.NET</source>
+            <target state="new">.NET</target>
+          </trans-unit>
+          <trans-unit id="246" xml:space="preserve">
+            <source>Java</source>
+            <target state="new">Java</target>
+          </trans-unit>
+          <trans-unit id="247" xml:space="preserve">
+            <source>Node.js</source>
+            <target state="new">Node.js</target>
+          </trans-unit>
+          <trans-unit id="248" xml:space="preserve">
+            <source>PHP</source>
+            <target state="new">PHP</target>
+          </trans-unit>
+          <trans-unit id="249" xml:space="preserve">
+            <source>Python</source>
+            <target state="new">Python</target>
+          </trans-unit>
+          <trans-unit id="250" xml:space="preserve">
+            <source>Ruby</source>
+            <target state="new">Ruby</target>
+          </trans-unit>
+          <trans-unit id="251" xml:space="preserve">
+            <source>For more information on installing the Azure SDKs, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure downloads<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new">For more information on installing the Azure SDKs, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure downloads<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="252" xml:space="preserve">
+            <source>Next steps</source>
+            <target state="new">Next steps</target>
+          </trans-unit>
+          <trans-unit id="253" xml:space="preserve">
+            <source>Now that you understand how to get data into HDInsight, read the following articles to learn how to perform analysis:</source>
+            <target state="new">Now that you understand how to get data into HDInsight, read the following articles to learn how to perform analysis:</target>
+          </trans-unit>
+          <trans-unit id="254" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Get started with Azure HDInsight[hdinsight-get-started]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Get started with Azure HDInsight[hdinsight-get-started]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="255" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Submit Hadoop jobs programmatically[hdinsight-submit-jobs]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Submit Hadoop jobs programmatically[hdinsight-submit-jobs]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="256" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use Hive with HDInsight[hdinsight-use-hive]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use Hive with HDInsight[hdinsight-use-hive]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="257" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use Pig with HDInsight[hdinsight-use-pig]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use Pig with HDInsight[hdinsight-use-pig]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="ru-ru" original="2/20/2016 3:44:13 PM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2788be56aef974eb033bb9004a12ea9204fbde89</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>MapReduce with Hadoop on HDInsight | Microsoft Azure</source>
+            <target state="new">MapReduce with Hadoop on HDInsight | Microsoft Azure</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>Learn how to run MapReduce jobs on Hadoop in HDInsight clusters. You'll run a basic word count operation implemented as a Java MapReduce job.</source>
+            <target state="new">Learn how to run MapReduce jobs on Hadoop in HDInsight clusters. You'll run a basic word count operation implemented as a Java MapReduce job.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Use MapReduce in Hadoop on HDInsight</source>
+            <target state="new">Use MapReduce in Hadoop on HDInsight</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source><ph id="1">&lt;token href="../../includes/hdinsight-selector-use-mapreduce.md"/&gt;</ph></source>
+            <target state="new"><ph id="1">&lt;token href="../../includes/hdinsight-selector-use-mapreduce.md"/&gt;</ph></target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>In this article, you will learn how to run MapReduce jobs on Hadoop in HDInsight clusters.</source>
+            <target state="new">In this article, you will learn how to run MapReduce jobs on Hadoop in HDInsight clusters.</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>We run a basic word count operation implemented as a Java MapReduce job.</source>
+            <target state="new">We run a basic word count operation implemented as a Java MapReduce job.</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>What is MapReduce?</source>
+            <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>What is MapReduce?</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>Hadoop MapReduce is a software framework for writing jobs that process vast amounts of data.</source>
+            <target state="new">Hadoop MapReduce is a software framework for writing jobs that process vast amounts of data.</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source>Input data is split into independent chunks, which are then processed in parallel across the nodes in your cluster.</source>
+            <target state="new">Input data is split into independent chunks, which are then processed in parallel across the nodes in your cluster.</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source>A MapReduce job consist of two functions:</source>
+            <target state="new">A MapReduce job consist of two functions:</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Mapper<ept id="1">&lt;/strong&gt;</ept>: Consumes input data, analyzes it (usually with filter and sorting operations), and emits tuples (key-value pairs)</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Mapper<ept id="1">&lt;/strong&gt;</ept>: Consumes input data, analyzes it (usually with filter and sorting operations), and emits tuples (key-value pairs)</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Reducer<ept id="1">&lt;/strong&gt;</ept>: Consumes tuples emitted by the Mapper and performs a summary operation that creates a smaller, combined result from the Mapper data</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Reducer<ept id="1">&lt;/strong&gt;</ept>: Consumes tuples emitted by the Mapper and performs a summary operation that creates a smaller, combined result from the Mapper data</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>A basic word count MapReduce job example is illustrated in the following diagram:</source>
+            <target state="new">A basic word count MapReduce job example is illustrated in the following diagram:</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>HDI.WordCountDiagram<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>HDI.WordCountDiagram<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>The output of this job is a count of how many times each word occurred in the text that was analyzed.</source>
+            <target state="new">The output of this job is a count of how many times each word occurred in the text that was analyzed.</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source>The mapper takes each line from the input text as an input and breaks it into words.</source>
+            <target state="new">The mapper takes each line from the input text as an input and breaks it into words.</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>It emits a key/value pair each time a word occurs of the word is followed by a 1.</source>
+            <target state="new">It emits a key/value pair each time a word occurs of the word is followed by a 1.</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>The output is sorted before sending it to reducer.</source>
+            <target state="new">The output is sorted before sending it to reducer.</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source>The reducer sums these individual counts for each word and emits a single key/value pair that contains the word followed by the sum of its occurrences.</source>
+            <target state="new">The reducer sums these individual counts for each word and emits a single key/value pair that contains the word followed by the sum of its occurrences.</target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source>MapReduce can be implemented in a variety of languages.</source>
+            <target state="new">MapReduce can be implemented in a variety of languages.</target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source>Java is the most common implementation, and is used for demonstration purposes in this document.</source>
+            <target state="new">Java is the most common implementation, and is used for demonstration purposes in this document.</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source>Hadoop Streaming</source>
+            <target state="new">Hadoop Streaming</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>Languages or frameworks that are based on Java and the Java Virtual Machine (for example, Scalding or Cascading,) can be ran directly as a MapReduce job, similar to a Java application.</source>
+            <target state="new">Languages or frameworks that are based on Java and the Java Virtual Machine (for example, Scalding or Cascading,) can be ran directly as a MapReduce job, similar to a Java application.</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source>Others, such as C# or Python, or standalone executables, must use Hadoop streaming.</source>
+            <target state="new">Others, such as C# or Python, or standalone executables, must use Hadoop streaming.</target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>Hadoop streaming communicates with the mapper and reducer over STDIN and STDOUT - the mapper and reducer read data a line at a time from STDIN, and write the output to STDOUT.</source>
+            <target state="new">Hadoop streaming communicates with the mapper and reducer over STDIN and STDOUT - the mapper and reducer read data a line at a time from STDIN, and write the output to STDOUT.</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>Each line read or emitted by the mapper and reducer must be in the format of a key/value pair, delimited by a tab charaacter:</source>
+            <target state="new">Each line read or emitted by the mapper and reducer must be in the format of a key/value pair, delimited by a tab charaacter:</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source>For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Hadoop Streaming<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Hadoop Streaming<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source>For examples of using Hadoop streaming with HDInsight, see the following:</source>
+            <target state="new">For examples of using Hadoop streaming with HDInsight, see the following:</target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Develop C# Hadoop streaming programs<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Develop C# Hadoop streaming programs<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Develop Python MapReduce jobs<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Develop Python MapReduce jobs<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>About the sample data</source>
+            <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>About the sample data</target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source>In this example, for sample data, you will use the notebooks of Leonardo Da Vinci, which are provided as a text document in your HDInsight cluster.</source>
+            <target state="new">In this example, for sample data, you will use the notebooks of Leonardo Da Vinci, which are provided as a text document in your HDInsight cluster.</target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source>The sample data is stored in Azure Blob storage, which HDInsight uses as the default file system for Hadoop clusters.</source>
+            <target state="new">The sample data is stored in Azure Blob storage, which HDInsight uses as the default file system for Hadoop clusters.</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source>HDInsight can access files stored in Blob storage by using the <bpt id="2">&lt;strong&gt;</bpt>wasb<ept id="2">&lt;/strong&gt;</ept> prefix.</source>
+            <target state="new">HDInsight can access files stored in Blob storage by using the <bpt id="2">&lt;strong&gt;</bpt>wasb<ept id="2">&lt;/strong&gt;</ept> prefix.</target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source>For example, to access the sample.log file, you would use the following syntax:</source>
+            <target state="new">For example, to access the sample.log file, you would use the following syntax:</target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source>Because Azure Blob storage is the default storage for HDInsight, you can also access the file by using <bpt id="2">&lt;strong&gt;</bpt>/example/data/gutenberg/davinci.txt<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Because Azure Blob storage is the default storage for HDInsight, you can also access the file by using <bpt id="2">&lt;strong&gt;</bpt>/example/data/gutenberg/davinci.txt<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source>In the previous syntax, <bpt id="2">&lt;strong&gt;</bpt>wasb:///<ept id="2">&lt;/strong&gt;</ept> is used to access files that are stored in the default storage container for your HDInsight cluster.</source>
+            <target state="new">In the previous syntax, <bpt id="2">&lt;strong&gt;</bpt>wasb:///<ept id="2">&lt;/strong&gt;</ept> is used to access files that are stored in the default storage container for your HDInsight cluster.</target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source>If you specified additional storage accounts when you provisioned your cluster, and you want to access files stored in these accounts, you can access the data by specifying the container name and storage account address.</source>
+            <target state="new">If you specified additional storage accounts when you provisioned your cluster, and you want to access files stored in these accounts, you can access the data by specifying the container name and storage account address.</target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source>For example, <bpt id="2">&lt;strong&gt;</bpt>wasb://mycontainer@mystorage.blob.core.windows.net/example/data/gutenberg/davinci.txt<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">For example, <bpt id="2">&lt;strong&gt;</bpt>wasb://mycontainer@mystorage.blob.core.windows.net/example/data/gutenberg/davinci.txt<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>About the example MapReduce</source>
+            <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>About the example MapReduce</target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source>The MapReduce job that is used in this example is located at <bpt id="2">&lt;strong&gt;</bpt>wasb://example/jars/hadoop-mapreduce-examples.jar<ept id="2">&lt;/strong&gt;</ept>, and it is provided with your HDInsight cluster.</source>
+            <target state="new">The MapReduce job that is used in this example is located at <bpt id="2">&lt;strong&gt;</bpt>wasb://example/jars/hadoop-mapreduce-examples.jar<ept id="2">&lt;/strong&gt;</ept>, and it is provided with your HDInsight cluster.</target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source>This contains a word count example that you will run against <bpt id="2">&lt;strong&gt;</bpt>davinci.txt<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">This contains a word count example that you will run against <bpt id="2">&lt;strong&gt;</bpt>davinci.txt<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source>On HDInsight 2.1 clusters, the file location is <bpt id="2">&lt;strong&gt;</bpt>wasb:///example/jars/hadoop-examples.jar<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">On HDInsight 2.1 clusters, the file location is <bpt id="2">&lt;strong&gt;</bpt>wasb:///example/jars/hadoop-examples.jar<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source>For reference, the following is the Java code for the word count MapReduce job:</source>
+            <target state="new">For reference, the following is the Java code for the word count MapReduce job:</target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source>For instructions to write your own MapReduce job, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Develop Java MapReduce programs for HDInsight<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For instructions to write your own MapReduce job, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Develop Java MapReduce programs for HDInsight<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Run the MapReduce</source>
+            <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Run the MapReduce</target>
+          </trans-unit>
+          <trans-unit id="147" xml:space="preserve">
+            <source>HDInsight can run HiveQL jobs by using a variety of methods.</source>
+            <target state="new">HDInsight can run HiveQL jobs by using a variety of methods.</target>
+          </trans-unit>
+          <trans-unit id="148" xml:space="preserve">
+            <source>Use the following table to decide which method is right for you, then follow the link for a walkthrough.</source>
+            <target state="new">Use the following table to decide which method is right for you, then follow the link for a walkthrough.</target>
+          </trans-unit>
+          <trans-unit id="149" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Use this<ept id="1">&lt;/strong&gt;</ept>...</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Use this<ept id="1">&lt;/strong&gt;</ept>...</target>
+          </trans-unit>
+          <trans-unit id="150" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>...to do this<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>...to do this<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="151" xml:space="preserve">
+            <source>...with this <bpt id="2">&lt;strong&gt;</bpt>cluster operating system<ept id="2">&lt;/strong&gt;</ept></source>
+            <target state="new">...with this <bpt id="2">&lt;strong&gt;</bpt>cluster operating system<ept id="2">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="152" xml:space="preserve">
+            <source>...from this <bpt id="2">&lt;strong&gt;</bpt>client operating system<ept id="2">&lt;/strong&gt;</ept></source>
+            <target state="new">...from this <bpt id="2">&lt;strong&gt;</bpt>client operating system<ept id="2">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="153" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>SSH<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>SSH<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="154" xml:space="preserve">
+            <source>Use the Hadoop command through <bpt id="2">&lt;strong&gt;</bpt>SSH<ept id="2">&lt;/strong&gt;</ept></source>
+            <target state="new">Use the Hadoop command through <bpt id="2">&lt;strong&gt;</bpt>SSH<ept id="2">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="155" xml:space="preserve">
+            <source>Linux</source>
+            <target state="new">Linux</target>
+          </trans-unit>
+          <trans-unit id="156" xml:space="preserve">
+            <source>Linux, Unix, Mac OS X, or Windows</source>
+            <target state="new">Linux, Unix, Mac OS X, or Windows</target>
+          </trans-unit>
+          <trans-unit id="157" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Curl<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Curl<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="158" xml:space="preserve">
+            <source>Submit the job remotely by using <bpt id="2">&lt;strong&gt;</bpt>REST<ept id="2">&lt;/strong&gt;</ept></source>
+            <target state="new">Submit the job remotely by using <bpt id="2">&lt;strong&gt;</bpt>REST<ept id="2">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="159" xml:space="preserve">
+            <source>Linux or Windows</source>
+            <target state="new">Linux or Windows</target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
+            <source>Linux, Unix, Mac OS X, or Windows</source>
+            <target state="new">Linux, Unix, Mac OS X, or Windows</target>
+          </trans-unit>
+          <trans-unit id="161" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Windows PowerShell<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Windows PowerShell<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="162" xml:space="preserve">
+            <source>Submit the job remotely by using <bpt id="2">&lt;strong&gt;</bpt>Windows PowerShell<ept id="2">&lt;/strong&gt;</ept></source>
+            <target state="new">Submit the job remotely by using <bpt id="2">&lt;strong&gt;</bpt>Windows PowerShell<ept id="2">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="163" xml:space="preserve">
+            <source>Linux or Windows</source>
+            <target state="new">Linux or Windows</target>
+          </trans-unit>
+          <trans-unit id="164" xml:space="preserve">
+            <source>Windows</source>
+            <target state="new">Windows</target>
+          </trans-unit>
+          <trans-unit id="165" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Remote Desktop<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Remote Desktop<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="166" xml:space="preserve">
+            <source>Use the Hadoop command through <bpt id="2">&lt;strong&gt;</bpt>Remote Desktop<ept id="2">&lt;/strong&gt;</ept></source>
+            <target state="new">Use the Hadoop command through <bpt id="2">&lt;strong&gt;</bpt>Remote Desktop<ept id="2">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="167" xml:space="preserve">
+            <source>Windows</source>
+            <target state="new">Windows</target>
+          </trans-unit>
+          <trans-unit id="168" xml:space="preserve">
+            <source>Windows</source>
+            <target state="new">Windows</target>
+          </trans-unit>
+          <trans-unit id="169" xml:space="preserve">
+            <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Next steps</source>
+            <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Next steps</target>
+          </trans-unit>
+          <trans-unit id="170" xml:space="preserve">
+            <source>Although MapReduce provides powerful diagnostic abilities, it can be a bit challenging to master.</source>
+            <target state="new">Although MapReduce provides powerful diagnostic abilities, it can be a bit challenging to master.</target>
+          </trans-unit>
+          <trans-unit id="171" xml:space="preserve">
+            <source>There are several Java-based frameworks that make it easier to define MapReduce applications, as well as technologies such as Pig and Hive, which provide an easier way to work with data in HDInsight.</source>
+            <target state="new">There are several Java-based frameworks that make it easier to define MapReduce applications, as well as technologies such as Pig and Hive, which provide an easier way to work with data in HDInsight.</target>
+          </trans-unit>
+          <trans-unit id="172" xml:space="preserve">
+            <source>To learn more, see the following articles:</source>
+            <target state="new">To learn more, see the following articles:</target>
+          </trans-unit>
+          <trans-unit id="173" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Develop Java MapReduce programs for HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Develop Java MapReduce programs for HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="174" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Develop Python streaming MapReduce programs for HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Develop Python streaming MapReduce programs for HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="175" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Develop C# Hadoop streaming MapReduce programs for HDInsight[hdinsight-develop-streaming]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Develop C# Hadoop streaming MapReduce programs for HDInsight[hdinsight-develop-streaming]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="176" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Develop Scalding MapReduce jobs with Apache Hadoop on HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Develop Scalding MapReduce jobs with Apache Hadoop on HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="177" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use Hive with HDInsight[hdinsight-use-hive]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use Hive with HDInsight[hdinsight-use-hive]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="178" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use Pig with HDInsight[hdinsight-use-pig]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use Pig with HDInsight[hdinsight-use-pig]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="179" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Run the HDInsight Samples[hdinsight-samples]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Run the HDInsight Samples[hdinsight-samples]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>

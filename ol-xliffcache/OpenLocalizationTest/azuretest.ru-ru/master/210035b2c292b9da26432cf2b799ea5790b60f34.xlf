@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="ru-ru" original="2/20/2016 3:38:03 PM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">210035b2c292b9da26432cf2b799ea5790b60f34</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Use JDBC to query Hive on Azure HDInsight</source>
+            <target state="new">Use JDBC to query Hive on Azure HDInsight</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>Learn how to use JDBC to connect to Hive on Azure HDInsight and remotely run queries on data stored in the cloud.</source>
+            <target state="new">Learn how to use JDBC to connect to Hive on Azure HDInsight and remotely run queries on data stored in the cloud.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Connect to Hive on Azure HDInsight using the Hive JDBC driver</source>
+            <target state="new">Connect to Hive on Azure HDInsight using the Hive JDBC driver</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source><ph id="1">&lt;token href="../../includes/hdinsight-selector-odbc-jdbc.md"/&gt;</ph></source>
+            <target state="new"><ph id="1">&lt;token href="../../includes/hdinsight-selector-odbc-jdbc.md"/&gt;</ph></target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>In this document, you will learn how to use JDBC from a Java application to remotely submit Hive queries to an HDInsight cluster.</source>
+            <target state="new">In this document, you will learn how to use JDBC from a Java application to remotely submit Hive queries to an HDInsight cluster.</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>For more information on the Hive JDBC Interface, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>HiveJDBCInterface<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information on the Hive JDBC Interface, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>HiveJDBCInterface<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>Prerequisites</source>
+            <target state="new">Prerequisites</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>To complete the steps in this article, you will need the following:</source>
+            <target state="new">To complete the steps in this article, you will need the following:</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source>A Hadoop on HDInsight cluster.</source>
+            <target state="new">A Hadoop on HDInsight cluster.</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source>Either Linux-based or Windows-based clusters will work.</source>
+            <target state="new">Either Linux-based or Windows-based clusters will work.</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>The <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Java Developer Kit (JDK) version 7<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> or higher.</source>
+            <target state="new">The <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Java Developer Kit (JDK) version 7<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> or higher.</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Apache Maven<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Apache Maven<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>Maven is a project build system for Java projects that is used by the project associated with this article.</source>
+            <target state="new">Maven is a project build system for Java projects that is used by the project associated with this article.</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source>Connection string</source>
+            <target state="new">Connection string</target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>JDBC connections to an HDInsight cluster on Azure are made over 443, and the traffic is secured using SSL.</source>
+            <target state="new">JDBC connections to an HDInsight cluster on Azure are made over 443, and the traffic is secured using SSL.</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source>The public gateway that the clusters sit behind redirects the traffic to the port that HiveServer2 is actually listening on.</source>
+            <target state="new">The public gateway that the clusters sit behind redirects the traffic to the port that HiveServer2 is actually listening on.</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>So a typical connection string would like the following:</source>
+            <target state="new">So a typical connection string would like the following:</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>Authentication</source>
+            <target state="new">Authentication</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source>When establishing the connection, you have to specify the HDInsight cluster admin name and password.</source>
+            <target state="new">When establishing the connection, you have to specify the HDInsight cluster admin name and password.</target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source>These authenticate the request to the gateway.</source>
+            <target state="new">These authenticate the request to the gateway.</target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source>For example, the following Java code opens a new connection using the connection string, admin name, and password:</source>
+            <target state="new">For example, the following Java code opens a new connection using the connection string, admin name, and password:</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source>Queries</source>
+            <target state="new">Queries</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>Once the connection is established, you can run queries against Hive.</source>
+            <target state="new">Once the connection is established, you can run queries against Hive.</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source>For example, the following Java code performs a <bpt id="2">&lt;strong&gt;</bpt>SELECT<ept id="2">&lt;/strong&gt;</ept> from a table, limiting the results to only three rows, then displays the results:</source>
+            <target state="new">For example, the following Java code performs a <bpt id="2">&lt;strong&gt;</bpt>SELECT<ept id="2">&lt;/strong&gt;</ept> from a table, limiting the results to only three rows, then displays the results:</target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>Example Java project</source>
+            <target state="new">Example Java project</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>An example of using a Java client to query Hive on HDInsight is available at <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>https://github.com/Blackmist/hdinsight-hive-jdbc<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">An example of using a Java client to query Hive on HDInsight is available at <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>https://github.com/Blackmist/hdinsight-hive-jdbc<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source>Follow the instructions in the repository to build and run the sample.</source>
+            <target state="new">Follow the instructions in the repository to build and run the sample.</target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source>Next steps</source>
+            <target state="new">Next steps</target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source>Now that you have learned how to use JDBC to work with Hive, use the following links to explore other ways to work with Azure HDInsight.</source>
+            <target state="new">Now that you have learned how to use JDBC to work with Hive, use the following links to explore other ways to work with Azure HDInsight.</target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Upload data to HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Upload data to HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use Hive with HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use Hive with HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use Pig with HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use Pig with HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use MapReduce jobs with HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use MapReduce jobs with HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>

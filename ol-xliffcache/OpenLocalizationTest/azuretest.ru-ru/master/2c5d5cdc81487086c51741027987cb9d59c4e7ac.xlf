@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="ru-ru" original="2/20/2016 4:14:21 PM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2c5d5cdc81487086c51741027987cb9d59c4e7ac</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Azure Notification Hubs Secure Push</source>
+            <target state="new">Azure Notification Hubs Secure Push</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>Learn how to send secure push notifications in Azure. Code samples written in C# using the .NET API.</source>
+            <target state="new">Learn how to send secure push notifications in Azure. Code samples written in C# using the .NET API.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Azure Notification Hubs Secure Push</source>
+            <target state="new">Azure Notification Hubs Secure Push</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source>Overview</source>
+            <target state="new">Overview</target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>Push notification support in Microsoft Azure enables you to access an easy-to-use, multiplatform, and scaled-out push infrastructure, which greatly simplifies the implementation of push notifications for both consumer and enterprise applications for mobile platforms.</source>
+            <target state="new">Push notification support in Microsoft Azure enables you to access an easy-to-use, multiplatform, and scaled-out push infrastructure, which greatly simplifies the implementation of push notifications for both consumer and enterprise applications for mobile platforms.</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>Due to regulatory or security constraints, sometimes an application might want to include something in the notification that cannot be transmitted through the standard push notification infrastructure.</source>
+            <target state="new">Due to regulatory or security constraints, sometimes an application might want to include something in the notification that cannot be transmitted through the standard push notification infrastructure.</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>This tutorial describes how to achieve the same experience by sending sensitive information through a secure, authenticated connection between the client device and the app backend.</source>
+            <target state="new">This tutorial describes how to achieve the same experience by sending sensitive information through a secure, authenticated connection between the client device and the app backend.</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>At a high level, the flow is as follows:</source>
+            <target state="new">At a high level, the flow is as follows:</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source>The app back-end:</source>
+            <target state="new">The app back-end:</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source>Stores secure payload in back-end database.</source>
+            <target state="new">Stores secure payload in back-end database.</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>Sends the ID of this notification to the device (no secure information is sent).</source>
+            <target state="new">Sends the ID of this notification to the device (no secure information is sent).</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source>The app on the device, when receiving the notification:</source>
+            <target state="new">The app on the device, when receiving the notification:</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>The device contacts the back-end requesting the secure payload.</source>
+            <target state="new">The device contacts the back-end requesting the secure payload.</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source>The app can show the payload as a notification on the device.</source>
+            <target state="new">The app can show the payload as a notification on the device.</target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>It is important to note that in the preceding flow (and in this tutorial), we assume that the device stores an authentication token in local storage, after the user logs in.</source>
+            <target state="new">It is important to note that in the preceding flow (and in this tutorial), we assume that the device stores an authentication token in local storage, after the user logs in.</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source>This guarantees a completely seamless experience, as the device can retrieve the notification’s secure payload using this token.</source>
+            <target state="new">This guarantees a completely seamless experience, as the device can retrieve the notification’s secure payload using this token.</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>If your application does not store authentication tokens on the device, or if these tokens can be expired, the device app, upon receiving the notification should display a generic notification prompting the user to launch the app.</source>
+            <target state="new">If your application does not store authentication tokens on the device, or if these tokens can be expired, the device app, upon receiving the notification should display a generic notification prompting the user to launch the app.</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>The app then authenticates the user and shows the notification payload.</source>
+            <target state="new">The app then authenticates the user and shows the notification payload.</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source>This Secure Push tutorial shows how to send a push notification securely.</source>
+            <target state="new">This Secure Push tutorial shows how to send a push notification securely.</target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source>The tutorial builds on the <bpt id="2">&lt;strong&gt;</bpt>Notify Users<ept id="2">&lt;/strong&gt;</ept> tutorial, so you should complete the steps in that tutorial first.</source>
+            <target state="new">The tutorial builds on the <bpt id="2">&lt;strong&gt;</bpt>Notify Users<ept id="2">&lt;/strong&gt;</ept> tutorial, so you should complete the steps in that tutorial first.</target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source>This tutorial assumes that you have created and configured your notification hub as described in <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Getting Started with Notification Hubs (Windows Store)<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">This tutorial assumes that you have created and configured your notification hub as described in <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Getting Started with Notification Hubs (Windows Store)<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source>Also, note that Windows Phone 8.1 requires Windows (not Windows Phone) credentials, and that background tasks do not work on Windows Phone 8.0 or Silverlight 8.1.</source>
+            <target state="new">Also, note that Windows Phone 8.1 requires Windows (not Windows Phone) credentials, and that background tasks do not work on Windows Phone 8.0 or Silverlight 8.1.</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>For Windows Store applications, you can receive notifications via a background task only if the app is lock-screen enabled (click the checkbox in the Appmanifest).</source>
+            <target state="new">For Windows Store applications, you can receive notifications via a background task only if the app is lock-screen enabled (click the checkbox in the Appmanifest).</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source><ph id="1">&lt;token href="../../includes/notification-hubs-aspnet-backend-securepush.md"/&gt;</ph></source>
+            <target state="new"><ph id="1">&lt;token href="../../includes/notification-hubs-aspnet-backend-securepush.md"/&gt;</ph></target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>Modify the Windows Phone Project</source>
+            <target state="new">Modify the Windows Phone Project</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>NotifyUserWindowsPhone<ept id="2">&lt;/strong&gt;</ept> project, add the following code to App.xaml.cs to register the push background task.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>NotifyUserWindowsPhone<ept id="2">&lt;/strong&gt;</ept> project, add the following code to App.xaml.cs to register the push background task.</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source>Add the following line of code at the end of the <bpt id="2">&lt;code&gt;</bpt>OnLaunched()<ept id="2">&lt;/code&gt;</ept> method:</source>
+            <target state="new">Add the following line of code at the end of the <bpt id="2">&lt;code&gt;</bpt>OnLaunched()<ept id="2">&lt;/code&gt;</ept> method:</target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source>Still in App.xaml.cs, add the following code immediately after the <bpt id="2">&lt;code&gt;</bpt>OnLaunched()<ept id="2">&lt;/code&gt;</ept> method:</source>
+            <target state="new">Still in App.xaml.cs, add the following code immediately after the <bpt id="2">&lt;code&gt;</bpt>OnLaunched()<ept id="2">&lt;/code&gt;</ept> method:</target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source>Add the following <bpt id="2">&lt;code&gt;</bpt>using<ept id="2">&lt;/code&gt;</ept> statements at the top of the App.xaml.cs file:</source>
+            <target state="new">Add the following <bpt id="2">&lt;code&gt;</bpt>using<ept id="2">&lt;/code&gt;</ept> statements at the top of the App.xaml.cs file:</target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source>From the <bpt id="2">&lt;strong&gt;</bpt>File<ept id="2">&lt;/strong&gt;</ept> menu in Visual Studio, click <bpt id="4">&lt;strong&gt;</bpt>Save All<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">From the <bpt id="2">&lt;strong&gt;</bpt>File<ept id="2">&lt;/strong&gt;</ept> menu in Visual Studio, click <bpt id="4">&lt;strong&gt;</bpt>Save All<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source>Create the Push Background Component</source>
+            <target state="new">Create the Push Background Component</target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source>The next step is to create the push background component.</source>
+            <target state="new">The next step is to create the push background component.</target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source>In Solution Explorer, right-click the top-level node of the solution (<bpt id="2">&lt;strong&gt;</bpt>Solution SecurePush<ept id="2">&lt;/strong&gt;</ept> in this case), then click <bpt id="4">&lt;strong&gt;</bpt>Add<ept id="4">&lt;/strong&gt;</ept>, then click <bpt id="6">&lt;strong&gt;</bpt>New Project<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In Solution Explorer, right-click the top-level node of the solution (<bpt id="2">&lt;strong&gt;</bpt>Solution SecurePush<ept id="2">&lt;/strong&gt;</ept> in this case), then click <bpt id="4">&lt;strong&gt;</bpt>Add<ept id="4">&lt;/strong&gt;</ept>, then click <bpt id="6">&lt;strong&gt;</bpt>New Project<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source>Expand <bpt id="2">&lt;strong&gt;</bpt>Store Apps<ept id="2">&lt;/strong&gt;</ept>, then click <bpt id="4">&lt;strong&gt;</bpt>Windows Phone Apps<ept id="4">&lt;/strong&gt;</ept>, then click <bpt id="6">&lt;strong&gt;</bpt>Windows Runtime Component (Windows Phone)<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Expand <bpt id="2">&lt;strong&gt;</bpt>Store Apps<ept id="2">&lt;/strong&gt;</ept>, then click <bpt id="4">&lt;strong&gt;</bpt>Windows Phone Apps<ept id="4">&lt;/strong&gt;</ept>, then click <bpt id="6">&lt;strong&gt;</bpt>Windows Runtime Component (Windows Phone)<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source>Name the project <bpt id="2">&lt;strong&gt;</bpt>PushBackgroundComponent<ept id="2">&lt;/strong&gt;</ept>, and then click <bpt id="4">&lt;strong&gt;</bpt>OK<ept id="4">&lt;/strong&gt;</ept> to create the project.</source>
+            <target state="new">Name the project <bpt id="2">&lt;strong&gt;</bpt>PushBackgroundComponent<ept id="2">&lt;/strong&gt;</ept>, and then click <bpt id="4">&lt;strong&gt;</bpt>OK<ept id="4">&lt;/strong&gt;</ept> to create the project.</target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source>In Solution Explorer, right-click the <bpt id="2">&lt;strong&gt;</bpt>PushBackgroundComponent (Windows Phone 8.1)<ept id="2">&lt;/strong&gt;</ept> project, then click <bpt id="4">&lt;strong&gt;</bpt>Add<ept id="4">&lt;/strong&gt;</ept>, then click <bpt id="6">&lt;strong&gt;</bpt>Class<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In Solution Explorer, right-click the <bpt id="2">&lt;strong&gt;</bpt>PushBackgroundComponent (Windows Phone 8.1)<ept id="2">&lt;/strong&gt;</ept> project, then click <bpt id="4">&lt;strong&gt;</bpt>Add<ept id="4">&lt;/strong&gt;</ept>, then click <bpt id="6">&lt;strong&gt;</bpt>Class<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source>Name the new class <bpt id="2">&lt;strong&gt;</bpt>PushBackgroundTask.cs<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Name the new class <bpt id="2">&lt;strong&gt;</bpt>PushBackgroundTask.cs<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Add<ept id="2">&lt;/strong&gt;</ept> to generate the class.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Add<ept id="2">&lt;/strong&gt;</ept> to generate the class.</target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source>Replace the entire contents of the <bpt id="2">&lt;strong&gt;</bpt>PushBackgroundComponent<ept id="2">&lt;/strong&gt;</ept> namespace definition with the following code, substituting the placeholder <bpt id="4">&lt;code&gt;</bpt>{back-end endpoint}<ept id="4">&lt;/code&gt;</ept> with the back-end endpoint obtained while deploying your back-end:</source>
+            <target state="new">Replace the entire contents of the <bpt id="2">&lt;strong&gt;</bpt>PushBackgroundComponent<ept id="2">&lt;/strong&gt;</ept> namespace definition with the following code, substituting the placeholder <bpt id="4">&lt;code&gt;</bpt>{back-end endpoint}<ept id="4">&lt;/code&gt;</ept> with the back-end endpoint obtained while deploying your back-end:</target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source>In Solution Explorer, right-click the <bpt id="2">&lt;strong&gt;</bpt>PushBackgroundComponent (Windows Phone 8.1)<ept id="2">&lt;/strong&gt;</ept> project and then click <bpt id="4">&lt;strong&gt;</bpt>Manage NuGet Packages<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In Solution Explorer, right-click the <bpt id="2">&lt;strong&gt;</bpt>PushBackgroundComponent (Windows Phone 8.1)<ept id="2">&lt;/strong&gt;</ept> project and then click <bpt id="4">&lt;strong&gt;</bpt>Manage NuGet Packages<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source>On the left-hand side, click <bpt id="2">&lt;strong&gt;</bpt>Online<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">On the left-hand side, click <bpt id="2">&lt;strong&gt;</bpt>Online<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Search<ept id="2">&lt;/strong&gt;</ept> box, type <bpt id="4">&lt;strong&gt;</bpt>Http Client<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Search<ept id="2">&lt;/strong&gt;</ept> box, type <bpt id="4">&lt;strong&gt;</bpt>Http Client<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source>In the results list, click <bpt id="2">&lt;strong&gt;</bpt>Microsoft HTTP Client Libraries<ept id="2">&lt;/strong&gt;</ept>, and then click <bpt id="4">&lt;strong&gt;</bpt>Install<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the results list, click <bpt id="2">&lt;strong&gt;</bpt>Microsoft HTTP Client Libraries<ept id="2">&lt;/strong&gt;</ept>, and then click <bpt id="4">&lt;strong&gt;</bpt>Install<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source>Complete the installation.</source>
+            <target state="new">Complete the installation.</target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source>Back in the NuGet <bpt id="2">&lt;strong&gt;</bpt>Search<ept id="2">&lt;/strong&gt;</ept> box, type <bpt id="4">&lt;strong&gt;</bpt>Json.net<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Back in the NuGet <bpt id="2">&lt;strong&gt;</bpt>Search<ept id="2">&lt;/strong&gt;</ept> box, type <bpt id="4">&lt;strong&gt;</bpt>Json.net<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="147" xml:space="preserve">
+            <source>Install the <bpt id="2">&lt;strong&gt;</bpt>Json.NET<ept id="2">&lt;/strong&gt;</ept> package, then close the NuGet Package Manager window.</source>
+            <target state="new">Install the <bpt id="2">&lt;strong&gt;</bpt>Json.NET<ept id="2">&lt;/strong&gt;</ept> package, then close the NuGet Package Manager window.</target>
+          </trans-unit>
+          <trans-unit id="148" xml:space="preserve">
+            <source>Add the following <bpt id="2">&lt;code&gt;</bpt>using<ept id="2">&lt;/code&gt;</ept> statements at the top of the <bpt id="4">&lt;strong&gt;</bpt>PushBackgroundTask.cs<ept id="4">&lt;/strong&gt;</ept> file:</source>
+            <target state="new">Add the following <bpt id="2">&lt;code&gt;</bpt>using<ept id="2">&lt;/code&gt;</ept> statements at the top of the <bpt id="4">&lt;strong&gt;</bpt>PushBackgroundTask.cs<ept id="4">&lt;/strong&gt;</ept> file:</target>
+          </trans-unit>
+          <trans-unit id="149" xml:space="preserve">
+            <source>In Solution Explorer, in the <bpt id="2">&lt;strong&gt;</bpt>NotifyUserWindowsPhone (Windows Phone 8.1)<ept id="2">&lt;/strong&gt;</ept> project, right-click <bpt id="4">&lt;strong&gt;</bpt>References<ept id="4">&lt;/strong&gt;</ept>, then click <bpt id="6">&lt;strong&gt;</bpt>Add Reference...<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In Solution Explorer, in the <bpt id="2">&lt;strong&gt;</bpt>NotifyUserWindowsPhone (Windows Phone 8.1)<ept id="2">&lt;/strong&gt;</ept> project, right-click <bpt id="4">&lt;strong&gt;</bpt>References<ept id="4">&lt;/strong&gt;</ept>, then click <bpt id="6">&lt;strong&gt;</bpt>Add Reference...<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="150" xml:space="preserve">
+            <source>In the Reference Manager dialog, check the box next to <bpt id="2">&lt;strong&gt;</bpt>PushBackgroundComponent<ept id="2">&lt;/strong&gt;</ept>, and then click <bpt id="4">&lt;strong&gt;</bpt>OK<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the Reference Manager dialog, check the box next to <bpt id="2">&lt;strong&gt;</bpt>PushBackgroundComponent<ept id="2">&lt;/strong&gt;</ept>, and then click <bpt id="4">&lt;strong&gt;</bpt>OK<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="151" xml:space="preserve">
+            <source>In Solution Explorer, double-click <bpt id="2">&lt;strong&gt;</bpt>Package.appxmanifest<ept id="2">&lt;/strong&gt;</ept> in the <bpt id="4">&lt;strong&gt;</bpt>NotifyUserWindowsPhone (Windows Phone 8.1)<ept id="4">&lt;/strong&gt;</ept> project.</source>
+            <target state="new">In Solution Explorer, double-click <bpt id="2">&lt;strong&gt;</bpt>Package.appxmanifest<ept id="2">&lt;/strong&gt;</ept> in the <bpt id="4">&lt;strong&gt;</bpt>NotifyUserWindowsPhone (Windows Phone 8.1)<ept id="4">&lt;/strong&gt;</ept> project.</target>
+          </trans-unit>
+          <trans-unit id="152" xml:space="preserve">
+            <source>Under <bpt id="2">&lt;strong&gt;</bpt>Notifications<ept id="2">&lt;/strong&gt;</ept>, set <bpt id="4">&lt;strong&gt;</bpt>Toast Capable<ept id="4">&lt;/strong&gt;</ept> to <bpt id="6">&lt;strong&gt;</bpt>Yes<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Under <bpt id="2">&lt;strong&gt;</bpt>Notifications<ept id="2">&lt;/strong&gt;</ept>, set <bpt id="4">&lt;strong&gt;</bpt>Toast Capable<ept id="4">&lt;/strong&gt;</ept> to <bpt id="6">&lt;strong&gt;</bpt>Yes<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="153" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="154" xml:space="preserve">
+            <source>Still in <bpt id="2">&lt;strong&gt;</bpt>Package.appxmanifest<ept id="2">&lt;/strong&gt;</ept>, click the <bpt id="4">&lt;strong&gt;</bpt>Declarations<ept id="4">&lt;/strong&gt;</ept> menu near the top.</source>
+            <target state="new">Still in <bpt id="2">&lt;strong&gt;</bpt>Package.appxmanifest<ept id="2">&lt;/strong&gt;</ept>, click the <bpt id="4">&lt;strong&gt;</bpt>Declarations<ept id="4">&lt;/strong&gt;</ept> menu near the top.</target>
+          </trans-unit>
+          <trans-unit id="155" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Available Declarations<ept id="2">&lt;/strong&gt;</ept> dropdown, click <bpt id="4">&lt;strong&gt;</bpt>Background Tasks<ept id="4">&lt;/strong&gt;</ept>, and then click <bpt id="6">&lt;strong&gt;</bpt>Add<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Available Declarations<ept id="2">&lt;/strong&gt;</ept> dropdown, click <bpt id="4">&lt;strong&gt;</bpt>Background Tasks<ept id="4">&lt;/strong&gt;</ept>, and then click <bpt id="6">&lt;strong&gt;</bpt>Add<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="156" xml:space="preserve">
+            <source>In <bpt id="2">&lt;strong&gt;</bpt>Package.appxmanifest<ept id="2">&lt;/strong&gt;</ept>, under <bpt id="4">&lt;strong&gt;</bpt>Properties<ept id="4">&lt;/strong&gt;</ept>, check <bpt id="6">&lt;strong&gt;</bpt>Push notification<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In <bpt id="2">&lt;strong&gt;</bpt>Package.appxmanifest<ept id="2">&lt;/strong&gt;</ept>, under <bpt id="4">&lt;strong&gt;</bpt>Properties<ept id="4">&lt;/strong&gt;</ept>, check <bpt id="6">&lt;strong&gt;</bpt>Push notification<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="157" xml:space="preserve">
+            <source>In <bpt id="2">&lt;strong&gt;</bpt>Package.appxmanifest<ept id="2">&lt;/strong&gt;</ept>, under <bpt id="4">&lt;strong&gt;</bpt>App Settings<ept id="4">&lt;/strong&gt;</ept>, type <bpt id="6">&lt;strong&gt;</bpt>PushBackgroundComponent.PushBackgroundTask<ept id="6">&lt;/strong&gt;</ept> in the <bpt id="8">&lt;strong&gt;</bpt>Entry Point<ept id="8">&lt;/strong&gt;</ept> field.</source>
+            <target state="new">In <bpt id="2">&lt;strong&gt;</bpt>Package.appxmanifest<ept id="2">&lt;/strong&gt;</ept>, under <bpt id="4">&lt;strong&gt;</bpt>App Settings<ept id="4">&lt;/strong&gt;</ept>, type <bpt id="6">&lt;strong&gt;</bpt>PushBackgroundComponent.PushBackgroundTask<ept id="6">&lt;/strong&gt;</ept> in the <bpt id="8">&lt;strong&gt;</bpt>Entry Point<ept id="8">&lt;/strong&gt;</ept> field.</target>
+          </trans-unit>
+          <trans-unit id="158" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="159" xml:space="preserve">
+            <source>From the <bpt id="2">&lt;strong&gt;</bpt>File<ept id="2">&lt;/strong&gt;</ept> menu, click <bpt id="4">&lt;strong&gt;</bpt>Save All<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">From the <bpt id="2">&lt;strong&gt;</bpt>File<ept id="2">&lt;/strong&gt;</ept> menu, click <bpt id="4">&lt;strong&gt;</bpt>Save All<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
+            <source>Run the Application</source>
+            <target state="new">Run the Application</target>
+          </trans-unit>
+          <trans-unit id="161" xml:space="preserve">
+            <source>To run the application, do the following:</source>
+            <target state="new">To run the application, do the following:</target>
+          </trans-unit>
+          <trans-unit id="162" xml:space="preserve">
+            <source>In Visual Studio, run the <bpt id="2">&lt;strong&gt;</bpt>AppBackend<ept id="2">&lt;/strong&gt;</ept> Web API application.</source>
+            <target state="new">In Visual Studio, run the <bpt id="2">&lt;strong&gt;</bpt>AppBackend<ept id="2">&lt;/strong&gt;</ept> Web API application.</target>
+          </trans-unit>
+          <trans-unit id="163" xml:space="preserve">
+            <source>An ASP.NET web page is displayed.</source>
+            <target state="new">An ASP.NET web page is displayed.</target>
+          </trans-unit>
+          <trans-unit id="164" xml:space="preserve">
+            <source>In Visual Studio, run the <bpt id="2">&lt;strong&gt;</bpt>NotifyUserWindowsPhone (Windows Phone 8.1)<ept id="2">&lt;/strong&gt;</ept> Windows Phone app.</source>
+            <target state="new">In Visual Studio, run the <bpt id="2">&lt;strong&gt;</bpt>NotifyUserWindowsPhone (Windows Phone 8.1)<ept id="2">&lt;/strong&gt;</ept> Windows Phone app.</target>
+          </trans-unit>
+          <trans-unit id="165" xml:space="preserve">
+            <source>The Windows Phone emulator runs and loads the app automatically.</source>
+            <target state="new">The Windows Phone emulator runs and loads the app automatically.</target>
+          </trans-unit>
+          <trans-unit id="166" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>NotifyUserWindowsPhone<ept id="2">&lt;/strong&gt;</ept> app UI, enter a username and password.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>NotifyUserWindowsPhone<ept id="2">&lt;/strong&gt;</ept> app UI, enter a username and password.</target>
+          </trans-unit>
+          <trans-unit id="167" xml:space="preserve">
+            <source>These can be any string, but they must be the same value.</source>
+            <target state="new">These can be any string, but they must be the same value.</target>
+          </trans-unit>
+          <trans-unit id="168" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>NotifyUserWindowsPhone<ept id="2">&lt;/strong&gt;</ept> app UI, click <bpt id="4">&lt;strong&gt;</bpt>Log in and register<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>NotifyUserWindowsPhone<ept id="2">&lt;/strong&gt;</ept> app UI, click <bpt id="4">&lt;strong&gt;</bpt>Log in and register<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="169" xml:space="preserve">
+            <source>Then click <bpt id="2">&lt;strong&gt;</bpt>Send push<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Then click <bpt id="2">&lt;strong&gt;</bpt>Send push<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>

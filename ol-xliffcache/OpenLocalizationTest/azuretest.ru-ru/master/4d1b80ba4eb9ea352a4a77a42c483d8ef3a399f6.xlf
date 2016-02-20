@@ -1,0 +1,2067 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="ru-ru" original="2/20/2016 4:34:33 PM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4d1b80ba4eb9ea352a4a77a42c483d8ef3a399f6</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Steps to failback from Azure to VMware</source>
+            <target state="new">Steps to failback from Azure to VMware</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>This article describes how Azure Site Recovery and vContinuum tool can be used to failback a virtual machine back to VMware.</source>
+            <target state="new">This article describes how Azure Site Recovery and vContinuum tool can be used to failback a virtual machine back to VMware.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Steps to failback from Azure to VMware</source>
+            <target state="new">Steps to failback from Azure to VMware</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source>This document will walk you through the steps you need to failback from Azure back to your VMware site.</source>
+            <target state="new">This document will walk you through the steps you need to failback from Azure back to your VMware site.</target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>You must have already followed the steps given in the tutorial for <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>VMware to Azure protection and recovery<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">You must have already followed the steps given in the tutorial for <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>VMware to Azure protection and recovery<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>After a successful failover to Azure, the virtual machines will be</source>
+            <target state="new">After a successful failover to Azure, the virtual machines will be</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>available in the virtual machines tab.</source>
+            <target state="new">available in the virtual machines tab.</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>When you decide to failback –</source>
+            <target state="new">When you decide to failback –</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source>below are the steps you need to follow.</source>
+            <target state="new">below are the steps you need to follow.</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source>Note that when you failback from Azure back to your VMware site, the recovery can only be to a virtual machine.</source>
+            <target state="new">Note that when you failback from Azure back to your VMware site, the recovery can only be to a virtual machine.</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>Even if your initial source on VMware was a physical machine, failover to Azure followed by a failback to VMware will convert it into a virtual machine.</source>
+            <target state="new">Even if your initial source on VMware was a physical machine, failover to Azure followed by a failback to VMware will convert it into a virtual machine.</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source>Overview</source>
+            <target state="new">Overview</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>Install vContinuum server on-premises</source>
+            <target state="new">Install vContinuum server on-premises</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source>a.</source>
+            <target state="new">a.</target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>Configure it to point to the CS</source>
+            <target state="new">Configure it to point to the CS</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source>Deploy a PS on Azure</source>
+            <target state="new">Deploy a PS on Azure</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>Install a MT on-premises</source>
+            <target state="new">Install a MT on-premises</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>Steps to protect the failed over VMs back to on-premises</source>
+            <target state="new">Steps to protect the failed over VMs back to on-premises</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source>a.</source>
+            <target state="new">a.</target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source>Configuration considerations</source>
+            <target state="new">Configuration considerations</target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source>Monitoring protection of VMs back to on-premises</source>
+            <target state="new">Monitoring protection of VMs back to on-premises</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source>Failover the VMs back to on-premises</source>
+            <target state="new">Failover the VMs back to on-premises</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>Below is the setup overview that we will achieve with the below steps.</source>
+            <target state="new">Below is the setup overview that we will achieve with the below steps.</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source>Part of the setup has already been completed during failover.</source>
+            <target state="new">Part of the setup has already been completed during failover.</target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>The blue lines are the connections used during failover.</source>
+            <target state="new">The blue lines are the connections used during failover.</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>The red lines are the connections used during failback.</source>
+            <target state="new">The red lines are the connections used during failback.</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source>The lines with arrows go over the internet.</source>
+            <target state="new">The lines with arrows go over the internet.</target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source>Install vContinuum on-premsies</source>
+            <target state="new">Install vContinuum on-premsies</target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source>The vContinuum setup will be at available at <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>download location<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">The vContinuum setup will be at available at <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>download location<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source>In addition install the patch given here on the vContinuum - available at <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>download location<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">In addition install the patch given here on the vContinuum - available at <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>download location<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source>Launch the setup to begin installation of vContinuum.</source>
+            <target state="new">Launch the setup to begin installation of vContinuum.</target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Next<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Next<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source>Specify the CX server IP address and the CX server port.</source>
+            <target state="new">Specify the CX server IP address and the CX server port.</target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source>Select HTTPS.</source>
+            <target state="new">Select HTTPS.</target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source>To discover the CX IP address go to the CS deployment on Azure and view its dashboard.</source>
+            <target state="new">To discover the CX IP address go to the CS deployment on Azure and view its dashboard.</target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source>To discover the CX public port go to the endpoints tab in the VM page and identify the HTTPs endpoints public port.</source>
+            <target state="new">To discover the CX public port go to the endpoints tab in the VM page and identify the HTTPs endpoints public port.</target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source>Specify the CS Passphrase.</source>
+            <target state="new">Specify the CS Passphrase.</target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source>You need to have noted down the passphrase during the CS registration.</source>
+            <target state="new">You need to have noted down the passphrase during the CS registration.</target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source>You would have used the passphrase during MT and PS deployments also.</source>
+            <target state="new">You would have used the passphrase during MT and PS deployments also.</target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source>In case you do not remember the passphrase you can go in to the CS server on Azure and find the passphrase stored under C:\\Program Files (x86)\\InMage Systems\\private\\connection.passphrase</source>
+            <target state="new">In case you do not remember the passphrase you can go in to the CS server on Azure and find the passphrase stored under C:\\Program Files (x86)\\InMage Systems\\private\\connection.passphrase</target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="147" xml:space="preserve">
+            <source>Specify the location to install the vContinuum server and begin installation.</source>
+            <target state="new">Specify the location to install the vContinuum server and begin installation.</target>
+          </trans-unit>
+          <trans-unit id="148" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="149" xml:space="preserve">
+            <source>Once you see that installation completes, you can launch the vContinuum to see it working.</source>
+            <target state="new">Once you see that installation completes, you can launch the vContinuum to see it working.</target>
+          </trans-unit>
+          <trans-unit id="150" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="151" xml:space="preserve">
+            <source>Install PS server on Azure</source>
+            <target state="new">Install PS server on Azure</target>
+          </trans-unit>
+          <trans-unit id="152" xml:space="preserve">
+            <source>A Process Server needs to be installed on Azure so that the VMs in Azure can send the data back to on-premises MT.</source>
+            <target state="new">A Process Server needs to be installed on Azure so that the VMs in Azure can send the data back to on-premises MT.</target>
+          </trans-unit>
+          <trans-unit id="153" xml:space="preserve">
+            <source>You need to deploy the PS on Azure in the same network as the Configuration Server.</source>
+            <target state="new">You need to deploy the PS on Azure in the same network as the Configuration Server.</target>
+          </trans-unit>
+          <trans-unit id="154" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Configuration Servers<ept id="2">&lt;/strong&gt;</ept> page in Azure, select to add a new process server.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Configuration Servers<ept id="2">&lt;/strong&gt;</ept> page in Azure, select to add a new process server.</target>
+          </trans-unit>
+          <trans-unit id="155" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="156" xml:space="preserve">
+            <source>Specify a process server name, and enter a name and password to connect to the virtual machine as an admin.</source>
+            <target state="new">Specify a process server name, and enter a name and password to connect to the virtual machine as an admin.</target>
+          </trans-unit>
+          <trans-unit id="157" xml:space="preserve">
+            <source>Select the configuration server to which you're registering the process server.</source>
+            <target state="new">Select the configuration server to which you're registering the process server.</target>
+          </trans-unit>
+          <trans-unit id="158" xml:space="preserve">
+            <source>This should be the same server you're using to protect and fail over your virtual machines.</source>
+            <target state="new">This should be the same server you're using to protect and fail over your virtual machines.</target>
+          </trans-unit>
+          <trans-unit id="159" xml:space="preserve">
+            <source>Specify the Azure ntwork in which the process server should be deployment.</source>
+            <target state="new">Specify the Azure ntwork in which the process server should be deployment.</target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
+            <source>It should be the same network as the configuration server.</source>
+            <target state="new">It should be the same network as the configuration server.</target>
+          </trans-unit>
+          <trans-unit id="161" xml:space="preserve">
+            <source>Specify a unique IP address from the select subnet and begin deployment.</source>
+            <target state="new">Specify a unique IP address from the select subnet and begin deployment.</target>
+          </trans-unit>
+          <trans-unit id="162" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="163" xml:space="preserve">
+            <source>A job to deploy the process server will be triggered.</source>
+            <target state="new">A job to deploy the process server will be triggered.</target>
+          </trans-unit>
+          <trans-unit id="164" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="165" xml:space="preserve">
+            <source>Once the process server is deployed on Azure you can log into the server</source>
+            <target state="new">Once the process server is deployed on Azure you can log into the server</target>
+          </trans-unit>
+          <trans-unit id="166" xml:space="preserve">
+            <source>using the credentials you specified.</source>
+            <target state="new">using the credentials you specified.</target>
+          </trans-unit>
+          <trans-unit id="167" xml:space="preserve">
+            <source>Use the same steps you used during</source>
+            <target state="new">Use the same steps you used during</target>
+          </trans-unit>
+          <trans-unit id="168" xml:space="preserve">
+            <source>forward direction of protection to register the PS.</source>
+            <target state="new">forward direction of protection to register the PS.</target>
+          </trans-unit>
+          <trans-unit id="169" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="170" xml:space="preserve">
+            <source>The servers registered during failback will not be visible under VM properties.</source>
+            <target state="new">The servers registered during failback will not be visible under VM properties.</target>
+          </trans-unit>
+          <trans-unit id="171" xml:space="preserve">
+            <source>They will be only visible under the Servers tab under the Configuration server to which they have been registered.</source>
+            <target state="new">They will be only visible under the Servers tab under the Configuration server to which they have been registered.</target>
+          </trans-unit>
+          <trans-unit id="172" xml:space="preserve">
+            <source>It can take about 10-15 mins for the PS to be listed under the CS.</source>
+            <target state="new">It can take about 10-15 mins for the PS to be listed under the CS.</target>
+          </trans-unit>
+          <trans-unit id="173" xml:space="preserve">
+            <source>Install an MT server on-premises</source>
+            <target state="new">Install an MT server on-premises</target>
+          </trans-unit>
+          <trans-unit id="174" xml:space="preserve">
+            <source>Depending on the source side virtual machines you need to install a Linux or a Windows Master Target server on-premises.</source>
+            <target state="new">Depending on the source side virtual machines you need to install a Linux or a Windows Master Target server on-premises.</target>
+          </trans-unit>
+          <trans-unit id="175" xml:space="preserve">
+            <source>Deploy Windows MT</source>
+            <target state="new">Deploy Windows MT</target>
+          </trans-unit>
+          <trans-unit id="176" xml:space="preserve">
+            <source>A windows MT is already bundled with vContinuum setup.</source>
+            <target state="new">A windows MT is already bundled with vContinuum setup.</target>
+          </trans-unit>
+          <trans-unit id="177" xml:space="preserve">
+            <source>When you install</source>
+            <target state="new">When you install</target>
+          </trans-unit>
+          <trans-unit id="178" xml:space="preserve">
+            <source>the vContinuum, an MT is also deployed on the same machine and</source>
+            <target state="new">the vContinuum, an MT is also deployed on the same machine and</target>
+          </trans-unit>
+          <trans-unit id="179" xml:space="preserve">
+            <source>registered to the Configuration server.</source>
+            <target state="new">registered to the Configuration server.</target>
+          </trans-unit>
+          <trans-unit id="180" xml:space="preserve">
+            <source>To begin deployment, create an empty machine on-premises on the ESX</source>
+            <target state="new">To begin deployment, create an empty machine on-premises on the ESX</target>
+          </trans-unit>
+          <trans-unit id="181" xml:space="preserve">
+            <source>host onto which you want to recover the VMs from Auzre.</source>
+            <target state="new">host onto which you want to recover the VMs from Auzre.</target>
+          </trans-unit>
+          <trans-unit id="182" xml:space="preserve">
+            <source>Ensure that there are at least two disks attached to the VM – one is</source>
+            <target state="new">Ensure that there are at least two disks attached to the VM – one is</target>
+          </trans-unit>
+          <trans-unit id="183" xml:space="preserve">
+            <source>used for the OS and the second one is used for Retention Drive.</source>
+            <target state="new">used for the OS and the second one is used for Retention Drive.</target>
+          </trans-unit>
+          <trans-unit id="184" xml:space="preserve">
+            <source>Install the operating system.</source>
+            <target state="new">Install the operating system.</target>
+          </trans-unit>
+          <trans-unit id="185" xml:space="preserve">
+            <source>Install the vContinuum on the server.</source>
+            <target state="new">Install the vContinuum on the server.</target>
+          </trans-unit>
+          <trans-unit id="186" xml:space="preserve">
+            <source>This would also complete</source>
+            <target state="new">This would also complete</target>
+          </trans-unit>
+          <trans-unit id="187" xml:space="preserve">
+            <source>installation of the MT.</source>
+            <target state="new">installation of the MT.</target>
+          </trans-unit>
+          <trans-unit id="188" xml:space="preserve">
+            <source>Deploy Linux MT</source>
+            <target state="new">Deploy Linux MT</target>
+          </trans-unit>
+          <trans-unit id="189" xml:space="preserve">
+            <source>To begin deployment, create an empty machine on-premises on the ESX</source>
+            <target state="new">To begin deployment, create an empty machine on-premises on the ESX</target>
+          </trans-unit>
+          <trans-unit id="190" xml:space="preserve">
+            <source>host onto which you want to recover the VMs from Auzre.</source>
+            <target state="new">host onto which you want to recover the VMs from Auzre.</target>
+          </trans-unit>
+          <trans-unit id="191" xml:space="preserve">
+            <source>Ensure that there are at least two disks attached to the VM – one is</source>
+            <target state="new">Ensure that there are at least two disks attached to the VM – one is</target>
+          </trans-unit>
+          <trans-unit id="192" xml:space="preserve">
+            <source>used for the OS and the second one is used for Retention Drive.</source>
+            <target state="new">used for the OS and the second one is used for Retention Drive.</target>
+          </trans-unit>
+          <trans-unit id="193" xml:space="preserve">
+            <source>Install the linux operating system.</source>
+            <target state="new">Install the linux operating system.</target>
+          </trans-unit>
+          <trans-unit id="194" xml:space="preserve">
+            <source>NLinux Master Target (MT) system should not use LVM for root or retention storage spaces.</source>
+            <target state="new">NLinux Master Target (MT) system should not use LVM for root or retention storage spaces.</target>
+          </trans-unit>
+          <trans-unit id="195" xml:space="preserve">
+            <source>Linux MT configured to avoid LVM partitions/disks discovery by default.</source>
+            <target state="new">Linux MT configured to avoid LVM partitions/disks discovery by default.</target>
+          </trans-unit>
+          <trans-unit id="196" xml:space="preserve">
+            <source>Partitions that you can create are</source>
+            <target state="new">Partitions that you can create are</target>
+          </trans-unit>
+          <trans-unit id="197" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="198" xml:space="preserve">
+            <source>Carry out the below post installation steps before beginning MT installation.</source>
+            <target state="new">Carry out the below post installation steps before beginning MT installation.</target>
+          </trans-unit>
+          <trans-unit id="199" xml:space="preserve">
+            <source>Post OS Installation Steps</source>
+            <target state="new">Post OS Installation Steps</target>
+          </trans-unit>
+          <trans-unit id="200" xml:space="preserve">
+            <source>To get SCSI ID’s for each of SCSI hard disk in a Linux virtual machine,</source>
+            <target state="new">To get SCSI ID’s for each of SCSI hard disk in a Linux virtual machine,</target>
+          </trans-unit>
+          <trans-unit id="201" xml:space="preserve">
+            <source>you should enable the parameter “disk.EnableUUID = TRUE”.</source>
+            <target state="new">you should enable the parameter “disk.EnableUUID = TRUE”.</target>
+          </trans-unit>
+          <trans-unit id="202" xml:space="preserve">
+            <source>To enable this parameter, follow the steps as given below:</source>
+            <target state="new">To enable this parameter, follow the steps as given below:</target>
+          </trans-unit>
+          <trans-unit id="203" xml:space="preserve">
+            <source>Shut down your virtual machine.</source>
+            <target state="new">Shut down your virtual machine.</target>
+          </trans-unit>
+          <trans-unit id="204" xml:space="preserve">
+            <source>Right-click the VM’s entry in the left-hand panel &gt; <bpt id="2">&lt;strong&gt;</bpt>Edit Settings<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Right-click the VM’s entry in the left-hand panel &gt; <bpt id="2">&lt;strong&gt;</bpt>Edit Settings<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="205" xml:space="preserve">
+            <source>Click the <bpt id="2">&lt;strong&gt;</bpt>Options<ept id="2">&lt;/strong&gt;</ept> tab.</source>
+            <target state="new">Click the <bpt id="2">&lt;strong&gt;</bpt>Options<ept id="2">&lt;/strong&gt;</ept> tab.</target>
+          </trans-unit>
+          <trans-unit id="206" xml:space="preserve">
+            <source>Select the <bpt id="2">&lt;strong&gt;</bpt>Advanced\&gt;General item<ept id="2">&lt;/strong&gt;</ept> on the left and click the <bpt id="4">&lt;strong&gt;</bpt>Configuration Parameters<ept id="4">&lt;/strong&gt;</ept> that you see on the right.</source>
+            <target state="new">Select the <bpt id="2">&lt;strong&gt;</bpt>Advanced\&gt;General item<ept id="2">&lt;/strong&gt;</ept> on the left and click the <bpt id="4">&lt;strong&gt;</bpt>Configuration Parameters<ept id="4">&lt;/strong&gt;</ept> that you see on the right.</target>
+          </trans-unit>
+          <trans-unit id="207" xml:space="preserve">
+            <source>“Configuration Parameters” option will be in de-active state when the machine is running”.</source>
+            <target state="new">“Configuration Parameters” option will be in de-active state when the machine is running”.</target>
+          </trans-unit>
+          <trans-unit id="208" xml:space="preserve">
+            <source>In order to make this tab active, shutdown machine.</source>
+            <target state="new">In order to make this tab active, shutdown machine.</target>
+          </trans-unit>
+          <trans-unit id="209" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="210" xml:space="preserve">
+            <source>See whether already a row with <bpt id="2">&lt;strong&gt;</bpt>disk.EnableUUID<ept id="2">&lt;/strong&gt;</ept> exists?</source>
+            <target state="new">See whether already a row with <bpt id="2">&lt;strong&gt;</bpt>disk.EnableUUID<ept id="2">&lt;/strong&gt;</ept> exists?</target>
+          </trans-unit>
+          <trans-unit id="211" xml:space="preserve">
+            <source>If exists and if the value is set to False over write the value with True (True and False values are case in-sensitive).</source>
+            <target state="new">If exists and if the value is set to False over write the value with True (True and False values are case in-sensitive).</target>
+          </trans-unit>
+          <trans-unit id="212" xml:space="preserve">
+            <source>If exists and is set to true, click on cancel and test the SCSI command inside guest operating system after it is boot-up.</source>
+            <target state="new">If exists and is set to true, click on cancel and test the SCSI command inside guest operating system after it is boot-up.</target>
+          </trans-unit>
+          <trans-unit id="213" xml:space="preserve">
+            <source>If does not exist click <bpt id="2">&lt;strong&gt;</bpt>Add Row.<ept id="2">&lt;/strong&gt;</ept></source>
+            <target state="new">If does not exist click <bpt id="2">&lt;strong&gt;</bpt>Add Row.<ept id="2">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="214" xml:space="preserve">
+            <source>Add disk.EnableUUID in the Name column.</source>
+            <target state="new">Add disk.EnableUUID in the Name column.</target>
+          </trans-unit>
+          <trans-unit id="215" xml:space="preserve">
+            <source>Set its value as TRUE.</source>
+            <target state="new">Set its value as TRUE.</target>
+          </trans-unit>
+          <trans-unit id="216" xml:space="preserve">
+            <source>Do not add the above values along with double-quotes.</source>
+            <target state="new">Do not add the above values along with double-quotes.</target>
+          </trans-unit>
+          <trans-unit id="217" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="218" xml:space="preserve">
+            <source>Download and Install the Additional Packages</source>
+            <target state="new">Download and Install the Additional Packages</target>
+          </trans-unit>
+          <trans-unit id="219" xml:space="preserve">
+            <source>NOTE: Make sure system has Internet connectivity before download and</source>
+            <target state="new">NOTE: Make sure system has Internet connectivity before download and</target>
+          </trans-unit>
+          <trans-unit id="220" xml:space="preserve">
+            <source>installing additional packages.</source>
+            <target state="new">installing additional packages.</target>
+          </trans-unit>
+          <trans-unit id="221" xml:space="preserve">
+            <source>\# yum install -y xfsprogs perl lsscsi rsync wget kexec-tools</source>
+            <target state="new">\# yum install -y xfsprogs perl lsscsi rsync wget kexec-tools</target>
+          </trans-unit>
+          <trans-unit id="222" xml:space="preserve">
+            <source>Above command will download below mentioned 15 packages from CentOS 6.6</source>
+            <target state="new">Above command will download below mentioned 15 packages from CentOS 6.6</target>
+          </trans-unit>
+          <trans-unit id="223" xml:space="preserve">
+            <source>repository and install.</source>
+            <target state="new">repository and install.</target>
+          </trans-unit>
+          <trans-unit id="224" xml:space="preserve">
+            <source>bc-1.06.95-1.el6.x86\_64.rpm</source>
+            <target state="new">bc-1.06.95-1.el6.x86\_64.rpm</target>
+          </trans-unit>
+          <trans-unit id="225" xml:space="preserve">
+            <source>busybox-1.15.1-20.el6.x86\_64.rpm</source>
+            <target state="new">busybox-1.15.1-20.el6.x86\_64.rpm</target>
+          </trans-unit>
+          <trans-unit id="226" xml:space="preserve">
+            <source>elfutils-libs-0.158-3.2.el6.x86\_64.rpm</source>
+            <target state="new">elfutils-libs-0.158-3.2.el6.x86\_64.rpm</target>
+          </trans-unit>
+          <trans-unit id="227" xml:space="preserve">
+            <source>kexec-tools-2.0.0-280.el6.x86\_64.rpm</source>
+            <target state="new">kexec-tools-2.0.0-280.el6.x86\_64.rpm</target>
+          </trans-unit>
+          <trans-unit id="228" xml:space="preserve">
+            <source>lsscsi-0.23-2.el6.x86\_64.rpm</source>
+            <target state="new">lsscsi-0.23-2.el6.x86\_64.rpm</target>
+          </trans-unit>
+          <trans-unit id="229" xml:space="preserve">
+            <source>lzo-2.03-3.1.el6\_5.1.x86\_64.rpm</source>
+            <target state="new">lzo-2.03-3.1.el6\_5.1.x86\_64.rpm</target>
+          </trans-unit>
+          <trans-unit id="230" xml:space="preserve">
+            <source>perl-5.10.1-136.el6\_6.1.x86\_64.rpm</source>
+            <target state="new">perl-5.10.1-136.el6\_6.1.x86\_64.rpm</target>
+          </trans-unit>
+          <trans-unit id="231" xml:space="preserve">
+            <source>perl-Module-Pluggable-3.90-136.el6\_6.1.x86\_64.rpm</source>
+            <target state="new">perl-Module-Pluggable-3.90-136.el6\_6.1.x86\_64.rpm</target>
+          </trans-unit>
+          <trans-unit id="232" xml:space="preserve">
+            <source>perl-Pod-Escapes-1.04-136.el6\_6.1.x86\_64.rpm</source>
+            <target state="new">perl-Pod-Escapes-1.04-136.el6\_6.1.x86\_64.rpm</target>
+          </trans-unit>
+          <trans-unit id="233" xml:space="preserve">
+            <source>perl-Pod-Simple-3.13-136.el6\_6.1.x86\_64.rpm</source>
+            <target state="new">perl-Pod-Simple-3.13-136.el6\_6.1.x86\_64.rpm</target>
+          </trans-unit>
+          <trans-unit id="234" xml:space="preserve">
+            <source>perl-libs-5.10.1-136.el6\_6.1.x86\_64.rpm</source>
+            <target state="new">perl-libs-5.10.1-136.el6\_6.1.x86\_64.rpm</target>
+          </trans-unit>
+          <trans-unit id="235" xml:space="preserve">
+            <source>perl-version-0.77-136.el6\_6.1.x86\_64.rpm</source>
+            <target state="new">perl-version-0.77-136.el6\_6.1.x86\_64.rpm</target>
+          </trans-unit>
+          <trans-unit id="236" xml:space="preserve">
+            <source>rsync-3.0.6-12.el6.x86\_64.rpm</source>
+            <target state="new">rsync-3.0.6-12.el6.x86\_64.rpm</target>
+          </trans-unit>
+          <trans-unit id="237" xml:space="preserve">
+            <source>snappy-1.1.0-1.el6.x86\_64.rpm</source>
+            <target state="new">snappy-1.1.0-1.el6.x86\_64.rpm</target>
+          </trans-unit>
+          <trans-unit id="238" xml:space="preserve">
+            <source>wget-1.12-5.el6\_6.1.x86\_64.rpm</source>
+            <target state="new">wget-1.12-5.el6\_6.1.x86\_64.rpm</target>
+          </trans-unit>
+          <trans-unit id="239" xml:space="preserve">
+            <source>NOTE: If source machine uses Reiser or XFS filesystem for root or boot</source>
+            <target state="new">NOTE: If source machine uses Reiser or XFS filesystem for root or boot</target>
+          </trans-unit>
+          <trans-unit id="240" xml:space="preserve">
+            <source>device, then following packages should be download and installed on</source>
+            <target state="new">device, then following packages should be download and installed on</target>
+          </trans-unit>
+          <trans-unit id="241" xml:space="preserve">
+            <source>Linux Master Target prior to the protection.</source>
+            <target state="new">Linux Master Target prior to the protection.</target>
+          </trans-unit>
+          <trans-unit id="242" xml:space="preserve">
+            <source>\# cd /usr/local</source>
+            <target state="new">\# cd /usr/local</target>
+          </trans-unit>
+          <trans-unit id="243" xml:space="preserve">
+            <source>\# wget</source>
+            <target state="new">\# wget</target>
+          </trans-unit>
+          <trans-unit id="244" xml:space="preserve">
+            <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="245" xml:space="preserve">
+            <source>\# wget</source>
+            <target state="new">\# wget</target>
+          </trans-unit>
+          <trans-unit id="246" xml:space="preserve">
+            <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="247" xml:space="preserve">
+            <source>\# rpm -ivh kmod-reiserfs-0.0-1.el6.elrepo.x86\_64.rpm</source>
+            <target state="new">\# rpm -ivh kmod-reiserfs-0.0-1.el6.elrepo.x86\_64.rpm</target>
+          </trans-unit>
+          <trans-unit id="248" xml:space="preserve">
+            <source>reiserfs-utils-3.6.21-1.el6.elrepo.x86\_64.rpm</source>
+            <target state="new">reiserfs-utils-3.6.21-1.el6.elrepo.x86\_64.rpm</target>
+          </trans-unit>
+          <trans-unit id="249" xml:space="preserve">
+            <source>\# wget</source>
+            <target state="new">\# wget</target>
+          </trans-unit>
+          <trans-unit id="250" xml:space="preserve">
+            <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="251" xml:space="preserve">
+            <source>\# rpm -ivh xfsprogs-3.1.1-16.el6.x86\_64.rpm</source>
+            <target state="new">\# rpm -ivh xfsprogs-3.1.1-16.el6.x86\_64.rpm</target>
+          </trans-unit>
+          <trans-unit id="252" xml:space="preserve">
+            <source>Apply Custom Configuration Changes</source>
+            <target state="new">Apply Custom Configuration Changes</target>
+          </trans-unit>
+          <trans-unit id="253" xml:space="preserve">
+            <source>Before applying custom configuration changes make sure you have</source>
+            <target state="new">Before applying custom configuration changes make sure you have</target>
+          </trans-unit>
+          <trans-unit id="254" xml:space="preserve">
+            <source>completed Post Installation Steps</source>
+            <target state="new">completed Post Installation Steps</target>
+          </trans-unit>
+          <trans-unit id="255" xml:space="preserve">
+            <source>To apply custom configuration changes, follow the below mentioned steps:</source>
+            <target state="new">To apply custom configuration changes, follow the below mentioned steps:</target>
+          </trans-unit>
+          <trans-unit id="256" xml:space="preserve">
+            <source>Copy the RHEL 6-64 Unified Agent binary to the newly created OS.</source>
+            <target state="new">Copy the RHEL 6-64 Unified Agent binary to the newly created OS.</target>
+          </trans-unit>
+          <trans-unit id="257" xml:space="preserve">
+            <source>Run the below command to untar the binary.</source>
+            <target state="new">Run the below command to untar the binary.</target>
+          </trans-unit>
+          <trans-unit id="258" xml:space="preserve">
+            <source>**tar -zxvf \<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>**</source>
+            <target state="new">**tar -zxvf \<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>**</target>
+          </trans-unit>
+          <trans-unit id="259" xml:space="preserve">
+            <source>Execute below command to give permission.</source>
+            <target state="new">Execute below command to give permission.</target>
+          </trans-unit>
+          <trans-unit id="260" xml:space="preserve">
+            <source>\# <bpt id="2">&lt;strong&gt;</bpt>chmod 755 ./ApplyCustomChanges.sh<ept id="2">&lt;/strong&gt;</ept></source>
+            <target state="new">\# <bpt id="2">&lt;strong&gt;</bpt>chmod 755 ./ApplyCustomChanges.sh<ept id="2">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="261" xml:space="preserve">
+            <source>Execute the below command to run the script.</source>
+            <target state="new">Execute the below command to run the script.</target>
+          </trans-unit>
+          <trans-unit id="262" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>\# ./ApplyCustomChanges.sh<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>\# ./ApplyCustomChanges.sh<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="263" xml:space="preserve">
+            <source>NOTE: Execute the script only once on the server.</source>
+            <target state="new">NOTE: Execute the script only once on the server.</target>
+          </trans-unit>
+          <trans-unit id="264" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>REBOOT<ept id="1">&lt;/strong&gt;</ept> the server</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>REBOOT<ept id="1">&lt;/strong&gt;</ept> the server</target>
+          </trans-unit>
+          <trans-unit id="265" xml:space="preserve">
+            <source>after successful execution of the above script.</source>
+            <target state="new">after successful execution of the above script.</target>
+          </trans-unit>
+          <trans-unit id="266" xml:space="preserve">
+            <source>Begin MT Installation</source>
+            <target state="new">Begin MT Installation</target>
+          </trans-unit>
+          <trans-unit id="267" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Download<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept> the Linux</source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Download<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept> the Linux</target>
+          </trans-unit>
+          <trans-unit id="268" xml:space="preserve">
+            <source>Master Target Server installation file.</source>
+            <target state="new">Master Target Server installation file.</target>
+          </trans-unit>
+          <trans-unit id="269" xml:space="preserve">
+            <source>Copy the downloaded Linux Master Target Server installer to the Linux</source>
+            <target state="new">Copy the downloaded Linux Master Target Server installer to the Linux</target>
+          </trans-unit>
+          <trans-unit id="270" xml:space="preserve">
+            <source>Master Target virtual machine using an sftp client utility of your</source>
+            <target state="new">Master Target virtual machine using an sftp client utility of your</target>
+          </trans-unit>
+          <trans-unit id="271" xml:space="preserve">
+            <source>choice.</source>
+            <target state="new">choice.</target>
+          </trans-unit>
+          <trans-unit id="272" xml:space="preserve">
+            <source>Alternately you can log into the Linux Master Target virtual</source>
+            <target state="new">Alternately you can log into the Linux Master Target virtual</target>
+          </trans-unit>
+          <trans-unit id="273" xml:space="preserve">
+            <source>machine and use wget to download the installation package from the</source>
+            <target state="new">machine and use wget to download the installation package from the</target>
+          </trans-unit>
+          <trans-unit id="274" xml:space="preserve">
+            <source>provided link.</source>
+            <target state="new">provided link.</target>
+          </trans-unit>
+          <trans-unit id="275" xml:space="preserve">
+            <source>Log in to the Linux Master Target server virtual machine using an ssh</source>
+            <target state="new">Log in to the Linux Master Target server virtual machine using an ssh</target>
+          </trans-unit>
+          <trans-unit id="276" xml:space="preserve">
+            <source>client of your choice.</source>
+            <target state="new">client of your choice.</target>
+          </trans-unit>
+          <trans-unit id="277" xml:space="preserve">
+            <source>If you are connected to the Azure network on which you deployed your</source>
+            <target state="new">If you are connected to the Azure network on which you deployed your</target>
+          </trans-unit>
+          <trans-unit id="278" xml:space="preserve">
+            <source>Linux Master Target server through a VPN connection then use the</source>
+            <target state="new">Linux Master Target server through a VPN connection then use the</target>
+          </trans-unit>
+          <trans-unit id="279" xml:space="preserve">
+            <source>internal IP address for the Linux Master Target Server obtained from the</source>
+            <target state="new">internal IP address for the Linux Master Target Server obtained from the</target>
+          </trans-unit>
+          <trans-unit id="280" xml:space="preserve">
+            <source>virtual machine dashboard and port 22 to connect to the Linux Master</source>
+            <target state="new">virtual machine dashboard and port 22 to connect to the Linux Master</target>
+          </trans-unit>
+          <trans-unit id="281" xml:space="preserve">
+            <source>Target Server using Secure Shell.</source>
+            <target state="new">Target Server using Secure Shell.</target>
+          </trans-unit>
+          <trans-unit id="282" xml:space="preserve">
+            <source>If you are connecting to the Linux Master Target Server over a public</source>
+            <target state="new">If you are connecting to the Linux Master Target Server over a public</target>
+          </trans-unit>
+          <trans-unit id="283" xml:space="preserve">
+            <source>internet connection use the Linux Master Target Server’s public virtual</source>
+            <target state="new">internet connection use the Linux Master Target Server’s public virtual</target>
+          </trans-unit>
+          <trans-unit id="284" xml:space="preserve">
+            <source>IP address (from the virtual machines dashboard page) and the public</source>
+            <target state="new">IP address (from the virtual machines dashboard page) and the public</target>
+          </trans-unit>
+          <trans-unit id="285" xml:space="preserve">
+            <source>endpoint created for ssh to login to the Linux Master Target Server.</source>
+            <target state="new">endpoint created for ssh to login to the Linux Master Target Server.</target>
+          </trans-unit>
+          <trans-unit id="286" xml:space="preserve">
+            <source>Extract the files from the gzipped Linux Master Target Server installer</source>
+            <target state="new">Extract the files from the gzipped Linux Master Target Server installer</target>
+          </trans-unit>
+          <trans-unit id="287" xml:space="preserve">
+            <source>tar archive by executing</source>
+            <target state="new">tar archive by executing</target>
+          </trans-unit>
+          <trans-unit id="288" xml:space="preserve">
+            <source><bpt id="1">&lt;em&gt;</bpt>“tar –xvzf Microsoft-ASR\_UA\_8.2.0.0\_RHEL6-64\<ept id="1">&lt;/em&gt;</ept>”* from the directory</source>
+            <target state="new"><bpt id="1">&lt;em&gt;</bpt>“tar –xvzf Microsoft-ASR\_UA\_8.2.0.0\_RHEL6-64\<ept id="1">&lt;/em&gt;</ept>”* from the directory</target>
+          </trans-unit>
+          <trans-unit id="289" xml:space="preserve">
+            <source>where you had copied the Linux Master Target Server installer to.</source>
+            <target state="new">where you had copied the Linux Master Target Server installer to.</target>
+          </trans-unit>
+          <trans-unit id="290" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="291" xml:space="preserve">
+            <source>If you extracted the installer files to a different directory change</source>
+            <target state="new">If you extracted the installer files to a different directory change</target>
+          </trans-unit>
+          <trans-unit id="292" xml:space="preserve">
+            <source>directory to the directory to which the contents of the tar archive were</source>
+            <target state="new">directory to the directory to which the contents of the tar archive were</target>
+          </trans-unit>
+          <trans-unit id="293" xml:space="preserve">
+            <source>extracted.</source>
+            <target state="new">extracted.</target>
+          </trans-unit>
+          <trans-unit id="294" xml:space="preserve">
+            <source>From this directory path execute “sudo ./install.sh”</source>
+            <target state="new">From this directory path execute “sudo ./install.sh”</target>
+          </trans-unit>
+          <trans-unit id="295" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="296" xml:space="preserve">
+            <source>When prompted to make choice of Primary Role of this Agent select 2</source>
+            <target state="new">When prompted to make choice of Primary Role of this Agent select 2</target>
+          </trans-unit>
+          <trans-unit id="297" xml:space="preserve">
+            <source>(Master Target)</source>
+            <target state="new">(Master Target)</target>
+          </trans-unit>
+          <trans-unit id="298" xml:space="preserve">
+            <source>Leave the other interactive install options at their default values.</source>
+            <target state="new">Leave the other interactive install options at their default values.</target>
+          </trans-unit>
+          <trans-unit id="299" xml:space="preserve">
+            <source>Wait for the rest of the installation to proceed and the Host Config</source>
+            <target state="new">Wait for the rest of the installation to proceed and the Host Config</target>
+          </trans-unit>
+          <trans-unit id="300" xml:space="preserve">
+            <source>Interface to appear.</source>
+            <target state="new">Interface to appear.</target>
+          </trans-unit>
+          <trans-unit id="301" xml:space="preserve">
+            <source>The Host Configuration utility for the Linux Master</source>
+            <target state="new">The Host Configuration utility for the Linux Master</target>
+          </trans-unit>
+          <trans-unit id="302" xml:space="preserve">
+            <source>Target Server is a command line utility.</source>
+            <target state="new">Target Server is a command line utility.</target>
+          </trans-unit>
+          <trans-unit id="303" xml:space="preserve">
+            <source>Don’t resize your ssh client</source>
+            <target state="new">Don’t resize your ssh client</target>
+          </trans-unit>
+          <trans-unit id="304" xml:space="preserve">
+            <source>utility window.</source>
+            <target state="new">utility window.</target>
+          </trans-unit>
+          <trans-unit id="305" xml:space="preserve">
+            <source>Use the arrow keys to select the Global option and press</source>
+            <target state="new">Use the arrow keys to select the Global option and press</target>
+          </trans-unit>
+          <trans-unit id="306" xml:space="preserve">
+            <source>enter on your keyboard.</source>
+            <target state="new">enter on your keyboard.</target>
+          </trans-unit>
+          <trans-unit id="307" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="308" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="309" xml:space="preserve">
+            <source>Against the field IP enter the Internal IP address of the</source>
+            <target state="new">Against the field IP enter the Internal IP address of the</target>
+          </trans-unit>
+          <trans-unit id="310" xml:space="preserve">
+            <source>Configuration Server obtained from the virtual machines dashboard</source>
+            <target state="new">Configuration Server obtained from the virtual machines dashboard</target>
+          </trans-unit>
+          <trans-unit id="311" xml:space="preserve">
+            <source>page and press enter.</source>
+            <target state="new">page and press enter.</target>
+          </trans-unit>
+          <trans-unit id="312" xml:space="preserve">
+            <source>Against the field Port enter 22 and press enter.</source>
+            <target state="new">Against the field Port enter 22 and press enter.</target>
+          </trans-unit>
+          <trans-unit id="313" xml:space="preserve">
+            <source>Leave Use https: as Yes.</source>
+            <target state="new">Leave Use https: as Yes.</target>
+          </trans-unit>
+          <trans-unit id="314" xml:space="preserve">
+            <source>Press enter one more time.</source>
+            <target state="new">Press enter one more time.</target>
+          </trans-unit>
+          <trans-unit id="315" xml:space="preserve">
+            <source>Enter the Passphrase that was generated on the Configuration Server.</source>
+            <target state="new">Enter the Passphrase that was generated on the Configuration Server.</target>
+          </trans-unit>
+          <trans-unit id="316" xml:space="preserve">
+            <source>If you are using PuTTY client from a Windows machine to ssh to the</source>
+            <target state="new">If you are using PuTTY client from a Windows machine to ssh to the</target>
+          </trans-unit>
+          <trans-unit id="317" xml:space="preserve">
+            <source>Linux Master Target Server virtual machine you can use Shift+Insert</source>
+            <target state="new">Linux Master Target Server virtual machine you can use Shift+Insert</target>
+          </trans-unit>
+          <trans-unit id="318" xml:space="preserve">
+            <source>to paste the contents of the clipboard.</source>
+            <target state="new">to paste the contents of the clipboard.</target>
+          </trans-unit>
+          <trans-unit id="319" xml:space="preserve">
+            <source>Copy the Passphrase to the</source>
+            <target state="new">Copy the Passphrase to the</target>
+          </trans-unit>
+          <trans-unit id="320" xml:space="preserve">
+            <source>local clipboard using Ctrl-C and use Shift+Insert to paste it.</source>
+            <target state="new">local clipboard using Ctrl-C and use Shift+Insert to paste it.</target>
+          </trans-unit>
+          <trans-unit id="321" xml:space="preserve">
+            <source>Press</source>
+            <target state="new">Press</target>
+          </trans-unit>
+          <trans-unit id="322" xml:space="preserve">
+            <source>enter</source>
+            <target state="new">enter</target>
+          </trans-unit>
+          <trans-unit id="323" xml:space="preserve">
+            <source>Use the right arrow key to navigate to quit and press enter.</source>
+            <target state="new">Use the right arrow key to navigate to quit and press enter.</target>
+          </trans-unit>
+          <trans-unit id="324" xml:space="preserve">
+            <source>Wait for the installation to complete</source>
+            <target state="new">Wait for the installation to complete</target>
+          </trans-unit>
+          <trans-unit id="325" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="326" xml:space="preserve">
+            <source>If for some reason you failed to register your Linux Master Target</source>
+            <target state="new">If for some reason you failed to register your Linux Master Target</target>
+          </trans-unit>
+          <trans-unit id="327" xml:space="preserve">
+            <source>Server to the Configuration Server you could do so again by running the</source>
+            <target state="new">Server to the Configuration Server you could do so again by running the</target>
+          </trans-unit>
+          <trans-unit id="328" xml:space="preserve">
+            <source>host configuration utility from /usr/local/ASR/Vx/bin/hostconfigcli (you</source>
+            <target state="new">host configuration utility from /usr/local/ASR/Vx/bin/hostconfigcli (you</target>
+          </trans-unit>
+          <trans-unit id="329" xml:space="preserve">
+            <source>will first need to set access permissions to this directory by executing</source>
+            <target state="new">will first need to set access permissions to this directory by executing</target>
+          </trans-unit>
+          <trans-unit id="330" xml:space="preserve">
+            <source>chmod as a super user)</source>
+            <target state="new">chmod as a super user)</target>
+          </trans-unit>
+          <trans-unit id="331" xml:space="preserve">
+            <source>Validate Master Target Server registration to the Configuration Server.</source>
+            <target state="new">Validate Master Target Server registration to the Configuration Server.</target>
+          </trans-unit>
+          <trans-unit id="332" xml:space="preserve">
+            <source>You can validate that the Master Target Server registered successfully</source>
+            <target state="new">You can validate that the Master Target Server registered successfully</target>
+          </trans-unit>
+          <trans-unit id="333" xml:space="preserve">
+            <source>with the Configuration Server by visiting the Server Details page under</source>
+            <target state="new">with the Configuration Server by visiting the Server Details page under</target>
+          </trans-unit>
+          <trans-unit id="334" xml:space="preserve">
+            <source>the Configuration Server page on the Azure Site Recovery vault</source>
+            <target state="new">the Configuration Server page on the Azure Site Recovery vault</target>
+          </trans-unit>
+          <trans-unit id="335" xml:space="preserve">
+            <source>Begin protecting the virtual machines back to on-premises</source>
+            <target state="new">Begin protecting the virtual machines back to on-premises</target>
+          </trans-unit>
+          <trans-unit id="336" xml:space="preserve">
+            <source>Before failback of the VMs back to on-premises, first you need to</source>
+            <target state="new">Before failback of the VMs back to on-premises, first you need to</target>
+          </trans-unit>
+          <trans-unit id="337" xml:space="preserve">
+            <source>protect the virtual machines back to on-premises.</source>
+            <target state="new">protect the virtual machines back to on-premises.</target>
+          </trans-unit>
+          <trans-unit id="338" xml:space="preserve">
+            <source>Follow the below steps</source>
+            <target state="new">Follow the below steps</target>
+          </trans-unit>
+          <trans-unit id="339" xml:space="preserve">
+            <source>to protect VMs of an application.</source>
+            <target state="new">to protect VMs of an application.</target>
+          </trans-unit>
+          <trans-unit id="340" xml:space="preserve">
+            <source>Note on temp drive</source>
+            <target state="new">Note on temp drive</target>
+          </trans-unit>
+          <trans-unit id="341" xml:space="preserve">
+            <source>When a VM is failed over to Azure, it adds an extra temp drive for page</source>
+            <target state="new">When a VM is failed over to Azure, it adds an extra temp drive for page</target>
+          </trans-unit>
+          <trans-unit id="342" xml:space="preserve">
+            <source>file.</source>
+            <target state="new">file.</target>
+          </trans-unit>
+          <trans-unit id="343" xml:space="preserve">
+            <source>This is an extra drive that is typically not required by your</source>
+            <target state="new">This is an extra drive that is typically not required by your</target>
+          </trans-unit>
+          <trans-unit id="344" xml:space="preserve">
+            <source>failed over VM since it might already have a drive dedicated for the</source>
+            <target state="new">failed over VM since it might already have a drive dedicated for the</target>
+          </trans-unit>
+          <trans-unit id="345" xml:space="preserve">
+            <source>page file.</source>
+            <target state="new">page file.</target>
+          </trans-unit>
+          <trans-unit id="346" xml:space="preserve">
+            <source>Before you begin reverse protection of the virtual machines, you need to</source>
+            <target state="new">Before you begin reverse protection of the virtual machines, you need to</target>
+          </trans-unit>
+          <trans-unit id="347" xml:space="preserve">
+            <source>ensure that the drive is taken offline so that it does not get</source>
+            <target state="new">ensure that the drive is taken offline so that it does not get</target>
+          </trans-unit>
+          <trans-unit id="348" xml:space="preserve">
+            <source>protected.</source>
+            <target state="new">protected.</target>
+          </trans-unit>
+          <trans-unit id="349" xml:space="preserve">
+            <source>To do this,</source>
+            <target state="new">To do this,</target>
+          </trans-unit>
+          <trans-unit id="350" xml:space="preserve">
+            <source>Open Computer Management (via control panel administrative tool, or</source>
+            <target state="new">Open Computer Management (via control panel administrative tool, or</target>
+          </trans-unit>
+          <trans-unit id="351" xml:space="preserve">
+            <source>by right click on This PC in the explorer window and selecting</source>
+            <target state="new">by right click on This PC in the explorer window and selecting</target>
+          </trans-unit>
+          <trans-unit id="352" xml:space="preserve">
+            <source>manage.)</source>
+            <target state="new">manage.)</target>
+          </trans-unit>
+          <trans-unit id="353" xml:space="preserve">
+            <source>Select Storage Management so that it lists the disks online and</source>
+            <target state="new">Select Storage Management so that it lists the disks online and</target>
+          </trans-unit>
+          <trans-unit id="354" xml:space="preserve">
+            <source>attached to the machine.</source>
+            <target state="new">attached to the machine.</target>
+          </trans-unit>
+          <trans-unit id="355" xml:space="preserve">
+            <source>Select the temporary disk attached to the machine and choose to</source>
+            <target state="new">Select the temporary disk attached to the machine and choose to</target>
+          </trans-unit>
+          <trans-unit id="356" xml:space="preserve">
+            <source>bring it offline.</source>
+            <target state="new">bring it offline.</target>
+          </trans-unit>
+          <trans-unit id="357" xml:space="preserve">
+            <source>Once it has been successfully taken offline you can proceed with</source>
+            <target state="new">Once it has been successfully taken offline you can proceed with</target>
+          </trans-unit>
+          <trans-unit id="358" xml:space="preserve">
+            <source>protecting the virtual machine in the reverse direction.</source>
+            <target state="new">protecting the virtual machine in the reverse direction.</target>
+          </trans-unit>
+          <trans-unit id="359" xml:space="preserve">
+            <source>Protection plan for VMs</source>
+            <target state="new">Protection plan for VMs</target>
+          </trans-unit>
+          <trans-unit id="360" xml:space="preserve">
+            <source>On the Azure portal, look at the states of the virtual machine and</source>
+            <target state="new">On the Azure portal, look at the states of the virtual machine and</target>
+          </trans-unit>
+          <trans-unit id="361" xml:space="preserve">
+            <source>ensure that they are failed over.</source>
+            <target state="new">ensure that they are failed over.</target>
+          </trans-unit>
+          <trans-unit id="362" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="363" xml:space="preserve">
+            <source>Note : during failover from Azure back to on-premises, the Azure VM is</source>
+            <target state="new">Note : during failover from Azure back to on-premises, the Azure VM is</target>
+          </trans-unit>
+          <trans-unit id="364" xml:space="preserve">
+            <source>considered similar to a Physical VM.</source>
+            <target state="new">considered similar to a Physical VM.</target>
+          </trans-unit>
+          <trans-unit id="365" xml:space="preserve">
+            <source>The failover to on-premises is to a</source>
+            <target state="new">The failover to on-premises is to a</target>
+          </trans-unit>
+          <trans-unit id="366" xml:space="preserve">
+            <source>virtual machine.</source>
+            <target state="new">virtual machine.</target>
+          </trans-unit>
+          <trans-unit id="367" xml:space="preserve">
+            <source>Launch the vContinuum on your machine</source>
+            <target state="new">Launch the vContinuum on your machine</target>
+          </trans-unit>
+          <trans-unit id="368" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="369" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Choose Application<ept id="2">&lt;/strong&gt;</ept> setting, select <bpt id="4">&lt;strong&gt;</bpt>P2V<ept id="4">&lt;/strong&gt;</ept></source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Choose Application<ept id="2">&lt;/strong&gt;</ept> setting, select <bpt id="4">&lt;strong&gt;</bpt>P2V<ept id="4">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="370" xml:space="preserve">
+            <source>Click on the <bpt id="2">&lt;strong&gt;</bpt>New Protection<ept id="2">&lt;/strong&gt;</ept> option to begin</source>
+            <target state="new">Click on the <bpt id="2">&lt;strong&gt;</bpt>New Protection<ept id="2">&lt;/strong&gt;</ept> option to begin</target>
+          </trans-unit>
+          <trans-unit id="371" xml:space="preserve">
+            <source>In the new window that opens you will begin protecting the virtual</source>
+            <target state="new">In the new window that opens you will begin protecting the virtual</target>
+          </trans-unit>
+          <trans-unit id="372" xml:space="preserve">
+            <source>machines back to on-premises.</source>
+            <target state="new">machines back to on-premises.</target>
+          </trans-unit>
+          <trans-unit id="373" xml:space="preserve">
+            <source>a.</source>
+            <target state="new">a.</target>
+          </trans-unit>
+          <trans-unit id="374" xml:space="preserve">
+            <source>Select the <bpt id="2">&lt;strong&gt;</bpt>OS type<ept id="2">&lt;/strong&gt;</ept> according to the VMs you want to failback</source>
+            <target state="new">Select the <bpt id="2">&lt;strong&gt;</bpt>OS type<ept id="2">&lt;/strong&gt;</ept> according to the VMs you want to failback</target>
+          </trans-unit>
+          <trans-unit id="375" xml:space="preserve">
+            <source>and <bpt id="2">&lt;strong&gt;</bpt>Get Details<ept id="2">&lt;/strong&gt;</ept></source>
+            <target state="new">and <bpt id="2">&lt;strong&gt;</bpt>Get Details<ept id="2">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="376" xml:space="preserve">
+            <source>b.</source>
+            <target state="new">b.</target>
+          </trans-unit>
+          <trans-unit id="377" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Primary server details<ept id="2">&lt;/strong&gt;</ept>, you need to identify the</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Primary server details<ept id="2">&lt;/strong&gt;</ept>, you need to identify the</target>
+          </trans-unit>
+          <trans-unit id="378" xml:space="preserve">
+            <source>virtual machines that you want to protect.</source>
+            <target state="new">virtual machines that you want to protect.</target>
+          </trans-unit>
+          <trans-unit id="379" xml:space="preserve">
+            <source>c.</source>
+            <target state="new">c.</target>
+          </trans-unit>
+          <trans-unit id="380" xml:space="preserve">
+            <source>The virtual machines are listed by their Computer Hostnames and</source>
+            <target state="new">The virtual machines are listed by their Computer Hostnames and</target>
+          </trans-unit>
+          <trans-unit id="381" xml:space="preserve">
+            <source>not as they are visible on vCenter or Azure</source>
+            <target state="new">not as they are visible on vCenter or Azure</target>
+          </trans-unit>
+          <trans-unit id="382" xml:space="preserve">
+            <source>d.</source>
+            <target state="new">d.</target>
+          </trans-unit>
+          <trans-unit id="383" xml:space="preserve">
+            <source>The virtual machines are listed under the vCenter Hostname that</source>
+            <target state="new">The virtual machines are listed under the vCenter Hostname that</target>
+          </trans-unit>
+          <trans-unit id="384" xml:space="preserve">
+            <source>the virtual machines were on, before failover.</source>
+            <target state="new">the virtual machines were on, before failover.</target>
+          </trans-unit>
+          <trans-unit id="385" xml:space="preserve">
+            <source>e.</source>
+            <target state="new">e.</target>
+          </trans-unit>
+          <trans-unit id="386" xml:space="preserve">
+            <source>Once you have identified the VMs you want to protect, select</source>
+            <target state="new">Once you have identified the VMs you want to protect, select</target>
+          </trans-unit>
+          <trans-unit id="387" xml:space="preserve">
+            <source>them one by one.</source>
+            <target state="new">them one by one.</target>
+          </trans-unit>
+          <trans-unit id="388" xml:space="preserve">
+            <source>When you select a virtual machine to protect (and it has already failed over to Azure) you will get a popup window that gives two entries for the virtual machine.</source>
+            <target state="new">When you select a virtual machine to protect (and it has already failed over to Azure) you will get a popup window that gives two entries for the virtual machine.</target>
+          </trans-unit>
+          <trans-unit id="389" xml:space="preserve">
+            <source>This is because the CS has detected two instances of the virtual machines registered to it.</source>
+            <target state="new">This is because the CS has detected two instances of the virtual machines registered to it.</target>
+          </trans-unit>
+          <trans-unit id="390" xml:space="preserve">
+            <source>You need to remove the entry for the on-premises VM so that you can protect the correct VM.</source>
+            <target state="new">You need to remove the entry for the on-premises VM so that you can protect the correct VM.</target>
+          </trans-unit>
+          <trans-unit id="391" xml:space="preserve">
+            <source>Note that you will see the entries by its computer hostname.</source>
+            <target state="new">Note that you will see the entries by its computer hostname.</target>
+          </trans-unit>
+          <trans-unit id="392" xml:space="preserve">
+            <source>To identify the correct Azure VM entry here, you can log into the Azure VM and go to C:\Program Files (x86)\Microsoft Azure Site Recovery\Application Data\etc.</source>
+            <target state="new">To identify the correct Azure VM entry here, you can log into the Azure VM and go to C:\Program Files (x86)\Microsoft Azure Site Recovery\Application Data\etc.</target>
+          </trans-unit>
+          <trans-unit id="393" xml:space="preserve">
+            <source>In the file drscout.conf , identify the Host ID.</source>
+            <target state="new">In the file drscout.conf , identify the Host ID.</target>
+          </trans-unit>
+          <trans-unit id="394" xml:space="preserve">
+            <source>In the vContinuum dialog, keep the entry for which the hostID is found in the VM.</source>
+            <target state="new">In the vContinuum dialog, keep the entry for which the hostID is found in the VM.</target>
+          </trans-unit>
+          <trans-unit id="395" xml:space="preserve">
+            <source>Delete all other entries.</source>
+            <target state="new">Delete all other entries.</target>
+          </trans-unit>
+          <trans-unit id="396" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="397" xml:space="preserve">
+            <source>To select the correct VM you can refer to its IP address.</source>
+            <target state="new">To select the correct VM you can refer to its IP address.</target>
+          </trans-unit>
+          <trans-unit id="398" xml:space="preserve">
+            <source>The IP address range on-premises will be the on-premises VM.</source>
+            <target state="new">The IP address range on-premises will be the on-premises VM.</target>
+          </trans-unit>
+          <trans-unit id="399" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Remove<ept id="2">&lt;/strong&gt;</ept> to delete the entry.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Remove<ept id="2">&lt;/strong&gt;</ept> to delete the entry.</target>
+          </trans-unit>
+          <trans-unit id="400" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="401" xml:space="preserve">
+            <source>Go to the vCenter and stop the virtual machine on the vCenter</source>
+            <target state="new">Go to the vCenter and stop the virtual machine on the vCenter</target>
+          </trans-unit>
+          <trans-unit id="402" xml:space="preserve">
+            <source>Next you can also delete the virtual machines on-premises</source>
+            <target state="new">Next you can also delete the virtual machines on-premises</target>
+          </trans-unit>
+          <trans-unit id="403" xml:space="preserve">
+            <source>Next you need to specify the on-premises MT server to which you want to protect the VMs.</source>
+            <target state="new">Next you need to specify the on-premises MT server to which you want to protect the VMs.</target>
+          </trans-unit>
+          <trans-unit id="404" xml:space="preserve">
+            <source>To do this, connect to the vCenter to which you want to failback to</source>
+            <target state="new">To do this, connect to the vCenter to which you want to failback to</target>
+          </trans-unit>
+          <trans-unit id="405" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="406" xml:space="preserve">
+            <source>Select the MT server based on the host into which you want to</source>
+            <target state="new">Select the MT server based on the host into which you want to</target>
+          </trans-unit>
+          <trans-unit id="407" xml:space="preserve">
+            <source>recover the virtual machines</source>
+            <target state="new">recover the virtual machines</target>
+          </trans-unit>
+          <trans-unit id="408" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="409" xml:space="preserve">
+            <source>Next provide the replication option for each of the virtual machines</source>
+            <target state="new">Next provide the replication option for each of the virtual machines</target>
+          </trans-unit>
+          <trans-unit id="410" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="411" xml:space="preserve">
+            <source>To do this you need to select the recovery side <bpt id="2">&lt;strong&gt;</bpt>Datastore<ept id="2">&lt;/strong&gt;</ept> – this is the</source>
+            <target state="new">To do this you need to select the recovery side <bpt id="2">&lt;strong&gt;</bpt>Datastore<ept id="2">&lt;/strong&gt;</ept> – this is the</target>
+          </trans-unit>
+          <trans-unit id="412" xml:space="preserve">
+            <source>datastore to which the VMs will be recovered to</source>
+            <target state="new">datastore to which the VMs will be recovered to</target>
+          </trans-unit>
+          <trans-unit id="413" xml:space="preserve">
+            <source>The different options you need to provide per VM are</source>
+            <target state="new">The different options you need to provide per VM are</target>
+          </trans-unit>
+          <trans-unit id="414" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Option<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Option<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="415" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Option recommended value<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Option recommended value<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="416" xml:space="preserve">
+            <source>Process Server IP</source>
+            <target state="new">Process Server IP</target>
+          </trans-unit>
+          <trans-unit id="417" xml:space="preserve">
+            <source>Select the PS which you have deployed on Azure</source>
+            <target state="new">Select the PS which you have deployed on Azure</target>
+          </trans-unit>
+          <trans-unit id="418" xml:space="preserve">
+            <source>Retention size in MB</source>
+            <target state="new">Retention size in MB</target>
+          </trans-unit>
+          <trans-unit id="419" xml:space="preserve">
+            <source>Retention value</source>
+            <target state="new">Retention value</target>
+          </trans-unit>
+          <trans-unit id="420" xml:space="preserve">
+            <source>1</source>
+            <target state="new">1</target>
+          </trans-unit>
+          <trans-unit id="421" xml:space="preserve">
+            <source>Days/Hours</source>
+            <target state="new">Days/Hours</target>
+          </trans-unit>
+          <trans-unit id="422" xml:space="preserve">
+            <source>Days</source>
+            <target state="new">Days</target>
+          </trans-unit>
+          <trans-unit id="423" xml:space="preserve">
+            <source>Consistency Interval</source>
+            <target state="new">Consistency Interval</target>
+          </trans-unit>
+          <trans-unit id="424" xml:space="preserve">
+            <source>1</source>
+            <target state="new">1</target>
+          </trans-unit>
+          <trans-unit id="425" xml:space="preserve">
+            <source>Select Target Datastore</source>
+            <target state="new">Select Target Datastore</target>
+          </trans-unit>
+          <trans-unit id="426" xml:space="preserve">
+            <source>The datastore available on the recovery side.</source>
+            <target state="new">The datastore available on the recovery side.</target>
+          </trans-unit>
+          <trans-unit id="427" xml:space="preserve">
+            <source>This data store should have enough space and also be available to the ESX host on which you want to realise the virtual machine.</source>
+            <target state="new">This data store should have enough space and also be available to the ESX host on which you want to realise the virtual machine.</target>
+          </trans-unit>
+          <trans-unit id="428" xml:space="preserve">
+            <source>Next you can configure the properties that the virtual machine will</source>
+            <target state="new">Next you can configure the properties that the virtual machine will</target>
+          </trans-unit>
+          <trans-unit id="429" xml:space="preserve">
+            <source>acquire after failover to on-premises site.</source>
+            <target state="new">acquire after failover to on-premises site.</target>
+          </trans-unit>
+          <trans-unit id="430" xml:space="preserve">
+            <source>The different properties</source>
+            <target state="new">The different properties</target>
+          </trans-unit>
+          <trans-unit id="431" xml:space="preserve">
+            <source>you can configure are as below</source>
+            <target state="new">you can configure are as below</target>
+          </trans-unit>
+          <trans-unit id="432" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="433" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Property<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Property<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="434" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>How to configure<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>How to configure<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="435" xml:space="preserve">
+            <source>Network Configuration</source>
+            <target state="new">Network Configuration</target>
+          </trans-unit>
+          <trans-unit id="436" xml:space="preserve">
+            <source>For each NIC detected, configure the failback IP address for the virtual machine.</source>
+            <target state="new">For each NIC detected, configure the failback IP address for the virtual machine.</target>
+          </trans-unit>
+          <trans-unit id="437" xml:space="preserve">
+            <source>Select the NIC and click <bpt id="2">&lt;strong&gt;</bpt>Change<ept id="2">&lt;/strong&gt;</ept> to specify the IP address details.</source>
+            <target state="new">Select the NIC and click <bpt id="2">&lt;strong&gt;</bpt>Change<ept id="2">&lt;/strong&gt;</ept> to specify the IP address details.</target>
+          </trans-unit>
+          <trans-unit id="438" xml:space="preserve">
+            <source>Hardware Configuration</source>
+            <target state="new">Hardware Configuration</target>
+          </trans-unit>
+          <trans-unit id="439" xml:space="preserve">
+            <source>You can specify the CPU and the Memory values for the VM.</source>
+            <target state="new">You can specify the CPU and the Memory values for the VM.</target>
+          </trans-unit>
+          <trans-unit id="440" xml:space="preserve">
+            <source>This setting can be applied to all the VMs you are trying to protect.</source>
+            <target state="new">This setting can be applied to all the VMs you are trying to protect.</target>
+          </trans-unit>
+          <trans-unit id="441" xml:space="preserve">
+            <source>Display Name</source>
+            <target state="new">Display Name</target>
+          </trans-unit>
+          <trans-unit id="442" xml:space="preserve">
+            <source>To identify the correct values for the CPU and Memory, you can refer to the IAAS VMs role size and see the number of cores and Memory assigned.</source>
+            <target state="new">To identify the correct values for the CPU and Memory, you can refer to the IAAS VMs role size and see the number of cores and Memory assigned.</target>
+          </trans-unit>
+          <trans-unit id="443" xml:space="preserve">
+            <source>Display Name</source>
+            <target state="new">Display Name</target>
+          </trans-unit>
+          <trans-unit id="444" xml:space="preserve">
+            <source>After failover back to on-premises, you can choose to rename the virtual machines as it will be seen in the inventory of vCenter.</source>
+            <target state="new">After failover back to on-premises, you can choose to rename the virtual machines as it will be seen in the inventory of vCenter.</target>
+          </trans-unit>
+          <trans-unit id="445" xml:space="preserve">
+            <source>Note that the default value seen here is the virtual machine computer host name.</source>
+            <target state="new">Note that the default value seen here is the virtual machine computer host name.</target>
+          </trans-unit>
+          <trans-unit id="446" xml:space="preserve">
+            <source>To identify the VM name, you can refer to the VM list in the Protection group.</source>
+            <target state="new">To identify the VM name, you can refer to the VM list in the Protection group.</target>
+          </trans-unit>
+          <trans-unit id="447" xml:space="preserve">
+            <source>NAT Configuration</source>
+            <target state="new">NAT Configuration</target>
+          </trans-unit>
+          <trans-unit id="448" xml:space="preserve">
+            <source>Discussed in detail below</source>
+            <target state="new">Discussed in detail below</target>
+          </trans-unit>
+          <trans-unit id="449" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="450" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>PS NAT settings choices<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>PS NAT settings choices<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="451" xml:space="preserve">
+            <source>To enable protection of the virtual machines, two communication</source>
+            <target state="new">To enable protection of the virtual machines, two communication</target>
+          </trans-unit>
+          <trans-unit id="452" xml:space="preserve">
+            <source>channels need to be established.</source>
+            <target state="new">channels need to be established.</target>
+          </trans-unit>
+          <trans-unit id="453" xml:space="preserve">
+            <source>The first channel is between the virtual machine and the Process</source>
+            <target state="new">The first channel is between the virtual machine and the Process</target>
+          </trans-unit>
+          <trans-unit id="454" xml:space="preserve">
+            <source>Server.</source>
+            <target state="new">Server.</target>
+          </trans-unit>
+          <trans-unit id="455" xml:space="preserve">
+            <source>This channel collects the data from the VM and sends it to the</source>
+            <target state="new">This channel collects the data from the VM and sends it to the</target>
+          </trans-unit>
+          <trans-unit id="456" xml:space="preserve">
+            <source>PS.</source>
+            <target state="new">PS.</target>
+          </trans-unit>
+          <trans-unit id="457" xml:space="preserve">
+            <source>PS will then send this data to the Master Target.</source>
+            <target state="new">PS will then send this data to the Master Target.</target>
+          </trans-unit>
+          <trans-unit id="458" xml:space="preserve">
+            <source>If the process</source>
+            <target state="new">If the process</target>
+          </trans-unit>
+          <trans-unit id="459" xml:space="preserve">
+            <source>server and the virtual machine to be protected are on the same Azure</source>
+            <target state="new">server and the virtual machine to be protected are on the same Azure</target>
+          </trans-unit>
+          <trans-unit id="460" xml:space="preserve">
+            <source>vNet, then you do not need to use the NAT settings.</source>
+            <target state="new">vNet, then you do not need to use the NAT settings.</target>
+          </trans-unit>
+          <trans-unit id="461" xml:space="preserve">
+            <source>If the PS and the</source>
+            <target state="new">If the PS and the</target>
+          </trans-unit>
+          <trans-unit id="462" xml:space="preserve">
+            <source>virtual machine to be protected is in two different vNet, then you</source>
+            <target state="new">virtual machine to be protected is in two different vNet, then you</target>
+          </trans-unit>
+          <trans-unit id="463" xml:space="preserve">
+            <source>need to specify the NAT settings for the PS and check the first</source>
+            <target state="new">need to specify the NAT settings for the PS and check the first</target>
+          </trans-unit>
+          <trans-unit id="464" xml:space="preserve">
+            <source>option.</source>
+            <target state="new">option.</target>
+          </trans-unit>
+          <trans-unit id="465" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="466" xml:space="preserve">
+            <source>To identify the Process server Public IP, you can go to the PS</source>
+            <target state="new">To identify the Process server Public IP, you can go to the PS</target>
+          </trans-unit>
+          <trans-unit id="467" xml:space="preserve">
+            <source>deployment in Azure and see its Public IP address.</source>
+            <target state="new">deployment in Azure and see its Public IP address.</target>
+          </trans-unit>
+          <trans-unit id="468" xml:space="preserve">
+            <source>The second channel is between the Process server and the Master</source>
+            <target state="new">The second channel is between the Process server and the Master</target>
+          </trans-unit>
+          <trans-unit id="469" xml:space="preserve">
+            <source>target.</source>
+            <target state="new">target.</target>
+          </trans-unit>
+          <trans-unit id="470" xml:space="preserve">
+            <source>The option to use NAT or not depends on whether you are using</source>
+            <target state="new">The option to use NAT or not depends on whether you are using</target>
+          </trans-unit>
+          <trans-unit id="471" xml:space="preserve">
+            <source>VPN based connection between MT and PS or protecting over the</source>
+            <target state="new">VPN based connection between MT and PS or protecting over the</target>
+          </trans-unit>
+          <trans-unit id="472" xml:space="preserve">
+            <source>internet.</source>
+            <target state="new">internet.</target>
+          </trans-unit>
+          <trans-unit id="473" xml:space="preserve">
+            <source>If the PS communicates to the MT over a VPN, then you should</source>
+            <target state="new">If the PS communicates to the MT over a VPN, then you should</target>
+          </trans-unit>
+          <trans-unit id="474" xml:space="preserve">
+            <source>not select this option.</source>
+            <target state="new">not select this option.</target>
+          </trans-unit>
+          <trans-unit id="475" xml:space="preserve">
+            <source>If the Master Target needs to communicate to</source>
+            <target state="new">If the Master Target needs to communicate to</target>
+          </trans-unit>
+          <trans-unit id="476" xml:space="preserve">
+            <source>the Process server over the internet, then specify the NAT settings</source>
+            <target state="new">the Process server over the internet, then specify the NAT settings</target>
+          </trans-unit>
+          <trans-unit id="477" xml:space="preserve">
+            <source>for the PS.</source>
+            <target state="new">for the PS.</target>
+          </trans-unit>
+          <trans-unit id="478" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="479" xml:space="preserve">
+            <source>To identify the Process server Public IP, you can go to the PS</source>
+            <target state="new">To identify the Process server Public IP, you can go to the PS</target>
+          </trans-unit>
+          <trans-unit id="480" xml:space="preserve">
+            <source>deployment in Azure and see its Public IP address.</source>
+            <target state="new">deployment in Azure and see its Public IP address.</target>
+          </trans-unit>
+          <trans-unit id="481" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="482" xml:space="preserve">
+            <source>If you have not deleted the on-premises virtual machines as specified</source>
+            <target state="new">If you have not deleted the on-premises virtual machines as specified</target>
+          </trans-unit>
+          <trans-unit id="483" xml:space="preserve">
+            <source>in Step 5.d, and if the datastore you are failing back to, as</source>
+            <target state="new">in Step 5.d, and if the datastore you are failing back to, as</target>
+          </trans-unit>
+          <trans-unit id="484" xml:space="preserve">
+            <source>selected in step 7.a still contains the old VMDK’s then you will</source>
+            <target state="new">selected in step 7.a still contains the old VMDK’s then you will</target>
+          </trans-unit>
+          <trans-unit id="485" xml:space="preserve">
+            <source>also need to ensure that the failback VM gets created in a new</source>
+            <target state="new">also need to ensure that the failback VM gets created in a new</target>
+          </trans-unit>
+          <trans-unit id="486" xml:space="preserve">
+            <source>place.</source>
+            <target state="new">place.</target>
+          </trans-unit>
+          <trans-unit id="487" xml:space="preserve">
+            <source>For this you can select the Advanced settings and specify an</source>
+            <target state="new">For this you can select the Advanced settings and specify an</target>
+          </trans-unit>
+          <trans-unit id="488" xml:space="preserve">
+            <source>alternate Folder to restore to in the <bpt id="2">&lt;strong&gt;</bpt>Folder Name Settings<ept id="2">&lt;/strong&gt;</ept></source>
+            <target state="new">alternate Folder to restore to in the <bpt id="2">&lt;strong&gt;</bpt>Folder Name Settings<ept id="2">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="489" xml:space="preserve">
+            <source>section of the Advanced Settings.</source>
+            <target state="new">section of the Advanced Settings.</target>
+          </trans-unit>
+          <trans-unit id="490" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="491" xml:space="preserve">
+            <source>The other options in the Advanced settings can be left as default.</source>
+            <target state="new">The other options in the Advanced settings can be left as default.</target>
+          </trans-unit>
+          <trans-unit id="492" xml:space="preserve">
+            <source>Make sure you apply the folder name settings to all the servers.</source>
+            <target state="new">Make sure you apply the folder name settings to all the servers.</target>
+          </trans-unit>
+          <trans-unit id="493" xml:space="preserve">
+            <source>Next move to the final stage of the Protection.</source>
+            <target state="new">Next move to the final stage of the Protection.</target>
+          </trans-unit>
+          <trans-unit id="494" xml:space="preserve">
+            <source>Here you need to run</source>
+            <target state="new">Here you need to run</target>
+          </trans-unit>
+          <trans-unit id="495" xml:space="preserve">
+            <source>a Readiness Check to ensure that the virtual machines are ready to</source>
+            <target state="new">a Readiness Check to ensure that the virtual machines are ready to</target>
+          </trans-unit>
+          <trans-unit id="496" xml:space="preserve">
+            <source>be protected back to on-premises.</source>
+            <target state="new">be protected back to on-premises.</target>
+          </trans-unit>
+          <trans-unit id="497" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="498" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="499" xml:space="preserve">
+            <source>The Protection will now begin.</source>
+            <target state="new">The Protection will now begin.</target>
+          </trans-unit>
+          <trans-unit id="500" xml:space="preserve">
+            <source>a.</source>
+            <target state="new">a.</target>
+          </trans-unit>
+          <trans-unit id="501" xml:space="preserve">
+            <source>You can see the progress of the protection on the vContinuum</source>
+            <target state="new">You can see the progress of the protection on the vContinuum</target>
+          </trans-unit>
+          <trans-unit id="502" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="503" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="504" xml:space="preserve">
+            <source>You can also see the exact status of the pairs by clicking into the</source>
+            <target state="new">You can also see the exact status of the pairs by clicking into the</target>
+          </trans-unit>
+          <trans-unit id="505" xml:space="preserve">
+            <source>virtual machine and monitoring its progress under the volume replication</source>
+            <target state="new">virtual machine and monitoring its progress under the volume replication</target>
+          </trans-unit>
+          <trans-unit id="506" xml:space="preserve">
+            <source>section.</source>
+            <target state="new">section.</target>
+          </trans-unit>
+          <trans-unit id="507" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="508" xml:space="preserve">
+            <source>Prepare the Failback plan</source>
+            <target state="new">Prepare the Failback plan</target>
+          </trans-unit>
+          <trans-unit id="509" xml:space="preserve">
+            <source>You can prepare a failback plan using vContinuum so that the application</source>
+            <target state="new">You can prepare a failback plan using vContinuum so that the application</target>
+          </trans-unit>
+          <trans-unit id="510" xml:space="preserve">
+            <source>can be failed over back to on-premises at any time.</source>
+            <target state="new">can be failed over back to on-premises at any time.</target>
+          </trans-unit>
+          <trans-unit id="511" xml:space="preserve">
+            <source>These recovery plans</source>
+            <target state="new">These recovery plans</target>
+          </trans-unit>
+          <trans-unit id="512" xml:space="preserve">
+            <source>are very similar to the ASR Recovery plans.</source>
+            <target state="new">are very similar to the ASR Recovery plans.</target>
+          </trans-unit>
+          <trans-unit id="513" xml:space="preserve">
+            <source>Launch the vContinuum and select the option to <bpt id="2">&lt;strong&gt;</bpt>Manage plans<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Launch the vContinuum and select the option to <bpt id="2">&lt;strong&gt;</bpt>Manage plans<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="514" xml:space="preserve">
+            <source>User the sub-options select <bpt id="2">&lt;strong&gt;</bpt>Recover.<ept id="2">&lt;/strong&gt;</ept></source>
+            <target state="new">User the sub-options select <bpt id="2">&lt;strong&gt;</bpt>Recover.<ept id="2">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="515" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="516" xml:space="preserve">
+            <source>You can see the list of all the Plans that have been used to protect the virtual machines.</source>
+            <target state="new">You can see the list of all the Plans that have been used to protect the virtual machines.</target>
+          </trans-unit>
+          <trans-unit id="517" xml:space="preserve">
+            <source>These are the same plans you can use to recover.</source>
+            <target state="new">These are the same plans you can use to recover.</target>
+          </trans-unit>
+          <trans-unit id="518" xml:space="preserve">
+            <source>Select the Protection Plan and select all the VMs you want to recover within it.</source>
+            <target state="new">Select the Protection Plan and select all the VMs you want to recover within it.</target>
+          </trans-unit>
+          <trans-unit id="519" xml:space="preserve">
+            <source>a.</source>
+            <target state="new">a.</target>
+          </trans-unit>
+          <trans-unit id="520" xml:space="preserve">
+            <source>On selecting each VM you can see more details about the source</source>
+            <target state="new">On selecting each VM you can see more details about the source</target>
+          </trans-unit>
+          <trans-unit id="521" xml:space="preserve">
+            <source>VM, target ESX server where the VM will be recovered to and the</source>
+            <target state="new">VM, target ESX server where the VM will be recovered to and the</target>
+          </trans-unit>
+          <trans-unit id="522" xml:space="preserve">
+            <source>source VM disk</source>
+            <target state="new">source VM disk</target>
+          </trans-unit>
+          <trans-unit id="523" xml:space="preserve">
+            <source>Click Next to begin the <bpt id="2">&lt;strong&gt;</bpt>Recover<ept id="2">&lt;/strong&gt;</ept> Wizard</source>
+            <target state="new">Click Next to begin the <bpt id="2">&lt;strong&gt;</bpt>Recover<ept id="2">&lt;/strong&gt;</ept> Wizard</target>
+          </trans-unit>
+          <trans-unit id="524" xml:space="preserve">
+            <source>Select the Virtual Machines you want to recover</source>
+            <target state="new">Select the Virtual Machines you want to recover</target>
+          </trans-unit>
+          <trans-unit id="525" xml:space="preserve">
+            <source>a.</source>
+            <target state="new">a.</target>
+          </trans-unit>
+          <trans-unit id="526" xml:space="preserve">
+            <source>See the list of all the virtual machines that you can recover</source>
+            <target state="new">See the list of all the virtual machines that you can recover</target>
+          </trans-unit>
+          <trans-unit id="527" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="528" xml:space="preserve">
+            <source>Run the <bpt id="2">&lt;strong&gt;</bpt>Readiness Check.<ept id="2">&lt;/strong&gt;</ept> This will inform if the right</source>
+            <target state="new">Run the <bpt id="2">&lt;strong&gt;</bpt>Readiness Check.<ept id="2">&lt;/strong&gt;</ept> This will inform if the right</target>
+          </trans-unit>
+          <trans-unit id="529" xml:space="preserve">
+            <source>parameters are configured to enable the latest tag recovery of the</source>
+            <target state="new">parameters are configured to enable the latest tag recovery of the</target>
+          </trans-unit>
+          <trans-unit id="530" xml:space="preserve">
+            <source>virtual machine.</source>
+            <target state="new">virtual machine.</target>
+          </trans-unit>
+          <trans-unit id="531" xml:space="preserve">
+            <source>Click Next if all the checks are successful else</source>
+            <target state="new">Click Next if all the checks are successful else</target>
+          </trans-unit>
+          <trans-unit id="532" xml:space="preserve">
+            <source>look at the log and resolve the errors.</source>
+            <target state="new">look at the log and resolve the errors.</target>
+          </trans-unit>
+          <trans-unit id="533" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="534" xml:space="preserve">
+            <source>In the VM Configuration step of the wizard, ensure that the recovery</source>
+            <target state="new">In the VM Configuration step of the wizard, ensure that the recovery</target>
+          </trans-unit>
+          <trans-unit id="535" xml:space="preserve">
+            <source>settings are correctly set.</source>
+            <target state="new">settings are correctly set.</target>
+          </trans-unit>
+          <trans-unit id="536" xml:space="preserve">
+            <source>In case the VM settings are different</source>
+            <target state="new">In case the VM settings are different</target>
+          </trans-unit>
+          <trans-unit id="537" xml:space="preserve">
+            <source>from the one you require, you can choose to change them.</source>
+            <target state="new">from the one you require, you can choose to change them.</target>
+          </trans-unit>
+          <trans-unit id="538" xml:space="preserve">
+            <source>Since we</source>
+            <target state="new">Since we</target>
+          </trans-unit>
+          <trans-unit id="539" xml:space="preserve">
+            <source>have already completed this action during the protection, you may</source>
+            <target state="new">have already completed this action during the protection, you may</target>
+          </trans-unit>
+          <trans-unit id="540" xml:space="preserve">
+            <source>choose to ignore it this time.</source>
+            <target state="new">choose to ignore it this time.</target>
+          </trans-unit>
+          <trans-unit id="541" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="542" xml:space="preserve">
+            <source>Finally review the list of virtual machines that will be recovered.</source>
+            <target state="new">Finally review the list of virtual machines that will be recovered.</target>
+          </trans-unit>
+          <trans-unit id="543" xml:space="preserve">
+            <source>a.</source>
+            <target state="new">a.</target>
+          </trans-unit>
+          <trans-unit id="544" xml:space="preserve">
+            <source>Specify a recovery order to the virtual machines.</source>
+            <target state="new">Specify a recovery order to the virtual machines.</target>
+          </trans-unit>
+          <trans-unit id="545" xml:space="preserve">
+            <source>Note: The virtual machines are listed using the Computer Hostname.</source>
+            <target state="new">Note: The virtual machines are listed using the Computer Hostname.</target>
+          </trans-unit>
+          <trans-unit id="546" xml:space="preserve">
+            <source>It</source>
+            <target state="new">It</target>
+          </trans-unit>
+          <trans-unit id="547" xml:space="preserve">
+            <source>might be difficult to map the computer hostname to the virtual machine.</source>
+            <target state="new">might be difficult to map the computer hostname to the virtual machine.</target>
+          </trans-unit>
+          <trans-unit id="548" xml:space="preserve">
+            <source>To map the names, you can go to the virtual machines dashboard in Azure</source>
+            <target state="new">To map the names, you can go to the virtual machines dashboard in Azure</target>
+          </trans-unit>
+          <trans-unit id="549" xml:space="preserve">
+            <source>IAAS and look at the hostname of the virtual machine.</source>
+            <target state="new">IAAS and look at the hostname of the virtual machine.</target>
+          </trans-unit>
+          <trans-unit id="550" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="551" xml:space="preserve">
+            <source>Give the <bpt id="2">&lt;strong&gt;</bpt>recovery plan name<ept id="2">&lt;/strong&gt;</ept> and select <bpt id="4">&lt;strong&gt;</bpt>Recover later<ept id="4">&lt;/strong&gt;</ept> in</source>
+            <target state="new">Give the <bpt id="2">&lt;strong&gt;</bpt>recovery plan name<ept id="2">&lt;/strong&gt;</ept> and select <bpt id="4">&lt;strong&gt;</bpt>Recover later<ept id="4">&lt;/strong&gt;</ept> in</target>
+          </trans-unit>
+          <trans-unit id="552" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Recovery options.<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Recovery options.<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="553" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Recover now<ept id="1">&lt;/strong&gt;</ept> in the <bpt id="3">&lt;strong&gt;</bpt>Recovery options<ept id="3">&lt;/strong&gt;</ept>.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Recover now<ept id="1">&lt;/strong&gt;</ept> in the <bpt id="3">&lt;strong&gt;</bpt>Recovery options<ept id="3">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="554" xml:space="preserve">
+            <source>replication may not have completed</source>
+            <target state="new">replication may not have completed</target>
+          </trans-unit>
+          <trans-unit id="555" xml:space="preserve">
+            <source>to trigger the recovery based on your <bpt id="2">&lt;strong&gt;</bpt>Recovery options<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">to trigger the recovery based on your <bpt id="2">&lt;strong&gt;</bpt>Recovery options<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="556" xml:space="preserve">
+            <source>You can see the Recovery Status and see if it the plan is</source>
+            <target state="new">You can see the Recovery Status and see if it the plan is</target>
+          </trans-unit>
+          <trans-unit id="557" xml:space="preserve">
+            <source>successfully saved.</source>
+            <target state="new">successfully saved.</target>
+          </trans-unit>
+          <trans-unit id="558" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="559" xml:space="preserve">
+            <source>If you have chosen to recover later, you will be informed that the</source>
+            <target state="new">If you have chosen to recover later, you will be informed that the</target>
+          </trans-unit>
+          <trans-unit id="560" xml:space="preserve">
+            <source>plan is created and you can recover later.</source>
+            <target state="new">plan is created and you can recover later.</target>
+          </trans-unit>
+          <trans-unit id="561" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="562" xml:space="preserve">
+            <source>Recover Virtual Machines</source>
+            <target state="new">Recover Virtual Machines</target>
+          </trans-unit>
+          <trans-unit id="563" xml:space="preserve">
+            <source>After the plan is created, you can choose to recover the virtual</source>
+            <target state="new">After the plan is created, you can choose to recover the virtual</target>
+          </trans-unit>
+          <trans-unit id="564" xml:space="preserve">
+            <source>machines.</source>
+            <target state="new">machines.</target>
+          </trans-unit>
+          <trans-unit id="565" xml:space="preserve">
+            <source>As a pre-requisite, you need to ensure that the virtual</source>
+            <target state="new">As a pre-requisite, you need to ensure that the virtual</target>
+          </trans-unit>
+          <trans-unit id="566" xml:space="preserve">
+            <source>machines have completed synchronization.</source>
+            <target state="new">machines have completed synchronization.</target>
+          </trans-unit>
+          <trans-unit id="567" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="568" xml:space="preserve">
+            <source>If Replication Status shows OK then the protection is completed and the</source>
+            <target state="new">If Replication Status shows OK then the protection is completed and the</target>
+          </trans-unit>
+          <trans-unit id="569" xml:space="preserve">
+            <source>RPO threshold has been met.</source>
+            <target state="new">RPO threshold has been met.</target>
+          </trans-unit>
+          <trans-unit id="570" xml:space="preserve">
+            <source>To confirm the replication pair’s health,</source>
+            <target state="new">To confirm the replication pair’s health,</target>
+          </trans-unit>
+          <trans-unit id="571" xml:space="preserve">
+            <source>you can go to the virtual machine properties and see the health of the</source>
+            <target state="new">you can go to the virtual machine properties and see the health of the</target>
+          </trans-unit>
+          <trans-unit id="572" xml:space="preserve">
+            <source>replication.</source>
+            <target state="new">replication.</target>
+          </trans-unit>
+          <trans-unit id="573" xml:space="preserve">
+            <source>**Turn off the Azure virtual machines before you initiate the recovery.</source>
+            <target state="new">**Turn off the Azure virtual machines before you initiate the recovery.</target>
+          </trans-unit>
+          <trans-unit id="574" xml:space="preserve">
+            <source>This will ensure that there is no split brain and your end customers</source>
+            <target state="new">This will ensure that there is no split brain and your end customers</target>
+          </trans-unit>
+          <trans-unit id="575" xml:space="preserve">
+            <source>will be served by one copy of the application.</source>
+            <target state="new">will be served by one copy of the application.</target>
+          </trans-unit>
+          <trans-unit id="576" xml:space="preserve">
+            <source>Only when you have</source>
+            <target state="new">Only when you have</target>
+          </trans-unit>
+          <trans-unit id="577" xml:space="preserve">
+            <source>successfully ensured that the Azure VMs are turned off continue to the</source>
+            <target state="new">successfully ensured that the Azure VMs are turned off continue to the</target>
+          </trans-unit>
+          <trans-unit id="578" xml:space="preserve">
+            <source>steps below.**</source>
+            <target state="new">steps below.**</target>
+          </trans-unit>
+          <trans-unit id="579" xml:space="preserve">
+            <source>To begin recovering the virtual machines back to on-premise, you need to</source>
+            <target state="new">To begin recovering the virtual machines back to on-premise, you need to</target>
+          </trans-unit>
+          <trans-unit id="580" xml:space="preserve">
+            <source>start the plan that is saved.</source>
+            <target state="new">start the plan that is saved.</target>
+          </trans-unit>
+          <trans-unit id="581" xml:space="preserve">
+            <source>On the vContinuum select to <bpt id="2">&lt;strong&gt;</bpt>Monitor<ept id="2">&lt;/strong&gt;</ept> the plans.</source>
+            <target state="new">On the vContinuum select to <bpt id="2">&lt;strong&gt;</bpt>Monitor<ept id="2">&lt;/strong&gt;</ept> the plans.</target>
+          </trans-unit>
+          <trans-unit id="582" xml:space="preserve">
+            <source>The wizard will list the plans that have been executed till now.</source>
+            <target state="new">The wizard will list the plans that have been executed till now.</target>
+          </trans-unit>
+          <trans-unit id="583" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="584" xml:space="preserve">
+            <source>Select the <bpt id="2">&lt;strong&gt;</bpt>Recovery<ept id="2">&lt;/strong&gt;</ept> node and select the plan that you want to</source>
+            <target state="new">Select the <bpt id="2">&lt;strong&gt;</bpt>Recovery<ept id="2">&lt;/strong&gt;</ept> node and select the plan that you want to</target>
+          </trans-unit>
+          <trans-unit id="585" xml:space="preserve">
+            <source>recover.</source>
+            <target state="new">recover.</target>
+          </trans-unit>
+          <trans-unit id="586" xml:space="preserve">
+            <source>a.</source>
+            <target state="new">a.</target>
+          </trans-unit>
+          <trans-unit id="587" xml:space="preserve">
+            <source>It will inform you that the plan has not yet started.</source>
+            <target state="new">It will inform you that the plan has not yet started.</target>
+          </trans-unit>
+          <trans-unit id="588" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Start<ept id="2">&lt;/strong&gt;</ept> to begin the recovery.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Start<ept id="2">&lt;/strong&gt;</ept> to begin the recovery.</target>
+          </trans-unit>
+          <trans-unit id="589" xml:space="preserve">
+            <source>You can monitor the recovery of the virtual machines</source>
+            <target state="new">You can monitor the recovery of the virtual machines</target>
+          </trans-unit>
+          <trans-unit id="590" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="591" xml:space="preserve">
+            <source>Once the VMs have been powered ON, you can connect to the virtual</source>
+            <target state="new">Once the VMs have been powered ON, you can connect to the virtual</target>
+          </trans-unit>
+          <trans-unit id="592" xml:space="preserve">
+            <source>machines on your vCenter.</source>
+            <target state="new">machines on your vCenter.</target>
+          </trans-unit>
+          <trans-unit id="593" xml:space="preserve">
+            <source>Re-protect to Azure after failback</source>
+            <target state="new">Re-protect to Azure after failback</target>
+          </trans-unit>
+          <trans-unit id="594" xml:space="preserve">
+            <source>After failback has been completed you may want to protect the virtual</source>
+            <target state="new">After failback has been completed you may want to protect the virtual</target>
+          </trans-unit>
+          <trans-unit id="595" xml:space="preserve">
+            <source>machines once again.</source>
+            <target state="new">machines once again.</target>
+          </trans-unit>
+          <trans-unit id="596" xml:space="preserve">
+            <source>The below steps will help you re-configure the</source>
+            <target state="new">The below steps will help you re-configure the</target>
+          </trans-unit>
+          <trans-unit id="597" xml:space="preserve">
+            <source>protection</source>
+            <target state="new">protection</target>
+          </trans-unit>
+          <trans-unit id="598" xml:space="preserve">
+            <source>Check that the virtual machines on-premises are working and</source>
+            <target state="new">Check that the virtual machines on-premises are working and</target>
+          </trans-unit>
+          <trans-unit id="599" xml:space="preserve">
+            <source>application is able to reach your end customers.</source>
+            <target state="new">application is able to reach your end customers.</target>
+          </trans-unit>
+          <trans-unit id="600" xml:space="preserve">
+            <source>On the Azure Site Recovery portal, select the virtual machines and</source>
+            <target state="new">On the Azure Site Recovery portal, select the virtual machines and</target>
+          </trans-unit>
+          <trans-unit id="601" xml:space="preserve">
+            <source>delete them.</source>
+            <target state="new">delete them.</target>
+          </trans-unit>
+          <trans-unit id="602" xml:space="preserve">
+            <source>a.</source>
+            <target state="new">a.</target>
+          </trans-unit>
+          <trans-unit id="603" xml:space="preserve">
+            <source>Select to disable the protection of the virtual machines.</source>
+            <target state="new">Select to disable the protection of the virtual machines.</target>
+          </trans-unit>
+          <trans-unit id="604" xml:space="preserve">
+            <source>This</source>
+            <target state="new">This</target>
+          </trans-unit>
+          <trans-unit id="605" xml:space="preserve">
+            <source>will ensure that the VMs are no more protected.</source>
+            <target state="new">will ensure that the VMs are no more protected.</target>
+          </trans-unit>
+          <trans-unit id="606" xml:space="preserve">
+            <source>Go to the Azure IAAS virtual machines and delete the failed over</source>
+            <target state="new">Go to the Azure IAAS virtual machines and delete the failed over</target>
+          </trans-unit>
+          <trans-unit id="607" xml:space="preserve">
+            <source>VMs.</source>
+            <target state="new">VMs.</target>
+          </trans-unit>
+          <trans-unit id="608" xml:space="preserve">
+            <source>Delete the old VMs on vSpehere – these are the VMs that you</source>
+            <target state="new">Delete the old VMs on vSpehere – these are the VMs that you</target>
+          </trans-unit>
+          <trans-unit id="609" xml:space="preserve">
+            <source>previously failed over to Azure.</source>
+            <target state="new">previously failed over to Azure.</target>
+          </trans-unit>
+          <trans-unit id="610" xml:space="preserve">
+            <source>On the ASR portal select to protect the virtual machines recently</source>
+            <target state="new">On the ASR portal select to protect the virtual machines recently</target>
+          </trans-unit>
+          <trans-unit id="611" xml:space="preserve">
+            <source>failed over.</source>
+            <target state="new">failed over.</target>
+          </trans-unit>
+          <trans-unit id="612" xml:space="preserve">
+            <source>Once the VMs are protected, you can add them to a recovery plan and</source>
+            <target state="new">Once the VMs are protected, you can add them to a recovery plan and</target>
+          </trans-unit>
+          <trans-unit id="613" xml:space="preserve">
+            <source>be continuously protected.</source>
+            <target state="new">be continuously protected.</target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>

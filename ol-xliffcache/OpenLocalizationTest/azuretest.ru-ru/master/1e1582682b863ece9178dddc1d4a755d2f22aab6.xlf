@@ -1,0 +1,927 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="ru-ru" original="2/20/2016 4:49:26 PM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1e1582682b863ece9178dddc1d4a755d2f22aab6</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Using import/export to transfer data to Blob Storage | Microsoft Azure</source>
+            <target state="new">Using import/export to transfer data to Blob Storage | Microsoft Azure</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>Learn how to create import and export jobs in the Azure Management Portal to transfer data to blob storage.</source>
+            <target state="new">Learn how to create import and export jobs in the Azure Management Portal to transfer data to blob storage.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Use the Microsoft Azure Import/Export Service to Transfer Data to Blob Storage</source>
+            <target state="new">Use the Microsoft Azure Import/Export Service to Transfer Data to Blob Storage</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source>Overview</source>
+            <target state="new">Overview</target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>You can use the Microsoft Azure Import/Export service to transfer large amounts of file data to Azure Blob storage in situations where uploading over the network is prohibitively expensive or not feasible.</source>
+            <target state="new">You can use the Microsoft Azure Import/Export service to transfer large amounts of file data to Azure Blob storage in situations where uploading over the network is prohibitively expensive or not feasible.</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>You can also use the Import/Export service to transfer large quantities of data resident in Blob storage to your on-premises installations in a timely and cost-effective manner.</source>
+            <target state="new">You can also use the Import/Export service to transfer large quantities of data resident in Blob storage to your on-premises installations in a timely and cost-effective manner.</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>To transfer a large set of file data into Blob storage, you can send one or more hard drives containing that data to an Azure data center, where your data will be uploaded to your storage account.</source>
+            <target state="new">To transfer a large set of file data into Blob storage, you can send one or more hard drives containing that data to an Azure data center, where your data will be uploaded to your storage account.</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>Similarly, to export data from Blob storage, you can send empty hard drives to an Azure data center, where the Blob data from your storage account will be copied to your hard drives and then returned to you.</source>
+            <target state="new">Similarly, to export data from Blob storage, you can send empty hard drives to an Azure data center, where the Blob data from your storage account will be copied to your hard drives and then returned to you.</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source>Before you send in a drive that contains data, you'll encrypt the data on the drive; when the Import/Export service exports your data to send to you, the data will also be encrypted before shipping.</source>
+            <target state="new">Before you send in a drive that contains data, you'll encrypt the data on the drive; when the Import/Export service exports your data to send to you, the data will also be encrypted before shipping.</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source>You can create and manage import and export jobs in one of two ways:</source>
+            <target state="new">You can create and manage import and export jobs in one of two ways:</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>By using the Azure Management Portal.</source>
+            <target state="new">By using the Azure Management Portal.</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source>By using a REST interface to the service.</source>
+            <target state="new">By using a REST interface to the service.</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>This article provides an overview of the Import/Export service and describes how to use the Management Portal to work with the Import/Export service.</source>
+            <target state="new">This article provides an overview of the Import/Export service and describes how to use the Management Portal to work with the Import/Export service.</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source>For information on the REST API, see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Import/Export Service REST API Reference<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For information on the REST API, see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Import/Export Service REST API Reference<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>Introduction to the Import/Export Service</source>
+            <target state="new">Introduction to the Import/Export Service</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source>To begin the process of importing to or exporting from Blob storage, you first create a <bpt id="2">&lt;em&gt;</bpt>job<ept id="2">&lt;/em&gt;</ept>.</source>
+            <target state="new">To begin the process of importing to or exporting from Blob storage, you first create a <bpt id="2">&lt;em&gt;</bpt>job<ept id="2">&lt;/em&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>A job can be an <bpt id="2">&lt;em&gt;</bpt>import job<ept id="2">&lt;/em&gt;</ept> or an <bpt id="4">&lt;em&gt;</bpt>export job<ept id="4">&lt;/em&gt;</ept>:</source>
+            <target state="new">A job can be an <bpt id="2">&lt;em&gt;</bpt>import job<ept id="2">&lt;/em&gt;</ept> or an <bpt id="4">&lt;em&gt;</bpt>export job<ept id="4">&lt;/em&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>Create an import job when you want to transfer data you have on-premise to blobs in your Azure storage account.</source>
+            <target state="new">Create an import job when you want to transfer data you have on-premise to blobs in your Azure storage account.</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source>Create an export job when you want to transfer data currently stored as blobs in your storage account to hard drives that are shipped to you.</source>
+            <target state="new">Create an export job when you want to transfer data currently stored as blobs in your storage account to hard drives that are shipped to you.</target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source>When you create a job, you notify the Import/Export service that you will be shipping one or more hard drives to an Azure data center.</source>
+            <target state="new">When you create a job, you notify the Import/Export service that you will be shipping one or more hard drives to an Azure data center.</target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source>For an import job, you'll be shipping hard drives containing file data.</source>
+            <target state="new">For an import job, you'll be shipping hard drives containing file data.</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source>For an export job, you'll be shipping empty hard drives.</source>
+            <target state="new">For an export job, you'll be shipping empty hard drives.</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>To prepare your drive to ship for an import job, you'll run the <bpt id="2">&lt;strong&gt;</bpt>Microsoft Azure Import/Export Tool<ept id="2">&lt;/strong&gt;</ept> tool, which facilitates copying your data to the drive, encrypting the data on the drive with BitLocker, and generating the drive journal files, which are discussed below.</source>
+            <target state="new">To prepare your drive to ship for an import job, you'll run the <bpt id="2">&lt;strong&gt;</bpt>Microsoft Azure Import/Export Tool<ept id="2">&lt;/strong&gt;</ept> tool, which facilitates copying your data to the drive, encrypting the data on the drive with BitLocker, and generating the drive journal files, which are discussed below.</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source>The data on the drive must be encrypted using BitLocker Drive Encryption.</source>
+            <target state="new">The data on the drive must be encrypted using BitLocker Drive Encryption.</target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>This protects your data while it is in transit.</source>
+            <target state="new">This protects your data while it is in transit.</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>For an export job, the Import/Export service will encrypt your data before shipping the drive back to you.</source>
+            <target state="new">For an export job, the Import/Export service will encrypt your data before shipping the drive back to you.</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source>When you create an import job or an export job, you'll also need the <bpt id="2">&lt;em&gt;</bpt>drive ID<ept id="2">&lt;/em&gt;</ept>, which is the serial number assigned by the drive manufacturer to a specific hard disk.</source>
+            <target state="new">When you create an import job or an export job, you'll also need the <bpt id="2">&lt;em&gt;</bpt>drive ID<ept id="2">&lt;/em&gt;</ept>, which is the serial number assigned by the drive manufacturer to a specific hard disk.</target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source>The drive ID is displayed on the exterior of the drive.</source>
+            <target state="new">The drive ID is displayed on the exterior of the drive.</target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source>Requirements and Scope</source>
+            <target state="new">Requirements and Scope</target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Subscription and storage accounts:<ept id="1">&lt;/strong&gt;</ept> You must have an existing Azure subscription and one or more storage accounts to use the Import/Export service.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Subscription and storage accounts:<ept id="1">&lt;/strong&gt;</ept> You must have an existing Azure subscription and one or more storage accounts to use the Import/Export service.</target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source>Each job may be used to transfer data to or from only one storage account.</source>
+            <target state="new">Each job may be used to transfer data to or from only one storage account.</target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source>In other words, a job cannot span across multiple storage accounts.</source>
+            <target state="new">In other words, a job cannot span across multiple storage accounts.</target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source>For information on creating a new storage account, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>How to Create a Storage Account<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For information on creating a new storage account, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>How to Create a Storage Account<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Hard drives:<ept id="1">&lt;/strong&gt;</ept> Only 3.5 inch SATA II/III hard drives are supported for use with the Import/Export service.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Hard drives:<ept id="1">&lt;/strong&gt;</ept> Only 3.5 inch SATA II/III hard drives are supported for use with the Import/Export service.</target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source>Hard drives up to 6TB are supported.</source>
+            <target state="new">Hard drives up to 6TB are supported.</target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source>For import jobs, only the first data volume on the drive will be processed.</source>
+            <target state="new">For import jobs, only the first data volume on the drive will be processed.</target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source>The data volume must be formatted with NTFS.</source>
+            <target state="new">The data volume must be formatted with NTFS.</target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source>You can attach a SATA II/III disk externally to most computers using a SATA II/III USB Adapter.</source>
+            <target state="new">You can attach a SATA II/III disk externally to most computers using a SATA II/III USB Adapter.</target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>BitLocker encryption:<ept id="1">&lt;/strong&gt;</ept> All data stored on hard drives must be encrypted using BitLocker with encryption keys protected with numerical passwords.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>BitLocker encryption:<ept id="1">&lt;/strong&gt;</ept> All data stored on hard drives must be encrypted using BitLocker with encryption keys protected with numerical passwords.</target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Blob storage targets:<ept id="1">&lt;/strong&gt;</ept> Data may be uploaded to or downloaded from block blobs and page blobs.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Blob storage targets:<ept id="1">&lt;/strong&gt;</ept> Data may be uploaded to or downloaded from block blobs and page blobs.</target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Number of jobs:<ept id="1">&lt;/strong&gt;</ept> A customer may have up to 20 jobs active per storage account.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Number of jobs:<ept id="1">&lt;/strong&gt;</ept> A customer may have up to 20 jobs active per storage account.</target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Maximum size of a job:<ept id="1">&lt;/strong&gt;</ept> The size of a job is determined by the capacity of the hard drives used and the maximum amount of data that can be stored in a storage account.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Maximum size of a job:<ept id="1">&lt;/strong&gt;</ept> The size of a job is determined by the capacity of the hard drives used and the maximum amount of data that can be stored in a storage account.</target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source>Each job may contain no more than 10 hard drives.</source>
+            <target state="new">Each job may contain no more than 10 hard drives.</target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source>Create an Import Job in the Management Portal</source>
+            <target state="new">Create an Import Job in the Management Portal</target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source>Create an import job to notify the Import/Export service that you'll be shipping one or more drives containing data to the data center to be imported into your storage account.</source>
+            <target state="new">Create an import job to notify the Import/Export service that you'll be shipping one or more drives containing data to the data center to be imported into your storage account.</target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source>Prepare Your Drives</source>
+            <target state="new">Prepare Your Drives</target>
+          </trans-unit>
+          <trans-unit id="147" xml:space="preserve">
+            <source>Before you create an import job, prepare your drives with the Microsoft Azure Import/Export Tool. For more details about using the Microsoft Azure Import/Export Tool, see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Microsoft Azure Import/Export Tool Reference<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>. You can download the <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Microsoft Azure Import/Export Tool<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept> as a standalone package.</source>
+            <target state="new">Before you create an import job, prepare your drives with the Microsoft Azure Import/Export Tool. For more details about using the Microsoft Azure Import/Export Tool, see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Microsoft Azure Import/Export Tool Reference<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>. You can download the <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Microsoft Azure Import/Export Tool<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept> as a standalone package.</target>
+          </trans-unit>
+          <trans-unit id="148" xml:space="preserve">
+            <source>To prepare your drives, follow these three steps:</source>
+            <target state="new">To prepare your drives, follow these three steps:</target>
+          </trans-unit>
+          <trans-unit id="149" xml:space="preserve">
+            <source>Determine the data to be imported, and the number of drives you'll need.</source>
+            <target state="new">Determine the data to be imported, and the number of drives you'll need.</target>
+          </trans-unit>
+          <trans-unit id="150" xml:space="preserve">
+            <source>Identify the destination blobs for your data in the Azure Blob service.</source>
+            <target state="new">Identify the destination blobs for your data in the Azure Blob service.</target>
+          </trans-unit>
+          <trans-unit id="151" xml:space="preserve">
+            <source>Use the Microsoft Azure Import/Export Tool to copy your data to one or more hard drives.</source>
+            <target state="new">Use the Microsoft Azure Import/Export Tool to copy your data to one or more hard drives.</target>
+          </trans-unit>
+          <trans-unit id="152" xml:space="preserve">
+            <source>The Microsoft Azure Import/Export Tool generates a <bpt id="2">&lt;em&gt;</bpt>drive journal<ept id="2">&lt;/em&gt;</ept> file for each drive as it is prepared.</source>
+            <target state="new">The Microsoft Azure Import/Export Tool generates a <bpt id="2">&lt;em&gt;</bpt>drive journal<ept id="2">&lt;/em&gt;</ept> file for each drive as it is prepared.</target>
+          </trans-unit>
+          <trans-unit id="153" xml:space="preserve">
+            <source>The drive journal file is stored on your local computer, not on the drive itself.</source>
+            <target state="new">The drive journal file is stored on your local computer, not on the drive itself.</target>
+          </trans-unit>
+          <trans-unit id="154" xml:space="preserve">
+            <source>You'll upload the journal file when you create the import job.</source>
+            <target state="new">You'll upload the journal file when you create the import job.</target>
+          </trans-unit>
+          <trans-unit id="155" xml:space="preserve">
+            <source>A drive journal file includes the drive ID and the BitLocker key, as well as other information about the drive.</source>
+            <target state="new">A drive journal file includes the drive ID and the BitLocker key, as well as other information about the drive.</target>
+          </trans-unit>
+          <trans-unit id="156" xml:space="preserve">
+            <source>Create the Import Job</source>
+            <target state="new">Create the Import Job</target>
+          </trans-unit>
+          <trans-unit id="157" xml:space="preserve">
+            <source>Once you have prepared your drive, navigate to your storage account in the Management Portal, and view the  Dashboard.</source>
+            <target state="new">Once you have prepared your drive, navigate to your storage account in the Management Portal, and view the  Dashboard.</target>
+          </trans-unit>
+          <trans-unit id="158" xml:space="preserve">
+            <source>Under <bpt id="2">&lt;strong&gt;</bpt>Quick Glance<ept id="2">&lt;/strong&gt;</ept>, click <bpt id="4">&lt;strong&gt;</bpt>Create an Import Job<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Under <bpt id="2">&lt;strong&gt;</bpt>Quick Glance<ept id="2">&lt;/strong&gt;</ept>, click <bpt id="4">&lt;strong&gt;</bpt>Create an Import Job<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="159" xml:space="preserve">
+            <source>In Step 1 of the wizard, indicate that you have prepared your drive and that you have the drive journal file    available.</source>
+            <target state="new">In Step 1 of the wizard, indicate that you have prepared your drive and that you have the drive journal file    available.</target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
+            <source>In Step 2, provide contact information for the person responsible for this import job.</source>
+            <target state="new">In Step 2, provide contact information for the person responsible for this import job.</target>
+          </trans-unit>
+          <trans-unit id="161" xml:space="preserve">
+            <source>If you wish to save  verbose log data for the import job, check the option to <bpt id="2">&lt;strong&gt;</bpt>Save the verbose log in my 'waimportexport'  blob container<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">If you wish to save  verbose log data for the import job, check the option to <bpt id="2">&lt;strong&gt;</bpt>Save the verbose log in my 'waimportexport'  blob container<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="162" xml:space="preserve">
+            <source>In Step 3, upload the drive journal files that you obtained during the drive preparation step.</source>
+            <target state="new">In Step 3, upload the drive journal files that you obtained during the drive preparation step.</target>
+          </trans-unit>
+          <trans-unit id="163" xml:space="preserve">
+            <source>You'll need  to upload one file for each drive that you have prepared.</source>
+            <target state="new">You'll need  to upload one file for each drive that you have prepared.</target>
+          </trans-unit>
+          <trans-unit id="164" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Create import job - Step 3<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Create import job - Step 3<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="165" xml:space="preserve">
+            <source>In Step 4, enter a descriptive name for the import job.</source>
+            <target state="new">In Step 4, enter a descriptive name for the import job.</target>
+          </trans-unit>
+          <trans-unit id="166" xml:space="preserve">
+            <source>Note that the name you enter may contain only   lowercase letters, numbers, hyphens, and underscores, must start with a letter, and may not contain spaces.</source>
+            <target state="new">Note that the name you enter may contain only   lowercase letters, numbers, hyphens, and underscores, must start with a letter, and may not contain spaces.</target>
+          </trans-unit>
+          <trans-unit id="167" xml:space="preserve">
+            <source>You'll use the name you choose to track your jobs while they are in progress and once they are completed.</source>
+            <target state="new">You'll use the name you choose to track your jobs while they are in progress and once they are completed.</target>
+          </trans-unit>
+          <trans-unit id="168" xml:space="preserve">
+            <source>Next, select your data center region from the list.</source>
+            <target state="new">Next, select your data center region from the list.</target>
+          </trans-unit>
+          <trans-unit id="169" xml:space="preserve">
+            <source>The data center region will indicate the data center and address to which you must ship your package.</source>
+            <target state="new">The data center region will indicate the data center and address to which you must ship your package.</target>
+          </trans-unit>
+          <trans-unit id="170" xml:space="preserve">
+            <source>See the FAQ below for more information.</source>
+            <target state="new">See the FAQ below for more information.</target>
+          </trans-unit>
+          <trans-unit id="171" xml:space="preserve">
+            <source>In Step 5, select your return carrier from the list, and enter your carrier account number.</source>
+            <target state="new">In Step 5, select your return carrier from the list, and enter your carrier account number.</target>
+          </trans-unit>
+          <trans-unit id="172" xml:space="preserve">
+            <source>Microsoft will use this account to ship your drives back to you once your import job is complete.</source>
+            <target state="new">Microsoft will use this account to ship your drives back to you once your import job is complete.</target>
+          </trans-unit>
+          <trans-unit id="173" xml:space="preserve">
+            <source>If you have your tracking number, then select your delivery carrier from the list, and enter your tracking number.</source>
+            <target state="new">If you have your tracking number, then select your delivery carrier from the list, and enter your tracking number.</target>
+          </trans-unit>
+          <trans-unit id="174" xml:space="preserve">
+            <source>If you do not have a tracking number yet, choose <bpt id="2">&lt;strong&gt;</bpt>I will provide my shipping information for this import job once I have shipped my package<ept id="2">&lt;/strong&gt;</ept>, then complete the import process.</source>
+            <target state="new">If you do not have a tracking number yet, choose <bpt id="2">&lt;strong&gt;</bpt>I will provide my shipping information for this import job once I have shipped my package<ept id="2">&lt;/strong&gt;</ept>, then complete the import process.</target>
+          </trans-unit>
+          <trans-unit id="175" xml:space="preserve">
+            <source>To enter your tracking number after you have shipped your package, return to the <bpt id="2">&lt;strong&gt;</bpt>Import/Export<ept id="2">&lt;/strong&gt;</ept> page for your storage account in the Management Portal, select your job from the list, and choose <bpt id="4">&lt;strong&gt;</bpt>Shipping Info<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">To enter your tracking number after you have shipped your package, return to the <bpt id="2">&lt;strong&gt;</bpt>Import/Export<ept id="2">&lt;/strong&gt;</ept> page for your storage account in the Management Portal, select your job from the list, and choose <bpt id="4">&lt;strong&gt;</bpt>Shipping Info<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="176" xml:space="preserve">
+            <source>Navigate through the wizard and enter your tracking number in Step 2.</source>
+            <target state="new">Navigate through the wizard and enter your tracking number in Step 2.</target>
+          </trans-unit>
+          <trans-unit id="177" xml:space="preserve">
+            <source>If the tracking number is not updated within 2 weeks of creating the job, the job will expire.</source>
+            <target state="new">If the tracking number is not updated within 2 weeks of creating the job, the job will expire.</target>
+          </trans-unit>
+          <trans-unit id="178" xml:space="preserve">
+            <source>If the job is in the Creating, Shipping or Transferring state, you can also update your carrier account number in Step 2 of the wizard.</source>
+            <target state="new">If the job is in the Creating, Shipping or Transferring state, you can also update your carrier account number in Step 2 of the wizard.</target>
+          </trans-unit>
+          <trans-unit id="179" xml:space="preserve">
+            <source>Once the job is in the Packaging state, you cannot update your carrier account number for that job.</source>
+            <target state="new">Once the job is in the Packaging state, you cannot update your carrier account number for that job.</target>
+          </trans-unit>
+          <trans-unit id="180" xml:space="preserve">
+            <source>Create an Export Job in the Management Portal</source>
+            <target state="new">Create an Export Job in the Management Portal</target>
+          </trans-unit>
+          <trans-unit id="181" xml:space="preserve">
+            <source>Create an export job to notify the Import/Export service that you'll be shipping one or more empty drives to the data center, so that data can be exported from your storage account to the drives, and the drives then shipped to you.</source>
+            <target state="new">Create an export job to notify the Import/Export service that you'll be shipping one or more empty drives to the data center, so that data can be exported from your storage account to the drives, and the drives then shipped to you.</target>
+          </trans-unit>
+          <trans-unit id="182" xml:space="preserve">
+            <source>To create an export job, navigate to your storage account in the Management Portal, and view the Dashboard.</source>
+            <target state="new">To create an export job, navigate to your storage account in the Management Portal, and view the Dashboard.</target>
+          </trans-unit>
+          <trans-unit id="183" xml:space="preserve">
+            <source>Under <bpt id="2">&lt;strong&gt;</bpt>Quick Glance<ept id="2">&lt;/strong&gt;</ept>, click <bpt id="4">&lt;strong&gt;</bpt>Create an Export Job<ept id="4">&lt;/strong&gt;</ept>, and proceed through the     wizard.</source>
+            <target state="new">Under <bpt id="2">&lt;strong&gt;</bpt>Quick Glance<ept id="2">&lt;/strong&gt;</ept>, click <bpt id="4">&lt;strong&gt;</bpt>Create an Export Job<ept id="4">&lt;/strong&gt;</ept>, and proceed through the     wizard.</target>
+          </trans-unit>
+          <trans-unit id="184" xml:space="preserve">
+            <source>In Step 2, provide contact information for the person responsible for this export job.</source>
+            <target state="new">In Step 2, provide contact information for the person responsible for this export job.</target>
+          </trans-unit>
+          <trans-unit id="185" xml:space="preserve">
+            <source>If you wish to save  verbose log data for the export job, check the option to <bpt id="2">&lt;strong&gt;</bpt>Save the verbose log in my 'waimportexport'  blob container<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">If you wish to save  verbose log data for the export job, check the option to <bpt id="2">&lt;strong&gt;</bpt>Save the verbose log in my 'waimportexport'  blob container<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="186" xml:space="preserve">
+            <source>In Step 3, specify which blob data you wish to export from your storage account to your blank drive or  drives.</source>
+            <target state="new">In Step 3, specify which blob data you wish to export from your storage account to your blank drive or  drives.</target>
+          </trans-unit>
+          <trans-unit id="187" xml:space="preserve">
+            <source>You can choose to export all blob data in the storage account, or you can specify which blobs   or  sets of blobs to export.</source>
+            <target state="new">You can choose to export all blob data in the storage account, or you can specify which blobs   or  sets of blobs to export.</target>
+          </trans-unit>
+          <trans-unit id="188" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Create export job - Step 3<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Create export job - Step 3<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="189" xml:space="preserve">
+            <source>To specify a blob to export, use the <bpt id="2">&lt;strong&gt;</bpt>Equal To<ept id="2">&lt;/strong&gt;</ept> selector, and specify the relative path to the blob, beginning with the container name.</source>
+            <target state="new">To specify a blob to export, use the <bpt id="2">&lt;strong&gt;</bpt>Equal To<ept id="2">&lt;/strong&gt;</ept> selector, and specify the relative path to the blob, beginning with the container name.</target>
+          </trans-unit>
+          <trans-unit id="190" xml:space="preserve">
+            <source>Use <bpt id="2">&lt;em&gt;</bpt>$root<ept id="2">&lt;/em&gt;</ept> to specify the root container.</source>
+            <target state="new">Use <bpt id="2">&lt;em&gt;</bpt>$root<ept id="2">&lt;/em&gt;</ept> to specify the root container.</target>
+          </trans-unit>
+          <trans-unit id="191" xml:space="preserve">
+            <source>To specify all blobs starting with a prefix, use the <bpt id="2">&lt;strong&gt;</bpt>Starts With<ept id="2">&lt;/strong&gt;</ept> selector, and specify the prefix, beginning with a forward slash '/'.</source>
+            <target state="new">To specify all blobs starting with a prefix, use the <bpt id="2">&lt;strong&gt;</bpt>Starts With<ept id="2">&lt;/strong&gt;</ept> selector, and specify the prefix, beginning with a forward slash '/'.</target>
+          </trans-unit>
+          <trans-unit id="192" xml:space="preserve">
+            <source>The prefix may be the prefix of the container name, the complete container name, or the complete container name followed by the prefix of the blob name.</source>
+            <target state="new">The prefix may be the prefix of the container name, the complete container name, or the complete container name followed by the prefix of the blob name.</target>
+          </trans-unit>
+          <trans-unit id="193" xml:space="preserve">
+            <source>The table shows examples of valid blob paths:</source>
+            <target state="new">The table shows examples of valid blob paths:</target>
+          </trans-unit>
+          <trans-unit id="194" xml:space="preserve">
+            <source>Selector</source>
+            <target state="new">Selector</target>
+          </trans-unit>
+          <trans-unit id="195" xml:space="preserve">
+            <source>Blob Path</source>
+            <target state="new">Blob Path</target>
+          </trans-unit>
+          <trans-unit id="196" xml:space="preserve">
+            <source>Description</source>
+            <target state="new">Description</target>
+          </trans-unit>
+          <trans-unit id="197" xml:space="preserve">
+            <source>Starts With</source>
+            <target state="new">Starts With</target>
+          </trans-unit>
+          <trans-unit id="198" xml:space="preserve">
+            <source>/</source>
+            <target state="new">/</target>
+          </trans-unit>
+          <trans-unit id="199" xml:space="preserve">
+            <source>Exports all blobs in the storage account</source>
+            <target state="new">Exports all blobs in the storage account</target>
+          </trans-unit>
+          <trans-unit id="200" xml:space="preserve">
+            <source>Starts With</source>
+            <target state="new">Starts With</target>
+          </trans-unit>
+          <trans-unit id="201" xml:space="preserve">
+            <source>/$root/</source>
+            <target state="new">/$root/</target>
+          </trans-unit>
+          <trans-unit id="202" xml:space="preserve">
+            <source>Exports all blobs in the root container</source>
+            <target state="new">Exports all blobs in the root container</target>
+          </trans-unit>
+          <trans-unit id="203" xml:space="preserve">
+            <source>Starts With</source>
+            <target state="new">Starts With</target>
+          </trans-unit>
+          <trans-unit id="204" xml:space="preserve">
+            <source>/book</source>
+            <target state="new">/book</target>
+          </trans-unit>
+          <trans-unit id="205" xml:space="preserve">
+            <source>Exports all blobs in any container that begins with prefix <bpt id="2">&lt;strong&gt;</bpt>book<ept id="2">&lt;/strong&gt;</ept></source>
+            <target state="new">Exports all blobs in any container that begins with prefix <bpt id="2">&lt;strong&gt;</bpt>book<ept id="2">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="206" xml:space="preserve">
+            <source>Starts With</source>
+            <target state="new">Starts With</target>
+          </trans-unit>
+          <trans-unit id="207" xml:space="preserve">
+            <source>/music/</source>
+            <target state="new">/music/</target>
+          </trans-unit>
+          <trans-unit id="208" xml:space="preserve">
+            <source>Exports all blobs in container <bpt id="2">&lt;strong&gt;</bpt>music<ept id="2">&lt;/strong&gt;</ept></source>
+            <target state="new">Exports all blobs in container <bpt id="2">&lt;strong&gt;</bpt>music<ept id="2">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="209" xml:space="preserve">
+            <source>Starts With</source>
+            <target state="new">Starts With</target>
+          </trans-unit>
+          <trans-unit id="210" xml:space="preserve">
+            <source>/music/love</source>
+            <target state="new">/music/love</target>
+          </trans-unit>
+          <trans-unit id="211" xml:space="preserve">
+            <source>Exports all blobs in container <bpt id="2">&lt;strong&gt;</bpt>music<ept id="2">&lt;/strong&gt;</ept> that begin with prefix <bpt id="4">&lt;strong&gt;</bpt>love<ept id="4">&lt;/strong&gt;</ept></source>
+            <target state="new">Exports all blobs in container <bpt id="2">&lt;strong&gt;</bpt>music<ept id="2">&lt;/strong&gt;</ept> that begin with prefix <bpt id="4">&lt;strong&gt;</bpt>love<ept id="4">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="212" xml:space="preserve">
+            <source>Equal To</source>
+            <target state="new">Equal To</target>
+          </trans-unit>
+          <trans-unit id="213" xml:space="preserve">
+            <source>$root/logo.bmp</source>
+            <target state="new">$root/logo.bmp</target>
+          </trans-unit>
+          <trans-unit id="214" xml:space="preserve">
+            <source>Exports blob <bpt id="2">&lt;strong&gt;</bpt>logo.bmp<ept id="2">&lt;/strong&gt;</ept> in the root container</source>
+            <target state="new">Exports blob <bpt id="2">&lt;strong&gt;</bpt>logo.bmp<ept id="2">&lt;/strong&gt;</ept> in the root container</target>
+          </trans-unit>
+          <trans-unit id="215" xml:space="preserve">
+            <source>Equal To</source>
+            <target state="new">Equal To</target>
+          </trans-unit>
+          <trans-unit id="216" xml:space="preserve">
+            <source>videos/story.mp4</source>
+            <target state="new">videos/story.mp4</target>
+          </trans-unit>
+          <trans-unit id="217" xml:space="preserve">
+            <source>Exports blob <bpt id="2">&lt;strong&gt;</bpt>story.mp4<ept id="2">&lt;/strong&gt;</ept> in container <bpt id="4">&lt;strong&gt;</bpt>videos<ept id="4">&lt;/strong&gt;</ept></source>
+            <target state="new">Exports blob <bpt id="2">&lt;strong&gt;</bpt>story.mp4<ept id="2">&lt;/strong&gt;</ept> in container <bpt id="4">&lt;strong&gt;</bpt>videos<ept id="4">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="218" xml:space="preserve">
+            <source>In Step 4, enter a descriptive name for the export job.</source>
+            <target state="new">In Step 4, enter a descriptive name for the export job.</target>
+          </trans-unit>
+          <trans-unit id="219" xml:space="preserve">
+            <source>The name you enter may contain only lowercase   letters, numbers, hyphens, and underscores, must start with a letter, and may not contain spaces.</source>
+            <target state="new">The name you enter may contain only lowercase   letters, numbers, hyphens, and underscores, must start with a letter, and may not contain spaces.</target>
+          </trans-unit>
+          <trans-unit id="220" xml:space="preserve">
+            <source>The data center region will indicate the data center to which you must ship your package.</source>
+            <target state="new">The data center region will indicate the data center to which you must ship your package.</target>
+          </trans-unit>
+          <trans-unit id="221" xml:space="preserve">
+            <source>See the FAQ below for more information.</source>
+            <target state="new">See the FAQ below for more information.</target>
+          </trans-unit>
+          <trans-unit id="222" xml:space="preserve">
+            <source>In Step 5, select your return carrier from the list, and enter your carrier account number.</source>
+            <target state="new">In Step 5, select your return carrier from the list, and enter your carrier account number.</target>
+          </trans-unit>
+          <trans-unit id="223" xml:space="preserve">
+            <source>Microsoft will use this account to ship your drives back to you once your export job is complete.</source>
+            <target state="new">Microsoft will use this account to ship your drives back to you once your export job is complete.</target>
+          </trans-unit>
+          <trans-unit id="224" xml:space="preserve">
+            <source>If you have your tracking number, then select your delivery carrier from the list, and enter your tracking number.</source>
+            <target state="new">If you have your tracking number, then select your delivery carrier from the list, and enter your tracking number.</target>
+          </trans-unit>
+          <trans-unit id="225" xml:space="preserve">
+            <source>If you do not have a tracking number yet, choose <bpt id="2">&lt;strong&gt;</bpt>I will provide my shipping information for this export job once I have shipped my package<ept id="2">&lt;/strong&gt;</ept>, then complete the export process.</source>
+            <target state="new">If you do not have a tracking number yet, choose <bpt id="2">&lt;strong&gt;</bpt>I will provide my shipping information for this export job once I have shipped my package<ept id="2">&lt;/strong&gt;</ept>, then complete the export process.</target>
+          </trans-unit>
+          <trans-unit id="226" xml:space="preserve">
+            <source>To enter your tracking number after you have shipped your package, return to the <bpt id="2">&lt;strong&gt;</bpt>Import/Export<ept id="2">&lt;/strong&gt;</ept> page for your storage account in the Management Portal, select your job from the list, and choose <bpt id="4">&lt;strong&gt;</bpt>Shipping Info<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">To enter your tracking number after you have shipped your package, return to the <bpt id="2">&lt;strong&gt;</bpt>Import/Export<ept id="2">&lt;/strong&gt;</ept> page for your storage account in the Management Portal, select your job from the list, and choose <bpt id="4">&lt;strong&gt;</bpt>Shipping Info<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="227" xml:space="preserve">
+            <source>Navigate through the wizard and enter your tracking number in Step 2.</source>
+            <target state="new">Navigate through the wizard and enter your tracking number in Step 2.</target>
+          </trans-unit>
+          <trans-unit id="228" xml:space="preserve">
+            <source>If the tracking number is not updated within 2 weeks of creating the job, the job will expire.</source>
+            <target state="new">If the tracking number is not updated within 2 weeks of creating the job, the job will expire.</target>
+          </trans-unit>
+          <trans-unit id="229" xml:space="preserve">
+            <source>If the job is in the Creating, Shipping or Transferring state, you can also update your carrier account number in Step 2 of the wizard.</source>
+            <target state="new">If the job is in the Creating, Shipping or Transferring state, you can also update your carrier account number in Step 2 of the wizard.</target>
+          </trans-unit>
+          <trans-unit id="230" xml:space="preserve">
+            <source>Once the job is in the Packaging state, you cannot update your carrier account number for that job.</source>
+            <target state="new">Once the job is in the Packaging state, you cannot update your carrier account number for that job.</target>
+          </trans-unit>
+          <trans-unit id="231" xml:space="preserve">
+            <source>If the blob to be exported is in use at the time of copying to hard drive, Azure Import/Export service will take a snapshot of the blob and copy the snapshot.</source>
+            <target state="new">If the blob to be exported is in use at the time of copying to hard drive, Azure Import/Export service will take a snapshot of the blob and copy the snapshot.</target>
+          </trans-unit>
+          <trans-unit id="232" xml:space="preserve">
+            <source>Track Job Status in the Management Portal</source>
+            <target state="new">Track Job Status in the Management Portal</target>
+          </trans-unit>
+          <trans-unit id="233" xml:space="preserve">
+            <source>You can track the status of your import or export jobs from the Management Portal.</source>
+            <target state="new">You can track the status of your import or export jobs from the Management Portal.</target>
+          </trans-unit>
+          <trans-unit id="234" xml:space="preserve">
+            <source>Navigate to your storage account in the Management Portal, and click the <bpt id="2">&lt;strong&gt;</bpt>Import/Export<ept id="2">&lt;/strong&gt;</ept> tab.</source>
+            <target state="new">Navigate to your storage account in the Management Portal, and click the <bpt id="2">&lt;strong&gt;</bpt>Import/Export<ept id="2">&lt;/strong&gt;</ept> tab.</target>
+          </trans-unit>
+          <trans-unit id="235" xml:space="preserve">
+            <source>A list of your jobs will appear on the page.</source>
+            <target state="new">A list of your jobs will appear on the page.</target>
+          </trans-unit>
+          <trans-unit id="236" xml:space="preserve">
+            <source>You can filter the list on job status, job name, job type, or tracking number.</source>
+            <target state="new">You can filter the list on job status, job name, job type, or tracking number.</target>
+          </trans-unit>
+          <trans-unit id="237" xml:space="preserve">
+            <source>The table describes what each job status designation means:</source>
+            <target state="new">The table describes what each job status designation means:</target>
+          </trans-unit>
+          <trans-unit id="238" xml:space="preserve">
+            <source>Job Status</source>
+            <target state="new">Job Status</target>
+          </trans-unit>
+          <trans-unit id="239" xml:space="preserve">
+            <source>Description</source>
+            <target state="new">Description</target>
+          </trans-unit>
+          <trans-unit id="240" xml:space="preserve">
+            <source>Creating</source>
+            <target state="new">Creating</target>
+          </trans-unit>
+          <trans-unit id="241" xml:space="preserve">
+            <source>Your job has been created, but you have not yet provided your shipping information.</source>
+            <target state="new">Your job has been created, but you have not yet provided your shipping information.</target>
+          </trans-unit>
+          <trans-unit id="242" xml:space="preserve">
+            <source>Shipping</source>
+            <target state="new">Shipping</target>
+          </trans-unit>
+          <trans-unit id="243" xml:space="preserve">
+            <source>Your job has been created and you have provided your shipping information.</source>
+            <target state="new">Your job has been created and you have provided your shipping information.</target>
+          </trans-unit>
+          <trans-unit id="244" xml:space="preserve">
+            <source>Transferring</source>
+            <target state="new">Transferring</target>
+          </trans-unit>
+          <trans-unit id="245" xml:space="preserve">
+            <source>Your data is being transferred from your hard drive (for an import job) or to your hard drive (for an export job).</source>
+            <target state="new">Your data is being transferred from your hard drive (for an import job) or to your hard drive (for an export job).</target>
+          </trans-unit>
+          <trans-unit id="246" xml:space="preserve">
+            <source>Packaging</source>
+            <target state="new">Packaging</target>
+          </trans-unit>
+          <trans-unit id="247" xml:space="preserve">
+            <source>The transfer of your data is complete, and your hard drive is being prepared for shipping back to you.</source>
+            <target state="new">The transfer of your data is complete, and your hard drive is being prepared for shipping back to you.</target>
+          </trans-unit>
+          <trans-unit id="248" xml:space="preserve">
+            <source>Complete</source>
+            <target state="new">Complete</target>
+          </trans-unit>
+          <trans-unit id="249" xml:space="preserve">
+            <source>Your hard drive has been shipped back to you.</source>
+            <target state="new">Your hard drive has been shipped back to you.</target>
+          </trans-unit>
+          <trans-unit id="250" xml:space="preserve">
+            <source>View BitLocker Keys for an Export Job</source>
+            <target state="new">View BitLocker Keys for an Export Job</target>
+          </trans-unit>
+          <trans-unit id="251" xml:space="preserve">
+            <source>For export jobs, you can view and copy the BitLocker keys generated by the service for your drive, so that you can decrypt your exported data once you receive the drives from the Azure data center.</source>
+            <target state="new">For export jobs, you can view and copy the BitLocker keys generated by the service for your drive, so that you can decrypt your exported data once you receive the drives from the Azure data center.</target>
+          </trans-unit>
+          <trans-unit id="252" xml:space="preserve">
+            <source>Navigate to your storage account in the Management Portal, and click the <bpt id="2">&lt;strong&gt;</bpt>Import/Export<ept id="2">&lt;/strong&gt;</ept> tab.</source>
+            <target state="new">Navigate to your storage account in the Management Portal, and click the <bpt id="2">&lt;strong&gt;</bpt>Import/Export<ept id="2">&lt;/strong&gt;</ept> tab.</target>
+          </trans-unit>
+          <trans-unit id="253" xml:space="preserve">
+            <source>Select your export job from the list, and click the <bpt id="2">&lt;strong&gt;</bpt>View Keys<ept id="2">&lt;/strong&gt;</ept> button.</source>
+            <target state="new">Select your export job from the list, and click the <bpt id="2">&lt;strong&gt;</bpt>View Keys<ept id="2">&lt;/strong&gt;</ept> button.</target>
+          </trans-unit>
+          <trans-unit id="254" xml:space="preserve">
+            <source>The BitLocker keys appear as shown:</source>
+            <target state="new">The BitLocker keys appear as shown:</target>
+          </trans-unit>
+          <trans-unit id="255" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>View BitLocker keys for export job<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>View BitLocker keys for export job<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="256" xml:space="preserve">
+            <source>Frequently Asked Questions</source>
+            <target state="new">Frequently Asked Questions</target>
+          </trans-unit>
+          <trans-unit id="257" xml:space="preserve">
+            <source>General</source>
+            <target state="new">General</target>
+          </trans-unit>
+          <trans-unit id="258" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>What is the pricing for the Import/Export service?<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>What is the pricing for the Import/Export service?<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="259" xml:space="preserve">
+            <source>See the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>pricing page<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for pricing information.</source>
+            <target state="new">See the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>pricing page<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for pricing information.</target>
+          </trans-unit>
+          <trans-unit id="260" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>How long will it take to import or export my data?<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>How long will it take to import or export my data?<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="261" xml:space="preserve">
+            <source>It will take the time to ship the disks, plus several hours per TB of data to copy the data.</source>
+            <target state="new">It will take the time to ship the disks, plus several hours per TB of data to copy the data.</target>
+          </trans-unit>
+          <trans-unit id="262" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>What interface types are supported?<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>What interface types are supported?<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="263" xml:space="preserve">
+            <source>The Import/Export service supports 3.5-inch SATA II/III internal hard drive disks (HDDs).</source>
+            <target state="new">The Import/Export service supports 3.5-inch SATA II/III internal hard drive disks (HDDs).</target>
+          </trans-unit>
+          <trans-unit id="264" xml:space="preserve">
+            <source>You can use the following converters to transfer data in the devices in USB to SATA prior to shipping:</source>
+            <target state="new">You can use the following converters to transfer data in the devices in USB to SATA prior to shipping:</target>
+          </trans-unit>
+          <trans-unit id="265" xml:space="preserve">
+            <source>Anker 68UPSATAA-02BU</source>
+            <target state="new">Anker 68UPSATAA-02BU</target>
+          </trans-unit>
+          <trans-unit id="266" xml:space="preserve">
+            <source>Anker 68UPSHHDS-BU</source>
+            <target state="new">Anker 68UPSHHDS-BU</target>
+          </trans-unit>
+          <trans-unit id="267" xml:space="preserve">
+            <source>Startech SATADOCK22UE</source>
+            <target state="new">Startech SATADOCK22UE</target>
+          </trans-unit>
+          <trans-unit id="268" xml:space="preserve">
+            <source>If you have a converter which is not listed above, you can try running the Microsoft Azure Import/Export Tool using your converter to prepare the drive and see if it works before purchasing a supported converter.</source>
+            <target state="new">If you have a converter which is not listed above, you can try running the Microsoft Azure Import/Export Tool using your converter to prepare the drive and see if it works before purchasing a supported converter.</target>
+          </trans-unit>
+          <trans-unit id="269" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>If I want to import or export more than 10 drives, what should I do?<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>If I want to import or export more than 10 drives, what should I do?<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="270" xml:space="preserve">
+            <source>One import or export job can reference only 10 drives in a single job for the Import/Export service.</source>
+            <target state="new">One import or export job can reference only 10 drives in a single job for the Import/Export service.</target>
+          </trans-unit>
+          <trans-unit id="271" xml:space="preserve">
+            <source>If you want to ship more than 10 drives, you can create multiple jobs.</source>
+            <target state="new">If you want to ship more than 10 drives, you can create multiple jobs.</target>
+          </trans-unit>
+          <trans-unit id="272" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>What happens if I accidentally send an HDD which does not conform to the supported requirements?<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>What happens if I accidentally send an HDD which does not conform to the supported requirements?<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="273" xml:space="preserve">
+            <source>The Azure data center will return the drive that does not conform to the supported requirements to you.</source>
+            <target state="new">The Azure data center will return the drive that does not conform to the supported requirements to you.</target>
+          </trans-unit>
+          <trans-unit id="274" xml:space="preserve">
+            <source>If only some of the drives in the package meet the support requirements, those drives will be processed, and the drives that do not meet the requirements will be returned to you.</source>
+            <target state="new">If only some of the drives in the package meet the support requirements, those drives will be processed, and the drives that do not meet the requirements will be returned to you.</target>
+          </trans-unit>
+          <trans-unit id="275" xml:space="preserve">
+            <source>Import/Export Job Management</source>
+            <target state="new">Import/Export Job Management</target>
+          </trans-unit>
+          <trans-unit id="276" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>What happens to my import and export jobs if I delete my Azure storage account?<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>What happens to my import and export jobs if I delete my Azure storage account?<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="277" xml:space="preserve">
+            <source>When you delete your storage account, all Azure Import/Export jobs are deleted along with your account.</source>
+            <target state="new">When you delete your storage account, all Azure Import/Export jobs are deleted along with your account.</target>
+          </trans-unit>
+          <trans-unit id="278" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Can I cancel my job?<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Can I cancel my job?<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="279" xml:space="preserve">
+            <source>You can cancel a job when its status is Creating or Shipping.</source>
+            <target state="new">You can cancel a job when its status is Creating or Shipping.</target>
+          </trans-unit>
+          <trans-unit id="280" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>How long can I view the status of completed jobs in the Management Portal?<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>How long can I view the status of completed jobs in the Management Portal?<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="281" xml:space="preserve">
+            <source>You can view status for completed jobs for up to 90 days.</source>
+            <target state="new">You can view status for completed jobs for up to 90 days.</target>
+          </trans-unit>
+          <trans-unit id="282" xml:space="preserve">
+            <source>All completed jobs will be deleted after 90 days.</source>
+            <target state="new">All completed jobs will be deleted after 90 days.</target>
+          </trans-unit>
+          <trans-unit id="283" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Is Bitlocker encryption a mandatory requirement?<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Is Bitlocker encryption a mandatory requirement?<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="284" xml:space="preserve">
+            <source>Yes.</source>
+            <target state="new">Yes.</target>
+          </trans-unit>
+          <trans-unit id="285" xml:space="preserve">
+            <source>All drives must be encrypted with a BitLocker key.</source>
+            <target state="new">All drives must be encrypted with a BitLocker key.</target>
+          </trans-unit>
+          <trans-unit id="286" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Do you format the drives before returning them?<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Do you format the drives before returning them?<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="287" xml:space="preserve">
+            <source>No.</source>
+            <target state="new">No.</target>
+          </trans-unit>
+          <trans-unit id="288" xml:space="preserve">
+            <source>All drives must be BitLocker-prepared.</source>
+            <target state="new">All drives must be BitLocker-prepared.</target>
+          </trans-unit>
+          <trans-unit id="289" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Do I need to perform any disk preparation when creating an export job?<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Do I need to perform any disk preparation when creating an export job?<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="290" xml:space="preserve">
+            <source>No, but some pre-checks are recommended.</source>
+            <target state="new">No, but some pre-checks are recommended.</target>
+          </trans-unit>
+          <trans-unit id="291" xml:space="preserve">
+            <source>Check the number of disks required using Azure Import/Export tool's <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>PreviewExport<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> command.</source>
+            <target state="new">Check the number of disks required using Azure Import/Export tool's <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>PreviewExport<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> command.</target>
+          </trans-unit>
+          <trans-unit id="292" xml:space="preserve">
+            <source>It helps you preview drive usage for the blobs you selected, based on the size of the drives you are going to use.</source>
+            <target state="new">It helps you preview drive usage for the blobs you selected, based on the size of the drives you are going to use.</target>
+          </trans-unit>
+          <trans-unit id="293" xml:space="preserve">
+            <source>Also check that you can read/write to the hard drive that will be shipped for the export job.</source>
+            <target state="new">Also check that you can read/write to the hard drive that will be shipped for the export job.</target>
+          </trans-unit>
+          <trans-unit id="294" xml:space="preserve">
+            <source>Shipping</source>
+            <target state="new">Shipping</target>
+          </trans-unit>
+          <trans-unit id="295" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>What courier services are supported?<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>What courier services are supported?<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="296" xml:space="preserve">
+            <source>For regions in the US and Europe, only <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Federal Express<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> (FedEx) is supported.</source>
+            <target state="new">For regions in the US and Europe, only <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Federal Express<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> (FedEx) is supported.</target>
+          </trans-unit>
+          <trans-unit id="297" xml:space="preserve">
+            <source>All packages will be returned via FedEx Ground or FedEx International Economy.</source>
+            <target state="new">All packages will be returned via FedEx Ground or FedEx International Economy.</target>
+          </trans-unit>
+          <trans-unit id="298" xml:space="preserve">
+            <source>For regions in Asia, only <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>DHL<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> is supported.</source>
+            <target state="new">For regions in Asia, only <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>DHL<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> is supported.</target>
+          </trans-unit>
+          <trans-unit id="299" xml:space="preserve">
+            <source>All packages will be returned via DHL Express Worldwide.</source>
+            <target state="new">All packages will be returned via DHL Express Worldwide.</target>
+          </trans-unit>
+          <trans-unit id="300" xml:space="preserve">
+            <source>You must provide your tracking number to the Azure Import/Export service; otherwise your job cannot be processed.</source>
+            <target state="new">You must provide your tracking number to the Azure Import/Export service; otherwise your job cannot be processed.</target>
+          </trans-unit>
+          <trans-unit id="301" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Is there any cost associated with return shipping?<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Is there any cost associated with return shipping?<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="302" xml:space="preserve">
+            <source>Microsoft will use the carrier account number you provide at the time of job creation to ship drives to your return address from the data center.</source>
+            <target state="new">Microsoft will use the carrier account number you provide at the time of job creation to ship drives to your return address from the data center.</target>
+          </trans-unit>
+          <trans-unit id="303" xml:space="preserve">
+            <source>Please make sure to provide a carrier account number for the data center region’s supported carrier.</source>
+            <target state="new">Please make sure to provide a carrier account number for the data center region’s supported carrier.</target>
+          </trans-unit>
+          <trans-unit id="304" xml:space="preserve">
+            <source>You can create a <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>FedEx<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> (for US and Europe) or <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>DHL<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept> (Asia) carrier account if you do not have one.</source>
+            <target state="new">You can create a <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>FedEx<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> (for US and Europe) or <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>DHL<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept> (Asia) carrier account if you do not have one.</target>
+          </trans-unit>
+          <trans-unit id="305" xml:space="preserve">
+            <source>The return shipping fee is charged to your carrier account, and depends on the carrier.</source>
+            <target state="new">The return shipping fee is charged to your carrier account, and depends on the carrier.</target>
+          </trans-unit>
+          <trans-unit id="306" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Where can I ship my data from and to?<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Where can I ship my data from and to?<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="307" xml:space="preserve">
+            <source>The Import/Export service supports importing data to and exporting data from storage accounts in the following regions:</source>
+            <target state="new">The Import/Export service supports importing data to and exporting data from storage accounts in the following regions:</target>
+          </trans-unit>
+          <trans-unit id="308" xml:space="preserve">
+            <source>East US</source>
+            <target state="new">East US</target>
+          </trans-unit>
+          <trans-unit id="309" xml:space="preserve">
+            <source>West US</source>
+            <target state="new">West US</target>
+          </trans-unit>
+          <trans-unit id="310" xml:space="preserve">
+            <source>North Central US</source>
+            <target state="new">North Central US</target>
+          </trans-unit>
+          <trans-unit id="311" xml:space="preserve">
+            <source>South Central US</source>
+            <target state="new">South Central US</target>
+          </trans-unit>
+          <trans-unit id="312" xml:space="preserve">
+            <source>North Europe</source>
+            <target state="new">North Europe</target>
+          </trans-unit>
+          <trans-unit id="313" xml:space="preserve">
+            <source>West Europe</source>
+            <target state="new">West Europe</target>
+          </trans-unit>
+          <trans-unit id="314" xml:space="preserve">
+            <source>East Asia</source>
+            <target state="new">East Asia</target>
+          </trans-unit>
+          <trans-unit id="315" xml:space="preserve">
+            <source>Southeast Asia</source>
+            <target state="new">Southeast Asia</target>
+          </trans-unit>
+          <trans-unit id="316" xml:space="preserve">
+            <source>You will be provided a shipping address in the region where your storage account resides.</source>
+            <target state="new">You will be provided a shipping address in the region where your storage account resides.</target>
+          </trans-unit>
+          <trans-unit id="317" xml:space="preserve">
+            <source>For example, if you live in the US, and your storage account is in the West Europe data center, you will be provided with a shipping address in Europe to send the drives.</source>
+            <target state="new">For example, if you live in the US, and your storage account is in the West Europe data center, you will be provided with a shipping address in Europe to send the drives.</target>
+          </trans-unit>
+          <trans-unit id="318" xml:space="preserve">
+            <source>Please note that the physical media that you are shipping may need to cross international borders.</source>
+            <target state="new">Please note that the physical media that you are shipping may need to cross international borders.</target>
+          </trans-unit>
+          <trans-unit id="319" xml:space="preserve">
+            <source>You are responsible for ensuring that your physical media and data are imported and/or exported in accordance with the applicable laws.</source>
+            <target state="new">You are responsible for ensuring that your physical media and data are imported and/or exported in accordance with the applicable laws.</target>
+          </trans-unit>
+          <trans-unit id="320" xml:space="preserve">
+            <source>Before shipping the physical media, check with your advisors to verify that your media and data can legally be shipped to the identified data center.</source>
+            <target state="new">Before shipping the physical media, check with your advisors to verify that your media and data can legally be shipped to the identified data center.</target>
+          </trans-unit>
+          <trans-unit id="321" xml:space="preserve">
+            <source>This will help to ensure that it reaches Microsoft in a timely manner.</source>
+            <target state="new">This will help to ensure that it reaches Microsoft in a timely manner.</target>
+          </trans-unit>
+          <trans-unit id="322" xml:space="preserve">
+            <source>In shipping your packages, you must follow the terms at <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Microsoft Azure Service Terms<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">In shipping your packages, you must follow the terms at <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Microsoft Azure Service Terms<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="323" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Can I purchase drives for import/export jobs from Microsoft?<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Can I purchase drives for import/export jobs from Microsoft?<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="324" xml:space="preserve">
+            <source>No.</source>
+            <target state="new">No.</target>
+          </trans-unit>
+          <trans-unit id="325" xml:space="preserve">
+            <source>You will need to ship your own drives for both import and export jobs.</source>
+            <target state="new">You will need to ship your own drives for both import and export jobs.</target>
+          </trans-unit>
+          <trans-unit id="326" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>What should I include in my package?<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>What should I include in my package?<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="327" xml:space="preserve">
+            <source>Please ship only your hard drives.</source>
+            <target state="new">Please ship only your hard drives.</target>
+          </trans-unit>
+          <trans-unit id="328" xml:space="preserve">
+            <source>Do not include items like power supply cables or USB cables.</source>
+            <target state="new">Do not include items like power supply cables or USB cables.</target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>

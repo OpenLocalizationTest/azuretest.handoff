@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="ru-ru" original="2/20/2016 3:11:28 PM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">862aeb595dfefc65fc979d66fd1f57705ff71d18</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Azure Automation webhooks</source>
+            <target state="new">Azure Automation webhooks</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>A webhook that allows a client to start a runbook in Azure Automation from an HTTP call.  This article describes how to create a webhook and how to call one to start a runbook.</source>
+            <target state="new">A webhook that allows a client to start a runbook in Azure Automation from an HTTP call.  This article describes how to create a webhook and how to call one to start a runbook.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Azure Automation webhooks</source>
+            <target state="new">Azure Automation webhooks</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source>A <bpt id="2">&lt;em&gt;</bpt>webhook<ept id="2">&lt;/em&gt;</ept> allows you to start a particular runbook in Azure Automation through a single HTTP request.</source>
+            <target state="new">A <bpt id="2">&lt;em&gt;</bpt>webhook<ept id="2">&lt;/em&gt;</ept> allows you to start a particular runbook in Azure Automation through a single HTTP request.</target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>This allows external services such as Visual Studio Online, GitHub, or custom applications to start runbooks without implementing a full solution using the Azure Automation API.</source>
+            <target state="new">This allows external services such as Visual Studio Online, GitHub, or custom applications to start runbooks without implementing a full solution using the Azure Automation API.</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Webhooks<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Webhooks<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>You can compare webhooks to other methods of starting a runbook in <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Starting a runbook in Azure Automation<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new">You can compare webhooks to other methods of starting a runbook in <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Starting a runbook in Azure Automation<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>Details of a webhook</source>
+            <target state="new">Details of a webhook</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source>The following table describes the properties that you must configure for a webhook.</source>
+            <target state="new">The following table describes the properties that you must configure for a webhook.</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source>Property</source>
+            <target state="new">Property</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>Description</source>
+            <target state="new">Description</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source>Name</source>
+            <target state="new">Name</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>You can provide any name you want for a webhook since this is not exposed to the client.  It is only used for you to identify the runbook in Azure Automation. <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>  As a best practice, you should give the webhook a name related to the client that will use it.</source>
+            <target state="new">You can provide any name you want for a webhook since this is not exposed to the client.  It is only used for you to identify the runbook in Azure Automation. <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>  As a best practice, you should give the webhook a name related to the client that will use it.</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source>URL</source>
+            <target state="new">URL</target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>The URL of the webhook is the unique address that a client calls with an HTTP POST to start the runbook linked to the webhook.  It is automatically generated when you create the webhook.  You cannot specify a custom URL. <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept> <bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>  The URL contains a security token that allows the runbook to be invoked by a third party system with no further authentication. For this reason, it should be treated like a password.  For security reasons, you can only view the URL in the Azure preview portal at the time the webhook is created. You should note the URL in a secure location for future use.</source>
+            <target state="new">The URL of the webhook is the unique address that a client calls with an HTTP POST to start the runbook linked to the webhook.  It is automatically generated when you create the webhook.  You cannot specify a custom URL. <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept> <bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>  The URL contains a security token that allows the runbook to be invoked by a third party system with no further authentication. For this reason, it should be treated like a password.  For security reasons, you can only view the URL in the Azure preview portal at the time the webhook is created. You should note the URL in a secure location for future use.</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source>Expiration date</source>
+            <target state="new">Expiration date</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>Like a certificate, each webhook has an expiration date at which time it can no longer be used.</source>
+            <target state="new">Like a certificate, each webhook has an expiration date at which time it can no longer be used.</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>This expiration date cannot be changed after the webhook is created, and the webhook also cannot be enabled again after the expiration date is reached.</source>
+            <target state="new">This expiration date cannot be changed after the webhook is created, and the webhook also cannot be enabled again after the expiration date is reached.</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source>In this case, you must create another webhook to replace the current one and update the client to use the new webhook.</source>
+            <target state="new">In this case, you must create another webhook to replace the current one and update the client to use the new webhook.</target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source>Enabled</source>
+            <target state="new">Enabled</target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source>A webhook is enabled by default when it is created.</source>
+            <target state="new">A webhook is enabled by default when it is created.</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source>If you set it to Disabled, then no client will be able to use it.</source>
+            <target state="new">If you set it to Disabled, then no client will be able to use it.</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>You can set the <bpt id="2">&lt;strong&gt;</bpt>Enabled<ept id="2">&lt;/strong&gt;</ept> property when you create the webhook or anytime once it is created.</source>
+            <target state="new">You can set the <bpt id="2">&lt;strong&gt;</bpt>Enabled<ept id="2">&lt;/strong&gt;</ept> property when you create the webhook or anytime once it is created.</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source>Parameters</source>
+            <target state="new">Parameters</target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>A webhook can define values for runbook parameters that are used when the runbook is started by that webhook.</source>
+            <target state="new">A webhook can define values for runbook parameters that are used when the runbook is started by that webhook.</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>The webhook must include values for any mandatory parameters of the runbook and may include values for optional parameters.</source>
+            <target state="new">The webhook must include values for any mandatory parameters of the runbook and may include values for optional parameters.</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source>Multiple webhooks linked to a single runbook can each use different parameter values.</source>
+            <target state="new">Multiple webhooks linked to a single runbook can each use different parameter values.</target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source>When a client starts a runbook using a webhook, it cannot override the parameter values defined in the webhook.</source>
+            <target state="new">When a client starts a runbook using a webhook, it cannot override the parameter values defined in the webhook.</target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source>To receive data from the client, the runbook can accept a single parameter called <bpt id="2">&lt;strong&gt;</bpt>$WebhookData<ept id="2">&lt;/strong&gt;</ept> of type [object] that will contain data that the client includes in the POST request.</source>
+            <target state="new">To receive data from the client, the runbook can accept a single parameter called <bpt id="2">&lt;strong&gt;</bpt>$WebhookData<ept id="2">&lt;/strong&gt;</ept> of type [object] that will contain data that the client includes in the POST request.</target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Webhookdata<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Webhookdata<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source>The <bpt id="2">&lt;strong&gt;</bpt>$WebhookData<ept id="2">&lt;/strong&gt;</ept> object will have the following properties:</source>
+            <target state="new">The <bpt id="2">&lt;strong&gt;</bpt>$WebhookData<ept id="2">&lt;/strong&gt;</ept> object will have the following properties:</target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source>Property</source>
+            <target state="new">Property</target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source>Description</source>
+            <target state="new">Description</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source>WebhookName</source>
+            <target state="new">WebhookName</target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source>The name of the webhook.</source>
+            <target state="new">The name of the webhook.</target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source>RequestHeader</source>
+            <target state="new">RequestHeader</target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source>Hash table containing the headers of the incoming POST request.</source>
+            <target state="new">Hash table containing the headers of the incoming POST request.</target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source>RequestBody</source>
+            <target state="new">RequestBody</target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source>The body of the incoming POST request.</source>
+            <target state="new">The body of the incoming POST request.</target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source>This will retain any formatting such as string, JSON, XML, or form encoded data.</source>
+            <target state="new">This will retain any formatting such as string, JSON, XML, or form encoded data.</target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source>The runbook must be written to work with the data format that is expected.</source>
+            <target state="new">The runbook must be written to work with the data format that is expected.</target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source>There is no configuration of the webhook required to support the <bpt id="2">&lt;strong&gt;</bpt>$WebhookData<ept id="2">&lt;/strong&gt;</ept> parameter, and the runbook is not required to accept it.</source>
+            <target state="new">There is no configuration of the webhook required to support the <bpt id="2">&lt;strong&gt;</bpt>$WebhookData<ept id="2">&lt;/strong&gt;</ept> parameter, and the runbook is not required to accept it.</target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source>If the runbook does not define the parameter, then any details of the request sent from the client is ignored.</source>
+            <target state="new">If the runbook does not define the parameter, then any details of the request sent from the client is ignored.</target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source>If you specify a value for $WebhookData when you create the webhook, that value will be overriden when the webhook starts the runbook with the data from the client POST request, even if the client does not include any data in the request body.</source>
+            <target state="new">If you specify a value for $WebhookData when you create the webhook, that value will be overriden when the webhook starts the runbook with the data from the client POST request, even if the client does not include any data in the request body.</target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source>If you start a runbook that has $WebhookData using a method other than a webhook, you can provide a value for $Webhookdata that will be recognized by the runbook.</source>
+            <target state="new">If you start a runbook that has $WebhookData using a method other than a webhook, you can provide a value for $Webhookdata that will be recognized by the runbook.</target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source>This value should be an object with the same properties as $Webhookdata so that the runbook can properly work with it.</source>
+            <target state="new">This value should be an object with the same properties as $Webhookdata so that the runbook can properly work with it.</target>
+          </trans-unit>
+          <trans-unit id="147" xml:space="preserve">
+            <source>The values of all input parameters are logged with the runbook job.</source>
+            <target state="new">The values of all input parameters are logged with the runbook job.</target>
+          </trans-unit>
+          <trans-unit id="148" xml:space="preserve">
+            <source>This means that any input provided by the client in the webhook request will be logged and available to anyone with access to the automation job.</source>
+            <target state="new">This means that any input provided by the client in the webhook request will be logged and available to anyone with access to the automation job.</target>
+          </trans-unit>
+          <trans-unit id="149" xml:space="preserve">
+            <source>For this reason, you should be cautious about including sensitive information in webhook calls.</source>
+            <target state="new">For this reason, you should be cautious about including sensitive information in webhook calls.</target>
+          </trans-unit>
+          <trans-unit id="150" xml:space="preserve">
+            <source>Security</source>
+            <target state="new">Security</target>
+          </trans-unit>
+          <trans-unit id="151" xml:space="preserve">
+            <source>The security of a webhook relies on the privacy of its URL which contains a security token that allows it to be invoked.</source>
+            <target state="new">The security of a webhook relies on the privacy of its URL which contains a security token that allows it to be invoked.</target>
+          </trans-unit>
+          <trans-unit id="152" xml:space="preserve">
+            <source>Azure Automation does not perform any authentication on the request as long as it is made to the correct URL.</source>
+            <target state="new">Azure Automation does not perform any authentication on the request as long as it is made to the correct URL.</target>
+          </trans-unit>
+          <trans-unit id="153" xml:space="preserve">
+            <source>For this reason, webhooks should not be used for runbooks that perform highly sensitive functions without using an alternate means of validating the request.</source>
+            <target state="new">For this reason, webhooks should not be used for runbooks that perform highly sensitive functions without using an alternate means of validating the request.</target>
+          </trans-unit>
+          <trans-unit id="154" xml:space="preserve">
+            <source>You can include logic within the runbook to determine that it was called by a webhook by checking the <bpt id="2">&lt;strong&gt;</bpt>WebhookName<ept id="2">&lt;/strong&gt;</ept> property of the $WebhookData parameter.</source>
+            <target state="new">You can include logic within the runbook to determine that it was called by a webhook by checking the <bpt id="2">&lt;strong&gt;</bpt>WebhookName<ept id="2">&lt;/strong&gt;</ept> property of the $WebhookData parameter.</target>
+          </trans-unit>
+          <trans-unit id="155" xml:space="preserve">
+            <source>The runbook could perform further validation by looking for particular information in the <bpt id="2">&lt;strong&gt;</bpt>RequestHeader<ept id="2">&lt;/strong&gt;</ept> or <bpt id="4">&lt;strong&gt;</bpt>RequestBody<ept id="4">&lt;/strong&gt;</ept> properties.</source>
+            <target state="new">The runbook could perform further validation by looking for particular information in the <bpt id="2">&lt;strong&gt;</bpt>RequestHeader<ept id="2">&lt;/strong&gt;</ept> or <bpt id="4">&lt;strong&gt;</bpt>RequestBody<ept id="4">&lt;/strong&gt;</ept> properties.</target>
+          </trans-unit>
+          <trans-unit id="156" xml:space="preserve">
+            <source>Another strategy is to have the runbook perform some validation of an external condition when it received a webhook request.</source>
+            <target state="new">Another strategy is to have the runbook perform some validation of an external condition when it received a webhook request.</target>
+          </trans-unit>
+          <trans-unit id="157" xml:space="preserve">
+            <source>For example, consider a runbook that is called by GitHub whenever there is a new commit to a GitHub repository.</source>
+            <target state="new">For example, consider a runbook that is called by GitHub whenever there is a new commit to a GitHub repository.</target>
+          </trans-unit>
+          <trans-unit id="158" xml:space="preserve">
+            <source>The runbook might connect to GitHub to validate that a new commit had actually just occurred before continuing.</source>
+            <target state="new">The runbook might connect to GitHub to validate that a new commit had actually just occurred before continuing.</target>
+          </trans-unit>
+          <trans-unit id="159" xml:space="preserve">
+            <source>Creating a webhook</source>
+            <target state="new">Creating a webhook</target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
+            <source>Use the following procedure to create a new webhook linked to a runbook in the Azure preview portal.</source>
+            <target state="new">Use the following procedure to create a new webhook linked to a runbook in the Azure preview portal.</target>
+          </trans-unit>
+          <trans-unit id="161" xml:space="preserve">
+            <source>From the <bpt id="2">&lt;strong&gt;</bpt>Runbooks blade<ept id="2">&lt;/strong&gt;</ept> in the Azure preview portal, click the runbook that the webhook will start to view its detail blade.</source>
+            <target state="new">From the <bpt id="2">&lt;strong&gt;</bpt>Runbooks blade<ept id="2">&lt;/strong&gt;</ept> in the Azure preview portal, click the runbook that the webhook will start to view its detail blade.</target>
+          </trans-unit>
+          <trans-unit id="162" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Webhook<ept id="2">&lt;/strong&gt;</ept> at the top of the blade to open the <bpt id="4">&lt;strong&gt;</bpt>Add Webhook<ept id="4">&lt;/strong&gt;</ept> blade. <bpt id="6">&lt;html&gt;</bpt><ept id="6">&lt;/html&gt;</ept></source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Webhook<ept id="2">&lt;/strong&gt;</ept> at the top of the blade to open the <bpt id="4">&lt;strong&gt;</bpt>Add Webhook<ept id="4">&lt;/strong&gt;</ept> blade. <bpt id="6">&lt;html&gt;</bpt><ept id="6">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="163" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Webhooks button<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Webhooks button<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="164" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Create new webhook<ept id="2">&lt;/strong&gt;</ept> to open the <bpt id="4">&lt;strong&gt;</bpt>Create webhook blade<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Create new webhook<ept id="2">&lt;/strong&gt;</ept> to open the <bpt id="4">&lt;strong&gt;</bpt>Create webhook blade<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="165" xml:space="preserve">
+            <source>Specify a <bpt id="2">&lt;strong&gt;</bpt>Name<ept id="2">&lt;/strong&gt;</ept>, <bpt id="4">&lt;strong&gt;</bpt>Expiration Date<ept id="4">&lt;/strong&gt;</ept> for the webhook and whether it should be enabled.</source>
+            <target state="new">Specify a <bpt id="2">&lt;strong&gt;</bpt>Name<ept id="2">&lt;/strong&gt;</ept>, <bpt id="4">&lt;strong&gt;</bpt>Expiration Date<ept id="4">&lt;/strong&gt;</ept> for the webhook and whether it should be enabled.</target>
+          </trans-unit>
+          <trans-unit id="166" xml:space="preserve">
+            <source>See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Details of a webhook<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for more information these properties.</source>
+            <target state="new">See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Details of a webhook<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for more information these properties.</target>
+          </trans-unit>
+          <trans-unit id="167" xml:space="preserve">
+            <source>Click the copy icon and press Ctrl+C to copy the URL of the webhook.  Then record it in a safe place.  <bpt id="2">&lt;strong&gt;</bpt>Once you create the webhook, you cannot retrieve the URL again.<ept id="2">&lt;/strong&gt;</ept> <bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept></source>
+            <target state="new">Click the copy icon and press Ctrl+C to copy the URL of the webhook.  Then record it in a safe place.  <bpt id="2">&lt;strong&gt;</bpt>Once you create the webhook, you cannot retrieve the URL again.<ept id="2">&lt;/strong&gt;</ept> <bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="168" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Webhook URL<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Webhook URL<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="169" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Parameters<ept id="2">&lt;/strong&gt;</ept> to provide values for the runbook parameters.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Parameters<ept id="2">&lt;/strong&gt;</ept> to provide values for the runbook parameters.</target>
+          </trans-unit>
+          <trans-unit id="170" xml:space="preserve">
+            <source>If the runbook has mandatory parameters, then you will not be able to create the webhook unless values are provided.</source>
+            <target state="new">If the runbook has mandatory parameters, then you will not be able to create the webhook unless values are provided.</target>
+          </trans-unit>
+          <trans-unit id="171" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Create<ept id="2">&lt;/strong&gt;</ept> to create the webhook.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Create<ept id="2">&lt;/strong&gt;</ept> to create the webhook.</target>
+          </trans-unit>
+          <trans-unit id="172" xml:space="preserve">
+            <source>Using a webhook</source>
+            <target state="new">Using a webhook</target>
+          </trans-unit>
+          <trans-unit id="173" xml:space="preserve">
+            <source>To use a webhook after it has been created, your client application must issue an HTTP POST with the URL for the webhook.</source>
+            <target state="new">To use a webhook after it has been created, your client application must issue an HTTP POST with the URL for the webhook.</target>
+          </trans-unit>
+          <trans-unit id="174" xml:space="preserve">
+            <source>The syntax of the webhook will be in the following format.</source>
+            <target state="new">The syntax of the webhook will be in the following format.</target>
+          </trans-unit>
+          <trans-unit id="175" xml:space="preserve">
+            <source>The client will receive one of the following return codes from the POST request.</source>
+            <target state="new">The client will receive one of the following return codes from the POST request.</target>
+          </trans-unit>
+          <trans-unit id="176" xml:space="preserve">
+            <source>Code</source>
+            <target state="new">Code</target>
+          </trans-unit>
+          <trans-unit id="177" xml:space="preserve">
+            <source>Text</source>
+            <target state="new">Text</target>
+          </trans-unit>
+          <trans-unit id="178" xml:space="preserve">
+            <source>Description</source>
+            <target state="new">Description</target>
+          </trans-unit>
+          <trans-unit id="179" xml:space="preserve">
+            <source>202</source>
+            <target state="new">202</target>
+          </trans-unit>
+          <trans-unit id="180" xml:space="preserve">
+            <source>Accepted</source>
+            <target state="new">Accepted</target>
+          </trans-unit>
+          <trans-unit id="181" xml:space="preserve">
+            <source>The request was accepted, and the runbook was successfully queued.</source>
+            <target state="new">The request was accepted, and the runbook was successfully queued.</target>
+          </trans-unit>
+          <trans-unit id="182" xml:space="preserve">
+            <source>400</source>
+            <target state="new">400</target>
+          </trans-unit>
+          <trans-unit id="183" xml:space="preserve">
+            <source>Bad Request</source>
+            <target state="new">Bad Request</target>
+          </trans-unit>
+          <trans-unit id="184" xml:space="preserve">
+            <source>The request was not accepted for one of the following reasons.</source>
+            <target state="new">The request was not accepted for one of the following reasons.</target>
+          </trans-unit>
+          <trans-unit id="185" xml:space="preserve">
+            <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept> <bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>The webhook has expired.<bpt id="5">&lt;html&gt;</bpt><ept id="5">&lt;/html&gt;</ept> <bpt id="7">&lt;html&gt;</bpt><ept id="7">&lt;/html&gt;</ept>The webhook is disabled.<bpt id="9">&lt;html&gt;</bpt><ept id="9">&lt;/html&gt;</ept> <bpt id="11">&lt;html&gt;</bpt><ept id="11">&lt;/html&gt;</ept>The token in the URL is invalid.<bpt id="13">&lt;html&gt;</bpt><ept id="13">&lt;/html&gt;</ept>  <bpt id="15">&lt;html&gt;</bpt><ept id="15">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept> <bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>The webhook has expired.<bpt id="5">&lt;html&gt;</bpt><ept id="5">&lt;/html&gt;</ept> <bpt id="7">&lt;html&gt;</bpt><ept id="7">&lt;/html&gt;</ept>The webhook is disabled.<bpt id="9">&lt;html&gt;</bpt><ept id="9">&lt;/html&gt;</ept> <bpt id="11">&lt;html&gt;</bpt><ept id="11">&lt;/html&gt;</ept>The token in the URL is invalid.<bpt id="13">&lt;html&gt;</bpt><ept id="13">&lt;/html&gt;</ept>  <bpt id="15">&lt;html&gt;</bpt><ept id="15">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="186" xml:space="preserve">
+            <source>404</source>
+            <target state="new">404</target>
+          </trans-unit>
+          <trans-unit id="187" xml:space="preserve">
+            <source>Not Found</source>
+            <target state="new">Not Found</target>
+          </trans-unit>
+          <trans-unit id="188" xml:space="preserve">
+            <source>The request was not accepted for one of the following reasons.</source>
+            <target state="new">The request was not accepted for one of the following reasons.</target>
+          </trans-unit>
+          <trans-unit id="189" xml:space="preserve">
+            <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept> <bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>The webhook was not found.<bpt id="5">&lt;html&gt;</bpt><ept id="5">&lt;/html&gt;</ept> <bpt id="7">&lt;html&gt;</bpt><ept id="7">&lt;/html&gt;</ept>The runbook was not found.<bpt id="9">&lt;html&gt;</bpt><ept id="9">&lt;/html&gt;</ept> <bpt id="11">&lt;html&gt;</bpt><ept id="11">&lt;/html&gt;</ept>The account was not found.<bpt id="13">&lt;html&gt;</bpt><ept id="13">&lt;/html&gt;</ept>  <bpt id="15">&lt;html&gt;</bpt><ept id="15">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept> <bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>The webhook was not found.<bpt id="5">&lt;html&gt;</bpt><ept id="5">&lt;/html&gt;</ept> <bpt id="7">&lt;html&gt;</bpt><ept id="7">&lt;/html&gt;</ept>The runbook was not found.<bpt id="9">&lt;html&gt;</bpt><ept id="9">&lt;/html&gt;</ept> <bpt id="11">&lt;html&gt;</bpt><ept id="11">&lt;/html&gt;</ept>The account was not found.<bpt id="13">&lt;html&gt;</bpt><ept id="13">&lt;/html&gt;</ept>  <bpt id="15">&lt;html&gt;</bpt><ept id="15">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="190" xml:space="preserve">
+            <source>500</source>
+            <target state="new">500</target>
+          </trans-unit>
+          <trans-unit id="191" xml:space="preserve">
+            <source>Internal Server Error</source>
+            <target state="new">Internal Server Error</target>
+          </trans-unit>
+          <trans-unit id="192" xml:space="preserve">
+            <source>The URL was valid, but an error occurred.</source>
+            <target state="new">The URL was valid, but an error occurred.</target>
+          </trans-unit>
+          <trans-unit id="193" xml:space="preserve">
+            <source>Please resubmit the request.</source>
+            <target state="new">Please resubmit the request.</target>
+          </trans-unit>
+          <trans-unit id="194" xml:space="preserve">
+            <source>Assuming the request is successful, the webhook response contains the job id in JSON format as follows.</source>
+            <target state="new">Assuming the request is successful, the webhook response contains the job id in JSON format as follows.</target>
+          </trans-unit>
+          <trans-unit id="195" xml:space="preserve">
+            <source>It will contain a single job id, but the JSON format allows for potential future enhancements.</source>
+            <target state="new">It will contain a single job id, but the JSON format allows for potential future enhancements.</target>
+          </trans-unit>
+          <trans-unit id="196" xml:space="preserve">
+            <source>The client cannot determine when the runbook job completes or its completion status from the webhook.</source>
+            <target state="new">The client cannot determine when the runbook job completes or its completion status from the webhook.</target>
+          </trans-unit>
+          <trans-unit id="197" xml:space="preserve">
+            <source>It can determine this information using the job id with another method such as <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Windows PowerShell<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> or the <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Azure Automation API<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">It can determine this information using the job id with another method such as <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Windows PowerShell<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> or the <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Azure Automation API<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="198" xml:space="preserve">
+            <source>Example</source>
+            <target state="new">Example</target>
+          </trans-unit>
+          <trans-unit id="199" xml:space="preserve">
+            <source>The following example uses Windows PowerShell to start a runbook with a webhook.</source>
+            <target state="new">The following example uses Windows PowerShell to start a runbook with a webhook.</target>
+          </trans-unit>
+          <trans-unit id="200" xml:space="preserve">
+            <source>Note that any language that can make an HTTP request can use a webhook; Windows PowerShell is just used here as an example.</source>
+            <target state="new">Note that any language that can make an HTTP request can use a webhook; Windows PowerShell is just used here as an example.</target>
+          </trans-unit>
+          <trans-unit id="201" xml:space="preserve">
+            <source>The runbook is expecting a list of virtual machines formatted in JSON in the body of the request.</source>
+            <target state="new">The runbook is expecting a list of virtual machines formatted in JSON in the body of the request.</target>
+          </trans-unit>
+          <trans-unit id="202" xml:space="preserve">
+            <source>We also are including information about who is starting the runbook and the date and time it is being started in the header of the request.</source>
+            <target state="new">We also are including information about who is starting the runbook and the date and time it is being started in the header of the request.</target>
+          </trans-unit>
+          <trans-unit id="203" xml:space="preserve">
+            <source>The following image shows the header information (using a <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Fiddler<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> trace) from this request.</source>
+            <target state="new">The following image shows the header information (using a <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Fiddler<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> trace) from this request.</target>
+          </trans-unit>
+          <trans-unit id="204" xml:space="preserve">
+            <source>This includes standard headers of an HTTP request in addition to the custom Date and From headers that we added.</source>
+            <target state="new">This includes standard headers of an HTTP request in addition to the custom Date and From headers that we added.</target>
+          </trans-unit>
+          <trans-unit id="205" xml:space="preserve">
+            <source>Each of these values is available to the runbook in the <bpt id="2">&lt;strong&gt;</bpt>RequestHeaders<ept id="2">&lt;/strong&gt;</ept> property of <bpt id="4">&lt;strong&gt;</bpt>WebhookData<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Each of these values is available to the runbook in the <bpt id="2">&lt;strong&gt;</bpt>RequestHeaders<ept id="2">&lt;/strong&gt;</ept> property of <bpt id="4">&lt;strong&gt;</bpt>WebhookData<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="206" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Webhooks button<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Webhooks button<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="207" xml:space="preserve">
+            <source>The following image shows the body of the request (using a <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Fiddler<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> trace)  that is available to the runbook in the <bpt id="4">&lt;strong&gt;</bpt>RequestBody<ept id="4">&lt;/strong&gt;</ept> property of <bpt id="6">&lt;strong&gt;</bpt>WebhookData<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">The following image shows the body of the request (using a <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Fiddler<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> trace)  that is available to the runbook in the <bpt id="4">&lt;strong&gt;</bpt>RequestBody<ept id="4">&lt;/strong&gt;</ept> property of <bpt id="6">&lt;strong&gt;</bpt>WebhookData<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="208" xml:space="preserve">
+            <source>This is formatted as JSON because that was the format that was included in the body of the request.</source>
+            <target state="new">This is formatted as JSON because that was the format that was included in the body of the request.</target>
+          </trans-unit>
+          <trans-unit id="209" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Webhooks button<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Webhooks button<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="210" xml:space="preserve">
+            <source>The following image shows the request being sent from Windows PowerShell and the resulting response.</source>
+            <target state="new">The following image shows the request being sent from Windows PowerShell and the resulting response.</target>
+          </trans-unit>
+          <trans-unit id="211" xml:space="preserve">
+            <source>The job id is extracted from the response and converted to a string.</source>
+            <target state="new">The job id is extracted from the response and converted to a string.</target>
+          </trans-unit>
+          <trans-unit id="212" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Webhooks button<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Webhooks button<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="213" xml:space="preserve">
+            <source>The following sample runbook accepts the previous example request and starts the virtual machines specified in the request body.</source>
+            <target state="new">The following sample runbook accepts the previous example request and starts the virtual machines specified in the request body.</target>
+          </trans-unit>
+          <trans-unit id="214" xml:space="preserve">
+            <source>Related articles</source>
+            <target state="new">Related articles</target>
+          </trans-unit>
+          <trans-unit id="215" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Starting a Runbook<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Starting a Runbook<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="216" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Viewing the Status of a Runbook Job<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Viewing the Status of a Runbook Job<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>
