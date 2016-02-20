@@ -1,0 +1,715 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="zh-tw" original="2/20/2016 11:50:47 AM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f519069c2de54d171051a171366120ff6fa06bfb</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Use SSH keys with Hadoop on Linux-based clusters from Windows | Microsoft Azure</source>
+            <target state="new">Use SSH keys with Hadoop on Linux-based clusters from Windows | Microsoft Azure</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>Learn how to create and use SSH keys to authenticate to Linux-based HDInsight clusters. Connect clusters from Windows-based clients by using the PuTTY SSH client.</source>
+            <target state="new">Learn how to create and use SSH keys to authenticate to Linux-based HDInsight clusters. Connect clusters from Windows-based clients by using the PuTTY SSH client.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Use SSH with Linux-based Hadoop on HDInsight from Windows (preview)</source>
+            <target state="new">Use SSH with Linux-based Hadoop on HDInsight from Windows (preview)</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source>Linux-based Azure HDInsight clusters provide the option of using Secure Shell (SSH) access through either a password or an SSH key.</source>
+            <target state="new">Linux-based Azure HDInsight clusters provide the option of using Secure Shell (SSH) access through either a password or an SSH key.</target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>This document provides information on connecting to HDInsight from Windows-based clients by using the PuTTY SSH client.</source>
+            <target state="new">This document provides information on connecting to HDInsight from Windows-based clients by using the PuTTY SSH client.</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>The steps in this article assume you are using a Windows-based client.</source>
+            <target state="new">The steps in this article assume you are using a Windows-based client.</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>If you are using a Linux, Unix, or OS X client, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Use SSH with Linux-based Hadoop on HDInsight from Linux, Unix, or OS X<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">If you are using a Linux, Unix, or OS X client, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Use SSH with Linux-based Hadoop on HDInsight from Linux, Unix, or OS X<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>Prerequisites</source>
+            <target state="new">Prerequisites</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>PuTTY<ept id="1">&lt;/strong&gt;</ept> and <bpt id="3">&lt;strong&gt;</bpt>PuTTYGen<ept id="3">&lt;/strong&gt;</ept> for Windows-based clients.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>PuTTY<ept id="1">&lt;/strong&gt;</ept> and <bpt id="3">&lt;strong&gt;</bpt>PuTTYGen<ept id="3">&lt;/strong&gt;</ept> for Windows-based clients.</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source>These utilities are available from <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">These utilities are available from <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>A modern web browser that supports HTML5.</source>
+            <target state="new">A modern web browser that supports HTML5.</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source>OR</source>
+            <target state="new">OR</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Azure CLI for Mac, Linux and Windows<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Azure CLI for Mac, Linux and Windows<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source>What is SSH?</source>
+            <target state="new">What is SSH?</target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>SSH is a utility for logging in to, and remotely executing, commands on a remote server.</source>
+            <target state="new">SSH is a utility for logging in to, and remotely executing, commands on a remote server.</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source>With Linux-based HDInsight, SSH establishes an encrypted connection to the cluster head node and provides a command line that you use to type in commands.</source>
+            <target state="new">With Linux-based HDInsight, SSH establishes an encrypted connection to the cluster head node and provides a command line that you use to type in commands.</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>Commands are then executed directly on the server.</source>
+            <target state="new">Commands are then executed directly on the server.</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>Create an SSH key (optional)</source>
+            <target state="new">Create an SSH key (optional)</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source>When creating a Linux-based HDInsight cluster, you have the option of using a password or an SSH key to authenticate to the server when using SSH.</source>
+            <target state="new">When creating a Linux-based HDInsight cluster, you have the option of using a password or an SSH key to authenticate to the server when using SSH.</target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source>SSH keys are considered more secure, as they are certificate-based.</source>
+            <target state="new">SSH keys are considered more secure, as they are certificate-based.</target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source>Use the following information if you plan on using SSH keys with your cluster.</source>
+            <target state="new">Use the following information if you plan on using SSH keys with your cluster.</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source>Open PuTTYGen.</source>
+            <target state="new">Open PuTTYGen.</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>For <bpt id="2">&lt;strong&gt;</bpt>Type of key to generate<ept id="2">&lt;/strong&gt;</ept>, select <bpt id="4">&lt;strong&gt;</bpt>SSH-2 RSA<ept id="4">&lt;/strong&gt;</ept>, and then click <bpt id="6">&lt;strong&gt;</bpt>Generate<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">For <bpt id="2">&lt;strong&gt;</bpt>Type of key to generate<ept id="2">&lt;/strong&gt;</ept>, select <bpt id="4">&lt;strong&gt;</bpt>SSH-2 RSA<ept id="4">&lt;/strong&gt;</ept>, and then click <bpt id="6">&lt;strong&gt;</bpt>Generate<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>PuTTYGen interface<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>PuTTYGen interface<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>Move the mouse around in the area below the progress bar, until the bar fills.</source>
+            <target state="new">Move the mouse around in the area below the progress bar, until the bar fills.</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>Moving the mouse generates random data that is used to generate the key.</source>
+            <target state="new">Moving the mouse generates random data that is used to generate the key.</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>moving the mouse around<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>moving the mouse around<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source>Once the key has been generated, the public key will be displayed.</source>
+            <target state="new">Once the key has been generated, the public key will be displayed.</target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source>For added security, you can enter a passphrase in the <bpt id="2">&lt;strong&gt;</bpt>Key passphrase<ept id="2">&lt;/strong&gt;</ept> field, and then type the same value in the <bpt id="4">&lt;strong&gt;</bpt>Confirm passphrase<ept id="4">&lt;/strong&gt;</ept> field.</source>
+            <target state="new">For added security, you can enter a passphrase in the <bpt id="2">&lt;strong&gt;</bpt>Key passphrase<ept id="2">&lt;/strong&gt;</ept> field, and then type the same value in the <bpt id="4">&lt;strong&gt;</bpt>Confirm passphrase<ept id="4">&lt;/strong&gt;</ept> field.</target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>passphrase<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>passphrase<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source>We strongly recommend that you use a secure passphrase for the key.</source>
+            <target state="new">We strongly recommend that you use a secure passphrase for the key.</target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source>However, if you forget the passphrase, there is no way to recover it.</source>
+            <target state="new">However, if you forget the passphrase, there is no way to recover it.</target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Save private key<ept id="2">&lt;/strong&gt;</ept> to save the key to a <bpt id="4">&lt;strong&gt;</bpt>.ppk<ept id="4">&lt;/strong&gt;</ept> file.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Save private key<ept id="2">&lt;/strong&gt;</ept> to save the key to a <bpt id="4">&lt;strong&gt;</bpt>.ppk<ept id="4">&lt;/strong&gt;</ept> file.</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source>This key will be used to authenticate to your Linux-based HDInsight cluster.</source>
+            <target state="new">This key will be used to authenticate to your Linux-based HDInsight cluster.</target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source>You should store this key in a secure location, as it can be used to access your Linux-based HDInsight cluster.</source>
+            <target state="new">You should store this key in a secure location, as it can be used to access your Linux-based HDInsight cluster.</target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Save public key<ept id="2">&lt;/strong&gt;</ept> to save the key as a <bpt id="4">&lt;strong&gt;</bpt>.txt<ept id="4">&lt;/strong&gt;</ept> file.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Save public key<ept id="2">&lt;/strong&gt;</ept> to save the key as a <bpt id="4">&lt;strong&gt;</bpt>.txt<ept id="4">&lt;/strong&gt;</ept> file.</target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source>This allows you to reuse the public key in the future when you create additional Linux-based HDInsight clusters.</source>
+            <target state="new">This allows you to reuse the public key in the future when you create additional Linux-based HDInsight clusters.</target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source>The public key is also displayed at the top of PuTTYGen.</source>
+            <target state="new">The public key is also displayed at the top of PuTTYGen.</target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source>You can right-click this field, copy the value, and then paste it into a form when creating a cluster using the Azure preview portal.</source>
+            <target state="new">You can right-click this field, copy the value, and then paste it into a form when creating a cluster using the Azure preview portal.</target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source>Create a Linux-based HDInsight cluster</source>
+            <target state="new">Create a Linux-based HDInsight cluster</target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source>When creating a Linux-based HDInsight cluster, you must provide the public key created previously.</source>
+            <target state="new">When creating a Linux-based HDInsight cluster, you must provide the public key created previously.</target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source>From Windows-based clients, there are two ways to create a Linux-based HDInsight cluster:</source>
+            <target state="new">From Windows-based clients, there are two ways to create a Linux-based HDInsight cluster:</target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Azure preview portal<ept id="1">&lt;/strong&gt;</ept> - Uses a web-based portal to create the cluster.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Azure preview portal<ept id="1">&lt;/strong&gt;</ept> - Uses a web-based portal to create the cluster.</target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Azure CLI for Mac, Linux and Windows<ept id="1">&lt;/strong&gt;</ept> - Uses command-line commands to create the cluster.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Azure CLI for Mac, Linux and Windows<ept id="1">&lt;/strong&gt;</ept> - Uses command-line commands to create the cluster.</target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source>Each of these methods will require the public key.</source>
+            <target state="new">Each of these methods will require the public key.</target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source>For complete information on creating a Linux-based HDInsight cluster, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Provision Linux-based HDInsight clusters<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For complete information on creating a Linux-based HDInsight cluster, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Provision Linux-based HDInsight clusters<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="147" xml:space="preserve">
+            <source>Azure preview portal</source>
+            <target state="new">Azure preview portal</target>
+          </trans-unit>
+          <trans-unit id="148" xml:space="preserve">
+            <source>When using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure preview portal[preview-portal]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> to create a Linux-based HDInsight cluster, you must enter an <bpt id="4">&lt;strong&gt;</bpt>SSH Username<ept id="4">&lt;/strong&gt;</ept>, and select to enter a <bpt id="6">&lt;strong&gt;</bpt>PASSWORD<ept id="6">&lt;/strong&gt;</ept> or <bpt id="8">&lt;strong&gt;</bpt>SSH PUBLIC KEY<ept id="8">&lt;/strong&gt;</ept>.</source>
+            <target state="new">When using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure preview portal[preview-portal]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> to create a Linux-based HDInsight cluster, you must enter an <bpt id="4">&lt;strong&gt;</bpt>SSH Username<ept id="4">&lt;/strong&gt;</ept>, and select to enter a <bpt id="6">&lt;strong&gt;</bpt>PASSWORD<ept id="6">&lt;/strong&gt;</ept> or <bpt id="8">&lt;strong&gt;</bpt>SSH PUBLIC KEY<ept id="8">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="149" xml:space="preserve">
+            <source>If you select <bpt id="2">&lt;strong&gt;</bpt>SSH PUBLIC KEY<ept id="2">&lt;/strong&gt;</ept>, you can either paste the public key (displayed in the <bpt id="4">&lt;strong&gt;</bpt>Public key for pasting into OpenSSH authorized\_keys file<ept id="4">&lt;/strong&gt;</ept> field in PuttyGen,) into the <bpt id="6">&lt;strong&gt;</bpt>SSH PublicKey<ept id="6">&lt;/strong&gt;</ept> field, or select <bpt id="8">&lt;strong&gt;</bpt>Select a file<ept id="8">&lt;/strong&gt;</ept> to browse and select the file that contains the public key.</source>
+            <target state="new">If you select <bpt id="2">&lt;strong&gt;</bpt>SSH PUBLIC KEY<ept id="2">&lt;/strong&gt;</ept>, you can either paste the public key (displayed in the <bpt id="4">&lt;strong&gt;</bpt>Public key for pasting into OpenSSH authorized\_keys file<ept id="4">&lt;/strong&gt;</ept> field in PuttyGen,) into the <bpt id="6">&lt;strong&gt;</bpt>SSH PublicKey<ept id="6">&lt;/strong&gt;</ept> field, or select <bpt id="8">&lt;strong&gt;</bpt>Select a file<ept id="8">&lt;/strong&gt;</ept> to browse and select the file that contains the public key.</target>
+          </trans-unit>
+          <trans-unit id="150" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Image of form asking for public key<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Image of form asking for public key<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="151" xml:space="preserve">
+            <source>This creates a login for the specified user, and enables either password authentication or SSH key authentication.</source>
+            <target state="new">This creates a login for the specified user, and enables either password authentication or SSH key authentication.</target>
+          </trans-unit>
+          <trans-unit id="152" xml:space="preserve">
+            <source>Azure Command-Line Interface for Mac, Linux, and Windows</source>
+            <target state="new">Azure Command-Line Interface for Mac, Linux, and Windows</target>
+          </trans-unit>
+          <trans-unit id="153" xml:space="preserve">
+            <source>You can use the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure CLI for Mac, Linux and Windows<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> to create a new cluster by using the <bpt id="4">&lt;code&gt;</bpt>azure hdinsight cluster create<ept id="4">&lt;/code&gt;</ept> command.</source>
+            <target state="new">You can use the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure CLI for Mac, Linux and Windows<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> to create a new cluster by using the <bpt id="4">&lt;code&gt;</bpt>azure hdinsight cluster create<ept id="4">&lt;/code&gt;</ept> command.</target>
+          </trans-unit>
+          <trans-unit id="154" xml:space="preserve">
+            <source>For more information on using this command, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Provision Hadoop Linux clusters in HDInsight using custom options<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information on using this command, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Provision Hadoop Linux clusters in HDInsight using custom options<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="155" xml:space="preserve">
+            <source>Connect to a Linux-based HDInsight cluster</source>
+            <target state="new">Connect to a Linux-based HDInsight cluster</target>
+          </trans-unit>
+          <trans-unit id="156" xml:space="preserve">
+            <source>Open PuTTY.</source>
+            <target state="new">Open PuTTY.</target>
+          </trans-unit>
+          <trans-unit id="157" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>putty interface<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>putty interface<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="158" xml:space="preserve">
+            <source>If you provided an SSH key when you created your user account, you must perform the following step to select the private key to use when authenticating to the cluster:</source>
+            <target state="new">If you provided an SSH key when you created your user account, you must perform the following step to select the private key to use when authenticating to the cluster:</target>
+          </trans-unit>
+          <trans-unit id="159" xml:space="preserve">
+            <source>In <bpt id="2">&lt;strong&gt;</bpt>Category<ept id="2">&lt;/strong&gt;</ept>, expand <bpt id="4">&lt;strong&gt;</bpt>Connection<ept id="4">&lt;/strong&gt;</ept>, expand <bpt id="6">&lt;strong&gt;</bpt>SSH<ept id="6">&lt;/strong&gt;</ept>, and select <bpt id="8">&lt;strong&gt;</bpt>Auth<ept id="8">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In <bpt id="2">&lt;strong&gt;</bpt>Category<ept id="2">&lt;/strong&gt;</ept>, expand <bpt id="4">&lt;strong&gt;</bpt>Connection<ept id="4">&lt;/strong&gt;</ept>, expand <bpt id="6">&lt;strong&gt;</bpt>SSH<ept id="6">&lt;/strong&gt;</ept>, and select <bpt id="8">&lt;strong&gt;</bpt>Auth<ept id="8">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
+            <source>Finally, click <bpt id="2">&lt;strong&gt;</bpt>Browse<ept id="2">&lt;/strong&gt;</ept> and select the .ppk file that contains your private key.</source>
+            <target state="new">Finally, click <bpt id="2">&lt;strong&gt;</bpt>Browse<ept id="2">&lt;/strong&gt;</ept> and select the .ppk file that contains your private key.</target>
+          </trans-unit>
+          <trans-unit id="161" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>putty interface, select private key<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>putty interface, select private key<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="162" xml:space="preserve">
+            <source>In <bpt id="2">&lt;strong&gt;</bpt>Category<ept id="2">&lt;/strong&gt;</ept>, select <bpt id="4">&lt;strong&gt;</bpt>Session<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In <bpt id="2">&lt;strong&gt;</bpt>Category<ept id="2">&lt;/strong&gt;</ept>, select <bpt id="4">&lt;strong&gt;</bpt>Session<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="163" xml:space="preserve">
+            <source>From the <bpt id="2">&lt;strong&gt;</bpt>Basic options for your PuTTY session<ept id="2">&lt;/strong&gt;</ept> screen, enter the SSH address of your HDInsight server in the <bpt id="4">&lt;strong&gt;</bpt>Host name (or IP address)<ept id="4">&lt;/strong&gt;</ept> field.</source>
+            <target state="new">From the <bpt id="2">&lt;strong&gt;</bpt>Basic options for your PuTTY session<ept id="2">&lt;/strong&gt;</ept> screen, enter the SSH address of your HDInsight server in the <bpt id="4">&lt;strong&gt;</bpt>Host name (or IP address)<ept id="4">&lt;/strong&gt;</ept> field.</target>
+          </trans-unit>
+          <trans-unit id="164" xml:space="preserve">
+            <source>The SSH address is your cluster name, then <bpt id="2">&lt;strong&gt;</bpt>-ssh.azurehdinsight.net<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">The SSH address is your cluster name, then <bpt id="2">&lt;strong&gt;</bpt>-ssh.azurehdinsight.net<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="165" xml:space="preserve">
+            <source>For example, <bpt id="2">&lt;strong&gt;</bpt>mycluster-ssh.azurehdinsight.net<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">For example, <bpt id="2">&lt;strong&gt;</bpt>mycluster-ssh.azurehdinsight.net<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="166" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>putty interface with ssh address entered<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>putty interface with ssh address entered<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="167" xml:space="preserve">
+            <source>To save the connection information for future use, enter a name for this connection under <bpt id="2">&lt;strong&gt;</bpt>Saved Sessions<ept id="2">&lt;/strong&gt;</ept>, and then click <bpt id="4">&lt;strong&gt;</bpt>Save<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">To save the connection information for future use, enter a name for this connection under <bpt id="2">&lt;strong&gt;</bpt>Saved Sessions<ept id="2">&lt;/strong&gt;</ept>, and then click <bpt id="4">&lt;strong&gt;</bpt>Save<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="168" xml:space="preserve">
+            <source>The connection will be added to the list of saved sessions.</source>
+            <target state="new">The connection will be added to the list of saved sessions.</target>
+          </trans-unit>
+          <trans-unit id="169" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Open<ept id="2">&lt;/strong&gt;</ept> to connect to the cluster.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Open<ept id="2">&lt;/strong&gt;</ept> to connect to the cluster.</target>
+          </trans-unit>
+          <trans-unit id="170" xml:space="preserve">
+            <source>If this is the first time you have connected to the cluster, you will receive a security alert.</source>
+            <target state="new">If this is the first time you have connected to the cluster, you will receive a security alert.</target>
+          </trans-unit>
+          <trans-unit id="171" xml:space="preserve">
+            <source>This is normal.</source>
+            <target state="new">This is normal.</target>
+          </trans-unit>
+          <trans-unit id="172" xml:space="preserve">
+            <source>Select <bpt id="2">&lt;strong&gt;</bpt>Yes<ept id="2">&lt;/strong&gt;</ept> to cache the server's RSA2 key to continue.</source>
+            <target state="new">Select <bpt id="2">&lt;strong&gt;</bpt>Yes<ept id="2">&lt;/strong&gt;</ept> to cache the server's RSA2 key to continue.</target>
+          </trans-unit>
+          <trans-unit id="173" xml:space="preserve">
+            <source>When prompted, enter the user that you entered when you created the cluster.</source>
+            <target state="new">When prompted, enter the user that you entered when you created the cluster.</target>
+          </trans-unit>
+          <trans-unit id="174" xml:space="preserve">
+            <source>If you provided a password for the user, you will be prompted to enter it also.</source>
+            <target state="new">If you provided a password for the user, you will be prompted to enter it also.</target>
+          </trans-unit>
+          <trans-unit id="175" xml:space="preserve">
+            <source>The above steps assume you are using port 22, which will connect to headnode0 on the HDInsight cluster.</source>
+            <target state="new">The above steps assume you are using port 22, which will connect to headnode0 on the HDInsight cluster.</target>
+          </trans-unit>
+          <trans-unit id="176" xml:space="preserve">
+            <source>If you use port 23, you will connect to headnode1.</source>
+            <target state="new">If you use port 23, you will connect to headnode1.</target>
+          </trans-unit>
+          <trans-unit id="177" xml:space="preserve">
+            <source>For more information on the head nodes, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Availability and reliability of Hadoop clusters in HDInsight<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information on the head nodes, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Availability and reliability of Hadoop clusters in HDInsight<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="178" xml:space="preserve">
+            <source>Connect to worker nodes</source>
+            <target state="new">Connect to worker nodes</target>
+          </trans-unit>
+          <trans-unit id="179" xml:space="preserve">
+            <source>The worker nodes are not directly accessible from outside the Azure datacenter, but they can be accessed from the cluster head node via SSH.</source>
+            <target state="new">The worker nodes are not directly accessible from outside the Azure datacenter, but they can be accessed from the cluster head node via SSH.</target>
+          </trans-unit>
+          <trans-unit id="180" xml:space="preserve">
+            <source>If you provided an SSH key when you created your user account, you must perform the following steps to use the private key when authenticating to the cluster if you want to connect to the worker nodes.</source>
+            <target state="new">If you provided an SSH key when you created your user account, you must perform the following steps to use the private key when authenticating to the cluster if you want to connect to the worker nodes.</target>
+          </trans-unit>
+          <trans-unit id="181" xml:space="preserve">
+            <source>Install Pageant from <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">Install Pageant from <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="182" xml:space="preserve">
+            <source>This utility is used to cache SSH keys for PuTTY.</source>
+            <target state="new">This utility is used to cache SSH keys for PuTTY.</target>
+          </trans-unit>
+          <trans-unit id="183" xml:space="preserve">
+            <source>Run Pageant.</source>
+            <target state="new">Run Pageant.</target>
+          </trans-unit>
+          <trans-unit id="184" xml:space="preserve">
+            <source>It will minimize to an icon in the status tray.</source>
+            <target state="new">It will minimize to an icon in the status tray.</target>
+          </trans-unit>
+          <trans-unit id="185" xml:space="preserve">
+            <source>Right-click the icon and select <bpt id="2">&lt;strong&gt;</bpt>Add Key<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Right-click the icon and select <bpt id="2">&lt;strong&gt;</bpt>Add Key<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="186" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>adding key<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>adding key<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="187" xml:space="preserve">
+            <source>When the browse dialog appears, select the .ppk file that contains the key, and then click <bpt id="2">&lt;strong&gt;</bpt>Open<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">When the browse dialog appears, select the .ppk file that contains the key, and then click <bpt id="2">&lt;strong&gt;</bpt>Open<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="188" xml:space="preserve">
+            <source>This adds the key to Pageant, which will provide it to PuTTY when connecting to the cluster.</source>
+            <target state="new">This adds the key to Pageant, which will provide it to PuTTY when connecting to the cluster.</target>
+          </trans-unit>
+          <trans-unit id="189" xml:space="preserve">
+            <source>If you used an SSH key to secure your account, you must complete the previous steps before you will be able to connect to worker nodes.</source>
+            <target state="new">If you used an SSH key to secure your account, you must complete the previous steps before you will be able to connect to worker nodes.</target>
+          </trans-unit>
+          <trans-unit id="190" xml:space="preserve">
+            <source>Open PuTTY.</source>
+            <target state="new">Open PuTTY.</target>
+          </trans-unit>
+          <trans-unit id="191" xml:space="preserve">
+            <source>If you use an SSH key to authenticate, in the <bpt id="2">&lt;strong&gt;</bpt>Category<ept id="2">&lt;/strong&gt;</ept> section, expand <bpt id="4">&lt;strong&gt;</bpt>Connection<ept id="4">&lt;/strong&gt;</ept>, expand <bpt id="6">&lt;strong&gt;</bpt>SSH<ept id="6">&lt;/strong&gt;</ept>, and then select <bpt id="8">&lt;strong&gt;</bpt>Auth<ept id="8">&lt;/strong&gt;</ept>.</source>
+            <target state="new">If you use an SSH key to authenticate, in the <bpt id="2">&lt;strong&gt;</bpt>Category<ept id="2">&lt;/strong&gt;</ept> section, expand <bpt id="4">&lt;strong&gt;</bpt>Connection<ept id="4">&lt;/strong&gt;</ept>, expand <bpt id="6">&lt;strong&gt;</bpt>SSH<ept id="6">&lt;/strong&gt;</ept>, and then select <bpt id="8">&lt;strong&gt;</bpt>Auth<ept id="8">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="192" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Authentication parameters<ept id="2">&lt;/strong&gt;</ept> section, enable <bpt id="4">&lt;strong&gt;</bpt>Allow agent forwarding<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Authentication parameters<ept id="2">&lt;/strong&gt;</ept> section, enable <bpt id="4">&lt;strong&gt;</bpt>Allow agent forwarding<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="193" xml:space="preserve">
+            <source>This allows PuTTY to automatically pass the certificate authentication through the connection to the cluster head node when connecting to worker nodes.</source>
+            <target state="new">This allows PuTTY to automatically pass the certificate authentication through the connection to the cluster head node when connecting to worker nodes.</target>
+          </trans-unit>
+          <trans-unit id="194" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>allow agent forwarding<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>allow agent forwarding<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="195" xml:space="preserve">
+            <source>Connect to the cluster as documented earlier.</source>
+            <target state="new">Connect to the cluster as documented earlier.</target>
+          </trans-unit>
+          <trans-unit id="196" xml:space="preserve">
+            <source>If you use an SSH key for authentication, you do not need to select the key - the SSH key added to Pageant will be used to authenticate to the cluster.</source>
+            <target state="new">If you use an SSH key for authentication, you do not need to select the key - the SSH key added to Pageant will be used to authenticate to the cluster.</target>
+          </trans-unit>
+          <trans-unit id="197" xml:space="preserve">
+            <source>After the connection has been established, use the following to retrieve a list of the nodes in your cluster.</source>
+            <target state="new">After the connection has been established, use the following to retrieve a list of the nodes in your cluster.</target>
+          </trans-unit>
+          <trans-unit id="198" xml:space="preserve">
+            <source>Replace <bpt id="2">&lt;em&gt;</bpt>ADMINPASSWORD<ept id="2">&lt;/em&gt;</ept> with the password for your cluster admin account.</source>
+            <target state="new">Replace <bpt id="2">&lt;em&gt;</bpt>ADMINPASSWORD<ept id="2">&lt;/em&gt;</ept> with the password for your cluster admin account.</target>
+          </trans-unit>
+          <trans-unit id="199" xml:space="preserve">
+            <source>Replace <bpt id="2">&lt;em&gt;</bpt>CLUSTERNAME<ept id="2">&lt;/em&gt;</ept> with the name of your cluster.</source>
+            <target state="new">Replace <bpt id="2">&lt;em&gt;</bpt>CLUSTERNAME<ept id="2">&lt;/em&gt;</ept> with the name of your cluster.</target>
+          </trans-unit>
+          <trans-unit id="200" xml:space="preserve">
+            <source>This will return information in JSON format for the nodes in the cluster, including <bpt id="2">&lt;code&gt;</bpt>host_name<ept id="2">&lt;/code&gt;</ept>, which contains the fully qualified domain name (FQDN) for each node.</source>
+            <target state="new">This will return information in JSON format for the nodes in the cluster, including <bpt id="2">&lt;code&gt;</bpt>host_name<ept id="2">&lt;/code&gt;</ept>, which contains the fully qualified domain name (FQDN) for each node.</target>
+          </trans-unit>
+          <trans-unit id="201" xml:space="preserve">
+            <source>The following is an example of a <bpt id="2">&lt;code&gt;</bpt>host_name<ept id="2">&lt;/code&gt;</ept> entry returned by the <bpt id="4">&lt;strong&gt;</bpt>curl<ept id="4">&lt;/strong&gt;</ept> command:</source>
+            <target state="new">The following is an example of a <bpt id="2">&lt;code&gt;</bpt>host_name<ept id="2">&lt;/code&gt;</ept> entry returned by the <bpt id="4">&lt;strong&gt;</bpt>curl<ept id="4">&lt;/strong&gt;</ept> command:</target>
+          </trans-unit>
+          <trans-unit id="202" xml:space="preserve">
+            <source>Once you have a list of the worker nodes you want to connect to, use the following command from the PuTTY session to open a connection to a worker node:</source>
+            <target state="new">Once you have a list of the worker nodes you want to connect to, use the following command from the PuTTY session to open a connection to a worker node:</target>
+          </trans-unit>
+          <trans-unit id="203" xml:space="preserve">
+            <source>Replace <bpt id="2">&lt;em&gt;</bpt>USERNAME<ept id="2">&lt;/em&gt;</ept> with your SSH user name and <bpt id="4">&lt;em&gt;</bpt>FQDN<ept id="4">&lt;/em&gt;</ept> with the FQDN for the worker node.</source>
+            <target state="new">Replace <bpt id="2">&lt;em&gt;</bpt>USERNAME<ept id="2">&lt;/em&gt;</ept> with your SSH user name and <bpt id="4">&lt;em&gt;</bpt>FQDN<ept id="4">&lt;/em&gt;</ept> with the FQDN for the worker node.</target>
+          </trans-unit>
+          <trans-unit id="204" xml:space="preserve">
+            <source>For example, <bpt id="2">&lt;code&gt;</bpt>workernode0.workernode-0-e2f35e63355b4f15a31c460b6d4e1230.j1.internal.cloudapp.net<ept id="2">&lt;/code&gt;</ept>.</source>
+            <target state="new">For example, <bpt id="2">&lt;code&gt;</bpt>workernode0.workernode-0-e2f35e63355b4f15a31c460b6d4e1230.j1.internal.cloudapp.net<ept id="2">&lt;/code&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="205" xml:space="preserve">
+            <source>If you use a password to authentication your SSH session, you will be prompted to enter the password again.</source>
+            <target state="new">If you use a password to authentication your SSH session, you will be prompted to enter the password again.</target>
+          </trans-unit>
+          <trans-unit id="206" xml:space="preserve">
+            <source>If you use an SSH key, the connection should finish without any prompts.</source>
+            <target state="new">If you use an SSH key, the connection should finish without any prompts.</target>
+          </trans-unit>
+          <trans-unit id="207" xml:space="preserve">
+            <source>Once the session has been established, the prompt for your PuTTY session will change from <bpt id="2">&lt;code&gt;</bpt>username@headnode<ept id="2">&lt;/code&gt;</ept> to <bpt id="4">&lt;code&gt;</bpt>username@workernode<ept id="4">&lt;/code&gt;</ept> to indicate that you are connected to the worker node.</source>
+            <target state="new">Once the session has been established, the prompt for your PuTTY session will change from <bpt id="2">&lt;code&gt;</bpt>username@headnode<ept id="2">&lt;/code&gt;</ept> to <bpt id="4">&lt;code&gt;</bpt>username@workernode<ept id="4">&lt;/code&gt;</ept> to indicate that you are connected to the worker node.</target>
+          </trans-unit>
+          <trans-unit id="208" xml:space="preserve">
+            <source>Any commands you run at this point will run on the worker node.</source>
+            <target state="new">Any commands you run at this point will run on the worker node.</target>
+          </trans-unit>
+          <trans-unit id="209" xml:space="preserve">
+            <source>Once you have finished performing actions on the worker node, use the <bpt id="2">&lt;code&gt;</bpt>exit<ept id="2">&lt;/code&gt;</ept> command to close the session to the worker node.</source>
+            <target state="new">Once you have finished performing actions on the worker node, use the <bpt id="2">&lt;code&gt;</bpt>exit<ept id="2">&lt;/code&gt;</ept> command to close the session to the worker node.</target>
+          </trans-unit>
+          <trans-unit id="210" xml:space="preserve">
+            <source>This will return you to the <bpt id="2">&lt;code&gt;</bpt>username@headnode<ept id="2">&lt;/code&gt;</ept> prompt.</source>
+            <target state="new">This will return you to the <bpt id="2">&lt;code&gt;</bpt>username@headnode<ept id="2">&lt;/code&gt;</ept> prompt.</target>
+          </trans-unit>
+          <trans-unit id="211" xml:space="preserve">
+            <source>Add more accounts</source>
+            <target state="new">Add more accounts</target>
+          </trans-unit>
+          <trans-unit id="212" xml:space="preserve">
+            <source>If you need to add more accounts to your cluster, perform the following steps:</source>
+            <target state="new">If you need to add more accounts to your cluster, perform the following steps:</target>
+          </trans-unit>
+          <trans-unit id="213" xml:space="preserve">
+            <source>Generate a new public key and private key for the new user account as described previously.</source>
+            <target state="new">Generate a new public key and private key for the new user account as described previously.</target>
+          </trans-unit>
+          <trans-unit id="214" xml:space="preserve">
+            <source>From an SSH session to the cluster, add the new user with the following command:</source>
+            <target state="new">From an SSH session to the cluster, add the new user with the following command:</target>
+          </trans-unit>
+          <trans-unit id="215" xml:space="preserve">
+            <source>This will create a new user account, but will disable password authentication.</source>
+            <target state="new">This will create a new user account, but will disable password authentication.</target>
+          </trans-unit>
+          <trans-unit id="216" xml:space="preserve">
+            <source>Create the directory and files to hold the key by using the following commands:</source>
+            <target state="new">Create the directory and files to hold the key by using the following commands:</target>
+          </trans-unit>
+          <trans-unit id="217" xml:space="preserve">
+            <source>When the nano editor opens, copy and paste in the contents of the public key for the new user account.</source>
+            <target state="new">When the nano editor opens, copy and paste in the contents of the public key for the new user account.</target>
+          </trans-unit>
+          <trans-unit id="218" xml:space="preserve">
+            <source>Finally, use <bpt id="2">&lt;strong&gt;</bpt>Ctrl-X<ept id="2">&lt;/strong&gt;</ept> to save the file and exit the editor.</source>
+            <target state="new">Finally, use <bpt id="2">&lt;strong&gt;</bpt>Ctrl-X<ept id="2">&lt;/strong&gt;</ept> to save the file and exit the editor.</target>
+          </trans-unit>
+          <trans-unit id="219" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>image of nano editor with example key<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>image of nano editor with example key<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="220" xml:space="preserve">
+            <source>Use the following command to change ownership of the .ssh folder and contents to the new user account:</source>
+            <target state="new">Use the following command to change ownership of the .ssh folder and contents to the new user account:</target>
+          </trans-unit>
+          <trans-unit id="221" xml:space="preserve">
+            <source>You should now be able to authenticate to the server with the new user account and private key.</source>
+            <target state="new">You should now be able to authenticate to the server with the new user account and private key.</target>
+          </trans-unit>
+          <trans-unit id="222" xml:space="preserve">
+            <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>SSH tunneling</source>
+            <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>SSH tunneling</target>
+          </trans-unit>
+          <trans-unit id="223" xml:space="preserve">
+            <source>SSH can be used to tunnel local requests, such as web requests, to the HDInsight cluster.</source>
+            <target state="new">SSH can be used to tunnel local requests, such as web requests, to the HDInsight cluster.</target>
+          </trans-unit>
+          <trans-unit id="224" xml:space="preserve">
+            <source>The request will then be routed to the requested resource as if it had originated on the HDInsight cluster head node.</source>
+            <target state="new">The request will then be routed to the requested resource as if it had originated on the HDInsight cluster head node.</target>
+          </trans-unit>
+          <trans-unit id="225" xml:space="preserve">
+            <source>An SSH tunnel is a requirement for accessing the web UI for sopme Hadoop services.</source>
+            <target state="new">An SSH tunnel is a requirement for accessing the web UI for sopme Hadoop services.</target>
+          </trans-unit>
+          <trans-unit id="226" xml:space="preserve">
+            <source>For example, both the Job History UI or Resource Manager UI can only be accessed using an SSH tunnel.</source>
+            <target state="new">For example, both the Job History UI or Resource Manager UI can only be accessed using an SSH tunnel.</target>
+          </trans-unit>
+          <trans-unit id="227" xml:space="preserve">
+            <source>Use the following steps to create an SSH tunnel and configure your browser to use it to connect to the cluster:</source>
+            <target state="new">Use the following steps to create an SSH tunnel and configure your browser to use it to connect to the cluster:</target>
+          </trans-unit>
+          <trans-unit id="228" xml:space="preserve">
+            <source>Open PuTTY, and enter your connection information as documented earlier in the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Connect to a Linux-based cluster<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> section.</source>
+            <target state="new">Open PuTTY, and enter your connection information as documented earlier in the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Connect to a Linux-based cluster<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> section.</target>
+          </trans-unit>
+          <trans-unit id="229" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Category<ept id="2">&lt;/strong&gt;</ept> section to the left of the dialog, expand <bpt id="4">&lt;strong&gt;</bpt>Connection<ept id="4">&lt;/strong&gt;</ept>, expand <bpt id="6">&lt;strong&gt;</bpt>SSH<ept id="6">&lt;/strong&gt;</ept>, and then select <bpt id="8">&lt;strong&gt;</bpt>Tunnels<ept id="8">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Category<ept id="2">&lt;/strong&gt;</ept> section to the left of the dialog, expand <bpt id="4">&lt;strong&gt;</bpt>Connection<ept id="4">&lt;/strong&gt;</ept>, expand <bpt id="6">&lt;strong&gt;</bpt>SSH<ept id="6">&lt;/strong&gt;</ept>, and then select <bpt id="8">&lt;strong&gt;</bpt>Tunnels<ept id="8">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="230" xml:space="preserve">
+            <source>Provide the following information on the <bpt id="2">&lt;strong&gt;</bpt>Options controlling SSH port forwarding<ept id="2">&lt;/strong&gt;</ept> form:</source>
+            <target state="new">Provide the following information on the <bpt id="2">&lt;strong&gt;</bpt>Options controlling SSH port forwarding<ept id="2">&lt;/strong&gt;</ept> form:</target>
+          </trans-unit>
+          <trans-unit id="231" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Source port<ept id="1">&lt;/strong&gt;</ept> - The port on the client that you wish to forward.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Source port<ept id="1">&lt;/strong&gt;</ept> - The port on the client that you wish to forward.</target>
+          </trans-unit>
+          <trans-unit id="232" xml:space="preserve">
+            <source>For example, <bpt id="2">&lt;strong&gt;</bpt>9876<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">For example, <bpt id="2">&lt;strong&gt;</bpt>9876<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="233" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Destination<ept id="1">&lt;/strong&gt;</ept> - The SSH address for the Linux-based HDInsight cluster.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Destination<ept id="1">&lt;/strong&gt;</ept> - The SSH address for the Linux-based HDInsight cluster.</target>
+          </trans-unit>
+          <trans-unit id="234" xml:space="preserve">
+            <source>For example, <bpt id="2">&lt;strong&gt;</bpt>mycluster-ssh.azurehdinsight.net<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">For example, <bpt id="2">&lt;strong&gt;</bpt>mycluster-ssh.azurehdinsight.net<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="235" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Dynamic<ept id="1">&lt;/strong&gt;</ept> - Enables dynamic SOCKS proxy routing.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Dynamic<ept id="1">&lt;/strong&gt;</ept> - Enables dynamic SOCKS proxy routing.</target>
+          </trans-unit>
+          <trans-unit id="236" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>image of tunneling options<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>image of tunneling options<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="237" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Add<ept id="2">&lt;/strong&gt;</ept> to add the settings, and then click <bpt id="4">&lt;strong&gt;</bpt>Open<ept id="4">&lt;/strong&gt;</ept> to open an SSH connection.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Add<ept id="2">&lt;/strong&gt;</ept> to add the settings, and then click <bpt id="4">&lt;strong&gt;</bpt>Open<ept id="4">&lt;/strong&gt;</ept> to open an SSH connection.</target>
+          </trans-unit>
+          <trans-unit id="238" xml:space="preserve">
+            <source>When prompted, log in to the server.</source>
+            <target state="new">When prompted, log in to the server.</target>
+          </trans-unit>
+          <trans-unit id="239" xml:space="preserve">
+            <source>This will establish an SSH session and enable the tunnel.</source>
+            <target state="new">This will establish an SSH session and enable the tunnel.</target>
+          </trans-unit>
+          <trans-unit id="240" xml:space="preserve">
+            <source>Configure the client program, such as Firefox, to use <bpt id="2">&lt;strong&gt;</bpt>localhost:9876<ept id="2">&lt;/strong&gt;</ept> as a <bpt id="4">&lt;strong&gt;</bpt>SOCKS v5<ept id="4">&lt;/strong&gt;</ept> proxy.</source>
+            <target state="new">Configure the client program, such as Firefox, to use <bpt id="2">&lt;strong&gt;</bpt>localhost:9876<ept id="2">&lt;/strong&gt;</ept> as a <bpt id="4">&lt;strong&gt;</bpt>SOCKS v5<ept id="4">&lt;/strong&gt;</ept> proxy.</target>
+          </trans-unit>
+          <trans-unit id="241" xml:space="preserve">
+            <source>Here's what the Firefox settings look like:</source>
+            <target state="new">Here's what the Firefox settings look like:</target>
+          </trans-unit>
+          <trans-unit id="242" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>image of Firefox settings<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>image of Firefox settings<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="243" xml:space="preserve">
+            <source>Selecting <bpt id="2">&lt;strong&gt;</bpt>Remote DNS<ept id="2">&lt;/strong&gt;</ept> will resolve DNS requests by using the HDInsight cluster.</source>
+            <target state="new">Selecting <bpt id="2">&lt;strong&gt;</bpt>Remote DNS<ept id="2">&lt;/strong&gt;</ept> will resolve DNS requests by using the HDInsight cluster.</target>
+          </trans-unit>
+          <trans-unit id="244" xml:space="preserve">
+            <source>If this is unselected, DNS will be resolved locally.</source>
+            <target state="new">If this is unselected, DNS will be resolved locally.</target>
+          </trans-unit>
+          <trans-unit id="245" xml:space="preserve">
+            <source>You can verify that traffic is being routed through the tunnel by vising a site such as <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>http://www.whatismyip.com/<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> with the proxy settings enabled and disabled in Firefox.</source>
+            <target state="new">You can verify that traffic is being routed through the tunnel by vising a site such as <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>http://www.whatismyip.com/<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> with the proxy settings enabled and disabled in Firefox.</target>
+          </trans-unit>
+          <trans-unit id="246" xml:space="preserve">
+            <source>While they are enabled, the IP address will be for a machine in the Microsoft Azure datacenter.</source>
+            <target state="new">While they are enabled, the IP address will be for a machine in the Microsoft Azure datacenter.</target>
+          </trans-unit>
+          <trans-unit id="247" xml:space="preserve">
+            <source>Browser extensions</source>
+            <target state="new">Browser extensions</target>
+          </trans-unit>
+          <trans-unit id="248" xml:space="preserve">
+            <source>While configuring the browser to use the tunnel works, you don't usually want to route all traffic over the tunnel.</source>
+            <target state="new">While configuring the browser to use the tunnel works, you don't usually want to route all traffic over the tunnel.</target>
+          </trans-unit>
+          <trans-unit id="249" xml:space="preserve">
+            <source>Browser extensions such as <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>FoxyProxy<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> support pattern matching for URL requests (FoxyProxy Standard or Plus only), so that only requests for specific URLs will be sent over the tunnel.</source>
+            <target state="new">Browser extensions such as <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>FoxyProxy<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> support pattern matching for URL requests (FoxyProxy Standard or Plus only), so that only requests for specific URLs will be sent over the tunnel.</target>
+          </trans-unit>
+          <trans-unit id="250" xml:space="preserve">
+            <source>If you have installed FoxyProxy Standard, use the following steps to configure it to only forward traffic for HDInsight over the tunnel.</source>
+            <target state="new">If you have installed FoxyProxy Standard, use the following steps to configure it to only forward traffic for HDInsight over the tunnel.</target>
+          </trans-unit>
+          <trans-unit id="251" xml:space="preserve">
+            <source>Open the FoxyProxy extension in your browser.</source>
+            <target state="new">Open the FoxyProxy extension in your browser.</target>
+          </trans-unit>
+          <trans-unit id="252" xml:space="preserve">
+            <source>For example, in Firefox, select the FoxyProxy icon next to the address field.</source>
+            <target state="new">For example, in Firefox, select the FoxyProxy icon next to the address field.</target>
+          </trans-unit>
+          <trans-unit id="253" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>foxyproxy icon<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>foxyproxy icon<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="254" xml:space="preserve">
+            <source>Select <bpt id="2">&lt;strong&gt;</bpt>Add New Proxy<ept id="2">&lt;/strong&gt;</ept>, select the <bpt id="4">&lt;strong&gt;</bpt>General<ept id="4">&lt;/strong&gt;</ept> tab, and then enter a proxy name of <bpt id="6">&lt;strong&gt;</bpt>HDInsightProxy<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Select <bpt id="2">&lt;strong&gt;</bpt>Add New Proxy<ept id="2">&lt;/strong&gt;</ept>, select the <bpt id="4">&lt;strong&gt;</bpt>General<ept id="4">&lt;/strong&gt;</ept> tab, and then enter a proxy name of <bpt id="6">&lt;strong&gt;</bpt>HDInsightProxy<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="255" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>foxyproxy general<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>foxyproxy general<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="256" xml:space="preserve">
+            <source>Select the <bpt id="2">&lt;strong&gt;</bpt>Proxy Details<ept id="2">&lt;/strong&gt;</ept> tab and populate the following fields:</source>
+            <target state="new">Select the <bpt id="2">&lt;strong&gt;</bpt>Proxy Details<ept id="2">&lt;/strong&gt;</ept> tab and populate the following fields:</target>
+          </trans-unit>
+          <trans-unit id="257" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Host or IP Address<ept id="1">&lt;/strong&gt;</ept> - This is localhost, since we are using an SSH tunnel on the local machine.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Host or IP Address<ept id="1">&lt;/strong&gt;</ept> - This is localhost, since we are using an SSH tunnel on the local machine.</target>
+          </trans-unit>
+          <trans-unit id="258" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Port<ept id="1">&lt;/strong&gt;</ept> - This is the port you used for the SSH tunnel.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Port<ept id="1">&lt;/strong&gt;</ept> - This is the port you used for the SSH tunnel.</target>
+          </trans-unit>
+          <trans-unit id="259" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>SOCKS proxy<ept id="1">&lt;/strong&gt;</ept> - Select this to enable the browser to use the tunnel as a proxy.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>SOCKS proxy<ept id="1">&lt;/strong&gt;</ept> - Select this to enable the browser to use the tunnel as a proxy.</target>
+          </trans-unit>
+          <trans-unit id="260" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>SOCKS v5<ept id="1">&lt;/strong&gt;</ept> - Select this to set the required version for the proxy.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>SOCKS v5<ept id="1">&lt;/strong&gt;</ept> - Select this to set the required version for the proxy.</target>
+          </trans-unit>
+          <trans-unit id="261" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>foxyproxy proxy<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>foxyproxy proxy<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="262" xml:space="preserve">
+            <source>Select the <bpt id="2">&lt;strong&gt;</bpt>URL Patterns<ept id="2">&lt;/strong&gt;</ept> tab, and then select <bpt id="4">&lt;strong&gt;</bpt>Add New Pattern<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Select the <bpt id="2">&lt;strong&gt;</bpt>URL Patterns<ept id="2">&lt;/strong&gt;</ept> tab, and then select <bpt id="4">&lt;strong&gt;</bpt>Add New Pattern<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="263" xml:space="preserve">
+            <source>Use the following to define the pattern, and then click <bpt id="2">&lt;strong&gt;</bpt>OK<ept id="2">&lt;/strong&gt;</ept>:</source>
+            <target state="new">Use the following to define the pattern, and then click <bpt id="2">&lt;strong&gt;</bpt>OK<ept id="2">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="264" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Pattern Name<ept id="1">&lt;/strong&gt;</ept> - <bpt id="3">&lt;strong&gt;</bpt>headnode<ept id="3">&lt;/strong&gt;</ept> - This is just a friendly name for the pattern.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Pattern Name<ept id="1">&lt;/strong&gt;</ept> - <bpt id="3">&lt;strong&gt;</bpt>headnode<ept id="3">&lt;/strong&gt;</ept> - This is just a friendly name for the pattern.</target>
+          </trans-unit>
+          <trans-unit id="265" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>URL pattern<ept id="1">&lt;/strong&gt;</ept> - <bpt id="3">&lt;strong&gt;</bpt>\*headnode\*<ept id="3">&lt;/strong&gt;</ept> - This defines a pattern that matches any URL with the word <bpt id="5">&lt;strong&gt;</bpt>headnode<ept id="5">&lt;/strong&gt;</ept> in it.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>URL pattern<ept id="1">&lt;/strong&gt;</ept> - <bpt id="3">&lt;strong&gt;</bpt>\*headnode\*<ept id="3">&lt;/strong&gt;</ept> - This defines a pattern that matches any URL with the word <bpt id="5">&lt;strong&gt;</bpt>headnode<ept id="5">&lt;/strong&gt;</ept> in it.</target>
+          </trans-unit>
+          <trans-unit id="266" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>foxyproxy pattern<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>foxyproxy pattern<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="267" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>OK<ept id="2">&lt;/strong&gt;</ept> to add the proxy and close <bpt id="4">&lt;strong&gt;</bpt>Proxy Settings<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>OK<ept id="2">&lt;/strong&gt;</ept> to add the proxy and close <bpt id="4">&lt;strong&gt;</bpt>Proxy Settings<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="268" xml:space="preserve">
+            <source>At the top of the FoxyProxy dialog, change <bpt id="2">&lt;strong&gt;</bpt>Select Mode<ept id="2">&lt;/strong&gt;</ept> to <bpt id="4">&lt;strong&gt;</bpt>Use proxies based on their pre-defined patterns and priorities<ept id="4">&lt;/strong&gt;</ept>, and then click <bpt id="6">&lt;strong&gt;</bpt>Close<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">At the top of the FoxyProxy dialog, change <bpt id="2">&lt;strong&gt;</bpt>Select Mode<ept id="2">&lt;/strong&gt;</ept> to <bpt id="4">&lt;strong&gt;</bpt>Use proxies based on their pre-defined patterns and priorities<ept id="4">&lt;/strong&gt;</ept>, and then click <bpt id="6">&lt;strong&gt;</bpt>Close<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="269" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>foxyproxy select mode<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>foxyproxy select mode<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="270" xml:space="preserve">
+            <source>After following these steps, only requests for URLs that contain the string <bpt id="2">&lt;strong&gt;</bpt>headnode<ept id="2">&lt;/strong&gt;</ept> will be routed over the SSL tunnel.</source>
+            <target state="new">After following these steps, only requests for URLs that contain the string <bpt id="2">&lt;strong&gt;</bpt>headnode<ept id="2">&lt;/strong&gt;</ept> will be routed over the SSL tunnel.</target>
+          </trans-unit>
+          <trans-unit id="271" xml:space="preserve">
+            <source>Next steps</source>
+            <target state="new">Next steps</target>
+          </trans-unit>
+          <trans-unit id="272" xml:space="preserve">
+            <source>Now that you understand how to authenticate by using an SSH key, learn how to use MapReduce with Hadoop on HDInsight.</source>
+            <target state="new">Now that you understand how to authenticate by using an SSH key, learn how to use MapReduce with Hadoop on HDInsight.</target>
+          </trans-unit>
+          <trans-unit id="273" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use Hive with HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use Hive with HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="274" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use Pig with HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use Pig with HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="275" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use MapReduce jobs with HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use MapReduce jobs with HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,927 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="zh-tw" original="2/20/2016 11:54:52 AM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a9056ec2a790707ec0ee943d7b4e35a4fa2c9aec</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Use Hadoop Sqoop in HDInsight | Microsoft Azure</source>
+            <target state="new">Use Hadoop Sqoop in HDInsight | Microsoft Azure</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>Learn how to use Azure PowerShell from a workstation to run Sqoop import and export between an Hadoop cluster and an Azure SQL database.</source>
+            <target state="new">Learn how to use Azure PowerShell from a workstation to run Sqoop import and export between an Hadoop cluster and an Azure SQL database.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Use Sqoop with Hadoop in HDInsight (Windows)</source>
+            <target state="new">Use Sqoop with Hadoop in HDInsight (Windows)</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source><ph id="1">&lt;token href="../../includes/hdinsight-selector-use-sqoop.md"/&gt;</ph></source>
+            <target state="new"><ph id="1">&lt;token href="../../includes/hdinsight-selector-use-sqoop.md"/&gt;</ph></target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>Learn how to use Azure PowerShell and the HDInsight .NET SDK from a workstation to run Sqoop to import and export between an HDInsight cluster and an Azure SQL database or SQL Server database.</source>
+            <target state="new">Learn how to use Azure PowerShell and the HDInsight .NET SDK from a workstation to run Sqoop to import and export between an HDInsight cluster and an Azure SQL database or SQL Server database.</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>The steps in this article can be used with either a Windows-based or Linux-based HDInsight cluster; however, these steps will only work from a Windows client.</source>
+            <target state="new">The steps in this article can be used with either a Windows-based or Linux-based HDInsight cluster; however, these steps will only work from a Windows client.</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>If you are using a Linux, OS X, or Unix client and a Linux-based HDInsight server, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Use Sqoop with Hadoop in HDInsight (SSH)<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new">If you are using a Linux, OS X, or Unix client and a Linux-based HDInsight server, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Use Sqoop with Hadoop in HDInsight (SSH)<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>What is Sqoop?</source>
+            <target state="new">What is Sqoop?</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source>Although Hadoop is a natural choice for processing unstructured and semistructured data, such as logs and files, there may also be a need to process structured data that is stored in relational databases.</source>
+            <target state="new">Although Hadoop is a natural choice for processing unstructured and semistructured data, such as logs and files, there may also be a need to process structured data that is stored in relational databases.</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Sqoop[sqoop-user-guide-1.4.4]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept> is a tool designed to transfer data between Hadoop clusters and relational databases.</source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Sqoop[sqoop-user-guide-1.4.4]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept> is a tool designed to transfer data between Hadoop clusters and relational databases.</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>You can use it to import data from a relational database management system (RDBMS) such as SQL Server, MySQL, or Oracle into the Hadoop distributed file system (HDFS), transform the data in Hadoop with MapReduce or Hive, and then export the data back into an RDBMS.</source>
+            <target state="new">You can use it to import data from a relational database management system (RDBMS) such as SQL Server, MySQL, or Oracle into the Hadoop distributed file system (HDFS), transform the data in Hadoop with MapReduce or Hive, and then export the data back into an RDBMS.</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source>In this tutorial, you are using a SQL Server database for your relational database.</source>
+            <target state="new">In this tutorial, you are using a SQL Server database for your relational database.</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>For Sqoop versions that are supported on HDInsight clusters, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>What's new in the cluster versions provided by HDInsight?[hdinsight-versions]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For Sqoop versions that are supported on HDInsight clusters, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>What's new in the cluster versions provided by HDInsight?[hdinsight-versions]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source>Prerequisites</source>
+            <target state="new">Prerequisites</target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>Before you begin this tutorial, you must have the following:</source>
+            <target state="new">Before you begin this tutorial, you must have the following:</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>A workstation with Azure PowerShell<ept id="1">&lt;/strong&gt;</ept>.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>A workstation with Azure PowerShell<ept id="1">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Install and use Azure PowerShell<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Install and use Azure PowerShell<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>To execute Azure PowerShell scripts, you must run Azure PowerShell as an administrator and set the execution policy to <bpt id="2">&lt;em&gt;</bpt>RemoteSigned<ept id="2">&lt;/em&gt;</ept>.</source>
+            <target state="new">To execute Azure PowerShell scripts, you must run Azure PowerShell as an administrator and set the execution policy to <bpt id="2">&lt;em&gt;</bpt>RemoteSigned<ept id="2">&lt;/em&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source>See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Run Windows PowerShell scripts[powershell-script]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Run Windows PowerShell scripts[powershell-script]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Azure HDInsight cluster<ept id="1">&lt;/strong&gt;</ept>: For instructions about cluster provision, see <bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>Get started using HDInsight[hdinsight-get-started]<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept> or <bpt id="5CapsExtId1">&lt;link&gt;</bpt><bpt id="5CapsExtId2">&lt;linkText&gt;</bpt>Provision HDInsight clusters[hdinsight-provision]<ept id="5CapsExtId2">&lt;/linkText&gt;</ept><bpt id="5CapsExtId3">&lt;title&gt;</bpt><ept id="5CapsExtId3">&lt;/title&gt;</ept><ept id="5CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Azure HDInsight cluster<ept id="1">&lt;/strong&gt;</ept>: For instructions about cluster provision, see <bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>Get started using HDInsight[hdinsight-get-started]<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept> or <bpt id="5CapsExtId1">&lt;link&gt;</bpt><bpt id="5CapsExtId2">&lt;linkText&gt;</bpt>Provision HDInsight clusters[hdinsight-provision]<ept id="5CapsExtId2">&lt;/linkText&gt;</ept><bpt id="5CapsExtId3">&lt;title&gt;</bpt><ept id="5CapsExtId3">&lt;/title&gt;</ept><ept id="5CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source>You need the following data to go through the tutorial:</source>
+            <target state="new">You need the following data to go through the tutorial:</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source>Cluster property</source>
+            <target state="new">Cluster property</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>Azure PowerShell variable name</source>
+            <target state="new">Azure PowerShell variable name</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source>Value</source>
+            <target state="new">Value</target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>Description</source>
+            <target state="new">Description</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>HDInsight cluster name</source>
+            <target state="new">HDInsight cluster name</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source>$clusterName</source>
+            <target state="new">$clusterName</target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source>Your HDInsight cluster name.</source>
+            <target state="new">Your HDInsight cluster name.</target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source>Azure Storage account name</source>
+            <target state="new">Azure Storage account name</target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source>$storageAccountName</source>
+            <target state="new">$storageAccountName</target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source>An Azure Storage account that is available to the HDInsight cluster. For this tutorial, use the default storage account that you specified during the cluster provisioning process.</source>
+            <target state="new">An Azure Storage account that is available to the HDInsight cluster. For this tutorial, use the default storage account that you specified during the cluster provisioning process.</target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source>Azure blob container name</source>
+            <target state="new">Azure blob container name</target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source>$containerName</source>
+            <target state="new">$containerName</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source>For this example, use the name of the blob that is used for the default HDInsight cluster file system. By default, it has the same name as the HDInsight cluster.</source>
+            <target state="new">For this example, use the name of the blob that is used for the default HDInsight cluster file system. By default, it has the same name as the HDInsight cluster.</target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Azure SQL database<ept id="1">&lt;/strong&gt;</ept>: You must configure a firewall rule for the Azure SQL database server to allow access from your workstation.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Azure SQL database<ept id="1">&lt;/strong&gt;</ept>: You must configure a firewall rule for the Azure SQL database server to allow access from your workstation.</target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source>For instructions about creating an Azure SQL database and configuring the firewall, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Get started using Azure SQL database[sqldatabase-get-started]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For instructions about creating an Azure SQL database and configuring the firewall, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Get started using Azure SQL database[sqldatabase-get-started]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source>This article provides a Windows PowerShell script for creating the Azure SQL database table that you need for this tutorial.</source>
+            <target state="new">This article provides a Windows PowerShell script for creating the Azure SQL database table that you need for this tutorial.</target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source>Azure SQL database property</source>
+            <target state="new">Azure SQL database property</target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source>Azure PowerShell variable name</source>
+            <target state="new">Azure PowerShell variable name</target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source>Value</source>
+            <target state="new">Value</target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source>Description</source>
+            <target state="new">Description</target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source>Azure SQL database server name</source>
+            <target state="new">Azure SQL database server name</target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source>$sqlDatabaseServer</source>
+            <target state="new">$sqlDatabaseServer</target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source>The Azure SQL database server to which Sqoop will export data to or import data from. </source>
+            <target state="new">The Azure SQL database server to which Sqoop will export data to or import data from. </target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source>Azure SQL database login name</source>
+            <target state="new">Azure SQL database login name</target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source>$sqlDatabaseLogin</source>
+            <target state="new">$sqlDatabaseLogin</target>
+          </trans-unit>
+          <trans-unit id="147" xml:space="preserve">
+            <source>Your login name for the Azure SQL database.</source>
+            <target state="new">Your login name for the Azure SQL database.</target>
+          </trans-unit>
+          <trans-unit id="148" xml:space="preserve">
+            <source>Azure SQL database login password</source>
+            <target state="new">Azure SQL database login password</target>
+          </trans-unit>
+          <trans-unit id="149" xml:space="preserve">
+            <source>$sqlDatabasePassword</source>
+            <target state="new">$sqlDatabasePassword</target>
+          </trans-unit>
+          <trans-unit id="150" xml:space="preserve">
+            <source>Your login password for the Azure SQL database.</source>
+            <target state="new">Your login password for the Azure SQL database.</target>
+          </trans-unit>
+          <trans-unit id="151" xml:space="preserve">
+            <source>Azure SQL database name</source>
+            <target state="new">Azure SQL database name</target>
+          </trans-unit>
+          <trans-unit id="152" xml:space="preserve">
+            <source>$sqlDatabaseName</source>
+            <target state="new">$sqlDatabaseName</target>
+          </trans-unit>
+          <trans-unit id="153" xml:space="preserve">
+            <source>The Azure SQL database to which Sqoop will export data to or import data from. </source>
+            <target state="new">The Azure SQL database to which Sqoop will export data to or import data from. </target>
+          </trans-unit>
+          <trans-unit id="154" xml:space="preserve">
+            <source>By default an Azure SQL database allows connections from Azure services, such as Azure HDInsight.</source>
+            <target state="new">By default an Azure SQL database allows connections from Azure services, such as Azure HDInsight.</target>
+          </trans-unit>
+          <trans-unit id="155" xml:space="preserve">
+            <source>If this firewall setting is disabled, you must enabled it from the Azure preview portal.</source>
+            <target state="new">If this firewall setting is disabled, you must enabled it from the Azure preview portal.</target>
+          </trans-unit>
+          <trans-unit id="156" xml:space="preserve">
+            <source>For instruction about creating an Azure SQL database and configuring firewall rules, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Create and Configure SQL Database[sqldatabase-create-configue]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For instruction about creating an Azure SQL database and configuring firewall rules, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Create and Configure SQL Database[sqldatabase-create-configue]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="157" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>SQL Server<ept id="1">&lt;/strong&gt;</ept>: If your HDInsight cluster is on the same virtual network in Azure as SQL Server, you can use the steps in this article to import and export data to a SQL Server database.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>SQL Server<ept id="1">&lt;/strong&gt;</ept>: If your HDInsight cluster is on the same virtual network in Azure as SQL Server, you can use the steps in this article to import and export data to a SQL Server database.</target>
+          </trans-unit>
+          <trans-unit id="158" xml:space="preserve">
+            <source>HDInsight supports only location-based virtual networks, and it does not currently work with affinity group-based virtual networks.</source>
+            <target state="new">HDInsight supports only location-based virtual networks, and it does not currently work with affinity group-based virtual networks.</target>
+          </trans-unit>
+          <trans-unit id="159" xml:space="preserve">
+            <source>To create and configure a virtual network, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Virtual Network Configuration Tasks<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">To create and configure a virtual network, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Virtual Network Configuration Tasks<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
+            <source>To provision an HDInsight cluster on a virtual network, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Provision Hadoop clusters in HDInsight using custom options<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new">To provision an HDInsight cluster on a virtual network, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Provision Hadoop clusters in HDInsight using custom options<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="161" xml:space="preserve">
+            <source>SQL Server must also allow authentication.</source>
+            <target state="new">SQL Server must also allow authentication.</target>
+          </trans-unit>
+          <trans-unit id="162" xml:space="preserve">
+            <source>You must use a SQL Server login to complete the steps in this article.</source>
+            <target state="new">You must use a SQL Server login to complete the steps in this article.</target>
+          </trans-unit>
+          <trans-unit id="163" xml:space="preserve">
+            <source>SQL Server database property</source>
+            <target state="new">SQL Server database property</target>
+          </trans-unit>
+          <trans-unit id="164" xml:space="preserve">
+            <source>Azure PowerShell variable name</source>
+            <target state="new">Azure PowerShell variable name</target>
+          </trans-unit>
+          <trans-unit id="165" xml:space="preserve">
+            <source>Value</source>
+            <target state="new">Value</target>
+          </trans-unit>
+          <trans-unit id="166" xml:space="preserve">
+            <source>Description</source>
+            <target state="new">Description</target>
+          </trans-unit>
+          <trans-unit id="167" xml:space="preserve">
+            <source>SQL Server name</source>
+            <target state="new">SQL Server name</target>
+          </trans-unit>
+          <trans-unit id="168" xml:space="preserve">
+            <source>$sqlDatabaseServer</source>
+            <target state="new">$sqlDatabaseServer</target>
+          </trans-unit>
+          <trans-unit id="169" xml:space="preserve">
+            <source>The SQL Server to which Sqoop will export data to or import data from. </source>
+            <target state="new">The SQL Server to which Sqoop will export data to or import data from. </target>
+          </trans-unit>
+          <trans-unit id="170" xml:space="preserve">
+            <source>SQL Server login name</source>
+            <target state="new">SQL Server login name</target>
+          </trans-unit>
+          <trans-unit id="171" xml:space="preserve">
+            <source>$sqlDatabaseLogin</source>
+            <target state="new">$sqlDatabaseLogin</target>
+          </trans-unit>
+          <trans-unit id="172" xml:space="preserve">
+            <source>Your login name for SQL Server.</source>
+            <target state="new">Your login name for SQL Server.</target>
+          </trans-unit>
+          <trans-unit id="173" xml:space="preserve">
+            <source>SQL Server login password</source>
+            <target state="new">SQL Server login password</target>
+          </trans-unit>
+          <trans-unit id="174" xml:space="preserve">
+            <source>$sqlDatabasePassword</source>
+            <target state="new">$sqlDatabasePassword</target>
+          </trans-unit>
+          <trans-unit id="175" xml:space="preserve">
+            <source>Your login password for SQL Server.</source>
+            <target state="new">Your login password for SQL Server.</target>
+          </trans-unit>
+          <trans-unit id="176" xml:space="preserve">
+            <source>SQL Server database name</source>
+            <target state="new">SQL Server database name</target>
+          </trans-unit>
+          <trans-unit id="177" xml:space="preserve">
+            <source>$sqlDatabaseName</source>
+            <target state="new">$sqlDatabaseName</target>
+          </trans-unit>
+          <trans-unit id="178" xml:space="preserve">
+            <source>The SQL Server database to which Sqoop will export data to or import data from. </source>
+            <target state="new">The SQL Server database to which Sqoop will export data to or import data from. </target>
+          </trans-unit>
+          <trans-unit id="179" xml:space="preserve">
+            <source>Fill-in the values in the previous tables.</source>
+            <target state="new">Fill-in the values in the previous tables.</target>
+          </trans-unit>
+          <trans-unit id="180" xml:space="preserve">
+            <source>It will be helpful for going through this tutorial.</source>
+            <target state="new">It will be helpful for going through this tutorial.</target>
+          </trans-unit>
+          <trans-unit id="181" xml:space="preserve">
+            <source>Understand the scenario</source>
+            <target state="new">Understand the scenario</target>
+          </trans-unit>
+          <trans-unit id="182" xml:space="preserve">
+            <source>An HDInsight cluster comes with some sample data.</source>
+            <target state="new">An HDInsight cluster comes with some sample data.</target>
+          </trans-unit>
+          <trans-unit id="183" xml:space="preserve">
+            <source>You will use the following two samples:</source>
+            <target state="new">You will use the following two samples:</target>
+          </trans-unit>
+          <trans-unit id="184" xml:space="preserve">
+            <source>A log4j log file, which is located at <bpt id="2">&lt;em&gt;</bpt>/example/data/sample.log<ept id="2">&lt;/em&gt;</ept>.</source>
+            <target state="new">A log4j log file, which is located at <bpt id="2">&lt;em&gt;</bpt>/example/data/sample.log<ept id="2">&lt;/em&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="185" xml:space="preserve">
+            <source>The following logs are extracted from the file:</source>
+            <target state="new">The following logs are extracted from the file:</target>
+          </trans-unit>
+          <trans-unit id="186" xml:space="preserve">
+            <source>A Hive table named <bpt id="2">&lt;em&gt;</bpt>hivesampletable<ept id="2">&lt;/em&gt;</ept>, which references the data file located at <bpt id="4">&lt;em&gt;</bpt>/hive/warehouse/hivesampletable<ept id="4">&lt;/em&gt;</ept>.</source>
+            <target state="new">A Hive table named <bpt id="2">&lt;em&gt;</bpt>hivesampletable<ept id="2">&lt;/em&gt;</ept>, which references the data file located at <bpt id="4">&lt;em&gt;</bpt>/hive/warehouse/hivesampletable<ept id="4">&lt;/em&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="187" xml:space="preserve">
+            <source>The table contains some mobile device data.</source>
+            <target state="new">The table contains some mobile device data.</target>
+          </trans-unit>
+          <trans-unit id="188" xml:space="preserve">
+            <source>The Hive table schema is:</source>
+            <target state="new">The Hive table schema is:</target>
+          </trans-unit>
+          <trans-unit id="189" xml:space="preserve">
+            <source>Field</source>
+            <target state="new">Field</target>
+          </trans-unit>
+          <trans-unit id="190" xml:space="preserve">
+            <source>Data type</source>
+            <target state="new">Data type</target>
+          </trans-unit>
+          <trans-unit id="191" xml:space="preserve">
+            <source>clientid</source>
+            <target state="new">clientid</target>
+          </trans-unit>
+          <trans-unit id="192" xml:space="preserve">
+            <source>string</source>
+            <target state="new">string</target>
+          </trans-unit>
+          <trans-unit id="193" xml:space="preserve">
+            <source>querytime</source>
+            <target state="new">querytime</target>
+          </trans-unit>
+          <trans-unit id="194" xml:space="preserve">
+            <source>string</source>
+            <target state="new">string</target>
+          </trans-unit>
+          <trans-unit id="195" xml:space="preserve">
+            <source>market</source>
+            <target state="new">market</target>
+          </trans-unit>
+          <trans-unit id="196" xml:space="preserve">
+            <source>string</source>
+            <target state="new">string</target>
+          </trans-unit>
+          <trans-unit id="197" xml:space="preserve">
+            <source>deviceplatform</source>
+            <target state="new">deviceplatform</target>
+          </trans-unit>
+          <trans-unit id="198" xml:space="preserve">
+            <source>string</source>
+            <target state="new">string</target>
+          </trans-unit>
+          <trans-unit id="199" xml:space="preserve">
+            <source>devicemake</source>
+            <target state="new">devicemake</target>
+          </trans-unit>
+          <trans-unit id="200" xml:space="preserve">
+            <source>string</source>
+            <target state="new">string</target>
+          </trans-unit>
+          <trans-unit id="201" xml:space="preserve">
+            <source>devicemodel</source>
+            <target state="new">devicemodel</target>
+          </trans-unit>
+          <trans-unit id="202" xml:space="preserve">
+            <source>string</source>
+            <target state="new">string</target>
+          </trans-unit>
+          <trans-unit id="203" xml:space="preserve">
+            <source>state</source>
+            <target state="new">state</target>
+          </trans-unit>
+          <trans-unit id="204" xml:space="preserve">
+            <source>string</source>
+            <target state="new">string</target>
+          </trans-unit>
+          <trans-unit id="205" xml:space="preserve">
+            <source>country</source>
+            <target state="new">country</target>
+          </trans-unit>
+          <trans-unit id="206" xml:space="preserve">
+            <source>string</source>
+            <target state="new">string</target>
+          </trans-unit>
+          <trans-unit id="207" xml:space="preserve">
+            <source>querydwelltime</source>
+            <target state="new">querydwelltime</target>
+          </trans-unit>
+          <trans-unit id="208" xml:space="preserve">
+            <source>double</source>
+            <target state="new">double</target>
+          </trans-unit>
+          <trans-unit id="209" xml:space="preserve">
+            <source>sessionid</source>
+            <target state="new">sessionid</target>
+          </trans-unit>
+          <trans-unit id="210" xml:space="preserve">
+            <source>bigint</source>
+            <target state="new">bigint</target>
+          </trans-unit>
+          <trans-unit id="211" xml:space="preserve">
+            <source>sessionpagevieworder</source>
+            <target state="new">sessionpagevieworder</target>
+          </trans-unit>
+          <trans-unit id="212" xml:space="preserve">
+            <source>bigint</source>
+            <target state="new">bigint</target>
+          </trans-unit>
+          <trans-unit id="213" xml:space="preserve">
+            <source>You will first export <bpt id="2">&lt;em&gt;</bpt>sample.log<ept id="2">&lt;/em&gt;</ept> and <bpt id="4">&lt;em&gt;</bpt>hivesampletable<ept id="4">&lt;/em&gt;</ept> to the Azure SQL database or to SQL Server, and then import the table that contains the mobile device data back to HDInsight by using the following path:</source>
+            <target state="new">You will first export <bpt id="2">&lt;em&gt;</bpt>sample.log<ept id="2">&lt;/em&gt;</ept> and <bpt id="4">&lt;em&gt;</bpt>hivesampletable<ept id="4">&lt;/em&gt;</ept> to the Azure SQL database or to SQL Server, and then import the table that contains the mobile device data back to HDInsight by using the following path:</target>
+          </trans-unit>
+          <trans-unit id="214" xml:space="preserve">
+            <source>Understand HDInsight storage</source>
+            <target state="new">Understand HDInsight storage</target>
+          </trans-unit>
+          <trans-unit id="215" xml:space="preserve">
+            <source>HDInsight uses Azure Blob storage for data storage.</source>
+            <target state="new">HDInsight uses Azure Blob storage for data storage.</target>
+          </trans-unit>
+          <trans-unit id="216" xml:space="preserve">
+            <source>For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Use Azure Blob storage with HDInsight[hdinsight-storage]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Use Azure Blob storage with HDInsight[hdinsight-storage]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="217" xml:space="preserve">
+            <source>When you provision an HDInsight cluster, an Azure Storage account and a specific blob storage container from that account are designated as the default file system, like in HDFS.</source>
+            <target state="new">When you provision an HDInsight cluster, an Azure Storage account and a specific blob storage container from that account are designated as the default file system, like in HDFS.</target>
+          </trans-unit>
+          <trans-unit id="218" xml:space="preserve">
+            <source>In addition to this storage account, you can add additional storage accounts from the same Azure subscription or from different Azure subscriptions during the provision process.</source>
+            <target state="new">In addition to this storage account, you can add additional storage accounts from the same Azure subscription or from different Azure subscriptions during the provision process.</target>
+          </trans-unit>
+          <trans-unit id="219" xml:space="preserve">
+            <source>For instructions about adding additional storage accounts, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Provision HDInsight clusters[hdinsight-provision]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For instructions about adding additional storage accounts, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Provision HDInsight clusters[hdinsight-provision]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="220" xml:space="preserve">
+            <source>To simply the Windows PowerShell script used in this tutorial, all of the files are stored in the default file system container located at <bpt id="2">&lt;em&gt;</bpt>/tutorials/usesqoop<ept id="2">&lt;/em&gt;</ept>.</source>
+            <target state="new">To simply the Windows PowerShell script used in this tutorial, all of the files are stored in the default file system container located at <bpt id="2">&lt;em&gt;</bpt>/tutorials/usesqoop<ept id="2">&lt;/em&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="221" xml:space="preserve">
+            <source>By default, this container has the same name as the HDInsight cluster name.</source>
+            <target state="new">By default, this container has the same name as the HDInsight cluster name.</target>
+          </trans-unit>
+          <trans-unit id="222" xml:space="preserve">
+            <source>The syntax is:</source>
+            <target state="new">The syntax is:</target>
+          </trans-unit>
+          <trans-unit id="223" xml:space="preserve">
+            <source>Only the <bpt id="2">&lt;em&gt;</bpt>wasb://<ept id="2">&lt;/em&gt;</ept> syntax is supported in HDInsight cluster version 3.0.</source>
+            <target state="new">Only the <bpt id="2">&lt;em&gt;</bpt>wasb://<ept id="2">&lt;/em&gt;</ept> syntax is supported in HDInsight cluster version 3.0.</target>
+          </trans-unit>
+          <trans-unit id="224" xml:space="preserve">
+            <source>The older <bpt id="2">&lt;em&gt;</bpt>asv://<ept id="2">&lt;/em&gt;</ept> syntax is supported in HDInsight 2.1 and 1.6 clusters, but it is not supported in HDInsight 3.0 clusters.</source>
+            <target state="new">The older <bpt id="2">&lt;em&gt;</bpt>asv://<ept id="2">&lt;/em&gt;</ept> syntax is supported in HDInsight 2.1 and 1.6 clusters, but it is not supported in HDInsight 3.0 clusters.</target>
+          </trans-unit>
+          <trans-unit id="225" xml:space="preserve">
+            <source>The <bpt id="2">&lt;em&gt;</bpt>wasb://<ept id="2">&lt;/em&gt;</ept> path is a virtual path.</source>
+            <target state="new">The <bpt id="2">&lt;em&gt;</bpt>wasb://<ept id="2">&lt;/em&gt;</ept> path is a virtual path.</target>
+          </trans-unit>
+          <trans-unit id="226" xml:space="preserve">
+            <source>For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Use Azure Blob storage with HDInsight[hdinsight-storage]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Use Azure Blob storage with HDInsight[hdinsight-storage]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="227" xml:space="preserve">
+            <source>A file that is stored in the default file system blob can be accessed from HDInsight by using any of the following URIs (the following examples use sample.log):</source>
+            <target state="new">A file that is stored in the default file system blob can be accessed from HDInsight by using any of the following URIs (the following examples use sample.log):</target>
+          </trans-unit>
+          <trans-unit id="228" xml:space="preserve">
+            <source>If you want to access the file directly from the storage account, the blob name for the file is:</source>
+            <target state="new">If you want to access the file directly from the storage account, the blob name for the file is:</target>
+          </trans-unit>
+          <trans-unit id="229" xml:space="preserve">
+            <source>Prepare the tutorial</source>
+            <target state="new">Prepare the tutorial</target>
+          </trans-unit>
+          <trans-unit id="230" xml:space="preserve">
+            <source>You will create two tables in the Azure SQL database or in SQL Server.</source>
+            <target state="new">You will create two tables in the Azure SQL database or in SQL Server.</target>
+          </trans-unit>
+          <trans-unit id="231" xml:space="preserve">
+            <source>These are used by Sqoop to export later in the tutorial.</source>
+            <target state="new">These are used by Sqoop to export later in the tutorial.</target>
+          </trans-unit>
+          <trans-unit id="232" xml:space="preserve">
+            <source>You also need to process the sample.log files before they can be processed by Sqoop.</source>
+            <target state="new">You also need to process the sample.log files before they can be processed by Sqoop.</target>
+          </trans-unit>
+          <trans-unit id="233" xml:space="preserve">
+            <source>Create a SQL tables</source>
+            <target state="new">Create a SQL tables</target>
+          </trans-unit>
+          <trans-unit id="234" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>For an Azure SQL database<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>For an Azure SQL database<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="235" xml:space="preserve">
+            <source>Open the Windows PowerShell ISE (on the Start screen in Windows 8, type <bpt id="2">&lt;strong&gt;</bpt>PowerShell_ISE<ept id="2">&lt;/strong&gt;</ept>, and then click <bpt id="4">&lt;strong&gt;</bpt>Windows PowerShell ISE<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Open the Windows PowerShell ISE (on the Start screen in Windows 8, type <bpt id="2">&lt;strong&gt;</bpt>PowerShell_ISE<ept id="2">&lt;/strong&gt;</ept>, and then click <bpt id="4">&lt;strong&gt;</bpt>Windows PowerShell ISE<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="236" xml:space="preserve">
+            <source>See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Start Windows PowerShell on Windows 8 and Windows[powershell-start]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>).</source>
+            <target state="new">See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Start Windows PowerShell on Windows 8 and Windows[powershell-start]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>).</target>
+          </trans-unit>
+          <trans-unit id="237" xml:space="preserve">
+            <source>Copy the following script into the script pane, and then set the first four variables:</source>
+            <target state="new">Copy the following script into the script pane, and then set the first four variables:</target>
+          </trans-unit>
+          <trans-unit id="238" xml:space="preserve">
+            <source>For more descriptions of the variables, see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Prerequisites<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> section in this tutorial.</source>
+            <target state="new">For more descriptions of the variables, see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Prerequisites<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> section in this tutorial.</target>
+          </trans-unit>
+          <trans-unit id="239" xml:space="preserve">
+            <source>Append the following script in the script pane.</source>
+            <target state="new">Append the following script in the script pane.</target>
+          </trans-unit>
+          <trans-unit id="240" xml:space="preserve">
+            <source>These are the SQL statements that define the two tables and their clustered indexes.</source>
+            <target state="new">These are the SQL statements that define the two tables and their clustered indexes.</target>
+          </trans-unit>
+          <trans-unit id="241" xml:space="preserve">
+            <source>The Azure SQL database requires a clustered index.</source>
+            <target state="new">The Azure SQL database requires a clustered index.</target>
+          </trans-unit>
+          <trans-unit id="242" xml:space="preserve">
+            <source>Append the following script in the script pane to run the SQL commands:</source>
+            <target state="new">Append the following script in the script pane to run the SQL commands:</target>
+          </trans-unit>
+          <trans-unit id="243" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Run Script<ept id="2">&lt;/strong&gt;</ept> or press <bpt id="4">&lt;strong&gt;</bpt>F5<ept id="4">&lt;/strong&gt;</ept> to run the script.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Run Script<ept id="2">&lt;/strong&gt;</ept> or press <bpt id="4">&lt;strong&gt;</bpt>F5<ept id="4">&lt;/strong&gt;</ept> to run the script.</target>
+          </trans-unit>
+          <trans-unit id="244" xml:space="preserve">
+            <source>Use the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>preview portal[azure-management-portal]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> to examine the tables and clustered indexes.</source>
+            <target state="new">Use the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>preview portal[azure-management-portal]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> to examine the tables and clustered indexes.</target>
+          </trans-unit>
+          <trans-unit id="245" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>For SQL Server<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>For SQL Server<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="246" xml:space="preserve">
+            <source>Open <bpt id="2">&lt;strong&gt;</bpt>SQL Server Management Studio<ept id="2">&lt;/strong&gt;</ept> and connect to SQL Server.</source>
+            <target state="new">Open <bpt id="2">&lt;strong&gt;</bpt>SQL Server Management Studio<ept id="2">&lt;/strong&gt;</ept> and connect to SQL Server.</target>
+          </trans-unit>
+          <trans-unit id="247" xml:space="preserve">
+            <source>Create a new database named <bpt id="2">&lt;strong&gt;</bpt>sqoopdb<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Create a new database named <bpt id="2">&lt;strong&gt;</bpt>sqoopdb<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="248" xml:space="preserve">
+            <source>Select the <bpt id="2">&lt;strong&gt;</bpt>sqoopdb<ept id="2">&lt;/strong&gt;</ept> database, and then select <bpt id="4">&lt;strong&gt;</bpt>New query<ept id="4">&lt;/strong&gt;</ept> from the ribbon at the top of SQL Server Management Studio.</source>
+            <target state="new">Select the <bpt id="2">&lt;strong&gt;</bpt>sqoopdb<ept id="2">&lt;/strong&gt;</ept> database, and then select <bpt id="4">&lt;strong&gt;</bpt>New query<ept id="4">&lt;/strong&gt;</ept> from the ribbon at the top of SQL Server Management Studio.</target>
+          </trans-unit>
+          <trans-unit id="249" xml:space="preserve">
+            <source>Enter the following information in the query window:</source>
+            <target state="new">Enter the following information in the query window:</target>
+          </trans-unit>
+          <trans-unit id="250" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>F5<ept id="2">&lt;/strong&gt;</ept>, or select **!</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>F5<ept id="2">&lt;/strong&gt;</ept>, or select **!</target>
+          </trans-unit>
+          <trans-unit id="251" xml:space="preserve">
+            <source>Execute** on the ribbon to run the query.</source>
+            <target state="new">Execute** on the ribbon to run the query.</target>
+          </trans-unit>
+          <trans-unit id="252" xml:space="preserve">
+            <source>The following message should appear under the query:</source>
+            <target state="new">The following message should appear under the query:</target>
+          </trans-unit>
+          <trans-unit id="253" xml:space="preserve">
+            <source>Close SQL Server Management Studio.</source>
+            <target state="new">Close SQL Server Management Studio.</target>
+          </trans-unit>
+          <trans-unit id="254" xml:space="preserve">
+            <source>Generate data</source>
+            <target state="new">Generate data</target>
+          </trans-unit>
+          <trans-unit id="255" xml:space="preserve">
+            <source>In this tutorial, you will export a log4j log file (a delimited file) and a Hive table to an Azure SQL database.</source>
+            <target state="new">In this tutorial, you will export a log4j log file (a delimited file) and a Hive table to an Azure SQL database.</target>
+          </trans-unit>
+          <trans-unit id="256" xml:space="preserve">
+            <source>The delimited file is called <bpt id="2">&lt;em&gt;</bpt>/example/data/sample.log<ept id="2">&lt;/em&gt;</ept>.</source>
+            <target state="new">The delimited file is called <bpt id="2">&lt;em&gt;</bpt>/example/data/sample.log<ept id="2">&lt;/em&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="257" xml:space="preserve">
+            <source>Earlier in the tutorial, you saw a few samples of log4j logs.</source>
+            <target state="new">Earlier in the tutorial, you saw a few samples of log4j logs.</target>
+          </trans-unit>
+          <trans-unit id="258" xml:space="preserve">
+            <source>In the log file, there are some empty lines and some lines similar to these:</source>
+            <target state="new">In the log file, there are some empty lines and some lines similar to these:</target>
+          </trans-unit>
+          <trans-unit id="259" xml:space="preserve">
+            <source>This is fine for other examples that use this data, but we must remove these exceptions before we can import into the Azure SQL database or SQL Server.</source>
+            <target state="new">This is fine for other examples that use this data, but we must remove these exceptions before we can import into the Azure SQL database or SQL Server.</target>
+          </trans-unit>
+          <trans-unit id="260" xml:space="preserve">
+            <source>Sqoop export will fail if there is an empty string or a line with a fewer number of elements than the number of fields defined in the Azure SQL database table.</source>
+            <target state="new">Sqoop export will fail if there is an empty string or a line with a fewer number of elements than the number of fields defined in the Azure SQL database table.</target>
+          </trans-unit>
+          <trans-unit id="261" xml:space="preserve">
+            <source>The log4jlogs table has 7 string-type fields.</source>
+            <target state="new">The log4jlogs table has 7 string-type fields.</target>
+          </trans-unit>
+          <trans-unit id="262" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>To process the sample.log file<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>To process the sample.log file<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="263" xml:space="preserve">
+            <source>Open the Windows PowerShell ISE.</source>
+            <target state="new">Open the Windows PowerShell ISE.</target>
+          </trans-unit>
+          <trans-unit id="264" xml:space="preserve">
+            <source>In the bottom pane, run the following command to connect to your Azure subscription:</source>
+            <target state="new">In the bottom pane, run the following command to connect to your Azure subscription:</target>
+          </trans-unit>
+          <trans-unit id="265" xml:space="preserve">
+            <source>You will be prompted to enter your Azure account credentials.</source>
+            <target state="new">You will be prompted to enter your Azure account credentials.</target>
+          </trans-unit>
+          <trans-unit id="266" xml:space="preserve">
+            <source>This method of adding a subscription connection times out, and after 12 hours, you will have to log in again.</source>
+            <target state="new">This method of adding a subscription connection times out, and after 12 hours, you will have to log in again.</target>
+          </trans-unit>
+          <trans-unit id="267" xml:space="preserve">
+            <source>If you have multiple Azure subscriptions and the default subscription is not the one you want to use, use the <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Select-AzureSubscription<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept> cmdlet to select the current subscription.</source>
+            <target state="new">If you have multiple Azure subscriptions and the default subscription is not the one you want to use, use the <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Select-AzureSubscription<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept> cmdlet to select the current subscription.</target>
+          </trans-unit>
+          <trans-unit id="268" xml:space="preserve">
+            <source>Copy the following script into the script pane, and then set the first two variables:</source>
+            <target state="new">Copy the following script into the script pane, and then set the first two variables:</target>
+          </trans-unit>
+          <trans-unit id="269" xml:space="preserve">
+            <source>For more descriptions of the variables, see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Prerequisites<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> section in this tutorial.</source>
+            <target state="new">For more descriptions of the variables, see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Prerequisites<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> section in this tutorial.</target>
+          </trans-unit>
+          <trans-unit id="270" xml:space="preserve">
+            <source>Append the following script in the script pane:</source>
+            <target state="new">Append the following script in the script pane:</target>
+          </trans-unit>
+          <trans-unit id="271" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Run Script<ept id="2">&lt;/strong&gt;</ept> or press <bpt id="4">&lt;strong&gt;</bpt>F5<ept id="4">&lt;/strong&gt;</ept> to run the script.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Run Script<ept id="2">&lt;/strong&gt;</ept> or press <bpt id="4">&lt;strong&gt;</bpt>F5<ept id="4">&lt;/strong&gt;</ept> to run the script.</target>
+          </trans-unit>
+          <trans-unit id="272" xml:space="preserve">
+            <source>To examine the modified data file, you can use the preview portal, an Azure Storage explorer tool, or Azure PowerShell.</source>
+            <target state="new">To examine the modified data file, you can use the preview portal, an Azure Storage explorer tool, or Azure PowerShell.</target>
+          </trans-unit>
+          <trans-unit id="273" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Get started with HDInsight[hdinsight-get-started]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept> has a code sample for using Azure PowerShell to download a file and display the file content.</source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Get started with HDInsight[hdinsight-get-started]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept> has a code sample for using Azure PowerShell to download a file and display the file content.</target>
+          </trans-unit>
+          <trans-unit id="274" xml:space="preserve">
+            <source>Use PowerShell to run Sqoop export</source>
+            <target state="new">Use PowerShell to run Sqoop export</target>
+          </trans-unit>
+          <trans-unit id="275" xml:space="preserve">
+            <source>In this section, you will use Azure PowerShell to run the Sqoop export command to export a Hive table and a data file to an Azure SQL database or to SQL Server.</source>
+            <target state="new">In this section, you will use Azure PowerShell to run the Sqoop export command to export a Hive table and a data file to an Azure SQL database or to SQL Server.</target>
+          </trans-unit>
+          <trans-unit id="276" xml:space="preserve">
+            <source>The next section provides an HDInsight .NET sample.</source>
+            <target state="new">The next section provides an HDInsight .NET sample.</target>
+          </trans-unit>
+          <trans-unit id="277" xml:space="preserve">
+            <source>Other than connection string information, the steps in this section should work for an Azure SQL database or for SQL Server.</source>
+            <target state="new">Other than connection string information, the steps in this section should work for an Azure SQL database or for SQL Server.</target>
+          </trans-unit>
+          <trans-unit id="278" xml:space="preserve">
+            <source>These steps were tested by using the following configuration:</source>
+            <target state="new">These steps were tested by using the following configuration:</target>
+          </trans-unit>
+          <trans-unit id="279" xml:space="preserve">
+            <source>* <bpt id="2">&lt;strong&gt;</bpt>Azure virtual network point-to-site configuration<ept id="2">&lt;/strong&gt;</ept>: A virtual network connected the HDInsight cluster to a SQL Server in a private datacenter.</source>
+            <target state="new">* <bpt id="2">&lt;strong&gt;</bpt>Azure virtual network point-to-site configuration<ept id="2">&lt;/strong&gt;</ept>: A virtual network connected the HDInsight cluster to a SQL Server in a private datacenter.</target>
+          </trans-unit>
+          <trans-unit id="280" xml:space="preserve">
+            <source>See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Configure a Point-to-Site VPN in the Management Portal<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for more information.</source>
+            <target state="new">See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Configure a Point-to-Site VPN in the Management Portal<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for more information.</target>
+          </trans-unit>
+          <trans-unit id="281" xml:space="preserve">
+            <source>* <bpt id="2">&lt;strong&gt;</bpt>Azure HDInsight 3.1<ept id="2">&lt;/strong&gt;</ept>: See <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Provision Hadoop clusters in HDInsight using custom options<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept> for information about creating a cluster on a virtual network.</source>
+            <target state="new">* <bpt id="2">&lt;strong&gt;</bpt>Azure HDInsight 3.1<ept id="2">&lt;/strong&gt;</ept>: See <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Provision Hadoop clusters in HDInsight using custom options<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept> for information about creating a cluster on a virtual network.</target>
+          </trans-unit>
+          <trans-unit id="282" xml:space="preserve">
+            <source>* <bpt id="2">&lt;strong&gt;</bpt>SQL Server 2014<ept id="2">&lt;/strong&gt;</ept>: Configured to allow authentication and running the VPN client configuration package to connect securely to the virtual network.</source>
+            <target state="new">* <bpt id="2">&lt;strong&gt;</bpt>SQL Server 2014<ept id="2">&lt;/strong&gt;</ept>: Configured to allow authentication and running the VPN client configuration package to connect securely to the virtual network.</target>
+          </trans-unit>
+          <trans-unit id="283" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>To export the log4j log file<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>To export the log4j log file<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="284" xml:space="preserve">
+            <source>Open the Windows PowerShell ISE.</source>
+            <target state="new">Open the Windows PowerShell ISE.</target>
+          </trans-unit>
+          <trans-unit id="285" xml:space="preserve">
+            <source>In the bottom pane, run the following command to connect to your Azure subscription:</source>
+            <target state="new">In the bottom pane, run the following command to connect to your Azure subscription:</target>
+          </trans-unit>
+          <trans-unit id="286" xml:space="preserve">
+            <source>You will be prompted to enter your Azure account credentials.</source>
+            <target state="new">You will be prompted to enter your Azure account credentials.</target>
+          </trans-unit>
+          <trans-unit id="287" xml:space="preserve">
+            <source>Copy the following script into the script pane, and then set the first seven variables:</source>
+            <target state="new">Copy the following script into the script pane, and then set the first seven variables:</target>
+          </trans-unit>
+          <trans-unit id="288" xml:space="preserve">
+            <source>For more descriptions of the variables, see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Prerequisites<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> section in this tutorial.</source>
+            <target state="new">For more descriptions of the variables, see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Prerequisites<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> section in this tutorial.</target>
+          </trans-unit>
+          <trans-unit id="289" xml:space="preserve">
+            <source>Notice that $exportDir_log4j doesn't have the sample.log file file name specified.</source>
+            <target state="new">Notice that $exportDir_log4j doesn't have the sample.log file file name specified.</target>
+          </trans-unit>
+          <trans-unit id="290" xml:space="preserve">
+            <source>Sqoop will export the data from all of the files under that folder.</source>
+            <target state="new">Sqoop will export the data from all of the files under that folder.</target>
+          </trans-unit>
+          <trans-unit id="291" xml:space="preserve">
+            <source>Append the following script in the script pane:</source>
+            <target state="new">Append the following script in the script pane:</target>
+          </trans-unit>
+          <trans-unit id="292" xml:space="preserve">
+            <source>Notice that the field delimiter is <bpt id="2">&lt;strong&gt;</bpt>\0x20<ept id="2">&lt;/strong&gt;</ept>, which is space.</source>
+            <target state="new">Notice that the field delimiter is <bpt id="2">&lt;strong&gt;</bpt>\0x20<ept id="2">&lt;/strong&gt;</ept>, which is space.</target>
+          </trans-unit>
+          <trans-unit id="293" xml:space="preserve">
+            <source>The delimiter is defined in the sample.log file Azure PowerShell script.</source>
+            <target state="new">The delimiter is defined in the sample.log file Azure PowerShell script.</target>
+          </trans-unit>
+          <trans-unit id="294" xml:space="preserve">
+            <source>To find out about <bpt id="2">&lt;strong&gt;</bpt>-m 1<ept id="2">&lt;/strong&gt;</ept>, see <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Sqoop User Guide[sqoop-user-guide-1.4.4]<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">To find out about <bpt id="2">&lt;strong&gt;</bpt>-m 1<ept id="2">&lt;/strong&gt;</ept>, see <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Sqoop User Guide[sqoop-user-guide-1.4.4]<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="295" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Run Script<ept id="2">&lt;/strong&gt;</ept> or press <bpt id="4">&lt;strong&gt;</bpt>F5<ept id="4">&lt;/strong&gt;</ept> to run the script.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Run Script<ept id="2">&lt;/strong&gt;</ept> or press <bpt id="4">&lt;strong&gt;</bpt>F5<ept id="4">&lt;/strong&gt;</ept> to run the script.</target>
+          </trans-unit>
+          <trans-unit id="296" xml:space="preserve">
+            <source>Use the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>preview portal[azure-management-portal]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> to examine the exported data.</source>
+            <target state="new">Use the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>preview portal[azure-management-portal]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> to examine the exported data.</target>
+          </trans-unit>
+          <trans-unit id="297" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>To export the hivesampletable Hive table<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>To export the hivesampletable Hive table<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="298" xml:space="preserve">
+            <source>Open the Windows PowerShell ISE.</source>
+            <target state="new">Open the Windows PowerShell ISE.</target>
+          </trans-unit>
+          <trans-unit id="299" xml:space="preserve">
+            <source>In the bottom pane, run the following command to connect to your Azure subscription:</source>
+            <target state="new">In the bottom pane, run the following command to connect to your Azure subscription:</target>
+          </trans-unit>
+          <trans-unit id="300" xml:space="preserve">
+            <source>You will be prompted to enter your Azure account credentials.</source>
+            <target state="new">You will be prompted to enter your Azure account credentials.</target>
+          </trans-unit>
+          <trans-unit id="301" xml:space="preserve">
+            <source>Copy the following script into the script pane, and then set the first seven variables:</source>
+            <target state="new">Copy the following script into the script pane, and then set the first seven variables:</target>
+          </trans-unit>
+          <trans-unit id="302" xml:space="preserve">
+            <source>For more descriptions of the variables, see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Prerequisites<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> section in this tutorial.</source>
+            <target state="new">For more descriptions of the variables, see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Prerequisites<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> section in this tutorial.</target>
+          </trans-unit>
+          <trans-unit id="303" xml:space="preserve">
+            <source>Append the following script in the script pane:</source>
+            <target state="new">Append the following script in the script pane:</target>
+          </trans-unit>
+          <trans-unit id="304" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Run Script<ept id="2">&lt;/strong&gt;</ept> or press <bpt id="4">&lt;strong&gt;</bpt>F5<ept id="4">&lt;/strong&gt;</ept> to run the script.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Run Script<ept id="2">&lt;/strong&gt;</ept> or press <bpt id="4">&lt;strong&gt;</bpt>F5<ept id="4">&lt;/strong&gt;</ept> to run the script.</target>
+          </trans-unit>
+          <trans-unit id="305" xml:space="preserve">
+            <source>Use the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>preview portal[azure-management-portal]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> to examine the exported data.</source>
+            <target state="new">Use the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>preview portal[azure-management-portal]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> to examine the exported data.</target>
+          </trans-unit>
+          <trans-unit id="306" xml:space="preserve">
+            <source>Use the HDInsight .NET SDK to run Sqoop export</source>
+            <target state="new">Use the HDInsight .NET SDK to run Sqoop export</target>
+          </trans-unit>
+          <trans-unit id="307" xml:space="preserve">
+            <source>The following is a C# sample that uses the HDInsight .NET SDK to run the Sqoop export.</source>
+            <target state="new">The following is a C# sample that uses the HDInsight .NET SDK to run the Sqoop export.</target>
+          </trans-unit>
+          <trans-unit id="308" xml:space="preserve">
+            <source>For the general information about using the HDInsight .NET SDK, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Submit Hadoop jobs programmatically[hdinsight-submit-jobs]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For the general information about using the HDInsight .NET SDK, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Submit Hadoop jobs programmatically[hdinsight-submit-jobs]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="309" xml:space="preserve">
+            <source>To execute a script file, you can replace:</source>
+            <target state="new">To execute a script file, you can replace:</target>
+          </trans-unit>
+          <trans-unit id="310" xml:space="preserve">
+            <source>with:</source>
+            <target state="new">with:</target>
+          </trans-unit>
+          <trans-unit id="311" xml:space="preserve">
+            <source>The script file must be located in Azure Blob storage.</source>
+            <target state="new">The script file must be located in Azure Blob storage.</target>
+          </trans-unit>
+          <trans-unit id="312" xml:space="preserve">
+            <source>Use Azure PowerShell to run the Sqoop import</source>
+            <target state="new">Use Azure PowerShell to run the Sqoop import</target>
+          </trans-unit>
+          <trans-unit id="313" xml:space="preserve">
+            <source>In this section, you will import the log4j logs (that you exported to the Azure SQL database) back to HDInsight.</source>
+            <target state="new">In this section, you will import the log4j logs (that you exported to the Azure SQL database) back to HDInsight.</target>
+          </trans-unit>
+          <trans-unit id="314" xml:space="preserve">
+            <source>Open the Windows PowerShell ISE.</source>
+            <target state="new">Open the Windows PowerShell ISE.</target>
+          </trans-unit>
+          <trans-unit id="315" xml:space="preserve">
+            <source>In the bottom pane, run the following command to connect to your Azure subscription:</source>
+            <target state="new">In the bottom pane, run the following command to connect to your Azure subscription:</target>
+          </trans-unit>
+          <trans-unit id="316" xml:space="preserve">
+            <source>You will be prompted to enter your Azure account credentials.</source>
+            <target state="new">You will be prompted to enter your Azure account credentials.</target>
+          </trans-unit>
+          <trans-unit id="317" xml:space="preserve">
+            <source>Copy the following script into the script pane, and then set the first seven variables:</source>
+            <target state="new">Copy the following script into the script pane, and then set the first seven variables:</target>
+          </trans-unit>
+          <trans-unit id="318" xml:space="preserve">
+            <source>For more descriptions of the variables, see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Prerequisites<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> section in this tutorial.</source>
+            <target state="new">For more descriptions of the variables, see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Prerequisites<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> section in this tutorial.</target>
+          </trans-unit>
+          <trans-unit id="319" xml:space="preserve">
+            <source>Append the following script in the script pane:</source>
+            <target state="new">Append the following script in the script pane:</target>
+          </trans-unit>
+          <trans-unit id="320" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Run Script<ept id="2">&lt;/strong&gt;</ept> or press <bpt id="4">&lt;strong&gt;</bpt>F5<ept id="4">&lt;/strong&gt;</ept> to run the script.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Run Script<ept id="2">&lt;/strong&gt;</ept> or press <bpt id="4">&lt;strong&gt;</bpt>F5<ept id="4">&lt;/strong&gt;</ept> to run the script.</target>
+          </trans-unit>
+          <trans-unit id="321" xml:space="preserve">
+            <source>To examine the modified data file, you can use the preview portal, an Azure Storage explorer tool, or Azure PowerShell.</source>
+            <target state="new">To examine the modified data file, you can use the preview portal, an Azure Storage explorer tool, or Azure PowerShell.</target>
+          </trans-unit>
+          <trans-unit id="322" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Get started with HDInsight[hdinsight-get-started]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept> has a code sample about using Azure PowerShell to download a file and display the file content.</source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Get started with HDInsight[hdinsight-get-started]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept> has a code sample about using Azure PowerShell to download a file and display the file content.</target>
+          </trans-unit>
+          <trans-unit id="323" xml:space="preserve">
+            <source>Next steps</source>
+            <target state="new">Next steps</target>
+          </trans-unit>
+          <trans-unit id="324" xml:space="preserve">
+            <source>Now you have learned how to use Sqoop.</source>
+            <target state="new">Now you have learned how to use Sqoop.</target>
+          </trans-unit>
+          <trans-unit id="325" xml:space="preserve">
+            <source>To learn more, see:</source>
+            <target state="new">To learn more, see:</target>
+          </trans-unit>
+          <trans-unit id="326" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use Oozie with HDInsight[hdinsight-use-oozie]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept>: Use Sqoop action in an Oozie workflow.</source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use Oozie with HDInsight[hdinsight-use-oozie]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept>: Use Sqoop action in an Oozie workflow.</target>
+          </trans-unit>
+          <trans-unit id="327" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Analyze flight delay data using HDInsight[hdinsight-analyze-flight-data]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept>: Use Hive to analyze flight delay data, and then use Sqoop to export data to an Azure SQL database.</source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Analyze flight delay data using HDInsight[hdinsight-analyze-flight-data]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept>: Use Hive to analyze flight delay data, and then use Sqoop to export data to an Azure SQL database.</target>
+          </trans-unit>
+          <trans-unit id="328" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Upload data to HDInsight[hdinsight-upload-data]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept>: Find other methods for uploading data to HDInsight/Azure Blob storage.</source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Upload data to HDInsight[hdinsight-upload-data]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept>: Find other methods for uploading data to HDInsight/Azure Blob storage.</target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>
