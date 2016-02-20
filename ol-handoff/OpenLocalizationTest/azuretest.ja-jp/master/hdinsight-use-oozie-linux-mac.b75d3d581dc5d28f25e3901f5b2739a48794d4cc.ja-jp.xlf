@@ -1,0 +1,1055 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="ja-jp" original="2/20/2016 9:03:03 AM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c4e3a71fdd1d8af35890cc1b92d304c9b35d74c0</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Use Hadoop Oozie in HDInsight | Microsoft Azure</source>
+            <target state="new">Use Hadoop Oozie in HDInsight | Microsoft Azure</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>Use Hadoop Oozie in HDInsight, a big data service. Learn how to define an Oozie workflow, and submit an Oozie job.</source>
+            <target state="new">Use Hadoop Oozie in HDInsight, a big data service. Learn how to define an Oozie workflow, and submit an Oozie job.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Use Oozie with Hadoop to define and run a workflow on Linux-based HDInsight (Preview)</source>
+            <target state="new">Use Oozie with Hadoop to define and run a workflow on Linux-based HDInsight (Preview)</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source><ph id="1">&lt;token href="../../includes/hdinsight-oozie-selector.md"/&gt;</ph></source>
+            <target state="new"><ph id="1">&lt;token href="../../includes/hdinsight-oozie-selector.md"/&gt;</ph></target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>Learn how to use Apache Oozie to define a workflow that uses Hive and Sqoop, and then run the workflow on a Linux-based HDInsight cluster.</source>
+            <target state="new">Learn how to use Apache Oozie to define a workflow that uses Hive and Sqoop, and then run the workflow on a Linux-based HDInsight cluster.</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>Apache Oozie is a workflow/coordination system that manages Hadoop jobs.</source>
+            <target state="new">Apache Oozie is a workflow/coordination system that manages Hadoop jobs.</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>It is integrated with the Hadoop stack, and it supports Hadoop jobs for Apache MapReduce, Apache Pig, Apache Hive, and Apache Sqoop.</source>
+            <target state="new">It is integrated with the Hadoop stack, and it supports Hadoop jobs for Apache MapReduce, Apache Pig, Apache Hive, and Apache Sqoop.</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>It can also be used to schedule jobs that are specific to a system, like Java programs or shell scripts</source>
+            <target state="new">It can also be used to schedule jobs that are specific to a system, like Java programs or shell scripts</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source>Another option for defining workflows with HDInsight is Azure Data Factory.</source>
+            <target state="new">Another option for defining workflows with HDInsight is Azure Data Factory.</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source>To learn more about Azure Data Factory, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Use Pig and Hive with Data Factory[azure-data-factory-pig-hive]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">To learn more about Azure Data Factory, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Use Pig and Hive with Data Factory[azure-data-factory-pig-hive]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>Prerequisites</source>
+            <target state="new">Prerequisites</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source>Before you begin this tutorial, you must have the following:</source>
+            <target state="new">Before you begin this tutorial, you must have the following:</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>An Azure subscription<ept id="1">&lt;/strong&gt;</ept>: See <bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>Get Azure free trial<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>An Azure subscription<ept id="1">&lt;/strong&gt;</ept>: See <bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>Get Azure free trial<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Azure CLI<ept id="1">&lt;/strong&gt;</ept>: See <bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>Install and Configure the Azure CLI<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Azure CLI<ept id="1">&lt;/strong&gt;</ept>: See <bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>Install and Configure the Azure CLI<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>An HDInsight cluster<ept id="1">&lt;/strong&gt;</ept>: See <bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>Get Started with HDInsight on Linux<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>An HDInsight cluster<ept id="1">&lt;/strong&gt;</ept>: See <bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>Get Started with HDInsight on Linux<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>An Azure SQL database<ept id="1">&lt;/strong&gt;</ept>: This will be created using the steps in this document</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>An Azure SQL database<ept id="1">&lt;/strong&gt;</ept>: This will be created using the steps in this document</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>Example workflow</source>
+            <target state="new">Example workflow</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>The workflow you will implement by following the instructions in this document contains two actions.</source>
+            <target state="new">The workflow you will implement by following the instructions in this document contains two actions.</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source>Actions are definitions for tasks, such as running Hive, Sqoop, MapReduce, or other process:</source>
+            <target state="new">Actions are definitions for tasks, such as running Hive, Sqoop, MapReduce, or other process:</target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Workflow diagram<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Workflow diagram<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source>A Hive action runs a HiveQL script to extract records from the <bpt id="2">&lt;strong&gt;</bpt>hivesampletable<ept id="2">&lt;/strong&gt;</ept> included with HDInsight.</source>
+            <target state="new">A Hive action runs a HiveQL script to extract records from the <bpt id="2">&lt;strong&gt;</bpt>hivesampletable<ept id="2">&lt;/strong&gt;</ept> included with HDInsight.</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source>Each row of data describes a visit from a specific mobile device.</source>
+            <target state="new">Each row of data describes a visit from a specific mobile device.</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>The record format appears similar to the following:</source>
+            <target state="new">The record format appears similar to the following:</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source>The Hive script used in this document counts the total visits for each platform (such as Android or iPhone,) and stores the counts to a new Hive table.</source>
+            <target state="new">The Hive script used in this document counts the total visits for each platform (such as Android or iPhone,) and stores the counts to a new Hive table.</target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>For more information about Hive, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Use Hive with HDInsight[hdinsight-use-hive]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information about Hive, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Use Hive with HDInsight[hdinsight-use-hive]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>A Sqoop action exports the contents of the new Hive table to a table in an Azure SQL database.</source>
+            <target state="new">A Sqoop action exports the contents of the new Hive table to a table in an Azure SQL database.</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source>For more information about Sqoop, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Use Hadoop Sqoop with HDInsight[hdinsight-use-sqoop]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information about Sqoop, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Use Hadoop Sqoop with HDInsight[hdinsight-use-sqoop]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source>For supported Oozie versions on HDInsight clusters, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>What's new in the Hadoop cluster versions provided by HDInsight?[hdinsight-versions]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For supported Oozie versions on HDInsight clusters, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>What's new in the Hadoop cluster versions provided by HDInsight?[hdinsight-versions]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source>Create the working directory</source>
+            <target state="new">Create the working directory</target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source>Oozie expects resources required for a job to be stored in the same directory.</source>
+            <target state="new">Oozie expects resources required for a job to be stored in the same directory.</target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source>This example uses <bpt id="2">&lt;strong&gt;</bpt>wasb:///tutorials/useoozie<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">This example uses <bpt id="2">&lt;strong&gt;</bpt>wasb:///tutorials/useoozie<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source>Use the following command to create this directory, and the data directory that will hold the new Hive table created by this workflow:</source>
+            <target state="new">Use the following command to create this directory, and the data directory that will hold the new Hive table created by this workflow:</target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source>The <bpt id="2">&lt;code&gt;</bpt>-p<ept id="2">&lt;/code&gt;</ept> parameter caused all directories in the path to be created if they do not already exist.</source>
+            <target state="new">The <bpt id="2">&lt;code&gt;</bpt>-p<ept id="2">&lt;/code&gt;</ept> parameter caused all directories in the path to be created if they do not already exist.</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source>The <bpt id="2">&lt;strong&gt;</bpt>data<ept id="2">&lt;/strong&gt;</ept> directory will be used to hold data used by the <bpt id="4">&lt;strong&gt;</bpt>useooziewf.hql<ept id="4">&lt;/strong&gt;</ept> script.</source>
+            <target state="new">The <bpt id="2">&lt;strong&gt;</bpt>data<ept id="2">&lt;/strong&gt;</ept> directory will be used to hold data used by the <bpt id="4">&lt;strong&gt;</bpt>useooziewf.hql<ept id="4">&lt;/strong&gt;</ept> script.</target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source>Also run the following command, which ensures that Oozie can impersonate your user account when running Hive and Sqoop jobs.</source>
+            <target state="new">Also run the following command, which ensures that Oozie can impersonate your user account when running Hive and Sqoop jobs.</target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source>Replace <bpt id="2">&lt;strong&gt;</bpt>USERNAME<ept id="2">&lt;/strong&gt;</ept> with your login name:</source>
+            <target state="new">Replace <bpt id="2">&lt;strong&gt;</bpt>USERNAME<ept id="2">&lt;/strong&gt;</ept> with your login name:</target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source>If you receive an error that the user is already a member of users, you can just ignore it.</source>
+            <target state="new">If you receive an error that the user is already a member of users, you can just ignore it.</target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source>Add a database driver</source>
+            <target state="new">Add a database driver</target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source>Since this workflow uses Sqoop to export data to SQL Database, you must provide a copy of the JDBC driver used to talk to SQL Database.</source>
+            <target state="new">Since this workflow uses Sqoop to export data to SQL Database, you must provide a copy of the JDBC driver used to talk to SQL Database.</target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source>Use the following command to copy it to the working directory:</source>
+            <target state="new">Use the following command to copy it to the working directory:</target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source>If your workflow used other resources, such as a jar containing a MapReduce application, you would need to add these as well.</source>
+            <target state="new">If your workflow used other resources, such as a jar containing a MapReduce application, you would need to add these as well.</target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source>Define the Hive query</source>
+            <target state="new">Define the Hive query</target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source>Use the following steps to create a HiveQL script that defines a query, which will be used in an Oozie workflow later in this document.</source>
+            <target state="new">Use the following steps to create a HiveQL script that defines a query, which will be used in an Oozie workflow later in this document.</target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source>Use SSH to connect to the Linux-based HDInsight cluster:</source>
+            <target state="new">Use SSH to connect to the Linux-based HDInsight cluster:</target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Linux, Unix or OS X clients<ept id="1">&lt;/strong&gt;</ept>: See <bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>Use SSH with Linux-based Hadoop on HDInsight from Linux, OS X or Unix<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Linux, Unix or OS X clients<ept id="1">&lt;/strong&gt;</ept>: See <bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>Use SSH with Linux-based Hadoop on HDInsight from Linux, OS X or Unix<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Windows clients<ept id="1">&lt;/strong&gt;</ept>: See <bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>Use SSH with Linux-based Hadoop on HDInsight from Windows<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Windows clients<ept id="1">&lt;/strong&gt;</ept>: See <bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>Use SSH with Linux-based Hadoop on HDInsight from Windows<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="147" xml:space="preserve">
+            <source>Use the following command to create a new file:</source>
+            <target state="new">Use the following command to create a new file:</target>
+          </trans-unit>
+          <trans-unit id="148" xml:space="preserve">
+            <source>Once the nano editor opens, use the following as the contents of the file:</source>
+            <target state="new">Once the nano editor opens, use the following as the contents of the file:</target>
+          </trans-unit>
+          <trans-unit id="149" xml:space="preserve">
+            <source>There are two variables used in the script:</source>
+            <target state="new">There are two variables used in the script:</target>
+          </trans-unit>
+          <trans-unit id="150" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>${hiveTableName}<ept id="1">&lt;/strong&gt;</ept>: will contain the name of the table to be created</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>${hiveTableName}<ept id="1">&lt;/strong&gt;</ept>: will contain the name of the table to be created</target>
+          </trans-unit>
+          <trans-unit id="151" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>${hiveDataFolder}<ept id="1">&lt;/strong&gt;</ept>: will contain the location to store the data files for the table</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>${hiveDataFolder}<ept id="1">&lt;/strong&gt;</ept>: will contain the location to store the data files for the table</target>
+          </trans-unit>
+          <trans-unit id="152" xml:space="preserve">
+            <source>The workflow definition file (workflow.xml in this tutorial) passes these values to this HiveQL script at run time.</source>
+            <target state="new">The workflow definition file (workflow.xml in this tutorial) passes these values to this HiveQL script at run time.</target>
+          </trans-unit>
+          <trans-unit id="153" xml:space="preserve">
+            <source>Press Ctrl-X to exit the editor.</source>
+            <target state="new">Press Ctrl-X to exit the editor.</target>
+          </trans-unit>
+          <trans-unit id="154" xml:space="preserve">
+            <source>When prompted, select <bpt id="2">&lt;strong&gt;</bpt>Y<ept id="2">&lt;/strong&gt;</ept> to save the file, then use <bpt id="4">&lt;strong&gt;</bpt>Enter<ept id="4">&lt;/strong&gt;</ept> to use the <bpt id="6">&lt;strong&gt;</bpt>useooziewf.hql<ept id="6">&lt;/strong&gt;</ept> file name.</source>
+            <target state="new">When prompted, select <bpt id="2">&lt;strong&gt;</bpt>Y<ept id="2">&lt;/strong&gt;</ept> to save the file, then use <bpt id="4">&lt;strong&gt;</bpt>Enter<ept id="4">&lt;/strong&gt;</ept> to use the <bpt id="6">&lt;strong&gt;</bpt>useooziewf.hql<ept id="6">&lt;/strong&gt;</ept> file name.</target>
+          </trans-unit>
+          <trans-unit id="155" xml:space="preserve">
+            <source>Use the following commands to copy <bpt id="2">&lt;strong&gt;</bpt>useooziewf.hql<ept id="2">&lt;/strong&gt;</ept> to <bpt id="4">&lt;strong&gt;</bpt>wasb:///tutorials/useoozie/useooziewf.hql<ept id="4">&lt;/strong&gt;</ept>:</source>
+            <target state="new">Use the following commands to copy <bpt id="2">&lt;strong&gt;</bpt>useooziewf.hql<ept id="2">&lt;/strong&gt;</ept> to <bpt id="4">&lt;strong&gt;</bpt>wasb:///tutorials/useoozie/useooziewf.hql<ept id="4">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="156" xml:space="preserve">
+            <source>These commands store the <bpt id="2">&lt;strong&gt;</bpt>useooziewf.hql<ept id="2">&lt;/strong&gt;</ept> file on the Azure Storage account associated with this cluster, which will preserve the file even if the cluster is deleted.</source>
+            <target state="new">These commands store the <bpt id="2">&lt;strong&gt;</bpt>useooziewf.hql<ept id="2">&lt;/strong&gt;</ept> file on the Azure Storage account associated with this cluster, which will preserve the file even if the cluster is deleted.</target>
+          </trans-unit>
+          <trans-unit id="157" xml:space="preserve">
+            <source>This allows you to save money by deleting clusters when they aren't in use, while maintaining your jobs and workflows.</source>
+            <target state="new">This allows you to save money by deleting clusters when they aren't in use, while maintaining your jobs and workflows.</target>
+          </trans-unit>
+          <trans-unit id="158" xml:space="preserve">
+            <source>Define the workflow</source>
+            <target state="new">Define the workflow</target>
+          </trans-unit>
+          <trans-unit id="159" xml:space="preserve">
+            <source>Oozie workflows definitions are written in hPDL (a XML Process Definition Language).</source>
+            <target state="new">Oozie workflows definitions are written in hPDL (a XML Process Definition Language).</target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
+            <source>Use the following steps to define the workflow:</source>
+            <target state="new">Use the following steps to define the workflow:</target>
+          </trans-unit>
+          <trans-unit id="161" xml:space="preserve">
+            <source>Use the following statement to create and edit a new file:</source>
+            <target state="new">Use the following statement to create and edit a new file:</target>
+          </trans-unit>
+          <trans-unit id="162" xml:space="preserve">
+            <source>Once the nano editor opens, enter the following as the file contents:</source>
+            <target state="new">Once the nano editor opens, enter the following as the file contents:</target>
+          </trans-unit>
+          <trans-unit id="163" xml:space="preserve">
+            <source>There are two actions defined in the workflow:</source>
+            <target state="new">There are two actions defined in the workflow:</target>
+          </trans-unit>
+          <trans-unit id="164" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>RunHiveScript<ept id="1">&lt;/strong&gt;</ept>: This is the start action, and runs the <bpt id="3">&lt;strong&gt;</bpt>useooziewf.hql<ept id="3">&lt;/strong&gt;</ept> Hive script</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>RunHiveScript<ept id="1">&lt;/strong&gt;</ept>: This is the start action, and runs the <bpt id="3">&lt;strong&gt;</bpt>useooziewf.hql<ept id="3">&lt;/strong&gt;</ept> Hive script</target>
+          </trans-unit>
+          <trans-unit id="165" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>RunSqoopExport<ept id="1">&lt;/strong&gt;</ept>: This exports the data created from the Hive script to SQL Database using Sqoop.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>RunSqoopExport<ept id="1">&lt;/strong&gt;</ept>: This exports the data created from the Hive script to SQL Database using Sqoop.</target>
+          </trans-unit>
+          <trans-unit id="166" xml:space="preserve">
+            <source>This will only run if the <bpt id="2">&lt;strong&gt;</bpt>RunHiveScript<ept id="2">&lt;/strong&gt;</ept> action is successful.</source>
+            <target state="new">This will only run if the <bpt id="2">&lt;strong&gt;</bpt>RunHiveScript<ept id="2">&lt;/strong&gt;</ept> action is successful.</target>
+          </trans-unit>
+          <trans-unit id="167" xml:space="preserve">
+            <source>For more information about Oozie workflow and using workflow actions, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Apache Oozie 4.0 documentation[apache-oozie-400]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> (for HDInsight version 3.0) or <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Apache Oozie 3.3.2 documentation[apache-oozie-332]<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept> (for HDInsight version 2.1).</source>
+            <target state="new">For more information about Oozie workflow and using workflow actions, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Apache Oozie 4.0 documentation[apache-oozie-400]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> (for HDInsight version 3.0) or <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Apache Oozie 3.3.2 documentation[apache-oozie-332]<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept> (for HDInsight version 2.1).</target>
+          </trans-unit>
+          <trans-unit id="168" xml:space="preserve">
+            <source>Note that the workflow has several entries, such as <bpt id="2">&lt;code&gt;</bpt>${jobTracker}<ept id="2">&lt;/code&gt;</ept>, that will be replaced by values you use in the job definition later in this document.</source>
+            <target state="new">Note that the workflow has several entries, such as <bpt id="2">&lt;code&gt;</bpt>${jobTracker}<ept id="2">&lt;/code&gt;</ept>, that will be replaced by values you use in the job definition later in this document.</target>
+          </trans-unit>
+          <trans-unit id="169" xml:space="preserve">
+            <source>Also note the <bpt id="2">&lt;code&gt;</bpt>&lt;archive&gt;sqljdbc4.jar&lt;/arcive&gt;<ept id="2">&lt;/code&gt;</ept> entry in the Sqoop section. This instructs Oozie to make this archive available for Sqoop when this action runs.</source>
+            <target state="new">Also note the <bpt id="2">&lt;code&gt;</bpt>&lt;archive&gt;sqljdbc4.jar&lt;/arcive&gt;<ept id="2">&lt;/code&gt;</ept> entry in the Sqoop section. This instructs Oozie to make this archive available for Sqoop when this action runs.</target>
+          </trans-unit>
+          <trans-unit id="170" xml:space="preserve">
+            <source>Use Ctrl-X, then <bpt id="2">&lt;strong&gt;</bpt>Y<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>Enter<ept id="4">&lt;/strong&gt;</ept> to save the file.</source>
+            <target state="new">Use Ctrl-X, then <bpt id="2">&lt;strong&gt;</bpt>Y<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>Enter<ept id="4">&lt;/strong&gt;</ept> to save the file.</target>
+          </trans-unit>
+          <trans-unit id="171" xml:space="preserve">
+            <source>Use the following command to copy the <bpt id="2">&lt;strong&gt;</bpt>workflow.xml<ept id="2">&lt;/strong&gt;</ept> file to <bpt id="4">&lt;strong&gt;</bpt>wasb:///tutorials/useoozie/workflow.xml<ept id="4">&lt;/strong&gt;</ept>:</source>
+            <target state="new">Use the following command to copy the <bpt id="2">&lt;strong&gt;</bpt>workflow.xml<ept id="2">&lt;/strong&gt;</ept> file to <bpt id="4">&lt;strong&gt;</bpt>wasb:///tutorials/useoozie/workflow.xml<ept id="4">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="172" xml:space="preserve">
+            <source>Create the database</source>
+            <target state="new">Create the database</target>
+          </trans-unit>
+          <trans-unit id="173" xml:space="preserve">
+            <source>The following steps create the Azure SQL Database that data will be exported to.</source>
+            <target state="new">The following steps create the Azure SQL Database that data will be exported to.</target>
+          </trans-unit>
+          <trans-unit id="174" xml:space="preserve">
+            <source>Before performing these steps you must <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>install and configure the Azure CLI<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">Before performing these steps you must <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>install and configure the Azure CLI<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="175" xml:space="preserve">
+            <source>Installing the CLI and following the steps to create a database can be performed either from the HDInsight cluster or your local workstation.</source>
+            <target state="new">Installing the CLI and following the steps to create a database can be performed either from the HDInsight cluster or your local workstation.</target>
+          </trans-unit>
+          <trans-unit id="176" xml:space="preserve">
+            <source>Use the following command to create a new Azure SQL Database server:</source>
+            <target state="new">Use the following command to create a new Azure SQL Database server:</target>
+          </trans-unit>
+          <trans-unit id="177" xml:space="preserve">
+            <source>For exmaple, <bpt id="2">&lt;code&gt;</bpt>azure sql server create admin password "West US"<ept id="2">&lt;/code&gt;</ept>.</source>
+            <target state="new">For exmaple, <bpt id="2">&lt;code&gt;</bpt>azure sql server create admin password "West US"<ept id="2">&lt;/code&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="178" xml:space="preserve">
+            <source>When the command completes, you will receive a response similar to the following:</source>
+            <target state="new">When the command completes, you will receive a response similar to the following:</target>
+          </trans-unit>
+          <trans-unit id="179" xml:space="preserve">
+            <source>Note the server name returned by this command (<bpt id="2">&lt;strong&gt;</bpt>i1qwc540ts<ept id="2">&lt;/strong&gt;</ept> in the example above.)</source>
+            <target state="new">Note the server name returned by this command (<bpt id="2">&lt;strong&gt;</bpt>i1qwc540ts<ept id="2">&lt;/strong&gt;</ept> in the example above.)</target>
+          </trans-unit>
+          <trans-unit id="180" xml:space="preserve">
+            <source>This is the short name of the SQL Database server that was created.</source>
+            <target state="new">This is the short name of the SQL Database server that was created.</target>
+          </trans-unit>
+          <trans-unit id="181" xml:space="preserve">
+            <source>The fully qualified domain name (FQDN) is <bpt id="2">&lt;strong&gt;</bpt>&lt;shortname&gt;.database.windows.net<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">The fully qualified domain name (FQDN) is <bpt id="2">&lt;strong&gt;</bpt>&lt;shortname&gt;.database.windows.net<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="182" xml:space="preserve">
+            <source>For the example above, the FQDN would be <bpt id="2">&lt;strong&gt;</bpt>i1qwc540ts.database.windows.net<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">For the example above, the FQDN would be <bpt id="2">&lt;strong&gt;</bpt>i1qwc540ts.database.windows.net<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="183" xml:space="preserve">
+            <source>Use the following command to create a database named <bpt id="2">&lt;strong&gt;</bpt>oozietest<ept id="2">&lt;/strong&gt;</ept> on the SQL Database server:</source>
+            <target state="new">Use the following command to create a database named <bpt id="2">&lt;strong&gt;</bpt>oozietest<ept id="2">&lt;/strong&gt;</ept> on the SQL Database server:</target>
+          </trans-unit>
+          <trans-unit id="184" xml:space="preserve">
+            <source>This will return an "OK" message when it completes.</source>
+            <target state="new">This will return an "OK" message when it completes.</target>
+          </trans-unit>
+          <trans-unit id="185" xml:space="preserve">
+            <source>If you receive an error indicating that you do not have access, you may need to add the system's IP address to the SQL Database firewall using the following command:</source>
+            <target state="new">If you receive an error indicating that you do not have access, you may need to add the system's IP address to the SQL Database firewall using the following command:</target>
+          </trans-unit>
+          <trans-unit id="186" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>sql firewallrule create [options] &lt;serverName&gt; &lt;ruleName&gt; &lt;startIPAddress&gt; &lt;endIPAddress&gt;<ept id="1">&lt;/code&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>sql firewallrule create [options] &lt;serverName&gt; &lt;ruleName&gt; &lt;startIPAddress&gt; &lt;endIPAddress&gt;<ept id="1">&lt;/code&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="187" xml:space="preserve">
+            <source>Create the table</source>
+            <target state="new">Create the table</target>
+          </trans-unit>
+          <trans-unit id="188" xml:space="preserve">
+            <source>There are many ways to connect to SQL Database to create a table.</source>
+            <target state="new">There are many ways to connect to SQL Database to create a table.</target>
+          </trans-unit>
+          <trans-unit id="189" xml:space="preserve">
+            <source>The following steps use <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>FreeTDS<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> from the HDInsight cluster.</source>
+            <target state="new">The following steps use <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>FreeTDS<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> from the HDInsight cluster.</target>
+          </trans-unit>
+          <trans-unit id="190" xml:space="preserve">
+            <source>Use the following command to install FreeTDS on the HDInsight cluster:</source>
+            <target state="new">Use the following command to install FreeTDS on the HDInsight cluster:</target>
+          </trans-unit>
+          <trans-unit id="191" xml:space="preserve">
+            <source>Once FreeTDS has been installed, use the following command to connect to the SQL Database server you created previously:</source>
+            <target state="new">Once FreeTDS has been installed, use the following command to connect to the SQL Database server you created previously:</target>
+          </trans-unit>
+          <trans-unit id="192" xml:space="preserve">
+            <source>You will receive output similar to the following:</source>
+            <target state="new">You will receive output similar to the following:</target>
+          </trans-unit>
+          <trans-unit id="193" xml:space="preserve">
+            <source>At the <bpt id="2">&lt;code&gt;</bpt>1&gt;<ept id="2">&lt;/code&gt;</ept> prompt, enter the following lines:</source>
+            <target state="new">At the <bpt id="2">&lt;code&gt;</bpt>1&gt;<ept id="2">&lt;/code&gt;</ept> prompt, enter the following lines:</target>
+          </trans-unit>
+          <trans-unit id="194" xml:space="preserve">
+            <source>When the <bpt id="2">&lt;code&gt;</bpt>GO<ept id="2">&lt;/code&gt;</ept> statement is entered, the previous statements will be evaluated.</source>
+            <target state="new">When the <bpt id="2">&lt;code&gt;</bpt>GO<ept id="2">&lt;/code&gt;</ept> statement is entered, the previous statements will be evaluated.</target>
+          </trans-unit>
+          <trans-unit id="195" xml:space="preserve">
+            <source>This will create a new table named <bpt id="2">&lt;strong&gt;</bpt>mobiledata<ept id="2">&lt;/strong&gt;</ept> that will be written to by Sqoop.</source>
+            <target state="new">This will create a new table named <bpt id="2">&lt;strong&gt;</bpt>mobiledata<ept id="2">&lt;/strong&gt;</ept> that will be written to by Sqoop.</target>
+          </trans-unit>
+          <trans-unit id="196" xml:space="preserve">
+            <source>Use the following to verify that the table has been created:</source>
+            <target state="new">Use the following to verify that the table has been created:</target>
+          </trans-unit>
+          <trans-unit id="197" xml:space="preserve">
+            <source>You should see output similar to the following:</source>
+            <target state="new">You should see output similar to the following:</target>
+          </trans-unit>
+          <trans-unit id="198" xml:space="preserve">
+            <source>Enter <bpt id="2">&lt;code&gt;</bpt>exit<ept id="2">&lt;/code&gt;</ept> at the <bpt id="4">&lt;code&gt;</bpt>1&gt;<ept id="4">&lt;/code&gt;</ept> prompt to exit the tsql utility.</source>
+            <target state="new">Enter <bpt id="2">&lt;code&gt;</bpt>exit<ept id="2">&lt;/code&gt;</ept> at the <bpt id="4">&lt;code&gt;</bpt>1&gt;<ept id="4">&lt;/code&gt;</ept> prompt to exit the tsql utility.</target>
+          </trans-unit>
+          <trans-unit id="199" xml:space="preserve">
+            <source>Create the job definition</source>
+            <target state="new">Create the job definition</target>
+          </trans-unit>
+          <trans-unit id="200" xml:space="preserve">
+            <source>The job definition describes where to find the workflow.xml, as well as other files used by the workflow (such as useooziewf.hql.)</source>
+            <target state="new">The job definition describes where to find the workflow.xml, as well as other files used by the workflow (such as useooziewf.hql.)</target>
+          </trans-unit>
+          <trans-unit id="201" xml:space="preserve">
+            <source>It also defines the values for properties used within the workflow and associated files.</source>
+            <target state="new">It also defines the values for properties used within the workflow and associated files.</target>
+          </trans-unit>
+          <trans-unit id="202" xml:space="preserve">
+            <source>Use the following command to get the full WASB address to default storage.</source>
+            <target state="new">Use the following command to get the full WASB address to default storage.</target>
+          </trans-unit>
+          <trans-unit id="203" xml:space="preserve">
+            <source>This will be used in the configuration file in a moment:</source>
+            <target state="new">This will be used in the configuration file in a moment:</target>
+          </trans-unit>
+          <trans-unit id="204" xml:space="preserve">
+            <source>This should return information similar to the following:</source>
+            <target state="new">This should return information similar to the following:</target>
+          </trans-unit>
+          <trans-unit id="205" xml:space="preserve">
+            <source>Save the <bpt id="2">&lt;strong&gt;</bpt>wasb://mycontainer@mystorageaccount.blob.core.windows.net<ept id="2">&lt;/strong&gt;</ept> value, as it will be used in the next steps.</source>
+            <target state="new">Save the <bpt id="2">&lt;strong&gt;</bpt>wasb://mycontainer@mystorageaccount.blob.core.windows.net<ept id="2">&lt;/strong&gt;</ept> value, as it will be used in the next steps.</target>
+          </trans-unit>
+          <trans-unit id="206" xml:space="preserve">
+            <source>Use the following command to get FQDN of the cluster headnode.</source>
+            <target state="new">Use the following command to get FQDN of the cluster headnode.</target>
+          </trans-unit>
+          <trans-unit id="207" xml:space="preserve">
+            <source>This will be used for the JobTracker address for the cluster.</source>
+            <target state="new">This will be used for the JobTracker address for the cluster.</target>
+          </trans-unit>
+          <trans-unit id="208" xml:space="preserve">
+            <source>This will be used in the configuration file in a moment:</source>
+            <target state="new">This will be used in the configuration file in a moment:</target>
+          </trans-unit>
+          <trans-unit id="209" xml:space="preserve">
+            <source>This will return information similar to the following:</source>
+            <target state="new">This will return information similar to the following:</target>
+          </trans-unit>
+          <trans-unit id="210" xml:space="preserve">
+            <source>The port used for the JobTracker is 8050, so the full address to use for the JobTracker will be <bpt id="2">&lt;strong&gt;</bpt>headnode0.CLUSTERNAME-ssh.j7.internal.cloudapp.net:8050<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">The port used for the JobTracker is 8050, so the full address to use for the JobTracker will be <bpt id="2">&lt;strong&gt;</bpt>headnode0.CLUSTERNAME-ssh.j7.internal.cloudapp.net:8050<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="211" xml:space="preserve">
+            <source>Use the following to create the Oozie job definition configuration:</source>
+            <target state="new">Use the following to create the Oozie job definition configuration:</target>
+          </trans-unit>
+          <trans-unit id="212" xml:space="preserve">
+            <source>Once the nano editor opens, use the following as the contents of the file:</source>
+            <target state="new">Once the nano editor opens, use the following as the contents of the file:</target>
+          </trans-unit>
+          <trans-unit id="213" xml:space="preserve">
+            <source>Replace all instances of <bpt id="2">&lt;strong&gt;</bpt>wasb://mycontainer@mystorageaccount.blob.core.windows.net<ept id="2">&lt;/strong&gt;</ept> with the value you received earlier.</source>
+            <target state="new">Replace all instances of <bpt id="2">&lt;strong&gt;</bpt>wasb://mycontainer@mystorageaccount.blob.core.windows.net<ept id="2">&lt;/strong&gt;</ept> with the value you received earlier.</target>
+          </trans-unit>
+          <trans-unit id="214" xml:space="preserve">
+            <source>You must use the full WASB path, with the container and storage account as part of the path.</source>
+            <target state="new">You must use the full WASB path, with the container and storage account as part of the path.</target>
+          </trans-unit>
+          <trans-unit id="215" xml:space="preserve">
+            <source>Using the short format (wasb:///) will cause the RunHiveScript action to fail when the job is started.</source>
+            <target state="new">Using the short format (wasb:///) will cause the RunHiveScript action to fail when the job is started.</target>
+          </trans-unit>
+          <trans-unit id="216" xml:space="preserve">
+            <source>Replace <bpt id="2">&lt;strong&gt;</bpt>JOBTRACKERADDRESS<ept id="2">&lt;/strong&gt;</ept> with the JobTracker/ResourceManager address you received earlier.</source>
+            <target state="new">Replace <bpt id="2">&lt;strong&gt;</bpt>JOBTRACKERADDRESS<ept id="2">&lt;/strong&gt;</ept> with the JobTracker/ResourceManager address you received earlier.</target>
+          </trans-unit>
+          <trans-unit id="217" xml:space="preserve">
+            <source>Replace <bpt id="2">&lt;strong&gt;</bpt>YourName<ept id="2">&lt;/strong&gt;</ept> with your login name for the HDInsight cluster.</source>
+            <target state="new">Replace <bpt id="2">&lt;strong&gt;</bpt>YourName<ept id="2">&lt;/strong&gt;</ept> with your login name for the HDInsight cluster.</target>
+          </trans-unit>
+          <trans-unit id="218" xml:space="preserve">
+            <source>Replace <bpt id="2">&lt;strong&gt;</bpt>serverName<ept id="2">&lt;/strong&gt;</ept>, <bpt id="4">&lt;strong&gt;</bpt>adminLogin<ept id="4">&lt;/strong&gt;</ept>, and <bpt id="6">&lt;strong&gt;</bpt>adminPassword<ept id="6">&lt;/strong&gt;</ept> with the information for your Azure SQL Database.</source>
+            <target state="new">Replace <bpt id="2">&lt;strong&gt;</bpt>serverName<ept id="2">&lt;/strong&gt;</ept>, <bpt id="4">&lt;strong&gt;</bpt>adminLogin<ept id="4">&lt;/strong&gt;</ept>, and <bpt id="6">&lt;strong&gt;</bpt>adminPassword<ept id="6">&lt;/strong&gt;</ept> with the information for your Azure SQL Database.</target>
+          </trans-unit>
+          <trans-unit id="219" xml:space="preserve">
+            <source>Most of the information in this file is used to populate the values used in the workflow.xml or ooziewf.hql files (such as ${nameNode}.)</source>
+            <target state="new">Most of the information in this file is used to populate the values used in the workflow.xml or ooziewf.hql files (such as ${nameNode}.)</target>
+          </trans-unit>
+          <trans-unit id="220" xml:space="preserve">
+            <source>The <bpt id="2">&lt;strong&gt;</bpt>oozie.wf.application.path<ept id="2">&lt;/strong&gt;</ept> entry defines where to find the workflow.xml file, which contains the workflow ran by this job.</source>
+            <target state="new">The <bpt id="2">&lt;strong&gt;</bpt>oozie.wf.application.path<ept id="2">&lt;/strong&gt;</ept> entry defines where to find the workflow.xml file, which contains the workflow ran by this job.</target>
+          </trans-unit>
+          <trans-unit id="221" xml:space="preserve">
+            <source>Use Ctrl-X, then <bpt id="2">&lt;strong&gt;</bpt>Y<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>Enter<ept id="4">&lt;/strong&gt;</ept> to save the file.</source>
+            <target state="new">Use Ctrl-X, then <bpt id="2">&lt;strong&gt;</bpt>Y<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>Enter<ept id="4">&lt;/strong&gt;</ept> to save the file.</target>
+          </trans-unit>
+          <trans-unit id="222" xml:space="preserve">
+            <source>Submit and manage the job</source>
+            <target state="new">Submit and manage the job</target>
+          </trans-unit>
+          <trans-unit id="223" xml:space="preserve">
+            <source>The following steps use the Oozie command to submit and manage Oozie workflows on the cluster.</source>
+            <target state="new">The following steps use the Oozie command to submit and manage Oozie workflows on the cluster.</target>
+          </trans-unit>
+          <trans-unit id="224" xml:space="preserve">
+            <source>The Oozie command is a friendly interface over the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Oozie REST API<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">The Oozie command is a friendly interface over the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Oozie REST API<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="225" xml:space="preserve">
+            <source>When using the Oozie command, you must use the FQDN for the HDInsight headnode.</source>
+            <target state="new">When using the Oozie command, you must use the FQDN for the HDInsight headnode.</target>
+          </trans-unit>
+          <trans-unit id="226" xml:space="preserve">
+            <source>This FQDN is only accessible from the cluster, or if the cluster is on an Azure Virtual Network, from other machines on the same network.</source>
+            <target state="new">This FQDN is only accessible from the cluster, or if the cluster is on an Azure Virtual Network, from other machines on the same network.</target>
+          </trans-unit>
+          <trans-unit id="227" xml:space="preserve">
+            <source>Use the following to obtain the URL to the Oozie service:</source>
+            <target state="new">Use the following to obtain the URL to the Oozie service:</target>
+          </trans-unit>
+          <trans-unit id="228" xml:space="preserve">
+            <source>This will return a value similar to the following:</source>
+            <target state="new">This will return a value similar to the following:</target>
+          </trans-unit>
+          <trans-unit id="229" xml:space="preserve">
+            <source>The <bpt id="2">&lt;strong&gt;</bpt>http://headnode0.CLUSTERNAME-ssh.j7.internal.cloudapp.net:11000/oozie<ept id="2">&lt;/strong&gt;</ept> portion is the URL to use with the Oozie command.</source>
+            <target state="new">The <bpt id="2">&lt;strong&gt;</bpt>http://headnode0.CLUSTERNAME-ssh.j7.internal.cloudapp.net:11000/oozie<ept id="2">&lt;/strong&gt;</ept> portion is the URL to use with the Oozie command.</target>
+          </trans-unit>
+          <trans-unit id="230" xml:space="preserve">
+            <source>Use the following to create an environment variable for the URL, so you don't have to type it for every command:</source>
+            <target state="new">Use the following to create an environment variable for the URL, so you don't have to type it for every command:</target>
+          </trans-unit>
+          <trans-unit id="231" xml:space="preserve">
+            <source>Replace the URL with the one you received earlier.</source>
+            <target state="new">Replace the URL with the one you received earlier.</target>
+          </trans-unit>
+          <trans-unit id="232" xml:space="preserve">
+            <source>Use the following to submit the job:</source>
+            <target state="new">Use the following to submit the job:</target>
+          </trans-unit>
+          <trans-unit id="233" xml:space="preserve">
+            <source>This loads the job information from <bpt id="2">&lt;strong&gt;</bpt>job.xml<ept id="2">&lt;/strong&gt;</ept> and submits it to Oozie, but does not run it.</source>
+            <target state="new">This loads the job information from <bpt id="2">&lt;strong&gt;</bpt>job.xml<ept id="2">&lt;/strong&gt;</ept> and submits it to Oozie, but does not run it.</target>
+          </trans-unit>
+          <trans-unit id="234" xml:space="preserve">
+            <source>Once the command completes, it should return the ID of the job.</source>
+            <target state="new">Once the command completes, it should return the ID of the job.</target>
+          </trans-unit>
+          <trans-unit id="235" xml:space="preserve">
+            <source>For example, <bpt id="2">&lt;code&gt;</bpt>0000005-150622124850154-oozie-oozi-W<ept id="2">&lt;/code&gt;</ept>.</source>
+            <target state="new">For example, <bpt id="2">&lt;code&gt;</bpt>0000005-150622124850154-oozie-oozi-W<ept id="2">&lt;/code&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="236" xml:space="preserve">
+            <source>This will be used to manage the job.</source>
+            <target state="new">This will be used to manage the job.</target>
+          </trans-unit>
+          <trans-unit id="237" xml:space="preserve">
+            <source>View the status of the job using the following command.</source>
+            <target state="new">View the status of the job using the following command.</target>
+          </trans-unit>
+          <trans-unit id="238" xml:space="preserve">
+            <source>Enter the job ID returned by the previous command:</source>
+            <target state="new">Enter the job ID returned by the previous command:</target>
+          </trans-unit>
+          <trans-unit id="239" xml:space="preserve">
+            <source>This will return information similar to the following.</source>
+            <target state="new">This will return information similar to the following.</target>
+          </trans-unit>
+          <trans-unit id="240" xml:space="preserve">
+            <source>This job has a status of <bpt id="2">&lt;code&gt;</bpt>PREP<ept id="2">&lt;/code&gt;</ept>, which indicates that it was submitted, but has not been started yet.</source>
+            <target state="new">This job has a status of <bpt id="2">&lt;code&gt;</bpt>PREP<ept id="2">&lt;/code&gt;</ept>, which indicates that it was submitted, but has not been started yet.</target>
+          </trans-unit>
+          <trans-unit id="241" xml:space="preserve">
+            <source>Use the following to start the job:</source>
+            <target state="new">Use the following to start the job:</target>
+          </trans-unit>
+          <trans-unit id="242" xml:space="preserve">
+            <source>If you check the status after this command, it will be in a running state, and information will be returned for the actions within the job.</source>
+            <target state="new">If you check the status after this command, it will be in a running state, and information will be returned for the actions within the job.</target>
+          </trans-unit>
+          <trans-unit id="243" xml:space="preserve">
+            <source>Once the task completes successfully, you can verify that the data was generated and exported to the SQL Database table by using the following commands:</source>
+            <target state="new">Once the task completes successfully, you can verify that the data was generated and exported to the SQL Database table by using the following commands:</target>
+          </trans-unit>
+          <trans-unit id="244" xml:space="preserve">
+            <source>At the <bpt id="2">&lt;code&gt;</bpt>1&gt;<ept id="2">&lt;/code&gt;</ept> prompt, enter the following:</source>
+            <target state="new">At the <bpt id="2">&lt;code&gt;</bpt>1&gt;<ept id="2">&lt;/code&gt;</ept> prompt, enter the following:</target>
+          </trans-unit>
+          <trans-unit id="245" xml:space="preserve">
+            <source>You should receive information similar to the following:</source>
+            <target state="new">You should receive information similar to the following:</target>
+          </trans-unit>
+          <trans-unit id="246" xml:space="preserve">
+            <source>For more information on the Oozie command, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Oozie Command Line Tool<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information on the Oozie command, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Oozie Command Line Tool<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="247" xml:space="preserve">
+            <source>Oozie REST API</source>
+            <target state="new">Oozie REST API</target>
+          </trans-unit>
+          <trans-unit id="248" xml:space="preserve">
+            <source>The Oozie REST API allow you to build your own tools that work with Oozie.</source>
+            <target state="new">The Oozie REST API allow you to build your own tools that work with Oozie.</target>
+          </trans-unit>
+          <trans-unit id="249" xml:space="preserve">
+            <source>The following are HDInsight specific information about using the Oozie REST API:</source>
+            <target state="new">The following are HDInsight specific information about using the Oozie REST API:</target>
+          </trans-unit>
+          <trans-unit id="250" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>URI<ept id="1">&lt;/strong&gt;</ept>: The REST API can be accessed from outside the cluster at <bpt id="3">&lt;code&gt;</bpt>https://CLUSTERNAME.azurehdinsight.net/oozie<ept id="3">&lt;/code&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>URI<ept id="1">&lt;/strong&gt;</ept>: The REST API can be accessed from outside the cluster at <bpt id="3">&lt;code&gt;</bpt>https://CLUSTERNAME.azurehdinsight.net/oozie<ept id="3">&lt;/code&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="251" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Authentication<ept id="1">&lt;/strong&gt;</ept>: You must authenticate to the API using the cluster HTTP account (admin,) and password.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Authentication<ept id="1">&lt;/strong&gt;</ept>: You must authenticate to the API using the cluster HTTP account (admin,) and password.</target>
+          </trans-unit>
+          <trans-unit id="252" xml:space="preserve">
+            <source>For example:</source>
+            <target state="new">For example:</target>
+          </trans-unit>
+          <trans-unit id="253" xml:space="preserve">
+            <source>For more information on using the Oozie REST API, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Oozie Web Services API<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information on using the Oozie REST API, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Oozie Web Services API<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="254" xml:space="preserve">
+            <source>Oozie Web UI</source>
+            <target state="new">Oozie Web UI</target>
+          </trans-unit>
+          <trans-unit id="255" xml:space="preserve">
+            <source>The Oozie Web UI provides a web-based view into the status of Oozie jobs on the cluster.</source>
+            <target state="new">The Oozie Web UI provides a web-based view into the status of Oozie jobs on the cluster.</target>
+          </trans-unit>
+          <trans-unit id="256" xml:space="preserve">
+            <source>It allows you to view job status, the job definition, configuration, a graph of the actions in the job, and logs for the job.</source>
+            <target state="new">It allows you to view job status, the job definition, configuration, a graph of the actions in the job, and logs for the job.</target>
+          </trans-unit>
+          <trans-unit id="257" xml:space="preserve">
+            <source>You can also view details for actions within a job.</source>
+            <target state="new">You can also view details for actions within a job.</target>
+          </trans-unit>
+          <trans-unit id="258" xml:space="preserve">
+            <source>To access the Oozie Web UI, use the following steps:</source>
+            <target state="new">To access the Oozie Web UI, use the following steps:</target>
+          </trans-unit>
+          <trans-unit id="259" xml:space="preserve">
+            <source>Create an SSH tunnel to the HDInsight cluster.</source>
+            <target state="new">Create an SSH tunnel to the HDInsight cluster.</target>
+          </trans-unit>
+          <trans-unit id="260" xml:space="preserve">
+            <source>For information on how to do this, see one of the following:</source>
+            <target state="new">For information on how to do this, see one of the following:</target>
+          </trans-unit>
+          <trans-unit id="261" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use SSH with Linux-based Hadoop on HDInsight from Linux, Unix, or OS X<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use SSH with Linux-based Hadoop on HDInsight from Linux, Unix, or OS X<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="262" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use SSH with Linux-based Hadoop on HDInsight from Windows<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use SSH with Linux-based Hadoop on HDInsight from Windows<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="263" xml:space="preserve">
+            <source>Once a tunnel has been created, open the Ambari web UI in your web browser.</source>
+            <target state="new">Once a tunnel has been created, open the Ambari web UI in your web browser.</target>
+          </trans-unit>
+          <trans-unit id="264" xml:space="preserve">
+            <source>The URI for the Ambari site is <bpt id="2">&lt;strong&gt;</bpt>https://CLUSTERNAME.azurehdinsight.net<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">The URI for the Ambari site is <bpt id="2">&lt;strong&gt;</bpt>https://CLUSTERNAME.azurehdinsight.net<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="265" xml:space="preserve">
+            <source>Replace <bpt id="2">&lt;strong&gt;</bpt>CLUSTERNAME<ept id="2">&lt;/strong&gt;</ept> with the name of your Linux-based HDInsight cluster.</source>
+            <target state="new">Replace <bpt id="2">&lt;strong&gt;</bpt>CLUSTERNAME<ept id="2">&lt;/strong&gt;</ept> with the name of your Linux-based HDInsight cluster.</target>
+          </trans-unit>
+          <trans-unit id="266" xml:space="preserve">
+            <source>From the left side of the page, select <bpt id="2">&lt;strong&gt;</bpt>Oozie<ept id="2">&lt;/strong&gt;</ept>, then <bpt id="4">&lt;strong&gt;</bpt>Quick Links<ept id="4">&lt;/strong&gt;</ept>, and finally <bpt id="6">&lt;strong&gt;</bpt>Oozie Web UI<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">From the left side of the page, select <bpt id="2">&lt;strong&gt;</bpt>Oozie<ept id="2">&lt;/strong&gt;</ept>, then <bpt id="4">&lt;strong&gt;</bpt>Quick Links<ept id="4">&lt;/strong&gt;</ept>, and finally <bpt id="6">&lt;strong&gt;</bpt>Oozie Web UI<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="267" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>image of the menus<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>image of the menus<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="268" xml:space="preserve">
+            <source>The Oozie Web UI defaults to displaying running Workflow Jobs.</source>
+            <target state="new">The Oozie Web UI defaults to displaying running Workflow Jobs.</target>
+          </trans-unit>
+          <trans-unit id="269" xml:space="preserve">
+            <source>To see all workflow jobs, select <bpt id="2">&lt;strong&gt;</bpt>All Jobs<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">To see all workflow jobs, select <bpt id="2">&lt;strong&gt;</bpt>All Jobs<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="270" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>All jobs displayed<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>All jobs displayed<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="271" xml:space="preserve">
+            <source>Select a job to view more information about the job.</source>
+            <target state="new">Select a job to view more information about the job.</target>
+          </trans-unit>
+          <trans-unit id="272" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Job info<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Job info<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="273" xml:space="preserve">
+            <source>From the Job Info tab, you can see basic job information, as well as the individual actions within the job.</source>
+            <target state="new">From the Job Info tab, you can see basic job information, as well as the individual actions within the job.</target>
+          </trans-unit>
+          <trans-unit id="274" xml:space="preserve">
+            <source>Using the tabs at the top you can view the Job Definition, Job Configuration, access the Job Log or view a Directed Acyclic Graph (DAG) of the job.</source>
+            <target state="new">Using the tabs at the top you can view the Job Definition, Job Configuration, access the Job Log or view a Directed Acyclic Graph (DAG) of the job.</target>
+          </trans-unit>
+          <trans-unit id="275" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Job Log<ept id="1">&lt;/strong&gt;</ept>: Select the <bpt id="3">&lt;strong&gt;</bpt>GetLogs<ept id="3">&lt;/strong&gt;</ept> button to get all logs for the job, or use the <bpt id="5">&lt;strong&gt;</bpt>Enter Search Filter<ept id="5">&lt;/strong&gt;</ept> field to filter logs</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Job Log<ept id="1">&lt;/strong&gt;</ept>: Select the <bpt id="3">&lt;strong&gt;</bpt>GetLogs<ept id="3">&lt;/strong&gt;</ept> button to get all logs for the job, or use the <bpt id="5">&lt;strong&gt;</bpt>Enter Search Filter<ept id="5">&lt;/strong&gt;</ept> field to filter logs</target>
+          </trans-unit>
+          <trans-unit id="276" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Job log<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Job log<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="277" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>JobDAG<ept id="1">&lt;/strong&gt;</ept>: The DAG is a graphical overview of the data paths taken through the workflow</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>JobDAG<ept id="1">&lt;/strong&gt;</ept>: The DAG is a graphical overview of the data paths taken through the workflow</target>
+          </trans-unit>
+          <trans-unit id="278" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Job DAG<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Job DAG<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="279" xml:space="preserve">
+            <source>Selecting one of the actions from the <bpt id="2">&lt;strong&gt;</bpt>Job Info<ept id="2">&lt;/strong&gt;</ept> tab will bring up information for the action.</source>
+            <target state="new">Selecting one of the actions from the <bpt id="2">&lt;strong&gt;</bpt>Job Info<ept id="2">&lt;/strong&gt;</ept> tab will bring up information for the action.</target>
+          </trans-unit>
+          <trans-unit id="280" xml:space="preserve">
+            <source>For example, select the <bpt id="2">&lt;strong&gt;</bpt>RunHiveScript<ept id="2">&lt;/strong&gt;</ept> action.</source>
+            <target state="new">For example, select the <bpt id="2">&lt;strong&gt;</bpt>RunHiveScript<ept id="2">&lt;/strong&gt;</ept> action.</target>
+          </trans-unit>
+          <trans-unit id="281" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Action info<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Action info<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="282" xml:space="preserve">
+            <source>You can see details for the action, including a link to the <bpt id="2">&lt;strong&gt;</bpt>Console URL<ept id="2">&lt;/strong&gt;</ept>, which can be used to view JobTracker information for the job.</source>
+            <target state="new">You can see details for the action, including a link to the <bpt id="2">&lt;strong&gt;</bpt>Console URL<ept id="2">&lt;/strong&gt;</ept>, which can be used to view JobTracker information for the job.</target>
+          </trans-unit>
+          <trans-unit id="283" xml:space="preserve">
+            <source>Scheduling jobs</source>
+            <target state="new">Scheduling jobs</target>
+          </trans-unit>
+          <trans-unit id="284" xml:space="preserve">
+            <source>The coordinator allows you to specify a start, end, and occurrance frequency for jobs so that they can be scheduled for certain times.</source>
+            <target state="new">The coordinator allows you to specify a start, end, and occurrance frequency for jobs so that they can be scheduled for certain times.</target>
+          </trans-unit>
+          <trans-unit id="285" xml:space="preserve">
+            <source>To define a schedule for the workflow, use the following steps:</source>
+            <target state="new">To define a schedule for the workflow, use the following steps:</target>
+          </trans-unit>
+          <trans-unit id="286" xml:space="preserve">
+            <source>Use the following to create a new file named <bpt id="2">&lt;strong&gt;</bpt>coordinator.xml<ept id="2">&lt;/strong&gt;</ept>:</source>
+            <target state="new">Use the following to create a new file named <bpt id="2">&lt;strong&gt;</bpt>coordinator.xml<ept id="2">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="287" xml:space="preserve">
+            <source>Use the following as the contents of the file:</source>
+            <target state="new">Use the following as the contents of the file:</target>
+          </trans-unit>
+          <trans-unit id="288" xml:space="preserve">
+            <source>Note that this uses <bpt id="2">&lt;code&gt;</bpt>${...}<ept id="2">&lt;/code&gt;</ept> variables that will be replaced by values in the job definition.</source>
+            <target state="new">Note that this uses <bpt id="2">&lt;code&gt;</bpt>${...}<ept id="2">&lt;/code&gt;</ept> variables that will be replaced by values in the job definition.</target>
+          </trans-unit>
+          <trans-unit id="289" xml:space="preserve">
+            <source>The variables are:</source>
+            <target state="new">The variables are:</target>
+          </trans-unit>
+          <trans-unit id="290" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>${coordFrequency}<ept id="1">&lt;/strong&gt;</ept>: Time between running instances of the job</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>${coordFrequency}<ept id="1">&lt;/strong&gt;</ept>: Time between running instances of the job</target>
+          </trans-unit>
+          <trans-unit id="291" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>${coordStart}<ept id="1">&lt;/strong&gt;</ept>: The job start time</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>${coordStart}<ept id="1">&lt;/strong&gt;</ept>: The job start time</target>
+          </trans-unit>
+          <trans-unit id="292" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>${coordEnd}<ept id="1">&lt;/strong&gt;</ept>: The job end time</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>${coordEnd}<ept id="1">&lt;/strong&gt;</ept>: The job end time</target>
+          </trans-unit>
+          <trans-unit id="293" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>${coordTimezone}<ept id="1">&lt;/strong&gt;</ept>: Coordinator jobs are in a fixed time zone with no daylight savings time (typically represented by using UTC).</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>${coordTimezone}<ept id="1">&lt;/strong&gt;</ept>: Coordinator jobs are in a fixed time zone with no daylight savings time (typically represented by using UTC).</target>
+          </trans-unit>
+          <trans-unit id="294" xml:space="preserve">
+            <source>This time zone is referred as the "Oozie processing timezone"</source>
+            <target state="new">This time zone is referred as the "Oozie processing timezone"</target>
+          </trans-unit>
+          <trans-unit id="295" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>${wfPath}<ept id="1">&lt;/strong&gt;</ept>: The path to the workflow.xml</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>${wfPath}<ept id="1">&lt;/strong&gt;</ept>: The path to the workflow.xml</target>
+          </trans-unit>
+          <trans-unit id="296" xml:space="preserve">
+            <source>Use Ctrl-X, then <bpt id="2">&lt;strong&gt;</bpt>Y<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>Enter<ept id="4">&lt;/strong&gt;</ept> to save the file.</source>
+            <target state="new">Use Ctrl-X, then <bpt id="2">&lt;strong&gt;</bpt>Y<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>Enter<ept id="4">&lt;/strong&gt;</ept> to save the file.</target>
+          </trans-unit>
+          <trans-unit id="297" xml:space="preserve">
+            <source>Use the following to copy it to the working directory for this job:</source>
+            <target state="new">Use the following to copy it to the working directory for this job:</target>
+          </trans-unit>
+          <trans-unit id="298" xml:space="preserve">
+            <source>Use the following to modify the <bpt id="2">&lt;strong&gt;</bpt>job.xml<ept id="2">&lt;/strong&gt;</ept> file:</source>
+            <target state="new">Use the following to modify the <bpt id="2">&lt;strong&gt;</bpt>job.xml<ept id="2">&lt;/strong&gt;</ept> file:</target>
+          </trans-unit>
+          <trans-unit id="299" xml:space="preserve">
+            <source>Make the following changes:</source>
+            <target state="new">Make the following changes:</target>
+          </trans-unit>
+          <trans-unit id="300" xml:space="preserve">
+            <source>Change <bpt id="2">&lt;code&gt;</bpt>&lt;name&gt;oozie.wf.application.path&lt;/name&gt;<ept id="2">&lt;/code&gt;</ept> to <bpt id="4">&lt;code&gt;</bpt>&lt;name&gt;oozie.coord.application.path&lt;/name&gt;<ept id="4">&lt;/code&gt;</ept>.</source>
+            <target state="new">Change <bpt id="2">&lt;code&gt;</bpt>&lt;name&gt;oozie.wf.application.path&lt;/name&gt;<ept id="2">&lt;/code&gt;</ept> to <bpt id="4">&lt;code&gt;</bpt>&lt;name&gt;oozie.coord.application.path&lt;/name&gt;<ept id="4">&lt;/code&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="301" xml:space="preserve">
+            <source>This instructs Oozie to run the coordinator file instead of the workflow file</source>
+            <target state="new">This instructs Oozie to run the coordinator file instead of the workflow file</target>
+          </trans-unit>
+          <trans-unit id="302" xml:space="preserve">
+            <source>Add the following, which will be sets a variable used in the coordinator.xml to point to the location of the workflow.xml:</source>
+            <target state="new">Add the following, which will be sets a variable used in the coordinator.xml to point to the location of the workflow.xml:</target>
+          </trans-unit>
+          <trans-unit id="303" xml:space="preserve">
+            <source>Replace the values for <bpt id="2">&lt;strong&gt;</bpt>mycontainer<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>mystorageaccount<ept id="4">&lt;/strong&gt;</ept> with the values used in other entries in the job.xml file.</source>
+            <target state="new">Replace the values for <bpt id="2">&lt;strong&gt;</bpt>mycontainer<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>mystorageaccount<ept id="4">&lt;/strong&gt;</ept> with the values used in other entries in the job.xml file.</target>
+          </trans-unit>
+          <trans-unit id="304" xml:space="preserve">
+            <source>Add the following, which define the start, end, and frequency to use for the coordinator.xml file:</source>
+            <target state="new">Add the following, which define the start, end, and frequency to use for the coordinator.xml file:</target>
+          </trans-unit>
+          <trans-unit id="305" xml:space="preserve">
+            <source>These set the start time to 12:00PM on June 25th, 2015, the end time to June 27th, 2015, and the interval for running this job to daily (the frequency is in minutes, so 24 hours x 60 minutes = 1440 minutes.)</source>
+            <target state="new">These set the start time to 12:00PM on June 25th, 2015, the end time to June 27th, 2015, and the interval for running this job to daily (the frequency is in minutes, so 24 hours x 60 minutes = 1440 minutes.)</target>
+          </trans-unit>
+          <trans-unit id="306" xml:space="preserve">
+            <source>Finally, the timezone is set to UTC.</source>
+            <target state="new">Finally, the timezone is set to UTC.</target>
+          </trans-unit>
+          <trans-unit id="307" xml:space="preserve">
+            <source>Use Ctrl-X, then <bpt id="2">&lt;strong&gt;</bpt>Y<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>Enter<ept id="4">&lt;/strong&gt;</ept> to save the file.</source>
+            <target state="new">Use Ctrl-X, then <bpt id="2">&lt;strong&gt;</bpt>Y<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>Enter<ept id="4">&lt;/strong&gt;</ept> to save the file.</target>
+          </trans-unit>
+          <trans-unit id="308" xml:space="preserve">
+            <source>To run the job, use the following command:</source>
+            <target state="new">To run the job, use the following command:</target>
+          </trans-unit>
+          <trans-unit id="309" xml:space="preserve">
+            <source>This will submit and start the job.</source>
+            <target state="new">This will submit and start the job.</target>
+          </trans-unit>
+          <trans-unit id="310" xml:space="preserve">
+            <source>If you visit the Oozie Web UI and select the <bpt id="2">&lt;strong&gt;</bpt>Coordinator Jobs<ept id="2">&lt;/strong&gt;</ept> tab, you should information similar to the following:</source>
+            <target state="new">If you visit the Oozie Web UI and select the <bpt id="2">&lt;strong&gt;</bpt>Coordinator Jobs<ept id="2">&lt;/strong&gt;</ept> tab, you should information similar to the following:</target>
+          </trans-unit>
+          <trans-unit id="311" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>coordinator jobs tab<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>coordinator jobs tab<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="312" xml:space="preserve">
+            <source>Note the <bpt id="2">&lt;strong&gt;</bpt>Next Materialization<ept id="2">&lt;/strong&gt;</ept> entry; this is when the job will run next.</source>
+            <target state="new">Note the <bpt id="2">&lt;strong&gt;</bpt>Next Materialization<ept id="2">&lt;/strong&gt;</ept> entry; this is when the job will run next.</target>
+          </trans-unit>
+          <trans-unit id="313" xml:space="preserve">
+            <source>Similar to the earlier workflow job, selecting the job entry in the web UI will display information on the job:</source>
+            <target state="new">Similar to the earlier workflow job, selecting the job entry in the web UI will display information on the job:</target>
+          </trans-unit>
+          <trans-unit id="314" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Coordinator job info<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Coordinator job info<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="315" xml:space="preserve">
+            <source>Note that this only shows successful runs of the job, not individual actions within the scheduled workflow.</source>
+            <target state="new">Note that this only shows successful runs of the job, not individual actions within the scheduled workflow.</target>
+          </trans-unit>
+          <trans-unit id="316" xml:space="preserve">
+            <source>To see that, select one of the <bpt id="2">&lt;strong&gt;</bpt>Action<ept id="2">&lt;/strong&gt;</ept> entries.</source>
+            <target state="new">To see that, select one of the <bpt id="2">&lt;strong&gt;</bpt>Action<ept id="2">&lt;/strong&gt;</ept> entries.</target>
+          </trans-unit>
+          <trans-unit id="317" xml:space="preserve">
+            <source>This will display information similar to that retrieved for the earlier workflow job.</source>
+            <target state="new">This will display information similar to that retrieved for the earlier workflow job.</target>
+          </trans-unit>
+          <trans-unit id="318" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Action info<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Action info<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="319" xml:space="preserve">
+            <source>Troubleshooting</source>
+            <target state="new">Troubleshooting</target>
+          </trans-unit>
+          <trans-unit id="320" xml:space="preserve">
+            <source>When troubleshooting problems with Oozie jobs, the Oozie UI is very helpful as it allows you to easily view both Oozie logs, as well as links to JobTracker logs for MapReduce tasks such as Hive queries.</source>
+            <target state="new">When troubleshooting problems with Oozie jobs, the Oozie UI is very helpful as it allows you to easily view both Oozie logs, as well as links to JobTracker logs for MapReduce tasks such as Hive queries.</target>
+          </trans-unit>
+          <trans-unit id="321" xml:space="preserve">
+            <source>In general, the pattern for troubleshooting should be:</source>
+            <target state="new">In general, the pattern for troubleshooting should be:</target>
+          </trans-unit>
+          <trans-unit id="322" xml:space="preserve">
+            <source>View the job in Oozie Web UI.</source>
+            <target state="new">View the job in Oozie Web UI.</target>
+          </trans-unit>
+          <trans-unit id="323" xml:space="preserve">
+            <source>If there is an error or failure for a specific action, select the action to see if the <bpt id="2">&lt;strong&gt;</bpt>Error Message<ept id="2">&lt;/strong&gt;</ept> field provides more information on the failure.</source>
+            <target state="new">If there is an error or failure for a specific action, select the action to see if the <bpt id="2">&lt;strong&gt;</bpt>Error Message<ept id="2">&lt;/strong&gt;</ept> field provides more information on the failure.</target>
+          </trans-unit>
+          <trans-unit id="324" xml:space="preserve">
+            <source>If available, use the URL from the action to view more details (such as JobTracker logs,) for the action.</source>
+            <target state="new">If available, use the URL from the action to view more details (such as JobTracker logs,) for the action.</target>
+          </trans-unit>
+          <trans-unit id="325" xml:space="preserve">
+            <source>The following are specific errors you may encounter, and how to resolve them.</source>
+            <target state="new">The following are specific errors you may encounter, and how to resolve them.</target>
+          </trans-unit>
+          <trans-unit id="326" xml:space="preserve">
+            <source>JA009: Cannot initialize cluster</source>
+            <target state="new">JA009: Cannot initialize cluster</target>
+          </trans-unit>
+          <trans-unit id="327" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Symptoms<ept id="1">&lt;/strong&gt;</ept>: The job status will change to <bpt id="3">&lt;strong&gt;</bpt>SUSPENDED<ept id="3">&lt;/strong&gt;</ept>.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Symptoms<ept id="1">&lt;/strong&gt;</ept>: The job status will change to <bpt id="3">&lt;strong&gt;</bpt>SUSPENDED<ept id="3">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="328" xml:space="preserve">
+            <source>Details for the job will show the RunHiveScript status as <bpt id="2">&lt;strong&gt;</bpt>START_MANUAL<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Details for the job will show the RunHiveScript status as <bpt id="2">&lt;strong&gt;</bpt>START_MANUAL<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="329" xml:space="preserve">
+            <source>Selecting the action will reveal the following error message:</source>
+            <target state="new">Selecting the action will reveal the following error message:</target>
+          </trans-unit>
+          <trans-unit id="330" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Cause<ept id="1">&lt;/strong&gt;</ept>: The WASB addresses used in the <bpt id="3">&lt;strong&gt;</bpt>job.xml<ept id="3">&lt;/strong&gt;</ept> file do not contain the storage container or storage account name.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Cause<ept id="1">&lt;/strong&gt;</ept>: The WASB addresses used in the <bpt id="3">&lt;strong&gt;</bpt>job.xml<ept id="3">&lt;/strong&gt;</ept> file do not contain the storage container or storage account name.</target>
+          </trans-unit>
+          <trans-unit id="331" xml:space="preserve">
+            <source>The WASB address format must be <bpt id="2">&lt;code&gt;</bpt>wasb://containername@storageaccountname.blob.core.windows.net<ept id="2">&lt;/code&gt;</ept>.</source>
+            <target state="new">The WASB address format must be <bpt id="2">&lt;code&gt;</bpt>wasb://containername@storageaccountname.blob.core.windows.net<ept id="2">&lt;/code&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="332" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Resolution<ept id="1">&lt;/strong&gt;</ept>: Change the WASB addresses used by the job.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Resolution<ept id="1">&lt;/strong&gt;</ept>: Change the WASB addresses used by the job.</target>
+          </trans-unit>
+          <trans-unit id="333" xml:space="preserve">
+            <source>JA002: Oozie is not allowed to impersonate &lt;USER&gt;</source>
+            <target state="new">JA002: Oozie is not allowed to impersonate &lt;USER&gt;</target>
+          </trans-unit>
+          <trans-unit id="334" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Symptoms<ept id="1">&lt;/strong&gt;</ept>: The job status will change to <bpt id="3">&lt;strong&gt;</bpt>SUSPENDED<ept id="3">&lt;/strong&gt;</ept>.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Symptoms<ept id="1">&lt;/strong&gt;</ept>: The job status will change to <bpt id="3">&lt;strong&gt;</bpt>SUSPENDED<ept id="3">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="335" xml:space="preserve">
+            <source>Details for the job will show the RunHiveScript status as <bpt id="2">&lt;strong&gt;</bpt>START_MANUAL<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Details for the job will show the RunHiveScript status as <bpt id="2">&lt;strong&gt;</bpt>START_MANUAL<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="336" xml:space="preserve">
+            <source>Selecting the action will reveal the following error message:</source>
+            <target state="new">Selecting the action will reveal the following error message:</target>
+          </trans-unit>
+          <trans-unit id="337" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Cause<ept id="1">&lt;/strong&gt;</ept>: Current permission settings do not allow Oozie to impersonate the specified user account.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Cause<ept id="1">&lt;/strong&gt;</ept>: Current permission settings do not allow Oozie to impersonate the specified user account.</target>
+          </trans-unit>
+          <trans-unit id="338" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Resolution<ept id="1">&lt;/strong&gt;</ept>: Oozie is allowed to impersonate users in the <bpt id="3">&lt;strong&gt;</bpt>users<ept id="3">&lt;/strong&gt;</ept> group.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Resolution<ept id="1">&lt;/strong&gt;</ept>: Oozie is allowed to impersonate users in the <bpt id="3">&lt;strong&gt;</bpt>users<ept id="3">&lt;/strong&gt;</ept> group.</target>
+          </trans-unit>
+          <trans-unit id="339" xml:space="preserve">
+            <source>Use the <bpt id="2">&lt;code&gt;</bpt>groups USERNAME<ept id="2">&lt;/code&gt;</ept> to see the groups that the user account is a member of.</source>
+            <target state="new">Use the <bpt id="2">&lt;code&gt;</bpt>groups USERNAME<ept id="2">&lt;/code&gt;</ept> to see the groups that the user account is a member of.</target>
+          </trans-unit>
+          <trans-unit id="340" xml:space="preserve">
+            <source>If the user is not a member of the <bpt id="2">&lt;strong&gt;</bpt>users<ept id="2">&lt;/strong&gt;</ept> group, use the following command to add the user to the group:</source>
+            <target state="new">If the user is not a member of the <bpt id="2">&lt;strong&gt;</bpt>users<ept id="2">&lt;/strong&gt;</ept> group, use the following command to add the user to the group:</target>
+          </trans-unit>
+          <trans-unit id="341" xml:space="preserve">
+            <source>It may take several minutes before HDInsight recognizes that the user has been added to the group.</source>
+            <target state="new">It may take several minutes before HDInsight recognizes that the user has been added to the group.</target>
+          </trans-unit>
+          <trans-unit id="342" xml:space="preserve">
+            <source>Launcher ERROR (Sqoop)</source>
+            <target state="new">Launcher ERROR (Sqoop)</target>
+          </trans-unit>
+          <trans-unit id="343" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Symptoms<ept id="1">&lt;/strong&gt;</ept>: The job status will changed to <bpt id="3">&lt;strong&gt;</bpt>KILLED<ept id="3">&lt;/strong&gt;</ept>.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Symptoms<ept id="1">&lt;/strong&gt;</ept>: The job status will changed to <bpt id="3">&lt;strong&gt;</bpt>KILLED<ept id="3">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="344" xml:space="preserve">
+            <source>Details for the job will show the RunSqoopExport status as <bpt id="2">&lt;strong&gt;</bpt>ERROR<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Details for the job will show the RunSqoopExport status as <bpt id="2">&lt;strong&gt;</bpt>ERROR<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="345" xml:space="preserve">
+            <source>Selecting the action will reveal the following error message:</source>
+            <target state="new">Selecting the action will reveal the following error message:</target>
+          </trans-unit>
+          <trans-unit id="346" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Cause<ept id="1">&lt;/strong&gt;</ept>: Sqoop is unable to load the database driver required to access the database.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Cause<ept id="1">&lt;/strong&gt;</ept>: Sqoop is unable to load the database driver required to access the database.</target>
+          </trans-unit>
+          <trans-unit id="347" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Resolution<ept id="1">&lt;/strong&gt;</ept>: When using Sqoop from an Oozie job, you must include the database driver with the other resources (such as the workflow.xml,) used by the job.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Resolution<ept id="1">&lt;/strong&gt;</ept>: When using Sqoop from an Oozie job, you must include the database driver with the other resources (such as the workflow.xml,) used by the job.</target>
+          </trans-unit>
+          <trans-unit id="348" xml:space="preserve">
+            <source>You must also reference the archive containing the database driver from the <bpt id="2">&lt;code&gt;</bpt>&lt;sqoop&gt;...&lt;/sqoop&gt;<ept id="2">&lt;/code&gt;</ept> section of the workflow.xml.</source>
+            <target state="new">You must also reference the archive containing the database driver from the <bpt id="2">&lt;code&gt;</bpt>&lt;sqoop&gt;...&lt;/sqoop&gt;<ept id="2">&lt;/code&gt;</ept> section of the workflow.xml.</target>
+          </trans-unit>
+          <trans-unit id="349" xml:space="preserve">
+            <source>For example, for the job in this document, you would use the following steps:</source>
+            <target state="new">For example, for the job in this document, you would use the following steps:</target>
+          </trans-unit>
+          <trans-unit id="350" xml:space="preserve">
+            <source>Copy the sqljdbc4.jar file to the /tutorials/useoozie directory:</source>
+            <target state="new">Copy the sqljdbc4.jar file to the /tutorials/useoozie directory:</target>
+          </trans-unit>
+          <trans-unit id="351" xml:space="preserve">
+            <source>Modify the workflow.xml to add the following on a new line above <bpt id="2">&lt;code&gt;</bpt>&lt;/sqoop&gt;<ept id="2">&lt;/code&gt;</ept>:</source>
+            <target state="new">Modify the workflow.xml to add the following on a new line above <bpt id="2">&lt;code&gt;</bpt>&lt;/sqoop&gt;<ept id="2">&lt;/code&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="352" xml:space="preserve">
+            <source>Next steps</source>
+            <target state="new">Next steps</target>
+          </trans-unit>
+          <trans-unit id="353" xml:space="preserve">
+            <source>In this tutorial, you learned how to define an Oozie workflow and how to run an Oozie job.</source>
+            <target state="new">In this tutorial, you learned how to define an Oozie workflow and how to run an Oozie job.</target>
+          </trans-unit>
+          <trans-unit id="354" xml:space="preserve">
+            <source>To learn more about working with HDInsight, see the following articles:</source>
+            <target state="new">To learn more about working with HDInsight, see the following articles:</target>
+          </trans-unit>
+          <trans-unit id="355" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use time-based Oozie Coordinator with HDInsight[hdinsight-oozie-coordinator-time]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use time-based Oozie Coordinator with HDInsight[hdinsight-oozie-coordinator-time]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="356" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Upload data for Hadoop jobs in HDInsight[hdinsight-upload-data]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Upload data for Hadoop jobs in HDInsight[hdinsight-upload-data]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="357" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use Sqoop with Hadoop in HDInsight[hdinsight-use-sqoop]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use Sqoop with Hadoop in HDInsight[hdinsight-use-sqoop]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="358" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use Hive with Hadoop on HDInsight[hdinsight-use-hive]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use Hive with Hadoop on HDInsight[hdinsight-use-hive]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="359" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use Pig with Hadoop on HDInsight[hdinsight-use-pig]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use Pig with Hadoop on HDInsight[hdinsight-use-pig]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="360" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Develop Java MapReduce programs for HDInsight[hdinsight-develop-mapreduce]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Develop Java MapReduce programs for HDInsight[hdinsight-develop-mapreduce]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>

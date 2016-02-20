@@ -1,0 +1,1051 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="ja-jp" original="2/20/2016 8:32:41 AM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">92aba35b90050823395723e31fd607ab308a2f56</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Writing Expressions for Attribute Mappings in Azure Active Directory</source>
+            <target state="new">Writing Expressions for Attribute Mappings in Azure Active Directory</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>Learn how to use expression mappings to transform attribute values into an acceptable format during automated provisioning of SaaS app objects in Azure Active Directory.</source>
+            <target state="new">Learn how to use expression mappings to transform attribute values into an acceptable format during automated provisioning of SaaS app objects in Azure Active Directory.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Writing Expressions for Attribute Mappings in Azure Active Directory</source>
+            <target state="new">Writing Expressions for Attribute Mappings in Azure Active Directory</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source>When you configure provisioning to a SaaS application, one of the types of attribute mappings that you can specify is an expression mapping.</source>
+            <target state="new">When you configure provisioning to a SaaS application, one of the types of attribute mappings that you can specify is an expression mapping.</target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>For these, you must write a script-like expression that allows you to transform your users’ data into formats that are more acceptable for the SaaS application.</source>
+            <target state="new">For these, you must write a script-like expression that allows you to transform your users’ data into formats that are more acceptable for the SaaS application.</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>Syntax Overview</source>
+            <target state="new">Syntax Overview</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>The syntax for Expressions for Attribute Mappings is reminiscent of Visual Basic for Applications (VBA) functions.</source>
+            <target state="new">The syntax for Expressions for Attribute Mappings is reminiscent of Visual Basic for Applications (VBA) functions.</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>The entire expression must be defined in terms of functions, which consist of a name followed by arguments in parentheses: <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></source>
+            <target state="new">The entire expression must be defined in terms of functions, which consist of a name followed by arguments in parentheses: <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source>FunctionName(<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>&gt;,<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>&gt;)*</source>
+            <target state="new">FunctionName(<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>&gt;,<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>&gt;)*</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source>You may nest functions within each other. For example: <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept> *FunctionOne(FunctionTwo(<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>&gt;))*</source>
+            <target state="new">You may nest functions within each other. For example: <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept> *FunctionOne(FunctionTwo(<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>&gt;))*</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>You can pass three different types of arguments into functions:</source>
+            <target state="new">You can pass three different types of arguments into functions:</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source>Attributes, which must be enclosed in square square brackets.</source>
+            <target state="new">Attributes, which must be enclosed in square square brackets.</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>For example: [attributeName]</source>
+            <target state="new">For example: [attributeName]</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source>String constants, which must be enclosed in double quotes.</source>
+            <target state="new">String constants, which must be enclosed in double quotes.</target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>For example: "United States"</source>
+            <target state="new">For example: "United States"</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source>Other Functions. For example: FunctionOne(<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>&gt;, FunctionTwo(<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>&gt;))</source>
+            <target state="new">Other Functions. For example: FunctionOne(<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>&gt;, FunctionTwo(<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>&gt;))</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>For string constants, if you need a backslash ( \ ) or quotation mark ( " ) in the string, it must be escaped with the backslash ( \ ) symbol.</source>
+            <target state="new">For string constants, if you need a backslash ( \ ) or quotation mark ( " ) in the string, it must be escaped with the backslash ( \ ) symbol.</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>For example: "Company name: \"Contoso\""</source>
+            <target state="new">For example: "Company name: \"Contoso\""</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source>List of Functions</source>
+            <target state="new">List of Functions</target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Append<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept> &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; <bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>FormatDateTime<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept> &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; <bpt id="5CapsExtId1">&lt;link&gt;</bpt><bpt id="5CapsExtId2">&lt;linkText&gt;</bpt>Join<ept id="5CapsExtId2">&lt;/linkText&gt;</ept><bpt id="5CapsExtId3">&lt;title&gt;</bpt><ept id="5CapsExtId3">&lt;/title&gt;</ept><ept id="5CapsExtId1">&lt;/link&gt;</ept> &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; <bpt id="7CapsExtId1">&lt;link&gt;</bpt><bpt id="7CapsExtId2">&lt;linkText&gt;</bpt>Mid<ept id="7CapsExtId2">&lt;/linkText&gt;</ept><bpt id="7CapsExtId3">&lt;title&gt;</bpt><ept id="7CapsExtId3">&lt;/title&gt;</ept><ept id="7CapsExtId1">&lt;/link&gt;</ept> &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; <bpt id="9CapsExtId1">&lt;link&gt;</bpt><bpt id="9CapsExtId2">&lt;linkText&gt;</bpt>Not<ept id="9CapsExtId2">&lt;/linkText&gt;</ept><bpt id="9CapsExtId3">&lt;title&gt;</bpt><ept id="9CapsExtId3">&lt;/title&gt;</ept><ept id="9CapsExtId1">&lt;/link&gt;</ept> &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; <bpt id="11CapsExtId1">&lt;link&gt;</bpt><bpt id="11CapsExtId2">&lt;linkText&gt;</bpt>Replace<ept id="11CapsExtId2">&lt;/linkText&gt;</ept><bpt id="11CapsExtId3">&lt;title&gt;</bpt><ept id="11CapsExtId3">&lt;/title&gt;</ept><ept id="11CapsExtId1">&lt;/link&gt;</ept> &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; <bpt id="13CapsExtId1">&lt;link&gt;</bpt><bpt id="13CapsExtId2">&lt;linkText&gt;</bpt>StripSpaces<ept id="13CapsExtId2">&lt;/linkText&gt;</ept><bpt id="13CapsExtId3">&lt;title&gt;</bpt><ept id="13CapsExtId3">&lt;/title&gt;</ept><ept id="13CapsExtId1">&lt;/link&gt;</ept> &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; <bpt id="15CapsExtId1">&lt;link&gt;</bpt><bpt id="15CapsExtId2">&lt;linkText&gt;</bpt>Switch<ept id="15CapsExtId2">&lt;/linkText&gt;</ept><bpt id="15CapsExtId3">&lt;title&gt;</bpt><ept id="15CapsExtId3">&lt;/title&gt;</ept><ept id="15CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Append<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept> &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; <bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>FormatDateTime<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept> &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; <bpt id="5CapsExtId1">&lt;link&gt;</bpt><bpt id="5CapsExtId2">&lt;linkText&gt;</bpt>Join<ept id="5CapsExtId2">&lt;/linkText&gt;</ept><bpt id="5CapsExtId3">&lt;title&gt;</bpt><ept id="5CapsExtId3">&lt;/title&gt;</ept><ept id="5CapsExtId1">&lt;/link&gt;</ept> &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; <bpt id="7CapsExtId1">&lt;link&gt;</bpt><bpt id="7CapsExtId2">&lt;linkText&gt;</bpt>Mid<ept id="7CapsExtId2">&lt;/linkText&gt;</ept><bpt id="7CapsExtId3">&lt;title&gt;</bpt><ept id="7CapsExtId3">&lt;/title&gt;</ept><ept id="7CapsExtId1">&lt;/link&gt;</ept> &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; <bpt id="9CapsExtId1">&lt;link&gt;</bpt><bpt id="9CapsExtId2">&lt;linkText&gt;</bpt>Not<ept id="9CapsExtId2">&lt;/linkText&gt;</ept><bpt id="9CapsExtId3">&lt;title&gt;</bpt><ept id="9CapsExtId3">&lt;/title&gt;</ept><ept id="9CapsExtId1">&lt;/link&gt;</ept> &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; <bpt id="11CapsExtId1">&lt;link&gt;</bpt><bpt id="11CapsExtId2">&lt;linkText&gt;</bpt>Replace<ept id="11CapsExtId2">&lt;/linkText&gt;</ept><bpt id="11CapsExtId3">&lt;title&gt;</bpt><ept id="11CapsExtId3">&lt;/title&gt;</ept><ept id="11CapsExtId1">&lt;/link&gt;</ept> &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; <bpt id="13CapsExtId1">&lt;link&gt;</bpt><bpt id="13CapsExtId2">&lt;linkText&gt;</bpt>StripSpaces<ept id="13CapsExtId2">&lt;/linkText&gt;</ept><bpt id="13CapsExtId3">&lt;title&gt;</bpt><ept id="13CapsExtId3">&lt;/title&gt;</ept><ept id="13CapsExtId1">&lt;/link&gt;</ept> &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; <bpt id="15CapsExtId1">&lt;link&gt;</bpt><bpt id="15CapsExtId2">&lt;linkText&gt;</bpt>Switch<ept id="15CapsExtId2">&lt;/linkText&gt;</ept><bpt id="15CapsExtId3">&lt;title&gt;</bpt><ept id="15CapsExtId3">&lt;/title&gt;</ept><ept id="15CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source>Append</source>
+            <target state="new">Append</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Function:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Function:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>Append(source, suffix)</source>
+            <target state="new">Append(source, suffix)</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Description:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Description:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>Takes a source string value and appends the suffix to the end of it.</source>
+            <target state="new">Takes a source string value and appends the suffix to the end of it.</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Parameters:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Parameters:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source>Name</source>
+            <target state="new">Name</target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source>Required/ Repeating</source>
+            <target state="new">Required/ Repeating</target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source>Type</source>
+            <target state="new">Type</target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source>Notes</source>
+            <target state="new">Notes</target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>source<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>source<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source>Required</source>
+            <target state="new">Required</target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source>String</source>
+            <target state="new">String</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source>Usually name of the attribute from the source object</source>
+            <target state="new">Usually name of the attribute from the source object</target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>suffix<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>suffix<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source>Required</source>
+            <target state="new">Required</target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source>String</source>
+            <target state="new">String</target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source>The string that you want to append to the end of the source value.</source>
+            <target state="new">The string that you want to append to the end of the source value.</target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source>FormatDateTime</source>
+            <target state="new">FormatDateTime</target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Function:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Function:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source>FormatDateTime(source, inputFormat, outputFormat)</source>
+            <target state="new">FormatDateTime(source, inputFormat, outputFormat)</target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Description:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Description:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source>Takes a date string from one format and converts it into a different format.</source>
+            <target state="new">Takes a date string from one format and converts it into a different format.</target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Parameters:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Parameters:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source>Name</source>
+            <target state="new">Name</target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source>Required/ Repeating</source>
+            <target state="new">Required/ Repeating</target>
+          </trans-unit>
+          <trans-unit id="147" xml:space="preserve">
+            <source>Type</source>
+            <target state="new">Type</target>
+          </trans-unit>
+          <trans-unit id="148" xml:space="preserve">
+            <source>Notes</source>
+            <target state="new">Notes</target>
+          </trans-unit>
+          <trans-unit id="149" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>source<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>source<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="150" xml:space="preserve">
+            <source>Required</source>
+            <target state="new">Required</target>
+          </trans-unit>
+          <trans-unit id="151" xml:space="preserve">
+            <source>String</source>
+            <target state="new">String</target>
+          </trans-unit>
+          <trans-unit id="152" xml:space="preserve">
+            <source>Usually name of the attribute from the source object.</source>
+            <target state="new">Usually name of the attribute from the source object.</target>
+          </trans-unit>
+          <trans-unit id="153" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>inputFormat<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>inputFormat<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="154" xml:space="preserve">
+            <source>Required</source>
+            <target state="new">Required</target>
+          </trans-unit>
+          <trans-unit id="155" xml:space="preserve">
+            <source>String</source>
+            <target state="new">String</target>
+          </trans-unit>
+          <trans-unit id="156" xml:space="preserve">
+            <source>Expected format of the source value.</source>
+            <target state="new">Expected format of the source value.</target>
+          </trans-unit>
+          <trans-unit id="157" xml:space="preserve">
+            <source>For supported formats, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>http://msdn.microsoft.com/library/8kb3ddd4%28v=vs.110%29.aspx<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For supported formats, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>http://msdn.microsoft.com/library/8kb3ddd4%28v=vs.110%29.aspx<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="158" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>outputFormat<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>outputFormat<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="159" xml:space="preserve">
+            <source>Required</source>
+            <target state="new">Required</target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
+            <source>String</source>
+            <target state="new">String</target>
+          </trans-unit>
+          <trans-unit id="161" xml:space="preserve">
+            <source>Format of the output date.</source>
+            <target state="new">Format of the output date.</target>
+          </trans-unit>
+          <trans-unit id="162" xml:space="preserve">
+            <source>Join</source>
+            <target state="new">Join</target>
+          </trans-unit>
+          <trans-unit id="163" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Function:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Function:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="164" xml:space="preserve">
+            <source>Join(separator, source1, source2, …)</source>
+            <target state="new">Join(separator, source1, source2, …)</target>
+          </trans-unit>
+          <trans-unit id="165" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Description:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Description:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="166" xml:space="preserve">
+            <source>Join() is similar to Append(), except that it can combine multiple <bpt id="2">&lt;strong&gt;</bpt>source<ept id="2">&lt;/strong&gt;</ept> string values into a single string, and each value will be separated by a <bpt id="4">&lt;strong&gt;</bpt>separator<ept id="4">&lt;/strong&gt;</ept> string.</source>
+            <target state="new">Join() is similar to Append(), except that it can combine multiple <bpt id="2">&lt;strong&gt;</bpt>source<ept id="2">&lt;/strong&gt;</ept> string values into a single string, and each value will be separated by a <bpt id="4">&lt;strong&gt;</bpt>separator<ept id="4">&lt;/strong&gt;</ept> string.</target>
+          </trans-unit>
+          <trans-unit id="167" xml:space="preserve">
+            <source>If one of the source values is a multi-value attribute, then every value in that attribute will be joined together, separated the separator value.</source>
+            <target state="new">If one of the source values is a multi-value attribute, then every value in that attribute will be joined together, separated the separator value.</target>
+          </trans-unit>
+          <trans-unit id="168" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Parameters:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Parameters:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="169" xml:space="preserve">
+            <source>Name</source>
+            <target state="new">Name</target>
+          </trans-unit>
+          <trans-unit id="170" xml:space="preserve">
+            <source>Required/ Repeating</source>
+            <target state="new">Required/ Repeating</target>
+          </trans-unit>
+          <trans-unit id="171" xml:space="preserve">
+            <source>Type</source>
+            <target state="new">Type</target>
+          </trans-unit>
+          <trans-unit id="172" xml:space="preserve">
+            <source>Notes</source>
+            <target state="new">Notes</target>
+          </trans-unit>
+          <trans-unit id="173" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>separator<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>separator<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="174" xml:space="preserve">
+            <source>Required</source>
+            <target state="new">Required</target>
+          </trans-unit>
+          <trans-unit id="175" xml:space="preserve">
+            <source>String</source>
+            <target state="new">String</target>
+          </trans-unit>
+          <trans-unit id="176" xml:space="preserve">
+            <source>String used to separate source values when they are concatenated into one string.</source>
+            <target state="new">String used to separate source values when they are concatenated into one string.</target>
+          </trans-unit>
+          <trans-unit id="177" xml:space="preserve">
+            <source>Can be "" if no separator is required.</source>
+            <target state="new">Can be "" if no separator is required.</target>
+          </trans-unit>
+          <trans-unit id="178" xml:space="preserve">
+            <source>**source1  …</source>
+            <target state="new">**source1  …</target>
+          </trans-unit>
+          <trans-unit id="179" xml:space="preserve">
+            <source>sourceN **</source>
+            <target state="new">sourceN **</target>
+          </trans-unit>
+          <trans-unit id="180" xml:space="preserve">
+            <source>Required, variable-number of times</source>
+            <target state="new">Required, variable-number of times</target>
+          </trans-unit>
+          <trans-unit id="181" xml:space="preserve">
+            <source>String</source>
+            <target state="new">String</target>
+          </trans-unit>
+          <trans-unit id="182" xml:space="preserve">
+            <source>String values to be joined together.</source>
+            <target state="new">String values to be joined together.</target>
+          </trans-unit>
+          <trans-unit id="183" xml:space="preserve">
+            <source>Mid</source>
+            <target state="new">Mid</target>
+          </trans-unit>
+          <trans-unit id="184" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Function:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Function:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="185" xml:space="preserve">
+            <source>Mid(source, start, length)</source>
+            <target state="new">Mid(source, start, length)</target>
+          </trans-unit>
+          <trans-unit id="186" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Description:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Description:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="187" xml:space="preserve">
+            <source>Returns a substring of the source value.</source>
+            <target state="new">Returns a substring of the source value.</target>
+          </trans-unit>
+          <trans-unit id="188" xml:space="preserve">
+            <source>A substring is a string that contains only some of the characters from the source string.</source>
+            <target state="new">A substring is a string that contains only some of the characters from the source string.</target>
+          </trans-unit>
+          <trans-unit id="189" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Parameters:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Parameters:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="190" xml:space="preserve">
+            <source>Name</source>
+            <target state="new">Name</target>
+          </trans-unit>
+          <trans-unit id="191" xml:space="preserve">
+            <source>Required/ Repeating</source>
+            <target state="new">Required/ Repeating</target>
+          </trans-unit>
+          <trans-unit id="192" xml:space="preserve">
+            <source>Type</source>
+            <target state="new">Type</target>
+          </trans-unit>
+          <trans-unit id="193" xml:space="preserve">
+            <source>Notes</source>
+            <target state="new">Notes</target>
+          </trans-unit>
+          <trans-unit id="194" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>source<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>source<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="195" xml:space="preserve">
+            <source>Required</source>
+            <target state="new">Required</target>
+          </trans-unit>
+          <trans-unit id="196" xml:space="preserve">
+            <source>String</source>
+            <target state="new">String</target>
+          </trans-unit>
+          <trans-unit id="197" xml:space="preserve">
+            <source>Usually name of the attribute.</source>
+            <target state="new">Usually name of the attribute.</target>
+          </trans-unit>
+          <trans-unit id="198" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>start<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>start<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="199" xml:space="preserve">
+            <source>Required</source>
+            <target state="new">Required</target>
+          </trans-unit>
+          <trans-unit id="200" xml:space="preserve">
+            <source>integer</source>
+            <target state="new">integer</target>
+          </trans-unit>
+          <trans-unit id="201" xml:space="preserve">
+            <source>Index in the <bpt id="2">&lt;strong&gt;</bpt>source<ept id="2">&lt;/strong&gt;</ept> string where substring should start.</source>
+            <target state="new">Index in the <bpt id="2">&lt;strong&gt;</bpt>source<ept id="2">&lt;/strong&gt;</ept> string where substring should start.</target>
+          </trans-unit>
+          <trans-unit id="202" xml:space="preserve">
+            <source>First character in the string will have index of 1, second character will have index 2, and so on.</source>
+            <target state="new">First character in the string will have index of 1, second character will have index 2, and so on.</target>
+          </trans-unit>
+          <trans-unit id="203" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>length<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>length<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="204" xml:space="preserve">
+            <source>Required</source>
+            <target state="new">Required</target>
+          </trans-unit>
+          <trans-unit id="205" xml:space="preserve">
+            <source>integer</source>
+            <target state="new">integer</target>
+          </trans-unit>
+          <trans-unit id="206" xml:space="preserve">
+            <source>Length of the substring.</source>
+            <target state="new">Length of the substring.</target>
+          </trans-unit>
+          <trans-unit id="207" xml:space="preserve">
+            <source>If length ends outside the <bpt id="2">&lt;strong&gt;</bpt>source<ept id="2">&lt;/strong&gt;</ept> string, function will return substring from <bpt id="4">&lt;strong&gt;</bpt>start<ept id="4">&lt;/strong&gt;</ept> index till end of <bpt id="6">&lt;strong&gt;</bpt>source<ept id="6">&lt;/strong&gt;</ept> string.</source>
+            <target state="new">If length ends outside the <bpt id="2">&lt;strong&gt;</bpt>source<ept id="2">&lt;/strong&gt;</ept> string, function will return substring from <bpt id="4">&lt;strong&gt;</bpt>start<ept id="4">&lt;/strong&gt;</ept> index till end of <bpt id="6">&lt;strong&gt;</bpt>source<ept id="6">&lt;/strong&gt;</ept> string.</target>
+          </trans-unit>
+          <trans-unit id="208" xml:space="preserve">
+            <source>Not</source>
+            <target state="new">Not</target>
+          </trans-unit>
+          <trans-unit id="209" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Function:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Function:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="210" xml:space="preserve">
+            <source>Not(source)</source>
+            <target state="new">Not(source)</target>
+          </trans-unit>
+          <trans-unit id="211" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Description:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Description:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="212" xml:space="preserve">
+            <source>Flips the boolean value of the <bpt id="2">&lt;strong&gt;</bpt>source<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Flips the boolean value of the <bpt id="2">&lt;strong&gt;</bpt>source<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="213" xml:space="preserve">
+            <source>If <bpt id="2">&lt;strong&gt;</bpt>source<ept id="2">&lt;/strong&gt;</ept> value is "<bpt id="4">&lt;em&gt;</bpt>True<ept id="4">&lt;/em&gt;</ept>", returns "<bpt id="6">&lt;em&gt;</bpt>False<ept id="6">&lt;/em&gt;</ept>".</source>
+            <target state="new">If <bpt id="2">&lt;strong&gt;</bpt>source<ept id="2">&lt;/strong&gt;</ept> value is "<bpt id="4">&lt;em&gt;</bpt>True<ept id="4">&lt;/em&gt;</ept>", returns "<bpt id="6">&lt;em&gt;</bpt>False<ept id="6">&lt;/em&gt;</ept>".</target>
+          </trans-unit>
+          <trans-unit id="214" xml:space="preserve">
+            <source>Otherwise, returns "<bpt id="2">&lt;em&gt;</bpt>True<ept id="2">&lt;/em&gt;</ept>".</source>
+            <target state="new">Otherwise, returns "<bpt id="2">&lt;em&gt;</bpt>True<ept id="2">&lt;/em&gt;</ept>".</target>
+          </trans-unit>
+          <trans-unit id="215" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Parameters:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Parameters:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="216" xml:space="preserve">
+            <source>Name</source>
+            <target state="new">Name</target>
+          </trans-unit>
+          <trans-unit id="217" xml:space="preserve">
+            <source>Required/ Repeating</source>
+            <target state="new">Required/ Repeating</target>
+          </trans-unit>
+          <trans-unit id="218" xml:space="preserve">
+            <source>Type</source>
+            <target state="new">Type</target>
+          </trans-unit>
+          <trans-unit id="219" xml:space="preserve">
+            <source>Notes</source>
+            <target state="new">Notes</target>
+          </trans-unit>
+          <trans-unit id="220" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>source<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>source<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="221" xml:space="preserve">
+            <source>Required</source>
+            <target state="new">Required</target>
+          </trans-unit>
+          <trans-unit id="222" xml:space="preserve">
+            <source>Boolean String</source>
+            <target state="new">Boolean String</target>
+          </trans-unit>
+          <trans-unit id="223" xml:space="preserve">
+            <source>Expected <bpt id="2">&lt;strong&gt;</bpt>source<ept id="2">&lt;/strong&gt;</ept> values are "True" or "False"..</source>
+            <target state="new">Expected <bpt id="2">&lt;strong&gt;</bpt>source<ept id="2">&lt;/strong&gt;</ept> values are "True" or "False"..</target>
+          </trans-unit>
+          <trans-unit id="224" xml:space="preserve">
+            <source>Replace</source>
+            <target state="new">Replace</target>
+          </trans-unit>
+          <trans-unit id="225" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Function:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Function:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="226" xml:space="preserve">
+            <source>ObsoleteReplace(source, oldValue, regexPattern, regexGroupName, replacementValue, replacementAttributeName, template)</source>
+            <target state="new">ObsoleteReplace(source, oldValue, regexPattern, regexGroupName, replacementValue, replacementAttributeName, template)</target>
+          </trans-unit>
+          <trans-unit id="227" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Description:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Description:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="228" xml:space="preserve">
+            <source>Replaces values within a string.</source>
+            <target state="new">Replaces values within a string.</target>
+          </trans-unit>
+          <trans-unit id="229" xml:space="preserve">
+            <source>It works differently depending on the parameters provided:</source>
+            <target state="new">It works differently depending on the parameters provided:</target>
+          </trans-unit>
+          <trans-unit id="230" xml:space="preserve">
+            <source>When <bpt id="2">&lt;strong&gt;</bpt>oldValue<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>replacementValue<ept id="4">&lt;/strong&gt;</ept> are provided:</source>
+            <target state="new">When <bpt id="2">&lt;strong&gt;</bpt>oldValue<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>replacementValue<ept id="4">&lt;/strong&gt;</ept> are provided:</target>
+          </trans-unit>
+          <trans-unit id="231" xml:space="preserve">
+            <source>Replaces all occurrences of oldValue in the source  with replacementValue</source>
+            <target state="new">Replaces all occurrences of oldValue in the source  with replacementValue</target>
+          </trans-unit>
+          <trans-unit id="232" xml:space="preserve">
+            <source>When <bpt id="2">&lt;strong&gt;</bpt>oldValue<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>template<ept id="4">&lt;/strong&gt;</ept> are provided:</source>
+            <target state="new">When <bpt id="2">&lt;strong&gt;</bpt>oldValue<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>template<ept id="4">&lt;/strong&gt;</ept> are provided:</target>
+          </trans-unit>
+          <trans-unit id="233" xml:space="preserve">
+            <source>Replaces all occurrences of the <bpt id="2">&lt;strong&gt;</bpt>oldValue<ept id="2">&lt;/strong&gt;</ept> in the <bpt id="4">&lt;strong&gt;</bpt>template<ept id="4">&lt;/strong&gt;</ept> with the <bpt id="6">&lt;strong&gt;</bpt>source<ept id="6">&lt;/strong&gt;</ept> value</source>
+            <target state="new">Replaces all occurrences of the <bpt id="2">&lt;strong&gt;</bpt>oldValue<ept id="2">&lt;/strong&gt;</ept> in the <bpt id="4">&lt;strong&gt;</bpt>template<ept id="4">&lt;/strong&gt;</ept> with the <bpt id="6">&lt;strong&gt;</bpt>source<ept id="6">&lt;/strong&gt;</ept> value</target>
+          </trans-unit>
+          <trans-unit id="234" xml:space="preserve">
+            <source>When <bpt id="2">&lt;strong&gt;</bpt>oldValueRegexPattern<ept id="2">&lt;/strong&gt;</ept>, <bpt id="4">&lt;strong&gt;</bpt>oldValueRegexGroupName<ept id="4">&lt;/strong&gt;</ept>, <bpt id="6">&lt;strong&gt;</bpt>replacementValue<ept id="6">&lt;/strong&gt;</ept> are provided:</source>
+            <target state="new">When <bpt id="2">&lt;strong&gt;</bpt>oldValueRegexPattern<ept id="2">&lt;/strong&gt;</ept>, <bpt id="4">&lt;strong&gt;</bpt>oldValueRegexGroupName<ept id="4">&lt;/strong&gt;</ept>, <bpt id="6">&lt;strong&gt;</bpt>replacementValue<ept id="6">&lt;/strong&gt;</ept> are provided:</target>
+          </trans-unit>
+          <trans-unit id="235" xml:space="preserve">
+            <source>Replaces all values matching oldValueRegexPattern in the source string with replacementValue</source>
+            <target state="new">Replaces all values matching oldValueRegexPattern in the source string with replacementValue</target>
+          </trans-unit>
+          <trans-unit id="236" xml:space="preserve">
+            <source>When <bpt id="2">&lt;strong&gt;</bpt>oldValueRegexPattern<ept id="2">&lt;/strong&gt;</ept>, <bpt id="4">&lt;strong&gt;</bpt>oldValueRegexGroupName<ept id="4">&lt;/strong&gt;</ept>, <bpt id="6">&lt;strong&gt;</bpt>replacementPropertyName<ept id="6">&lt;/strong&gt;</ept> are provided:</source>
+            <target state="new">When <bpt id="2">&lt;strong&gt;</bpt>oldValueRegexPattern<ept id="2">&lt;/strong&gt;</ept>, <bpt id="4">&lt;strong&gt;</bpt>oldValueRegexGroupName<ept id="4">&lt;/strong&gt;</ept>, <bpt id="6">&lt;strong&gt;</bpt>replacementPropertyName<ept id="6">&lt;/strong&gt;</ept> are provided:</target>
+          </trans-unit>
+          <trans-unit id="237" xml:space="preserve">
+            <source>If <bpt id="2">&lt;strong&gt;</bpt>source<ept id="2">&lt;/strong&gt;</ept> has value, <bpt id="4">&lt;strong&gt;</bpt>source<ept id="4">&lt;/strong&gt;</ept> is returned</source>
+            <target state="new">If <bpt id="2">&lt;strong&gt;</bpt>source<ept id="2">&lt;/strong&gt;</ept> has value, <bpt id="4">&lt;strong&gt;</bpt>source<ept id="4">&lt;/strong&gt;</ept> is returned</target>
+          </trans-unit>
+          <trans-unit id="238" xml:space="preserve">
+            <source>If <bpt id="2">&lt;strong&gt;</bpt>source<ept id="2">&lt;/strong&gt;</ept> has no value, uses <bpt id="4">&lt;strong&gt;</bpt>oldValueRegexPattern<ept id="4">&lt;/strong&gt;</ept> and <bpt id="6">&lt;strong&gt;</bpt>oldValueRegexGroupName<ept id="6">&lt;/strong&gt;</ept> to extract replacement value from the property with <bpt id="8">&lt;strong&gt;</bpt>replacementPropertyName<ept id="8">&lt;/strong&gt;</ept>.</source>
+            <target state="new">If <bpt id="2">&lt;strong&gt;</bpt>source<ept id="2">&lt;/strong&gt;</ept> has no value, uses <bpt id="4">&lt;strong&gt;</bpt>oldValueRegexPattern<ept id="4">&lt;/strong&gt;</ept> and <bpt id="6">&lt;strong&gt;</bpt>oldValueRegexGroupName<ept id="6">&lt;/strong&gt;</ept> to extract replacement value from the property with <bpt id="8">&lt;strong&gt;</bpt>replacementPropertyName<ept id="8">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="239" xml:space="preserve">
+            <source>Replacement value is returned as the result</source>
+            <target state="new">Replacement value is returned as the result</target>
+          </trans-unit>
+          <trans-unit id="240" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Parameters:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Parameters:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="241" xml:space="preserve">
+            <source>Name</source>
+            <target state="new">Name</target>
+          </trans-unit>
+          <trans-unit id="242" xml:space="preserve">
+            <source>Required/ Repeating</source>
+            <target state="new">Required/ Repeating</target>
+          </trans-unit>
+          <trans-unit id="243" xml:space="preserve">
+            <source>Type</source>
+            <target state="new">Type</target>
+          </trans-unit>
+          <trans-unit id="244" xml:space="preserve">
+            <source>Notes</source>
+            <target state="new">Notes</target>
+          </trans-unit>
+          <trans-unit id="245" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>source<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>source<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="246" xml:space="preserve">
+            <source>Required</source>
+            <target state="new">Required</target>
+          </trans-unit>
+          <trans-unit id="247" xml:space="preserve">
+            <source>String</source>
+            <target state="new">String</target>
+          </trans-unit>
+          <trans-unit id="248" xml:space="preserve">
+            <source>Usually name of the attribute from the source object.</source>
+            <target state="new">Usually name of the attribute from the source object.</target>
+          </trans-unit>
+          <trans-unit id="249" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>oldValue<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>oldValue<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="250" xml:space="preserve">
+            <source>Optional</source>
+            <target state="new">Optional</target>
+          </trans-unit>
+          <trans-unit id="251" xml:space="preserve">
+            <source>String</source>
+            <target state="new">String</target>
+          </trans-unit>
+          <trans-unit id="252" xml:space="preserve">
+            <source>Value to be replaced in <bpt id="2">&lt;strong&gt;</bpt>source<ept id="2">&lt;/strong&gt;</ept> or <bpt id="4">&lt;strong&gt;</bpt>template<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Value to be replaced in <bpt id="2">&lt;strong&gt;</bpt>source<ept id="2">&lt;/strong&gt;</ept> or <bpt id="4">&lt;strong&gt;</bpt>template<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="253" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>regexPattern<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>regexPattern<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="254" xml:space="preserve">
+            <source>Optional</source>
+            <target state="new">Optional</target>
+          </trans-unit>
+          <trans-unit id="255" xml:space="preserve">
+            <source>String</source>
+            <target state="new">String</target>
+          </trans-unit>
+          <trans-unit id="256" xml:space="preserve">
+            <source>Regex pattern for the value to be replaced in <bpt id="2">&lt;strong&gt;</bpt>source<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Regex pattern for the value to be replaced in <bpt id="2">&lt;strong&gt;</bpt>source<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="257" xml:space="preserve">
+            <source>Or, when replacementPropertyName is used, pattern to extract value from replacement property.</source>
+            <target state="new">Or, when replacementPropertyName is used, pattern to extract value from replacement property.</target>
+          </trans-unit>
+          <trans-unit id="258" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>regexGroupName<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>regexGroupName<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="259" xml:space="preserve">
+            <source>Optional</source>
+            <target state="new">Optional</target>
+          </trans-unit>
+          <trans-unit id="260" xml:space="preserve">
+            <source>String</source>
+            <target state="new">String</target>
+          </trans-unit>
+          <trans-unit id="261" xml:space="preserve">
+            <source>Name of the group inside <bpt id="2">&lt;strong&gt;</bpt>regexPattern<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Name of the group inside <bpt id="2">&lt;strong&gt;</bpt>regexPattern<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="262" xml:space="preserve">
+            <source>Only when  replacementPropertyName is used, we will extract value of this group as replacementValue from replacement property.</source>
+            <target state="new">Only when  replacementPropertyName is used, we will extract value of this group as replacementValue from replacement property.</target>
+          </trans-unit>
+          <trans-unit id="263" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>replacementValue<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>replacementValue<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="264" xml:space="preserve">
+            <source>Optional</source>
+            <target state="new">Optional</target>
+          </trans-unit>
+          <trans-unit id="265" xml:space="preserve">
+            <source>String</source>
+            <target state="new">String</target>
+          </trans-unit>
+          <trans-unit id="266" xml:space="preserve">
+            <source>New value to replace old one with.</source>
+            <target state="new">New value to replace old one with.</target>
+          </trans-unit>
+          <trans-unit id="267" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>replacementAttributeName<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>replacementAttributeName<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="268" xml:space="preserve">
+            <source>Optional</source>
+            <target state="new">Optional</target>
+          </trans-unit>
+          <trans-unit id="269" xml:space="preserve">
+            <source>String</source>
+            <target state="new">String</target>
+          </trans-unit>
+          <trans-unit id="270" xml:space="preserve">
+            <source>Name of the attribute to be used for replacement value, when source has no value.</source>
+            <target state="new">Name of the attribute to be used for replacement value, when source has no value.</target>
+          </trans-unit>
+          <trans-unit id="271" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>template<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>template<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="272" xml:space="preserve">
+            <source>Optional</source>
+            <target state="new">Optional</target>
+          </trans-unit>
+          <trans-unit id="273" xml:space="preserve">
+            <source>String</source>
+            <target state="new">String</target>
+          </trans-unit>
+          <trans-unit id="274" xml:space="preserve">
+            <source>When <bpt id="2">&lt;strong&gt;</bpt>template<ept id="2">&lt;/strong&gt;</ept> value is provided, we will look for <bpt id="4">&lt;strong&gt;</bpt>oldValue<ept id="4">&lt;/strong&gt;</ept> inside the template and replace it with source value.</source>
+            <target state="new">When <bpt id="2">&lt;strong&gt;</bpt>template<ept id="2">&lt;/strong&gt;</ept> value is provided, we will look for <bpt id="4">&lt;strong&gt;</bpt>oldValue<ept id="4">&lt;/strong&gt;</ept> inside the template and replace it with source value.</target>
+          </trans-unit>
+          <trans-unit id="275" xml:space="preserve">
+            <source>StripSpaces</source>
+            <target state="new">StripSpaces</target>
+          </trans-unit>
+          <trans-unit id="276" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Function:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Function:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="277" xml:space="preserve">
+            <source>StripSpaces(source)</source>
+            <target state="new">StripSpaces(source)</target>
+          </trans-unit>
+          <trans-unit id="278" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Description:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Description:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="279" xml:space="preserve">
+            <source>Removes all space (" ") characters from the source string.</source>
+            <target state="new">Removes all space (" ") characters from the source string.</target>
+          </trans-unit>
+          <trans-unit id="280" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Parameters:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Parameters:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="281" xml:space="preserve">
+            <source>Name</source>
+            <target state="new">Name</target>
+          </trans-unit>
+          <trans-unit id="282" xml:space="preserve">
+            <source>Required/ Repeating</source>
+            <target state="new">Required/ Repeating</target>
+          </trans-unit>
+          <trans-unit id="283" xml:space="preserve">
+            <source>Type</source>
+            <target state="new">Type</target>
+          </trans-unit>
+          <trans-unit id="284" xml:space="preserve">
+            <source>Notes</source>
+            <target state="new">Notes</target>
+          </trans-unit>
+          <trans-unit id="285" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>source<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>source<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="286" xml:space="preserve">
+            <source>Required</source>
+            <target state="new">Required</target>
+          </trans-unit>
+          <trans-unit id="287" xml:space="preserve">
+            <source>String</source>
+            <target state="new">String</target>
+          </trans-unit>
+          <trans-unit id="288" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>source<ept id="1">&lt;/strong&gt;</ept> value to update.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>source<ept id="1">&lt;/strong&gt;</ept> value to update.</target>
+          </trans-unit>
+          <trans-unit id="289" xml:space="preserve">
+            <source>Switch</source>
+            <target state="new">Switch</target>
+          </trans-unit>
+          <trans-unit id="290" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Function:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Function:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="291" xml:space="preserve">
+            <source>Switch(source, defaultValue, key1, value1, key2, value2, …)</source>
+            <target state="new">Switch(source, defaultValue, key1, value1, key2, value2, …)</target>
+          </trans-unit>
+          <trans-unit id="292" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Description:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Description:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="293" xml:space="preserve">
+            <source>When <bpt id="2">&lt;strong&gt;</bpt>source<ept id="2">&lt;/strong&gt;</ept> value matches a <bpt id="4">&lt;strong&gt;</bpt>key<ept id="4">&lt;/strong&gt;</ept>, returns <bpt id="6">&lt;strong&gt;</bpt>value<ept id="6">&lt;/strong&gt;</ept> for that <bpt id="8">&lt;strong&gt;</bpt>key<ept id="8">&lt;/strong&gt;</ept>.</source>
+            <target state="new">When <bpt id="2">&lt;strong&gt;</bpt>source<ept id="2">&lt;/strong&gt;</ept> value matches a <bpt id="4">&lt;strong&gt;</bpt>key<ept id="4">&lt;/strong&gt;</ept>, returns <bpt id="6">&lt;strong&gt;</bpt>value<ept id="6">&lt;/strong&gt;</ept> for that <bpt id="8">&lt;strong&gt;</bpt>key<ept id="8">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="294" xml:space="preserve">
+            <source>If <bpt id="2">&lt;strong&gt;</bpt>source<ept id="2">&lt;/strong&gt;</ept> value doesn't match any keys, returns <bpt id="4">&lt;strong&gt;</bpt>defaultValue<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">If <bpt id="2">&lt;strong&gt;</bpt>source<ept id="2">&lt;/strong&gt;</ept> value doesn't match any keys, returns <bpt id="4">&lt;strong&gt;</bpt>defaultValue<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="295" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Key<ept id="1">&lt;/strong&gt;</ept> and <bpt id="3">&lt;strong&gt;</bpt>value<ept id="3">&lt;/strong&gt;</ept> parameters must always come in pairs.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Key<ept id="1">&lt;/strong&gt;</ept> and <bpt id="3">&lt;strong&gt;</bpt>value<ept id="3">&lt;/strong&gt;</ept> parameters must always come in pairs.</target>
+          </trans-unit>
+          <trans-unit id="296" xml:space="preserve">
+            <source>The function always expects an even number of parameters.</source>
+            <target state="new">The function always expects an even number of parameters.</target>
+          </trans-unit>
+          <trans-unit id="297" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Parameters:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Parameters:<ept id="1">&lt;/strong&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="298" xml:space="preserve">
+            <source>Name</source>
+            <target state="new">Name</target>
+          </trans-unit>
+          <trans-unit id="299" xml:space="preserve">
+            <source>Required/ Repeating</source>
+            <target state="new">Required/ Repeating</target>
+          </trans-unit>
+          <trans-unit id="300" xml:space="preserve">
+            <source>Type</source>
+            <target state="new">Type</target>
+          </trans-unit>
+          <trans-unit id="301" xml:space="preserve">
+            <source>Notes</source>
+            <target state="new">Notes</target>
+          </trans-unit>
+          <trans-unit id="302" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>source<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>source<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="303" xml:space="preserve">
+            <source>Required</source>
+            <target state="new">Required</target>
+          </trans-unit>
+          <trans-unit id="304" xml:space="preserve">
+            <source>String</source>
+            <target state="new">String</target>
+          </trans-unit>
+          <trans-unit id="305" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Source<ept id="1">&lt;/strong&gt;</ept> value to update.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Source<ept id="1">&lt;/strong&gt;</ept> value to update.</target>
+          </trans-unit>
+          <trans-unit id="306" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>defaultValue<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>defaultValue<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="307" xml:space="preserve">
+            <source>Optional</source>
+            <target state="new">Optional</target>
+          </trans-unit>
+          <trans-unit id="308" xml:space="preserve">
+            <source>String</source>
+            <target state="new">String</target>
+          </trans-unit>
+          <trans-unit id="309" xml:space="preserve">
+            <source>Default value to be used when source doesn't match any keys.</source>
+            <target state="new">Default value to be used when source doesn't match any keys.</target>
+          </trans-unit>
+          <trans-unit id="310" xml:space="preserve">
+            <source>Can be empty string ("").</source>
+            <target state="new">Can be empty string ("").</target>
+          </trans-unit>
+          <trans-unit id="311" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>key<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>key<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="312" xml:space="preserve">
+            <source>Required</source>
+            <target state="new">Required</target>
+          </trans-unit>
+          <trans-unit id="313" xml:space="preserve">
+            <source>String</source>
+            <target state="new">String</target>
+          </trans-unit>
+          <trans-unit id="314" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Key<ept id="1">&lt;/strong&gt;</ept> to compare <bpt id="3">&lt;strong&gt;</bpt>source<ept id="3">&lt;/strong&gt;</ept> value with.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Key<ept id="1">&lt;/strong&gt;</ept> to compare <bpt id="3">&lt;strong&gt;</bpt>source<ept id="3">&lt;/strong&gt;</ept> value with.</target>
+          </trans-unit>
+          <trans-unit id="315" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>value<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>value<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="316" xml:space="preserve">
+            <source>Required</source>
+            <target state="new">Required</target>
+          </trans-unit>
+          <trans-unit id="317" xml:space="preserve">
+            <source>String</source>
+            <target state="new">String</target>
+          </trans-unit>
+          <trans-unit id="318" xml:space="preserve">
+            <source>Replacement value for the <bpt id="2">&lt;strong&gt;</bpt>source<ept id="2">&lt;/strong&gt;</ept> matching the key.</source>
+            <target state="new">Replacement value for the <bpt id="2">&lt;strong&gt;</bpt>source<ept id="2">&lt;/strong&gt;</ept> matching the key.</target>
+          </trans-unit>
+          <trans-unit id="319" xml:space="preserve">
+            <source>Examples</source>
+            <target state="new">Examples</target>
+          </trans-unit>
+          <trans-unit id="320" xml:space="preserve">
+            <source>Strip known domain name</source>
+            <target state="new">Strip known domain name</target>
+          </trans-unit>
+          <trans-unit id="321" xml:space="preserve">
+            <source>You need to strip a known domain name from a user’s email to obtain a user name. <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></source>
+            <target state="new">You need to strip a known domain name from a user’s email to obtain a user name. <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="322" xml:space="preserve">
+            <source>For example, if the domain is "contoso.com", then you could use the following expression:</source>
+            <target state="new">For example, if the domain is "contoso.com", then you could use the following expression:</target>
+          </trans-unit>
+          <trans-unit id="323" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Expression:<ept id="1">&lt;/strong&gt;</ept> <bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Expression:<ept id="1">&lt;/strong&gt;</ept> <bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="324" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>Replace([mail], "@contoso.com", , ,"", ,)<ept id="1">&lt;/code&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>Replace([mail], "@contoso.com", , ,"", ,)<ept id="1">&lt;/code&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="325" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Sample input / output:<ept id="1">&lt;/strong&gt;</ept> <bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Sample input / output:<ept id="1">&lt;/strong&gt;</ept> <bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="326" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>INPUT<ept id="1">&lt;/strong&gt;</ept> (mail): "john.doe@contoso.com"</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>INPUT<ept id="1">&lt;/strong&gt;</ept> (mail): "john.doe@contoso.com"</target>
+          </trans-unit>
+          <trans-unit id="327" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>OUTPUT<ept id="1">&lt;/strong&gt;</ept>:  "john.doe"</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>OUTPUT<ept id="1">&lt;/strong&gt;</ept>:  "john.doe"</target>
+          </trans-unit>
+          <trans-unit id="328" xml:space="preserve">
+            <source>Append constant suffix to user name</source>
+            <target state="new">Append constant suffix to user name</target>
+          </trans-unit>
+          <trans-unit id="329" xml:space="preserve">
+            <source>If you are using a Salesforce Sandbox, you might need to append an additional suffix to all your user names before synchronizing them.</source>
+            <target state="new">If you are using a Salesforce Sandbox, you might need to append an additional suffix to all your user names before synchronizing them.</target>
+          </trans-unit>
+          <trans-unit id="330" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Expression:<ept id="1">&lt;/strong&gt;</ept> <bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Expression:<ept id="1">&lt;/strong&gt;</ept> <bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="331" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>Append([userPrincipalName], ".test"))<ept id="1">&lt;/code&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>Append([userPrincipalName], ".test"))<ept id="1">&lt;/code&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="332" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Sample input/output:<ept id="1">&lt;/strong&gt;</ept> <bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Sample input/output:<ept id="1">&lt;/strong&gt;</ept> <bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="333" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>INPUT<ept id="1">&lt;/strong&gt;</ept>: (userPrincipalName): "John.Doe@contoso.com"</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>INPUT<ept id="1">&lt;/strong&gt;</ept>: (userPrincipalName): "John.Doe@contoso.com"</target>
+          </trans-unit>
+          <trans-unit id="334" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>OUTPUT<ept id="1">&lt;/strong&gt;</ept>:  "John.Doe@contoso.com.test"</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>OUTPUT<ept id="1">&lt;/strong&gt;</ept>:  "John.Doe@contoso.com.test"</target>
+          </trans-unit>
+          <trans-unit id="335" xml:space="preserve">
+            <source>Generate user alias by concatenating parts of first and last name</source>
+            <target state="new">Generate user alias by concatenating parts of first and last name</target>
+          </trans-unit>
+          <trans-unit id="336" xml:space="preserve">
+            <source>You need to generate a user alias by taking first 3 letters of user's first name and first 5 letters of user's last name.</source>
+            <target state="new">You need to generate a user alias by taking first 3 letters of user's first name and first 5 letters of user's last name.</target>
+          </trans-unit>
+          <trans-unit id="337" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Expression:<ept id="1">&lt;/strong&gt;</ept> <bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Expression:<ept id="1">&lt;/strong&gt;</ept> <bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="338" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>Append(Mid([givenName], 1, 3), Mid([surname], 1, 5))<ept id="1">&lt;/code&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>Append(Mid([givenName], 1, 3), Mid([surname], 1, 5))<ept id="1">&lt;/code&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="339" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Sample input/output:<ept id="1">&lt;/strong&gt;</ept> <bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Sample input/output:<ept id="1">&lt;/strong&gt;</ept> <bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="340" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>INPUT<ept id="1">&lt;/strong&gt;</ept> (givenName): "John"</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>INPUT<ept id="1">&lt;/strong&gt;</ept> (givenName): "John"</target>
+          </trans-unit>
+          <trans-unit id="341" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>INPUT<ept id="1">&lt;/strong&gt;</ept> (surname): "Doe"</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>INPUT<ept id="1">&lt;/strong&gt;</ept> (surname): "Doe"</target>
+          </trans-unit>
+          <trans-unit id="342" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>OUTPUT<ept id="1">&lt;/strong&gt;</ept>:  "JohDoe"</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>OUTPUT<ept id="1">&lt;/strong&gt;</ept>:  "JohDoe"</target>
+          </trans-unit>
+          <trans-unit id="343" xml:space="preserve">
+            <source>Output date as a string in a certain format</source>
+            <target state="new">Output date as a string in a certain format</target>
+          </trans-unit>
+          <trans-unit id="344" xml:space="preserve">
+            <source>You want to send dates to a SaaS application in a certain format. <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></source>
+            <target state="new">You want to send dates to a SaaS application in a certain format. <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="345" xml:space="preserve">
+            <source>For example, you want to format dates for ServiceNow.</source>
+            <target state="new">For example, you want to format dates for ServiceNow.</target>
+          </trans-unit>
+          <trans-unit id="346" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Expression:<ept id="1">&lt;/strong&gt;</ept> <bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Expression:<ept id="1">&lt;/strong&gt;</ept> <bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="347" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>FormatDateTime([extensionAttribute1], "yyyyMMddHHmmss.fZ", "yyyy-MM-dd")<ept id="1">&lt;/code&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>FormatDateTime([extensionAttribute1], "yyyyMMddHHmmss.fZ", "yyyy-MM-dd")<ept id="1">&lt;/code&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="348" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Sample input/output:<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Sample input/output:<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="349" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>INPUT<ept id="1">&lt;/strong&gt;</ept> (extensionAttribute1): "20150123105347.1Z"</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>INPUT<ept id="1">&lt;/strong&gt;</ept> (extensionAttribute1): "20150123105347.1Z"</target>
+          </trans-unit>
+          <trans-unit id="350" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>OUTPUT<ept id="1">&lt;/strong&gt;</ept>:  "2015-01-23"</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>OUTPUT<ept id="1">&lt;/strong&gt;</ept>:  "2015-01-23"</target>
+          </trans-unit>
+          <trans-unit id="351" xml:space="preserve">
+            <source>Replace a value based on predefined set of options</source>
+            <target state="new">Replace a value based on predefined set of options</target>
+          </trans-unit>
+          <trans-unit id="352" xml:space="preserve">
+            <source>You need to define the time zone of the user based on the state code stored in Azure AD. <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></source>
+            <target state="new">You need to define the time zone of the user based on the state code stored in Azure AD. <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="353" xml:space="preserve">
+            <source>If the state code doesn't match any of the predefined options, use default value of "Australia/Sydney".</source>
+            <target state="new">If the state code doesn't match any of the predefined options, use default value of "Australia/Sydney".</target>
+          </trans-unit>
+          <trans-unit id="354" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Expression:<ept id="1">&lt;/strong&gt;</ept> <bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Expression:<ept id="1">&lt;/strong&gt;</ept> <bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="355" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>Switch([state], "Australia/Sydney", "NSW", "Australia/Sydney","QLD", "Australia/Brisbane", "SA", "Australia/Adelaide")<ept id="1">&lt;/code&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>Switch([state], "Australia/Sydney", "NSW", "Australia/Sydney","QLD", "Australia/Brisbane", "SA", "Australia/Adelaide")<ept id="1">&lt;/code&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="356" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Sample input/output:<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Sample input/output:<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="357" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>INPUT<ept id="1">&lt;/strong&gt;</ept> (state): "QLD"</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>INPUT<ept id="1">&lt;/strong&gt;</ept> (state): "QLD"</target>
+          </trans-unit>
+          <trans-unit id="358" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>OUTPUT<ept id="1">&lt;/strong&gt;</ept>: "Australia/Brisbane"</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>OUTPUT<ept id="1">&lt;/strong&gt;</ept>: "Australia/Brisbane"</target>
+          </trans-unit>
+          <trans-unit id="359" xml:space="preserve">
+            <source><ph id="1">&lt;token href="../../includes/active-directory-saas-toc.md"/&gt;</ph></source>
+            <target state="new"><ph id="1">&lt;token href="../../includes/active-directory-saas-toc.md"/&gt;</ph></target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>

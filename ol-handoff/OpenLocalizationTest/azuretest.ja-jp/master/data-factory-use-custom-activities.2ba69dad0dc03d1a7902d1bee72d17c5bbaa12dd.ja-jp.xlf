@@ -1,0 +1,799 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="ja-jp" original="2/20/2016 8:56:16 AM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b5296f1703393fd00cac80e26c0ed9ecfc210be6</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Use custom activities in an Azure Data Factory pipeline</source>
+            <target state="new">Use custom activities in an Azure Data Factory pipeline</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>Learn how to create custom activities and use them in an Azure Data Factory pipeline.</source>
+            <target state="new">Learn how to create custom activities and use them in an Azure Data Factory pipeline.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Use custom activities in an Azure Data Factory pipeline</source>
+            <target state="new">Use custom activities in an Azure Data Factory pipeline</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source>Azure Data Factory supports built-in activities such as <bpt id="2">&lt;strong&gt;</bpt>Copy Activity<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>HDInsight Activity<ept id="4">&lt;/strong&gt;</ept> to be used in pipelines to move and process data.</source>
+            <target state="new">Azure Data Factory supports built-in activities such as <bpt id="2">&lt;strong&gt;</bpt>Copy Activity<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>HDInsight Activity<ept id="4">&lt;/strong&gt;</ept> to be used in pipelines to move and process data.</target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>You can also create a custom .NET activity with your own transformation/processing logic and use the activity in a pipeline.</source>
+            <target state="new">You can also create a custom .NET activity with your own transformation/processing logic and use the activity in a pipeline.</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>You can configure the activity to run using either an <bpt id="2">&lt;strong&gt;</bpt>Azure HDInsight<ept id="2">&lt;/strong&gt;</ept> cluster or an <bpt id="4">&lt;strong&gt;</bpt>Azure Batch<ept id="4">&lt;/strong&gt;</ept> service.</source>
+            <target state="new">You can configure the activity to run using either an <bpt id="2">&lt;strong&gt;</bpt>Azure HDInsight<ept id="2">&lt;/strong&gt;</ept> cluster or an <bpt id="4">&lt;strong&gt;</bpt>Azure Batch<ept id="4">&lt;/strong&gt;</ept> service.</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>This article describes how to create a custom activity and use it in an Azure Data Factory pipeline.</source>
+            <target state="new">This article describes how to create a custom activity and use it in an Azure Data Factory pipeline.</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>It also provides a detailed walkthrough with step-by-step instructions for creating and using a custom activity.</source>
+            <target state="new">It also provides a detailed walkthrough with step-by-step instructions for creating and using a custom activity.</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source>The walkthrough uses the HDInsight linked service.</source>
+            <target state="new">The walkthrough uses the HDInsight linked service.</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source>To use the Azure Batch linked service instead, you create a linked service of type <bpt id="2">&lt;strong&gt;</bpt>AzureBatch<ept id="2">&lt;/strong&gt;</ept> and use it in the activity section of the pipeline JSON (<bpt id="4">&lt;strong&gt;</bpt>linkedServiceName<ept id="4">&lt;/strong&gt;</ept>).</source>
+            <target state="new">To use the Azure Batch linked service instead, you create a linked service of type <bpt id="2">&lt;strong&gt;</bpt>AzureBatch<ept id="2">&lt;/strong&gt;</ept> and use it in the activity section of the pipeline JSON (<bpt id="4">&lt;strong&gt;</bpt>linkedServiceName<ept id="4">&lt;/strong&gt;</ept>).</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>See the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Batch Linked Service<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> section for details on using Azure Batch with the custom activity.</source>
+            <target state="new">See the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Batch Linked Service<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> section for details on using Azure Batch with the custom activity.</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept> Walkthrough</source>
+            <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept> Walkthrough</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>This Walkthrough provides you with step-by-step instructions for creating a custom activity and using the activity in an Azure Data Factory pipeline.</source>
+            <target state="new">This Walkthrough provides you with step-by-step instructions for creating a custom activity and using the activity in an Azure Data Factory pipeline.</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source>This walkthrough extends the tutorial from the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Get started with Azure Data Factory[adfgetstarted]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">This walkthrough extends the tutorial from the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Get started with Azure Data Factory[adfgetstarted]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>If you want to see the custom activity working, you need to go through the Get started tutorial first and then do this walkthrough.</source>
+            <target state="new">If you want to see the custom activity working, you need to go through the Get started tutorial first and then do this walkthrough.</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Prerequisites:<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Prerequisites:<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>Tutorial from <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Get started with Azure Data Factory[adfgetstarted]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">Tutorial from <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Get started with Azure Data Factory[adfgetstarted]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>You must complete the tutorial from this article before doing this walkthrough.</source>
+            <target state="new">You must complete the tutorial from this article before doing this walkthrough.</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source>Visual Studio 2012 or 2013</source>
+            <target state="new">Visual Studio 2012 or 2013</target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source>Download and install <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure .NET SDK[azure-developer-center]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new">Download and install <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure .NET SDK[azure-developer-center]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source>Download the latest <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>NuGet package for Azure Data Factory<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> and Install it.</source>
+            <target state="new">Download the latest <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>NuGet package for Azure Data Factory<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> and Install it.</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source>Instructions are in the walkthrough.</source>
+            <target state="new">Instructions are in the walkthrough.</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>Download and install NuGet package for Azure Storage.</source>
+            <target state="new">Download and install NuGet package for Azure Storage.</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source>Instructions are in the walkthrough, so you can skip this step.</source>
+            <target state="new">Instructions are in the walkthrough, so you can skip this step.</target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>Step 1: Create a custom activity</source>
+            <target state="new">Step 1: Create a custom activity</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>Create a .NET Class Library project.</source>
+            <target state="new">Create a .NET Class Library project.</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source>Launch </source>
+            <target state="new">Launch </target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source>Visual Studio 2012</source>
+            <target state="new">Visual Studio 2012</target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source> or </source>
+            <target state="new"> or </target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source>Visual Studio 2013</source>
+            <target state="new">Visual Studio 2013</target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source>.</source>
+            <target state="new">.</target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source>Click </source>
+            <target state="new">Click </target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source>File</source>
+            <target state="new">File</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source>, point to </source>
+            <target state="new">, point to </target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source>New</source>
+            <target state="new">New</target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source>, and click </source>
+            <target state="new">, and click </target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source>Project</source>
+            <target state="new">Project</target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source>.</source>
+            <target state="new">.</target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source>Expand </source>
+            <target state="new">Expand </target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source>Templates</source>
+            <target state="new">Templates</target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source>, and select </source>
+            <target state="new">, and select </target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source>Visual C#</source>
+            <target state="new">Visual C#</target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source>. In this walkthrough, you use C#, but you can use any .NET language to develop the custom activity.</source>
+            <target state="new">. In this walkthrough, you use C#, but you can use any .NET language to develop the custom activity.</target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source>Select </source>
+            <target state="new">Select </target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source>Class Library</source>
+            <target state="new">Class Library</target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source> from the list of project types on the right.</source>
+            <target state="new"> from the list of project types on the right.</target>
+          </trans-unit>
+          <trans-unit id="147" xml:space="preserve">
+            <source>Enter </source>
+            <target state="new">Enter </target>
+          </trans-unit>
+          <trans-unit id="148" xml:space="preserve">
+            <source>MyDotNetActivity</source>
+            <target state="new">MyDotNetActivity</target>
+          </trans-unit>
+          <trans-unit id="149" xml:space="preserve">
+            <source> for the </source>
+            <target state="new"> for the </target>
+          </trans-unit>
+          <trans-unit id="150" xml:space="preserve">
+            <source>Name</source>
+            <target state="new">Name</target>
+          </trans-unit>
+          <trans-unit id="151" xml:space="preserve">
+            <source>.</source>
+            <target state="new">.</target>
+          </trans-unit>
+          <trans-unit id="152" xml:space="preserve">
+            <source>Select </source>
+            <target state="new">Select </target>
+          </trans-unit>
+          <trans-unit id="153" xml:space="preserve">
+            <source>C:\ADFGetStarted</source>
+            <target state="new">C:\ADFGetStarted</target>
+          </trans-unit>
+          <trans-unit id="154" xml:space="preserve">
+            <source> for the </source>
+            <target state="new"> for the </target>
+          </trans-unit>
+          <trans-unit id="155" xml:space="preserve">
+            <source>Location</source>
+            <target state="new">Location</target>
+          </trans-unit>
+          <trans-unit id="156" xml:space="preserve">
+            <source>.</source>
+            <target state="new">.</target>
+          </trans-unit>
+          <trans-unit id="157" xml:space="preserve">
+            <source>Click </source>
+            <target state="new">Click </target>
+          </trans-unit>
+          <trans-unit id="158" xml:space="preserve">
+            <source>OK</source>
+            <target state="new">OK</target>
+          </trans-unit>
+          <trans-unit id="159" xml:space="preserve">
+            <source> to create the project.</source>
+            <target state="new"> to create the project.</target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Tools<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>, point to <bpt id="6">&lt;html&gt;</bpt><ept id="6">&lt;/html&gt;</ept>NuGet Package Manager<bpt id="8">&lt;html&gt;</bpt><ept id="8">&lt;/html&gt;</ept>, and click <bpt id="10">&lt;html&gt;</bpt><ept id="10">&lt;/html&gt;</ept>Package Manager Console<bpt id="12">&lt;html&gt;</bpt><ept id="12">&lt;/html&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Tools<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>, point to <bpt id="6">&lt;html&gt;</bpt><ept id="6">&lt;/html&gt;</ept>NuGet Package Manager<bpt id="8">&lt;html&gt;</bpt><ept id="8">&lt;/html&gt;</ept>, and click <bpt id="10">&lt;html&gt;</bpt><ept id="10">&lt;/html&gt;</ept>Package Manager Console<bpt id="12">&lt;html&gt;</bpt><ept id="12">&lt;/html&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="161" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Package Manager Console<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>, execute the following command to import <bpt id="6">&lt;html&gt;</bpt><ept id="6">&lt;/html&gt;</ept>Microsoft.Azure.Management.DataFactories<bpt id="8">&lt;html&gt;</bpt><ept id="8">&lt;/html&gt;</ept>.</source>
+            <target state="new">In the <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Package Manager Console<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>, execute the following command to import <bpt id="6">&lt;html&gt;</bpt><ept id="6">&lt;/html&gt;</ept>Microsoft.Azure.Management.DataFactories<bpt id="8">&lt;html&gt;</bpt><ept id="8">&lt;/html&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="162" xml:space="preserve">
+            <source>Import the Azure Storage NuGet package in to the project.</source>
+            <target state="new">Import the Azure Storage NuGet package in to the project.</target>
+          </trans-unit>
+          <trans-unit id="163" xml:space="preserve">
+            <source>Add the following <bpt id="2">&lt;strong&gt;</bpt>using<ept id="2">&lt;/strong&gt;</ept> statements to the source file in the project.</source>
+            <target state="new">Add the following <bpt id="2">&lt;strong&gt;</bpt>using<ept id="2">&lt;/strong&gt;</ept> statements to the source file in the project.</target>
+          </trans-unit>
+          <trans-unit id="164" xml:space="preserve">
+            <source>Change the name of the <bpt id="2">&lt;strong&gt;</bpt>namespace<ept id="2">&lt;/strong&gt;</ept> to <bpt id="4">&lt;strong&gt;</bpt>MyDotNetActivityNS<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Change the name of the <bpt id="2">&lt;strong&gt;</bpt>namespace<ept id="2">&lt;/strong&gt;</ept> to <bpt id="4">&lt;strong&gt;</bpt>MyDotNetActivityNS<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="165" xml:space="preserve">
+            <source>Change the name of the class to <bpt id="2">&lt;strong&gt;</bpt>MyDotNetActivity<ept id="2">&lt;/strong&gt;</ept> and derive it from the <bpt id="4">&lt;strong&gt;</bpt>IDotNetActivity<ept id="4">&lt;/strong&gt;</ept> interface as shown below.</source>
+            <target state="new">Change the name of the class to <bpt id="2">&lt;strong&gt;</bpt>MyDotNetActivity<ept id="2">&lt;/strong&gt;</ept> and derive it from the <bpt id="4">&lt;strong&gt;</bpt>IDotNetActivity<ept id="4">&lt;/strong&gt;</ept> interface as shown below.</target>
+          </trans-unit>
+          <trans-unit id="166" xml:space="preserve">
+            <source>Implement (Add) the <bpt id="2">&lt;strong&gt;</bpt>Execute<ept id="2">&lt;/strong&gt;</ept> method of the <bpt id="4">&lt;strong&gt;</bpt>IDotNetActivity<ept id="4">&lt;/strong&gt;</ept> interface to the <bpt id="6">&lt;strong&gt;</bpt>MyDotNetActivity<ept id="6">&lt;/strong&gt;</ept> class and copy the following sample code to the method.</source>
+            <target state="new">Implement (Add) the <bpt id="2">&lt;strong&gt;</bpt>Execute<ept id="2">&lt;/strong&gt;</ept> method of the <bpt id="4">&lt;strong&gt;</bpt>IDotNetActivity<ept id="4">&lt;/strong&gt;</ept> interface to the <bpt id="6">&lt;strong&gt;</bpt>MyDotNetActivity<ept id="6">&lt;/strong&gt;</ept> class and copy the following sample code to the method.</target>
+          </trans-unit>
+          <trans-unit id="167" xml:space="preserve">
+            <source>The following sample code counts the number of lines in the input blob and produces the following content in the output blob: path to the blob, number of lines in the blob, the machine on which the activity ran, current date-time.</source>
+            <target state="new">The following sample code counts the number of lines in the input blob and produces the following content in the output blob: path to the blob, number of lines in the blob, the machine on which the activity ran, current date-time.</target>
+          </trans-unit>
+          <trans-unit id="168" xml:space="preserve">
+            <source>Add the following helper methods.</source>
+            <target state="new">Add the following helper methods.</target>
+          </trans-unit>
+          <trans-unit id="169" xml:space="preserve">
+            <source>The <bpt id="2">&lt;strong&gt;</bpt>Execute<ept id="2">&lt;/strong&gt;</ept> method invokes these helper methods.</source>
+            <target state="new">The <bpt id="2">&lt;strong&gt;</bpt>Execute<ept id="2">&lt;/strong&gt;</ept> method invokes these helper methods.</target>
+          </trans-unit>
+          <trans-unit id="170" xml:space="preserve">
+            <source>The <bpt id="2">&lt;strong&gt;</bpt>GetConnectionString<ept id="2">&lt;/strong&gt;</ept> method retrieves the Azure Storage connection string and the <bpt id="4">&lt;strong&gt;</bpt>GetFolderPath<ept id="4">&lt;/strong&gt;</ept> method retrieves the blob location.</source>
+            <target state="new">The <bpt id="2">&lt;strong&gt;</bpt>GetConnectionString<ept id="2">&lt;/strong&gt;</ept> method retrieves the Azure Storage connection string and the <bpt id="4">&lt;strong&gt;</bpt>GetFolderPath<ept id="4">&lt;/strong&gt;</ept> method retrieves the blob location.</target>
+          </trans-unit>
+          <trans-unit id="171" xml:space="preserve">
+            <source>Compile the project.</source>
+            <target state="new">Compile the project.</target>
+          </trans-unit>
+          <trans-unit id="172" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Build<ept id="2">&lt;/strong&gt;</ept> from the menu and click <bpt id="4">&lt;strong&gt;</bpt>Build Solution<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Build<ept id="2">&lt;/strong&gt;</ept> from the menu and click <bpt id="4">&lt;strong&gt;</bpt>Build Solution<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="173" xml:space="preserve">
+            <source>Launch <bpt id="2">&lt;strong&gt;</bpt>Windows Explorer<ept id="2">&lt;/strong&gt;</ept>, and navigate to <bpt id="4">&lt;strong&gt;</bpt>bin\debug<ept id="4">&lt;/strong&gt;</ept> or <bpt id="6">&lt;strong&gt;</bpt>bin\release<ept id="6">&lt;/strong&gt;</ept> folder depending type of build.</source>
+            <target state="new">Launch <bpt id="2">&lt;strong&gt;</bpt>Windows Explorer<ept id="2">&lt;/strong&gt;</ept>, and navigate to <bpt id="4">&lt;strong&gt;</bpt>bin\debug<ept id="4">&lt;/strong&gt;</ept> or <bpt id="6">&lt;strong&gt;</bpt>bin\release<ept id="6">&lt;/strong&gt;</ept> folder depending type of build.</target>
+          </trans-unit>
+          <trans-unit id="174" xml:space="preserve">
+            <source>Create a zip file <bpt id="2">&lt;strong&gt;</bpt>MyDotNetActivity.zip<ept id="2">&lt;/strong&gt;</ept> that contain all the binaries in the <bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>\bin\Debug folder. You may want to include the MyDotNetActivity.pdb file so that you get additional details such as line number in the source code that caused the issue in case of a failure.</source>
+            <target state="new">Create a zip file <bpt id="2">&lt;strong&gt;</bpt>MyDotNetActivity.zip<ept id="2">&lt;/strong&gt;</ept> that contain all the binaries in the <bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>\bin\Debug folder. You may want to include the MyDotNetActivity.pdb file so that you get additional details such as line number in the source code that caused the issue in case of a failure.</target>
+          </trans-unit>
+          <trans-unit id="175" xml:space="preserve">
+            <source>Upload <bpt id="2">&lt;strong&gt;</bpt>MyDotNetActivity.zip<ept id="2">&lt;/strong&gt;</ept> as a blob to the blob container: <bpt id="4">&lt;strong&gt;</bpt>customactvitycontainer<ept id="4">&lt;/strong&gt;</ept> in the Azure blob storage that the <bpt id="6">&lt;strong&gt;</bpt>StorageLinkedService<ept id="6">&lt;/strong&gt;</ept> linked service in the <bpt id="8">&lt;strong&gt;</bpt>ADFTutorialDataFactory<ept id="8">&lt;/strong&gt;</ept> uses.</source>
+            <target state="new">Upload <bpt id="2">&lt;strong&gt;</bpt>MyDotNetActivity.zip<ept id="2">&lt;/strong&gt;</ept> as a blob to the blob container: <bpt id="4">&lt;strong&gt;</bpt>customactvitycontainer<ept id="4">&lt;/strong&gt;</ept> in the Azure blob storage that the <bpt id="6">&lt;strong&gt;</bpt>StorageLinkedService<ept id="6">&lt;/strong&gt;</ept> linked service in the <bpt id="8">&lt;strong&gt;</bpt>ADFTutorialDataFactory<ept id="8">&lt;/strong&gt;</ept> uses.</target>
+          </trans-unit>
+          <trans-unit id="176" xml:space="preserve">
+            <source>Create the blob container <bpt id="2">&lt;strong&gt;</bpt>customactivitycontainer<ept id="2">&lt;/strong&gt;</ept> if it does not already exist.</source>
+            <target state="new">Create the blob container <bpt id="2">&lt;strong&gt;</bpt>customactivitycontainer<ept id="2">&lt;/strong&gt;</ept> if it does not already exist.</target>
+          </trans-unit>
+          <trans-unit id="177" xml:space="preserve">
+            <source>If you add this .NET activity project to a solution in Visual Studio that contains a Data Factory project, you do not need to perform the last two steps of creating the zip file and manually uploading it to the Azure blob storage.</source>
+            <target state="new">If you add this .NET activity project to a solution in Visual Studio that contains a Data Factory project, you do not need to perform the last two steps of creating the zip file and manually uploading it to the Azure blob storage.</target>
+          </trans-unit>
+          <trans-unit id="178" xml:space="preserve">
+            <source>When you publish Data Factory entities using Visual Studio, these steps are automatically done by the publishing process.</source>
+            <target state="new">When you publish Data Factory entities using Visual Studio, these steps are automatically done by the publishing process.</target>
+          </trans-unit>
+          <trans-unit id="179" xml:space="preserve">
+            <source>See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Build your first pipeline using Visual Studio<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> and <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Copy data from Azure Blob to Azure SQL<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept> articles to learn about creating and publishing Data Factory entities using Visual Studio.</source>
+            <target state="new">See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Build your first pipeline using Visual Studio<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> and <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Copy data from Azure Blob to Azure SQL<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept> articles to learn about creating and publishing Data Factory entities using Visual Studio.</target>
+          </trans-unit>
+          <trans-unit id="180" xml:space="preserve">
+            <source>Step 2: Use the custom activity in a pipeline</source>
+            <target state="new">Step 2: Use the custom activity in a pipeline</target>
+          </trans-unit>
+          <trans-unit id="181" xml:space="preserve">
+            <source>Here are the steps you will be performing in this step:</source>
+            <target state="new">Here are the steps you will be performing in this step:</target>
+          </trans-unit>
+          <trans-unit id="182" xml:space="preserve">
+            <source>Create a linked service for the HDInsight cluster on which the custom activity will run as a map-only job.</source>
+            <target state="new">Create a linked service for the HDInsight cluster on which the custom activity will run as a map-only job.</target>
+          </trans-unit>
+          <trans-unit id="183" xml:space="preserve">
+            <source>Create an output table that the pipeline in this sample will produce.</source>
+            <target state="new">Create an output table that the pipeline in this sample will produce.</target>
+          </trans-unit>
+          <trans-unit id="184" xml:space="preserve">
+            <source>Create and run a pipeline that uses the custom activity you created in step 1.</source>
+            <target state="new">Create and run a pipeline that uses the custom activity you created in step 1.</target>
+          </trans-unit>
+          <trans-unit id="185" xml:space="preserve">
+            <source>Create a linked service for  HDInsight cluster that will be used to run the custom activity</source>
+            <target state="new">Create a linked service for  HDInsight cluster that will be used to run the custom activity</target>
+          </trans-unit>
+          <trans-unit id="186" xml:space="preserve">
+            <source>The Azure Data Factory service supports creation of an on-demand cluster and use it to process input to produce output data.</source>
+            <target state="new">The Azure Data Factory service supports creation of an on-demand cluster and use it to process input to produce output data.</target>
+          </trans-unit>
+          <trans-unit id="187" xml:space="preserve">
+            <source>You can also use your own cluster to perform the same.</source>
+            <target state="new">You can also use your own cluster to perform the same.</target>
+          </trans-unit>
+          <trans-unit id="188" xml:space="preserve">
+            <source>When you use on-demand HDInsight cluster, a cluster gets created for each slice.</source>
+            <target state="new">When you use on-demand HDInsight cluster, a cluster gets created for each slice.</target>
+          </trans-unit>
+          <trans-unit id="189" xml:space="preserve">
+            <source>Whereas, if you use your own HDInsight cluster, the cluster is ready to process the slice immediately.</source>
+            <target state="new">Whereas, if you use your own HDInsight cluster, the cluster is ready to process the slice immediately.</target>
+          </trans-unit>
+          <trans-unit id="190" xml:space="preserve">
+            <source>Therefore, when you use on-demand cluster, you may not see the output data as quickly as when you use your own cluster.</source>
+            <target state="new">Therefore, when you use on-demand cluster, you may not see the output data as quickly as when you use your own cluster.</target>
+          </trans-unit>
+          <trans-unit id="191" xml:space="preserve">
+            <source>At runtime, an instance of a .NET activity runs only on one worker node in the HDInsight cluster; it cannot be scaled to run on multiple nodes.</source>
+            <target state="new">At runtime, an instance of a .NET activity runs only on one worker node in the HDInsight cluster; it cannot be scaled to run on multiple nodes.</target>
+          </trans-unit>
+          <trans-unit id="192" xml:space="preserve">
+            <source>Multiple instances of .NET activity can run in parallel on different nodes of the HDInsight cluster.</source>
+            <target state="new">Multiple instances of .NET activity can run in parallel on different nodes of the HDInsight cluster.</target>
+          </trans-unit>
+          <trans-unit id="193" xml:space="preserve">
+            <source>If you have extended the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Get started with Azure Data Factory[adfgetstarted]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> tutorial with the walkthrough from <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Use Pig and Hive with Azure Data Factory[hivewalkthrough]<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>, you can skip creation of this linked service and use the linked service you already have in the ADFTutorialDataFactory.</source>
+            <target state="new">If you have extended the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Get started with Azure Data Factory[adfgetstarted]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> tutorial with the walkthrough from <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Use Pig and Hive with Azure Data Factory[hivewalkthrough]<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>, you can skip creation of this linked service and use the linked service you already have in the ADFTutorialDataFactory.</target>
+          </trans-unit>
+          <trans-unit id="194" xml:space="preserve">
+            <source>To use an on-demand HDInsight cluster</source>
+            <target state="new">To use an on-demand HDInsight cluster</target>
+          </trans-unit>
+          <trans-unit id="195" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Azure Portal<ept id="2">&lt;/strong&gt;</ept>, click <bpt id="4">&lt;strong&gt;</bpt>Author and Deploy<ept id="4">&lt;/strong&gt;</ept> in the Data Factory home page.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Azure Portal<ept id="2">&lt;/strong&gt;</ept>, click <bpt id="4">&lt;strong&gt;</bpt>Author and Deploy<ept id="4">&lt;/strong&gt;</ept> in the Data Factory home page.</target>
+          </trans-unit>
+          <trans-unit id="196" xml:space="preserve">
+            <source>In the Data Factory Editor, click <bpt id="2">&lt;strong&gt;</bpt>New compute<ept id="2">&lt;/strong&gt;</ept> from the command bar and select <bpt id="4">&lt;strong&gt;</bpt>On-demand HDInsight cluster<ept id="4">&lt;/strong&gt;</ept> from the menu.</source>
+            <target state="new">In the Data Factory Editor, click <bpt id="2">&lt;strong&gt;</bpt>New compute<ept id="2">&lt;/strong&gt;</ept> from the command bar and select <bpt id="4">&lt;strong&gt;</bpt>On-demand HDInsight cluster<ept id="4">&lt;/strong&gt;</ept> from the menu.</target>
+          </trans-unit>
+          <trans-unit id="197" xml:space="preserve">
+            <source>Do the following in the JSON script:</source>
+            <target state="new">Do the following in the JSON script:</target>
+          </trans-unit>
+          <trans-unit id="198" xml:space="preserve">
+            <source>For the <bpt id="2">&lt;strong&gt;</bpt>clusterSize<ept id="2">&lt;/strong&gt;</ept> property, specify the size of the HDInsight cluster.</source>
+            <target state="new">For the <bpt id="2">&lt;strong&gt;</bpt>clusterSize<ept id="2">&lt;/strong&gt;</ept> property, specify the size of the HDInsight cluster.</target>
+          </trans-unit>
+          <trans-unit id="199" xml:space="preserve">
+            <source>For the <bpt id="2">&lt;strong&gt;</bpt>jobsContainer<ept id="2">&lt;/strong&gt;</ept> property, specify the name of the default container where the cluster logs will be stored.</source>
+            <target state="new">For the <bpt id="2">&lt;strong&gt;</bpt>jobsContainer<ept id="2">&lt;/strong&gt;</ept> property, specify the name of the default container where the cluster logs will be stored.</target>
+          </trans-unit>
+          <trans-unit id="200" xml:space="preserve">
+            <source>For the purpose of this tutorial, specify <bpt id="2">&lt;strong&gt;</bpt>adfjobscontainer<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">For the purpose of this tutorial, specify <bpt id="2">&lt;strong&gt;</bpt>adfjobscontainer<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="201" xml:space="preserve">
+            <source>For the <bpt id="2">&lt;strong&gt;</bpt>timeToLive<ept id="2">&lt;/strong&gt;</ept> property, specify how long the customer can be idle before it is deleted.</source>
+            <target state="new">For the <bpt id="2">&lt;strong&gt;</bpt>timeToLive<ept id="2">&lt;/strong&gt;</ept> property, specify how long the customer can be idle before it is deleted.</target>
+          </trans-unit>
+          <trans-unit id="202" xml:space="preserve">
+            <source>For the <bpt id="2">&lt;strong&gt;</bpt>version<ept id="2">&lt;/strong&gt;</ept> property, specify the HDInsight version you want to use.</source>
+            <target state="new">For the <bpt id="2">&lt;strong&gt;</bpt>version<ept id="2">&lt;/strong&gt;</ept> property, specify the HDInsight version you want to use.</target>
+          </trans-unit>
+          <trans-unit id="203" xml:space="preserve">
+            <source>If you exclude this property, the latest version is used.</source>
+            <target state="new">If you exclude this property, the latest version is used.</target>
+          </trans-unit>
+          <trans-unit id="204" xml:space="preserve">
+            <source>For the <bpt id="2">&lt;strong&gt;</bpt>linkedServiceName<ept id="2">&lt;/strong&gt;</ept>, specify <bpt id="4">&lt;strong&gt;</bpt>StorageLinkedService<ept id="4">&lt;/strong&gt;</ept> that you had created in the Get started tutorial.</source>
+            <target state="new">For the <bpt id="2">&lt;strong&gt;</bpt>linkedServiceName<ept id="2">&lt;/strong&gt;</ept>, specify <bpt id="4">&lt;strong&gt;</bpt>StorageLinkedService<ept id="4">&lt;/strong&gt;</ept> that you had created in the Get started tutorial.</target>
+          </trans-unit>
+          <trans-unit id="205" xml:space="preserve">
+            <source>{</source>
+            <target state="new">{</target>
+          </trans-unit>
+          <trans-unit id="206" xml:space="preserve">
+            <source>"name": "HDInsightOnDemandLinkedService",</source>
+            <target state="new">"name": "HDInsightOnDemandLinkedService",</target>
+          </trans-unit>
+          <trans-unit id="207" xml:space="preserve">
+            <source>"properties": {</source>
+            <target state="new">"properties": {</target>
+          </trans-unit>
+          <trans-unit id="208" xml:space="preserve">
+            <source>"type": "HDInsightOnDemand",</source>
+            <target state="new">"type": "HDInsightOnDemand",</target>
+          </trans-unit>
+          <trans-unit id="209" xml:space="preserve">
+            <source>"typeProperties": {</source>
+            <target state="new">"typeProperties": {</target>
+          </trans-unit>
+          <trans-unit id="210" xml:space="preserve">
+            <source>"clusterSize": "1",</source>
+            <target state="new">"clusterSize": "1",</target>
+          </trans-unit>
+          <trans-unit id="211" xml:space="preserve">
+            <source>"timeToLive": "00:05:00",</source>
+            <target state="new">"timeToLive": "00:05:00",</target>
+          </trans-unit>
+          <trans-unit id="212" xml:space="preserve">
+            <source>"version": "3.1",</source>
+            <target state="new">"version": "3.1",</target>
+          </trans-unit>
+          <trans-unit id="213" xml:space="preserve">
+            <source>"linkedServiceName": "StorageLinkedService"</source>
+            <target state="new">"linkedServiceName": "StorageLinkedService"</target>
+          </trans-unit>
+          <trans-unit id="214" xml:space="preserve">
+            <source>}</source>
+            <target state="new">}</target>
+          </trans-unit>
+          <trans-unit id="215" xml:space="preserve">
+            <source>}</source>
+            <target state="new">}</target>
+          </trans-unit>
+          <trans-unit id="216" xml:space="preserve">
+            <source>}</source>
+            <target state="new">}</target>
+          </trans-unit>
+          <trans-unit id="217" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Deploy<ept id="2">&lt;/strong&gt;</ept> on the command bar to deploy the linked service.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Deploy<ept id="2">&lt;/strong&gt;</ept> on the command bar to deploy the linked service.</target>
+          </trans-unit>
+          <trans-unit id="218" xml:space="preserve">
+            <source>To use your own HDInsight cluster:</source>
+            <target state="new">To use your own HDInsight cluster:</target>
+          </trans-unit>
+          <trans-unit id="219" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Azure Portal<ept id="2">&lt;/strong&gt;</ept>, click <bpt id="4">&lt;strong&gt;</bpt>Author and Deploy<ept id="4">&lt;/strong&gt;</ept> in the Data Factory home page.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Azure Portal<ept id="2">&lt;/strong&gt;</ept>, click <bpt id="4">&lt;strong&gt;</bpt>Author and Deploy<ept id="4">&lt;/strong&gt;</ept> in the Data Factory home page.</target>
+          </trans-unit>
+          <trans-unit id="220" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Data Factory Editor<ept id="2">&lt;/strong&gt;</ept>, click <bpt id="4">&lt;strong&gt;</bpt>New compute<ept id="4">&lt;/strong&gt;</ept> from the command bar and select <bpt id="6">&lt;strong&gt;</bpt>HDInsight cluster<ept id="6">&lt;/strong&gt;</ept> from the menu.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Data Factory Editor<ept id="2">&lt;/strong&gt;</ept>, click <bpt id="4">&lt;strong&gt;</bpt>New compute<ept id="4">&lt;/strong&gt;</ept> from the command bar and select <bpt id="6">&lt;strong&gt;</bpt>HDInsight cluster<ept id="6">&lt;/strong&gt;</ept> from the menu.</target>
+          </trans-unit>
+          <trans-unit id="221" xml:space="preserve">
+            <source>Do the following in the JSON script:</source>
+            <target state="new">Do the following in the JSON script:</target>
+          </trans-unit>
+          <trans-unit id="222" xml:space="preserve">
+            <source>For the <bpt id="2">&lt;strong&gt;</bpt>clusterUri<ept id="2">&lt;/strong&gt;</ept> property, enter the URL for your HDInsight. For example: https://<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>.azurehdinsight.net/</source>
+            <target state="new">For the <bpt id="2">&lt;strong&gt;</bpt>clusterUri<ept id="2">&lt;/strong&gt;</ept> property, enter the URL for your HDInsight. For example: https://<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>.azurehdinsight.net/</target>
+          </trans-unit>
+          <trans-unit id="223" xml:space="preserve">
+            <source>For the <bpt id="2">&lt;strong&gt;</bpt>UserName<ept id="2">&lt;/strong&gt;</ept> property, enter the user name who has access to the HDInsight cluster.</source>
+            <target state="new">For the <bpt id="2">&lt;strong&gt;</bpt>UserName<ept id="2">&lt;/strong&gt;</ept> property, enter the user name who has access to the HDInsight cluster.</target>
+          </trans-unit>
+          <trans-unit id="224" xml:space="preserve">
+            <source>For the <bpt id="2">&lt;strong&gt;</bpt>Password<ept id="2">&lt;/strong&gt;</ept> property, enter the password for the user.</source>
+            <target state="new">For the <bpt id="2">&lt;strong&gt;</bpt>Password<ept id="2">&lt;/strong&gt;</ept> property, enter the password for the user.</target>
+          </trans-unit>
+          <trans-unit id="225" xml:space="preserve">
+            <source>For the <bpt id="2">&lt;strong&gt;</bpt>LinkedServiceName<ept id="2">&lt;/strong&gt;</ept> property, enter <bpt id="4">&lt;strong&gt;</bpt>StorageLinkedService<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">For the <bpt id="2">&lt;strong&gt;</bpt>LinkedServiceName<ept id="2">&lt;/strong&gt;</ept> property, enter <bpt id="4">&lt;strong&gt;</bpt>StorageLinkedService<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="226" xml:space="preserve">
+            <source>This is the linked service you had created in the Get started tutorial.</source>
+            <target state="new">This is the linked service you had created in the Get started tutorial.</target>
+          </trans-unit>
+          <trans-unit id="227" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Deploy<ept id="2">&lt;/strong&gt;</ept> on the command bar to deploy the linked service.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Deploy<ept id="2">&lt;/strong&gt;</ept> on the command bar to deploy the linked service.</target>
+          </trans-unit>
+          <trans-unit id="228" xml:space="preserve">
+            <source>Create an output table</source>
+            <target state="new">Create an output table</target>
+          </trans-unit>
+          <trans-unit id="229" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Data Factory editor<ept id="2">&lt;/strong&gt;</ept>, click <bpt id="4">&lt;strong&gt;</bpt>New dataset<ept id="4">&lt;/strong&gt;</ept>, and then click <bpt id="6">&lt;strong&gt;</bpt>Azure Blob storage<ept id="6">&lt;/strong&gt;</ept> from the command bar.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Data Factory editor<ept id="2">&lt;/strong&gt;</ept>, click <bpt id="4">&lt;strong&gt;</bpt>New dataset<ept id="4">&lt;/strong&gt;</ept>, and then click <bpt id="6">&lt;strong&gt;</bpt>Azure Blob storage<ept id="6">&lt;/strong&gt;</ept> from the command bar.</target>
+          </trans-unit>
+          <trans-unit id="230" xml:space="preserve">
+            <source>Replace the JSON script in the right pane with the following JSON script:</source>
+            <target state="new">Replace the JSON script in the right pane with the following JSON script:</target>
+          </trans-unit>
+          <trans-unit id="231" xml:space="preserve">
+            <source>Output location is <bpt id="2">&lt;strong&gt;</bpt>adftutorial/customactivityoutput/YYYYMMDDHH/<ept id="2">&lt;/strong&gt;</ept> where YYYYMMDDHH is the year, month, date, and hour of the slice being produced.</source>
+            <target state="new">Output location is <bpt id="2">&lt;strong&gt;</bpt>adftutorial/customactivityoutput/YYYYMMDDHH/<ept id="2">&lt;/strong&gt;</ept> where YYYYMMDDHH is the year, month, date, and hour of the slice being produced.</target>
+          </trans-unit>
+          <trans-unit id="232" xml:space="preserve">
+            <source>See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Developer Reference[adf-developer-reference]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for details.</source>
+            <target state="new">See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Developer Reference[adf-developer-reference]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for details.</target>
+          </trans-unit>
+          <trans-unit id="233" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Deploy<ept id="2">&lt;/strong&gt;</ept> on the command bar to deploy the table.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Deploy<ept id="2">&lt;/strong&gt;</ept> on the command bar to deploy the table.</target>
+          </trans-unit>
+          <trans-unit id="234" xml:space="preserve">
+            <source>Create and run a pipeline that uses the custom activity</source>
+            <target state="new">Create and run a pipeline that uses the custom activity</target>
+          </trans-unit>
+          <trans-unit id="235" xml:space="preserve">
+            <source>In the Data Factory Editor, click <bpt id="2">&lt;strong&gt;</bpt>New pipeline<ept id="2">&lt;/strong&gt;</ept> on the command bar.</source>
+            <target state="new">In the Data Factory Editor, click <bpt id="2">&lt;strong&gt;</bpt>New pipeline<ept id="2">&lt;/strong&gt;</ept> on the command bar.</target>
+          </trans-unit>
+          <trans-unit id="236" xml:space="preserve">
+            <source>If you do not see the command, click <bpt id="2">&lt;strong&gt;</bpt>... (Ellipsis)<ept id="2">&lt;/strong&gt;</ept> to see it.</source>
+            <target state="new">If you do not see the command, click <bpt id="2">&lt;strong&gt;</bpt>... (Ellipsis)<ept id="2">&lt;/strong&gt;</ept> to see it.</target>
+          </trans-unit>
+          <trans-unit id="237" xml:space="preserve">
+            <source>Replace the JSON in the right pane with the following JSON script.</source>
+            <target state="new">Replace the JSON in the right pane with the following JSON script.</target>
+          </trans-unit>
+          <trans-unit id="238" xml:space="preserve">
+            <source>If you want to use your own cluster and followed the steps to create the <bpt id="2">&lt;strong&gt;</bpt>HDInsightLinkedService<ept id="2">&lt;/strong&gt;</ept> linked service, replace <bpt id="4">&lt;strong&gt;</bpt>HDInsightOnDemandLinkedService<ept id="4">&lt;/strong&gt;</ept> with <bpt id="6">&lt;strong&gt;</bpt>HDInsightLinkedService<ept id="6">&lt;/strong&gt;</ept> in the following JSON.</source>
+            <target state="new">If you want to use your own cluster and followed the steps to create the <bpt id="2">&lt;strong&gt;</bpt>HDInsightLinkedService<ept id="2">&lt;/strong&gt;</ept> linked service, replace <bpt id="4">&lt;strong&gt;</bpt>HDInsightOnDemandLinkedService<ept id="4">&lt;/strong&gt;</ept> with <bpt id="6">&lt;strong&gt;</bpt>HDInsightLinkedService<ept id="6">&lt;/strong&gt;</ept> in the following JSON.</target>
+          </trans-unit>
+          <trans-unit id="239" xml:space="preserve">
+            <source>Replace <bpt id="2">&lt;strong&gt;</bpt>StartDateTime<ept id="2">&lt;/strong&gt;</ept> value with the three days prior to current day and <bpt id="4">&lt;strong&gt;</bpt>EndDateTime<ept id="4">&lt;/strong&gt;</ept> value with the current day.</source>
+            <target state="new">Replace <bpt id="2">&lt;strong&gt;</bpt>StartDateTime<ept id="2">&lt;/strong&gt;</ept> value with the three days prior to current day and <bpt id="4">&lt;strong&gt;</bpt>EndDateTime<ept id="4">&lt;/strong&gt;</ept> value with the current day.</target>
+          </trans-unit>
+          <trans-unit id="240" xml:space="preserve">
+            <source>Both StartDateTime and EndDateTime must be in <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>ISO format<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">Both StartDateTime and EndDateTime must be in <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>ISO format<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="241" xml:space="preserve">
+            <source>For example: 2014-10-14T16:32:41Z.</source>
+            <target state="new">For example: 2014-10-14T16:32:41Z.</target>
+          </trans-unit>
+          <trans-unit id="242" xml:space="preserve">
+            <source>The output table is scheduled to be produced every day, so there will be three slices produced.</source>
+            <target state="new">The output table is scheduled to be produced every day, so there will be three slices produced.</target>
+          </trans-unit>
+          <trans-unit id="243" xml:space="preserve">
+            <source>Note the following:</source>
+            <target state="new">Note the following:</target>
+          </trans-unit>
+          <trans-unit id="244" xml:space="preserve">
+            <source>There is one activity in the activities section and it is of type: <bpt id="2">&lt;strong&gt;</bpt>DotNetActivity<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">There is one activity in the activities section and it is of type: <bpt id="2">&lt;strong&gt;</bpt>DotNetActivity<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="245" xml:space="preserve">
+            <source>Use the same input table <bpt id="2">&lt;strong&gt;</bpt>EmpTableFromBlob<ept id="2">&lt;/strong&gt;</ept> that you used in the Get started tutorial.</source>
+            <target state="new">Use the same input table <bpt id="2">&lt;strong&gt;</bpt>EmpTableFromBlob<ept id="2">&lt;/strong&gt;</ept> that you used in the Get started tutorial.</target>
+          </trans-unit>
+          <trans-unit id="246" xml:space="preserve">
+            <source>Use a new output table <bpt id="2">&lt;strong&gt;</bpt>OutputTableForCustom<ept id="2">&lt;/strong&gt;</ept> that you will create in the next step.</source>
+            <target state="new">Use a new output table <bpt id="2">&lt;strong&gt;</bpt>OutputTableForCustom<ept id="2">&lt;/strong&gt;</ept> that you will create in the next step.</target>
+          </trans-unit>
+          <trans-unit id="247" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>AssemblyName<ept id="1">&lt;/strong&gt;</ept> is set to the name of the DLL: <bpt id="3">&lt;strong&gt;</bpt>MyActivities.dll<ept id="3">&lt;/strong&gt;</ept>.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>AssemblyName<ept id="1">&lt;/strong&gt;</ept> is set to the name of the DLL: <bpt id="3">&lt;strong&gt;</bpt>MyActivities.dll<ept id="3">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="248" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>EntryPoint<ept id="1">&lt;/strong&gt;</ept> is set to <bpt id="3">&lt;strong&gt;</bpt>MyDotNetActivityNS.MyDotNetActivity<ept id="3">&lt;/strong&gt;</ept>.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>EntryPoint<ept id="1">&lt;/strong&gt;</ept> is set to <bpt id="3">&lt;strong&gt;</bpt>MyDotNetActivityNS.MyDotNetActivity<ept id="3">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="249" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>PackageLinkedService<ept id="1">&lt;/strong&gt;</ept> is set to <bpt id="3">&lt;strong&gt;</bpt>MyBlobStore<ept id="3">&lt;/strong&gt;</ept> that was created as part of the tutorial from <bpt id="5CapsExtId1">&lt;link&gt;</bpt><bpt id="5CapsExtId2">&lt;linkText&gt;</bpt>Get started with Azure Data Factory[adfgetstarted]<ept id="5CapsExtId2">&lt;/linkText&gt;</ept><bpt id="5CapsExtId3">&lt;title&gt;</bpt><ept id="5CapsExtId3">&lt;/title&gt;</ept><ept id="5CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>PackageLinkedService<ept id="1">&lt;/strong&gt;</ept> is set to <bpt id="3">&lt;strong&gt;</bpt>MyBlobStore<ept id="3">&lt;/strong&gt;</ept> that was created as part of the tutorial from <bpt id="5CapsExtId1">&lt;link&gt;</bpt><bpt id="5CapsExtId2">&lt;linkText&gt;</bpt>Get started with Azure Data Factory[adfgetstarted]<ept id="5CapsExtId2">&lt;/linkText&gt;</ept><bpt id="5CapsExtId3">&lt;title&gt;</bpt><ept id="5CapsExtId3">&lt;/title&gt;</ept><ept id="5CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="250" xml:space="preserve">
+            <source>This blob store contains the custom activity zip file.</source>
+            <target state="new">This blob store contains the custom activity zip file.</target>
+          </trans-unit>
+          <trans-unit id="251" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>PackageFile<ept id="1">&lt;/strong&gt;</ept> is set to <bpt id="3">&lt;strong&gt;</bpt>customactivitycontainer/MyDotNetActivity.zip<ept id="3">&lt;/strong&gt;</ept>.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>PackageFile<ept id="1">&lt;/strong&gt;</ept> is set to <bpt id="3">&lt;strong&gt;</bpt>customactivitycontainer/MyDotNetActivity.zip<ept id="3">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="252" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Deploy<ept id="2">&lt;/strong&gt;</ept> on the command bar to deploy the pipeline.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Deploy<ept id="2">&lt;/strong&gt;</ept> on the command bar to deploy the pipeline.</target>
+          </trans-unit>
+          <trans-unit id="253" xml:space="preserve">
+            <source>Verify that the output files are generated in the blob storage in the <bpt id="2">&lt;strong&gt;</bpt>adftutorial<ept id="2">&lt;/strong&gt;</ept> container.</source>
+            <target state="new">Verify that the output files are generated in the blob storage in the <bpt id="2">&lt;strong&gt;</bpt>adftutorial<ept id="2">&lt;/strong&gt;</ept> container.</target>
+          </trans-unit>
+          <trans-unit id="254" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>output from custom activity<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>output from custom activity<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="255" xml:space="preserve">
+            <source>If you open the output file, you should see the output similar to the following:</source>
+            <target state="new">If you open the output file, you should see the output similar to the following:</target>
+          </trans-unit>
+          <trans-unit id="256" xml:space="preserve">
+            <source>adftutorial/,emp.txt,2,WORKERNODE0,03/27/2015 19:23:28</source>
+            <target state="new">adftutorial/,emp.txt,2,WORKERNODE0,03/27/2015 19:23:28</target>
+          </trans-unit>
+          <trans-unit id="257" xml:space="preserve">
+            <source>(blob location), (name of the blob), (number of lines in the blob), (node on which the activity ran), (date time stamp)</source>
+            <target state="new">(blob location), (name of the blob), (number of lines in the blob), (node on which the activity ran), (date time stamp)</target>
+          </trans-unit>
+          <trans-unit id="258" xml:space="preserve">
+            <source>Use the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Portal[azure-preview-portal]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> or Azure PowerShell cmdlets to monitor your data factory, pipelines, and data sets.</source>
+            <target state="new">Use the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Portal[azure-preview-portal]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> or Azure PowerShell cmdlets to monitor your data factory, pipelines, and data sets.</target>
+          </trans-unit>
+          <trans-unit id="259" xml:space="preserve">
+            <source>You can see messages from the <bpt id="2">&lt;strong&gt;</bpt>ActivityLogger<ept id="2">&lt;/strong&gt;</ept> in the code for the custom activity in the logs (specifically user-0.log) that you can download from the portal or using cmdlets.</source>
+            <target state="new">You can see messages from the <bpt id="2">&lt;strong&gt;</bpt>ActivityLogger<ept id="2">&lt;/strong&gt;</ept> in the code for the custom activity in the logs (specifically user-0.log) that you can download from the portal or using cmdlets.</target>
+          </trans-unit>
+          <trans-unit id="260" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>download logs from custom activity<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>download logs from custom activity<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="261" xml:space="preserve">
+            <source>See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Monitor and Manage Pipelines<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for detailed steps for monitoring datasets and pipelines.</source>
+            <target state="new">See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Monitor and Manage Pipelines<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for detailed steps for monitoring datasets and pipelines.</target>
+          </trans-unit>
+          <trans-unit id="262" xml:space="preserve">
+            <source>Updating a custom activity</source>
+            <target state="new">Updating a custom activity</target>
+          </trans-unit>
+          <trans-unit id="263" xml:space="preserve">
+            <source>If you update the code for the custom activity, build it, and upload the zip file that contains new binaries to the blob storage.</source>
+            <target state="new">If you update the code for the custom activity, build it, and upload the zip file that contains new binaries to the blob storage.</target>
+          </trans-unit>
+          <trans-unit id="264" xml:space="preserve">
+            <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept> Using Azure Batch linked service</source>
+            <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept> Using Azure Batch linked service</target>
+          </trans-unit>
+          <trans-unit id="265" xml:space="preserve">
+            <source>See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Batch Technical Overview[batch-technical-overview]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for an overview of the Azure Batch service and see <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Getting Started with the Azure Batch Library for .NET[batch-get-started]<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept> to quickly get started with the Azure Batch service.</source>
+            <target state="new">See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Batch Technical Overview[batch-technical-overview]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for an overview of the Azure Batch service and see <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Getting Started with the Azure Batch Library for .NET[batch-get-started]<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept> to quickly get started with the Azure Batch service.</target>
+          </trans-unit>
+          <trans-unit id="266" xml:space="preserve">
+            <source>You can run your custom .NET activities using Azure Batch as a compute resource.</source>
+            <target state="new">You can run your custom .NET activities using Azure Batch as a compute resource.</target>
+          </trans-unit>
+          <trans-unit id="267" xml:space="preserve">
+            <source>You will have to create your own Azure Batch pools and specify the number of VMs along with other configurations.</source>
+            <target state="new">You will have to create your own Azure Batch pools and specify the number of VMs along with other configurations.</target>
+          </trans-unit>
+          <trans-unit id="268" xml:space="preserve">
+            <source>Azure Batch pools provides the following features to customers:</source>
+            <target state="new">Azure Batch pools provides the following features to customers:</target>
+          </trans-unit>
+          <trans-unit id="269" xml:space="preserve">
+            <source>Create pools containing a single core to thousands of cores.</source>
+            <target state="new">Create pools containing a single core to thousands of cores.</target>
+          </trans-unit>
+          <trans-unit id="270" xml:space="preserve">
+            <source>Auto scale VM count based on a formula</source>
+            <target state="new">Auto scale VM count based on a formula</target>
+          </trans-unit>
+          <trans-unit id="271" xml:space="preserve">
+            <source>Support VMs of any size</source>
+            <target state="new">Support VMs of any size</target>
+          </trans-unit>
+          <trans-unit id="272" xml:space="preserve">
+            <source>Configurable number of tasks per VM</source>
+            <target state="new">Configurable number of tasks per VM</target>
+          </trans-unit>
+          <trans-unit id="273" xml:space="preserve">
+            <source>Queue unlimited number of tasks</source>
+            <target state="new">Queue unlimited number of tasks</target>
+          </trans-unit>
+          <trans-unit id="274" xml:space="preserve">
+            <source>Here are the high-level steps for using the Azure Batch Linked Service in the walkthrough described in the previous section:</source>
+            <target state="new">Here are the high-level steps for using the Azure Batch Linked Service in the walkthrough described in the previous section:</target>
+          </trans-unit>
+          <trans-unit id="275" xml:space="preserve">
+            <source>Create an Azure Batch account using the Azure Management Portal.</source>
+            <target state="new">Create an Azure Batch account using the Azure Management Portal.</target>
+          </trans-unit>
+          <trans-unit id="276" xml:space="preserve">
+            <source>See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Batch Technical Overview[batch-create-account]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> article for instructions.</source>
+            <target state="new">See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Batch Technical Overview[batch-create-account]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> article for instructions.</target>
+          </trans-unit>
+          <trans-unit id="277" xml:space="preserve">
+            <source>Note down the Azure Batch account name and account key.</source>
+            <target state="new">Note down the Azure Batch account name and account key.</target>
+          </trans-unit>
+          <trans-unit id="278" xml:space="preserve">
+            <source>You can also use <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>New-AzureBatchAccount[new-azure-batch-account]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet to create an Azure Batch account.</source>
+            <target state="new">You can also use <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>New-AzureBatchAccount[new-azure-batch-account]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet to create an Azure Batch account.</target>
+          </trans-unit>
+          <trans-unit id="279" xml:space="preserve">
+            <source>See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Using Azure PowerShell to Manage Azure Batch Account[azure-batch-blog]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for detailed instructions on using this cmdlet.</source>
+            <target state="new">See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Using Azure PowerShell to Manage Azure Batch Account[azure-batch-blog]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for detailed instructions on using this cmdlet.</target>
+          </trans-unit>
+          <trans-unit id="280" xml:space="preserve">
+            <source>Create an Azure Batch pool.</source>
+            <target state="new">Create an Azure Batch pool.</target>
+          </trans-unit>
+          <trans-unit id="281" xml:space="preserve">
+            <source>You can download the source code for the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Batch Explorer tool[batch-explorer]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, compile, and use it  (or) use <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Azure Batch Library for .NET[batch-net-library]<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept> to create a Azure Batch pool.</source>
+            <target state="new">You can download the source code for the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Batch Explorer tool[batch-explorer]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, compile, and use it  (or) use <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Azure Batch Library for .NET[batch-net-library]<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept> to create a Azure Batch pool.</target>
+          </trans-unit>
+          <trans-unit id="282" xml:space="preserve">
+            <source>See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Batch Explorer Sample Walkthrough[batch-explorer-walkthrough]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for step-by-step instructions for using the Azure Batch Explorer.</source>
+            <target state="new">See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Batch Explorer Sample Walkthrough[batch-explorer-walkthrough]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for step-by-step instructions for using the Azure Batch Explorer.</target>
+          </trans-unit>
+          <trans-unit id="283" xml:space="preserve">
+            <source>You can also use <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>New-AzureBatchPool[new-azure-batch-pool]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet to create an Azure Batch pool.</source>
+            <target state="new">You can also use <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>New-AzureBatchPool[new-azure-batch-pool]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet to create an Azure Batch pool.</target>
+          </trans-unit>
+          <trans-unit id="284" xml:space="preserve">
+            <source>Create an Azure Batch Linked Service using the following JSON template.</source>
+            <target state="new">Create an Azure Batch Linked Service using the following JSON template.</target>
+          </trans-unit>
+          <trans-unit id="285" xml:space="preserve">
+            <source>The Data Factory Editor displays a similar template for you to start with.</source>
+            <target state="new">The Data Factory Editor displays a similar template for you to start with.</target>
+          </trans-unit>
+          <trans-unit id="286" xml:space="preserve">
+            <source>Specify the Azure Batch account name, account key and pool name in the JSON snippet.</source>
+            <target state="new">Specify the Azure Batch account name, account key and pool name in the JSON snippet.</target>
+          </trans-unit>
+          <trans-unit id="287" xml:space="preserve">
+            <source>Append "<bpt id="2">&lt;strong&gt;</bpt>.&lt;region name<ept id="2">&lt;/strong&gt;</ept>" to the name of your batch account for the <bpt id="4">&lt;strong&gt;</bpt>accountName<ept id="4">&lt;/strong&gt;</ept> property. Example: "mybatchaccount.eastus". Another option is to provide the batchUri endpoint as shown below.</source>
+            <target state="new">Append "<bpt id="2">&lt;strong&gt;</bpt>.&lt;region name<ept id="2">&lt;/strong&gt;</ept>" to the name of your batch account for the <bpt id="4">&lt;strong&gt;</bpt>accountName<ept id="4">&lt;/strong&gt;</ept> property. Example: "mybatchaccount.eastus". Another option is to provide the batchUri endpoint as shown below.</target>
+          </trans-unit>
+          <trans-unit id="288" xml:space="preserve">
+            <source>See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Batch Linked Service MSDN topic<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for descriptions of these properties.</source>
+            <target state="new">See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Batch Linked Service MSDN topic<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for descriptions of these properties.</target>
+          </trans-unit>
+          <trans-unit id="289" xml:space="preserve">
+            <source>In the Data Factory Editor, open JSON definition for the pipeline you created in the walkthrough and replace <bpt id="2">&lt;strong&gt;</bpt>HDInsightLinkedService<ept id="2">&lt;/strong&gt;</ept> with <bpt id="4">&lt;strong&gt;</bpt>AzureBatchLinkedService<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the Data Factory Editor, open JSON definition for the pipeline you created in the walkthrough and replace <bpt id="2">&lt;strong&gt;</bpt>HDInsightLinkedService<ept id="2">&lt;/strong&gt;</ept> with <bpt id="4">&lt;strong&gt;</bpt>AzureBatchLinkedService<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="290" xml:space="preserve">
+            <source>You may want to change the start and end times for the pipeline so that you can test the scenario with the Azure Batch service.</source>
+            <target state="new">You may want to change the start and end times for the pipeline so that you can test the scenario with the Azure Batch service.</target>
+          </trans-unit>
+          <trans-unit id="291" xml:space="preserve">
+            <source>You can see the Azure Batch tasks associated with processing the slices in the Azure Batch Explorer as shown in the following diagram.</source>
+            <target state="new">You can see the Azure Batch tasks associated with processing the slices in the Azure Batch Explorer as shown in the following diagram.</target>
+          </trans-unit>
+          <trans-unit id="292" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Azure Batch tasks<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Azure Batch tasks<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="293" xml:space="preserve">
+            <source>The Data Factory service does not support an on-demand option for Azure Batch as it does for HDInsight.</source>
+            <target state="new">The Data Factory service does not support an on-demand option for Azure Batch as it does for HDInsight.</target>
+          </trans-unit>
+          <trans-unit id="294" xml:space="preserve">
+            <source>You can only use your own Azure Batch pool in an Azure data factory.</source>
+            <target state="new">You can only use your own Azure Batch pool in an Azure data factory.</target>
+          </trans-unit>
+          <trans-unit id="295" xml:space="preserve">
+            <source>See Also</source>
+            <target state="new">See Also</target>
+          </trans-unit>
+          <trans-unit id="296" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Azure Data Factory Updates: Execute ADF Custom .NET activities using Azure Batch<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Azure Data Factory Updates: Execute ADF Custom .NET activities using Azure Batch<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>

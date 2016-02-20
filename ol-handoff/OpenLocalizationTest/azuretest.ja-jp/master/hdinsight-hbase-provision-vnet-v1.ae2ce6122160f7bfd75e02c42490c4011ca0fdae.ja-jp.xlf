@@ -1,0 +1,893 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="ja-jp" original="2/20/2016 9:01:49 AM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">03fa999868129033710ece40060995671e24fd40</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Provision HBase clusters on a Virtual Network | Microsoft Azure</source>
+            <target state="new">Provision HBase clusters on a Virtual Network | Microsoft Azure</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>Get started using HBase in Azure HDInsight. Learn how to create HDInsight HBase clusters on Azure Virtual Network.</source>
+            <target state="new">Get started using HBase in Azure HDInsight. Learn how to create HDInsight HBase clusters on Azure Virtual Network.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Provision HBase clusters on Azure Virtual Network</source>
+            <target state="new">Provision HBase clusters on Azure Virtual Network</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source>Learn how to create Azure HDInsight HBase clusters on an <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Virtual Network[1]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">Learn how to create Azure HDInsight HBase clusters on an <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Virtual Network[1]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source><ph id="1">&lt;token href="../../includes/hdinsight-azure-portal.md"/&gt;</ph></source>
+            <target state="new"><ph id="1">&lt;token href="../../includes/hdinsight-azure-portal.md"/&gt;</ph></target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Provision HBase clusters on Azure Virtual Network<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Provision HBase clusters on Azure Virtual Network<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>With virtual network integration, HBase clusters can be deployed to the same virtual network as your applications so that applications can communicate with HBase directly.</source>
+            <target state="new">With virtual network integration, HBase clusters can be deployed to the same virtual network as your applications so that applications can communicate with HBase directly.</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>The benefits include:</source>
+            <target state="new">The benefits include:</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source>Direct connectivity of the web application to the nodes of the HBase cluster, which enables communication via HBase Java remote procedure call (RPC) APIs.</source>
+            <target state="new">Direct connectivity of the web application to the nodes of the HBase cluster, which enables communication via HBase Java remote procedure call (RPC) APIs.</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source>Improved performance by not having your traffic go over multiple gateways and load-balancers.</source>
+            <target state="new">Improved performance by not having your traffic go over multiple gateways and load-balancers.</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>The ability to process sensitive information in a more secure manner without exposing a public endpoint.</source>
+            <target state="new">The ability to process sensitive information in a more secure manner without exposing a public endpoint.</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source>Prerequisites</source>
+            <target state="new">Prerequisites</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>Before you begin this tutorial, you must have the following:</source>
+            <target state="new">Before you begin this tutorial, you must have the following:</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>An Azure subscription<ept id="1">&lt;/strong&gt;</ept>.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>An Azure subscription<ept id="1">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Get Azure free trial<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Get Azure free trial<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>A workstation with Azure PowerShell<ept id="1">&lt;/strong&gt;</ept>.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>A workstation with Azure PowerShell<ept id="1">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Install and use Azure PowerShell<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Install and use Azure PowerShell<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>For instructions, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Install and configure Azure PowerShell<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For instructions, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Install and configure Azure PowerShell<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source>To execute Azure PowerShell scripts, you must run Azure PowerShell as administrator and set the execution policy to <bpt id="2">&lt;em&gt;</bpt>RemoteSigned<ept id="2">&lt;/em&gt;</ept>.</source>
+            <target state="new">To execute Azure PowerShell scripts, you must run Azure PowerShell as administrator and set the execution policy to <bpt id="2">&lt;em&gt;</bpt>RemoteSigned<ept id="2">&lt;/em&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source>See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Using the Set-ExecutionPolicy cmdlet[2]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Using the Set-ExecutionPolicy cmdlet[2]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source>Before running Azure PowerShell scripts, make sure you are connected to your Azure subscription by using the following cmdlet:</source>
+            <target state="new">Before running Azure PowerShell scripts, make sure you are connected to your Azure subscription by using the following cmdlet:</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source>If you have multiple Azure subscriptions, use the following cmdlet to set the current subscription:</source>
+            <target state="new">If you have multiple Azure subscriptions, use the following cmdlet to set the current subscription:</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>Provision an HBase cluster into a virtual network</source>
+            <target state="new">Provision an HBase cluster into a virtual network</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source>Before provisioning an HBase cluster, you need to have an Azure virtual network.</source>
+            <target state="new">Before provisioning an HBase cluster, you need to have an Azure virtual network.</target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>To create a virtual network by using the Azure portal<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>To create a virtual network by using the Azure portal<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>Sign in to the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure portal[azure-portal]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">Sign in to the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure portal[azure-portal]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>NEW<ept id="2">&lt;/strong&gt;</ept> in the bottom-left corner, click <bpt id="4">&lt;strong&gt;</bpt>NETWORK SERVICES<ept id="4">&lt;/strong&gt;</ept>, click <bpt id="6">&lt;strong&gt;</bpt>VIRTUAL NETWORK<ept id="6">&lt;/strong&gt;</ept>, and then click <bpt id="8">&lt;strong&gt;</bpt>QUICK CREATE<ept id="8">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>NEW<ept id="2">&lt;/strong&gt;</ept> in the bottom-left corner, click <bpt id="4">&lt;strong&gt;</bpt>NETWORK SERVICES<ept id="4">&lt;/strong&gt;</ept>, click <bpt id="6">&lt;strong&gt;</bpt>VIRTUAL NETWORK<ept id="6">&lt;/strong&gt;</ept>, and then click <bpt id="8">&lt;strong&gt;</bpt>QUICK CREATE<ept id="8">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source>Type or select the following values:</source>
+            <target state="new">Type or select the following values:</target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Name<ept id="1">&lt;/strong&gt;</ept> - The name of your virtual network.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Name<ept id="1">&lt;/strong&gt;</ept> - The name of your virtual network.</target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Address space<ept id="1">&lt;/strong&gt;</ept> - Choose an address space for the virtual network that is large enough to provide addresses for all nodes in the cluster.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Address space<ept id="1">&lt;/strong&gt;</ept> - Choose an address space for the virtual network that is large enough to provide addresses for all nodes in the cluster.</target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source>Otherwise the provision will fail.</source>
+            <target state="new">Otherwise the provision will fail.</target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source>For walking through this tutorial, you can pick any of the three choices.</source>
+            <target state="new">For walking through this tutorial, you can pick any of the three choices.</target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Maximum VM count<ept id="1">&lt;/strong&gt;</ept> - Choose one of the maximum virtual machine (VM) counts.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Maximum VM count<ept id="1">&lt;/strong&gt;</ept> - Choose one of the maximum virtual machine (VM) counts.</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source>This value determines the number of possible hosts (VMs) that can be created under the address space.</source>
+            <target state="new">This value determines the number of possible hosts (VMs) that can be created under the address space.</target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source>For walking through this tutorial, <bpt id="2">&lt;strong&gt;</bpt>4096 [CIDR: /20]<ept id="2">&lt;/strong&gt;</ept> is sufficient.</source>
+            <target state="new">For walking through this tutorial, <bpt id="2">&lt;strong&gt;</bpt>4096 [CIDR: /20]<ept id="2">&lt;/strong&gt;</ept> is sufficient.</target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Location<ept id="1">&lt;/strong&gt;</ept> - The location must be the same as the HBase cluster that you will create.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Location<ept id="1">&lt;/strong&gt;</ept> - The location must be the same as the HBase cluster that you will create.</target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>DNS server<ept id="1">&lt;/strong&gt;</ept> - This tutorial uses an internal Domain Name System (DNS) server provided by Azure, so you can choose <bpt id="3">&lt;strong&gt;</bpt>None<ept id="3">&lt;/strong&gt;</ept>.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>DNS server<ept id="1">&lt;/strong&gt;</ept> - This tutorial uses an internal Domain Name System (DNS) server provided by Azure, so you can choose <bpt id="3">&lt;strong&gt;</bpt>None<ept id="3">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source>More advanced networking configurations with custom DNS servers are also supported.</source>
+            <target state="new">More advanced networking configurations with custom DNS servers are also supported.</target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source>For detailed guidance, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Name Resolution (DNS)<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For detailed guidance, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Name Resolution (DNS)<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>CREATE A VIRTUAL NETWORK<ept id="2">&lt;/strong&gt;</ept> in the lower-right corner.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>CREATE A VIRTUAL NETWORK<ept id="2">&lt;/strong&gt;</ept> in the lower-right corner.</target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source>The new virtual network name will appear in the list.</source>
+            <target state="new">The new virtual network name will appear in the list.</target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source>Wait until the Status column shows <bpt id="2">&lt;strong&gt;</bpt>Created<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Wait until the Status column shows <bpt id="2">&lt;strong&gt;</bpt>Created<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source>In the main pane, click the virtual network you just created.</source>
+            <target state="new">In the main pane, click the virtual network you just created.</target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>DASHBOARD<ept id="2">&lt;/strong&gt;</ept> on the top of the page.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>DASHBOARD<ept id="2">&lt;/strong&gt;</ept> on the top of the page.</target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source>Under <bpt id="2">&lt;strong&gt;</bpt>quick glance<ept id="2">&lt;/strong&gt;</ept>, make a note of the virtual network ID.</source>
+            <target state="new">Under <bpt id="2">&lt;strong&gt;</bpt>quick glance<ept id="2">&lt;/strong&gt;</ept>, make a note of the virtual network ID.</target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source>You will need it when provisioning the HBase cluster.</source>
+            <target state="new">You will need it when provisioning the HBase cluster.</target>
+          </trans-unit>
+          <trans-unit id="147" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>CONFIGURE<ept id="2">&lt;/strong&gt;</ept> on the top of the page.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>CONFIGURE<ept id="2">&lt;/strong&gt;</ept> on the top of the page.</target>
+          </trans-unit>
+          <trans-unit id="148" xml:space="preserve">
+            <source>On the bottom of the page, the default subnet name is <bpt id="2">&lt;strong&gt;</bpt>Subnet-1<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">On the bottom of the page, the default subnet name is <bpt id="2">&lt;strong&gt;</bpt>Subnet-1<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="149" xml:space="preserve">
+            <source>You can optionally rename the subnet or add a new subnet for the HBase cluster.</source>
+            <target state="new">You can optionally rename the subnet or add a new subnet for the HBase cluster.</target>
+          </trans-unit>
+          <trans-unit id="150" xml:space="preserve">
+            <source>Make a note of the subnet name; you will need it when provisioning the cluster.</source>
+            <target state="new">Make a note of the subnet name; you will need it when provisioning the cluster.</target>
+          </trans-unit>
+          <trans-unit id="151" xml:space="preserve">
+            <source>Verify <bpt id="2">&lt;strong&gt;</bpt>CIDR(ADDRESS COUNT)<ept id="2">&lt;/strong&gt;</ept> for the subnet that will be used for the cluster.</source>
+            <target state="new">Verify <bpt id="2">&lt;strong&gt;</bpt>CIDR(ADDRESS COUNT)<ept id="2">&lt;/strong&gt;</ept> for the subnet that will be used for the cluster.</target>
+          </trans-unit>
+          <trans-unit id="152" xml:space="preserve">
+            <source>The address count must be greater than the number of worker nodes plus seven (gateway: 2, head node: 2, Zookeeper: 3).</source>
+            <target state="new">The address count must be greater than the number of worker nodes plus seven (gateway: 2, head node: 2, Zookeeper: 3).</target>
+          </trans-unit>
+          <trans-unit id="153" xml:space="preserve">
+            <source>For example, if you need a 10-node HBase cluster, the address count for the subnet must be greater than 17 (10+7).</source>
+            <target state="new">For example, if you need a 10-node HBase cluster, the address count for the subnet must be greater than 17 (10+7).</target>
+          </trans-unit>
+          <trans-unit id="154" xml:space="preserve">
+            <source>Otherwise the deployment will fail.</source>
+            <target state="new">Otherwise the deployment will fail.</target>
+          </trans-unit>
+          <trans-unit id="155" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Save<ept id="2">&lt;/strong&gt;</ept> on the bottom of the page, if you have updated the subnet values.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Save<ept id="2">&lt;/strong&gt;</ept> on the bottom of the page, if you have updated the subnet values.</target>
+          </trans-unit>
+          <trans-unit id="156" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>To add a DNS server virtual machine to the virtual network<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>To add a DNS server virtual machine to the virtual network<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="157" xml:space="preserve">
+            <source>A DNS server is optional, but necessary in some cases.</source>
+            <target state="new">A DNS server is optional, but necessary in some cases.</target>
+          </trans-unit>
+          <trans-unit id="158" xml:space="preserve">
+            <source>The procedure has been documented in <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Configure DNS between two Azure virtual networks[hdinsight-hbase-replication-dns]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">The procedure has been documented in <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Configure DNS between two Azure virtual networks[hdinsight-hbase-replication-dns]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="159" xml:space="preserve">
+            <source>Basically, you will need to perform these steps:</source>
+            <target state="new">Basically, you will need to perform these steps:</target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
+            <source>add an Azure virtual machine to the virtual network</source>
+            <target state="new">add an Azure virtual machine to the virtual network</target>
+          </trans-unit>
+          <trans-unit id="161" xml:space="preserve">
+            <source>set a static IP address for the virtual machine</source>
+            <target state="new">set a static IP address for the virtual machine</target>
+          </trans-unit>
+          <trans-unit id="162" xml:space="preserve">
+            <source>add the DNS server role to the virtual machine</source>
+            <target state="new">add the DNS server role to the virtual machine</target>
+          </trans-unit>
+          <trans-unit id="163" xml:space="preserve">
+            <source>Assign the DNS server to the virtual network</source>
+            <target state="new">Assign the DNS server to the virtual network</target>
+          </trans-unit>
+          <trans-unit id="164" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>To create an Azure Storage account and a Blob storage container to be used by the cluster<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>To create an Azure Storage account and a Blob storage container to be used by the cluster<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="165" xml:space="preserve">
+            <source>HDInsight clusters use Azure Blob storage for storing data.</source>
+            <target state="new">HDInsight clusters use Azure Blob storage for storing data.</target>
+          </trans-unit>
+          <trans-unit id="166" xml:space="preserve">
+            <source>For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Use Azure Blob storage with Hadoop in HDInsight<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Use Azure Blob storage with Hadoop in HDInsight<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="167" xml:space="preserve">
+            <source>You will need a storage account and a Blob storage container.</source>
+            <target state="new">You will need a storage account and a Blob storage container.</target>
+          </trans-unit>
+          <trans-unit id="168" xml:space="preserve">
+            <source>The storage account location must match the virtual network location and the cluster location.</source>
+            <target state="new">The storage account location must match the virtual network location and the cluster location.</target>
+          </trans-unit>
+          <trans-unit id="169" xml:space="preserve">
+            <source>Like other HDInsight clusters, HBase cluster requires an Azure Storage account and a Blob storage container as the default file system.</source>
+            <target state="new">Like other HDInsight clusters, HBase cluster requires an Azure Storage account and a Blob storage container as the default file system.</target>
+          </trans-unit>
+          <trans-unit id="170" xml:space="preserve">
+            <source>The storage account location must match the virtual network location and the cluster location.</source>
+            <target state="new">The storage account location must match the virtual network location and the cluster location.</target>
+          </trans-unit>
+          <trans-unit id="171" xml:space="preserve">
+            <source>For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Use Azure Blob storage with Hadoop in HDInsight[hdinsight-storage]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Use Azure Blob storage with Hadoop in HDInsight[hdinsight-storage]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="172" xml:space="preserve">
+            <source>When you provision an HBase cluster, you have the options to create new or use existing ones.</source>
+            <target state="new">When you provision an HBase cluster, you have the options to create new or use existing ones.</target>
+          </trans-unit>
+          <trans-unit id="173" xml:space="preserve">
+            <source>This procedure shows you how to create a storage account and a Blob storage container using the Azure portal.</source>
+            <target state="new">This procedure shows you how to create a storage account and a Blob storage container using the Azure portal.</target>
+          </trans-unit>
+          <trans-unit id="174" xml:space="preserve">
+            <source>Sign in to the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure portal[azure-portal]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">Sign in to the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure portal[azure-portal]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="175" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>NEW<ept id="2">&lt;/strong&gt;</ept> in the lower-left corner, point to <bpt id="4">&lt;strong&gt;</bpt>DATA SERVICES<ept id="4">&lt;/strong&gt;</ept>, point to <bpt id="6">&lt;strong&gt;</bpt>STORAGE<ept id="6">&lt;/strong&gt;</ept>, and then click <bpt id="8">&lt;strong&gt;</bpt>QUICK CREATE<ept id="8">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>NEW<ept id="2">&lt;/strong&gt;</ept> in the lower-left corner, point to <bpt id="4">&lt;strong&gt;</bpt>DATA SERVICES<ept id="4">&lt;/strong&gt;</ept>, point to <bpt id="6">&lt;strong&gt;</bpt>STORAGE<ept id="6">&lt;/strong&gt;</ept>, and then click <bpt id="8">&lt;strong&gt;</bpt>QUICK CREATE<ept id="8">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="176" xml:space="preserve">
+            <source>Type or select the following values:</source>
+            <target state="new">Type or select the following values:</target>
+          </trans-unit>
+          <trans-unit id="177" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>URL<ept id="1">&lt;/strong&gt;</ept> - The name of the Storage account.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>URL<ept id="1">&lt;/strong&gt;</ept> - The name of the Storage account.</target>
+          </trans-unit>
+          <trans-unit id="178" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>LOCATION<ept id="1">&lt;/strong&gt;</ept> - The location of the Storage account.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>LOCATION<ept id="1">&lt;/strong&gt;</ept> - The location of the Storage account.</target>
+          </trans-unit>
+          <trans-unit id="179" xml:space="preserve">
+            <source>Make sure it matches the virtual network location.</source>
+            <target state="new">Make sure it matches the virtual network location.</target>
+          </trans-unit>
+          <trans-unit id="180" xml:space="preserve">
+            <source>Affinity groups are not supported.</source>
+            <target state="new">Affinity groups are not supported.</target>
+          </trans-unit>
+          <trans-unit id="181" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>REPLICATION<ept id="1">&lt;/strong&gt;</ept> - For testing purposes, use <bpt id="3">&lt;strong&gt;</bpt>Locally Redundant<ept id="3">&lt;/strong&gt;</ept> to reduce the cost.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>REPLICATION<ept id="1">&lt;/strong&gt;</ept> - For testing purposes, use <bpt id="3">&lt;strong&gt;</bpt>Locally Redundant<ept id="3">&lt;/strong&gt;</ept> to reduce the cost.</target>
+          </trans-unit>
+          <trans-unit id="182" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>CREATE STORAGE ACCOUNT<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>CREATE STORAGE ACCOUNT<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="183" xml:space="preserve">
+            <source>You will see the new Storage account in the storage list.</source>
+            <target state="new">You will see the new Storage account in the storage list.</target>
+          </trans-unit>
+          <trans-unit id="184" xml:space="preserve">
+            <source>Wait until the <bpt id="2">&lt;strong&gt;</bpt>STATUS<ept id="2">&lt;/strong&gt;</ept> of the new Storage account changes to <bpt id="4">&lt;strong&gt;</bpt>Online<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Wait until the <bpt id="2">&lt;strong&gt;</bpt>STATUS<ept id="2">&lt;/strong&gt;</ept> of the new Storage account changes to <bpt id="4">&lt;strong&gt;</bpt>Online<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="185" xml:space="preserve">
+            <source>Click the new Storage account from the list to select it.</source>
+            <target state="new">Click the new Storage account from the list to select it.</target>
+          </trans-unit>
+          <trans-unit id="186" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>MANAGE ACCESS KEYS<ept id="2">&lt;/strong&gt;</ept> from the bottom of the page.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>MANAGE ACCESS KEYS<ept id="2">&lt;/strong&gt;</ept> from the bottom of the page.</target>
+          </trans-unit>
+          <trans-unit id="187" xml:space="preserve">
+            <source>Make a note of the Storage account name and the primary access key (or the secondary access key; either of the keys works).</source>
+            <target state="new">Make a note of the Storage account name and the primary access key (or the secondary access key; either of the keys works).</target>
+          </trans-unit>
+          <trans-unit id="188" xml:space="preserve">
+            <source>You will need them later in the tutorial.</source>
+            <target state="new">You will need them later in the tutorial.</target>
+          </trans-unit>
+          <trans-unit id="189" xml:space="preserve">
+            <source>From the top of the page, click <bpt id="2">&lt;strong&gt;</bpt>CONTAINER<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">From the top of the page, click <bpt id="2">&lt;strong&gt;</bpt>CONTAINER<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="190" xml:space="preserve">
+            <source>From the bottom of the page, click <bpt id="2">&lt;strong&gt;</bpt>ADD<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">From the bottom of the page, click <bpt id="2">&lt;strong&gt;</bpt>ADD<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="191" xml:space="preserve">
+            <source>Enter the container name.</source>
+            <target state="new">Enter the container name.</target>
+          </trans-unit>
+          <trans-unit id="192" xml:space="preserve">
+            <source>This container will be used as the default container for the HBase cluster.</source>
+            <target state="new">This container will be used as the default container for the HBase cluster.</target>
+          </trans-unit>
+          <trans-unit id="193" xml:space="preserve">
+            <source>By default, the default container name matches the cluster name.</source>
+            <target state="new">By default, the default container name matches the cluster name.</target>
+          </trans-unit>
+          <trans-unit id="194" xml:space="preserve">
+            <source>Keep the <bpt id="2">&lt;strong&gt;</bpt>ACCESS<ept id="2">&lt;/strong&gt;</ept> field as <bpt id="4">&lt;strong&gt;</bpt>Private<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Keep the <bpt id="2">&lt;strong&gt;</bpt>ACCESS<ept id="2">&lt;/strong&gt;</ept> field as <bpt id="4">&lt;strong&gt;</bpt>Private<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="195" xml:space="preserve">
+            <source>Click the checkmark to create the container.</source>
+            <target state="new">Click the checkmark to create the container.</target>
+          </trans-unit>
+          <trans-unit id="196" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>To provision an HBase cluster by using the Azure portal<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>To provision an HBase cluster by using the Azure portal<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="197" xml:space="preserve">
+            <source>For information on provisioning a new HBase cluster by using Azure PowerShell, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Provision an HBase cluster using Azure PowerShell<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For information on provisioning a new HBase cluster by using Azure PowerShell, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Provision an HBase cluster using Azure PowerShell<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="198" xml:space="preserve">
+            <source>Sign in to the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure portal[azure-portal]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">Sign in to the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure portal[azure-portal]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="199" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>NEW<ept id="2">&lt;/strong&gt;</ept> in the lower-left corner, point to <bpt id="4">&lt;strong&gt;</bpt>DATA SERVICES<ept id="4">&lt;/strong&gt;</ept>, point to <bpt id="6">&lt;strong&gt;</bpt>HDINSIGHT<ept id="6">&lt;/strong&gt;</ept>, and then click <bpt id="8">&lt;strong&gt;</bpt>CUSTOM CREATE<ept id="8">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>NEW<ept id="2">&lt;/strong&gt;</ept> in the lower-left corner, point to <bpt id="4">&lt;strong&gt;</bpt>DATA SERVICES<ept id="4">&lt;/strong&gt;</ept>, point to <bpt id="6">&lt;strong&gt;</bpt>HDINSIGHT<ept id="6">&lt;/strong&gt;</ept>, and then click <bpt id="8">&lt;strong&gt;</bpt>CUSTOM CREATE<ept id="8">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="200" xml:space="preserve">
+            <source>Enter a cluster name, select HBase as the cluster type, select the Windows Server 2012 operating system, select the HDInsight version, and then click the right button.</source>
+            <target state="new">Enter a cluster name, select HBase as the cluster type, select the Windows Server 2012 operating system, select the HDInsight version, and then click the right button.</target>
+          </trans-unit>
+          <trans-unit id="201" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Provide details for the HBase cluster<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Provide details for the HBase cluster<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="202" xml:space="preserve">
+            <source>For an HBase cluster, Windows Server is the only available OS option.</source>
+            <target state="new">For an HBase cluster, Windows Server is the only available OS option.</target>
+          </trans-unit>
+          <trans-unit id="203" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Configure Cluster<ept id="2">&lt;/strong&gt;</ept> page, enter or select the following:</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Configure Cluster<ept id="2">&lt;/strong&gt;</ept> page, enter or select the following:</target>
+          </trans-unit>
+          <trans-unit id="204" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Provide details for the HBase cluster<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Provide details for the HBase cluster<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="205" xml:space="preserve">
+            <source>Property</source>
+            <target state="new">Property</target>
+          </trans-unit>
+          <trans-unit id="206" xml:space="preserve">
+            <source>Value</source>
+            <target state="new">Value</target>
+          </trans-unit>
+          <trans-unit id="207" xml:space="preserve">
+            <source>Data Nodes</source>
+            <target state="new">Data Nodes</target>
+          </trans-unit>
+          <trans-unit id="208" xml:space="preserve">
+            <source>Select the number of data nodes you want to deploy. For testing purposes, create a single-node cluster. </source>
+            <target state="new">Select the number of data nodes you want to deploy. For testing purposes, create a single-node cluster. </target>
+          </trans-unit>
+          <trans-unit id="209" xml:space="preserve">
+            <source>The cluster size limit varies for Azure subscriptions. Contact Azure billing support to increase the limit.</source>
+            <target state="new">The cluster size limit varies for Azure subscriptions. Contact Azure billing support to increase the limit.</target>
+          </trans-unit>
+          <trans-unit id="210" xml:space="preserve">
+            <source>Region/Virtual Network</source>
+            <target state="new">Region/Virtual Network</target>
+          </trans-unit>
+          <trans-unit id="211" xml:space="preserve">
+            <source>Select a region or an Azure virtual network, if you have one already created. For this tutorial, select the network that you created earlier, and then select a corresponding subnet. The default name is </source>
+            <target state="new">Select a region or an Azure virtual network, if you have one already created. For this tutorial, select the network that you created earlier, and then select a corresponding subnet. The default name is </target>
+          </trans-unit>
+          <trans-unit id="212" xml:space="preserve">
+            <source>Subnet-1</source>
+            <target state="new">Subnet-1</target>
+          </trans-unit>
+          <trans-unit id="213" xml:space="preserve">
+            <source>.</source>
+            <target state="new">.</target>
+          </trans-unit>
+          <trans-unit id="214" xml:space="preserve">
+            <source>Head Node Size</source>
+            <target state="new">Head Node Size</target>
+          </trans-unit>
+          <trans-unit id="215" xml:space="preserve">
+            <source>Select a VM size for the head node.</source>
+            <target state="new">Select a VM size for the head node.</target>
+          </trans-unit>
+          <trans-unit id="216" xml:space="preserve">
+            <source>Data Node Size</source>
+            <target state="new">Data Node Size</target>
+          </trans-unit>
+          <trans-unit id="217" xml:space="preserve">
+            <source>Select a VM size for the data nodes.</source>
+            <target state="new">Select a VM size for the data nodes.</target>
+          </trans-unit>
+          <trans-unit id="218" xml:space="preserve">
+            <source>Zookeeper Size</source>
+            <target state="new">Zookeeper Size</target>
+          </trans-unit>
+          <trans-unit id="219" xml:space="preserve">
+            <source>Select a VM size for the Zookeeper node.</source>
+            <target state="new">Select a VM size for the Zookeeper node.</target>
+          </trans-unit>
+          <trans-unit id="220" xml:space="preserve">
+            <source>Based on the choice of VMs, your cost might vary.</source>
+            <target state="new">Based on the choice of VMs, your cost might vary.</target>
+          </trans-unit>
+          <trans-unit id="221" xml:space="preserve">
+            <source>HDInsight uses all standard-tier VMs for cluster nodes.</source>
+            <target state="new">HDInsight uses all standard-tier VMs for cluster nodes.</target>
+          </trans-unit>
+          <trans-unit id="222" xml:space="preserve">
+            <source>For information on how VM sizes affect your prices, see <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>HDInsight Pricing<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>.</source>
+            <target state="new">For information on how VM sizes affect your prices, see <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>HDInsight Pricing<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="223" xml:space="preserve">
+            <source>Click the right button.</source>
+            <target state="new">Click the right button.</target>
+          </trans-unit>
+          <trans-unit id="224" xml:space="preserve">
+            <source>Enter the Hadoop user name and password to use for this cluster, and then click the right button.</source>
+            <target state="new">Enter the Hadoop user name and password to use for this cluster, and then click the right button.</target>
+          </trans-unit>
+          <trans-unit id="225" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Provide Storage account for Hadoop HDInsight cluster<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Provide Storage account for Hadoop HDInsight cluster<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="226" xml:space="preserve">
+            <source>Property</source>
+            <target state="new">Property</target>
+          </trans-unit>
+          <trans-unit id="227" xml:space="preserve">
+            <source>Value</source>
+            <target state="new">Value</target>
+          </trans-unit>
+          <trans-unit id="228" xml:space="preserve">
+            <source>HTTP User Name</source>
+            <target state="new">HTTP User Name</target>
+          </trans-unit>
+          <trans-unit id="229" xml:space="preserve">
+            <source>Specify the HDInsight cluster user name.</source>
+            <target state="new">Specify the HDInsight cluster user name.</target>
+          </trans-unit>
+          <trans-unit id="230" xml:space="preserve">
+            <source>HTTP Password/Confirm Password</source>
+            <target state="new">HTTP Password/Confirm Password</target>
+          </trans-unit>
+          <trans-unit id="231" xml:space="preserve">
+            <source>Specify the HDInsight cluster user password.</source>
+            <target state="new">Specify the HDInsight cluster user password.</target>
+          </trans-unit>
+          <trans-unit id="232" xml:space="preserve">
+            <source>Enable remote desktop for cluster</source>
+            <target state="new">Enable remote desktop for cluster</target>
+          </trans-unit>
+          <trans-unit id="233" xml:space="preserve">
+            <source>Select this check box to specify a username, password, and expiry date for a remote desktop user that can remote into the cluster nodes, once it is provisioned. You can also enable remote desktop later, after the cluster is provisioned. For instructions, see </source>
+            <target state="new">Select this check box to specify a username, password, and expiry date for a remote desktop user that can remote into the cluster nodes, once it is provisioned. You can also enable remote desktop later, after the cluster is provisioned. For instructions, see </target>
+          </trans-unit>
+          <trans-unit id="234" xml:space="preserve">
+            <source>Connect to HDInsight clusters using RDP</source>
+            <target state="new">Connect to HDInsight clusters using RDP</target>
+          </trans-unit>
+          <trans-unit id="235" xml:space="preserve">
+            <source>.</source>
+            <target state="new">.</target>
+          </trans-unit>
+          <trans-unit id="236" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Storage Account<ept id="2">&lt;/strong&gt;</ept> page, provide the following values:</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Storage Account<ept id="2">&lt;/strong&gt;</ept> page, provide the following values:</target>
+          </trans-unit>
+          <trans-unit id="237" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Provide Storage account for Hadoop HDInsight cluster<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Provide Storage account for Hadoop HDInsight cluster<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="238" xml:space="preserve">
+            <source>Property</source>
+            <target state="new">Property</target>
+          </trans-unit>
+          <trans-unit id="239" xml:space="preserve">
+            <source>Value</source>
+            <target state="new">Value</target>
+          </trans-unit>
+          <trans-unit id="240" xml:space="preserve">
+            <source>Storage Account</source>
+            <target state="new">Storage Account</target>
+          </trans-unit>
+          <trans-unit id="241" xml:space="preserve">
+            <source>Specify the Azure Storage account that will be used as the default file system for the HDInsight cluster. You can choose one of the three options:
+         </source>
+            <target state="new">Specify the Azure Storage account that will be used as the default file system for the HDInsight cluster. You can choose one of the three options:
+         </target>
+          </trans-unit>
+          <trans-unit id="242" xml:space="preserve">
+            <source>Use Existing Storage</source>
+            <target state="new">Use Existing Storage</target>
+          </trans-unit>
+          <trans-unit id="243" xml:space="preserve">
+            <source>Create New Storage</source>
+            <target state="new">Create New Storage</target>
+          </trans-unit>
+          <trans-unit id="244" xml:space="preserve">
+            <source>Use Storage From Another Subscription</source>
+            <target state="new">Use Storage From Another Subscription</target>
+          </trans-unit>
+          <trans-unit id="245" xml:space="preserve">
+            <source>Account Name</source>
+            <target state="new">Account Name</target>
+          </trans-unit>
+          <trans-unit id="246" xml:space="preserve">
+            <source>If you chose to use existing storage, for </source>
+            <target state="new">If you chose to use existing storage, for </target>
+          </trans-unit>
+          <trans-unit id="247" xml:space="preserve">
+            <source>Account Name</source>
+            <target state="new">Account Name</target>
+          </trans-unit>
+          <trans-unit id="248" xml:space="preserve">
+            <source>, select an existing storage account. The drop-down lists only the Storage accounts located in the same data center where you chose to provision the cluster.</source>
+            <target state="new">, select an existing storage account. The drop-down lists only the Storage accounts located in the same data center where you chose to provision the cluster.</target>
+          </trans-unit>
+          <trans-unit id="249" xml:space="preserve">
+            <source>If you chose the </source>
+            <target state="new">If you chose the </target>
+          </trans-unit>
+          <trans-unit id="250" xml:space="preserve">
+            <source>Create New Storage</source>
+            <target state="new">Create New Storage</target>
+          </trans-unit>
+          <trans-unit id="251" xml:space="preserve">
+            <source> or </source>
+            <target state="new"> or </target>
+          </trans-unit>
+          <trans-unit id="252" xml:space="preserve">
+            <source>Use Storage From Another Subscription</source>
+            <target state="new">Use Storage From Another Subscription</target>
+          </trans-unit>
+          <trans-unit id="253" xml:space="preserve">
+            <source> option, you must provide the Storage account name.</source>
+            <target state="new"> option, you must provide the Storage account name.</target>
+          </trans-unit>
+          <trans-unit id="254" xml:space="preserve">
+            <source>Account Key</source>
+            <target state="new">Account Key</target>
+          </trans-unit>
+          <trans-unit id="255" xml:space="preserve">
+            <source>If you chose the </source>
+            <target state="new">If you chose the </target>
+          </trans-unit>
+          <trans-unit id="256" xml:space="preserve">
+            <source>Use Storage From Another Subscription</source>
+            <target state="new">Use Storage From Another Subscription</target>
+          </trans-unit>
+          <trans-unit id="257" xml:space="preserve">
+            <source> option, specify the account key for that Storage account.</source>
+            <target state="new"> option, specify the account key for that Storage account.</target>
+          </trans-unit>
+          <trans-unit id="258" xml:space="preserve">
+            <source>Default Container</source>
+            <target state="new">Default Container</target>
+          </trans-unit>
+          <trans-unit id="259" xml:space="preserve">
+            <source>Specify the default container on the Storage account that is used as the default file system for the HDInsight cluster. If you chose </source>
+            <target state="new">Specify the default container on the Storage account that is used as the default file system for the HDInsight cluster. If you chose </target>
+          </trans-unit>
+          <trans-unit id="260" xml:space="preserve">
+            <source>Use Existing Storage</source>
+            <target state="new">Use Existing Storage</target>
+          </trans-unit>
+          <trans-unit id="261" xml:space="preserve">
+            <source> for the </source>
+            <target state="new"> for the </target>
+          </trans-unit>
+          <trans-unit id="262" xml:space="preserve">
+            <source>Storage Account</source>
+            <target state="new">Storage Account</target>
+          </trans-unit>
+          <trans-unit id="263" xml:space="preserve">
+            <source> field, and there are no existing containers in that account, the container is created by default with the same name as the cluster name. If a container with the name of the cluster already exists, a sequence number will be appended to the container name. For example, mycontainer1, mycontainer2, and so on. However, if the existing Storage account has a container with a name different from the cluster name you specified, you can use that container as well.</source>
+            <target state="new"> field, and there are no existing containers in that account, the container is created by default with the same name as the cluster name. If a container with the name of the cluster already exists, a sequence number will be appended to the container name. For example, mycontainer1, mycontainer2, and so on. However, if the existing Storage account has a container with a name different from the cluster name you specified, you can use that container as well.</target>
+          </trans-unit>
+          <trans-unit id="264" xml:space="preserve">
+            <source>If you chose to create a new storage or use storage from another Azure subscription, you must specify the default container name.</source>
+            <target state="new">If you chose to create a new storage or use storage from another Azure subscription, you must specify the default container name.</target>
+          </trans-unit>
+          <trans-unit id="265" xml:space="preserve">
+            <source>Additional Storage Accounts</source>
+            <target state="new">Additional Storage Accounts</target>
+          </trans-unit>
+          <trans-unit id="266" xml:space="preserve">
+            <source>If required, specify additional Storage accounts for the cluster. HDInsight supports multiple Storage accounts. There is no limit on the additional Storage accounts that can be used by a cluster. However, if you create a cluster by using the Azure portal, you have a limit of seven due to the UI constraints. Each additional Storage account you specify adds an extra </source>
+            <target state="new">If required, specify additional Storage accounts for the cluster. HDInsight supports multiple Storage accounts. There is no limit on the additional Storage accounts that can be used by a cluster. However, if you create a cluster by using the Azure portal, you have a limit of seven due to the UI constraints. Each additional Storage account you specify adds an extra </target>
+          </trans-unit>
+          <trans-unit id="267" xml:space="preserve">
+            <source>Storage Account</source>
+            <target state="new">Storage Account</target>
+          </trans-unit>
+          <trans-unit id="268" xml:space="preserve">
+            <source> page to the wizard where you can specify the account information. For example, in the screenshot above, no additional storage account is selected, and hence an extra page is not added to the wizard.</source>
+            <target state="new"> page to the wizard where you can specify the account information. For example, in the screenshot above, no additional storage account is selected, and hence an extra page is not added to the wizard.</target>
+          </trans-unit>
+          <trans-unit id="269" xml:space="preserve">
+            <source>Click the right arrow.</source>
+            <target state="new">Click the right arrow.</target>
+          </trans-unit>
+          <trans-unit id="270" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Script Actions<ept id="2">&lt;/strong&gt;</ept> page, select the checkmark in the lower-right corner.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Script Actions<ept id="2">&lt;/strong&gt;</ept> page, select the checkmark in the lower-right corner.</target>
+          </trans-unit>
+          <trans-unit id="271" xml:space="preserve">
+            <source>Do not click the <bpt id="2">&lt;strong&gt;</bpt>add script action<ept id="2">&lt;/strong&gt;</ept> button, as this tutorial does not require a customized cluster setup.</source>
+            <target state="new">Do not click the <bpt id="2">&lt;strong&gt;</bpt>add script action<ept id="2">&lt;/strong&gt;</ept> button, as this tutorial does not require a customized cluster setup.</target>
+          </trans-unit>
+          <trans-unit id="272" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Configure Script Action to customize an HDInsight HBase cluster<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Configure Script Action to customize an HDInsight HBase cluster<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="273" xml:space="preserve">
+            <source>This page can be used to customize the cluster during setup.</source>
+            <target state="new">This page can be used to customize the cluster during setup.</target>
+          </trans-unit>
+          <trans-unit id="274" xml:space="preserve">
+            <source>For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Customize HDInsight clusters using Script Action<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Customize HDInsight clusters using Script Action<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="275" xml:space="preserve">
+            <source>To begin working with your new HBase cluster, you can use the procedures found in <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Get started using HBase with Hadoop in HDInsight<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">To begin working with your new HBase cluster, you can use the procedures found in <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Get started using HBase with Hadoop in HDInsight<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="276" xml:space="preserve">
+            <source>Connect to the HBase cluster provisioned in the virtual network by using HBase Java RPC APIs</source>
+            <target state="new">Connect to the HBase cluster provisioned in the virtual network by using HBase Java RPC APIs</target>
+          </trans-unit>
+          <trans-unit id="277" xml:space="preserve">
+            <source>Provision an infrastructure as a service (IaaS) virtual machine into the same Azure virtual network and the same subnet.</source>
+            <target state="new">Provision an infrastructure as a service (IaaS) virtual machine into the same Azure virtual network and the same subnet.</target>
+          </trans-unit>
+          <trans-unit id="278" xml:space="preserve">
+            <source>So both the virtual machine and the HBase cluster use the same internal DNS server to resolve host names.</source>
+            <target state="new">So both the virtual machine and the HBase cluster use the same internal DNS server to resolve host names.</target>
+          </trans-unit>
+          <trans-unit id="279" xml:space="preserve">
+            <source>To do so, you must choose the <bpt id="2">&lt;strong&gt;</bpt>From Gallery<ept id="2">&lt;/strong&gt;</ept> option, and select the virtual network instead of a data center.</source>
+            <target state="new">To do so, you must choose the <bpt id="2">&lt;strong&gt;</bpt>From Gallery<ept id="2">&lt;/strong&gt;</ept> option, and select the virtual network instead of a data center.</target>
+          </trans-unit>
+          <trans-unit id="280" xml:space="preserve">
+            <source>For instructions, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Create a Virtual Machine Running Windows Server<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For instructions, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Create a Virtual Machine Running Windows Server<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="281" xml:space="preserve">
+            <source>A standard Windows Server 2012 image with a small VM size is sufficient.</source>
+            <target state="new">A standard Windows Server 2012 image with a small VM size is sufficient.</target>
+          </trans-unit>
+          <trans-unit id="282" xml:space="preserve">
+            <source>When using a Java application to connect to HBase remotely, you must use the fully qualified domain name (FQDN).</source>
+            <target state="new">When using a Java application to connect to HBase remotely, you must use the fully qualified domain name (FQDN).</target>
+          </trans-unit>
+          <trans-unit id="283" xml:space="preserve">
+            <source>To determine this, you must get the connection-specific DNS suffix of the HBase cluster.</source>
+            <target state="new">To determine this, you must get the connection-specific DNS suffix of the HBase cluster.</target>
+          </trans-unit>
+          <trans-unit id="284" xml:space="preserve">
+            <source>To do that, use Curl to query Ambari, or use Remote Desktop to connect to the cluster.</source>
+            <target state="new">To do that, use Curl to query Ambari, or use Remote Desktop to connect to the cluster.</target>
+          </trans-unit>
+          <trans-unit id="285" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Curl<ept id="1">&lt;/strong&gt;</ept> - Use the following command:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Curl<ept id="1">&lt;/strong&gt;</ept> - Use the following command:</target>
+          </trans-unit>
+          <trans-unit id="286" xml:space="preserve">
+            <source>In the JavaScript Object Notation (JSON) data returned, find the "host_name" entry.</source>
+            <target state="new">In the JavaScript Object Notation (JSON) data returned, find the "host_name" entry.</target>
+          </trans-unit>
+          <trans-unit id="287" xml:space="preserve">
+            <source>This will contain the FQDN for the nodes in the cluster.</source>
+            <target state="new">This will contain the FQDN for the nodes in the cluster.</target>
+          </trans-unit>
+          <trans-unit id="288" xml:space="preserve">
+            <source>For example:</source>
+            <target state="new">For example:</target>
+          </trans-unit>
+          <trans-unit id="289" xml:space="preserve">
+            <source>The portion of the domain name beginning with the cluster name is the DNS suffix.</source>
+            <target state="new">The portion of the domain name beginning with the cluster name is the DNS suffix.</target>
+          </trans-unit>
+          <trans-unit id="290" xml:space="preserve">
+            <source>For example, mycluster.b1.cloudapp.net.</source>
+            <target state="new">For example, mycluster.b1.cloudapp.net.</target>
+          </trans-unit>
+          <trans-unit id="291" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Azure PowerShell<ept id="1">&lt;/strong&gt;</ept> - Use the following Azure PowerShell script to register the <bpt id="3">&lt;strong&gt;</bpt>Get-ClusterDetail<ept id="3">&lt;/strong&gt;</ept> function, which can be used to return the DNS suffix:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Azure PowerShell<ept id="1">&lt;/strong&gt;</ept> - Use the following Azure PowerShell script to register the <bpt id="3">&lt;strong&gt;</bpt>Get-ClusterDetail<ept id="3">&lt;/strong&gt;</ept> function, which can be used to return the DNS suffix:</target>
+          </trans-unit>
+          <trans-unit id="292" xml:space="preserve">
+            <source>After running the Azure PowerShell script, use the following command to return the DNS suffix by using the <bpt id="2">&lt;strong&gt;</bpt>Get-ClusterDetail<ept id="2">&lt;/strong&gt;</ept> function.</source>
+            <target state="new">After running the Azure PowerShell script, use the following command to return the DNS suffix by using the <bpt id="2">&lt;strong&gt;</bpt>Get-ClusterDetail<ept id="2">&lt;/strong&gt;</ept> function.</target>
+          </trans-unit>
+          <trans-unit id="293" xml:space="preserve">
+            <source>Specify your HDInsight HBase cluster name, admin name, and admin password when using this command.</source>
+            <target state="new">Specify your HDInsight HBase cluster name, admin name, and admin password when using this command.</target>
+          </trans-unit>
+          <trans-unit id="294" xml:space="preserve">
+            <source>This will return the DNS suffix.</source>
+            <target state="new">This will return the DNS suffix.</target>
+          </trans-unit>
+          <trans-unit id="295" xml:space="preserve">
+            <source>For example, <bpt id="2">&lt;strong&gt;</bpt>yourclustername.b4.internal.cloudapp.net<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">For example, <bpt id="2">&lt;strong&gt;</bpt>yourclustername.b4.internal.cloudapp.net<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="296" xml:space="preserve">
+            <source>You can also use Remote Desktop to connect to the HBase cluster (you will be connected to the head node) and run <bpt id="2">&lt;strong&gt;</bpt>ipconfig<ept id="2">&lt;/strong&gt;</ept> from a command prompt to obtain the DNS suffix.</source>
+            <target state="new">You can also use Remote Desktop to connect to the HBase cluster (you will be connected to the head node) and run <bpt id="2">&lt;strong&gt;</bpt>ipconfig<ept id="2">&lt;/strong&gt;</ept> from a command prompt to obtain the DNS suffix.</target>
+          </trans-unit>
+          <trans-unit id="297" xml:space="preserve">
+            <source>For instructions on enabling Remote Desktop Protocol (RDP) and connecting to the cluster by using RDP, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Manage Hadoop clusters in HDInsight using the Azure portal[hdinsight-admin-portal]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For instructions on enabling Remote Desktop Protocol (RDP) and connecting to the cluster by using RDP, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Manage Hadoop clusters in HDInsight using the Azure portal[hdinsight-admin-portal]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="298" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>hdinsight.hbase.dns.surffix<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>hdinsight.hbase.dns.surffix<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="299" xml:space="preserve">
+            <source>To verify that the virtual machine can communicate with the HBase cluster, use the command <bpt id="2">&lt;code&gt;</bpt>ping headnode0.&lt;dns suffix&gt;<ept id="2">&lt;/code&gt;</ept> from the virtual machine. For example, ping headnode0.mycluster.b1.cloudapp.net.</source>
+            <target state="new">To verify that the virtual machine can communicate with the HBase cluster, use the command <bpt id="2">&lt;code&gt;</bpt>ping headnode0.&lt;dns suffix&gt;<ept id="2">&lt;/code&gt;</ept> from the virtual machine. For example, ping headnode0.mycluster.b1.cloudapp.net.</target>
+          </trans-unit>
+          <trans-unit id="300" xml:space="preserve">
+            <source>To use this information in a Java application, you can follow the steps in <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Use Maven to build Java applications that use HBase with HDInsight (Hadoop)<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> to create an application.</source>
+            <target state="new">To use this information in a Java application, you can follow the steps in <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Use Maven to build Java applications that use HBase with HDInsight (Hadoop)<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> to create an application.</target>
+          </trans-unit>
+          <trans-unit id="301" xml:space="preserve">
+            <source>To have the application connect to a remote HBase server, modify the <bpt id="2">&lt;strong&gt;</bpt>hbase-site.xml<ept id="2">&lt;/strong&gt;</ept> file in this example to use the FQDN for Zookeeper.</source>
+            <target state="new">To have the application connect to a remote HBase server, modify the <bpt id="2">&lt;strong&gt;</bpt>hbase-site.xml<ept id="2">&lt;/strong&gt;</ept> file in this example to use the FQDN for Zookeeper.</target>
+          </trans-unit>
+          <trans-unit id="302" xml:space="preserve">
+            <source>For example:</source>
+            <target state="new">For example:</target>
+          </trans-unit>
+          <trans-unit id="303" xml:space="preserve">
+            <source>For more information on name resolution in Azure virtual networks, including how to use your own DNS server, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Name Resolution (DNS)<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information on name resolution in Azure virtual networks, including how to use your own DNS server, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Name Resolution (DNS)<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="304" xml:space="preserve">
+            <source>Provision an HBase cluster by using Azure PowerShell</source>
+            <target state="new">Provision an HBase cluster by using Azure PowerShell</target>
+          </trans-unit>
+          <trans-unit id="305" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>To provision an HBase cluster by using Azure PowerShell<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>To provision an HBase cluster by using Azure PowerShell<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="306" xml:space="preserve">
+            <source>Open the Azure PowerShell Integrated Scripting Environment (ISE).</source>
+            <target state="new">Open the Azure PowerShell Integrated Scripting Environment (ISE).</target>
+          </trans-unit>
+          <trans-unit id="307" xml:space="preserve">
+            <source>Copy and paste the following into the script pane:</source>
+            <target state="new">Copy and paste the following into the script pane:</target>
+          </trans-unit>
+          <trans-unit id="308" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Run Script<ept id="2">&lt;/strong&gt;</ept>, or press <bpt id="4">&lt;strong&gt;</bpt>F5<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Run Script<ept id="2">&lt;/strong&gt;</ept>, or press <bpt id="4">&lt;strong&gt;</bpt>F5<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="309" xml:space="preserve">
+            <source>To validate the cluster, you can either check the cluster from the Azure portal, or run the following Azure PowerShell cmdlet from the bottom pane:</source>
+            <target state="new">To validate the cluster, you can either check the cluster from the Azure portal, or run the following Azure PowerShell cmdlet from the bottom pane:</target>
+          </trans-unit>
+          <trans-unit id="310" xml:space="preserve">
+            <source>Get-AzureHDInsightCluster</source>
+            <target state="new">Get-AzureHDInsightCluster</target>
+          </trans-unit>
+          <trans-unit id="311" xml:space="preserve">
+            <source>Next steps</source>
+            <target state="new">Next steps</target>
+          </trans-unit>
+          <trans-unit id="312" xml:space="preserve">
+            <source>In this tutorial you learned how to provision an HBase cluster.</source>
+            <target state="new">In this tutorial you learned how to provision an HBase cluster.</target>
+          </trans-unit>
+          <trans-unit id="313" xml:space="preserve">
+            <source>To learn more, see:</source>
+            <target state="new">To learn more, see:</target>
+          </trans-unit>
+          <trans-unit id="314" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Get started with HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Get started with HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="315" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Configure HBase replication in HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Configure HBase replication in HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="316" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Provision Hadoop clusters in HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Provision Hadoop clusters in HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="317" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Get started using HBase with Hadoop in HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Get started using HBase with Hadoop in HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="318" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Analyze Twitter sentiment with HBase in HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Analyze Twitter sentiment with HBase in HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="319" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Virtual Network Overview[vnet-overview]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Virtual Network Overview[vnet-overview]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>

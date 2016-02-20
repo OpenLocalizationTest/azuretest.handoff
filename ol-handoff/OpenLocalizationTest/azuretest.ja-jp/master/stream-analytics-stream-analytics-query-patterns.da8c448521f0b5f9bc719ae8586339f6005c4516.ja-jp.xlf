@@ -1,0 +1,1499 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="ja-jp" original="2/20/2016 9:41:11 AM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">53654b765f66739283afe3334d6e2a0da30f7a4c</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Azure Stream Analytics Query Patterns | Microsoft Azure</source>
+            <target state="new">Azure Stream Analytics Query Patterns | Microsoft Azure</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>Common Azure Stream Analytics Query Patterns </source>
+            <target state="new">Common Azure Stream Analytics Query Patterns </target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Common Azure Stream Analytics Query Patterns</source>
+            <target state="new">Common Azure Stream Analytics Query Patterns</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source>Introduction</source>
+            <target state="new">Introduction</target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>Queries in Azure Stream Analytics are expressed in a SQL-like query language, which is documented <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>here<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">Queries in Azure Stream Analytics are expressed in a SQL-like query language, which is documented <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>here<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>This document outlines solutions to several common query patterns based on real world scenarios.</source>
+            <target state="new">This document outlines solutions to several common query patterns based on real world scenarios.</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>It is a work in progress and will continue to be updated with new patterns on an ongoing basis.</source>
+            <target state="new">It is a work in progress and will continue to be updated with new patterns on an ongoing basis.</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>Basics</source>
+            <target state="new">Basics</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source>Data type conversions</source>
+            <target state="new">Data type conversions</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Description<ept id="1">&lt;/strong&gt;</ept>: Define the types of the properties on the input stream.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Description<ept id="1">&lt;/strong&gt;</ept>: Define the types of the properties on the input stream.</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>e.g. Car weight is coming on the input stream as strings and needs to be converted to INT to perform SUM it up.</source>
+            <target state="new">e.g. Car weight is coming on the input stream as strings and needs to be converted to INT to perform SUM it up.</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Input<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Input<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>Make</source>
+            <target state="new">Make</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source>Time</source>
+            <target state="new">Time</target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>Weight</source>
+            <target state="new">Weight</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source>Honda</source>
+            <target state="new">Honda</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>2015-01-01T00:00:01.0000000Z</source>
+            <target state="new">2015-01-01T00:00:01.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>"1000"</source>
+            <target state="new">"1000"</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source>Honda</source>
+            <target state="new">Honda</target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source>2015-01-01T00:00:02.0000000Z</source>
+            <target state="new">2015-01-01T00:00:02.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source>"2000"</source>
+            <target state="new">"2000"</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Output<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Output<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>Make</source>
+            <target state="new">Make</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source>Weight</source>
+            <target state="new">Weight</target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>Honda</source>
+            <target state="new">Honda</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>3000</source>
+            <target state="new">3000</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Solution<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Solution<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Explanation<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Explanation<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source>Use a CAST statement on the Weight field to specify its type (see the list of supported Data Types <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>here<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">Use a CAST statement on the Weight field to specify its type (see the list of supported Data Types <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>here<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source>Using Like/Not like to do pattern matching</source>
+            <target state="new">Using Like/Not like to do pattern matching</target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Description<ept id="1">&lt;/strong&gt;</ept>: Check that a field value on the event matches a certain pattern</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Description<ept id="1">&lt;/strong&gt;</ept>: Check that a field value on the event matches a certain pattern</target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source>e.g. Return license plates that start with A and end with 9</source>
+            <target state="new">e.g. Return license plates that start with A and end with 9</target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Input<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Input<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source>Make</source>
+            <target state="new">Make</target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source>LicensePlate</source>
+            <target state="new">LicensePlate</target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source>Time</source>
+            <target state="new">Time</target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source>Honda</source>
+            <target state="new">Honda</target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source>ABC-123</source>
+            <target state="new">ABC-123</target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source>2015-01-01T00:00:01.0000000Z</source>
+            <target state="new">2015-01-01T00:00:01.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source>Toyota</source>
+            <target state="new">Toyota</target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source>AAA-999</source>
+            <target state="new">AAA-999</target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source>2015-01-01T00:00:02.0000000Z</source>
+            <target state="new">2015-01-01T00:00:02.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source>Nissan</source>
+            <target state="new">Nissan</target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source>ABC-369</source>
+            <target state="new">ABC-369</target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source>2015-01-01T00:00:03.0000000Z</source>
+            <target state="new">2015-01-01T00:00:03.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Output<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Output<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="147" xml:space="preserve">
+            <source>Make</source>
+            <target state="new">Make</target>
+          </trans-unit>
+          <trans-unit id="148" xml:space="preserve">
+            <source>LicensePlate</source>
+            <target state="new">LicensePlate</target>
+          </trans-unit>
+          <trans-unit id="149" xml:space="preserve">
+            <source>Time</source>
+            <target state="new">Time</target>
+          </trans-unit>
+          <trans-unit id="150" xml:space="preserve">
+            <source>Toyota</source>
+            <target state="new">Toyota</target>
+          </trans-unit>
+          <trans-unit id="151" xml:space="preserve">
+            <source>AAA-999</source>
+            <target state="new">AAA-999</target>
+          </trans-unit>
+          <trans-unit id="152" xml:space="preserve">
+            <source>2015-01-01T00:00:02.0000000Z</source>
+            <target state="new">2015-01-01T00:00:02.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="153" xml:space="preserve">
+            <source>Nissan</source>
+            <target state="new">Nissan</target>
+          </trans-unit>
+          <trans-unit id="154" xml:space="preserve">
+            <source>ABC-369</source>
+            <target state="new">ABC-369</target>
+          </trans-unit>
+          <trans-unit id="155" xml:space="preserve">
+            <source>2015-01-01T00:00:03.0000000Z</source>
+            <target state="new">2015-01-01T00:00:03.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="156" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Solution<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Solution<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="157" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Explanation<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Explanation<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="158" xml:space="preserve">
+            <source>Use the LIKE statement to check that the LicensePlate field value starts with A then has any string of zero or more characters and it ends with 9.</source>
+            <target state="new">Use the LIKE statement to check that the LicensePlate field value starts with A then has any string of zero or more characters and it ends with 9.</target>
+          </trans-unit>
+          <trans-unit id="159" xml:space="preserve">
+            <source>Specify logic for different cases/values (CASE statements)</source>
+            <target state="new">Specify logic for different cases/values (CASE statements)</target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Description<ept id="1">&lt;/strong&gt;</ept>: Provide different computation for a field based on some criteria.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Description<ept id="1">&lt;/strong&gt;</ept>: Provide different computation for a field based on some criteria.</target>
+          </trans-unit>
+          <trans-unit id="161" xml:space="preserve">
+            <source>e.g. Provide a string description for how many cars passed of the same make with a special case for 1.</source>
+            <target state="new">e.g. Provide a string description for how many cars passed of the same make with a special case for 1.</target>
+          </trans-unit>
+          <trans-unit id="162" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Input<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Input<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="163" xml:space="preserve">
+            <source>Make</source>
+            <target state="new">Make</target>
+          </trans-unit>
+          <trans-unit id="164" xml:space="preserve">
+            <source>Time</source>
+            <target state="new">Time</target>
+          </trans-unit>
+          <trans-unit id="165" xml:space="preserve">
+            <source>Honda</source>
+            <target state="new">Honda</target>
+          </trans-unit>
+          <trans-unit id="166" xml:space="preserve">
+            <source>2015-01-01T00:00:01.0000000Z</source>
+            <target state="new">2015-01-01T00:00:01.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="167" xml:space="preserve">
+            <source>Toyota</source>
+            <target state="new">Toyota</target>
+          </trans-unit>
+          <trans-unit id="168" xml:space="preserve">
+            <source>2015-01-01T00:00:02.0000000Z</source>
+            <target state="new">2015-01-01T00:00:02.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="169" xml:space="preserve">
+            <source>Toyota</source>
+            <target state="new">Toyota</target>
+          </trans-unit>
+          <trans-unit id="170" xml:space="preserve">
+            <source>2015-01-01T00:00:03.0000000Z</source>
+            <target state="new">2015-01-01T00:00:03.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="171" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Output<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Output<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="172" xml:space="preserve">
+            <source>CarsPassed</source>
+            <target state="new">CarsPassed</target>
+          </trans-unit>
+          <trans-unit id="173" xml:space="preserve">
+            <source>Time</source>
+            <target state="new">Time</target>
+          </trans-unit>
+          <trans-unit id="174" xml:space="preserve">
+            <source>1 Honda</source>
+            <target state="new">1 Honda</target>
+          </trans-unit>
+          <trans-unit id="175" xml:space="preserve">
+            <source>2015-01-01T00:00:10.0000000Z</source>
+            <target state="new">2015-01-01T00:00:10.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="176" xml:space="preserve">
+            <source>2 Toyotas</source>
+            <target state="new">2 Toyotas</target>
+          </trans-unit>
+          <trans-unit id="177" xml:space="preserve">
+            <source>2015-01-01T00:00:10.0000000Z</source>
+            <target state="new">2015-01-01T00:00:10.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="178" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Solution<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Solution<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="179" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Explanation<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Explanation<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="180" xml:space="preserve">
+            <source>The CASE clause allows us to provide a different computation based on some criteria (in our case the count of cars in the aggregate window).</source>
+            <target state="new">The CASE clause allows us to provide a different computation based on some criteria (in our case the count of cars in the aggregate window).</target>
+          </trans-unit>
+          <trans-unit id="181" xml:space="preserve">
+            <source>Send data to multiple outputs</source>
+            <target state="new">Send data to multiple outputs</target>
+          </trans-unit>
+          <trans-unit id="182" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Description<ept id="1">&lt;/strong&gt;</ept>: Send data to multiple output targets from a single job.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Description<ept id="1">&lt;/strong&gt;</ept>: Send data to multiple output targets from a single job.</target>
+          </trans-unit>
+          <trans-unit id="183" xml:space="preserve">
+            <source>e.g. Analyze data for a threshold-based alert and archive all events to blob storage</source>
+            <target state="new">e.g. Analyze data for a threshold-based alert and archive all events to blob storage</target>
+          </trans-unit>
+          <trans-unit id="184" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Input<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Input<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="185" xml:space="preserve">
+            <source>Make</source>
+            <target state="new">Make</target>
+          </trans-unit>
+          <trans-unit id="186" xml:space="preserve">
+            <source>Time</source>
+            <target state="new">Time</target>
+          </trans-unit>
+          <trans-unit id="187" xml:space="preserve">
+            <source>Honda</source>
+            <target state="new">Honda</target>
+          </trans-unit>
+          <trans-unit id="188" xml:space="preserve">
+            <source>2015-01-01T00:00:01.0000000Z</source>
+            <target state="new">2015-01-01T00:00:01.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="189" xml:space="preserve">
+            <source>Honda</source>
+            <target state="new">Honda</target>
+          </trans-unit>
+          <trans-unit id="190" xml:space="preserve">
+            <source>2015-01-01T00:00:02.0000000Z</source>
+            <target state="new">2015-01-01T00:00:02.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="191" xml:space="preserve">
+            <source>Toyota</source>
+            <target state="new">Toyota</target>
+          </trans-unit>
+          <trans-unit id="192" xml:space="preserve">
+            <source>2015-01-01T00:00:01.0000000Z</source>
+            <target state="new">2015-01-01T00:00:01.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="193" xml:space="preserve">
+            <source>Toyota</source>
+            <target state="new">Toyota</target>
+          </trans-unit>
+          <trans-unit id="194" xml:space="preserve">
+            <source>2015-01-01T00:00:02.0000000Z</source>
+            <target state="new">2015-01-01T00:00:02.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="195" xml:space="preserve">
+            <source>Toyota</source>
+            <target state="new">Toyota</target>
+          </trans-unit>
+          <trans-unit id="196" xml:space="preserve">
+            <source>2015-01-01T00:00:03.0000000Z</source>
+            <target state="new">2015-01-01T00:00:03.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="197" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Output1<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Output1<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="198" xml:space="preserve">
+            <source>Make</source>
+            <target state="new">Make</target>
+          </trans-unit>
+          <trans-unit id="199" xml:space="preserve">
+            <source>Time</source>
+            <target state="new">Time</target>
+          </trans-unit>
+          <trans-unit id="200" xml:space="preserve">
+            <source>Honda</source>
+            <target state="new">Honda</target>
+          </trans-unit>
+          <trans-unit id="201" xml:space="preserve">
+            <source>2015-01-01T00:00:01.0000000Z</source>
+            <target state="new">2015-01-01T00:00:01.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="202" xml:space="preserve">
+            <source>Honda</source>
+            <target state="new">Honda</target>
+          </trans-unit>
+          <trans-unit id="203" xml:space="preserve">
+            <source>2015-01-01T00:00:02.0000000Z</source>
+            <target state="new">2015-01-01T00:00:02.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="204" xml:space="preserve">
+            <source>Toyota</source>
+            <target state="new">Toyota</target>
+          </trans-unit>
+          <trans-unit id="205" xml:space="preserve">
+            <source>2015-01-01T00:00:01.0000000Z</source>
+            <target state="new">2015-01-01T00:00:01.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="206" xml:space="preserve">
+            <source>Toyota</source>
+            <target state="new">Toyota</target>
+          </trans-unit>
+          <trans-unit id="207" xml:space="preserve">
+            <source>2015-01-01T00:00:02.0000000Z</source>
+            <target state="new">2015-01-01T00:00:02.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="208" xml:space="preserve">
+            <source>Toyota</source>
+            <target state="new">Toyota</target>
+          </trans-unit>
+          <trans-unit id="209" xml:space="preserve">
+            <source>2015-01-01T00:00:03.0000000Z</source>
+            <target state="new">2015-01-01T00:00:03.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="210" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Output2<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Output2<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="211" xml:space="preserve">
+            <source>Make</source>
+            <target state="new">Make</target>
+          </trans-unit>
+          <trans-unit id="212" xml:space="preserve">
+            <source>Time</source>
+            <target state="new">Time</target>
+          </trans-unit>
+          <trans-unit id="213" xml:space="preserve">
+            <source>Count</source>
+            <target state="new">Count</target>
+          </trans-unit>
+          <trans-unit id="214" xml:space="preserve">
+            <source>Toyota</source>
+            <target state="new">Toyota</target>
+          </trans-unit>
+          <trans-unit id="215" xml:space="preserve">
+            <source>2015-01-01T00:00:10.0000000Z</source>
+            <target state="new">2015-01-01T00:00:10.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="216" xml:space="preserve">
+            <source>3</source>
+            <target state="new">3</target>
+          </trans-unit>
+          <trans-unit id="217" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Solution<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Solution<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="218" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Explanation<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Explanation<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="219" xml:space="preserve">
+            <source>The INTO clause tells Stream Analytics which of the outputs to write the data from this statement.</source>
+            <target state="new">The INTO clause tells Stream Analytics which of the outputs to write the data from this statement.</target>
+          </trans-unit>
+          <trans-unit id="220" xml:space="preserve">
+            <source>The first query is a pass-through of the data we received to an output that we named ArchiveOutput.</source>
+            <target state="new">The first query is a pass-through of the data we received to an output that we named ArchiveOutput.</target>
+          </trans-unit>
+          <trans-unit id="221" xml:space="preserve">
+            <source>The second query does some simple aggregation and filtering and sends the results to a downstream alerting system.</source>
+            <target state="new">The second query does some simple aggregation and filtering and sends the results to a downstream alerting system.</target>
+          </trans-unit>
+          <trans-unit id="222" xml:space="preserve">
+            <source><bpt id="1">&lt;em&gt;</bpt>Note<ept id="1">&lt;/em&gt;</ept>: You can also reuse results of CTEs (i.e. WITH statements) in multiple output statements – this has the added benefit of opening less readers to the input source.</source>
+            <target state="new"><bpt id="1">&lt;em&gt;</bpt>Note<ept id="1">&lt;/em&gt;</ept>: You can also reuse results of CTEs (i.e. WITH statements) in multiple output statements – this has the added benefit of opening less readers to the input source.</target>
+          </trans-unit>
+          <trans-unit id="223" xml:space="preserve">
+            <source>e.g.</source>
+            <target state="new">e.g.</target>
+          </trans-unit>
+          <trans-unit id="224" xml:space="preserve">
+            <source>Patterns</source>
+            <target state="new">Patterns</target>
+          </trans-unit>
+          <trans-unit id="225" xml:space="preserve">
+            <source>Counting unique values</source>
+            <target state="new">Counting unique values</target>
+          </trans-unit>
+          <trans-unit id="226" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Description<ept id="1">&lt;/strong&gt;</ept>: count the number of unique field values that appear in the stream within a time window.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Description<ept id="1">&lt;/strong&gt;</ept>: count the number of unique field values that appear in the stream within a time window.</target>
+          </trans-unit>
+          <trans-unit id="227" xml:space="preserve">
+            <source>e.g. How many unique make of cars passed through the toll booth in a 2 second window?</source>
+            <target state="new">e.g. How many unique make of cars passed through the toll booth in a 2 second window?</target>
+          </trans-unit>
+          <trans-unit id="228" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Input<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Input<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="229" xml:space="preserve">
+            <source>Make</source>
+            <target state="new">Make</target>
+          </trans-unit>
+          <trans-unit id="230" xml:space="preserve">
+            <source>Time</source>
+            <target state="new">Time</target>
+          </trans-unit>
+          <trans-unit id="231" xml:space="preserve">
+            <source>Honda</source>
+            <target state="new">Honda</target>
+          </trans-unit>
+          <trans-unit id="232" xml:space="preserve">
+            <source>2015-01-01T00:00:01.0000000Z</source>
+            <target state="new">2015-01-01T00:00:01.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="233" xml:space="preserve">
+            <source>Honda</source>
+            <target state="new">Honda</target>
+          </trans-unit>
+          <trans-unit id="234" xml:space="preserve">
+            <source>2015-01-01T00:00:02.0000000Z</source>
+            <target state="new">2015-01-01T00:00:02.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="235" xml:space="preserve">
+            <source>Toyota</source>
+            <target state="new">Toyota</target>
+          </trans-unit>
+          <trans-unit id="236" xml:space="preserve">
+            <source>2015-01-01T00:00:01.0000000Z</source>
+            <target state="new">2015-01-01T00:00:01.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="237" xml:space="preserve">
+            <source>Toyota</source>
+            <target state="new">Toyota</target>
+          </trans-unit>
+          <trans-unit id="238" xml:space="preserve">
+            <source>2015-01-01T00:00:02.0000000Z</source>
+            <target state="new">2015-01-01T00:00:02.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="239" xml:space="preserve">
+            <source>Toyota</source>
+            <target state="new">Toyota</target>
+          </trans-unit>
+          <trans-unit id="240" xml:space="preserve">
+            <source>2015-01-01T00:00:03.0000000Z</source>
+            <target state="new">2015-01-01T00:00:03.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="241" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Output:<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Output:<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="242" xml:space="preserve">
+            <source>Count</source>
+            <target state="new">Count</target>
+          </trans-unit>
+          <trans-unit id="243" xml:space="preserve">
+            <source>Time</source>
+            <target state="new">Time</target>
+          </trans-unit>
+          <trans-unit id="244" xml:space="preserve">
+            <source>2</source>
+            <target state="new">2</target>
+          </trans-unit>
+          <trans-unit id="245" xml:space="preserve">
+            <source>2015-01-01T00:00:02.000Z</source>
+            <target state="new">2015-01-01T00:00:02.000Z</target>
+          </trans-unit>
+          <trans-unit id="246" xml:space="preserve">
+            <source>1</source>
+            <target state="new">1</target>
+          </trans-unit>
+          <trans-unit id="247" xml:space="preserve">
+            <source>2015-01-01T00:00:04.000Z</source>
+            <target state="new">2015-01-01T00:00:04.000Z</target>
+          </trans-unit>
+          <trans-unit id="248" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Solution:<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Solution:<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="249" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Explanation:<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Explanation:<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="250" xml:space="preserve">
+            <source>We do an initial aggregation to get unique makes with their count over the window.</source>
+            <target state="new">We do an initial aggregation to get unique makes with their count over the window.</target>
+          </trans-unit>
+          <trans-unit id="251" xml:space="preserve">
+            <source>We then do an aggregation of how many makes we got – given all unique values in a window get the same timestamp then the second aggregation window needs to be minimal to not aggregate 2 windows from the first step.</source>
+            <target state="new">We then do an aggregation of how many makes we got – given all unique values in a window get the same timestamp then the second aggregation window needs to be minimal to not aggregate 2 windows from the first step.</target>
+          </trans-unit>
+          <trans-unit id="252" xml:space="preserve">
+            <source>Determine if a value has changed</source>
+            <target state="new">Determine if a value has changed</target>
+          </trans-unit>
+          <trans-unit id="253" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Description<ept id="1">&lt;/strong&gt;</ept>: Look at a previous value to determine if it is different than the current value</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Description<ept id="1">&lt;/strong&gt;</ept>: Look at a previous value to determine if it is different than the current value</target>
+          </trans-unit>
+          <trans-unit id="254" xml:space="preserve">
+            <source>e.g. Is the previous car on the Toll Road the same make as the current car?</source>
+            <target state="new">e.g. Is the previous car on the Toll Road the same make as the current car?</target>
+          </trans-unit>
+          <trans-unit id="255" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Input<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Input<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="256" xml:space="preserve">
+            <source>Make</source>
+            <target state="new">Make</target>
+          </trans-unit>
+          <trans-unit id="257" xml:space="preserve">
+            <source>Time</source>
+            <target state="new">Time</target>
+          </trans-unit>
+          <trans-unit id="258" xml:space="preserve">
+            <source>Honda</source>
+            <target state="new">Honda</target>
+          </trans-unit>
+          <trans-unit id="259" xml:space="preserve">
+            <source>2015-01-01T00:00:01.0000000Z</source>
+            <target state="new">2015-01-01T00:00:01.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="260" xml:space="preserve">
+            <source>Toyota</source>
+            <target state="new">Toyota</target>
+          </trans-unit>
+          <trans-unit id="261" xml:space="preserve">
+            <source>2015-01-01T00:00:02.0000000Z</source>
+            <target state="new">2015-01-01T00:00:02.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="262" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Output<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Output<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="263" xml:space="preserve">
+            <source>Make</source>
+            <target state="new">Make</target>
+          </trans-unit>
+          <trans-unit id="264" xml:space="preserve">
+            <source>Time</source>
+            <target state="new">Time</target>
+          </trans-unit>
+          <trans-unit id="265" xml:space="preserve">
+            <source>Toyota</source>
+            <target state="new">Toyota</target>
+          </trans-unit>
+          <trans-unit id="266" xml:space="preserve">
+            <source>2015-01-01T00:00:02.0000000Z</source>
+            <target state="new">2015-01-01T00:00:02.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="267" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Solution<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Solution<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="268" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Explanation<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Explanation<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="269" xml:space="preserve">
+            <source>Use LAG to peek into the input stream one event back and get the Make value.</source>
+            <target state="new">Use LAG to peek into the input stream one event back and get the Make value.</target>
+          </trans-unit>
+          <trans-unit id="270" xml:space="preserve">
+            <source>Then compare it to the Make on the current event and output the event if they are different.</source>
+            <target state="new">Then compare it to the Make on the current event and output the event if they are different.</target>
+          </trans-unit>
+          <trans-unit id="271" xml:space="preserve">
+            <source>Find first event in a window</source>
+            <target state="new">Find first event in a window</target>
+          </trans-unit>
+          <trans-unit id="272" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Description<ept id="1">&lt;/strong&gt;</ept>: Find first car in every 10 minute interval?</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Description<ept id="1">&lt;/strong&gt;</ept>: Find first car in every 10 minute interval?</target>
+          </trans-unit>
+          <trans-unit id="273" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Input<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Input<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="274" xml:space="preserve">
+            <source>LicensePlate</source>
+            <target state="new">LicensePlate</target>
+          </trans-unit>
+          <trans-unit id="275" xml:space="preserve">
+            <source>Make</source>
+            <target state="new">Make</target>
+          </trans-unit>
+          <trans-unit id="276" xml:space="preserve">
+            <source>Time</source>
+            <target state="new">Time</target>
+          </trans-unit>
+          <trans-unit id="277" xml:space="preserve">
+            <source>DXE 5291</source>
+            <target state="new">DXE 5291</target>
+          </trans-unit>
+          <trans-unit id="278" xml:space="preserve">
+            <source>Honda</source>
+            <target state="new">Honda</target>
+          </trans-unit>
+          <trans-unit id="279" xml:space="preserve">
+            <source>2015-07-27T00:00:05.0000000Z</source>
+            <target state="new">2015-07-27T00:00:05.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="280" xml:space="preserve">
+            <source>YZK 5704</source>
+            <target state="new">YZK 5704</target>
+          </trans-unit>
+          <trans-unit id="281" xml:space="preserve">
+            <source>Ford</source>
+            <target state="new">Ford</target>
+          </trans-unit>
+          <trans-unit id="282" xml:space="preserve">
+            <source>2015-07-27T00:02:17.0000000Z</source>
+            <target state="new">2015-07-27T00:02:17.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="283" xml:space="preserve">
+            <source>RMV 8282</source>
+            <target state="new">RMV 8282</target>
+          </trans-unit>
+          <trans-unit id="284" xml:space="preserve">
+            <source>Honda</source>
+            <target state="new">Honda</target>
+          </trans-unit>
+          <trans-unit id="285" xml:space="preserve">
+            <source>2015-07-27T00:05:01.0000000Z</source>
+            <target state="new">2015-07-27T00:05:01.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="286" xml:space="preserve">
+            <source>YHN 6970</source>
+            <target state="new">YHN 6970</target>
+          </trans-unit>
+          <trans-unit id="287" xml:space="preserve">
+            <source>Toyota</source>
+            <target state="new">Toyota</target>
+          </trans-unit>
+          <trans-unit id="288" xml:space="preserve">
+            <source>2015-07-27T00:06:00.0000000Z</source>
+            <target state="new">2015-07-27T00:06:00.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="289" xml:space="preserve">
+            <source>VFE 1616</source>
+            <target state="new">VFE 1616</target>
+          </trans-unit>
+          <trans-unit id="290" xml:space="preserve">
+            <source>Toyota</source>
+            <target state="new">Toyota</target>
+          </trans-unit>
+          <trans-unit id="291" xml:space="preserve">
+            <source>2015-07-27T00:09:31.0000000Z</source>
+            <target state="new">2015-07-27T00:09:31.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="292" xml:space="preserve">
+            <source>QYF 9358</source>
+            <target state="new">QYF 9358</target>
+          </trans-unit>
+          <trans-unit id="293" xml:space="preserve">
+            <source>Honda</source>
+            <target state="new">Honda</target>
+          </trans-unit>
+          <trans-unit id="294" xml:space="preserve">
+            <source>2015-07-27T00:12:02.0000000Z</source>
+            <target state="new">2015-07-27T00:12:02.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="295" xml:space="preserve">
+            <source>MDR 6128</source>
+            <target state="new">MDR 6128</target>
+          </trans-unit>
+          <trans-unit id="296" xml:space="preserve">
+            <source>BMW</source>
+            <target state="new">BMW</target>
+          </trans-unit>
+          <trans-unit id="297" xml:space="preserve">
+            <source>2015-07-27T00:13:45.0000000Z</source>
+            <target state="new">2015-07-27T00:13:45.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="298" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Output<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Output<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="299" xml:space="preserve">
+            <source>LicensePlate</source>
+            <target state="new">LicensePlate</target>
+          </trans-unit>
+          <trans-unit id="300" xml:space="preserve">
+            <source>Make</source>
+            <target state="new">Make</target>
+          </trans-unit>
+          <trans-unit id="301" xml:space="preserve">
+            <source>Time</source>
+            <target state="new">Time</target>
+          </trans-unit>
+          <trans-unit id="302" xml:space="preserve">
+            <source>DXE 5291</source>
+            <target state="new">DXE 5291</target>
+          </trans-unit>
+          <trans-unit id="303" xml:space="preserve">
+            <source>Honda</source>
+            <target state="new">Honda</target>
+          </trans-unit>
+          <trans-unit id="304" xml:space="preserve">
+            <source>2015-07-27T00:00:05.0000000Z</source>
+            <target state="new">2015-07-27T00:00:05.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="305" xml:space="preserve">
+            <source>QYF 9358</source>
+            <target state="new">QYF 9358</target>
+          </trans-unit>
+          <trans-unit id="306" xml:space="preserve">
+            <source>Honda</source>
+            <target state="new">Honda</target>
+          </trans-unit>
+          <trans-unit id="307" xml:space="preserve">
+            <source>2015-07-27T00:12:02.0000000Z</source>
+            <target state="new">2015-07-27T00:12:02.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="308" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Solution<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Solution<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="309" xml:space="preserve">
+            <source>Now let’s change the problem and find first car of particular Make in every 10 minute interval.</source>
+            <target state="new">Now let’s change the problem and find first car of particular Make in every 10 minute interval.</target>
+          </trans-unit>
+          <trans-unit id="310" xml:space="preserve">
+            <source>LicensePlate</source>
+            <target state="new">LicensePlate</target>
+          </trans-unit>
+          <trans-unit id="311" xml:space="preserve">
+            <source>Make</source>
+            <target state="new">Make</target>
+          </trans-unit>
+          <trans-unit id="312" xml:space="preserve">
+            <source>Time</source>
+            <target state="new">Time</target>
+          </trans-unit>
+          <trans-unit id="313" xml:space="preserve">
+            <source>DXE 5291</source>
+            <target state="new">DXE 5291</target>
+          </trans-unit>
+          <trans-unit id="314" xml:space="preserve">
+            <source>Honda</source>
+            <target state="new">Honda</target>
+          </trans-unit>
+          <trans-unit id="315" xml:space="preserve">
+            <source>2015-07-27T00:00:05.0000000Z</source>
+            <target state="new">2015-07-27T00:00:05.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="316" xml:space="preserve">
+            <source>YZK 5704</source>
+            <target state="new">YZK 5704</target>
+          </trans-unit>
+          <trans-unit id="317" xml:space="preserve">
+            <source>Ford</source>
+            <target state="new">Ford</target>
+          </trans-unit>
+          <trans-unit id="318" xml:space="preserve">
+            <source>2015-07-27T00:02:17.0000000Z</source>
+            <target state="new">2015-07-27T00:02:17.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="319" xml:space="preserve">
+            <source>YHN 6970</source>
+            <target state="new">YHN 6970</target>
+          </trans-unit>
+          <trans-unit id="320" xml:space="preserve">
+            <source>Toyota</source>
+            <target state="new">Toyota</target>
+          </trans-unit>
+          <trans-unit id="321" xml:space="preserve">
+            <source>2015-07-27T00:06:00.0000000Z</source>
+            <target state="new">2015-07-27T00:06:00.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="322" xml:space="preserve">
+            <source>QYF 9358</source>
+            <target state="new">QYF 9358</target>
+          </trans-unit>
+          <trans-unit id="323" xml:space="preserve">
+            <source>Honda</source>
+            <target state="new">Honda</target>
+          </trans-unit>
+          <trans-unit id="324" xml:space="preserve">
+            <source>2015-07-27T00:12:02.0000000Z</source>
+            <target state="new">2015-07-27T00:12:02.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="325" xml:space="preserve">
+            <source>MDR 6128</source>
+            <target state="new">MDR 6128</target>
+          </trans-unit>
+          <trans-unit id="326" xml:space="preserve">
+            <source>BMW</source>
+            <target state="new">BMW</target>
+          </trans-unit>
+          <trans-unit id="327" xml:space="preserve">
+            <source>2015-07-27T00:13:45.0000000Z</source>
+            <target state="new">2015-07-27T00:13:45.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="328" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Solution<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Solution<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="329" xml:space="preserve">
+            <source>Find last event in a window</source>
+            <target state="new">Find last event in a window</target>
+          </trans-unit>
+          <trans-unit id="330" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Description<ept id="1">&lt;/strong&gt;</ept>: Find last car in every 10 minute interval.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Description<ept id="1">&lt;/strong&gt;</ept>: Find last car in every 10 minute interval.</target>
+          </trans-unit>
+          <trans-unit id="331" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Input<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Input<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="332" xml:space="preserve">
+            <source>LicensePlate</source>
+            <target state="new">LicensePlate</target>
+          </trans-unit>
+          <trans-unit id="333" xml:space="preserve">
+            <source>Make</source>
+            <target state="new">Make</target>
+          </trans-unit>
+          <trans-unit id="334" xml:space="preserve">
+            <source>Time</source>
+            <target state="new">Time</target>
+          </trans-unit>
+          <trans-unit id="335" xml:space="preserve">
+            <source>DXE 5291</source>
+            <target state="new">DXE 5291</target>
+          </trans-unit>
+          <trans-unit id="336" xml:space="preserve">
+            <source>Honda</source>
+            <target state="new">Honda</target>
+          </trans-unit>
+          <trans-unit id="337" xml:space="preserve">
+            <source>2015-07-27T00:00:05.0000000Z</source>
+            <target state="new">2015-07-27T00:00:05.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="338" xml:space="preserve">
+            <source>YZK 5704</source>
+            <target state="new">YZK 5704</target>
+          </trans-unit>
+          <trans-unit id="339" xml:space="preserve">
+            <source>Ford</source>
+            <target state="new">Ford</target>
+          </trans-unit>
+          <trans-unit id="340" xml:space="preserve">
+            <source>2015-07-27T00:02:17.0000000Z</source>
+            <target state="new">2015-07-27T00:02:17.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="341" xml:space="preserve">
+            <source>RMV 8282</source>
+            <target state="new">RMV 8282</target>
+          </trans-unit>
+          <trans-unit id="342" xml:space="preserve">
+            <source>Honda</source>
+            <target state="new">Honda</target>
+          </trans-unit>
+          <trans-unit id="343" xml:space="preserve">
+            <source>2015-07-27T00:05:01.0000000Z</source>
+            <target state="new">2015-07-27T00:05:01.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="344" xml:space="preserve">
+            <source>YHN 6970</source>
+            <target state="new">YHN 6970</target>
+          </trans-unit>
+          <trans-unit id="345" xml:space="preserve">
+            <source>Toyota</source>
+            <target state="new">Toyota</target>
+          </trans-unit>
+          <trans-unit id="346" xml:space="preserve">
+            <source>2015-07-27T00:06:00.0000000Z</source>
+            <target state="new">2015-07-27T00:06:00.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="347" xml:space="preserve">
+            <source>VFE 1616</source>
+            <target state="new">VFE 1616</target>
+          </trans-unit>
+          <trans-unit id="348" xml:space="preserve">
+            <source>Toyota</source>
+            <target state="new">Toyota</target>
+          </trans-unit>
+          <trans-unit id="349" xml:space="preserve">
+            <source>2015-07-27T00:09:31.0000000Z</source>
+            <target state="new">2015-07-27T00:09:31.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="350" xml:space="preserve">
+            <source>QYF 9358</source>
+            <target state="new">QYF 9358</target>
+          </trans-unit>
+          <trans-unit id="351" xml:space="preserve">
+            <source>Honda</source>
+            <target state="new">Honda</target>
+          </trans-unit>
+          <trans-unit id="352" xml:space="preserve">
+            <source>2015-07-27T00:12:02.0000000Z</source>
+            <target state="new">2015-07-27T00:12:02.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="353" xml:space="preserve">
+            <source>MDR 6128</source>
+            <target state="new">MDR 6128</target>
+          </trans-unit>
+          <trans-unit id="354" xml:space="preserve">
+            <source>BMW</source>
+            <target state="new">BMW</target>
+          </trans-unit>
+          <trans-unit id="355" xml:space="preserve">
+            <source>2015-07-27T00:13:45.0000000Z</source>
+            <target state="new">2015-07-27T00:13:45.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="356" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Output<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Output<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="357" xml:space="preserve">
+            <source>LicensePlate</source>
+            <target state="new">LicensePlate</target>
+          </trans-unit>
+          <trans-unit id="358" xml:space="preserve">
+            <source>Make</source>
+            <target state="new">Make</target>
+          </trans-unit>
+          <trans-unit id="359" xml:space="preserve">
+            <source>Time</source>
+            <target state="new">Time</target>
+          </trans-unit>
+          <trans-unit id="360" xml:space="preserve">
+            <source>VFE 1616</source>
+            <target state="new">VFE 1616</target>
+          </trans-unit>
+          <trans-unit id="361" xml:space="preserve">
+            <source>Toyota</source>
+            <target state="new">Toyota</target>
+          </trans-unit>
+          <trans-unit id="362" xml:space="preserve">
+            <source>2015-07-27T00:09:31.0000000Z</source>
+            <target state="new">2015-07-27T00:09:31.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="363" xml:space="preserve">
+            <source>MDR 6128</source>
+            <target state="new">MDR 6128</target>
+          </trans-unit>
+          <trans-unit id="364" xml:space="preserve">
+            <source>BMW</source>
+            <target state="new">BMW</target>
+          </trans-unit>
+          <trans-unit id="365" xml:space="preserve">
+            <source>2015-07-27T00:13:45.0000000Z</source>
+            <target state="new">2015-07-27T00:13:45.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="366" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Solution<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Solution<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="367" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Explanation<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Explanation<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="368" xml:space="preserve">
+            <source>There are two steps in the query – the first one finds latest timestamp in 10 minute windows.</source>
+            <target state="new">There are two steps in the query – the first one finds latest timestamp in 10 minute windows.</target>
+          </trans-unit>
+          <trans-unit id="369" xml:space="preserve">
+            <source>The second step joins results of the first query with original stream to find events matching last timestamps in each window.</source>
+            <target state="new">The second step joins results of the first query with original stream to find events matching last timestamps in each window.</target>
+          </trans-unit>
+          <trans-unit id="370" xml:space="preserve">
+            <source>Detect the absence of events</source>
+            <target state="new">Detect the absence of events</target>
+          </trans-unit>
+          <trans-unit id="371" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Description<ept id="1">&lt;/strong&gt;</ept>: Check that a stream has no value that matches a certain criteria.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Description<ept id="1">&lt;/strong&gt;</ept>: Check that a stream has no value that matches a certain criteria.</target>
+          </trans-unit>
+          <trans-unit id="372" xml:space="preserve">
+            <source>e.g. Have 2 consecutive cars from the same make entered the toll road within 90 seconds?</source>
+            <target state="new">e.g. Have 2 consecutive cars from the same make entered the toll road within 90 seconds?</target>
+          </trans-unit>
+          <trans-unit id="373" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Input<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Input<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="374" xml:space="preserve">
+            <source>Make</source>
+            <target state="new">Make</target>
+          </trans-unit>
+          <trans-unit id="375" xml:space="preserve">
+            <source>LicensePlate</source>
+            <target state="new">LicensePlate</target>
+          </trans-unit>
+          <trans-unit id="376" xml:space="preserve">
+            <source>Time</source>
+            <target state="new">Time</target>
+          </trans-unit>
+          <trans-unit id="377" xml:space="preserve">
+            <source>Honda</source>
+            <target state="new">Honda</target>
+          </trans-unit>
+          <trans-unit id="378" xml:space="preserve">
+            <source>ABC-123</source>
+            <target state="new">ABC-123</target>
+          </trans-unit>
+          <trans-unit id="379" xml:space="preserve">
+            <source>2015-01-01T00:00:01.0000000Z</source>
+            <target state="new">2015-01-01T00:00:01.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="380" xml:space="preserve">
+            <source>Honda</source>
+            <target state="new">Honda</target>
+          </trans-unit>
+          <trans-unit id="381" xml:space="preserve">
+            <source>AAA-999</source>
+            <target state="new">AAA-999</target>
+          </trans-unit>
+          <trans-unit id="382" xml:space="preserve">
+            <source>2015-01-01T00:00:02.0000000Z</source>
+            <target state="new">2015-01-01T00:00:02.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="383" xml:space="preserve">
+            <source>Toyota</source>
+            <target state="new">Toyota</target>
+          </trans-unit>
+          <trans-unit id="384" xml:space="preserve">
+            <source>DEF-987</source>
+            <target state="new">DEF-987</target>
+          </trans-unit>
+          <trans-unit id="385" xml:space="preserve">
+            <source>2015-01-01T00:00:03.0000000Z</source>
+            <target state="new">2015-01-01T00:00:03.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="386" xml:space="preserve">
+            <source>Honda</source>
+            <target state="new">Honda</target>
+          </trans-unit>
+          <trans-unit id="387" xml:space="preserve">
+            <source>GHI-345</source>
+            <target state="new">GHI-345</target>
+          </trans-unit>
+          <trans-unit id="388" xml:space="preserve">
+            <source>2015-01-01T00:00:04.0000000Z</source>
+            <target state="new">2015-01-01T00:00:04.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="389" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Output<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Output<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="390" xml:space="preserve">
+            <source>Make</source>
+            <target state="new">Make</target>
+          </trans-unit>
+          <trans-unit id="391" xml:space="preserve">
+            <source>Time</source>
+            <target state="new">Time</target>
+          </trans-unit>
+          <trans-unit id="392" xml:space="preserve">
+            <source>CurrentCarLicensePlate</source>
+            <target state="new">CurrentCarLicensePlate</target>
+          </trans-unit>
+          <trans-unit id="393" xml:space="preserve">
+            <source>FirstCarLicensePlate</source>
+            <target state="new">FirstCarLicensePlate</target>
+          </trans-unit>
+          <trans-unit id="394" xml:space="preserve">
+            <source>FirstCarTime</source>
+            <target state="new">FirstCarTime</target>
+          </trans-unit>
+          <trans-unit id="395" xml:space="preserve">
+            <source>Honda</source>
+            <target state="new">Honda</target>
+          </trans-unit>
+          <trans-unit id="396" xml:space="preserve">
+            <source>2015-01-01T00:00:02.0000000Z</source>
+            <target state="new">2015-01-01T00:00:02.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="397" xml:space="preserve">
+            <source>AAA-999</source>
+            <target state="new">AAA-999</target>
+          </trans-unit>
+          <trans-unit id="398" xml:space="preserve">
+            <source>ABC-123</source>
+            <target state="new">ABC-123</target>
+          </trans-unit>
+          <trans-unit id="399" xml:space="preserve">
+            <source>2015-01-01T00:00:01.0000000Z</source>
+            <target state="new">2015-01-01T00:00:01.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="400" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Solution<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Solution<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="401" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Explanation<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Explanation<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="402" xml:space="preserve">
+            <source>Use LAG to peek into the input stream one event back and get the Make value.</source>
+            <target state="new">Use LAG to peek into the input stream one event back and get the Make value.</target>
+          </trans-unit>
+          <trans-unit id="403" xml:space="preserve">
+            <source>Then compare it to the Make on the current event and output the event if they are the same and use LAG to get data about the previous car.</source>
+            <target state="new">Then compare it to the Make on the current event and output the event if they are the same and use LAG to get data about the previous car.</target>
+          </trans-unit>
+          <trans-unit id="404" xml:space="preserve">
+            <source>Detect duration of a condition</source>
+            <target state="new">Detect duration of a condition</target>
+          </trans-unit>
+          <trans-unit id="405" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Description<ept id="1">&lt;/strong&gt;</ept>: Find out how long a condition occurred for.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Description<ept id="1">&lt;/strong&gt;</ept>: Find out how long a condition occurred for.</target>
+          </trans-unit>
+          <trans-unit id="406" xml:space="preserve">
+            <source>e.g. Suppose that a bug that resulted in all cars having an incorrect (above 20,000 pounds) – we want to compute the duration of the bug.</source>
+            <target state="new">e.g. Suppose that a bug that resulted in all cars having an incorrect (above 20,000 pounds) – we want to compute the duration of the bug.</target>
+          </trans-unit>
+          <trans-unit id="407" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Input<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Input<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="408" xml:space="preserve">
+            <source>Make</source>
+            <target state="new">Make</target>
+          </trans-unit>
+          <trans-unit id="409" xml:space="preserve">
+            <source>Time</source>
+            <target state="new">Time</target>
+          </trans-unit>
+          <trans-unit id="410" xml:space="preserve">
+            <source>Weight</source>
+            <target state="new">Weight</target>
+          </trans-unit>
+          <trans-unit id="411" xml:space="preserve">
+            <source>Honda</source>
+            <target state="new">Honda</target>
+          </trans-unit>
+          <trans-unit id="412" xml:space="preserve">
+            <source>2015-01-01T00:00:01.0000000Z</source>
+            <target state="new">2015-01-01T00:00:01.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="413" xml:space="preserve">
+            <source>2000</source>
+            <target state="new">2000</target>
+          </trans-unit>
+          <trans-unit id="414" xml:space="preserve">
+            <source>Toyota</source>
+            <target state="new">Toyota</target>
+          </trans-unit>
+          <trans-unit id="415" xml:space="preserve">
+            <source>2015-01-01T00:00:02.0000000Z</source>
+            <target state="new">2015-01-01T00:00:02.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="416" xml:space="preserve">
+            <source>25000</source>
+            <target state="new">25000</target>
+          </trans-unit>
+          <trans-unit id="417" xml:space="preserve">
+            <source>Honda</source>
+            <target state="new">Honda</target>
+          </trans-unit>
+          <trans-unit id="418" xml:space="preserve">
+            <source>2015-01-01T00:00:03.0000000Z</source>
+            <target state="new">2015-01-01T00:00:03.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="419" xml:space="preserve">
+            <source>26000</source>
+            <target state="new">26000</target>
+          </trans-unit>
+          <trans-unit id="420" xml:space="preserve">
+            <source>Toyota</source>
+            <target state="new">Toyota</target>
+          </trans-unit>
+          <trans-unit id="421" xml:space="preserve">
+            <source>2015-01-01T00:00:04.0000000Z</source>
+            <target state="new">2015-01-01T00:00:04.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="422" xml:space="preserve">
+            <source>25000</source>
+            <target state="new">25000</target>
+          </trans-unit>
+          <trans-unit id="423" xml:space="preserve">
+            <source>Honda</source>
+            <target state="new">Honda</target>
+          </trans-unit>
+          <trans-unit id="424" xml:space="preserve">
+            <source>2015-01-01T00:00:05.0000000Z</source>
+            <target state="new">2015-01-01T00:00:05.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="425" xml:space="preserve">
+            <source>26000</source>
+            <target state="new">26000</target>
+          </trans-unit>
+          <trans-unit id="426" xml:space="preserve">
+            <source>Toyota</source>
+            <target state="new">Toyota</target>
+          </trans-unit>
+          <trans-unit id="427" xml:space="preserve">
+            <source>2015-01-01T00:00:06.0000000Z</source>
+            <target state="new">2015-01-01T00:00:06.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="428" xml:space="preserve">
+            <source>25000</source>
+            <target state="new">25000</target>
+          </trans-unit>
+          <trans-unit id="429" xml:space="preserve">
+            <source>Honda</source>
+            <target state="new">Honda</target>
+          </trans-unit>
+          <trans-unit id="430" xml:space="preserve">
+            <source>2015-01-01T00:00:07.0000000Z</source>
+            <target state="new">2015-01-01T00:00:07.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="431" xml:space="preserve">
+            <source>26000</source>
+            <target state="new">26000</target>
+          </trans-unit>
+          <trans-unit id="432" xml:space="preserve">
+            <source>Toyota</source>
+            <target state="new">Toyota</target>
+          </trans-unit>
+          <trans-unit id="433" xml:space="preserve">
+            <source>2015-01-01T00:00:08.0000000Z</source>
+            <target state="new">2015-01-01T00:00:08.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="434" xml:space="preserve">
+            <source>2000</source>
+            <target state="new">2000</target>
+          </trans-unit>
+          <trans-unit id="435" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Output<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Output<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="436" xml:space="preserve">
+            <source>StartFault</source>
+            <target state="new">StartFault</target>
+          </trans-unit>
+          <trans-unit id="437" xml:space="preserve">
+            <source>EndFault</source>
+            <target state="new">EndFault</target>
+          </trans-unit>
+          <trans-unit id="438" xml:space="preserve">
+            <source>FaultDurationSeconds</source>
+            <target state="new">FaultDurationSeconds</target>
+          </trans-unit>
+          <trans-unit id="439" xml:space="preserve">
+            <source>2015-01-01T00:00:01.0000000Z</source>
+            <target state="new">2015-01-01T00:00:01.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="440" xml:space="preserve">
+            <source>2015-01-01T00:00:08.0000000Z</source>
+            <target state="new">2015-01-01T00:00:08.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="441" xml:space="preserve">
+            <source>7</source>
+            <target state="new">7</target>
+          </trans-unit>
+          <trans-unit id="442" xml:space="preserve">
+            <source>2015-01-01T00:00:01.0000000Z</source>
+            <target state="new">2015-01-01T00:00:01.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="443" xml:space="preserve">
+            <source>2015-01-01T00:00:08.0000000Z</source>
+            <target state="new">2015-01-01T00:00:08.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="444" xml:space="preserve">
+            <source>7</source>
+            <target state="new">7</target>
+          </trans-unit>
+          <trans-unit id="445" xml:space="preserve">
+            <source>2015-01-01T00:00:01.0000000Z</source>
+            <target state="new">2015-01-01T00:00:01.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="446" xml:space="preserve">
+            <source>2015-01-01T00:00:08.0000000Z</source>
+            <target state="new">2015-01-01T00:00:08.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="447" xml:space="preserve">
+            <source>7</source>
+            <target state="new">7</target>
+          </trans-unit>
+          <trans-unit id="448" xml:space="preserve">
+            <source>2015-01-01T00:00:01.0000000Z</source>
+            <target state="new">2015-01-01T00:00:01.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="449" xml:space="preserve">
+            <source>2015-01-01T00:00:08.0000000Z</source>
+            <target state="new">2015-01-01T00:00:08.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="450" xml:space="preserve">
+            <source>7</source>
+            <target state="new">7</target>
+          </trans-unit>
+          <trans-unit id="451" xml:space="preserve">
+            <source>2015-01-01T00:00:01.0000000Z</source>
+            <target state="new">2015-01-01T00:00:01.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="452" xml:space="preserve">
+            <source>2015-01-01T00:00:08.0000000Z</source>
+            <target state="new">2015-01-01T00:00:08.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="453" xml:space="preserve">
+            <source>7</source>
+            <target state="new">7</target>
+          </trans-unit>
+          <trans-unit id="454" xml:space="preserve">
+            <source>2015-01-01T00:00:01.0000000Z</source>
+            <target state="new">2015-01-01T00:00:01.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="455" xml:space="preserve">
+            <source>2015-01-01T00:00:08.0000000Z</source>
+            <target state="new">2015-01-01T00:00:08.0000000Z</target>
+          </trans-unit>
+          <trans-unit id="456" xml:space="preserve">
+            <source>7</source>
+            <target state="new">7</target>
+          </trans-unit>
+          <trans-unit id="457" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Solution<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Solution<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="458" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Explanation<ept id="1">&lt;/strong&gt;</ept>:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Explanation<ept id="1">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="459" xml:space="preserve">
+            <source>We are looking for 2 good events with a bad event in between and without a good event in between which means the 2 events are the first events before and after at least 1 bad event.</source>
+            <target state="new">We are looking for 2 good events with a bad event in between and without a good event in between which means the 2 events are the first events before and after at least 1 bad event.</target>
+          </trans-unit>
+          <trans-unit id="460" xml:space="preserve">
+            <source>Getting 2 good events with 1 bad event in the middle is simple using 2 JOINs and validating that we get good -&gt; bad -&gt; good by checking the weight and comparing the time stamps.</source>
+            <target state="new">Getting 2 good events with 1 bad event in the middle is simple using 2 JOINs and validating that we get good -&gt; bad -&gt; good by checking the weight and comparing the time stamps.</target>
+          </trans-unit>
+          <trans-unit id="461" xml:space="preserve">
+            <source>Using what we learned on “LEFT Outer Join to include NULLs or to do absence of events” we know how to check that no good event has occurred between the 2 good events we picked up.</source>
+            <target state="new">Using what we learned on “LEFT Outer Join to include NULLs or to do absence of events” we know how to check that no good event has occurred between the 2 good events we picked up.</target>
+          </trans-unit>
+          <trans-unit id="462" xml:space="preserve">
+            <source>Composing those together and we get good -&gt; bad -&gt; good with no other good event in between.</source>
+            <target state="new">Composing those together and we get good -&gt; bad -&gt; good with no other good event in between.</target>
+          </trans-unit>
+          <trans-unit id="463" xml:space="preserve">
+            <source>We can now compute the duration between the beginning and end good events which gives us the duration of the bug.</source>
+            <target state="new">We can now compute the duration between the beginning and end good events which gives us the duration of the bug.</target>
+          </trans-unit>
+          <trans-unit id="464" xml:space="preserve">
+            <source>Get help</source>
+            <target state="new">Get help</target>
+          </trans-unit>
+          <trans-unit id="465" xml:space="preserve">
+            <source>For further assistance, try our <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Stream Analytics forum<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new">For further assistance, try our <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Stream Analytics forum<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="466" xml:space="preserve">
+            <source>Next steps</source>
+            <target state="new">Next steps</target>
+          </trans-unit>
+          <trans-unit id="467" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Introduction to Azure Stream Analytics<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Introduction to Azure Stream Analytics<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="468" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Get started using Azure Stream Analytics<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Get started using Azure Stream Analytics<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="469" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Scale Azure Stream Analytics jobs<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Scale Azure Stream Analytics jobs<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="470" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Azure Stream Analytics Query Language Reference<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Azure Stream Analytics Query Language Reference<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="471" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Azure Stream Analytics Management REST API Reference<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Azure Stream Analytics Management REST API Reference<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>

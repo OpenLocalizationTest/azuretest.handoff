@@ -1,0 +1,767 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="ja-jp" original="2/20/2016 8:49:40 AM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">53fb0160a450a0b31ccc7c094a801508ba07d39a</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Deploy and manage backup for Windows Server/Client using PowerShell | Microsoft Azure</source>
+            <target state="new">Deploy and manage backup for Windows Server/Client using PowerShell | Microsoft Azure</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>Learn how to deploy and manage Azure Backup using PowerShell</source>
+            <target state="new">Learn how to deploy and manage Azure Backup using PowerShell</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Deploy and manage backup to Azure for Windows Server/Windows Client using PowerShell</source>
+            <target state="new">Deploy and manage backup to Azure for Windows Server/Windows Client using PowerShell</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source>This article shows you how to use PowerShell to set up Azure Backup on Windows Server or Windows Client, and to manage backup and recovery.</source>
+            <target state="new">This article shows you how to use PowerShell to set up Azure Backup on Windows Server or Windows Client, and to manage backup and recovery.</target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source><ph id="1">&lt;token href="../../includes/arm-getting-setup-powershell.md"/&gt;</ph></source>
+            <target state="new"><ph id="1">&lt;token href="../../includes/arm-getting-setup-powershell.md"/&gt;</ph></target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>Setup and Registration</source>
+            <target state="new">Setup and Registration</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>The following setup and registration tasks can be automated with PowerShell:</source>
+            <target state="new">The following setup and registration tasks can be automated with PowerShell:</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>Create a backup vault</source>
+            <target state="new">Create a backup vault</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source>Installing the Azure Backup agent</source>
+            <target state="new">Installing the Azure Backup agent</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source>Registering with the Azure Backup service</source>
+            <target state="new">Registering with the Azure Backup service</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>Networking settings</source>
+            <target state="new">Networking settings</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source>Encryption settings</source>
+            <target state="new">Encryption settings</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>Create a backup vault</source>
+            <target state="new">Create a backup vault</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source>You can create a new backup vault using the <bpt id="2">&lt;strong&gt;</bpt>New-AzureBackupVault<ept id="2">&lt;/strong&gt;</ept> commandlet.</source>
+            <target state="new">You can create a new backup vault using the <bpt id="2">&lt;strong&gt;</bpt>New-AzureBackupVault<ept id="2">&lt;/strong&gt;</ept> commandlet.</target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>The backup vault is an ARM resource, so you need to place it within a Resource Group.</source>
+            <target state="new">The backup vault is an ARM resource, so you need to place it within a Resource Group.</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source>In an elevated Azure PowerShell console, run the following commands:</source>
+            <target state="new">In an elevated Azure PowerShell console, run the following commands:</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>You can get a list of all the backup vaults in a given subscription using the <bpt id="2">&lt;strong&gt;</bpt>Get-AzureBackupVault<ept id="2">&lt;/strong&gt;</ept> commandlet.</source>
+            <target state="new">You can get a list of all the backup vaults in a given subscription using the <bpt id="2">&lt;strong&gt;</bpt>Get-AzureBackupVault<ept id="2">&lt;/strong&gt;</ept> commandlet.</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>Installing the Azure Backup agent</source>
+            <target state="new">Installing the Azure Backup agent</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source>Before you install the Azure Backup agent, you need to have the installer downloaded and present on the Windows Server.</source>
+            <target state="new">Before you install the Azure Backup agent, you need to have the installer downloaded and present on the Windows Server.</target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source>You can get the latest version of the installer from the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Microsoft Download Center<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> or from the backup vault's Dashboard page.</source>
+            <target state="new">You can get the latest version of the installer from the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Microsoft Download Center<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> or from the backup vault's Dashboard page.</target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source>Save the installer to an easily accessible location like <bpt id="2">&lt;em&gt;</bpt>C:\Downloads\<ept id="2">&lt;/em&gt;</ept>.</source>
+            <target state="new">Save the installer to an easily accessible location like <bpt id="2">&lt;em&gt;</bpt>C:\Downloads\<ept id="2">&lt;/em&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source>To install the agent, run the following command in an elevated PowerShell console:</source>
+            <target state="new">To install the agent, run the following command in an elevated PowerShell console:</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>This installs the agent with all the default options.</source>
+            <target state="new">This installs the agent with all the default options.</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source>The installation takes a few minutes in the background.</source>
+            <target state="new">The installation takes a few minutes in the background.</target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>If you do not specify the <bpt id="2">&lt;em&gt;</bpt>/nu<ept id="2">&lt;/em&gt;</ept> option then the <bpt id="4">&lt;strong&gt;</bpt>Windows Update<ept id="4">&lt;/strong&gt;</ept> window will open at the end of the installation to check for any updates.</source>
+            <target state="new">If you do not specify the <bpt id="2">&lt;em&gt;</bpt>/nu<ept id="2">&lt;/em&gt;</ept> option then the <bpt id="4">&lt;strong&gt;</bpt>Windows Update<ept id="4">&lt;/strong&gt;</ept> window will open at the end of the installation to check for any updates.</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>Once installed, the agent will show in the list of installed programs.</source>
+            <target state="new">Once installed, the agent will show in the list of installed programs.</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source>To see the list of installed programs, go to <bpt id="2">&lt;strong&gt;</bpt>Control Panel<ept id="2">&lt;/strong&gt;</ept> &gt; <bpt id="4">&lt;strong&gt;</bpt>Programs<ept id="4">&lt;/strong&gt;</ept> &gt; <bpt id="6">&lt;strong&gt;</bpt>Programs and Features<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">To see the list of installed programs, go to <bpt id="2">&lt;strong&gt;</bpt>Control Panel<ept id="2">&lt;/strong&gt;</ept> &gt; <bpt id="4">&lt;strong&gt;</bpt>Programs<ept id="4">&lt;/strong&gt;</ept> &gt; <bpt id="6">&lt;strong&gt;</bpt>Programs and Features<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Agent installed<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Agent installed<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source>Installation options</source>
+            <target state="new">Installation options</target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source>To see all the options available via the command-line, use the following command:</source>
+            <target state="new">To see all the options available via the command-line, use the following command:</target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source>The available options include:</source>
+            <target state="new">The available options include:</target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source>Option</source>
+            <target state="new">Option</target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source>Details</source>
+            <target state="new">Details</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source>Default</source>
+            <target state="new">Default</target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source>/q</source>
+            <target state="new">/q</target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source>Quiet installation</source>
+            <target state="new">Quiet installation</target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source>-</source>
+            <target state="new">-</target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source>/p:"location"</source>
+            <target state="new">/p:"location"</target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source>Path to the installation folder for the Azure Backup agent.</source>
+            <target state="new">Path to the installation folder for the Azure Backup agent.</target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source>C:\Program Files\Microsoft Azure Recovery Services Agent</source>
+            <target state="new">C:\Program Files\Microsoft Azure Recovery Services Agent</target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source>/s:"location"</source>
+            <target state="new">/s:"location"</target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source>Path to the cache folder for the Azure Backup agent.</source>
+            <target state="new">Path to the cache folder for the Azure Backup agent.</target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source>C:\Program Files\Microsoft Azure Recovery Services Agent\Scratch</source>
+            <target state="new">C:\Program Files\Microsoft Azure Recovery Services Agent\Scratch</target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source>/m</source>
+            <target state="new">/m</target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source>Opt-in to Microsoft Update</source>
+            <target state="new">Opt-in to Microsoft Update</target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source>-</source>
+            <target state="new">-</target>
+          </trans-unit>
+          <trans-unit id="147" xml:space="preserve">
+            <source>/nu</source>
+            <target state="new">/nu</target>
+          </trans-unit>
+          <trans-unit id="148" xml:space="preserve">
+            <source>Do not Check for updates after installation is complete</source>
+            <target state="new">Do not Check for updates after installation is complete</target>
+          </trans-unit>
+          <trans-unit id="149" xml:space="preserve">
+            <source>-</source>
+            <target state="new">-</target>
+          </trans-unit>
+          <trans-unit id="150" xml:space="preserve">
+            <source>/d</source>
+            <target state="new">/d</target>
+          </trans-unit>
+          <trans-unit id="151" xml:space="preserve">
+            <source>Uninstalls Microsoft Azure Recovery Services Agent</source>
+            <target state="new">Uninstalls Microsoft Azure Recovery Services Agent</target>
+          </trans-unit>
+          <trans-unit id="152" xml:space="preserve">
+            <source>-</source>
+            <target state="new">-</target>
+          </trans-unit>
+          <trans-unit id="153" xml:space="preserve">
+            <source>/ph</source>
+            <target state="new">/ph</target>
+          </trans-unit>
+          <trans-unit id="154" xml:space="preserve">
+            <source>Proxy Host Address</source>
+            <target state="new">Proxy Host Address</target>
+          </trans-unit>
+          <trans-unit id="155" xml:space="preserve">
+            <source>-</source>
+            <target state="new">-</target>
+          </trans-unit>
+          <trans-unit id="156" xml:space="preserve">
+            <source>/po</source>
+            <target state="new">/po</target>
+          </trans-unit>
+          <trans-unit id="157" xml:space="preserve">
+            <source>Proxy Host Port Number</source>
+            <target state="new">Proxy Host Port Number</target>
+          </trans-unit>
+          <trans-unit id="158" xml:space="preserve">
+            <source>-</source>
+            <target state="new">-</target>
+          </trans-unit>
+          <trans-unit id="159" xml:space="preserve">
+            <source>/pu</source>
+            <target state="new">/pu</target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
+            <source>Proxy Host UserName</source>
+            <target state="new">Proxy Host UserName</target>
+          </trans-unit>
+          <trans-unit id="161" xml:space="preserve">
+            <source>-</source>
+            <target state="new">-</target>
+          </trans-unit>
+          <trans-unit id="162" xml:space="preserve">
+            <source>/pw</source>
+            <target state="new">/pw</target>
+          </trans-unit>
+          <trans-unit id="163" xml:space="preserve">
+            <source>Proxy Password</source>
+            <target state="new">Proxy Password</target>
+          </trans-unit>
+          <trans-unit id="164" xml:space="preserve">
+            <source>-</source>
+            <target state="new">-</target>
+          </trans-unit>
+          <trans-unit id="165" xml:space="preserve">
+            <source>Registering with the Azure Backup service</source>
+            <target state="new">Registering with the Azure Backup service</target>
+          </trans-unit>
+          <trans-unit id="166" xml:space="preserve">
+            <source>Before you can register with the Azure Backup service, you need to ensure that the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>prerequisites<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> are met.</source>
+            <target state="new">Before you can register with the Azure Backup service, you need to ensure that the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>prerequisites<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> are met.</target>
+          </trans-unit>
+          <trans-unit id="167" xml:space="preserve">
+            <source>You must:</source>
+            <target state="new">You must:</target>
+          </trans-unit>
+          <trans-unit id="168" xml:space="preserve">
+            <source>Have a valid Azure subscription</source>
+            <target state="new">Have a valid Azure subscription</target>
+          </trans-unit>
+          <trans-unit id="169" xml:space="preserve">
+            <source>Have a backup vault</source>
+            <target state="new">Have a backup vault</target>
+          </trans-unit>
+          <trans-unit id="170" xml:space="preserve">
+            <source>To download the vault credentials, run the <bpt id="2">&lt;strong&gt;</bpt>Get-AzureBackupVaultCredentials<ept id="2">&lt;/strong&gt;</ept> commandlet in an Azure PowerShell console and store it in a convenient location like <bpt id="4">&lt;em&gt;</bpt>C:\Downloads\<ept id="4">&lt;/em&gt;</ept>.</source>
+            <target state="new">To download the vault credentials, run the <bpt id="2">&lt;strong&gt;</bpt>Get-AzureBackupVaultCredentials<ept id="2">&lt;/strong&gt;</ept> commandlet in an Azure PowerShell console and store it in a convenient location like <bpt id="4">&lt;em&gt;</bpt>C:\Downloads\<ept id="4">&lt;/em&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="171" xml:space="preserve">
+            <source>Registering the machine with the vault is done using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Start-OBRegistration<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet:</source>
+            <target state="new">Registering the machine with the vault is done using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Start-OBRegistration<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet:</target>
+          </trans-unit>
+          <trans-unit id="172" xml:space="preserve">
+            <source>Do not use relative paths to specify the vault credentials file.</source>
+            <target state="new">Do not use relative paths to specify the vault credentials file.</target>
+          </trans-unit>
+          <trans-unit id="173" xml:space="preserve">
+            <source>You must provide an absolute path as an input to the cmdlet.</source>
+            <target state="new">You must provide an absolute path as an input to the cmdlet.</target>
+          </trans-unit>
+          <trans-unit id="174" xml:space="preserve">
+            <source>Networking settings</source>
+            <target state="new">Networking settings</target>
+          </trans-unit>
+          <trans-unit id="175" xml:space="preserve">
+            <source>When the connectivity of the Windows machine to the internet is through a proxy server, the proxy settings can also be provided to the agent.</source>
+            <target state="new">When the connectivity of the Windows machine to the internet is through a proxy server, the proxy settings can also be provided to the agent.</target>
+          </trans-unit>
+          <trans-unit id="176" xml:space="preserve">
+            <source>In this example, there is no proxy server, so we are explicitly clearing any proxy-related information.</source>
+            <target state="new">In this example, there is no proxy server, so we are explicitly clearing any proxy-related information.</target>
+          </trans-unit>
+          <trans-unit id="177" xml:space="preserve">
+            <source>Bandwidth usage can also be controlled with the options of <bpt id="2">&lt;code&gt;</bpt>work hour bandwidth<ept id="2">&lt;/code&gt;</ept> and <bpt id="4">&lt;code&gt;</bpt>non-work hour bandwidth<ept id="4">&lt;/code&gt;</ept> for a given set of days of the week.</source>
+            <target state="new">Bandwidth usage can also be controlled with the options of <bpt id="2">&lt;code&gt;</bpt>work hour bandwidth<ept id="2">&lt;/code&gt;</ept> and <bpt id="4">&lt;code&gt;</bpt>non-work hour bandwidth<ept id="4">&lt;/code&gt;</ept> for a given set of days of the week.</target>
+          </trans-unit>
+          <trans-unit id="178" xml:space="preserve">
+            <source>Setting the proxy and bandwidth details is done using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Set-OBMachineSetting<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet:</source>
+            <target state="new">Setting the proxy and bandwidth details is done using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Set-OBMachineSetting<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet:</target>
+          </trans-unit>
+          <trans-unit id="179" xml:space="preserve">
+            <source>Encryption settings</source>
+            <target state="new">Encryption settings</target>
+          </trans-unit>
+          <trans-unit id="180" xml:space="preserve">
+            <source>The backup data sent to Azure Backup is encrypted to protect the confidentiality of the data.</source>
+            <target state="new">The backup data sent to Azure Backup is encrypted to protect the confidentiality of the data.</target>
+          </trans-unit>
+          <trans-unit id="181" xml:space="preserve">
+            <source>The encryption passphrase is the "password" to decrypt the data at the time of restore.</source>
+            <target state="new">The encryption passphrase is the "password" to decrypt the data at the time of restore.</target>
+          </trans-unit>
+          <trans-unit id="182" xml:space="preserve">
+            <source>Keep the passphrase information safe and secure once it is set.</source>
+            <target state="new">Keep the passphrase information safe and secure once it is set.</target>
+          </trans-unit>
+          <trans-unit id="183" xml:space="preserve">
+            <source>You will not be able to restore data from Azure without this passphrase.</source>
+            <target state="new">You will not be able to restore data from Azure without this passphrase.</target>
+          </trans-unit>
+          <trans-unit id="184" xml:space="preserve">
+            <source>Back up files and folders</source>
+            <target state="new">Back up files and folders</target>
+          </trans-unit>
+          <trans-unit id="185" xml:space="preserve">
+            <source>All your backups from Windows Servers and clients to Azure Backup are governed by a policy.</source>
+            <target state="new">All your backups from Windows Servers and clients to Azure Backup are governed by a policy.</target>
+          </trans-unit>
+          <trans-unit id="186" xml:space="preserve">
+            <source>The policy comprises three parts:</source>
+            <target state="new">The policy comprises three parts:</target>
+          </trans-unit>
+          <trans-unit id="187" xml:space="preserve">
+            <source>A <bpt id="2">&lt;strong&gt;</bpt>backup schedule<ept id="2">&lt;/strong&gt;</ept> that specifies when backups need to be taken and synchronized with the service.</source>
+            <target state="new">A <bpt id="2">&lt;strong&gt;</bpt>backup schedule<ept id="2">&lt;/strong&gt;</ept> that specifies when backups need to be taken and synchronized with the service.</target>
+          </trans-unit>
+          <trans-unit id="188" xml:space="preserve">
+            <source>A <bpt id="2">&lt;strong&gt;</bpt>retention schedule<ept id="2">&lt;/strong&gt;</ept> that specifies how long to retain the recovery points in Azure.</source>
+            <target state="new">A <bpt id="2">&lt;strong&gt;</bpt>retention schedule<ept id="2">&lt;/strong&gt;</ept> that specifies how long to retain the recovery points in Azure.</target>
+          </trans-unit>
+          <trans-unit id="189" xml:space="preserve">
+            <source>A <bpt id="2">&lt;strong&gt;</bpt>file inclusion/exclusion specification<ept id="2">&lt;/strong&gt;</ept> that dictates what should be backed up.</source>
+            <target state="new">A <bpt id="2">&lt;strong&gt;</bpt>file inclusion/exclusion specification<ept id="2">&lt;/strong&gt;</ept> that dictates what should be backed up.</target>
+          </trans-unit>
+          <trans-unit id="190" xml:space="preserve">
+            <source>In this document, since we're automating backup, we'll assume nothing has been configured.</source>
+            <target state="new">In this document, since we're automating backup, we'll assume nothing has been configured.</target>
+          </trans-unit>
+          <trans-unit id="191" xml:space="preserve">
+            <source>We begin by creating a new backup policy using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>New-OBPolicy<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet and using it.</source>
+            <target state="new">We begin by creating a new backup policy using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>New-OBPolicy<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet and using it.</target>
+          </trans-unit>
+          <trans-unit id="192" xml:space="preserve">
+            <source>At this time the policy is empty and other cmdlets are needed to define what items will be included or excluded, when backups will run, and where the backups will be stored.</source>
+            <target state="new">At this time the policy is empty and other cmdlets are needed to define what items will be included or excluded, when backups will run, and where the backups will be stored.</target>
+          </trans-unit>
+          <trans-unit id="193" xml:space="preserve">
+            <source>Configuring the backup schedule</source>
+            <target state="new">Configuring the backup schedule</target>
+          </trans-unit>
+          <trans-unit id="194" xml:space="preserve">
+            <source>The first of the 3 parts of a policy is the backup schedule, which is created using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>New-OBSchedule<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet.</source>
+            <target state="new">The first of the 3 parts of a policy is the backup schedule, which is created using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>New-OBSchedule<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet.</target>
+          </trans-unit>
+          <trans-unit id="195" xml:space="preserve">
+            <source>The backup schedule defines when backups need to be taken.</source>
+            <target state="new">The backup schedule defines when backups need to be taken.</target>
+          </trans-unit>
+          <trans-unit id="196" xml:space="preserve">
+            <source>When creating a schedule you need to specify 2 input parameters:</source>
+            <target state="new">When creating a schedule you need to specify 2 input parameters:</target>
+          </trans-unit>
+          <trans-unit id="197" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Days of the week<ept id="1">&lt;/strong&gt;</ept> that the backup should run.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Days of the week<ept id="1">&lt;/strong&gt;</ept> that the backup should run.</target>
+          </trans-unit>
+          <trans-unit id="198" xml:space="preserve">
+            <source>You can run the backup job on just one day, or every day of the week, or any combination in between.</source>
+            <target state="new">You can run the backup job on just one day, or every day of the week, or any combination in between.</target>
+          </trans-unit>
+          <trans-unit id="199" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Times of the day<ept id="1">&lt;/strong&gt;</ept> when the backup should run.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Times of the day<ept id="1">&lt;/strong&gt;</ept> when the backup should run.</target>
+          </trans-unit>
+          <trans-unit id="200" xml:space="preserve">
+            <source>You can define up to 3 different times of the day when the backup will be triggered.</source>
+            <target state="new">You can define up to 3 different times of the day when the backup will be triggered.</target>
+          </trans-unit>
+          <trans-unit id="201" xml:space="preserve">
+            <source>For instance, you could configure a backup policy that runs at 4PM every Saturday and Sunday.</source>
+            <target state="new">For instance, you could configure a backup policy that runs at 4PM every Saturday and Sunday.</target>
+          </trans-unit>
+          <trans-unit id="202" xml:space="preserve">
+            <source>The backup schedule needs to be associated with a policy, and this can be achieved by using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Set-OBSchedule<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet.</source>
+            <target state="new">The backup schedule needs to be associated with a policy, and this can be achieved by using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Set-OBSchedule<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet.</target>
+          </trans-unit>
+          <trans-unit id="203" xml:space="preserve">
+            <source>Configuring a retention policy</source>
+            <target state="new">Configuring a retention policy</target>
+          </trans-unit>
+          <trans-unit id="204" xml:space="preserve">
+            <source>The retention policy defines how long recovery points created from backup jobs are retained.</source>
+            <target state="new">The retention policy defines how long recovery points created from backup jobs are retained.</target>
+          </trans-unit>
+          <trans-unit id="205" xml:space="preserve">
+            <source>When creating a new retention policy using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>New-OBRetentionPolicy<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet, you can specify the number of days that the backup recovery points need to be retained with Azure Backup.</source>
+            <target state="new">When creating a new retention policy using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>New-OBRetentionPolicy<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet, you can specify the number of days that the backup recovery points need to be retained with Azure Backup.</target>
+          </trans-unit>
+          <trans-unit id="206" xml:space="preserve">
+            <source>The example below sets a retention policy of 7 days.</source>
+            <target state="new">The example below sets a retention policy of 7 days.</target>
+          </trans-unit>
+          <trans-unit id="207" xml:space="preserve">
+            <source>PowerShell cmdlets currently do not support the setting of long term retention policies.</source>
+            <target state="new">PowerShell cmdlets currently do not support the setting of long term retention policies.</target>
+          </trans-unit>
+          <trans-unit id="208" xml:space="preserve">
+            <source>Use the Azure Backup UI console to set long term retention policies.</source>
+            <target state="new">Use the Azure Backup UI console to set long term retention policies.</target>
+          </trans-unit>
+          <trans-unit id="209" xml:space="preserve">
+            <source>The retention policy must be associated with the main policy using the cmdlet <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Set-OBRetentionPolicy<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>:</source>
+            <target state="new">The retention policy must be associated with the main policy using the cmdlet <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Set-OBRetentionPolicy<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="210" xml:space="preserve">
+            <source>Including and excluding files to be backed up</source>
+            <target state="new">Including and excluding files to be backed up</target>
+          </trans-unit>
+          <trans-unit id="211" xml:space="preserve">
+            <source>An <bpt id="2">&lt;code&gt;</bpt>OBFileSpec<ept id="2">&lt;/code&gt;</ept> object defines the files to be included and excluded in a backup.</source>
+            <target state="new">An <bpt id="2">&lt;code&gt;</bpt>OBFileSpec<ept id="2">&lt;/code&gt;</ept> object defines the files to be included and excluded in a backup.</target>
+          </trans-unit>
+          <trans-unit id="212" xml:space="preserve">
+            <source>This is a set of rules that scope out the protected files and folders on a machine.</source>
+            <target state="new">This is a set of rules that scope out the protected files and folders on a machine.</target>
+          </trans-unit>
+          <trans-unit id="213" xml:space="preserve">
+            <source>You can have as many file inclusion or exclusion rules as required, and associate them with a policy.</source>
+            <target state="new">You can have as many file inclusion or exclusion rules as required, and associate them with a policy.</target>
+          </trans-unit>
+          <trans-unit id="214" xml:space="preserve">
+            <source>When creating a new OBFileSpec object, you can:</source>
+            <target state="new">When creating a new OBFileSpec object, you can:</target>
+          </trans-unit>
+          <trans-unit id="215" xml:space="preserve">
+            <source>Specify the files and folders to be included</source>
+            <target state="new">Specify the files and folders to be included</target>
+          </trans-unit>
+          <trans-unit id="216" xml:space="preserve">
+            <source>Specify the files and folders to be excluded</source>
+            <target state="new">Specify the files and folders to be excluded</target>
+          </trans-unit>
+          <trans-unit id="217" xml:space="preserve">
+            <source>Specify recursive backup of data in a folder (or) whether only the top-level files in the specified folder should be backed up.</source>
+            <target state="new">Specify recursive backup of data in a folder (or) whether only the top-level files in the specified folder should be backed up.</target>
+          </trans-unit>
+          <trans-unit id="218" xml:space="preserve">
+            <source>The latter is achieved by using the -NonRecursive flag in the New-OBFileSpec command.</source>
+            <target state="new">The latter is achieved by using the -NonRecursive flag in the New-OBFileSpec command.</target>
+          </trans-unit>
+          <trans-unit id="219" xml:space="preserve">
+            <source>In the example below, we'll back up volume C: and D: and exclude the OS binaries in the Windows folder and any temporary folders.</source>
+            <target state="new">In the example below, we'll back up volume C: and D: and exclude the OS binaries in the Windows folder and any temporary folders.</target>
+          </trans-unit>
+          <trans-unit id="220" xml:space="preserve">
+            <source>To do so we'll create two file specifications using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>New-OBFileSpec<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet - one for inclusion and one for exclusion.</source>
+            <target state="new">To do so we'll create two file specifications using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>New-OBFileSpec<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet - one for inclusion and one for exclusion.</target>
+          </trans-unit>
+          <trans-unit id="221" xml:space="preserve">
+            <source>Once the file specifications have been created, they're associated with the policy using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Add-OBFileSpec<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet.</source>
+            <target state="new">Once the file specifications have been created, they're associated with the policy using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Add-OBFileSpec<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet.</target>
+          </trans-unit>
+          <trans-unit id="222" xml:space="preserve">
+            <source>Applying the policy</source>
+            <target state="new">Applying the policy</target>
+          </trans-unit>
+          <trans-unit id="223" xml:space="preserve">
+            <source>Now the policy object is complete and has an associated backup schedule, retention policy, and an inclusion/exclusion list of files.</source>
+            <target state="new">Now the policy object is complete and has an associated backup schedule, retention policy, and an inclusion/exclusion list of files.</target>
+          </trans-unit>
+          <trans-unit id="224" xml:space="preserve">
+            <source>This policy can now be committed for Azure Backup to use.</source>
+            <target state="new">This policy can now be committed for Azure Backup to use.</target>
+          </trans-unit>
+          <trans-unit id="225" xml:space="preserve">
+            <source>Before you apply the newly created policy ensure that there are no existing backup policies associated with the server by using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Remove-OBPolicy<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet.</source>
+            <target state="new">Before you apply the newly created policy ensure that there are no existing backup policies associated with the server by using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Remove-OBPolicy<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet.</target>
+          </trans-unit>
+          <trans-unit id="226" xml:space="preserve">
+            <source>Removing the policy will prompt for confirmation.</source>
+            <target state="new">Removing the policy will prompt for confirmation.</target>
+          </trans-unit>
+          <trans-unit id="227" xml:space="preserve">
+            <source>To skip the confirmation use the <bpt id="2">&lt;code&gt;</bpt>-Confirm:$false<ept id="2">&lt;/code&gt;</ept> flag with the cmdlet.</source>
+            <target state="new">To skip the confirmation use the <bpt id="2">&lt;code&gt;</bpt>-Confirm:$false<ept id="2">&lt;/code&gt;</ept> flag with the cmdlet.</target>
+          </trans-unit>
+          <trans-unit id="228" xml:space="preserve">
+            <source>Committing the policy object is done using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Set-OBPolicy<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet.</source>
+            <target state="new">Committing the policy object is done using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Set-OBPolicy<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet.</target>
+          </trans-unit>
+          <trans-unit id="229" xml:space="preserve">
+            <source>This will also ask for confirmation.</source>
+            <target state="new">This will also ask for confirmation.</target>
+          </trans-unit>
+          <trans-unit id="230" xml:space="preserve">
+            <source>To skip the confirmation use the <bpt id="2">&lt;code&gt;</bpt>-Confirm:$false<ept id="2">&lt;/code&gt;</ept> flag with the cmdlet.</source>
+            <target state="new">To skip the confirmation use the <bpt id="2">&lt;code&gt;</bpt>-Confirm:$false<ept id="2">&lt;/code&gt;</ept> flag with the cmdlet.</target>
+          </trans-unit>
+          <trans-unit id="231" xml:space="preserve">
+            <source>You can view the details of the existing backup policy using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Get-OBPolicy<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet.</source>
+            <target state="new">You can view the details of the existing backup policy using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Get-OBPolicy<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet.</target>
+          </trans-unit>
+          <trans-unit id="232" xml:space="preserve">
+            <source>You can drill-down further using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Get-OBSchedule<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet for the backup schedule and the <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Get-OBRetentionPolicy<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept> cmdlet for the retention policies</source>
+            <target state="new">You can drill-down further using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Get-OBSchedule<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet for the backup schedule and the <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Get-OBRetentionPolicy<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept> cmdlet for the retention policies</target>
+          </trans-unit>
+          <trans-unit id="233" xml:space="preserve">
+            <source>Performing an ad-hoc backup</source>
+            <target state="new">Performing an ad-hoc backup</target>
+          </trans-unit>
+          <trans-unit id="234" xml:space="preserve">
+            <source>Once a backup policy has been set the backups will occur per the schedule.</source>
+            <target state="new">Once a backup policy has been set the backups will occur per the schedule.</target>
+          </trans-unit>
+          <trans-unit id="235" xml:space="preserve">
+            <source>Triggering an ad-hoc backup is also possible using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Start-OBBackup<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet:</source>
+            <target state="new">Triggering an ad-hoc backup is also possible using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Start-OBBackup<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet:</target>
+          </trans-unit>
+          <trans-unit id="236" xml:space="preserve">
+            <source>Restore data from Azure Backup</source>
+            <target state="new">Restore data from Azure Backup</target>
+          </trans-unit>
+          <trans-unit id="237" xml:space="preserve">
+            <source>This section will guide you through the steps for automating recovery of data from Azure Backup.</source>
+            <target state="new">This section will guide you through the steps for automating recovery of data from Azure Backup.</target>
+          </trans-unit>
+          <trans-unit id="238" xml:space="preserve">
+            <source>Doing so involves the following steps:</source>
+            <target state="new">Doing so involves the following steps:</target>
+          </trans-unit>
+          <trans-unit id="239" xml:space="preserve">
+            <source>Pick the source volume</source>
+            <target state="new">Pick the source volume</target>
+          </trans-unit>
+          <trans-unit id="240" xml:space="preserve">
+            <source>Choose a backup point to restore</source>
+            <target state="new">Choose a backup point to restore</target>
+          </trans-unit>
+          <trans-unit id="241" xml:space="preserve">
+            <source>Choose an item to restore</source>
+            <target state="new">Choose an item to restore</target>
+          </trans-unit>
+          <trans-unit id="242" xml:space="preserve">
+            <source>Trigger the restore process</source>
+            <target state="new">Trigger the restore process</target>
+          </trans-unit>
+          <trans-unit id="243" xml:space="preserve">
+            <source>Picking the source volume</source>
+            <target state="new">Picking the source volume</target>
+          </trans-unit>
+          <trans-unit id="244" xml:space="preserve">
+            <source>In order to restore an item from Azure Backup, you first need to identify the source of the item.</source>
+            <target state="new">In order to restore an item from Azure Backup, you first need to identify the source of the item.</target>
+          </trans-unit>
+          <trans-unit id="245" xml:space="preserve">
+            <source>Since we're executing the commands in the context of a Windows Server or a Windows client, the machine is already identified.</source>
+            <target state="new">Since we're executing the commands in the context of a Windows Server or a Windows client, the machine is already identified.</target>
+          </trans-unit>
+          <trans-unit id="246" xml:space="preserve">
+            <source>The next step in identifying the source is to identify the volume containing it.</source>
+            <target state="new">The next step in identifying the source is to identify the volume containing it.</target>
+          </trans-unit>
+          <trans-unit id="247" xml:space="preserve">
+            <source>A list of volumes or sources being backed up from this machine can be retrieved by executing the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Get-OBRecoverableSource<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet.</source>
+            <target state="new">A list of volumes or sources being backed up from this machine can be retrieved by executing the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Get-OBRecoverableSource<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet.</target>
+          </trans-unit>
+          <trans-unit id="248" xml:space="preserve">
+            <source>This command returns an array of all the sources backed up from this server/client.</source>
+            <target state="new">This command returns an array of all the sources backed up from this server/client.</target>
+          </trans-unit>
+          <trans-unit id="249" xml:space="preserve">
+            <source>Choosing a backup point to restore</source>
+            <target state="new">Choosing a backup point to restore</target>
+          </trans-unit>
+          <trans-unit id="250" xml:space="preserve">
+            <source>The list of backup points can be retrieved by executing the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Get-OBRecoverableItem<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet with appropriate parameters.</source>
+            <target state="new">The list of backup points can be retrieved by executing the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Get-OBRecoverableItem<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet with appropriate parameters.</target>
+          </trans-unit>
+          <trans-unit id="251" xml:space="preserve">
+            <source>In our example, we’ll choose the latest backup point for the source volume <bpt id="2">&lt;em&gt;</bpt>D:<ept id="2">&lt;/em&gt;</ept> and use it to recover a specific file.</source>
+            <target state="new">In our example, we’ll choose the latest backup point for the source volume <bpt id="2">&lt;em&gt;</bpt>D:<ept id="2">&lt;/em&gt;</ept> and use it to recover a specific file.</target>
+          </trans-unit>
+          <trans-unit id="252" xml:space="preserve">
+            <source>The object <bpt id="2">&lt;code&gt;</bpt>$rps<ept id="2">&lt;/code&gt;</ept> is an array of backup points.</source>
+            <target state="new">The object <bpt id="2">&lt;code&gt;</bpt>$rps<ept id="2">&lt;/code&gt;</ept> is an array of backup points.</target>
+          </trans-unit>
+          <trans-unit id="253" xml:space="preserve">
+            <source>The first element is the latest point and the Nth element is the oldest point.</source>
+            <target state="new">The first element is the latest point and the Nth element is the oldest point.</target>
+          </trans-unit>
+          <trans-unit id="254" xml:space="preserve">
+            <source>To choose the latest point, we will use <bpt id="2">&lt;code&gt;</bpt>$rps[0]<ept id="2">&lt;/code&gt;</ept>.</source>
+            <target state="new">To choose the latest point, we will use <bpt id="2">&lt;code&gt;</bpt>$rps[0]<ept id="2">&lt;/code&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="255" xml:space="preserve">
+            <source>Choosing an item to restore</source>
+            <target state="new">Choosing an item to restore</target>
+          </trans-unit>
+          <trans-unit id="256" xml:space="preserve">
+            <source>To identify the exact file or folder to restore, recursively use the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Get-OBRecoverableItem<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet.</source>
+            <target state="new">To identify the exact file or folder to restore, recursively use the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Get-OBRecoverableItem<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet.</target>
+          </trans-unit>
+          <trans-unit id="257" xml:space="preserve">
+            <source>That way the folder hierarchy can be browsed solely using the <bpt id="2">&lt;code&gt;</bpt>Get-OBRecoverableItem<ept id="2">&lt;/code&gt;</ept>.</source>
+            <target state="new">That way the folder hierarchy can be browsed solely using the <bpt id="2">&lt;code&gt;</bpt>Get-OBRecoverableItem<ept id="2">&lt;/code&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="258" xml:space="preserve">
+            <source>In this example, if we want to restore the file <bpt id="2">&lt;em&gt;</bpt>finances.xls<ept id="2">&lt;/em&gt;</ept> we can reference that using the object <bpt id="4">&lt;code&gt;</bpt>$filesFolders[1]<ept id="4">&lt;/code&gt;</ept>.</source>
+            <target state="new">In this example, if we want to restore the file <bpt id="2">&lt;em&gt;</bpt>finances.xls<ept id="2">&lt;/em&gt;</ept> we can reference that using the object <bpt id="4">&lt;code&gt;</bpt>$filesFolders[1]<ept id="4">&lt;/code&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="259" xml:space="preserve">
+            <source>You can also search for items to restore using the <bpt id="2">&lt;code&gt;</bpt>Get-OBRecoverableItem<ept id="2">&lt;/code&gt;</ept> cmdlet.</source>
+            <target state="new">You can also search for items to restore using the <bpt id="2">&lt;code&gt;</bpt>Get-OBRecoverableItem<ept id="2">&lt;/code&gt;</ept> cmdlet.</target>
+          </trans-unit>
+          <trans-unit id="260" xml:space="preserve">
+            <source>In our example, to search for <bpt id="2">&lt;em&gt;</bpt>finances.xls<ept id="2">&lt;/em&gt;</ept> we could get a handle on the file by running this command:</source>
+            <target state="new">In our example, to search for <bpt id="2">&lt;em&gt;</bpt>finances.xls<ept id="2">&lt;/em&gt;</ept> we could get a handle on the file by running this command:</target>
+          </trans-unit>
+          <trans-unit id="261" xml:space="preserve">
+            <source>Triggering the restore process</source>
+            <target state="new">Triggering the restore process</target>
+          </trans-unit>
+          <trans-unit id="262" xml:space="preserve">
+            <source>To trigger the restore process, we first need to specify the recovery options.</source>
+            <target state="new">To trigger the restore process, we first need to specify the recovery options.</target>
+          </trans-unit>
+          <trans-unit id="263" xml:space="preserve">
+            <source>This can be done by using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>New-OBRecoveryOption<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet.</source>
+            <target state="new">This can be done by using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>New-OBRecoveryOption<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet.</target>
+          </trans-unit>
+          <trans-unit id="264" xml:space="preserve">
+            <source>For this example, let's assume that we want to restore the files to <bpt id="2">&lt;em&gt;</bpt>C:\temp<ept id="2">&lt;/em&gt;</ept>.</source>
+            <target state="new">For this example, let's assume that we want to restore the files to <bpt id="2">&lt;em&gt;</bpt>C:\temp<ept id="2">&lt;/em&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="265" xml:space="preserve">
+            <source>Let's also assume that we want to skip files that already exist on the destination folder <bpt id="2">&lt;em&gt;</bpt>C:\temp<ept id="2">&lt;/em&gt;</ept>.</source>
+            <target state="new">Let's also assume that we want to skip files that already exist on the destination folder <bpt id="2">&lt;em&gt;</bpt>C:\temp<ept id="2">&lt;/em&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="266" xml:space="preserve">
+            <source>To create such a recovery option, use the following command:</source>
+            <target state="new">To create such a recovery option, use the following command:</target>
+          </trans-unit>
+          <trans-unit id="267" xml:space="preserve">
+            <source>Now trigger restore by using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Start-OBRecovery<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> command on the selected <bpt id="4">&lt;code&gt;</bpt>$item<ept id="4">&lt;/code&gt;</ept> from the output of the <bpt id="6">&lt;code&gt;</bpt>Get-OBRecoverableItem<ept id="6">&lt;/code&gt;</ept> cmdlet:</source>
+            <target state="new">Now trigger restore by using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Start-OBRecovery<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> command on the selected <bpt id="4">&lt;code&gt;</bpt>$item<ept id="4">&lt;/code&gt;</ept> from the output of the <bpt id="6">&lt;code&gt;</bpt>Get-OBRecoverableItem<ept id="6">&lt;/code&gt;</ept> cmdlet:</target>
+          </trans-unit>
+          <trans-unit id="268" xml:space="preserve">
+            <source>Uninstalling the Azure Backup agent</source>
+            <target state="new">Uninstalling the Azure Backup agent</target>
+          </trans-unit>
+          <trans-unit id="269" xml:space="preserve">
+            <source>Uninstalling the Azure Backup agent can be done by using the following command:</source>
+            <target state="new">Uninstalling the Azure Backup agent can be done by using the following command:</target>
+          </trans-unit>
+          <trans-unit id="270" xml:space="preserve">
+            <source>Uninstalling the agent binaries from the machine has some consequences to consider:</source>
+            <target state="new">Uninstalling the agent binaries from the machine has some consequences to consider:</target>
+          </trans-unit>
+          <trans-unit id="271" xml:space="preserve">
+            <source>It removes the file-filter from the machine, and tracking of changes is stopped.</source>
+            <target state="new">It removes the file-filter from the machine, and tracking of changes is stopped.</target>
+          </trans-unit>
+          <trans-unit id="272" xml:space="preserve">
+            <source>All policy information is removed from the machine, but the policy information continues to be stored in the service.</source>
+            <target state="new">All policy information is removed from the machine, but the policy information continues to be stored in the service.</target>
+          </trans-unit>
+          <trans-unit id="273" xml:space="preserve">
+            <source>All backup schedules are removed, and no further backups are taken.</source>
+            <target state="new">All backup schedules are removed, and no further backups are taken.</target>
+          </trans-unit>
+          <trans-unit id="274" xml:space="preserve">
+            <source>However, the data stored in Azure remains and is retained as per the retention policy setup by you.</source>
+            <target state="new">However, the data stored in Azure remains and is retained as per the retention policy setup by you.</target>
+          </trans-unit>
+          <trans-unit id="275" xml:space="preserve">
+            <source>Older points are automatically aged out.</source>
+            <target state="new">Older points are automatically aged out.</target>
+          </trans-unit>
+          <trans-unit id="276" xml:space="preserve">
+            <source>Remote management</source>
+            <target state="new">Remote management</target>
+          </trans-unit>
+          <trans-unit id="277" xml:space="preserve">
+            <source>All the management around the Azure Backup agent, policies, and data sources can be done remotely through PowerShell.</source>
+            <target state="new">All the management around the Azure Backup agent, policies, and data sources can be done remotely through PowerShell.</target>
+          </trans-unit>
+          <trans-unit id="278" xml:space="preserve">
+            <source>The machine that will be managed remotely needs to be prepared correctly.</source>
+            <target state="new">The machine that will be managed remotely needs to be prepared correctly.</target>
+          </trans-unit>
+          <trans-unit id="279" xml:space="preserve">
+            <source>By default, the WinRM service is configured for manual startup.</source>
+            <target state="new">By default, the WinRM service is configured for manual startup.</target>
+          </trans-unit>
+          <trans-unit id="280" xml:space="preserve">
+            <source>The startup type must be set to <bpt id="2">&lt;em&gt;</bpt>Automatic<ept id="2">&lt;/em&gt;</ept> and the service should be started.</source>
+            <target state="new">The startup type must be set to <bpt id="2">&lt;em&gt;</bpt>Automatic<ept id="2">&lt;/em&gt;</ept> and the service should be started.</target>
+          </trans-unit>
+          <trans-unit id="281" xml:space="preserve">
+            <source>To verify that the WinRM service is running, the value of the Status property should be <bpt id="2">&lt;em&gt;</bpt>Running<ept id="2">&lt;/em&gt;</ept>.</source>
+            <target state="new">To verify that the WinRM service is running, the value of the Status property should be <bpt id="2">&lt;em&gt;</bpt>Running<ept id="2">&lt;/em&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="282" xml:space="preserve">
+            <source>PowerShell should be configured for remoting.</source>
+            <target state="new">PowerShell should be configured for remoting.</target>
+          </trans-unit>
+          <trans-unit id="283" xml:space="preserve">
+            <source>The machine can now be managed remotely - starting from the installation of the agent.</source>
+            <target state="new">The machine can now be managed remotely - starting from the installation of the agent.</target>
+          </trans-unit>
+          <trans-unit id="284" xml:space="preserve">
+            <source>For example, the following script copies the agent to the remote machine and installs it.</source>
+            <target state="new">For example, the following script copies the agent to the remote machine and installs it.</target>
+          </trans-unit>
+          <trans-unit id="285" xml:space="preserve">
+            <source>Next steps</source>
+            <target state="new">Next steps</target>
+          </trans-unit>
+          <trans-unit id="286" xml:space="preserve">
+            <source>For more information about Azure Backup for Windows Server/Client see</source>
+            <target state="new">For more information about Azure Backup for Windows Server/Client see</target>
+          </trans-unit>
+          <trans-unit id="287" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Introduction to Azure Backup<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Introduction to Azure Backup<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="288" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Back up Windows Servers<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Back up Windows Servers<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>

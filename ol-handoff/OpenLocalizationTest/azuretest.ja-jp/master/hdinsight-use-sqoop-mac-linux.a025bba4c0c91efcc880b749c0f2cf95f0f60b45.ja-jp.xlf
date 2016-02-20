@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="ja-jp" original="2/20/2016 9:03:10 AM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c971b7544b7a6d9bfdff701acd9f083d3ba7d160</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Use Hadoop Sqoop in HDInsight | Microsoft Azure</source>
+            <target state="new">Use Hadoop Sqoop in HDInsight | Microsoft Azure</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>Learn how to run Sqoop import and export between a Linux-based Hadoop on HDInsight cluster and an Azure SQL database.</source>
+            <target state="new">Learn how to run Sqoop import and export between a Linux-based Hadoop on HDInsight cluster and an Azure SQL database.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Use Sqoop with Hadoop in HDInsight (SSH)</source>
+            <target state="new">Use Sqoop with Hadoop in HDInsight (SSH)</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source><ph id="1">&lt;token href="../../includes/hdinsight-selector-use-sqoop.md"/&gt;</ph></source>
+            <target state="new"><ph id="1">&lt;token href="../../includes/hdinsight-selector-use-sqoop.md"/&gt;</ph></target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>Learn how to use Sqoop to import and export between a Linux-based HDInsight cluster and Azure SQL Database or SQL Server database.</source>
+            <target state="new">Learn how to use Sqoop to import and export between a Linux-based HDInsight cluster and Azure SQL Database or SQL Server database.</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>The steps in this article use SSH to connect to a Linux-based HDInsight cluster.</source>
+            <target state="new">The steps in this article use SSH to connect to a Linux-based HDInsight cluster.</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>Windows clients can also use Azure PowerShell to work with Sqoop on Linux-based clusters as documented in <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Use Sqoop with Hadoop in HDInsight (PowerShell)<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">Windows clients can also use Azure PowerShell to work with Sqoop on Linux-based clusters as documented in <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Use Sqoop with Hadoop in HDInsight (PowerShell)<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>What is Sqoop?</source>
+            <target state="new">What is Sqoop?</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source>Although Hadoop is a natural choice for processing unstructured and semistructured data, such as logs and files, there may also be a need to process structured data that is stored in relational databases.</source>
+            <target state="new">Although Hadoop is a natural choice for processing unstructured and semistructured data, such as logs and files, there may also be a need to process structured data that is stored in relational databases.</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Sqoop[sqoop-user-guide-1.4.4]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept> is a tool designed to transfer data between Hadoop clusters and relational databases.</source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Sqoop[sqoop-user-guide-1.4.4]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept> is a tool designed to transfer data between Hadoop clusters and relational databases.</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>You can use it to import data from a relational database management system (RDBMS) such as SQL Server, MySQL, or Oracle into the Hadoop distributed file system (HDFS), transform the data in Hadoop with MapReduce or Hive, and then export the data back into an RDBMS.</source>
+            <target state="new">You can use it to import data from a relational database management system (RDBMS) such as SQL Server, MySQL, or Oracle into the Hadoop distributed file system (HDFS), transform the data in Hadoop with MapReduce or Hive, and then export the data back into an RDBMS.</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source>In this tutorial, you are using a SQL Server database for your relational database.</source>
+            <target state="new">In this tutorial, you are using a SQL Server database for your relational database.</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>For Sqoop versions that are supported on HDInsight clusters, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>What's new in the cluster versions provided by HDInsight?[hdinsight-versions]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For Sqoop versions that are supported on HDInsight clusters, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>What's new in the cluster versions provided by HDInsight?[hdinsight-versions]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source>Prerequisites</source>
+            <target state="new">Prerequisites</target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>Before you begin this tutorial, you must have the following:</source>
+            <target state="new">Before you begin this tutorial, you must have the following:</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Workstation<ept id="1">&lt;/strong&gt;</ept>: A computer with an SSH client.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Workstation<ept id="1">&lt;/strong&gt;</ept>: A computer with an SSH client.</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Azure CLI<ept id="1">&lt;/strong&gt;</ept>: For more information, see <bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>Install and Configure the Azure CLI<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Azure CLI<ept id="1">&lt;/strong&gt;</ept>: For more information, see <bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>Install and Configure the Azure CLI<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Linux-based HDInsight cluster<ept id="1">&lt;/strong&gt;</ept>: For instructions about cluster provision, see <bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>Get started using HDInsight<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept> or <bpt id="5CapsExtId1">&lt;link&gt;</bpt><bpt id="5CapsExtId2">&lt;linkText&gt;</bpt>Provision HDInsight clusters[hdinsight-provision]<ept id="5CapsExtId2">&lt;/linkText&gt;</ept><bpt id="5CapsExtId3">&lt;title&gt;</bpt><ept id="5CapsExtId3">&lt;/title&gt;</ept><ept id="5CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Linux-based HDInsight cluster<ept id="1">&lt;/strong&gt;</ept>: For instructions about cluster provision, see <bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>Get started using HDInsight<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept> or <bpt id="5CapsExtId1">&lt;link&gt;</bpt><bpt id="5CapsExtId2">&lt;linkText&gt;</bpt>Provision HDInsight clusters[hdinsight-provision]<ept id="5CapsExtId2">&lt;/linkText&gt;</ept><bpt id="5CapsExtId3">&lt;title&gt;</bpt><ept id="5CapsExtId3">&lt;/title&gt;</ept><ept id="5CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Azure SQL database<ept id="1">&lt;/strong&gt;</ept>: This document provides instructions for creating an example SQL database.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Azure SQL database<ept id="1">&lt;/strong&gt;</ept>: This document provides instructions for creating an example SQL database.</target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source>For more information on SQL Database, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Get started using Azure SQL database[sqldatabase-get-started]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information on SQL Database, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Get started using Azure SQL database[sqldatabase-get-started]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>SQL Server<ept id="1">&lt;/strong&gt;</ept>: The steps in this document can also be used, with some modification, with SQL Server.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>SQL Server<ept id="1">&lt;/strong&gt;</ept>: The steps in this document can also be used, with some modification, with SQL Server.</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source>For more information on requirements specific to using this article with SQL Server, see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Using SQL Server<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> section.</source>
+            <target state="new">For more information on requirements specific to using this article with SQL Server, see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Using SQL Server<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> section.</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>Understand the scenario</source>
+            <target state="new">Understand the scenario</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source>An HDInsight cluster comes with some sample data.</source>
+            <target state="new">An HDInsight cluster comes with some sample data.</target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>You will use a Hive table named <bpt id="2">&lt;strong&gt;</bpt>hivesampletable<ept id="2">&lt;/strong&gt;</ept>, which references the data file located at <bpt id="4">&lt;strong&gt;</bpt>wasb:///hive/warehouse/hivesampletable<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">You will use a Hive table named <bpt id="2">&lt;strong&gt;</bpt>hivesampletable<ept id="2">&lt;/strong&gt;</ept>, which references the data file located at <bpt id="4">&lt;strong&gt;</bpt>wasb:///hive/warehouse/hivesampletable<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>The table contains some mobile device data.</source>
+            <target state="new">The table contains some mobile device data.</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source>The Hive table schema is:</source>
+            <target state="new">The Hive table schema is:</target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source>Field</source>
+            <target state="new">Field</target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source>Data type</source>
+            <target state="new">Data type</target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source>clientid</source>
+            <target state="new">clientid</target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source>string</source>
+            <target state="new">string</target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source>querytime</source>
+            <target state="new">querytime</target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source>string</source>
+            <target state="new">string</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source>market</source>
+            <target state="new">market</target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source>string</source>
+            <target state="new">string</target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source>deviceplatform</source>
+            <target state="new">deviceplatform</target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source>string</source>
+            <target state="new">string</target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source>devicemake</source>
+            <target state="new">devicemake</target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source>string</source>
+            <target state="new">string</target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source>devicemodel</source>
+            <target state="new">devicemodel</target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source>string</source>
+            <target state="new">string</target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source>state</source>
+            <target state="new">state</target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source>string</source>
+            <target state="new">string</target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source>country</source>
+            <target state="new">country</target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source>string</source>
+            <target state="new">string</target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source>querydwelltime</source>
+            <target state="new">querydwelltime</target>
+          </trans-unit>
+          <trans-unit id="147" xml:space="preserve">
+            <source>double</source>
+            <target state="new">double</target>
+          </trans-unit>
+          <trans-unit id="148" xml:space="preserve">
+            <source>sessionid</source>
+            <target state="new">sessionid</target>
+          </trans-unit>
+          <trans-unit id="149" xml:space="preserve">
+            <source>bigint</source>
+            <target state="new">bigint</target>
+          </trans-unit>
+          <trans-unit id="150" xml:space="preserve">
+            <source>sessionpagevieworder</source>
+            <target state="new">sessionpagevieworder</target>
+          </trans-unit>
+          <trans-unit id="151" xml:space="preserve">
+            <source>bigint</source>
+            <target state="new">bigint</target>
+          </trans-unit>
+          <trans-unit id="152" xml:space="preserve">
+            <source>You will first export <bpt id="2">&lt;strong&gt;</bpt>hivesampletable<ept id="2">&lt;/strong&gt;</ept> to the Azure SQL database or to SQL Server in a table named <bpt id="4">&lt;strong&gt;</bpt>mobiledata<ept id="4">&lt;/strong&gt;</ept>, and then import the table back to HDInsight at <bpt id="6">&lt;strong&gt;</bpt>wasb:///tutorials/usesqoop/importeddata<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">You will first export <bpt id="2">&lt;strong&gt;</bpt>hivesampletable<ept id="2">&lt;/strong&gt;</ept> to the Azure SQL database or to SQL Server in a table named <bpt id="4">&lt;strong&gt;</bpt>mobiledata<ept id="4">&lt;/strong&gt;</ept>, and then import the table back to HDInsight at <bpt id="6">&lt;strong&gt;</bpt>wasb:///tutorials/usesqoop/importeddata<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="153" xml:space="preserve">
+            <source>Create a database</source>
+            <target state="new">Create a database</target>
+          </trans-unit>
+          <trans-unit id="154" xml:space="preserve">
+            <source>Open a terminal or command prompt and use the following command to create a new Azure SQL Database server:</source>
+            <target state="new">Open a terminal or command prompt and use the following command to create a new Azure SQL Database server:</target>
+          </trans-unit>
+          <trans-unit id="155" xml:space="preserve">
+            <source>For exmaple, <bpt id="2">&lt;code&gt;</bpt>azure sql server create admin password "West US"<ept id="2">&lt;/code&gt;</ept>.</source>
+            <target state="new">For exmaple, <bpt id="2">&lt;code&gt;</bpt>azure sql server create admin password "West US"<ept id="2">&lt;/code&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="156" xml:space="preserve">
+            <source>When the command completes, you will receive a response similar to the following:</source>
+            <target state="new">When the command completes, you will receive a response similar to the following:</target>
+          </trans-unit>
+          <trans-unit id="157" xml:space="preserve">
+            <source>Note the server name returned by this command.</source>
+            <target state="new">Note the server name returned by this command.</target>
+          </trans-unit>
+          <trans-unit id="158" xml:space="preserve">
+            <source>This is the short name of the SQL Database server that was created.</source>
+            <target state="new">This is the short name of the SQL Database server that was created.</target>
+          </trans-unit>
+          <trans-unit id="159" xml:space="preserve">
+            <source>The fully qualified domain name (FQDN) is <bpt id="2">&lt;strong&gt;</bpt>&lt;shortname&gt;.database.windows.net<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">The fully qualified domain name (FQDN) is <bpt id="2">&lt;strong&gt;</bpt>&lt;shortname&gt;.database.windows.net<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
+            <source>Use the following command to create a database named <bpt id="2">&lt;strong&gt;</bpt>sqooptest<ept id="2">&lt;/strong&gt;</ept> on the SQL Database server:</source>
+            <target state="new">Use the following command to create a database named <bpt id="2">&lt;strong&gt;</bpt>sqooptest<ept id="2">&lt;/strong&gt;</ept> on the SQL Database server:</target>
+          </trans-unit>
+          <trans-unit id="161" xml:space="preserve">
+            <source>This will return an "OK" message when it completes.</source>
+            <target state="new">This will return an "OK" message when it completes.</target>
+          </trans-unit>
+          <trans-unit id="162" xml:space="preserve">
+            <source>If you receive an error indicating that you do not have access, you may need to add your client workstation's IP address to the SQL Database firewall using the following command:</source>
+            <target state="new">If you receive an error indicating that you do not have access, you may need to add your client workstation's IP address to the SQL Database firewall using the following command:</target>
+          </trans-unit>
+          <trans-unit id="163" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>sql firewallrule create [options] &lt;serverName&gt; &lt;ruleName&gt; &lt;startIPAddress&gt; &lt;endIPAddress&gt;<ept id="1">&lt;/code&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>sql firewallrule create [options] &lt;serverName&gt; &lt;ruleName&gt; &lt;startIPAddress&gt; &lt;endIPAddress&gt;<ept id="1">&lt;/code&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="164" xml:space="preserve">
+            <source>Create a table</source>
+            <target state="new">Create a table</target>
+          </trans-unit>
+          <trans-unit id="165" xml:space="preserve">
+            <source>There are many ways to connect to SQL Database to create a table.</source>
+            <target state="new">There are many ways to connect to SQL Database to create a table.</target>
+          </trans-unit>
+          <trans-unit id="166" xml:space="preserve">
+            <source>The following steps use <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>FreeTDS<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> from the HDInsight cluster.</source>
+            <target state="new">The following steps use <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>FreeTDS<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> from the HDInsight cluster.</target>
+          </trans-unit>
+          <trans-unit id="167" xml:space="preserve">
+            <source>Use SSH to connect to the Linux-based HDInsight cluster.</source>
+            <target state="new">Use SSH to connect to the Linux-based HDInsight cluster.</target>
+          </trans-unit>
+          <trans-unit id="168" xml:space="preserve">
+            <source>The address to use when connecting is <bpt id="2">&lt;code&gt;</bpt>CLUSTERNAME-ssh.azurehdinsight.net<ept id="2">&lt;/code&gt;</ept> and the port is <bpt id="4">&lt;code&gt;</bpt>22<ept id="4">&lt;/code&gt;</ept>.</source>
+            <target state="new">The address to use when connecting is <bpt id="2">&lt;code&gt;</bpt>CLUSTERNAME-ssh.azurehdinsight.net<ept id="2">&lt;/code&gt;</ept> and the port is <bpt id="4">&lt;code&gt;</bpt>22<ept id="4">&lt;/code&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="169" xml:space="preserve">
+            <source>For more information on using SSH to connect to HDInsight, see the following documents:</source>
+            <target state="new">For more information on using SSH to connect to HDInsight, see the following documents:</target>
+          </trans-unit>
+          <trans-unit id="170" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Linux, Unix or OS X clients<ept id="1">&lt;/strong&gt;</ept>: See <bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>Connect to a Linux-based HDInsight cluster from Linux, OS X or Unix<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Linux, Unix or OS X clients<ept id="1">&lt;/strong&gt;</ept>: See <bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>Connect to a Linux-based HDInsight cluster from Linux, OS X or Unix<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="171" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Windows clients<ept id="1">&lt;/strong&gt;</ept>: See <bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>Connect to a Linux-based HDInsight cluster from Windows<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Windows clients<ept id="1">&lt;/strong&gt;</ept>: See <bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>Connect to a Linux-based HDInsight cluster from Windows<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="172" xml:space="preserve">
+            <source>Use the following command to install FreeTDS:</source>
+            <target state="new">Use the following command to install FreeTDS:</target>
+          </trans-unit>
+          <trans-unit id="173" xml:space="preserve">
+            <source>Once FreeTDS has been installed, use the following command to connect to the SQL Database server you created previously:</source>
+            <target state="new">Once FreeTDS has been installed, use the following command to connect to the SQL Database server you created previously:</target>
+          </trans-unit>
+          <trans-unit id="174" xml:space="preserve">
+            <source>You will receive output similar to the following:</source>
+            <target state="new">You will receive output similar to the following:</target>
+          </trans-unit>
+          <trans-unit id="175" xml:space="preserve">
+            <source>At the <bpt id="2">&lt;code&gt;</bpt>1&gt;<ept id="2">&lt;/code&gt;</ept> prompt, enter the following lines:</source>
+            <target state="new">At the <bpt id="2">&lt;code&gt;</bpt>1&gt;<ept id="2">&lt;/code&gt;</ept> prompt, enter the following lines:</target>
+          </trans-unit>
+          <trans-unit id="176" xml:space="preserve">
+            <source>When the <bpt id="2">&lt;code&gt;</bpt>GO<ept id="2">&lt;/code&gt;</ept> statement is entered, the previous statements will be evaluated.</source>
+            <target state="new">When the <bpt id="2">&lt;code&gt;</bpt>GO<ept id="2">&lt;/code&gt;</ept> statement is entered, the previous statements will be evaluated.</target>
+          </trans-unit>
+          <trans-unit id="177" xml:space="preserve">
+            <source>First, the <bpt id="2">&lt;strong&gt;</bpt>mobiledata<ept id="2">&lt;/strong&gt;</ept> table is created, then a clustered index is added to it (required by SQL Database.)</source>
+            <target state="new">First, the <bpt id="2">&lt;strong&gt;</bpt>mobiledata<ept id="2">&lt;/strong&gt;</ept> table is created, then a clustered index is added to it (required by SQL Database.)</target>
+          </trans-unit>
+          <trans-unit id="178" xml:space="preserve">
+            <source>Use the following to verify that the table has been created:</source>
+            <target state="new">Use the following to verify that the table has been created:</target>
+          </trans-unit>
+          <trans-unit id="179" xml:space="preserve">
+            <source>You should see output similar to the following:</source>
+            <target state="new">You should see output similar to the following:</target>
+          </trans-unit>
+          <trans-unit id="180" xml:space="preserve">
+            <source>Enter <bpt id="2">&lt;code&gt;</bpt>exit<ept id="2">&lt;/code&gt;</ept> at the <bpt id="4">&lt;code&gt;</bpt>1&gt;<ept id="4">&lt;/code&gt;</ept> prompt to exit the tsql utility.</source>
+            <target state="new">Enter <bpt id="2">&lt;code&gt;</bpt>exit<ept id="2">&lt;/code&gt;</ept> at the <bpt id="4">&lt;code&gt;</bpt>1&gt;<ept id="4">&lt;/code&gt;</ept> prompt to exit the tsql utility.</target>
+          </trans-unit>
+          <trans-unit id="181" xml:space="preserve">
+            <source>Sqoop export</source>
+            <target state="new">Sqoop export</target>
+          </trans-unit>
+          <trans-unit id="182" xml:space="preserve">
+            <source>Use the following command to create a link to the SQL Server JDBC driver from the Sqoop lib directory.</source>
+            <target state="new">Use the following command to create a link to the SQL Server JDBC driver from the Sqoop lib directory.</target>
+          </trans-unit>
+          <trans-unit id="183" xml:space="preserve">
+            <source>This allows Sqoop to use this driver to talk to SQL Database:</source>
+            <target state="new">This allows Sqoop to use this driver to talk to SQL Database:</target>
+          </trans-unit>
+          <trans-unit id="184" xml:space="preserve">
+            <source>Use the following command to verify that Sqoop can see your SQL Database:</source>
+            <target state="new">Use the following command to verify that Sqoop can see your SQL Database:</target>
+          </trans-unit>
+          <trans-unit id="185" xml:space="preserve">
+            <source>This should return a list of databases, including the <bpt id="2">&lt;strong&gt;</bpt>sqooptest<ept id="2">&lt;/strong&gt;</ept> database that you created earlier.</source>
+            <target state="new">This should return a list of databases, including the <bpt id="2">&lt;strong&gt;</bpt>sqooptest<ept id="2">&lt;/strong&gt;</ept> database that you created earlier.</target>
+          </trans-unit>
+          <trans-unit id="186" xml:space="preserve">
+            <source>Use the following command to export data from <bpt id="2">&lt;strong&gt;</bpt>hivesampletable<ept id="2">&lt;/strong&gt;</ept> to the <bpt id="4">&lt;strong&gt;</bpt>mobiledata<ept id="4">&lt;/strong&gt;</ept> table:</source>
+            <target state="new">Use the following command to export data from <bpt id="2">&lt;strong&gt;</bpt>hivesampletable<ept id="2">&lt;/strong&gt;</ept> to the <bpt id="4">&lt;strong&gt;</bpt>mobiledata<ept id="4">&lt;/strong&gt;</ept> table:</target>
+          </trans-unit>
+          <trans-unit id="187" xml:space="preserve">
+            <source>This instructs Sqoop to connect to SQL Database, to the <bpt id="2">&lt;strong&gt;</bpt>sqooptest<ept id="2">&lt;/strong&gt;</ept> database, and export data from the <bpt id="4">&lt;strong&gt;</bpt>wasb:///hive/warehouse/hivesampletable<ept id="4">&lt;/strong&gt;</ept> (physical files for the <bpt id="6">&lt;em&gt;</bpt>hivesampletable<ept id="6">&lt;/em&gt;</ept>,) to the <bpt id="8">&lt;strong&gt;</bpt>mobiledata<ept id="8">&lt;/strong&gt;</ept> table.</source>
+            <target state="new">This instructs Sqoop to connect to SQL Database, to the <bpt id="2">&lt;strong&gt;</bpt>sqooptest<ept id="2">&lt;/strong&gt;</ept> database, and export data from the <bpt id="4">&lt;strong&gt;</bpt>wasb:///hive/warehouse/hivesampletable<ept id="4">&lt;/strong&gt;</ept> (physical files for the <bpt id="6">&lt;em&gt;</bpt>hivesampletable<ept id="6">&lt;/em&gt;</ept>,) to the <bpt id="8">&lt;strong&gt;</bpt>mobiledata<ept id="8">&lt;/strong&gt;</ept> table.</target>
+          </trans-unit>
+          <trans-unit id="188" xml:space="preserve">
+            <source>After the command completes, use the following to connect to the database using TSQL:</source>
+            <target state="new">After the command completes, use the following to connect to the database using TSQL:</target>
+          </trans-unit>
+          <trans-unit id="189" xml:space="preserve">
+            <source>Once connected, use the following statements to verify that the data was exported to the <bpt id="2">&lt;strong&gt;</bpt>mobiledata<ept id="2">&lt;/strong&gt;</ept> table:</source>
+            <target state="new">Once connected, use the following statements to verify that the data was exported to the <bpt id="2">&lt;strong&gt;</bpt>mobiledata<ept id="2">&lt;/strong&gt;</ept> table:</target>
+          </trans-unit>
+          <trans-unit id="190" xml:space="preserve">
+            <source>You should see a listing of data in the table.</source>
+            <target state="new">You should see a listing of data in the table.</target>
+          </trans-unit>
+          <trans-unit id="191" xml:space="preserve">
+            <source>Type <bpt id="2">&lt;code&gt;</bpt>exit<ept id="2">&lt;/code&gt;</ept> to exit the tsql utility.</source>
+            <target state="new">Type <bpt id="2">&lt;code&gt;</bpt>exit<ept id="2">&lt;/code&gt;</ept> to exit the tsql utility.</target>
+          </trans-unit>
+          <trans-unit id="192" xml:space="preserve">
+            <source>Sqoop import</source>
+            <target state="new">Sqoop import</target>
+          </trans-unit>
+          <trans-unit id="193" xml:space="preserve">
+            <source>Use the following to import data from the <bpt id="2">&lt;strong&gt;</bpt>mobiledata<ept id="2">&lt;/strong&gt;</ept> table in SQL Database, to the <bpt id="4">&lt;strong&gt;</bpt>wasb:///tutorials/usesqoop/importeddata<ept id="4">&lt;/strong&gt;</ept> directory on HDInsight:</source>
+            <target state="new">Use the following to import data from the <bpt id="2">&lt;strong&gt;</bpt>mobiledata<ept id="2">&lt;/strong&gt;</ept> table in SQL Database, to the <bpt id="4">&lt;strong&gt;</bpt>wasb:///tutorials/usesqoop/importeddata<ept id="4">&lt;/strong&gt;</ept> directory on HDInsight:</target>
+          </trans-unit>
+          <trans-unit id="194" xml:space="preserve">
+            <source>The imported data will have fields that are separated by a tab character, and the lines will be terminated by a new-line character.</source>
+            <target state="new">The imported data will have fields that are separated by a tab character, and the lines will be terminated by a new-line character.</target>
+          </trans-unit>
+          <trans-unit id="195" xml:space="preserve">
+            <source>Once the import has completed, use the following command to list out the data in the new directory:</source>
+            <target state="new">Once the import has completed, use the following command to list out the data in the new directory:</target>
+          </trans-unit>
+          <trans-unit id="196" xml:space="preserve">
+            <source>Using SQL Server</source>
+            <target state="new">Using SQL Server</target>
+          </trans-unit>
+          <trans-unit id="197" xml:space="preserve">
+            <source>You can also use Sqoop to import and export data from SQL Server, either in your data center or on a Virtual Machine hosted in Azure.</source>
+            <target state="new">You can also use Sqoop to import and export data from SQL Server, either in your data center or on a Virtual Machine hosted in Azure.</target>
+          </trans-unit>
+          <trans-unit id="198" xml:space="preserve">
+            <source>The differences between using SQL Database and SQL Server are:</source>
+            <target state="new">The differences between using SQL Database and SQL Server are:</target>
+          </trans-unit>
+          <trans-unit id="199" xml:space="preserve">
+            <source>Both HDInsight and the SQL Server must be on the same Azure Virtual Network</source>
+            <target state="new">Both HDInsight and the SQL Server must be on the same Azure Virtual Network</target>
+          </trans-unit>
+          <trans-unit id="200" xml:space="preserve">
+            <source>HDInsight supports only location-based virtual networks, and it does not currently work with affinity group-based virtual networks.</source>
+            <target state="new">HDInsight supports only location-based virtual networks, and it does not currently work with affinity group-based virtual networks.</target>
+          </trans-unit>
+          <trans-unit id="201" xml:space="preserve">
+            <source>When you are using SQL Server in your datacenter, you must configure the virtual network as <bpt id="2">&lt;em&gt;</bpt>site-to-site<ept id="2">&lt;/em&gt;</ept> or <bpt id="4">&lt;em&gt;</bpt>point-to-site<ept id="4">&lt;/em&gt;</ept>.</source>
+            <target state="new">When you are using SQL Server in your datacenter, you must configure the virtual network as <bpt id="2">&lt;em&gt;</bpt>site-to-site<ept id="2">&lt;/em&gt;</ept> or <bpt id="4">&lt;em&gt;</bpt>point-to-site<ept id="4">&lt;/em&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="202" xml:space="preserve">
+            <source>For <bpt id="2">&lt;strong&gt;</bpt>point-to-site<ept id="2">&lt;/strong&gt;</ept> virtual networks, SQL Server must be running the VPN client configuration application, which is available from the <bpt id="4">&lt;strong&gt;</bpt>Dashboard<ept id="4">&lt;/strong&gt;</ept> of your Azure virtual network configuration.</source>
+            <target state="new">For <bpt id="2">&lt;strong&gt;</bpt>point-to-site<ept id="2">&lt;/strong&gt;</ept> virtual networks, SQL Server must be running the VPN client configuration application, which is available from the <bpt id="4">&lt;strong&gt;</bpt>Dashboard<ept id="4">&lt;/strong&gt;</ept> of your Azure virtual network configuration.</target>
+          </trans-unit>
+          <trans-unit id="203" xml:space="preserve">
+            <source>For more information on creating and configuring a virtual network, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Virtual Network Configuration Tasks<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information on creating and configuring a virtual network, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Virtual Network Configuration Tasks<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="204" xml:space="preserve">
+            <source>SQL Server must be configured to allow SQL authentication.</source>
+            <target state="new">SQL Server must be configured to allow SQL authentication.</target>
+          </trans-unit>
+          <trans-unit id="205" xml:space="preserve">
+            <source>For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Choose an Authentication Mode<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new">For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Choose an Authentication Mode<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="206" xml:space="preserve">
+            <source>You may have to configure SQL Server to accept remote connections.</source>
+            <target state="new">You may have to configure SQL Server to accept remote connections.</target>
+          </trans-unit>
+          <trans-unit id="207" xml:space="preserve">
+            <source>See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>How to troubleshoot connecting to the SQL Server database engine<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for more information</source>
+            <target state="new">See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>How to troubleshoot connecting to the SQL Server database engine<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for more information</target>
+          </trans-unit>
+          <trans-unit id="208" xml:space="preserve">
+            <source>You must create the <bpt id="2">&lt;strong&gt;</bpt>sqooptest<ept id="2">&lt;/strong&gt;</ept> database in SQL Server using a utility such as <bpt id="4">&lt;strong&gt;</bpt>SQL Server Management Studio<ept id="4">&lt;/strong&gt;</ept> or <bpt id="6">&lt;strong&gt;</bpt>tsql<ept id="6">&lt;/strong&gt;</ept> - the steps for using the Azure CLI only work for Azure SQL Database</source>
+            <target state="new">You must create the <bpt id="2">&lt;strong&gt;</bpt>sqooptest<ept id="2">&lt;/strong&gt;</ept> database in SQL Server using a utility such as <bpt id="4">&lt;strong&gt;</bpt>SQL Server Management Studio<ept id="4">&lt;/strong&gt;</ept> or <bpt id="6">&lt;strong&gt;</bpt>tsql<ept id="6">&lt;/strong&gt;</ept> - the steps for using the Azure CLI only work for Azure SQL Database</target>
+          </trans-unit>
+          <trans-unit id="209" xml:space="preserve">
+            <source>The TSQL statements to create the <bpt id="2">&lt;strong&gt;</bpt>mobiledata<ept id="2">&lt;/strong&gt;</ept> table are similar those used for SQL Database, with the exception of creating a clusterd index - this is not required for SQL Server:</source>
+            <target state="new">The TSQL statements to create the <bpt id="2">&lt;strong&gt;</bpt>mobiledata<ept id="2">&lt;/strong&gt;</ept> table are similar those used for SQL Database, with the exception of creating a clusterd index - this is not required for SQL Server:</target>
+          </trans-unit>
+          <trans-unit id="210" xml:space="preserve">
+            <source>When connecting to the SQL Server from HDInsight, you may have to use the IP address of the SQL Server unless you have configured a Domain Name System (DNS) to resolve names on the Azure Virtual Network.</source>
+            <target state="new">When connecting to the SQL Server from HDInsight, you may have to use the IP address of the SQL Server unless you have configured a Domain Name System (DNS) to resolve names on the Azure Virtual Network.</target>
+          </trans-unit>
+          <trans-unit id="211" xml:space="preserve">
+            <source>For example:</source>
+            <target state="new">For example:</target>
+          </trans-unit>
+          <trans-unit id="212" xml:space="preserve">
+            <source>Next steps</source>
+            <target state="new">Next steps</target>
+          </trans-unit>
+          <trans-unit id="213" xml:space="preserve">
+            <source>Now you have learned how to use Sqoop.</source>
+            <target state="new">Now you have learned how to use Sqoop.</target>
+          </trans-unit>
+          <trans-unit id="214" xml:space="preserve">
+            <source>To learn more, see:</source>
+            <target state="new">To learn more, see:</target>
+          </trans-unit>
+          <trans-unit id="215" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use Oozie with HDInsight[hdinsight-use-oozie]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept>: Use Sqoop action in an Oozie workflow.</source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use Oozie with HDInsight[hdinsight-use-oozie]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept>: Use Sqoop action in an Oozie workflow.</target>
+          </trans-unit>
+          <trans-unit id="216" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Analyze flight delay data using HDInsight[hdinsight-analyze-flight-data]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept>: Use Hive to analyze flight delay data, and then use Sqoop to export data to an Azure SQL database.</source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Analyze flight delay data using HDInsight[hdinsight-analyze-flight-data]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept>: Use Hive to analyze flight delay data, and then use Sqoop to export data to an Azure SQL database.</target>
+          </trans-unit>
+          <trans-unit id="217" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Upload data to HDInsight[hdinsight-upload-data]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept>: Find other methods for uploading data to HDInsight/Azure Blob storage.</source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Upload data to HDInsight[hdinsight-upload-data]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept>: Find other methods for uploading data to HDInsight/Azure Blob storage.</target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>

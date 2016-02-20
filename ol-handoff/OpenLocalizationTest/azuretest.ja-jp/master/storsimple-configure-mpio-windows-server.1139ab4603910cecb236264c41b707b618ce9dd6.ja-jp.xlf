@@ -1,0 +1,623 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="ja-jp" original="2/20/2016 9:37:43 AM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b4e68780e67e26fa41c63ce83e132d0d7c1486c6</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Configure MPIO for your StorSimple device | Microsoft Azure</source>
+            <target state="new">Configure MPIO for your StorSimple device | Microsoft Azure</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>Describes how to configure Multipath I/O (MPIO) for your StorSimple device connected to a host running Windows Server 2012 R2.</source>
+            <target state="new">Describes how to configure Multipath I/O (MPIO) for your StorSimple device connected to a host running Windows Server 2012 R2.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Configure Multipath I/O for your StorSimple device</source>
+            <target state="new">Configure Multipath I/O for your StorSimple device</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source>Microsoft built support for the Multipath I/O (MPIO) feature in Windows Server to help build highly available, fault-tolerant SAN configurations.</source>
+            <target state="new">Microsoft built support for the Multipath I/O (MPIO) feature in Windows Server to help build highly available, fault-tolerant SAN configurations.</target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>MPIO uses redundant physical path components — adapters, cables, and switches — to create logical paths between the server and the storage device.</source>
+            <target state="new">MPIO uses redundant physical path components — adapters, cables, and switches — to create logical paths between the server and the storage device.</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>If there is a component failure, causing a logical path to fail, multipathing logic uses an alternate path for I/O so that applications can still access their data.</source>
+            <target state="new">If there is a component failure, causing a logical path to fail, multipathing logic uses an alternate path for I/O so that applications can still access their data.</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>Additionally depending on your configuration, MPIO can also improve performance by re-balancing the load across all these paths.</source>
+            <target state="new">Additionally depending on your configuration, MPIO can also improve performance by re-balancing the load across all these paths.</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>MPIO overview<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt>MPIO overview and features<ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>MPIO overview<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt>MPIO overview and features<ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source>For the high-availability of your StorSimple solution, MPIO should be configured on your StorSimple device.</source>
+            <target state="new">For the high-availability of your StorSimple solution, MPIO should be configured on your StorSimple device.</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source>When MPIO is installed on your host servers running Windows Server 2012 R2, the servers can then tolerate a link, network, or interface failure.</source>
+            <target state="new">When MPIO is installed on your host servers running Windows Server 2012 R2, the servers can then tolerate a link, network, or interface failure.</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>MPIO is an optional feature on Windows Server and is not installed by default.</source>
+            <target state="new">MPIO is an optional feature on Windows Server and is not installed by default.</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source>It should be installed as a feature through Server Manager.</source>
+            <target state="new">It should be installed as a feature through Server Manager.</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>This topic describes the steps you should follow to install and use the MPIO feature on a host running Windows Server 2012 R2 and connected to a StorSimple physical device.</source>
+            <target state="new">This topic describes the steps you should follow to install and use the MPIO feature on a host running Windows Server 2012 R2 and connected to a StorSimple physical device.</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>MPIO is not supported on a StorSimple virtual device.<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>MPIO is not supported on a StorSimple virtual device.<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>You will need to follow these steps to configure MPIO on your StorSimple device:</source>
+            <target state="new">You will need to follow these steps to configure MPIO on your StorSimple device:</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source>Step 1: Install MPIO on the Windows Server host</source>
+            <target state="new">Step 1: Install MPIO on the Windows Server host</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>Step 2: Configure MPIO for StorSimple volumes</source>
+            <target state="new">Step 2: Configure MPIO for StorSimple volumes</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>Step 3: Mount StorSimple volumes on the host</source>
+            <target state="new">Step 3: Mount StorSimple volumes on the host</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source>Step 4: Configure MPIO for high availability and load balancing</source>
+            <target state="new">Step 4: Configure MPIO for high availability and load balancing</target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source>Each of the above steps is discussed in the following sections.</source>
+            <target state="new">Each of the above steps is discussed in the following sections.</target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source>Step 1: Install MPIO on the Windows Server host</source>
+            <target state="new">Step 1: Install MPIO on the Windows Server host</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source>To install this feature on your Windows Server host, complete the following procedure.</source>
+            <target state="new">To install this feature on your Windows Server host, complete the following procedure.</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>To install MPIO on the host</source>
+            <target state="new">To install MPIO on the host</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source>Open Server Manager on your Windows Server host.</source>
+            <target state="new">Open Server Manager on your Windows Server host.</target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>By default, Server Manager starts when a member of the Administrators group logs on to a computer that is running Windows Server 2012 R2 or Windows Server 2012.</source>
+            <target state="new">By default, Server Manager starts when a member of the Administrators group logs on to a computer that is running Windows Server 2012 R2 or Windows Server 2012.</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>If Server Manager is not already open, click <bpt id="2">&lt;strong&gt;</bpt>Start &gt; Server Manager<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">If Server Manager is not already open, click <bpt id="2">&lt;strong&gt;</bpt>Start &gt; Server Manager<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Server Manager<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Server Manager<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Server Manager &gt; Dashboard &gt; Add roles and features<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Server Manager &gt; Dashboard &gt; Add roles and features<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source>This starts the <bpt id="2">&lt;strong&gt;</bpt>Add Roles and Features<ept id="2">&lt;/strong&gt;</ept> wizard.</source>
+            <target state="new">This starts the <bpt id="2">&lt;strong&gt;</bpt>Add Roles and Features<ept id="2">&lt;/strong&gt;</ept> wizard.</target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Add Roles And Features Wizard 1<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Add Roles And Features Wizard 1<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Add Roles and Features<ept id="2">&lt;/strong&gt;</ept> wizard, do the following:</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Add Roles and Features<ept id="2">&lt;/strong&gt;</ept> wizard, do the following:</target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Before you begin<ept id="2">&lt;/strong&gt;</ept> page, click <bpt id="4">&lt;strong&gt;</bpt>Next<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Before you begin<ept id="2">&lt;/strong&gt;</ept> page, click <bpt id="4">&lt;strong&gt;</bpt>Next<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Select installation type<ept id="2">&lt;/strong&gt;</ept> page, accept the default setting of <bpt id="4">&lt;strong&gt;</bpt>Role-based or feature-based<ept id="4">&lt;/strong&gt;</ept> installation.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Select installation type<ept id="2">&lt;/strong&gt;</ept> page, accept the default setting of <bpt id="4">&lt;strong&gt;</bpt>Role-based or feature-based<ept id="4">&lt;/strong&gt;</ept> installation.</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Next<ept id="2">&lt;/strong&gt;</ept>.<bpt id="4">&lt;linkText&gt;</bpt>Add Roles And Features Wizard 2<ept id="4">&lt;/linkText&gt;</ept></source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Next<ept id="2">&lt;/strong&gt;</ept>.<bpt id="4">&lt;linkText&gt;</bpt>Add Roles And Features Wizard 2<ept id="4">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Select destination server<ept id="2">&lt;/strong&gt;</ept> page, choose <bpt id="4">&lt;strong&gt;</bpt>Select a server from the server pool<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Select destination server<ept id="2">&lt;/strong&gt;</ept> page, choose <bpt id="4">&lt;strong&gt;</bpt>Select a server from the server pool<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source>Your host server should be discovered automatically.</source>
+            <target state="new">Your host server should be discovered automatically.</target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Next<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Next<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Select server roles<ept id="2">&lt;/strong&gt;</ept> page, click <bpt id="4">&lt;strong&gt;</bpt>Next<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Select server roles<ept id="2">&lt;/strong&gt;</ept> page, click <bpt id="4">&lt;strong&gt;</bpt>Next<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Select features<ept id="2">&lt;/strong&gt;</ept> page, select <bpt id="4">&lt;strong&gt;</bpt>Multipath I/O<ept id="4">&lt;/strong&gt;</ept>, and click <bpt id="6">&lt;strong&gt;</bpt>Next<ept id="6">&lt;/strong&gt;</ept>.<bpt id="8">&lt;linkText&gt;</bpt>Add Roles And Features Wizard 5<ept id="8">&lt;/linkText&gt;</ept></source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Select features<ept id="2">&lt;/strong&gt;</ept> page, select <bpt id="4">&lt;strong&gt;</bpt>Multipath I/O<ept id="4">&lt;/strong&gt;</ept>, and click <bpt id="6">&lt;strong&gt;</bpt>Next<ept id="6">&lt;/strong&gt;</ept>.<bpt id="8">&lt;linkText&gt;</bpt>Add Roles And Features Wizard 5<ept id="8">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Confirm installation selections<ept id="2">&lt;/strong&gt;</ept> page, confirm the selection and then select <bpt id="4">&lt;strong&gt;</bpt>Restart the destination server automatically if required<ept id="4">&lt;/strong&gt;</ept>, as shown below.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Confirm installation selections<ept id="2">&lt;/strong&gt;</ept> page, confirm the selection and then select <bpt id="4">&lt;strong&gt;</bpt>Restart the destination server automatically if required<ept id="4">&lt;/strong&gt;</ept>, as shown below.</target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Install<ept id="2">&lt;/strong&gt;</ept>.<bpt id="4">&lt;linkText&gt;</bpt>Add Roles And Features Wizard 8<ept id="4">&lt;/linkText&gt;</ept></source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Install<ept id="2">&lt;/strong&gt;</ept>.<bpt id="4">&lt;linkText&gt;</bpt>Add Roles And Features Wizard 8<ept id="4">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source>You will be notified when the installation is complete.</source>
+            <target state="new">You will be notified when the installation is complete.</target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Close<ept id="2">&lt;/strong&gt;</ept> to close the wizard.<bpt id="4">&lt;linkText&gt;</bpt>Add Roles And Features Wizard 9<ept id="4">&lt;/linkText&gt;</ept></source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Close<ept id="2">&lt;/strong&gt;</ept> to close the wizard.<bpt id="4">&lt;linkText&gt;</bpt>Add Roles And Features Wizard 9<ept id="4">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source>Step 2: Configure MPIO for StorSimple volumes</source>
+            <target state="new">Step 2: Configure MPIO for StorSimple volumes</target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source>MPIO needs to be configured to identify StorSimple volumes.</source>
+            <target state="new">MPIO needs to be configured to identify StorSimple volumes.</target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source>To configure MPIO to recognize StorSimple volumes, perform the following steps.</source>
+            <target state="new">To configure MPIO to recognize StorSimple volumes, perform the following steps.</target>
+          </trans-unit>
+          <trans-unit id="147" xml:space="preserve">
+            <source>To configure MPIO for StorSimple volumes</source>
+            <target state="new">To configure MPIO for StorSimple volumes</target>
+          </trans-unit>
+          <trans-unit id="148" xml:space="preserve">
+            <source>Open the <bpt id="2">&lt;strong&gt;</bpt>MPIO configuration<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Open the <bpt id="2">&lt;strong&gt;</bpt>MPIO configuration<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="149" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Server Manager &gt; Dashboard &gt; Tools &gt; MPIO<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Server Manager &gt; Dashboard &gt; Tools &gt; MPIO<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="150" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>MPIO Properties<ept id="2">&lt;/strong&gt;</ept> dialog box, select the <bpt id="4">&lt;strong&gt;</bpt>Discover Multi-Paths<ept id="4">&lt;/strong&gt;</ept> tab.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>MPIO Properties<ept id="2">&lt;/strong&gt;</ept> dialog box, select the <bpt id="4">&lt;strong&gt;</bpt>Discover Multi-Paths<ept id="4">&lt;/strong&gt;</ept> tab.</target>
+          </trans-unit>
+          <trans-unit id="151" xml:space="preserve">
+            <source>Select <bpt id="2">&lt;strong&gt;</bpt>Add support for iSCSI devices<ept id="2">&lt;/strong&gt;</ept>, and then click <bpt id="4">&lt;strong&gt;</bpt>Add<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Select <bpt id="2">&lt;strong&gt;</bpt>Add support for iSCSI devices<ept id="2">&lt;/strong&gt;</ept>, and then click <bpt id="4">&lt;strong&gt;</bpt>Add<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="152" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>MPIO Properties Discover Multi Paths<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>MPIO Properties Discover Multi Paths<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="153" xml:space="preserve">
+            <source>Reboot the server when prompted.</source>
+            <target state="new">Reboot the server when prompted.</target>
+          </trans-unit>
+          <trans-unit id="154" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>MPIO Properties<ept id="2">&lt;/strong&gt;</ept> dialog box, click the <bpt id="4">&lt;strong&gt;</bpt>MPIO Devices<ept id="4">&lt;/strong&gt;</ept> tab.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>MPIO Properties<ept id="2">&lt;/strong&gt;</ept> dialog box, click the <bpt id="4">&lt;strong&gt;</bpt>MPIO Devices<ept id="4">&lt;/strong&gt;</ept> tab.</target>
+          </trans-unit>
+          <trans-unit id="155" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Add<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Add<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="156" xml:space="preserve">
+            <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;linkText&gt;</bpt>MPIO Properties MPIO Devices<ept id="2">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;linkText&gt;</bpt>MPIO Properties MPIO Devices<ept id="2">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="157" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Add MPIO Support<ept id="2">&lt;/strong&gt;</ept> dialog box, under <bpt id="4">&lt;strong&gt;</bpt>Device Hardware ID<ept id="4">&lt;/strong&gt;</ept>, enter your device serial number.You can get the device serial number by accessing your StorSimple Manager service and navigating to <bpt id="6">&lt;strong&gt;</bpt>Devices &gt; Dashboard<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Add MPIO Support<ept id="2">&lt;/strong&gt;</ept> dialog box, under <bpt id="4">&lt;strong&gt;</bpt>Device Hardware ID<ept id="4">&lt;/strong&gt;</ept>, enter your device serial number.You can get the device serial number by accessing your StorSimple Manager service and navigating to <bpt id="6">&lt;strong&gt;</bpt>Devices &gt; Dashboard<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="158" xml:space="preserve">
+            <source>The device serial number is displayed in the right <bpt id="2">&lt;strong&gt;</bpt>Quick Glance<ept id="2">&lt;/strong&gt;</ept> pane of the device dashboard.</source>
+            <target state="new">The device serial number is displayed in the right <bpt id="2">&lt;strong&gt;</bpt>Quick Glance<ept id="2">&lt;/strong&gt;</ept> pane of the device dashboard.</target>
+          </trans-unit>
+          <trans-unit id="159" xml:space="preserve">
+            <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;linkText&gt;</bpt>Add MPIO Support<ept id="2">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;linkText&gt;</bpt>Add MPIO Support<ept id="2">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
+            <source>Reboot the server when prompted.</source>
+            <target state="new">Reboot the server when prompted.</target>
+          </trans-unit>
+          <trans-unit id="161" xml:space="preserve">
+            <source>Step 3: Mount StorSimple volumes on the host</source>
+            <target state="new">Step 3: Mount StorSimple volumes on the host</target>
+          </trans-unit>
+          <trans-unit id="162" xml:space="preserve">
+            <source>After MPIO is configured on Windows Server, volume(s) created on the StorSimple device can be mounted and can then take advantage of MPIO for redundancy.</source>
+            <target state="new">After MPIO is configured on Windows Server, volume(s) created on the StorSimple device can be mounted and can then take advantage of MPIO for redundancy.</target>
+          </trans-unit>
+          <trans-unit id="163" xml:space="preserve">
+            <source>To mount a volume, perform the following steps.</source>
+            <target state="new">To mount a volume, perform the following steps.</target>
+          </trans-unit>
+          <trans-unit id="164" xml:space="preserve">
+            <source>To mount volumes on the host</source>
+            <target state="new">To mount volumes on the host</target>
+          </trans-unit>
+          <trans-unit id="165" xml:space="preserve">
+            <source>Open the <bpt id="2">&lt;strong&gt;</bpt>iSCSI Initiator Properties<ept id="2">&lt;/strong&gt;</ept> window on the Windows Server host.</source>
+            <target state="new">Open the <bpt id="2">&lt;strong&gt;</bpt>iSCSI Initiator Properties<ept id="2">&lt;/strong&gt;</ept> window on the Windows Server host.</target>
+          </trans-unit>
+          <trans-unit id="166" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Server Manager &gt; Dashboard &gt; Tools &gt; iSCSI Initiator<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Server Manager &gt; Dashboard &gt; Tools &gt; iSCSI Initiator<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="167" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>iSCSI Initiator Properties<ept id="2">&lt;/strong&gt;</ept> dialog box, click the Discovery tab, and then click <bpt id="4">&lt;strong&gt;</bpt>Discover Target Portal<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>iSCSI Initiator Properties<ept id="2">&lt;/strong&gt;</ept> dialog box, click the Discovery tab, and then click <bpt id="4">&lt;strong&gt;</bpt>Discover Target Portal<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="168" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Discover Target Portal<ept id="2">&lt;/strong&gt;</ept> dialog box, do the following:</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Discover Target Portal<ept id="2">&lt;/strong&gt;</ept> dialog box, do the following:</target>
+          </trans-unit>
+          <trans-unit id="169" xml:space="preserve">
+            <source>Enter the IP address of the DATA port of your StorSimple device (for example, enter DATA 0).</source>
+            <target state="new">Enter the IP address of the DATA port of your StorSimple device (for example, enter DATA 0).</target>
+          </trans-unit>
+          <trans-unit id="170" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>OK<ept id="2">&lt;/strong&gt;</ept> to return to the <bpt id="4">&lt;strong&gt;</bpt>iSCSI Initiator Properties<ept id="4">&lt;/strong&gt;</ept> dialog box.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>OK<ept id="2">&lt;/strong&gt;</ept> to return to the <bpt id="4">&lt;strong&gt;</bpt>iSCSI Initiator Properties<ept id="4">&lt;/strong&gt;</ept> dialog box.</target>
+          </trans-unit>
+          <trans-unit id="171" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>If you are using a private network for iSCSI connections, enter the IP address of the DATA port that is connected to the private network.<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>If you are using a private network for iSCSI connections, enter the IP address of the DATA port that is connected to the private network.<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="172" xml:space="preserve">
+            <source>Repeat steps 2-3 for a second network interface (for example, DATA 1) on your device.</source>
+            <target state="new">Repeat steps 2-3 for a second network interface (for example, DATA 1) on your device.</target>
+          </trans-unit>
+          <trans-unit id="173" xml:space="preserve">
+            <source>Keep in mind that these interfaces should be enabled for iSCSI.</source>
+            <target state="new">Keep in mind that these interfaces should be enabled for iSCSI.</target>
+          </trans-unit>
+          <trans-unit id="174" xml:space="preserve">
+            <source>To learn more about this, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Modify network interfaces<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">To learn more about this, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Modify network interfaces<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="175" xml:space="preserve">
+            <source>Select the <bpt id="2">&lt;strong&gt;</bpt>Targets<ept id="2">&lt;/strong&gt;</ept> tab in the <bpt id="4">&lt;strong&gt;</bpt>iSCSI Initiator Properties<ept id="4">&lt;/strong&gt;</ept> dialog box.</source>
+            <target state="new">Select the <bpt id="2">&lt;strong&gt;</bpt>Targets<ept id="2">&lt;/strong&gt;</ept> tab in the <bpt id="4">&lt;strong&gt;</bpt>iSCSI Initiator Properties<ept id="4">&lt;/strong&gt;</ept> dialog box.</target>
+          </trans-unit>
+          <trans-unit id="176" xml:space="preserve">
+            <source>You should see the StorSimple device target IQN under <bpt id="2">&lt;strong&gt;</bpt>Discovered Targets<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">You should see the StorSimple device target IQN under <bpt id="2">&lt;strong&gt;</bpt>Discovered Targets<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="177" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>iSCSI Initiator Properties Targets Tab<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>iSCSI Initiator Properties Targets Tab<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="178" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Connect<ept id="2">&lt;/strong&gt;</ept> to establish an iSCSI session with your StorSimple device.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Connect<ept id="2">&lt;/strong&gt;</ept> to establish an iSCSI session with your StorSimple device.</target>
+          </trans-unit>
+          <trans-unit id="179" xml:space="preserve">
+            <source>A <bpt id="2">&lt;strong&gt;</bpt>Connect to Target<ept id="2">&lt;/strong&gt;</ept> dialog box will appear.</source>
+            <target state="new">A <bpt id="2">&lt;strong&gt;</bpt>Connect to Target<ept id="2">&lt;/strong&gt;</ept> dialog box will appear.</target>
+          </trans-unit>
+          <trans-unit id="180" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Connect to Target<ept id="2">&lt;/strong&gt;</ept> dialog box, select the <bpt id="4">&lt;strong&gt;</bpt>Enable multi-path<ept id="4">&lt;/strong&gt;</ept> check box.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Connect to Target<ept id="2">&lt;/strong&gt;</ept> dialog box, select the <bpt id="4">&lt;strong&gt;</bpt>Enable multi-path<ept id="4">&lt;/strong&gt;</ept> check box.</target>
+          </trans-unit>
+          <trans-unit id="181" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Advanced<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Advanced<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="182" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Advanced Settings<ept id="2">&lt;/strong&gt;</ept> dialog box, do the following:</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Advanced Settings<ept id="2">&lt;/strong&gt;</ept> dialog box, do the following:</target>
+          </trans-unit>
+          <trans-unit id="183" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Properties<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Properties<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="184" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Properties<ept id="2">&lt;/strong&gt;</ept> dialog box, click <bpt id="4">&lt;strong&gt;</bpt>Add Session<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Properties<ept id="2">&lt;/strong&gt;</ept> dialog box, click <bpt id="4">&lt;strong&gt;</bpt>Add Session<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="185" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Connect to Target<ept id="2">&lt;/strong&gt;</ept> dialog box, select the <bpt id="4">&lt;strong&gt;</bpt>Enable multi-path<ept id="4">&lt;/strong&gt;</ept> check box.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Connect to Target<ept id="2">&lt;/strong&gt;</ept> dialog box, select the <bpt id="4">&lt;strong&gt;</bpt>Enable multi-path<ept id="4">&lt;/strong&gt;</ept> check box.</target>
+          </trans-unit>
+          <trans-unit id="186" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Advanced<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Advanced<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="187" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Advanced Settings<ept id="2">&lt;/strong&gt;</ept> dialog box:</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Advanced Settings<ept id="2">&lt;/strong&gt;</ept> dialog box:</target>
+          </trans-unit>
+          <trans-unit id="188" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Local adapter<ept id="2">&lt;/strong&gt;</ept> drop-down list, select Microsoft iSCSI Initiator.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Local adapter<ept id="2">&lt;/strong&gt;</ept> drop-down list, select Microsoft iSCSI Initiator.</target>
+          </trans-unit>
+          <trans-unit id="189" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Initiator IP<ept id="2">&lt;/strong&gt;</ept> drop-down list, select the IP address corresponding to the host.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Initiator IP<ept id="2">&lt;/strong&gt;</ept> drop-down list, select the IP address corresponding to the host.</target>
+          </trans-unit>
+          <trans-unit id="190" xml:space="preserve">
+            <source>In this case, you are connecting two network interfaces on the device to a single network interface on the host.</source>
+            <target state="new">In this case, you are connecting two network interfaces on the device to a single network interface on the host.</target>
+          </trans-unit>
+          <trans-unit id="191" xml:space="preserve">
+            <source>Therefore, this interface is the same as that provided for the first session.</source>
+            <target state="new">Therefore, this interface is the same as that provided for the first session.</target>
+          </trans-unit>
+          <trans-unit id="192" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Target Portal IP<ept id="2">&lt;/strong&gt;</ept> drop-down list, select the IP address for the second data interface enabled on the device.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Target Portal IP<ept id="2">&lt;/strong&gt;</ept> drop-down list, select the IP address for the second data interface enabled on the device.</target>
+          </trans-unit>
+          <trans-unit id="193" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>OK<ept id="2">&lt;/strong&gt;</ept> to return to the iSCSI Initiator Properties dialog box.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>OK<ept id="2">&lt;/strong&gt;</ept> to return to the iSCSI Initiator Properties dialog box.</target>
+          </trans-unit>
+          <trans-unit id="194" xml:space="preserve">
+            <source>You have added a second session to the target.</source>
+            <target state="new">You have added a second session to the target.</target>
+          </trans-unit>
+          <trans-unit id="195" xml:space="preserve">
+            <source>Open <bpt id="2">&lt;strong&gt;</bpt>Computer Management<ept id="2">&lt;/strong&gt;</ept> by navigating to <bpt id="4">&lt;strong&gt;</bpt>Server Manager &gt; Dashboard &gt; Computer Management<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Open <bpt id="2">&lt;strong&gt;</bpt>Computer Management<ept id="2">&lt;/strong&gt;</ept> by navigating to <bpt id="4">&lt;strong&gt;</bpt>Server Manager &gt; Dashboard &gt; Computer Management<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="196" xml:space="preserve">
+            <source>In the left pane, click <bpt id="2">&lt;strong&gt;</bpt>Storage &gt; Disk Management<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the left pane, click <bpt id="2">&lt;strong&gt;</bpt>Storage &gt; Disk Management<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="197" xml:space="preserve">
+            <source>The volume(s) created on the StorSimple device that are visible to this host will appear under <bpt id="2">&lt;strong&gt;</bpt>Disk Management<ept id="2">&lt;/strong&gt;</ept> as new disk(s).</source>
+            <target state="new">The volume(s) created on the StorSimple device that are visible to this host will appear under <bpt id="2">&lt;strong&gt;</bpt>Disk Management<ept id="2">&lt;/strong&gt;</ept> as new disk(s).</target>
+          </trans-unit>
+          <trans-unit id="198" xml:space="preserve">
+            <source>Initialize the disk and create a new volume.</source>
+            <target state="new">Initialize the disk and create a new volume.</target>
+          </trans-unit>
+          <trans-unit id="199" xml:space="preserve">
+            <source>During the format process, select a block size of 64 KB.</source>
+            <target state="new">During the format process, select a block size of 64 KB.</target>
+          </trans-unit>
+          <trans-unit id="200" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Disk Management<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Disk Management<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="201" xml:space="preserve">
+            <source>Under <bpt id="2">&lt;strong&gt;</bpt>Disk Management<ept id="2">&lt;/strong&gt;</ept>, right-click the <bpt id="4">&lt;strong&gt;</bpt>Disk<ept id="4">&lt;/strong&gt;</ept> and select <bpt id="6">&lt;strong&gt;</bpt>Properties<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Under <bpt id="2">&lt;strong&gt;</bpt>Disk Management<ept id="2">&lt;/strong&gt;</ept>, right-click the <bpt id="4">&lt;strong&gt;</bpt>Disk<ept id="4">&lt;/strong&gt;</ept> and select <bpt id="6">&lt;strong&gt;</bpt>Properties<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="202" xml:space="preserve">
+            <source>In the StorSimple Model #### <bpt id="2">&lt;strong&gt;</bpt>Multi-Path Disk Device Properties<ept id="2">&lt;/strong&gt;</ept> dialog box, click the <bpt id="4">&lt;strong&gt;</bpt>MPIO tab<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the StorSimple Model #### <bpt id="2">&lt;strong&gt;</bpt>Multi-Path Disk Device Properties<ept id="2">&lt;/strong&gt;</ept> dialog box, click the <bpt id="4">&lt;strong&gt;</bpt>MPIO tab<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="203" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>StorSimple 8100 Multi-Path Disk DeviceProp.<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>StorSimple 8100 Multi-Path Disk DeviceProp.<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="204" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>DSM Name<ept id="2">&lt;/strong&gt;</ept> section, click <bpt id="4">&lt;strong&gt;</bpt>Details<ept id="4">&lt;/strong&gt;</ept> and verify that the parameters are set to the default parameters.The default parameters are:</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>DSM Name<ept id="2">&lt;/strong&gt;</ept> section, click <bpt id="4">&lt;strong&gt;</bpt>Details<ept id="4">&lt;/strong&gt;</ept> and verify that the parameters are set to the default parameters.The default parameters are:</target>
+          </trans-unit>
+          <trans-unit id="205" xml:space="preserve">
+            <source>Path Verify Period = 30</source>
+            <target state="new">Path Verify Period = 30</target>
+          </trans-unit>
+          <trans-unit id="206" xml:space="preserve">
+            <source>Retry Count = 3</source>
+            <target state="new">Retry Count = 3</target>
+          </trans-unit>
+          <trans-unit id="207" xml:space="preserve">
+            <source>PDO Remove Period = 20</source>
+            <target state="new">PDO Remove Period = 20</target>
+          </trans-unit>
+          <trans-unit id="208" xml:space="preserve">
+            <source>Retry Interval = 1</source>
+            <target state="new">Retry Interval = 1</target>
+          </trans-unit>
+          <trans-unit id="209" xml:space="preserve">
+            <source>Path Verify Enabled = Unchecked.</source>
+            <target state="new">Path Verify Enabled = Unchecked.</target>
+          </trans-unit>
+          <trans-unit id="210" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Please do not modify the default parameters.<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Please do not modify the default parameters.<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="211" xml:space="preserve">
+            <source>Step 4: Configure MPIO for high availability and load balancing</source>
+            <target state="new">Step 4: Configure MPIO for high availability and load balancing</target>
+          </trans-unit>
+          <trans-unit id="212" xml:space="preserve">
+            <source>For multi-path based high availability and load balancing, multiple sessions must be manually added to declare the different paths available.</source>
+            <target state="new">For multi-path based high availability and load balancing, multiple sessions must be manually added to declare the different paths available.</target>
+          </trans-unit>
+          <trans-unit id="213" xml:space="preserve">
+            <source>For example, if the host has two interfaces connected to SAN and the device has two interfaces connected to SAN, then you need four sessions configured with proper path permutations (only two sessions will be required if each DATA interface and host interface is on a different IP subnet and is not routable).</source>
+            <target state="new">For example, if the host has two interfaces connected to SAN and the device has two interfaces connected to SAN, then you need four sessions configured with proper path permutations (only two sessions will be required if each DATA interface and host interface is on a different IP subnet and is not routable).</target>
+          </trans-unit>
+          <trans-unit id="214" xml:space="preserve">
+            <source>**We recommend that you do not mix 1 GbE and 10 GbE network interfaces.</source>
+            <target state="new">**We recommend that you do not mix 1 GbE and 10 GbE network interfaces.</target>
+          </trans-unit>
+          <trans-unit id="215" xml:space="preserve">
+            <source>If you use two network interfaces, both interfaces should be the identical type.**</source>
+            <target state="new">If you use two network interfaces, both interfaces should be the identical type.**</target>
+          </trans-unit>
+          <trans-unit id="216" xml:space="preserve">
+            <source>The following procedure describes how to add sessions when a StorSimple device with two network interfaces is connected to a host with two network interfaces.</source>
+            <target state="new">The following procedure describes how to add sessions when a StorSimple device with two network interfaces is connected to a host with two network interfaces.</target>
+          </trans-unit>
+          <trans-unit id="217" xml:space="preserve">
+            <source>To configure MPIO for high availability and load balancing</source>
+            <target state="new">To configure MPIO for high availability and load balancing</target>
+          </trans-unit>
+          <trans-unit id="218" xml:space="preserve">
+            <source>Perform a discovery of the target: in the <bpt id="2">&lt;strong&gt;</bpt>iSCSI Initiator Properties<ept id="2">&lt;/strong&gt;</ept> dialog box, on the <bpt id="4">&lt;strong&gt;</bpt>Discovery<ept id="4">&lt;/strong&gt;</ept> tab, click <bpt id="6">&lt;strong&gt;</bpt>Discover Portal<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Perform a discovery of the target: in the <bpt id="2">&lt;strong&gt;</bpt>iSCSI Initiator Properties<ept id="2">&lt;/strong&gt;</ept> dialog box, on the <bpt id="4">&lt;strong&gt;</bpt>Discovery<ept id="4">&lt;/strong&gt;</ept> tab, click <bpt id="6">&lt;strong&gt;</bpt>Discover Portal<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="219" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Connect to Target<ept id="2">&lt;/strong&gt;</ept> dialog box, enter the IP address of one of the device network interfaces.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Connect to Target<ept id="2">&lt;/strong&gt;</ept> dialog box, enter the IP address of one of the device network interfaces.</target>
+          </trans-unit>
+          <trans-unit id="220" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>OK<ept id="2">&lt;/strong&gt;</ept> to return to the <bpt id="4">&lt;strong&gt;</bpt>iSCSI Initiator Properties<ept id="4">&lt;/strong&gt;</ept> dialog box.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>OK<ept id="2">&lt;/strong&gt;</ept> to return to the <bpt id="4">&lt;strong&gt;</bpt>iSCSI Initiator Properties<ept id="4">&lt;/strong&gt;</ept> dialog box.</target>
+          </trans-unit>
+          <trans-unit id="221" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>iSCSI Initiator Properties<ept id="2">&lt;/strong&gt;</ept> dialog box, select the <bpt id="4">&lt;strong&gt;</bpt>Targets<ept id="4">&lt;/strong&gt;</ept> tab, highlight the discovered target, and then click <bpt id="6">&lt;strong&gt;</bpt>Connect<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>iSCSI Initiator Properties<ept id="2">&lt;/strong&gt;</ept> dialog box, select the <bpt id="4">&lt;strong&gt;</bpt>Targets<ept id="4">&lt;/strong&gt;</ept> tab, highlight the discovered target, and then click <bpt id="6">&lt;strong&gt;</bpt>Connect<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="222" xml:space="preserve">
+            <source>The <bpt id="2">&lt;strong&gt;</bpt>Connect to Target<ept id="2">&lt;/strong&gt;</ept> dialog box appears.</source>
+            <target state="new">The <bpt id="2">&lt;strong&gt;</bpt>Connect to Target<ept id="2">&lt;/strong&gt;</ept> dialog box appears.</target>
+          </trans-unit>
+          <trans-unit id="223" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Connect to Target<ept id="2">&lt;/strong&gt;</ept> dialog box:</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Connect to Target<ept id="2">&lt;/strong&gt;</ept> dialog box:</target>
+          </trans-unit>
+          <trans-unit id="224" xml:space="preserve">
+            <source>Leave the default selected target setting for <bpt id="2">&lt;strong&gt;</bpt>Add this connection<ept id="2">&lt;/strong&gt;</ept> to the list of favorite targets.</source>
+            <target state="new">Leave the default selected target setting for <bpt id="2">&lt;strong&gt;</bpt>Add this connection<ept id="2">&lt;/strong&gt;</ept> to the list of favorite targets.</target>
+          </trans-unit>
+          <trans-unit id="225" xml:space="preserve">
+            <source>This will make the device automatically attempt to restart the connection every time this computer restarts.</source>
+            <target state="new">This will make the device automatically attempt to restart the connection every time this computer restarts.</target>
+          </trans-unit>
+          <trans-unit id="226" xml:space="preserve">
+            <source>Select the <bpt id="2">&lt;strong&gt;</bpt>Enable multi-path<ept id="2">&lt;/strong&gt;</ept> check box.</source>
+            <target state="new">Select the <bpt id="2">&lt;strong&gt;</bpt>Enable multi-path<ept id="2">&lt;/strong&gt;</ept> check box.</target>
+          </trans-unit>
+          <trans-unit id="227" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Advanced<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Advanced<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="228" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Advanced Settings<ept id="2">&lt;/strong&gt;</ept> dialog box:</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Advanced Settings<ept id="2">&lt;/strong&gt;</ept> dialog box:</target>
+          </trans-unit>
+          <trans-unit id="229" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Local Adapter<ept id="2">&lt;/strong&gt;</ept> drop-down list, select <bpt id="4">&lt;strong&gt;</bpt>Microsoft iSCSI Initiator<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Local Adapter<ept id="2">&lt;/strong&gt;</ept> drop-down list, select <bpt id="4">&lt;strong&gt;</bpt>Microsoft iSCSI Initiator<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="230" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Initiator IP<ept id="2">&lt;/strong&gt;</ept> drop-down list, select the IP address of the host.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Initiator IP<ept id="2">&lt;/strong&gt;</ept> drop-down list, select the IP address of the host.</target>
+          </trans-unit>
+          <trans-unit id="231" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Target Portal IP<ept id="2">&lt;/strong&gt;</ept> drop-down list, select the IP address of the data interface enabled on the device.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Target Portal IP<ept id="2">&lt;/strong&gt;</ept> drop-down list, select the IP address of the data interface enabled on the device.</target>
+          </trans-unit>
+          <trans-unit id="232" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>OK<ept id="2">&lt;/strong&gt;</ept> to return to the iSCSI Initiator Properties dialog box.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>OK<ept id="2">&lt;/strong&gt;</ept> to return to the iSCSI Initiator Properties dialog box.</target>
+          </trans-unit>
+          <trans-unit id="233" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Properties<ept id="2">&lt;/strong&gt;</ept>, and in the <bpt id="4">&lt;strong&gt;</bpt>Properties<ept id="4">&lt;/strong&gt;</ept> dialog box, click <bpt id="6">&lt;strong&gt;</bpt>Add Session<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Properties<ept id="2">&lt;/strong&gt;</ept>, and in the <bpt id="4">&lt;strong&gt;</bpt>Properties<ept id="4">&lt;/strong&gt;</ept> dialog box, click <bpt id="6">&lt;strong&gt;</bpt>Add Session<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="234" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Connect to Target<ept id="2">&lt;/strong&gt;</ept> dialog box, select the <bpt id="4">&lt;strong&gt;</bpt>Enable multi-path<ept id="4">&lt;/strong&gt;</ept> check box, and then click <bpt id="6">&lt;strong&gt;</bpt>Advanced<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Connect to Target<ept id="2">&lt;/strong&gt;</ept> dialog box, select the <bpt id="4">&lt;strong&gt;</bpt>Enable multi-path<ept id="4">&lt;/strong&gt;</ept> check box, and then click <bpt id="6">&lt;strong&gt;</bpt>Advanced<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="235" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Advanced Settings<ept id="2">&lt;/strong&gt;</ept> dialog box:</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Advanced Settings<ept id="2">&lt;/strong&gt;</ept> dialog box:</target>
+          </trans-unit>
+          <trans-unit id="236" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Local adapter<ept id="2">&lt;/strong&gt;</ept> drop-down list, select <bpt id="4">&lt;strong&gt;</bpt>Microsoft iSCSI Initiator<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Local adapter<ept id="2">&lt;/strong&gt;</ept> drop-down list, select <bpt id="4">&lt;strong&gt;</bpt>Microsoft iSCSI Initiator<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="237" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Initiator IP<ept id="2">&lt;/strong&gt;</ept> drop-down list, select the IP address corresponding to the second interface on the host.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Initiator IP<ept id="2">&lt;/strong&gt;</ept> drop-down list, select the IP address corresponding to the second interface on the host.</target>
+          </trans-unit>
+          <trans-unit id="238" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Target Portal IP<ept id="2">&lt;/strong&gt;</ept> drop-down list, select the IP address for the second data interface enabled on the device.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Target Portal IP<ept id="2">&lt;/strong&gt;</ept> drop-down list, select the IP address for the second data interface enabled on the device.</target>
+          </trans-unit>
+          <trans-unit id="239" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>OK<ept id="2">&lt;/strong&gt;</ept> to return to the <bpt id="4">&lt;strong&gt;</bpt>iSCSI Initiator Properties<ept id="4">&lt;/strong&gt;</ept> dialog box.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>OK<ept id="2">&lt;/strong&gt;</ept> to return to the <bpt id="4">&lt;strong&gt;</bpt>iSCSI Initiator Properties<ept id="4">&lt;/strong&gt;</ept> dialog box.</target>
+          </trans-unit>
+          <trans-unit id="240" xml:space="preserve">
+            <source>You have now added a second session to the target.</source>
+            <target state="new">You have now added a second session to the target.</target>
+          </trans-unit>
+          <trans-unit id="241" xml:space="preserve">
+            <source>Repeat Steps 8-10 to add additional sessions (paths) to the target.</source>
+            <target state="new">Repeat Steps 8-10 to add additional sessions (paths) to the target.</target>
+          </trans-unit>
+          <trans-unit id="242" xml:space="preserve">
+            <source>With two interfaces on the host and two on the device, you can add a total of four sessions.</source>
+            <target state="new">With two interfaces on the host and two on the device, you can add a total of four sessions.</target>
+          </trans-unit>
+          <trans-unit id="243" xml:space="preserve">
+            <source>After adding the desired sessions (paths), in the <bpt id="2">&lt;strong&gt;</bpt>iSCSI Initiator Properties<ept id="2">&lt;/strong&gt;</ept> dialog box, select the target and click <bpt id="4">&lt;strong&gt;</bpt>Properties<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">After adding the desired sessions (paths), in the <bpt id="2">&lt;strong&gt;</bpt>iSCSI Initiator Properties<ept id="2">&lt;/strong&gt;</ept> dialog box, select the target and click <bpt id="4">&lt;strong&gt;</bpt>Properties<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="244" xml:space="preserve">
+            <source>On the Sessions tab of the <bpt id="2">&lt;strong&gt;</bpt>Properties<ept id="2">&lt;/strong&gt;</ept> dialog box, note the four session identifiers that correspond to the possible path permutations.</source>
+            <target state="new">On the Sessions tab of the <bpt id="2">&lt;strong&gt;</bpt>Properties<ept id="2">&lt;/strong&gt;</ept> dialog box, note the four session identifiers that correspond to the possible path permutations.</target>
+          </trans-unit>
+          <trans-unit id="245" xml:space="preserve">
+            <source>To cancel a session, select the check box next to a session identifier, and then click <bpt id="2">&lt;strong&gt;</bpt>Disconnect<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">To cancel a session, select the check box next to a session identifier, and then click <bpt id="2">&lt;strong&gt;</bpt>Disconnect<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="246" xml:space="preserve">
+            <source>To view devices presented within sessions, select the <bpt id="2">&lt;strong&gt;</bpt>Devices<ept id="2">&lt;/strong&gt;</ept> tab.</source>
+            <target state="new">To view devices presented within sessions, select the <bpt id="2">&lt;strong&gt;</bpt>Devices<ept id="2">&lt;/strong&gt;</ept> tab.</target>
+          </trans-unit>
+          <trans-unit id="247" xml:space="preserve">
+            <source>To configure the MPIO policy for a selected device, click <bpt id="2">&lt;strong&gt;</bpt>MPIO<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">To configure the MPIO policy for a selected device, click <bpt id="2">&lt;strong&gt;</bpt>MPIO<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="248" xml:space="preserve">
+            <source>The <bpt id="2">&lt;strong&gt;</bpt>Device Details<ept id="2">&lt;/strong&gt;</ept> dialog box will appear.</source>
+            <target state="new">The <bpt id="2">&lt;strong&gt;</bpt>Device Details<ept id="2">&lt;/strong&gt;</ept> dialog box will appear.</target>
+          </trans-unit>
+          <trans-unit id="249" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>MPIO<ept id="2">&lt;/strong&gt;</ept> tab, you can select the appropriate <bpt id="4">&lt;strong&gt;</bpt>Load Balance Policy<ept id="4">&lt;/strong&gt;</ept> settings.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>MPIO<ept id="2">&lt;/strong&gt;</ept> tab, you can select the appropriate <bpt id="4">&lt;strong&gt;</bpt>Load Balance Policy<ept id="4">&lt;/strong&gt;</ept> settings.</target>
+          </trans-unit>
+          <trans-unit id="250" xml:space="preserve">
+            <source>You can also view the <bpt id="2">&lt;strong&gt;</bpt>Active<ept id="2">&lt;/strong&gt;</ept> or <bpt id="4">&lt;strong&gt;</bpt>Standby<ept id="4">&lt;/strong&gt;</ept> path type.</source>
+            <target state="new">You can also view the <bpt id="2">&lt;strong&gt;</bpt>Active<ept id="2">&lt;/strong&gt;</ept> or <bpt id="4">&lt;strong&gt;</bpt>Standby<ept id="4">&lt;/strong&gt;</ept> path type.</target>
+          </trans-unit>
+          <trans-unit id="251" xml:space="preserve">
+            <source>Next steps</source>
+            <target state="new">Next steps</target>
+          </trans-unit>
+          <trans-unit id="252" xml:space="preserve">
+            <source>Learn more about <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>using the StorSimple Manager service to modify your StorSimple device configuration<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">Learn more about <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>using the StorSimple Manager service to modify your StorSimple device configuration<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>

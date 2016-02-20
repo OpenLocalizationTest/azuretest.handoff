@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="ja-jp" original="2/20/2016 9:27:00 AM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">00fac782edcc64b6c612daf01fe4e059f33f6852</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Service Communication Model Overview</source>
+            <target state="new">Service Communication Model Overview</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>This article describes the basics of Communication model supported by the Reliable Service's api.</source>
+            <target state="new">This article describes the basics of Communication model supported by the Reliable Service's api.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Service Communication Model</source>
+            <target state="new">Service Communication Model</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source>The Reliable Services programming model allows service authors to specify the communication mechanism they want to use to expose their service endpoints and also provides abstractions which clients can use to discover and communicate with the service endpoint.</source>
+            <target state="new">The Reliable Services programming model allows service authors to specify the communication mechanism they want to use to expose their service endpoints and also provides abstractions which clients can use to discover and communicate with the service endpoint.</target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>Setting up the Service communication stack</source>
+            <target state="new">Setting up the Service communication stack</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>Reliable Services API allows service authors to plugin the communication stack of their choice in the service by implementing the following method in their service,</source>
+            <target state="new">Reliable Services API allows service authors to plugin the communication stack of their choice in the service by implementing the following method in their service,</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>The <bpt id="2">&lt;code&gt;</bpt>ICommunicationListener<ept id="2">&lt;/code&gt;</ept> interface defines the interface that must be implemented by the communication listener for a service.</source>
+            <target state="new">The <bpt id="2">&lt;code&gt;</bpt>ICommunicationListener<ept id="2">&lt;/code&gt;</ept> interface defines the interface that must be implemented by the communication listener for a service.</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>The endpoints that are required for the service are described via the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Service manifest<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> under the Endpoints section.</source>
+            <target state="new">The endpoints that are required for the service are described via the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Service manifest<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> under the Endpoints section.</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source>The communication listener can access the endpoint resources allocated to it from the <bpt id="2">&lt;code&gt;</bpt>CodePackageActivationContext<ept id="2">&lt;/code&gt;</ept> in the <bpt id="4">&lt;code&gt;</bpt>ServiceInitializationParameters<ept id="4">&lt;/code&gt;</ept>, and start listening for requests when it is opened.</source>
+            <target state="new">The communication listener can access the endpoint resources allocated to it from the <bpt id="2">&lt;code&gt;</bpt>CodePackageActivationContext<ept id="2">&lt;/code&gt;</ept> in the <bpt id="4">&lt;code&gt;</bpt>ServiceInitializationParameters<ept id="4">&lt;/code&gt;</ept>, and start listening for requests when it is opened.</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source>The Endpoints resources are common to the entire service package and are allocated by Service Fabric when the service package is activated.</source>
+            <target state="new">The Endpoints resources are common to the entire service package and are allocated by Service Fabric when the service package is activated.</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>So all the replicas hosted in the same ServiceHost share the same port.</source>
+            <target state="new">So all the replicas hosted in the same ServiceHost share the same port.</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source>This means that the communication listener should support port sharing.</source>
+            <target state="new">This means that the communication listener should support port sharing.</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>The recommended way of doing this, is for the communication listener to use the partition Id and replica/instance Id when generating the listen address.</source>
+            <target state="new">The recommended way of doing this, is for the communication listener to use the partition Id and replica/instance Id when generating the listen address.</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source>Client to Service Communication</source>
+            <target state="new">Client to Service Communication</target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>Reliable Services API provides the following abstractions which make writing clients for communicating with Services easy.</source>
+            <target state="new">Reliable Services API provides the following abstractions which make writing clients for communicating with Services easy.</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source>ServicePartitionResolver</source>
+            <target state="new">ServicePartitionResolver</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>ServicePartitionResolver class helps the client to determine the endpoint of a Service Fabric service at runtime.</source>
+            <target state="new">ServicePartitionResolver class helps the client to determine the endpoint of a Service Fabric service at runtime.</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>The process of determining the endpoint of a service is referred to as Service Endpoint Resolution in Service Fabric terminology.</source>
+            <target state="new">The process of determining the endpoint of a service is referred to as Service Endpoint Resolution in Service Fabric terminology.</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source>FabricClient is the object that is used to communicate to the Service Fabric cluster for various management operations on the Service Fabric cluster.</source>
+            <target state="new">FabricClient is the object that is used to communicate to the Service Fabric cluster for various management operations on the Service Fabric cluster.</target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source>Typically client code need not work with <bpt id="2">&lt;code&gt;</bpt>ServicePartitionResolver<ept id="2">&lt;/code&gt;</ept> directly.</source>
+            <target state="new">Typically client code need not work with <bpt id="2">&lt;code&gt;</bpt>ServicePartitionResolver<ept id="2">&lt;/code&gt;</ept> directly.</target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source>It is created and passed on to other helper classes in the Reliable Service's API, which internally use the resolver and help the client communicate with the service.</source>
+            <target state="new">It is created and passed on to other helper classes in the Reliable Service's API, which internally use the resolver and help the client communicate with the service.</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source>CommunicationClientFactory</source>
+            <target state="new">CommunicationClientFactory</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>ICommunicationClientFactory<ept id="1">&lt;/code&gt;</ept> defines the base interface implemented by a communication client factory that produces clients that can talk to a ServiceFabric service. The implementation of the CommunicationClientFactory will depend on the communication stack used by the Service Fabric service to which the client wants to communicate to. Reliable Service's API provides a CommunicationClientFactoryBase<bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept> which provides a base implementation of this <bpt id="5">&lt;code&gt;</bpt>ICommunicationClientFactory<ept id="5">&lt;/code&gt;</ept> interface and performs tasks which are common for all the communication stacks.(like using a <bpt id="7">&lt;code&gt;</bpt>ServicePartitionResolver<ept id="7">&lt;/code&gt;</ept> to determine the service endpoint). Clients usually implement the abstract CommunicationClientFactoryBase class to handle communication stack specific logic.</source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>ICommunicationClientFactory<ept id="1">&lt;/code&gt;</ept> defines the base interface implemented by a communication client factory that produces clients that can talk to a ServiceFabric service. The implementation of the CommunicationClientFactory will depend on the communication stack used by the Service Fabric service to which the client wants to communicate to. Reliable Service's API provides a CommunicationClientFactoryBase<bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept> which provides a base implementation of this <bpt id="5">&lt;code&gt;</bpt>ICommunicationClientFactory<ept id="5">&lt;/code&gt;</ept> interface and performs tasks which are common for all the communication stacks.(like using a <bpt id="7">&lt;code&gt;</bpt>ServicePartitionResolver<ept id="7">&lt;/code&gt;</ept> to determine the service endpoint). Clients usually implement the abstract CommunicationClientFactoryBase class to handle communication stack specific logic.</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source>ServicePartitionClient</source>
+            <target state="new">ServicePartitionClient</target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>ServicePartitionClient<ept id="1">&lt;/code&gt;</ept> uses the CommunicationClientFactory(and internally the ServicePartitionResolver) and helps in communicating with the service by handling retries for common communication and Service Fabric Transient exceptions.</source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>ServicePartitionClient<ept id="1">&lt;/code&gt;</ept> uses the CommunicationClientFactory(and internally the ServicePartitionResolver) and helps in communicating with the service by handling retries for common communication and Service Fabric Transient exceptions.</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>A typical usage pattern would look like this,</source>
+            <target state="new">A typical usage pattern would look like this,</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source>Next Steps</source>
+            <target state="new">Next Steps</target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Default communication stack provided by the Reliable Services Framework<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Default communication stack provided by the Reliable Services Framework<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>WCF based communication stack provided by the Reliable Services Framework<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>WCF based communication stack provided by the Reliable Services Framework<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Writing a Service using Reliable Services API that uses WebAPI communication stack<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Writing a Service using Reliable Services API that uses WebAPI communication stack<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="ja-jp" original="2/20/2016 9:02:39 AM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">237613faa9f34a0ea244bbf627ff24c378cbb75a</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Develop Java-based topologies for Apache Storm | Microsoft Azure</source>
+            <target state="new">Develop Java-based topologies for Apache Storm | Microsoft Azure</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>Learn how to create Storm topologies in Java by creating a simple word count topology.</source>
+            <target state="new">Learn how to create Storm topologies in Java by creating a simple word count topology.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Develop Java-based topologies for a basic word-count application with Apache Storm and Maven on HDInsight</source>
+            <target state="new">Develop Java-based topologies for a basic word-count application with Apache Storm and Maven on HDInsight</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source>Learn a basic process to create a Java-based topology for Apache Storm on HDInsight by using Maven.</source>
+            <target state="new">Learn a basic process to create a Java-based topology for Apache Storm on HDInsight by using Maven.</target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>You will walk through the process of creating a basic word-count application using Maven and Java.</source>
+            <target state="new">You will walk through the process of creating a basic word-count application using Maven and Java.</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>Although instructions are provided for using Eclipse, you can also use the text editor of your choice.</source>
+            <target state="new">Although instructions are provided for using Eclipse, you can also use the text editor of your choice.</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>After completing the steps in this document, you will have a basic topology that you can deploy to Apache Storm on HDInsight.</source>
+            <target state="new">After completing the steps in this document, you will have a basic topology that you can deploy to Apache Storm on HDInsight.</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>Prerequisites</source>
+            <target state="new">Prerequisites</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept>Java Developer Kit (JDK) version 7<bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept>Java Developer Kit (JDK) version 7<bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept>Maven<bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>: Maven is a project build system for Java projects.</source>
+            <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept>Maven<bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>: Maven is a project build system for Java projects.</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>A text editor such as Notepad, <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Emacs<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>, <bpt id="6">&lt;html&gt;</bpt><ept id="6">&lt;/html&gt;</ept>Sublime Text<bpt id="8">&lt;html&gt;</bpt><ept id="8">&lt;/html&gt;</ept>, <bpt id="10">&lt;html&gt;</bpt><ept id="10">&lt;/html&gt;</ept>Atom.io<bpt id="12">&lt;html&gt;</bpt><ept id="12">&lt;/html&gt;</ept>, <bpt id="14">&lt;html&gt;</bpt><ept id="14">&lt;/html&gt;</ept>Brackets.io<bpt id="16">&lt;html&gt;</bpt><ept id="16">&lt;/html&gt;</ept>. Or you can use an integrated development environment (IDE) such as <bpt id="18">&lt;html&gt;</bpt><ept id="18">&lt;/html&gt;</ept>Eclipse<bpt id="20">&lt;html&gt;</bpt><ept id="20">&lt;/html&gt;</ept> (version Luna or later).</source>
+            <target state="new">A text editor such as Notepad, <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Emacs<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>, <bpt id="6">&lt;html&gt;</bpt><ept id="6">&lt;/html&gt;</ept>Sublime Text<bpt id="8">&lt;html&gt;</bpt><ept id="8">&lt;/html&gt;</ept>, <bpt id="10">&lt;html&gt;</bpt><ept id="10">&lt;/html&gt;</ept>Atom.io<bpt id="12">&lt;html&gt;</bpt><ept id="12">&lt;/html&gt;</ept>, <bpt id="14">&lt;html&gt;</bpt><ept id="14">&lt;/html&gt;</ept>Brackets.io<bpt id="16">&lt;html&gt;</bpt><ept id="16">&lt;/html&gt;</ept>. Or you can use an integrated development environment (IDE) such as <bpt id="18">&lt;html&gt;</bpt><ept id="18">&lt;/html&gt;</ept>Eclipse<bpt id="20">&lt;html&gt;</bpt><ept id="20">&lt;/html&gt;</ept> (version Luna or later).</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source>Your editor or IDE may have specific functionality for working with Maven that is not addressed in this document.</source>
+            <target state="new">Your editor or IDE may have specific functionality for working with Maven that is not addressed in this document.</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>For information about the capabilities of your editing environment, see the documentation for the product you are using.</source>
+            <target state="new">For information about the capabilities of your editing environment, see the documentation for the product you are using.</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source>Configure environment variables</source>
+            <target state="new">Configure environment variables</target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>The following environment variables may be set when you install Java and the JDK.</source>
+            <target state="new">The following environment variables may be set when you install Java and the JDK.</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source>However, you should check that they exist and that they contain the correct values for your system.</source>
+            <target state="new">However, you should check that they exist and that they contain the correct values for your system.</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>JAVA_HOME<ept id="1">&lt;/strong&gt;</ept> - should point to the directory where the Java runtime environment (JRE) is installed.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>JAVA_HOME<ept id="1">&lt;/strong&gt;</ept> - should point to the directory where the Java runtime environment (JRE) is installed.</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>For example, in a Unix or Linux distribution, it should have a value similar to <bpt id="2">&lt;code&gt;</bpt>/usr/lib/jvm/java-7-oracle<ept id="2">&lt;/code&gt;</ept>.</source>
+            <target state="new">For example, in a Unix or Linux distribution, it should have a value similar to <bpt id="2">&lt;code&gt;</bpt>/usr/lib/jvm/java-7-oracle<ept id="2">&lt;/code&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source>In Windows, it would have a value similar to <bpt id="2">&lt;code&gt;</bpt>c:\Program Files (x86)\Java\jre1.7<ept id="2">&lt;/code&gt;</ept></source>
+            <target state="new">In Windows, it would have a value similar to <bpt id="2">&lt;code&gt;</bpt>c:\Program Files (x86)\Java\jre1.7<ept id="2">&lt;/code&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>PATH<ept id="1">&lt;/strong&gt;</ept> - should contain the following paths:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>PATH<ept id="1">&lt;/strong&gt;</ept> - should contain the following paths:</target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>JAVA_HOME<ept id="1">&lt;/strong&gt;</ept> (or the equivalent path)</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>JAVA_HOME<ept id="1">&lt;/strong&gt;</ept> (or the equivalent path)</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>JAVA_HOME\bin<ept id="1">&lt;/strong&gt;</ept> (or the equivalent path)</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>JAVA_HOME\bin<ept id="1">&lt;/strong&gt;</ept> (or the equivalent path)</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>The directory where Maven is installed</source>
+            <target state="new">The directory where Maven is installed</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source>Create a new Maven project</source>
+            <target state="new">Create a new Maven project</target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>From the command line, use the following code to create a new Maven project named <bpt id="2">&lt;strong&gt;</bpt>WordCount<ept id="2">&lt;/strong&gt;</ept>:</source>
+            <target state="new">From the command line, use the following code to create a new Maven project named <bpt id="2">&lt;strong&gt;</bpt>WordCount<ept id="2">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>This will create a new directory named <bpt id="2">&lt;strong&gt;</bpt>WordCount<ept id="2">&lt;/strong&gt;</ept> at the current location, which contains a basic Maven project.</source>
+            <target state="new">This will create a new directory named <bpt id="2">&lt;strong&gt;</bpt>WordCount<ept id="2">&lt;/strong&gt;</ept> at the current location, which contains a basic Maven project.</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source>The <bpt id="2">&lt;strong&gt;</bpt>WordCount<ept id="2">&lt;/strong&gt;</ept> directory will contain the following items:</source>
+            <target state="new">The <bpt id="2">&lt;strong&gt;</bpt>WordCount<ept id="2">&lt;/strong&gt;</ept> directory will contain the following items:</target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>pom.xml<ept id="1">&lt;/strong&gt;</ept>: Contains settings for the Maven project.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>pom.xml<ept id="1">&lt;/strong&gt;</ept>: Contains settings for the Maven project.</target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>src\main\java\com\microsoft\example<ept id="1">&lt;/strong&gt;</ept>: Contains your application code.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>src\main\java\com\microsoft\example<ept id="1">&lt;/strong&gt;</ept>: Contains your application code.</target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>src\test\java\com\microsoft\example<ept id="1">&lt;/strong&gt;</ept>: Contains tests for your application.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>src\test\java\com\microsoft\example<ept id="1">&lt;/strong&gt;</ept>: Contains tests for your application.</target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source>For this example, we will not be creating tests.</source>
+            <target state="new">For this example, we will not be creating tests.</target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source>Remove the example code</source>
+            <target state="new">Remove the example code</target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source>Because we will be creating our application, delete the generated test and the application files:</source>
+            <target state="new">Because we will be creating our application, delete the generated test and the application files:</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>src\test\java\com\microsoft\example\AppTest.java<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>src\test\java\com\microsoft\example\AppTest.java<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>src\main\java\com\microsoft\example\App.java<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>src\main\java\com\microsoft\example\App.java<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source>Add dependencies</source>
+            <target state="new">Add dependencies</target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source>Because this is a Storm topology, you must add a dependency for Storm components.</source>
+            <target state="new">Because this is a Storm topology, you must add a dependency for Storm components.</target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source>Open the <bpt id="2">&lt;strong&gt;</bpt>pom.xml<ept id="2">&lt;/strong&gt;</ept> file and add the following code in the <bpt id="4">&lt;strong&gt;</bpt>&lt;dependencies&gt;<ept id="4">&lt;/strong&gt;</ept> section:</source>
+            <target state="new">Open the <bpt id="2">&lt;strong&gt;</bpt>pom.xml<ept id="2">&lt;/strong&gt;</ept> file and add the following code in the <bpt id="4">&lt;strong&gt;</bpt>&lt;dependencies&gt;<ept id="4">&lt;/strong&gt;</ept> section:</target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source>At compile time, Maven uses this information to look up <bpt id="2">&lt;strong&gt;</bpt>storm-core<ept id="2">&lt;/strong&gt;</ept> in the Maven repository.</source>
+            <target state="new">At compile time, Maven uses this information to look up <bpt id="2">&lt;strong&gt;</bpt>storm-core<ept id="2">&lt;/strong&gt;</ept> in the Maven repository.</target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source>It first looks in the repository on your local computer.</source>
+            <target state="new">It first looks in the repository on your local computer.</target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source>If the files aren't there, it will download them from the public Maven repository and store them in the local repository.</source>
+            <target state="new">If the files aren't there, it will download them from the public Maven repository and store them in the local repository.</target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source>Notice the <bpt id="2">&lt;code&gt;</bpt>&lt;scope&gt;provided&lt;/scope&gt;<ept id="2">&lt;/code&gt;</ept> line in the section we added.</source>
+            <target state="new">Notice the <bpt id="2">&lt;code&gt;</bpt>&lt;scope&gt;provided&lt;/scope&gt;<ept id="2">&lt;/code&gt;</ept> line in the section we added.</target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source>This tells Maven to exclude <bpt id="2">&lt;strong&gt;</bpt>storm-core<ept id="2">&lt;/strong&gt;</ept> from any JAR files we create, because it will be provided by the system.</source>
+            <target state="new">This tells Maven to exclude <bpt id="2">&lt;strong&gt;</bpt>storm-core<ept id="2">&lt;/strong&gt;</ept> from any JAR files we create, because it will be provided by the system.</target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source>This allows the packages you create to be a little smaller, and it ensures that they will use the <bpt id="2">&lt;strong&gt;</bpt>storm-core<ept id="2">&lt;/strong&gt;</ept> bits that are included in the Storm on HDInsight cluster.</source>
+            <target state="new">This allows the packages you create to be a little smaller, and it ensures that they will use the <bpt id="2">&lt;strong&gt;</bpt>storm-core<ept id="2">&lt;/strong&gt;</ept> bits that are included in the Storm on HDInsight cluster.</target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source>Build configuration</source>
+            <target state="new">Build configuration</target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source>Maven plug-ins allow you to customize the build stages of the project, such as how the project is compiled or how to package it into a JAR file. Open the <bpt id="2">&lt;strong&gt;</bpt>pom.xml<ept id="2">&lt;/strong&gt;</ept> file and add the following code directly above the <bpt id="4">&lt;code&gt;</bpt>&lt;/project&gt;<ept id="4">&lt;/code&gt;</ept> line.</source>
+            <target state="new">Maven plug-ins allow you to customize the build stages of the project, such as how the project is compiled or how to package it into a JAR file. Open the <bpt id="2">&lt;strong&gt;</bpt>pom.xml<ept id="2">&lt;/strong&gt;</ept> file and add the following code directly above the <bpt id="4">&lt;code&gt;</bpt>&lt;/project&gt;<ept id="4">&lt;/code&gt;</ept> line.</target>
+          </trans-unit>
+          <trans-unit id="147" xml:space="preserve">
+            <source>This section will be used to add plug-ins and other build configuration options.</source>
+            <target state="new">This section will be used to add plug-ins and other build configuration options.</target>
+          </trans-unit>
+          <trans-unit id="148" xml:space="preserve">
+            <source>Add plug-ins</source>
+            <target state="new">Add plug-ins</target>
+          </trans-unit>
+          <trans-unit id="149" xml:space="preserve">
+            <source>For Storm topologies, the <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Exec Maven Plugin<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept> is useful because it allows you to easily run the topology locally in your development environment. Add the following to the <bpt id="6">&lt;code&gt;</bpt>&lt;plugins&gt;<ept id="6">&lt;/code&gt;</ept> section of the <bpt id="8">&lt;strong&gt;</bpt>pom.xml<ept id="8">&lt;/strong&gt;</ept> file to include the Exec Maven plugin:</source>
+            <target state="new">For Storm topologies, the <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Exec Maven Plugin<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept> is useful because it allows you to easily run the topology locally in your development environment. Add the following to the <bpt id="6">&lt;code&gt;</bpt>&lt;plugins&gt;<ept id="6">&lt;/code&gt;</ept> section of the <bpt id="8">&lt;strong&gt;</bpt>pom.xml<ept id="8">&lt;/strong&gt;</ept> file to include the Exec Maven plugin:</target>
+          </trans-unit>
+          <trans-unit id="150" xml:space="preserve">
+            <source>Another useful plug-in is the <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Apache Maven Compiler Plugin<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>, which is used to change compilation options.</source>
+            <target state="new">Another useful plug-in is the <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Apache Maven Compiler Plugin<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>, which is used to change compilation options.</target>
+          </trans-unit>
+          <trans-unit id="151" xml:space="preserve">
+            <source>The primary reason we need this is to change the Java version that Maven uses for the source and target for your application.</source>
+            <target state="new">The primary reason we need this is to change the Java version that Maven uses for the source and target for your application.</target>
+          </trans-unit>
+          <trans-unit id="152" xml:space="preserve">
+            <source>We want version 1.7.</source>
+            <target state="new">We want version 1.7.</target>
+          </trans-unit>
+          <trans-unit id="153" xml:space="preserve">
+            <source>Add the following in the <bpt id="2">&lt;code&gt;</bpt>&lt;plugins&gt;<ept id="2">&lt;/code&gt;</ept> section of the <bpt id="4">&lt;strong&gt;</bpt>pom.xml<ept id="4">&lt;/strong&gt;</ept> file to include the Apache Maven Compiler plugin and set the source and target versions to 1.7.</source>
+            <target state="new">Add the following in the <bpt id="2">&lt;code&gt;</bpt>&lt;plugins&gt;<ept id="2">&lt;/code&gt;</ept> section of the <bpt id="4">&lt;strong&gt;</bpt>pom.xml<ept id="4">&lt;/strong&gt;</ept> file to include the Apache Maven Compiler plugin and set the source and target versions to 1.7.</target>
+          </trans-unit>
+          <trans-unit id="154" xml:space="preserve">
+            <source>Create the topology</source>
+            <target state="new">Create the topology</target>
+          </trans-unit>
+          <trans-unit id="155" xml:space="preserve">
+            <source>A Java-based Storm topology consists of three components that you must author (or reference) as a dependency.</source>
+            <target state="new">A Java-based Storm topology consists of three components that you must author (or reference) as a dependency.</target>
+          </trans-unit>
+          <trans-unit id="156" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Spouts<ept id="1">&lt;/strong&gt;</ept>: Reads data from external sources and emits streams of data into the topology.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Spouts<ept id="1">&lt;/strong&gt;</ept>: Reads data from external sources and emits streams of data into the topology.</target>
+          </trans-unit>
+          <trans-unit id="157" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Bolts<ept id="1">&lt;/strong&gt;</ept>: Performs processing on streams emitted by spouts or other bolts, and emits one or more streams.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Bolts<ept id="1">&lt;/strong&gt;</ept>: Performs processing on streams emitted by spouts or other bolts, and emits one or more streams.</target>
+          </trans-unit>
+          <trans-unit id="158" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Topology<ept id="1">&lt;/strong&gt;</ept>: Defines how the spouts and bolts are arranged, and provides the entry point for the topology.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Topology<ept id="1">&lt;/strong&gt;</ept>: Defines how the spouts and bolts are arranged, and provides the entry point for the topology.</target>
+          </trans-unit>
+          <trans-unit id="159" xml:space="preserve">
+            <source>Create the spout</source>
+            <target state="new">Create the spout</target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
+            <source>To reduce requirements for setting up external data sources, the following spout simply emits random sentences.</source>
+            <target state="new">To reduce requirements for setting up external data sources, the following spout simply emits random sentences.</target>
+          </trans-unit>
+          <trans-unit id="161" xml:space="preserve">
+            <source>It is a modified version of a spout that is provided with the  (<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Storm-Starter examples<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>).</source>
+            <target state="new">It is a modified version of a spout that is provided with the  (<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Storm-Starter examples<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>).</target>
+          </trans-unit>
+          <trans-unit id="162" xml:space="preserve">
+            <source>For an example of a spout that reads from an external data source, see one of the following examples:</source>
+            <target state="new">For an example of a spout that reads from an external data source, see one of the following examples:</target>
+          </trans-unit>
+          <trans-unit id="163" xml:space="preserve">
+            <source>* <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>TwitterSampleSpout<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>: An example spout that reads from Twitter</source>
+            <target state="new">* <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>TwitterSampleSpout<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>: An example spout that reads from Twitter</target>
+          </trans-unit>
+          <trans-unit id="164" xml:space="preserve">
+            <source>* <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Storm-Kafka<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>: A spout that reads from Kafka</source>
+            <target state="new">* <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Storm-Kafka<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>: A spout that reads from Kafka</target>
+          </trans-unit>
+          <trans-unit id="165" xml:space="preserve">
+            <source>For the spout, create a new file named <bpt id="2">&lt;strong&gt;</bpt>RandomSentenceSpout.java<ept id="2">&lt;/strong&gt;</ept> in the <bpt id="4">&lt;strong&gt;</bpt>src\main\java\com\microsoft\example<ept id="4">&lt;/strong&gt;</ept> directory and use the following as the contents:</source>
+            <target state="new">For the spout, create a new file named <bpt id="2">&lt;strong&gt;</bpt>RandomSentenceSpout.java<ept id="2">&lt;/strong&gt;</ept> in the <bpt id="4">&lt;strong&gt;</bpt>src\main\java\com\microsoft\example<ept id="4">&lt;/strong&gt;</ept> directory and use the following as the contents:</target>
+          </trans-unit>
+          <trans-unit id="166" xml:space="preserve">
+            <source>Take a moment to read through the code comments to understand how this spout works.</source>
+            <target state="new">Take a moment to read through the code comments to understand how this spout works.</target>
+          </trans-unit>
+          <trans-unit id="167" xml:space="preserve">
+            <source>Although this topology uses only one spout, others may have several that feed data from different sources into the topology.</source>
+            <target state="new">Although this topology uses only one spout, others may have several that feed data from different sources into the topology.</target>
+          </trans-unit>
+          <trans-unit id="168" xml:space="preserve">
+            <source>Create the bolts</source>
+            <target state="new">Create the bolts</target>
+          </trans-unit>
+          <trans-unit id="169" xml:space="preserve">
+            <source>Bolts handle the data processing.</source>
+            <target state="new">Bolts handle the data processing.</target>
+          </trans-unit>
+          <trans-unit id="170" xml:space="preserve">
+            <source>For this topology, we have two bolts:</source>
+            <target state="new">For this topology, we have two bolts:</target>
+          </trans-unit>
+          <trans-unit id="171" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>SplitSentence<ept id="1">&lt;/strong&gt;</ept>: Splits the sentences emitted by <bpt id="3">&lt;strong&gt;</bpt>RandomSentenceSpout<ept id="3">&lt;/strong&gt;</ept> into individual words.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>SplitSentence<ept id="1">&lt;/strong&gt;</ept>: Splits the sentences emitted by <bpt id="3">&lt;strong&gt;</bpt>RandomSentenceSpout<ept id="3">&lt;/strong&gt;</ept> into individual words.</target>
+          </trans-unit>
+          <trans-unit id="172" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>WordCount<ept id="1">&lt;/strong&gt;</ept>: Counts how many times each word has occurred.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>WordCount<ept id="1">&lt;/strong&gt;</ept>: Counts how many times each word has occurred.</target>
+          </trans-unit>
+          <trans-unit id="173" xml:space="preserve">
+            <source>Bolts can do literally anything, for example, computation, persistence, or talking to external components.</source>
+            <target state="new">Bolts can do literally anything, for example, computation, persistence, or talking to external components.</target>
+          </trans-unit>
+          <trans-unit id="174" xml:space="preserve">
+            <source>Create two new files, <bpt id="2">&lt;strong&gt;</bpt>SplitSentence.java<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>WordCount.Java<ept id="4">&lt;/strong&gt;</ept> in the <bpt id="6">&lt;strong&gt;</bpt>src\main\java\com\microsoft\example<ept id="6">&lt;/strong&gt;</ept> directory.</source>
+            <target state="new">Create two new files, <bpt id="2">&lt;strong&gt;</bpt>SplitSentence.java<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>WordCount.Java<ept id="4">&lt;/strong&gt;</ept> in the <bpt id="6">&lt;strong&gt;</bpt>src\main\java\com\microsoft\example<ept id="6">&lt;/strong&gt;</ept> directory.</target>
+          </trans-unit>
+          <trans-unit id="175" xml:space="preserve">
+            <source>Use the following as the contents for the files:</source>
+            <target state="new">Use the following as the contents for the files:</target>
+          </trans-unit>
+          <trans-unit id="176" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>SplitSentence<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>SplitSentence<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="177" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>WordCount<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>WordCount<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="178" xml:space="preserve">
+            <source>Take a moment to read through the code comments to understand how each bolt works.</source>
+            <target state="new">Take a moment to read through the code comments to understand how each bolt works.</target>
+          </trans-unit>
+          <trans-unit id="179" xml:space="preserve">
+            <source>Create the topology</source>
+            <target state="new">Create the topology</target>
+          </trans-unit>
+          <trans-unit id="180" xml:space="preserve">
+            <source>The topology ties the spouts and bolts together into a graph, which defines how data flows between the components.</source>
+            <target state="new">The topology ties the spouts and bolts together into a graph, which defines how data flows between the components.</target>
+          </trans-unit>
+          <trans-unit id="181" xml:space="preserve">
+            <source>It also provides parallelism hints that Storm uses when creating instances of the components within the cluster.</source>
+            <target state="new">It also provides parallelism hints that Storm uses when creating instances of the components within the cluster.</target>
+          </trans-unit>
+          <trans-unit id="182" xml:space="preserve">
+            <source>The following is a basic diagram of the graph of components for this topology.</source>
+            <target state="new">The following is a basic diagram of the graph of components for this topology.</target>
+          </trans-unit>
+          <trans-unit id="183" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>diagram showing the spouts and bolts arrangement<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>diagram showing the spouts and bolts arrangement<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="184" xml:space="preserve">
+            <source>To implement the topology, create a new file named <bpt id="2">&lt;strong&gt;</bpt>WordCountTopology.java<ept id="2">&lt;/strong&gt;</ept> in the <bpt id="4">&lt;strong&gt;</bpt>src\main\java\com\microsoft\example<ept id="4">&lt;/strong&gt;</ept> directory.</source>
+            <target state="new">To implement the topology, create a new file named <bpt id="2">&lt;strong&gt;</bpt>WordCountTopology.java<ept id="2">&lt;/strong&gt;</ept> in the <bpt id="4">&lt;strong&gt;</bpt>src\main\java\com\microsoft\example<ept id="4">&lt;/strong&gt;</ept> directory.</target>
+          </trans-unit>
+          <trans-unit id="185" xml:space="preserve">
+            <source>Use the following as the contents for the file:</source>
+            <target state="new">Use the following as the contents for the file:</target>
+          </trans-unit>
+          <trans-unit id="186" xml:space="preserve">
+            <source>Take a moment to read through the code comments to understand how the topology is defined and then submitted to the cluster.</source>
+            <target state="new">Take a moment to read through the code comments to understand how the topology is defined and then submitted to the cluster.</target>
+          </trans-unit>
+          <trans-unit id="187" xml:space="preserve">
+            <source>Test the topology locally</source>
+            <target state="new">Test the topology locally</target>
+          </trans-unit>
+          <trans-unit id="188" xml:space="preserve">
+            <source>After you save the files, use the following command to test the topology locally.</source>
+            <target state="new">After you save the files, use the following command to test the topology locally.</target>
+          </trans-unit>
+          <trans-unit id="189" xml:space="preserve">
+            <source>As it runs, the topology will display startup information.</source>
+            <target state="new">As it runs, the topology will display startup information.</target>
+          </trans-unit>
+          <trans-unit id="190" xml:space="preserve">
+            <source>Then it begins to display lines similar to the following as sentences are emitted from the spout and processed by the bolts.</source>
+            <target state="new">Then it begins to display lines similar to the following as sentences are emitted from the spout and processed by the bolts.</target>
+          </trans-unit>
+          <trans-unit id="191" xml:space="preserve">
+            <source>As you can see from this output, the following occurred:</source>
+            <target state="new">As you can see from this output, the following occurred:</target>
+          </trans-unit>
+          <trans-unit id="192" xml:space="preserve">
+            <source>Spout emits "an apple a day keeps the doctor away."</source>
+            <target state="new">Spout emits "an apple a day keeps the doctor away."</target>
+          </trans-unit>
+          <trans-unit id="193" xml:space="preserve">
+            <source>Split bolt begins emitting individual words from the sentence.</source>
+            <target state="new">Split bolt begins emitting individual words from the sentence.</target>
+          </trans-unit>
+          <trans-unit id="194" xml:space="preserve">
+            <source>Count bolt begins emitting each word and how many times it has been emitted.</source>
+            <target state="new">Count bolt begins emitting each word and how many times it has been emitted.</target>
+          </trans-unit>
+          <trans-unit id="195" xml:space="preserve">
+            <source>By looking at the data emitted by the count bolt, we can see that 'apple' has been emitted 53 times.</source>
+            <target state="new">By looking at the data emitted by the count bolt, we can see that 'apple' has been emitted 53 times.</target>
+          </trans-unit>
+          <trans-unit id="196" xml:space="preserve">
+            <source>The count will continue to go up as long as the topology runs because the same sentences are randomly emitted over and over and the count is never reset.</source>
+            <target state="new">The count will continue to go up as long as the topology runs because the same sentences are randomly emitted over and over and the count is never reset.</target>
+          </trans-unit>
+          <trans-unit id="197" xml:space="preserve">
+            <source>Trident</source>
+            <target state="new">Trident</target>
+          </trans-unit>
+          <trans-unit id="198" xml:space="preserve">
+            <source>Trident is a high-level abstraction that is provided by Storm.</source>
+            <target state="new">Trident is a high-level abstraction that is provided by Storm.</target>
+          </trans-unit>
+          <trans-unit id="199" xml:space="preserve">
+            <source>It supports stateful processing.</source>
+            <target state="new">It supports stateful processing.</target>
+          </trans-unit>
+          <trans-unit id="200" xml:space="preserve">
+            <source>The primary advantage of Trident is that it can guarantee that every message that enters the topology is processed only once.</source>
+            <target state="new">The primary advantage of Trident is that it can guarantee that every message that enters the topology is processed only once.</target>
+          </trans-unit>
+          <trans-unit id="201" xml:space="preserve">
+            <source>This is difficult to achieve in a raw Java topology, which guarantee's that messages will be processed at least once.</source>
+            <target state="new">This is difficult to achieve in a raw Java topology, which guarantee's that messages will be processed at least once.</target>
+          </trans-unit>
+          <trans-unit id="202" xml:space="preserve">
+            <source>There are also other differences, such as built-in components that can be used instead of creating bolts.</source>
+            <target state="new">There are also other differences, such as built-in components that can be used instead of creating bolts.</target>
+          </trans-unit>
+          <trans-unit id="203" xml:space="preserve">
+            <source>In fact, bolts are completely replaced by less-generic components, such as filters, projections, and functions.</source>
+            <target state="new">In fact, bolts are completely replaced by less-generic components, such as filters, projections, and functions.</target>
+          </trans-unit>
+          <trans-unit id="204" xml:space="preserve">
+            <source>Trident applications can be created by using Maven projects.</source>
+            <target state="new">Trident applications can be created by using Maven projects.</target>
+          </trans-unit>
+          <trans-unit id="205" xml:space="preserve">
+            <source>You use the same basic steps as presented earlier in this article—only the code is different.</source>
+            <target state="new">You use the same basic steps as presented earlier in this article—only the code is different.</target>
+          </trans-unit>
+          <trans-unit id="206" xml:space="preserve">
+            <source>For more information about Trident, see the <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Trident API Overview<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>.</source>
+            <target state="new">For more information about Trident, see the <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Trident API Overview<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="207" xml:space="preserve">
+            <source>For an example of a Trident application, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Twitter trending topics with Apache Storm on HDInsight<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For an example of a Trident application, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Twitter trending topics with Apache Storm on HDInsight<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="208" xml:space="preserve">
+            <source>Next Steps</source>
+            <target state="new">Next Steps</target>
+          </trans-unit>
+          <trans-unit id="209" xml:space="preserve">
+            <source>You have learned how to create a Storm topology by using Java.</source>
+            <target state="new">You have learned how to create a Storm topology by using Java.</target>
+          </trans-unit>
+          <trans-unit id="210" xml:space="preserve">
+            <source>Now learn how to:</source>
+            <target state="new">Now learn how to:</target>
+          </trans-unit>
+          <trans-unit id="211" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Deploy and manage Apache Storm topologies on HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Deploy and manage Apache Storm topologies on HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="212" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Develop C# topologies for Apache Storm on HDInsight using Visual Studio<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Develop C# topologies for Apache Storm on HDInsight using Visual Studio<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="213" xml:space="preserve">
+            <source>You can find more example Storm topologies by visiting <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Example topologies for Storm on HDInsight<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">You can find more example Storm topologies by visiting <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Example topologies for Storm on HDInsight<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>

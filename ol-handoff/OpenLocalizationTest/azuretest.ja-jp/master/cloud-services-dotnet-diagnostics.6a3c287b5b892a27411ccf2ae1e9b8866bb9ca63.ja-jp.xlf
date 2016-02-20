@@ -1,0 +1,1435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="ja-jp" original="2/20/2016 8:52:40 AM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b2648985b04d2f6887fbdaa3b91cdda49aee3f48</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>How to use diagnostics (.NET) | Microsoft Azure</source>
+            <target state="new">How to use diagnostics (.NET) | Microsoft Azure</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>Learn how to use diagnostic data in Azure for debugging, measuring performance, monitoring, traffic analysis, and more.</source>
+            <target state="new">Learn how to use diagnostic data in Azure for debugging, measuring performance, monitoring, traffic analysis, and more.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Enabling Diagnostics in Azure Cloud Services and Virtual Machines</source>
+            <target state="new">Enabling Diagnostics in Azure Cloud Services and Virtual Machines</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source>Azure Diagnostics 1.2 and 1.3 enable you to collect diagnostic data from a worker role, web role, or virtual machine running in Azure.</source>
+            <target state="new">Azure Diagnostics 1.2 and 1.3 enable you to collect diagnostic data from a worker role, web role, or virtual machine running in Azure.</target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>This guide describes how to use Azure Diagnostics 1.2 and 1.3.</source>
+            <target state="new">This guide describes how to use Azure Diagnostics 1.2 and 1.3.</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>For additional in-depth guidance on creating a logging and tracing strategy and using diagnostics and other techniques to troubleshoot problems, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Troubleshooting Best Practices for Developing Azure Applications[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For additional in-depth guidance on creating a logging and tracing strategy and using diagnostics and other techniques to troubleshoot problems, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Troubleshooting Best Practices for Developing Azure Applications[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>Overview</source>
+            <target state="new">Overview</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>Azure Diagnostics 1.2 and 1.3 are Azure extensions that enable you to collect diagnostic telemetry data from a worker role, web role, or virtual machine running in Azure.</source>
+            <target state="new">Azure Diagnostics 1.2 and 1.3 are Azure extensions that enable you to collect diagnostic telemetry data from a worker role, web role, or virtual machine running in Azure.</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source>The telemetry data is stored in an Azure storage account and can be used for debugging and troubleshooting, measuring performance, monitoring resource usage, traffic analysis and capacity planning, and auditing.</source>
+            <target state="new">The telemetry data is stored in an Azure storage account and can be used for debugging and troubleshooting, measuring performance, monitoring resource usage, traffic analysis and capacity planning, and auditing.</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source>Azure Diagnostics 1.2 are for use with Azure SDKs for .NET 2.4 and before.</source>
+            <target state="new">Azure Diagnostics 1.2 are for use with Azure SDKs for .NET 2.4 and before.</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>Azure Diagnostics 1.3 are for use with Azure SDKs for .NET 2.5 and later.</source>
+            <target state="new">Azure Diagnostics 1.3 are for use with Azure SDKs for .NET 2.5 and later.</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source>If you have used Diagnostics version 1.0 in the past, there are three notable differences compared to Diagnostics 1.2 and 1.3:</source>
+            <target state="new">If you have used Diagnostics version 1.0 in the past, there are three notable differences compared to Diagnostics 1.2 and 1.3:</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>Diagnostics 1.2 and 1.3 can be deployed on virtual machines, in addition to cloud services.</source>
+            <target state="new">Diagnostics 1.2 and 1.3 can be deployed on virtual machines, in addition to cloud services.</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source>Diagnostics 1.0 is part of the Azure SDK and is deployed when you deploy your cloud service.</source>
+            <target state="new">Diagnostics 1.0 is part of the Azure SDK and is deployed when you deploy your cloud service.</target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>Diagnostics 1.2 and 1.3 are an extension and are deployed separately from your cloud service deployment.</source>
+            <target state="new">Diagnostics 1.2 and 1.3 are an extension and are deployed separately from your cloud service deployment.</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source>Diagnostics 1.2 and 1.3 enable the collection of ETW and .NET EventSource events.</source>
+            <target state="new">Diagnostics 1.2 and 1.3 enable the collection of ETW and .NET EventSource events.</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>For a more detailed comparison, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Comparing Azure Diagnostics Versions[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> at the end of this article.</source>
+            <target state="new">For a more detailed comparison, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Comparing Azure Diagnostics Versions[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> at the end of this article.</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>Azure Diagnostics can collect the following types of telemetry:</source>
+            <target state="new">Azure Diagnostics can collect the following types of telemetry:</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source>Data Source</source>
+            <target state="new">Data Source</target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source>Description</source>
+            <target state="new">Description</target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source>IIS Logs</source>
+            <target state="new">IIS Logs</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source>Information about IIS web sites.</source>
+            <target state="new">Information about IIS web sites.</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>Azure Diagnostic infrastructure logs</source>
+            <target state="new">Azure Diagnostic infrastructure logs</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source>Information about Diagnostics itself.</source>
+            <target state="new">Information about Diagnostics itself.</target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>IIS Failed Request logs</source>
+            <target state="new">IIS Failed Request logs</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>Information about failed requests to an IIS site or application.</source>
+            <target state="new">Information about failed requests to an IIS site or application.</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source>Windows Event logs</source>
+            <target state="new">Windows Event logs</target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source>Information sent to the Windows event logging system.</source>
+            <target state="new">Information sent to the Windows event logging system.</target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source>Performance counters</source>
+            <target state="new">Performance counters</target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source>Operating System and custom performance counters.</source>
+            <target state="new">Operating System and custom performance counters.</target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source>Crash dumps</source>
+            <target state="new">Crash dumps</target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source>Information about the state of the process in the event of an application crash.</source>
+            <target state="new">Information about the state of the process in the event of an application crash.</target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source>Custom error logs</source>
+            <target state="new">Custom error logs</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source>Logs created by your application or service.</source>
+            <target state="new">Logs created by your application or service.</target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source>NET EventSource</source>
+            <target state="new">NET EventSource</target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source>Events generated by your code using the .NET <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>EventSource class<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept></source>
+            <target state="new">Events generated by your code using the .NET <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>EventSource class<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source>Manifest based ETW</source>
+            <target state="new">Manifest based ETW</target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source>ETW events generated by any process.</source>
+            <target state="new">ETW events generated by any process.</target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source>How to Enable Diagnostics in a Worker Role</source>
+            <target state="new">How to Enable Diagnostics in a Worker Role</target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source>This walk through describes how to implement an Azure worker role that emits telemetry data using the .NET EventSource class.</source>
+            <target state="new">This walk through describes how to implement an Azure worker role that emits telemetry data using the .NET EventSource class.</target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source>Azure Diagnostics is used to collect the telemetry data and store it in an Azure storage account.</source>
+            <target state="new">Azure Diagnostics is used to collect the telemetry data and store it in an Azure storage account.</target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source>When creating a worker role Visual Studio automatically enables Diagnostics 1.0 as part of the solution in Azure SDKs for .NET 2.4 and earlier.</source>
+            <target state="new">When creating a worker role Visual Studio automatically enables Diagnostics 1.0 as part of the solution in Azure SDKs for .NET 2.4 and earlier.</target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source>The following instructions describe the process for creating the worker role, disabling Diagnostics 1.0 from the solution, and deploying Diagnostics 1.2 or 1.3 to your worker role.</source>
+            <target state="new">The following instructions describe the process for creating the worker role, disabling Diagnostics 1.0 from the solution, and deploying Diagnostics 1.2 or 1.3 to your worker role.</target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source>Pre-requisites</source>
+            <target state="new">Pre-requisites</target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source>This article assumes you have an Azure subscription and are using Visual Studio 2013 with the Azure SDK.</source>
+            <target state="new">This article assumes you have an Azure subscription and are using Visual Studio 2013 with the Azure SDK.</target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source>If you do not have an Azure subscription, you can sign up for the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Free Trial[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">If you do not have an Azure subscription, you can sign up for the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Free Trial[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="147" xml:space="preserve">
+            <source>Make sure to <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Install and configure Azure PowerShell version 0.8.7 or later[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">Make sure to <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Install and configure Azure PowerShell version 0.8.7 or later[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="148" xml:space="preserve">
+            <source>Step 1: Create a Worker Role</source>
+            <target state="new">Step 1: Create a Worker Role</target>
+          </trans-unit>
+          <trans-unit id="149" xml:space="preserve">
+            <source>Launch <bpt id="2">&lt;strong&gt;</bpt>Visual Studio 2013<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Launch <bpt id="2">&lt;strong&gt;</bpt>Visual Studio 2013<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="150" xml:space="preserve">
+            <source>Create a new <bpt id="2">&lt;strong&gt;</bpt>Azure Cloud Service<ept id="2">&lt;/strong&gt;</ept> project from the <bpt id="4">&lt;strong&gt;</bpt>Cloud<ept id="4">&lt;/strong&gt;</ept> template that targets .NET Framework 4.5.</source>
+            <target state="new">Create a new <bpt id="2">&lt;strong&gt;</bpt>Azure Cloud Service<ept id="2">&lt;/strong&gt;</ept> project from the <bpt id="4">&lt;strong&gt;</bpt>Cloud<ept id="4">&lt;/strong&gt;</ept> template that targets .NET Framework 4.5.</target>
+          </trans-unit>
+          <trans-unit id="151" xml:space="preserve">
+            <source>Name the project "WadExample" and click Ok.</source>
+            <target state="new">Name the project "WadExample" and click Ok.</target>
+          </trans-unit>
+          <trans-unit id="152" xml:space="preserve">
+            <source>Select <bpt id="2">&lt;strong&gt;</bpt>Worker Role<ept id="2">&lt;/strong&gt;</ept> and click Ok.</source>
+            <target state="new">Select <bpt id="2">&lt;strong&gt;</bpt>Worker Role<ept id="2">&lt;/strong&gt;</ept> and click Ok.</target>
+          </trans-unit>
+          <trans-unit id="153" xml:space="preserve">
+            <source>The project will be created.</source>
+            <target state="new">The project will be created.</target>
+          </trans-unit>
+          <trans-unit id="154" xml:space="preserve">
+            <source>In <bpt id="2">&lt;strong&gt;</bpt>Solution Explorer<ept id="2">&lt;/strong&gt;</ept>, double-click on the <bpt id="4">&lt;strong&gt;</bpt>WorkerRole1<ept id="4">&lt;/strong&gt;</ept> properties file.</source>
+            <target state="new">In <bpt id="2">&lt;strong&gt;</bpt>Solution Explorer<ept id="2">&lt;/strong&gt;</ept>, double-click on the <bpt id="4">&lt;strong&gt;</bpt>WorkerRole1<ept id="4">&lt;/strong&gt;</ept> properties file.</target>
+          </trans-unit>
+          <trans-unit id="155" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Configuration<ept id="2">&lt;/strong&gt;</ept> tab un-check <bpt id="4">&lt;strong&gt;</bpt>Enable Diagnostics<ept id="4">&lt;/strong&gt;</ept> to disable Diagnostics 1.0 (Azure SDK 2.4 and eariler).</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Configuration<ept id="2">&lt;/strong&gt;</ept> tab un-check <bpt id="4">&lt;strong&gt;</bpt>Enable Diagnostics<ept id="4">&lt;/strong&gt;</ept> to disable Diagnostics 1.0 (Azure SDK 2.4 and eariler).</target>
+          </trans-unit>
+          <trans-unit id="156" xml:space="preserve">
+            <source>Build your solution to verify that you have no errors.</source>
+            <target state="new">Build your solution to verify that you have no errors.</target>
+          </trans-unit>
+          <trans-unit id="157" xml:space="preserve">
+            <source>Step 2: Instrument your code</source>
+            <target state="new">Step 2: Instrument your code</target>
+          </trans-unit>
+          <trans-unit id="158" xml:space="preserve">
+            <source>Replace the contents of WorkerRole.cs with the following code.</source>
+            <target state="new">Replace the contents of WorkerRole.cs with the following code.</target>
+          </trans-unit>
+          <trans-unit id="159" xml:space="preserve">
+            <source>The class SampleEventSourceWriter, inherited from the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>EventSource Class[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, implements four logging methods: <bpt id="4">&lt;strong&gt;</bpt>SendEnums<ept id="4">&lt;/strong&gt;</ept>, <bpt id="6">&lt;strong&gt;</bpt>MessageMethod<ept id="6">&lt;/strong&gt;</ept>, <bpt id="8">&lt;strong&gt;</bpt>SetOther<ept id="8">&lt;/strong&gt;</ept> and <bpt id="10">&lt;strong&gt;</bpt>HighFreq<ept id="10">&lt;/strong&gt;</ept>.</source>
+            <target state="new">The class SampleEventSourceWriter, inherited from the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>EventSource Class[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, implements four logging methods: <bpt id="4">&lt;strong&gt;</bpt>SendEnums<ept id="4">&lt;/strong&gt;</ept>, <bpt id="6">&lt;strong&gt;</bpt>MessageMethod<ept id="6">&lt;/strong&gt;</ept>, <bpt id="8">&lt;strong&gt;</bpt>SetOther<ept id="8">&lt;/strong&gt;</ept> and <bpt id="10">&lt;strong&gt;</bpt>HighFreq<ept id="10">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
+            <source>The first parameter to the <bpt id="2">&lt;strong&gt;</bpt>WriteEvent<ept id="2">&lt;/strong&gt;</ept> method defines the ID for the respective event.</source>
+            <target state="new">The first parameter to the <bpt id="2">&lt;strong&gt;</bpt>WriteEvent<ept id="2">&lt;/strong&gt;</ept> method defines the ID for the respective event.</target>
+          </trans-unit>
+          <trans-unit id="161" xml:space="preserve">
+            <source>The Run method implements an infinite loop that calls each of the logging methods implemented in the <bpt id="2">&lt;strong&gt;</bpt>SampleEventSourceWriter<ept id="2">&lt;/strong&gt;</ept> class every 10 seconds.</source>
+            <target state="new">The Run method implements an infinite loop that calls each of the logging methods implemented in the <bpt id="2">&lt;strong&gt;</bpt>SampleEventSourceWriter<ept id="2">&lt;/strong&gt;</ept> class every 10 seconds.</target>
+          </trans-unit>
+          <trans-unit id="162" xml:space="preserve">
+            <source>Step 3: Deploy your Worker Role</source>
+            <target state="new">Step 3: Deploy your Worker Role</target>
+          </trans-unit>
+          <trans-unit id="163" xml:space="preserve">
+            <source>Deploy your worker role to Azure from within Visual Studio by selecting the <bpt id="2">&lt;strong&gt;</bpt>WadExample<ept id="2">&lt;/strong&gt;</ept> project in the Solution Explorer then <bpt id="4">&lt;strong&gt;</bpt>Publish<ept id="4">&lt;/strong&gt;</ept> from the <bpt id="6">&lt;strong&gt;</bpt>Build<ept id="6">&lt;/strong&gt;</ept> menu.</source>
+            <target state="new">Deploy your worker role to Azure from within Visual Studio by selecting the <bpt id="2">&lt;strong&gt;</bpt>WadExample<ept id="2">&lt;/strong&gt;</ept> project in the Solution Explorer then <bpt id="4">&lt;strong&gt;</bpt>Publish<ept id="4">&lt;/strong&gt;</ept> from the <bpt id="6">&lt;strong&gt;</bpt>Build<ept id="6">&lt;/strong&gt;</ept> menu.</target>
+          </trans-unit>
+          <trans-unit id="164" xml:space="preserve">
+            <source>Choose your subscription.</source>
+            <target state="new">Choose your subscription.</target>
+          </trans-unit>
+          <trans-unit id="165" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Microsoft Azure Publish Settings<ept id="2">&lt;/strong&gt;</ept> dialog select <bpt id="4">&lt;strong&gt;</bpt>Create New…<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Microsoft Azure Publish Settings<ept id="2">&lt;/strong&gt;</ept> dialog select <bpt id="4">&lt;strong&gt;</bpt>Create New…<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="166" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Create Cloud Service and Storage Account<ept id="2">&lt;/strong&gt;</ept> dialog enter a <bpt id="4">&lt;strong&gt;</bpt>Name<ept id="4">&lt;/strong&gt;</ept> (for example, "WadExample") and select a region or affinity group.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Create Cloud Service and Storage Account<ept id="2">&lt;/strong&gt;</ept> dialog enter a <bpt id="4">&lt;strong&gt;</bpt>Name<ept id="4">&lt;/strong&gt;</ept> (for example, "WadExample") and select a region or affinity group.</target>
+          </trans-unit>
+          <trans-unit id="167" xml:space="preserve">
+            <source>Set the <bpt id="2">&lt;strong&gt;</bpt>Environment<ept id="2">&lt;/strong&gt;</ept> to <bpt id="4">&lt;strong&gt;</bpt>Staging<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Set the <bpt id="2">&lt;strong&gt;</bpt>Environment<ept id="2">&lt;/strong&gt;</ept> to <bpt id="4">&lt;strong&gt;</bpt>Staging<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="168" xml:space="preserve">
+            <source>Modify any other <bpt id="2">&lt;strong&gt;</bpt>Settings<ept id="2">&lt;/strong&gt;</ept> as appropriate and click <bpt id="4">&lt;strong&gt;</bpt>Publish<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Modify any other <bpt id="2">&lt;strong&gt;</bpt>Settings<ept id="2">&lt;/strong&gt;</ept> as appropriate and click <bpt id="4">&lt;strong&gt;</bpt>Publish<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="169" xml:space="preserve">
+            <source>After deployment has completed verify in the Azure Portal that your cloud service is in a <bpt id="2">&lt;strong&gt;</bpt>Running<ept id="2">&lt;/strong&gt;</ept> state.</source>
+            <target state="new">After deployment has completed verify in the Azure Portal that your cloud service is in a <bpt id="2">&lt;strong&gt;</bpt>Running<ept id="2">&lt;/strong&gt;</ept> state.</target>
+          </trans-unit>
+          <trans-unit id="170" xml:space="preserve">
+            <source>Step 4: Create your Diagnostics configuration file and install the extension</source>
+            <target state="new">Step 4: Create your Diagnostics configuration file and install the extension</target>
+          </trans-unit>
+          <trans-unit id="171" xml:space="preserve">
+            <source>Download the public configuration file schema definition by executing the following PowerShell command:</source>
+            <target state="new">Download the public configuration file schema definition by executing the following PowerShell command:</target>
+          </trans-unit>
+          <trans-unit id="172" xml:space="preserve">
+            <source>(Get-AzureServiceAvailableExtension -ExtensionName 'PaaSDiagnostics' -ProviderNamespace 'Microsoft.Azure.Diagnostics').PublicConfigurationSchema | Out-File -Encoding utf8 -FilePath 'WadConfig.xsd'</source>
+            <target state="new">(Get-AzureServiceAvailableExtension -ExtensionName 'PaaSDiagnostics' -ProviderNamespace 'Microsoft.Azure.Diagnostics').PublicConfigurationSchema | Out-File -Encoding utf8 -FilePath 'WadConfig.xsd'</target>
+          </trans-unit>
+          <trans-unit id="173" xml:space="preserve">
+            <source>Add an XML file to your <bpt id="2">&lt;strong&gt;</bpt>WorkerRole1<ept id="2">&lt;/strong&gt;</ept> project by right-clicking on the <bpt id="4">&lt;strong&gt;</bpt>WorkerRole1<ept id="4">&lt;/strong&gt;</ept> project and select <bpt id="6">&lt;strong&gt;</bpt>Add<ept id="6">&lt;/strong&gt;</ept> -&gt; <bpt id="8">&lt;strong&gt;</bpt>New Item…<ept id="8">&lt;/strong&gt;</ept> -&gt; <bpt id="10">&lt;strong&gt;</bpt>Visual C# items<ept id="10">&lt;/strong&gt;</ept> -&gt; <bpt id="12">&lt;strong&gt;</bpt>Data<ept id="12">&lt;/strong&gt;</ept> -&gt; <bpt id="14">&lt;strong&gt;</bpt>XML File<ept id="14">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Add an XML file to your <bpt id="2">&lt;strong&gt;</bpt>WorkerRole1<ept id="2">&lt;/strong&gt;</ept> project by right-clicking on the <bpt id="4">&lt;strong&gt;</bpt>WorkerRole1<ept id="4">&lt;/strong&gt;</ept> project and select <bpt id="6">&lt;strong&gt;</bpt>Add<ept id="6">&lt;/strong&gt;</ept> -&gt; <bpt id="8">&lt;strong&gt;</bpt>New Item…<ept id="8">&lt;/strong&gt;</ept> -&gt; <bpt id="10">&lt;strong&gt;</bpt>Visual C# items<ept id="10">&lt;/strong&gt;</ept> -&gt; <bpt id="12">&lt;strong&gt;</bpt>Data<ept id="12">&lt;/strong&gt;</ept> -&gt; <bpt id="14">&lt;strong&gt;</bpt>XML File<ept id="14">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="174" xml:space="preserve">
+            <source>Name the file "WadExample.xml".</source>
+            <target state="new">Name the file "WadExample.xml".</target>
+          </trans-unit>
+          <trans-unit id="175" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>CloudServices_diag_add_xml<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>CloudServices_diag_add_xml<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="176" xml:space="preserve">
+            <source>Associate the WadConfig.xsd with the configuration file.</source>
+            <target state="new">Associate the WadConfig.xsd with the configuration file.</target>
+          </trans-unit>
+          <trans-unit id="177" xml:space="preserve">
+            <source>Make sure the WadExample.xml editor window is the active window.</source>
+            <target state="new">Make sure the WadExample.xml editor window is the active window.</target>
+          </trans-unit>
+          <trans-unit id="178" xml:space="preserve">
+            <source>Press <bpt id="2">&lt;strong&gt;</bpt>F4<ept id="2">&lt;/strong&gt;</ept> to open the <bpt id="4">&lt;strong&gt;</bpt>Properties<ept id="4">&lt;/strong&gt;</ept> window.</source>
+            <target state="new">Press <bpt id="2">&lt;strong&gt;</bpt>F4<ept id="2">&lt;/strong&gt;</ept> to open the <bpt id="4">&lt;strong&gt;</bpt>Properties<ept id="4">&lt;/strong&gt;</ept> window.</target>
+          </trans-unit>
+          <trans-unit id="179" xml:space="preserve">
+            <source>Click on the <bpt id="2">&lt;strong&gt;</bpt>Schemas<ept id="2">&lt;/strong&gt;</ept> property in the <bpt id="4">&lt;strong&gt;</bpt>Properties<ept id="4">&lt;/strong&gt;</ept> window.</source>
+            <target state="new">Click on the <bpt id="2">&lt;strong&gt;</bpt>Schemas<ept id="2">&lt;/strong&gt;</ept> property in the <bpt id="4">&lt;strong&gt;</bpt>Properties<ept id="4">&lt;/strong&gt;</ept> window.</target>
+          </trans-unit>
+          <trans-unit id="180" xml:space="preserve">
+            <source>Click the <bpt id="2">&lt;strong&gt;</bpt>…<ept id="2">&lt;/strong&gt;</ept> in the <bpt id="4">&lt;strong&gt;</bpt>Schemas<ept id="4">&lt;/strong&gt;</ept> property.</source>
+            <target state="new">Click the <bpt id="2">&lt;strong&gt;</bpt>…<ept id="2">&lt;/strong&gt;</ept> in the <bpt id="4">&lt;strong&gt;</bpt>Schemas<ept id="4">&lt;/strong&gt;</ept> property.</target>
+          </trans-unit>
+          <trans-unit id="181" xml:space="preserve">
+            <source>Click the <bpt id="2">&lt;strong&gt;</bpt>Add…<ept id="2">&lt;/strong&gt;</ept> button and navigate to the location where you saved the XSD file and select the file WadConfig.xsd.</source>
+            <target state="new">Click the <bpt id="2">&lt;strong&gt;</bpt>Add…<ept id="2">&lt;/strong&gt;</ept> button and navigate to the location where you saved the XSD file and select the file WadConfig.xsd.</target>
+          </trans-unit>
+          <trans-unit id="182" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>OK<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>OK<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="183" xml:space="preserve">
+            <source>Replace the contents of the WadExample.xml configuration file with the following XML and save the file.</source>
+            <target state="new">Replace the contents of the WadExample.xml configuration file with the following XML and save the file.</target>
+          </trans-unit>
+          <trans-unit id="184" xml:space="preserve">
+            <source>This configuration file defines a couple performance counters to collect: one for CPU utilization and one for memory utilization.</source>
+            <target state="new">This configuration file defines a couple performance counters to collect: one for CPU utilization and one for memory utilization.</target>
+          </trans-unit>
+          <trans-unit id="185" xml:space="preserve">
+            <source>Then the configuration defines the four events corresponding to the methods in the SampleEventSourceWriter class.</source>
+            <target state="new">Then the configuration defines the four events corresponding to the methods in the SampleEventSourceWriter class.</target>
+          </trans-unit>
+          <trans-unit id="186" xml:space="preserve">
+            <source>Step 5: Install Diagnostics on your Worker Role</source>
+            <target state="new">Step 5: Install Diagnostics on your Worker Role</target>
+          </trans-unit>
+          <trans-unit id="187" xml:space="preserve">
+            <source>The PowerShell cmdlets for managing Diagnostics on a web or worker role are: Set-AzureServiceDiagnosticsExtension, Get-AzureServiceDiagnosticsExtension, and Remove-AzureServiceDiagnosticsExtension.</source>
+            <target state="new">The PowerShell cmdlets for managing Diagnostics on a web or worker role are: Set-AzureServiceDiagnosticsExtension, Get-AzureServiceDiagnosticsExtension, and Remove-AzureServiceDiagnosticsExtension.</target>
+          </trans-unit>
+          <trans-unit id="188" xml:space="preserve">
+            <source>Open Azure PowerShell.</source>
+            <target state="new">Open Azure PowerShell.</target>
+          </trans-unit>
+          <trans-unit id="189" xml:space="preserve">
+            <source>Execute the script to install Diagnostics on your worker role (replace <bpt id="2">&lt;em&gt;</bpt>StorageAccountKey<ept id="2">&lt;/em&gt;</ept> with the storage account key for your wadexample storage account):</source>
+            <target state="new">Execute the script to install Diagnostics on your worker role (replace <bpt id="2">&lt;em&gt;</bpt>StorageAccountKey<ept id="2">&lt;/em&gt;</ept> with the storage account key for your wadexample storage account):</target>
+          </trans-unit>
+          <trans-unit id="190" xml:space="preserve">
+            <source>Step 6: Look at your telemetry data</source>
+            <target state="new">Step 6: Look at your telemetry data</target>
+          </trans-unit>
+          <trans-unit id="191" xml:space="preserve">
+            <source>In the Visual Studio <bpt id="2">&lt;strong&gt;</bpt>Server Explorer<ept id="2">&lt;/strong&gt;</ept> navigate to the wadexample storage account.</source>
+            <target state="new">In the Visual Studio <bpt id="2">&lt;strong&gt;</bpt>Server Explorer<ept id="2">&lt;/strong&gt;</ept> navigate to the wadexample storage account.</target>
+          </trans-unit>
+          <trans-unit id="192" xml:space="preserve">
+            <source>After the cloud service has been running about 5 minutes you should see the tables <bpt id="2">&lt;strong&gt;</bpt>WADEnumsTable<ept id="2">&lt;/strong&gt;</ept>, <bpt id="4">&lt;strong&gt;</bpt>WADHighFreqTable<ept id="4">&lt;/strong&gt;</ept>, <bpt id="6">&lt;strong&gt;</bpt>WADMessageTable<ept id="6">&lt;/strong&gt;</ept>, <bpt id="8">&lt;strong&gt;</bpt>WADPerformanceCountersTable<ept id="8">&lt;/strong&gt;</ept> and <bpt id="10">&lt;strong&gt;</bpt>WADSetOtherTable<ept id="10">&lt;/strong&gt;</ept>.</source>
+            <target state="new">After the cloud service has been running about 5 minutes you should see the tables <bpt id="2">&lt;strong&gt;</bpt>WADEnumsTable<ept id="2">&lt;/strong&gt;</ept>, <bpt id="4">&lt;strong&gt;</bpt>WADHighFreqTable<ept id="4">&lt;/strong&gt;</ept>, <bpt id="6">&lt;strong&gt;</bpt>WADMessageTable<ept id="6">&lt;/strong&gt;</ept>, <bpt id="8">&lt;strong&gt;</bpt>WADPerformanceCountersTable<ept id="8">&lt;/strong&gt;</ept> and <bpt id="10">&lt;strong&gt;</bpt>WADSetOtherTable<ept id="10">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="193" xml:space="preserve">
+            <source>Double-click on one of the tables to view the telemetry that has been collected.</source>
+            <target state="new">Double-click on one of the tables to view the telemetry that has been collected.</target>
+          </trans-unit>
+          <trans-unit id="194" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>CloudServices_diag_tables<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>CloudServices_diag_tables<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="195" xml:space="preserve">
+            <source>How to Enable Diagnostics in a Virtual Machine</source>
+            <target state="new">How to Enable Diagnostics in a Virtual Machine</target>
+          </trans-unit>
+          <trans-unit id="196" xml:space="preserve">
+            <source>This walk through describes how to remotely install Diagnostics to an Azure virtual machine from a development computer.</source>
+            <target state="new">This walk through describes how to remotely install Diagnostics to an Azure virtual machine from a development computer.</target>
+          </trans-unit>
+          <trans-unit id="197" xml:space="preserve">
+            <source>You also learn how to implement an application that runs on that Azure virtual machine and emits telemetry data using the .NET <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>EventSource Class[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">You also learn how to implement an application that runs on that Azure virtual machine and emits telemetry data using the .NET <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>EventSource Class[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="198" xml:space="preserve">
+            <source>Azure Diagnostics is used to collect the telemetry and store it in an Azure storage account.</source>
+            <target state="new">Azure Diagnostics is used to collect the telemetry and store it in an Azure storage account.</target>
+          </trans-unit>
+          <trans-unit id="199" xml:space="preserve">
+            <source>Pre-requisites</source>
+            <target state="new">Pre-requisites</target>
+          </trans-unit>
+          <trans-unit id="200" xml:space="preserve">
+            <source>This walk through assumes you have an Azure subscription and are using Visual Studio 2013 with the Azure SDK.</source>
+            <target state="new">This walk through assumes you have an Azure subscription and are using Visual Studio 2013 with the Azure SDK.</target>
+          </trans-unit>
+          <trans-unit id="201" xml:space="preserve">
+            <source>If you do not have an Azure subscription, you can sign up for the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Free Trial[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">If you do not have an Azure subscription, you can sign up for the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Free Trial[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="202" xml:space="preserve">
+            <source>Make sure to <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Install and configure Azure PowerShell version 0.8.7 or later[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">Make sure to <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Install and configure Azure PowerShell version 0.8.7 or later[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="203" xml:space="preserve">
+            <source>Step 1: Create a Virtual Machine</source>
+            <target state="new">Step 1: Create a Virtual Machine</target>
+          </trans-unit>
+          <trans-unit id="204" xml:space="preserve">
+            <source>On your development computer, launch Visual Studio 2013.</source>
+            <target state="new">On your development computer, launch Visual Studio 2013.</target>
+          </trans-unit>
+          <trans-unit id="205" xml:space="preserve">
+            <source>In the Visual Studio <bpt id="2">&lt;strong&gt;</bpt>Server Explorer<ept id="2">&lt;/strong&gt;</ept> expand <bpt id="4">&lt;strong&gt;</bpt>Azure<ept id="4">&lt;/strong&gt;</ept>, right-click <bpt id="6">&lt;strong&gt;</bpt>Virtual Machines<ept id="6">&lt;/strong&gt;</ept> then select <bpt id="8">&lt;strong&gt;</bpt>Create Virtual Machine<ept id="8">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the Visual Studio <bpt id="2">&lt;strong&gt;</bpt>Server Explorer<ept id="2">&lt;/strong&gt;</ept> expand <bpt id="4">&lt;strong&gt;</bpt>Azure<ept id="4">&lt;/strong&gt;</ept>, right-click <bpt id="6">&lt;strong&gt;</bpt>Virtual Machines<ept id="6">&lt;/strong&gt;</ept> then select <bpt id="8">&lt;strong&gt;</bpt>Create Virtual Machine<ept id="8">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="206" xml:space="preserve">
+            <source>Select your Azure subscription in the <bpt id="2">&lt;strong&gt;</bpt>Choose a Subscription<ept id="2">&lt;/strong&gt;</ept> dialog and click <bpt id="4">&lt;strong&gt;</bpt>Next<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Select your Azure subscription in the <bpt id="2">&lt;strong&gt;</bpt>Choose a Subscription<ept id="2">&lt;/strong&gt;</ept> dialog and click <bpt id="4">&lt;strong&gt;</bpt>Next<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="207" xml:space="preserve">
+            <source>Select <bpt id="2">&lt;strong&gt;</bpt>Windows Server 2012 R2 Datacenter, November 2014<ept id="2">&lt;/strong&gt;</ept> in the <bpt id="4">&lt;strong&gt;</bpt>Select a Virtual Machine Image<ept id="4">&lt;/strong&gt;</ept> dialog and click <bpt id="6">&lt;strong&gt;</bpt>Next<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Select <bpt id="2">&lt;strong&gt;</bpt>Windows Server 2012 R2 Datacenter, November 2014<ept id="2">&lt;/strong&gt;</ept> in the <bpt id="4">&lt;strong&gt;</bpt>Select a Virtual Machine Image<ept id="4">&lt;/strong&gt;</ept> dialog and click <bpt id="6">&lt;strong&gt;</bpt>Next<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="208" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Virtual Machine Basic Settings<ept id="2">&lt;/strong&gt;</ept>, set the virtual machine name to "wadexample".</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Virtual Machine Basic Settings<ept id="2">&lt;/strong&gt;</ept>, set the virtual machine name to "wadexample".</target>
+          </trans-unit>
+          <trans-unit id="209" xml:space="preserve">
+            <source>Set your Administrator user name and password and click <bpt id="2">&lt;strong&gt;</bpt>Next<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Set your Administrator user name and password and click <bpt id="2">&lt;strong&gt;</bpt>Next<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="210" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Cloud Service Settings<ept id="2">&lt;/strong&gt;</ept> dialog create a new cloud service named "wadexampleVM".</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Cloud Service Settings<ept id="2">&lt;/strong&gt;</ept> dialog create a new cloud service named "wadexampleVM".</target>
+          </trans-unit>
+          <trans-unit id="211" xml:space="preserve">
+            <source>Create a new Storage account named "wadexample" and click <bpt id="2">&lt;strong&gt;</bpt>Next<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Create a new Storage account named "wadexample" and click <bpt id="2">&lt;strong&gt;</bpt>Next<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="212" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Create<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Create<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="213" xml:space="preserve">
+            <source>Step 2: Create your Application</source>
+            <target state="new">Step 2: Create your Application</target>
+          </trans-unit>
+          <trans-unit id="214" xml:space="preserve">
+            <source>On your development computer, launch Visual Studio 2013.</source>
+            <target state="new">On your development computer, launch Visual Studio 2013.</target>
+          </trans-unit>
+          <trans-unit id="215" xml:space="preserve">
+            <source>Create a new Visual C# Console Application that targets .NET Framework 4.5.</source>
+            <target state="new">Create a new Visual C# Console Application that targets .NET Framework 4.5.</target>
+          </trans-unit>
+          <trans-unit id="216" xml:space="preserve">
+            <source>Name the project "WadExampleVM".</source>
+            <target state="new">Name the project "WadExampleVM".</target>
+          </trans-unit>
+          <trans-unit id="217" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>CloudServices_diag_new_project<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>CloudServices_diag_new_project<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="218" xml:space="preserve">
+            <source>Replace the contents of Program.cs with the following code.</source>
+            <target state="new">Replace the contents of Program.cs with the following code.</target>
+          </trans-unit>
+          <trans-unit id="219" xml:space="preserve">
+            <source>The class <bpt id="2">&lt;strong&gt;</bpt>SampleEventSourceWriter<ept id="2">&lt;/strong&gt;</ept> implements four logging methods: <bpt id="4">&lt;strong&gt;</bpt>SendEnums<ept id="4">&lt;/strong&gt;</ept>, <bpt id="6">&lt;strong&gt;</bpt>MessageMethod<ept id="6">&lt;/strong&gt;</ept>, <bpt id="8">&lt;strong&gt;</bpt>SetOther<ept id="8">&lt;/strong&gt;</ept> and <bpt id="10">&lt;strong&gt;</bpt>HighFreq<ept id="10">&lt;/strong&gt;</ept>.</source>
+            <target state="new">The class <bpt id="2">&lt;strong&gt;</bpt>SampleEventSourceWriter<ept id="2">&lt;/strong&gt;</ept> implements four logging methods: <bpt id="4">&lt;strong&gt;</bpt>SendEnums<ept id="4">&lt;/strong&gt;</ept>, <bpt id="6">&lt;strong&gt;</bpt>MessageMethod<ept id="6">&lt;/strong&gt;</ept>, <bpt id="8">&lt;strong&gt;</bpt>SetOther<ept id="8">&lt;/strong&gt;</ept> and <bpt id="10">&lt;strong&gt;</bpt>HighFreq<ept id="10">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="220" xml:space="preserve">
+            <source>The first parameter to the WriteEvent method defines the ID for the respective event.</source>
+            <target state="new">The first parameter to the WriteEvent method defines the ID for the respective event.</target>
+          </trans-unit>
+          <trans-unit id="221" xml:space="preserve">
+            <source>The Run method implements an infinite loop that calls each of the logging methods implemented in the <bpt id="2">&lt;strong&gt;</bpt>SampleEventSourceWriter<ept id="2">&lt;/strong&gt;</ept> class every 10 seconds.</source>
+            <target state="new">The Run method implements an infinite loop that calls each of the logging methods implemented in the <bpt id="2">&lt;strong&gt;</bpt>SampleEventSourceWriter<ept id="2">&lt;/strong&gt;</ept> class every 10 seconds.</target>
+          </trans-unit>
+          <trans-unit id="222" xml:space="preserve">
+            <source>Save the file and select <bpt id="2">&lt;strong&gt;</bpt>Build Solution<ept id="2">&lt;/strong&gt;</ept> from the <bpt id="4">&lt;strong&gt;</bpt>Build<ept id="4">&lt;/strong&gt;</ept> menu to build your code.</source>
+            <target state="new">Save the file and select <bpt id="2">&lt;strong&gt;</bpt>Build Solution<ept id="2">&lt;/strong&gt;</ept> from the <bpt id="4">&lt;strong&gt;</bpt>Build<ept id="4">&lt;/strong&gt;</ept> menu to build your code.</target>
+          </trans-unit>
+          <trans-unit id="223" xml:space="preserve">
+            <source>Step 3: Deploy your Application</source>
+            <target state="new">Step 3: Deploy your Application</target>
+          </trans-unit>
+          <trans-unit id="224" xml:space="preserve">
+            <source>Right-click on the <bpt id="2">&lt;strong&gt;</bpt>WadExampleVM<ept id="2">&lt;/strong&gt;</ept> project in <bpt id="4">&lt;strong&gt;</bpt>Solution Explorer<ept id="4">&lt;/strong&gt;</ept> and choose <bpt id="6">&lt;strong&gt;</bpt>Open Folder in File Explorer<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Right-click on the <bpt id="2">&lt;strong&gt;</bpt>WadExampleVM<ept id="2">&lt;/strong&gt;</ept> project in <bpt id="4">&lt;strong&gt;</bpt>Solution Explorer<ept id="4">&lt;/strong&gt;</ept> and choose <bpt id="6">&lt;strong&gt;</bpt>Open Folder in File Explorer<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="225" xml:space="preserve">
+            <source>Navigate to the <bpt id="2">&lt;em&gt;</bpt>bin\Debug<ept id="2">&lt;/em&gt;</ept> folder and copy all the files (WadExampleVM.*)</source>
+            <target state="new">Navigate to the <bpt id="2">&lt;em&gt;</bpt>bin\Debug<ept id="2">&lt;/em&gt;</ept> folder and copy all the files (WadExampleVM.*)</target>
+          </trans-unit>
+          <trans-unit id="226" xml:space="preserve">
+            <source>In <bpt id="2">&lt;strong&gt;</bpt>Server Explorer<ept id="2">&lt;/strong&gt;</ept> right-click on the virtual machine and choose <bpt id="4">&lt;strong&gt;</bpt>Connect using Remote Desktop<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In <bpt id="2">&lt;strong&gt;</bpt>Server Explorer<ept id="2">&lt;/strong&gt;</ept> right-click on the virtual machine and choose <bpt id="4">&lt;strong&gt;</bpt>Connect using Remote Desktop<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="227" xml:space="preserve">
+            <source>Once connected to the VM create a folder named WadExampleVM and paste your application files into the folder.</source>
+            <target state="new">Once connected to the VM create a folder named WadExampleVM and paste your application files into the folder.</target>
+          </trans-unit>
+          <trans-unit id="228" xml:space="preserve">
+            <source>Launch the application WadExampleVM.exe.</source>
+            <target state="new">Launch the application WadExampleVM.exe.</target>
+          </trans-unit>
+          <trans-unit id="229" xml:space="preserve">
+            <source>You should see a blank console window.</source>
+            <target state="new">You should see a blank console window.</target>
+          </trans-unit>
+          <trans-unit id="230" xml:space="preserve">
+            <source>Step 4: Create your Diagnostics configuration and install the Extension</source>
+            <target state="new">Step 4: Create your Diagnostics configuration and install the Extension</target>
+          </trans-unit>
+          <trans-unit id="231" xml:space="preserve">
+            <source>Download the public configuration file schema definition to your development computer by executing the following PowerShell command:</source>
+            <target state="new">Download the public configuration file schema definition to your development computer by executing the following PowerShell command:</target>
+          </trans-unit>
+          <trans-unit id="232" xml:space="preserve">
+            <source>Open a new XML file in Visual Studio, either in a project you already have open or in a Visual Studio instance with no open projects.</source>
+            <target state="new">Open a new XML file in Visual Studio, either in a project you already have open or in a Visual Studio instance with no open projects.</target>
+          </trans-unit>
+          <trans-unit id="233" xml:space="preserve">
+            <source>In Visual Studio, select <bpt id="2">&lt;strong&gt;</bpt>Add<ept id="2">&lt;/strong&gt;</ept> -&gt; <bpt id="4">&lt;strong&gt;</bpt>New Item…<ept id="4">&lt;/strong&gt;</ept> -&gt; <bpt id="6">&lt;strong&gt;</bpt>Visual C# items<ept id="6">&lt;/strong&gt;</ept> -&gt; <bpt id="8">&lt;strong&gt;</bpt>Data<ept id="8">&lt;/strong&gt;</ept> -&gt; <bpt id="10">&lt;strong&gt;</bpt>XML File<ept id="10">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In Visual Studio, select <bpt id="2">&lt;strong&gt;</bpt>Add<ept id="2">&lt;/strong&gt;</ept> -&gt; <bpt id="4">&lt;strong&gt;</bpt>New Item…<ept id="4">&lt;/strong&gt;</ept> -&gt; <bpt id="6">&lt;strong&gt;</bpt>Visual C# items<ept id="6">&lt;/strong&gt;</ept> -&gt; <bpt id="8">&lt;strong&gt;</bpt>Data<ept id="8">&lt;/strong&gt;</ept> -&gt; <bpt id="10">&lt;strong&gt;</bpt>XML File<ept id="10">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="234" xml:space="preserve">
+            <source>Name the file "WadExample.xml"</source>
+            <target state="new">Name the file "WadExample.xml"</target>
+          </trans-unit>
+          <trans-unit id="235" xml:space="preserve">
+            <source>Associate the WadConfig.xsd with the configuration file.</source>
+            <target state="new">Associate the WadConfig.xsd with the configuration file.</target>
+          </trans-unit>
+          <trans-unit id="236" xml:space="preserve">
+            <source>Make sure the WadExample.xml editor window is the active window.</source>
+            <target state="new">Make sure the WadExample.xml editor window is the active window.</target>
+          </trans-unit>
+          <trans-unit id="237" xml:space="preserve">
+            <source>Press <bpt id="2">&lt;strong&gt;</bpt>F4<ept id="2">&lt;/strong&gt;</ept> to open the <bpt id="4">&lt;strong&gt;</bpt>Properties<ept id="4">&lt;/strong&gt;</ept> window.</source>
+            <target state="new">Press <bpt id="2">&lt;strong&gt;</bpt>F4<ept id="2">&lt;/strong&gt;</ept> to open the <bpt id="4">&lt;strong&gt;</bpt>Properties<ept id="4">&lt;/strong&gt;</ept> window.</target>
+          </trans-unit>
+          <trans-unit id="238" xml:space="preserve">
+            <source>Click on the <bpt id="2">&lt;strong&gt;</bpt>Schemas<ept id="2">&lt;/strong&gt;</ept> property in the <bpt id="4">&lt;strong&gt;</bpt>Properties<ept id="4">&lt;/strong&gt;</ept> window.</source>
+            <target state="new">Click on the <bpt id="2">&lt;strong&gt;</bpt>Schemas<ept id="2">&lt;/strong&gt;</ept> property in the <bpt id="4">&lt;strong&gt;</bpt>Properties<ept id="4">&lt;/strong&gt;</ept> window.</target>
+          </trans-unit>
+          <trans-unit id="239" xml:space="preserve">
+            <source>Click the <bpt id="2">&lt;strong&gt;</bpt>…<ept id="2">&lt;/strong&gt;</ept> in the <bpt id="4">&lt;strong&gt;</bpt>Schemas<ept id="4">&lt;/strong&gt;</ept> property.</source>
+            <target state="new">Click the <bpt id="2">&lt;strong&gt;</bpt>…<ept id="2">&lt;/strong&gt;</ept> in the <bpt id="4">&lt;strong&gt;</bpt>Schemas<ept id="4">&lt;/strong&gt;</ept> property.</target>
+          </trans-unit>
+          <trans-unit id="240" xml:space="preserve">
+            <source>Click the <bpt id="2">&lt;strong&gt;</bpt>Add…<ept id="2">&lt;/strong&gt;</ept> button and navigate to the location where you saved the XSD file and select the file WadConfig.xsd.</source>
+            <target state="new">Click the <bpt id="2">&lt;strong&gt;</bpt>Add…<ept id="2">&lt;/strong&gt;</ept> button and navigate to the location where you saved the XSD file and select the file WadConfig.xsd.</target>
+          </trans-unit>
+          <trans-unit id="241" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>OK<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>OK<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="242" xml:space="preserve">
+            <source>Replace the contents of the WadExample.xml configuration file with the following XML and save the file.</source>
+            <target state="new">Replace the contents of the WadExample.xml configuration file with the following XML and save the file.</target>
+          </trans-unit>
+          <trans-unit id="243" xml:space="preserve">
+            <source>This configuration file defines a couple performance counters to collect: one for CPU utilization and one for memory utilization.</source>
+            <target state="new">This configuration file defines a couple performance counters to collect: one for CPU utilization and one for memory utilization.</target>
+          </trans-unit>
+          <trans-unit id="244" xml:space="preserve">
+            <source>Then the configuration defines the four events corresponding to the methods in the SampleEventSourceWriter class.</source>
+            <target state="new">Then the configuration defines the four events corresponding to the methods in the SampleEventSourceWriter class.</target>
+          </trans-unit>
+          <trans-unit id="245" xml:space="preserve">
+            <source>Step 5: Remotely install Diagnostics on your Azure Virtual Machine</source>
+            <target state="new">Step 5: Remotely install Diagnostics on your Azure Virtual Machine</target>
+          </trans-unit>
+          <trans-unit id="246" xml:space="preserve">
+            <source>The PowerShell cmdlets for managing Diagnostics on a VM are: Set-AzureVMDiagnosticsExtension, Get-AzureVMDiagnosticsExtension, and Remove-AzureVMDiagnosticsExtension.</source>
+            <target state="new">The PowerShell cmdlets for managing Diagnostics on a VM are: Set-AzureVMDiagnosticsExtension, Get-AzureVMDiagnosticsExtension, and Remove-AzureVMDiagnosticsExtension.</target>
+          </trans-unit>
+          <trans-unit id="247" xml:space="preserve">
+            <source>On your developer computer, open Azure PowerShell.</source>
+            <target state="new">On your developer computer, open Azure PowerShell.</target>
+          </trans-unit>
+          <trans-unit id="248" xml:space="preserve">
+            <source>Execute the script to remotely install Diagnostics on your VM (Replace <bpt id="2">&lt;em&gt;</bpt>StorageAccountKey<ept id="2">&lt;/em&gt;</ept> with the storage account key for your wadexamplevm storage account):</source>
+            <target state="new">Execute the script to remotely install Diagnostics on your VM (Replace <bpt id="2">&lt;em&gt;</bpt>StorageAccountKey<ept id="2">&lt;/em&gt;</ept> with the storage account key for your wadexamplevm storage account):</target>
+          </trans-unit>
+          <trans-unit id="249" xml:space="preserve">
+            <source>Step 6: Look at your telemetry data</source>
+            <target state="new">Step 6: Look at your telemetry data</target>
+          </trans-unit>
+          <trans-unit id="250" xml:space="preserve">
+            <source>In the Visual Studio <bpt id="2">&lt;strong&gt;</bpt>Server Explorer<ept id="2">&lt;/strong&gt;</ept> navigate to the wadexample storage account.</source>
+            <target state="new">In the Visual Studio <bpt id="2">&lt;strong&gt;</bpt>Server Explorer<ept id="2">&lt;/strong&gt;</ept> navigate to the wadexample storage account.</target>
+          </trans-unit>
+          <trans-unit id="251" xml:space="preserve">
+            <source>After the VM has been running about 5 minutes you should see the tables <bpt id="2">&lt;strong&gt;</bpt>WADEnumsTable<ept id="2">&lt;/strong&gt;</ept>, <bpt id="4">&lt;strong&gt;</bpt>WADHighFreqTable<ept id="4">&lt;/strong&gt;</ept>, <bpt id="6">&lt;strong&gt;</bpt>WADMessageTable<ept id="6">&lt;/strong&gt;</ept>, <bpt id="8">&lt;strong&gt;</bpt>WADPerformanceCountersTable<ept id="8">&lt;/strong&gt;</ept> and <bpt id="10">&lt;strong&gt;</bpt>WADSetOtherTable<ept id="10">&lt;/strong&gt;</ept>.</source>
+            <target state="new">After the VM has been running about 5 minutes you should see the tables <bpt id="2">&lt;strong&gt;</bpt>WADEnumsTable<ept id="2">&lt;/strong&gt;</ept>, <bpt id="4">&lt;strong&gt;</bpt>WADHighFreqTable<ept id="4">&lt;/strong&gt;</ept>, <bpt id="6">&lt;strong&gt;</bpt>WADMessageTable<ept id="6">&lt;/strong&gt;</ept>, <bpt id="8">&lt;strong&gt;</bpt>WADPerformanceCountersTable<ept id="8">&lt;/strong&gt;</ept> and <bpt id="10">&lt;strong&gt;</bpt>WADSetOtherTable<ept id="10">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="252" xml:space="preserve">
+            <source>Double-click on one of the tables to view the telemetry that has been collected.</source>
+            <target state="new">Double-click on one of the tables to view the telemetry that has been collected.</target>
+          </trans-unit>
+          <trans-unit id="253" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>CloudServices_diag_wadexamplevm_tables<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>CloudServices_diag_wadexamplevm_tables<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="254" xml:space="preserve">
+            <source>Configuration File Schema</source>
+            <target state="new">Configuration File Schema</target>
+          </trans-unit>
+          <trans-unit id="255" xml:space="preserve">
+            <source>The Diagnostics configuration file defines values that are used to initialize diagnostic configuration settings when the diagnostics monitor starts.</source>
+            <target state="new">The Diagnostics configuration file defines values that are used to initialize diagnostic configuration settings when the diagnostics monitor starts.</target>
+          </trans-unit>
+          <trans-unit id="256" xml:space="preserve">
+            <source>A sample configuration file and detailed documentation on its schema is located here: <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Diagnostics 1.2 Configuration Schema[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">A sample configuration file and detailed documentation on its schema is located here: <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Diagnostics 1.2 Configuration Schema[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="257" xml:space="preserve">
+            <source>Troubleshooting</source>
+            <target state="new">Troubleshooting</target>
+          </trans-unit>
+          <trans-unit id="258" xml:space="preserve">
+            <source>Azure Diagnostics is not Starting</source>
+            <target state="new">Azure Diagnostics is not Starting</target>
+          </trans-unit>
+          <trans-unit id="259" xml:space="preserve">
+            <source>Diagnostics is comprised of two components: A guest agent plugin and the monitoring agent.</source>
+            <target state="new">Diagnostics is comprised of two components: A guest agent plugin and the monitoring agent.</target>
+          </trans-unit>
+          <trans-unit id="260" xml:space="preserve">
+            <source>Log files for the guest agent plugin are located in the file:</source>
+            <target state="new">Log files for the guest agent plugin are located in the file:</target>
+          </trans-unit>
+          <trans-unit id="261" xml:space="preserve">
+            <source>*%SystemDrive%\ WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.PaaSDiagnostics\<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>*\CommandExecution.log</source>
+            <target state="new">*%SystemDrive%\ WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.PaaSDiagnostics\<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>*\CommandExecution.log</target>
+          </trans-unit>
+          <trans-unit id="262" xml:space="preserve">
+            <source>The following error codes are returned by the plugin:</source>
+            <target state="new">The following error codes are returned by the plugin:</target>
+          </trans-unit>
+          <trans-unit id="263" xml:space="preserve">
+            <source>Exit Code</source>
+            <target state="new">Exit Code</target>
+          </trans-unit>
+          <trans-unit id="264" xml:space="preserve">
+            <source>Description</source>
+            <target state="new">Description</target>
+          </trans-unit>
+          <trans-unit id="265" xml:space="preserve">
+            <source>0</source>
+            <target state="new">0</target>
+          </trans-unit>
+          <trans-unit id="266" xml:space="preserve">
+            <source>Success.</source>
+            <target state="new">Success.</target>
+          </trans-unit>
+          <trans-unit id="267" xml:space="preserve">
+            <source>-1</source>
+            <target state="new">-1</target>
+          </trans-unit>
+          <trans-unit id="268" xml:space="preserve">
+            <source>Generic Error.</source>
+            <target state="new">Generic Error.</target>
+          </trans-unit>
+          <trans-unit id="269" xml:space="preserve">
+            <source>-2</source>
+            <target state="new">-2</target>
+          </trans-unit>
+          <trans-unit id="270" xml:space="preserve">
+            <source>Unable to load the rcf file.<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>This is an internal error that should only happen if the guest agent plugin launcher is manually invoked, incorrectly, on the VM.</source>
+            <target state="new">Unable to load the rcf file.<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>This is an internal error that should only happen if the guest agent plugin launcher is manually invoked, incorrectly, on the VM.</target>
+          </trans-unit>
+          <trans-unit id="271" xml:space="preserve">
+            <source>-3</source>
+            <target state="new">-3</target>
+          </trans-unit>
+          <trans-unit id="272" xml:space="preserve">
+            <source>Cannot load the Diagnostics configuration file.<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept><bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>Solution: This is the result of a configuration file not passing schema validation. The solution is to provide a configuration file that complies with the schema.</source>
+            <target state="new">Cannot load the Diagnostics configuration file.<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept><bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>Solution: This is the result of a configuration file not passing schema validation. The solution is to provide a configuration file that complies with the schema.</target>
+          </trans-unit>
+          <trans-unit id="273" xml:space="preserve">
+            <source>-4</source>
+            <target state="new">-4</target>
+          </trans-unit>
+          <trans-unit id="274" xml:space="preserve">
+            <source>Another instance of the monitoring agent Diagnostics is already using the local resource directory.<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept><bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>Solution: Specify a different value for <bpt id="5">&lt;strong&gt;</bpt>LocalResourceDirectory<ept id="5">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Another instance of the monitoring agent Diagnostics is already using the local resource directory.<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept><bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>Solution: Specify a different value for <bpt id="5">&lt;strong&gt;</bpt>LocalResourceDirectory<ept id="5">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="275" xml:space="preserve">
+            <source>-6</source>
+            <target state="new">-6</target>
+          </trans-unit>
+          <trans-unit id="276" xml:space="preserve">
+            <source>The guest agent plugin launcher attempted to launch Diagnostics with an invalid command line.<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept><bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>This is an internal error that should only happen if the guest agent plugin launcher is manually invoked, incorrectly, on the VM.</source>
+            <target state="new">The guest agent plugin launcher attempted to launch Diagnostics with an invalid command line.<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept><bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>This is an internal error that should only happen if the guest agent plugin launcher is manually invoked, incorrectly, on the VM.</target>
+          </trans-unit>
+          <trans-unit id="277" xml:space="preserve">
+            <source>-10</source>
+            <target state="new">-10</target>
+          </trans-unit>
+          <trans-unit id="278" xml:space="preserve">
+            <source>The Diagnostics plugin exited with an unhandled exception.</source>
+            <target state="new">The Diagnostics plugin exited with an unhandled exception.</target>
+          </trans-unit>
+          <trans-unit id="279" xml:space="preserve">
+            <source>-11</source>
+            <target state="new">-11</target>
+          </trans-unit>
+          <trans-unit id="280" xml:space="preserve">
+            <source>The guest agent was unable to create the process responsible for launching and monitoring the monitoring agent.<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept><bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>Solution: Verify that sufficient system resources are available to launch new processes.<bpt id="5">&lt;html&gt;</bpt><ept id="5">&lt;/html&gt;</ept></source>
+            <target state="new">The guest agent was unable to create the process responsible for launching and monitoring the monitoring agent.<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept><bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>Solution: Verify that sufficient system resources are available to launch new processes.<bpt id="5">&lt;html&gt;</bpt><ept id="5">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="281" xml:space="preserve">
+            <source>-101</source>
+            <target state="new">-101</target>
+          </trans-unit>
+          <trans-unit id="282" xml:space="preserve">
+            <source>Invalid arguments when calling the Diagnostics plugin.<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept><bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>This is an internal error that should only happen if the guest agent plugin launcher is manually invoked, incorrectly, on the VM.</source>
+            <target state="new">Invalid arguments when calling the Diagnostics plugin.<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept><bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>This is an internal error that should only happen if the guest agent plugin launcher is manually invoked, incorrectly, on the VM.</target>
+          </trans-unit>
+          <trans-unit id="283" xml:space="preserve">
+            <source>-102</source>
+            <target state="new">-102</target>
+          </trans-unit>
+          <trans-unit id="284" xml:space="preserve">
+            <source>The plugin process is unable to initialize itself.<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept><bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>Solution: Verify that sufficient system resources are available to launch new processes.</source>
+            <target state="new">The plugin process is unable to initialize itself.<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept><bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>Solution: Verify that sufficient system resources are available to launch new processes.</target>
+          </trans-unit>
+          <trans-unit id="285" xml:space="preserve">
+            <source>-103</source>
+            <target state="new">-103</target>
+          </trans-unit>
+          <trans-unit id="286" xml:space="preserve">
+            <source>The plugin process is unable to initialize itself. Specifically it is unable to create the logger object.<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept><bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>Solution: Verify that sufficient system resources are available to launch new processes.</source>
+            <target state="new">The plugin process is unable to initialize itself. Specifically it is unable to create the logger object.<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept><bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>Solution: Verify that sufficient system resources are available to launch new processes.</target>
+          </trans-unit>
+          <trans-unit id="287" xml:space="preserve">
+            <source>-104</source>
+            <target state="new">-104</target>
+          </trans-unit>
+          <trans-unit id="288" xml:space="preserve">
+            <source>Unable to load the rcf file provided by the guest agent.<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept><bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>This is an internal error that should only happen if the guest agent plugin launcher is manually invoked, incorrectly, on the VM.</source>
+            <target state="new">Unable to load the rcf file provided by the guest agent.<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept><bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>This is an internal error that should only happen if the guest agent plugin launcher is manually invoked, incorrectly, on the VM.</target>
+          </trans-unit>
+          <trans-unit id="289" xml:space="preserve">
+            <source>-105</source>
+            <target state="new">-105</target>
+          </trans-unit>
+          <trans-unit id="290" xml:space="preserve">
+            <source>The Diagnostics plugin cannot open the Diagnostics configuration file.<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept><bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>This is an internal error that should only happen if the Diagnostics plugin is manually invoked, incorrectly, on the VM.</source>
+            <target state="new">The Diagnostics plugin cannot open the Diagnostics configuration file.<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept><bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>This is an internal error that should only happen if the Diagnostics plugin is manually invoked, incorrectly, on the VM.</target>
+          </trans-unit>
+          <trans-unit id="291" xml:space="preserve">
+            <source>-106</source>
+            <target state="new">-106</target>
+          </trans-unit>
+          <trans-unit id="292" xml:space="preserve">
+            <source>Cannot read the Diagnostics configuration file.<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept><bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>Solution: This is the result of a configuration file not passing schema validation. So the solution is to provide a configuration file that complies with the schema. You can find the XML that is delivered to the Diagnostics extension in the folder <bpt id="5">&lt;em&gt;</bpt>%SystemDrive%\WindowsAzure\Config<ept id="5">&lt;/em&gt;</ept> on the VM. Open the appropriate XML file and search for <bpt id="7">&lt;strong&gt;</bpt>Microsoft.Azure.Diagnostics<ept id="7">&lt;/strong&gt;</ept>, then for the <bpt id="9">&lt;strong&gt;</bpt>xmlCfg<ept id="9">&lt;/strong&gt;</ept> field. The data is base64 encoded so you’ll need to <bpt id="11CapsExtId1">&lt;link&gt;</bpt><bpt id="11CapsExtId2">&lt;linkText&gt;</bpt>decode it<ept id="11CapsExtId2">&lt;/linkText&gt;</ept><bpt id="11CapsExtId3">&lt;title&gt;</bpt><ept id="11CapsExtId3">&lt;/title&gt;</ept><ept id="11CapsExtId1">&lt;/link&gt;</ept> to see the XML that was loaded by Diagnostics.<bpt id="13">&lt;html&gt;</bpt><ept id="13">&lt;/html&gt;</ept></source>
+            <target state="new">Cannot read the Diagnostics configuration file.<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept><bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>Solution: This is the result of a configuration file not passing schema validation. So the solution is to provide a configuration file that complies with the schema. You can find the XML that is delivered to the Diagnostics extension in the folder <bpt id="5">&lt;em&gt;</bpt>%SystemDrive%\WindowsAzure\Config<ept id="5">&lt;/em&gt;</ept> on the VM. Open the appropriate XML file and search for <bpt id="7">&lt;strong&gt;</bpt>Microsoft.Azure.Diagnostics<ept id="7">&lt;/strong&gt;</ept>, then for the <bpt id="9">&lt;strong&gt;</bpt>xmlCfg<ept id="9">&lt;/strong&gt;</ept> field. The data is base64 encoded so you’ll need to <bpt id="11CapsExtId1">&lt;link&gt;</bpt><bpt id="11CapsExtId2">&lt;linkText&gt;</bpt>decode it<ept id="11CapsExtId2">&lt;/linkText&gt;</ept><bpt id="11CapsExtId3">&lt;title&gt;</bpt><ept id="11CapsExtId3">&lt;/title&gt;</ept><ept id="11CapsExtId1">&lt;/link&gt;</ept> to see the XML that was loaded by Diagnostics.<bpt id="13">&lt;html&gt;</bpt><ept id="13">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="293" xml:space="preserve">
+            <source>-107</source>
+            <target state="new">-107</target>
+          </trans-unit>
+          <trans-unit id="294" xml:space="preserve">
+            <source>The resource directory pass to the monitoring agent is invalid.<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept><bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>This is an internal error that should only happen if the monitoring agent is manually invoked, incorrectly, on the VM.<bpt id="5">&lt;html&gt;</bpt><ept id="5">&lt;/html&gt;</ept></source>
+            <target state="new">The resource directory pass to the monitoring agent is invalid.<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept><bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>This is an internal error that should only happen if the monitoring agent is manually invoked, incorrectly, on the VM.<bpt id="5">&lt;html&gt;</bpt><ept id="5">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="295" xml:space="preserve">
+            <source>-108</source>
+            <target state="new">-108</target>
+          </trans-unit>
+          <trans-unit id="296" xml:space="preserve">
+            <source>Unable to convert the Diagnostics configuration file into the monitoring agent configuration file.<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept><bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>This is an internal error that should only happen if the Diagnostics plugin is manually invoked with an invalid configuration file.</source>
+            <target state="new">Unable to convert the Diagnostics configuration file into the monitoring agent configuration file.<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept><bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>This is an internal error that should only happen if the Diagnostics plugin is manually invoked with an invalid configuration file.</target>
+          </trans-unit>
+          <trans-unit id="297" xml:space="preserve">
+            <source>-110</source>
+            <target state="new">-110</target>
+          </trans-unit>
+          <trans-unit id="298" xml:space="preserve">
+            <source>General Diagnostics configuration error.<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept><bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>This is an internal error that should only happen if the Diagnostics plugin is manually invoked with an invalid configuration file.</source>
+            <target state="new">General Diagnostics configuration error.<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept><bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>This is an internal error that should only happen if the Diagnostics plugin is manually invoked with an invalid configuration file.</target>
+          </trans-unit>
+          <trans-unit id="299" xml:space="preserve">
+            <source>-111</source>
+            <target state="new">-111</target>
+          </trans-unit>
+          <trans-unit id="300" xml:space="preserve">
+            <source>Unable to start the monitoring agent.<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept><bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>Solution: Verify that sufficient system resources are available.</source>
+            <target state="new">Unable to start the monitoring agent.<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept><bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>Solution: Verify that sufficient system resources are available.</target>
+          </trans-unit>
+          <trans-unit id="301" xml:space="preserve">
+            <source>-112</source>
+            <target state="new">-112</target>
+          </trans-unit>
+          <trans-unit id="302" xml:space="preserve">
+            <source>General error</source>
+            <target state="new">General error</target>
+          </trans-unit>
+          <trans-unit id="303" xml:space="preserve">
+            <source>Diagnostics Data is Not Logged to Storage</source>
+            <target state="new">Diagnostics Data is Not Logged to Storage</target>
+          </trans-unit>
+          <trans-unit id="304" xml:space="preserve">
+            <source>The most common cause of missing event data is incorrectly defined storage account information.</source>
+            <target state="new">The most common cause of missing event data is incorrectly defined storage account information.</target>
+          </trans-unit>
+          <trans-unit id="305" xml:space="preserve">
+            <source>Solution: Correct your Diagnostics configuration file and re-install Diagnostics.</source>
+            <target state="new">Solution: Correct your Diagnostics configuration file and re-install Diagnostics.</target>
+          </trans-unit>
+          <trans-unit id="306" xml:space="preserve">
+            <source>Before event data is uploaded to your storage account it is stored in the folder.</source>
+            <target state="new">Before event data is uploaded to your storage account it is stored in the folder.</target>
+          </trans-unit>
+          <trans-unit id="307" xml:space="preserve">
+            <source>See above for details on <bpt id="2">&lt;strong&gt;</bpt>LocalResourceDirectory<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">See above for details on <bpt id="2">&lt;strong&gt;</bpt>LocalResourceDirectory<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="308" xml:space="preserve">
+            <source>If there are no files in this folder the monitoring agent is unable to launch.</source>
+            <target state="new">If there are no files in this folder the monitoring agent is unable to launch.</target>
+          </trans-unit>
+          <trans-unit id="309" xml:space="preserve">
+            <source>This is typically caused by an invalid configuration file and should have been reported in the CommandExecution.log.</source>
+            <target state="new">This is typically caused by an invalid configuration file and should have been reported in the CommandExecution.log.</target>
+          </trans-unit>
+          <trans-unit id="310" xml:space="preserve">
+            <source>If the Monitoring Agent is successfully collecting event data you will see .tsf files for each event defined in your configuration file.</source>
+            <target state="new">If the Monitoring Agent is successfully collecting event data you will see .tsf files for each event defined in your configuration file.</target>
+          </trans-unit>
+          <trans-unit id="311" xml:space="preserve">
+            <source>The Monitoring Agent logs any errors it experiences in the file MaEventTable.tsf.</source>
+            <target state="new">The Monitoring Agent logs any errors it experiences in the file MaEventTable.tsf.</target>
+          </trans-unit>
+          <trans-unit id="312" xml:space="preserve">
+            <source>To inspect the contents of this file run the following command:</source>
+            <target state="new">To inspect the contents of this file run the following command:</target>
+          </trans-unit>
+          <trans-unit id="313" xml:space="preserve">
+            <source>The tool generates a file named maeventtable.csv that you may open and inspect the logs for failures.</source>
+            <target state="new">The tool generates a file named maeventtable.csv that you may open and inspect the logs for failures.</target>
+          </trans-unit>
+          <trans-unit id="314" xml:space="preserve">
+            <source>Frequently Asked Questions</source>
+            <target state="new">Frequently Asked Questions</target>
+          </trans-unit>
+          <trans-unit id="315" xml:space="preserve">
+            <source>The following are some frequently asked questions and their answers:</source>
+            <target state="new">The following are some frequently asked questions and their answers:</target>
+          </trans-unit>
+          <trans-unit id="316" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Q.<ept id="1">&lt;/strong&gt;</ept> How do I upgrade my Visual Studio solution from Azure Diagnostics 1.0 to Azure Diagnostics 1.1?</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Q.<ept id="1">&lt;/strong&gt;</ept> How do I upgrade my Visual Studio solution from Azure Diagnostics 1.0 to Azure Diagnostics 1.1?</target>
+          </trans-unit>
+          <trans-unit id="317" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>A.<ept id="1">&lt;/strong&gt;</ept> Upgrading your Visual Studio solution from Diagnostics 1.0 to Diagnostics 1.1 (or later) is a manual process:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>A.<ept id="1">&lt;/strong&gt;</ept> Upgrading your Visual Studio solution from Diagnostics 1.0 to Diagnostics 1.1 (or later) is a manual process:</target>
+          </trans-unit>
+          <trans-unit id="318" xml:space="preserve">
+            <source>Disable Diagnostics in your Visual Studio solution to prevent Diagnostics 1.0 from being deployed with your role</source>
+            <target state="new">Disable Diagnostics in your Visual Studio solution to prevent Diagnostics 1.0 from being deployed with your role</target>
+          </trans-unit>
+          <trans-unit id="319" xml:space="preserve">
+            <source>If your code uses Trace Listener you will need to modify your code to use .NET EventSource.</source>
+            <target state="new">If your code uses Trace Listener you will need to modify your code to use .NET EventSource.</target>
+          </trans-unit>
+          <trans-unit id="320" xml:space="preserve">
+            <source>Diagnostics 1.1 and later does not support Trace Listener.</source>
+            <target state="new">Diagnostics 1.1 and later does not support Trace Listener.</target>
+          </trans-unit>
+          <trans-unit id="321" xml:space="preserve">
+            <source>Modify your deployment process to install the Diagnostics 1.1 extension</source>
+            <target state="new">Modify your deployment process to install the Diagnostics 1.1 extension</target>
+          </trans-unit>
+          <trans-unit id="322" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Q.<ept id="1">&lt;/strong&gt;</ept> If I have already installed the Diagnostics 1.1 Extension on my role or VM how do I upgrade to Diagnostics 1.2 or 1.3?</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Q.<ept id="1">&lt;/strong&gt;</ept> If I have already installed the Diagnostics 1.1 Extension on my role or VM how do I upgrade to Diagnostics 1.2 or 1.3?</target>
+          </trans-unit>
+          <trans-unit id="323" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>A.<ept id="1">&lt;/strong&gt;</ept> If you specified “–Version “1.<bpt id="3">&lt;em&gt;</bpt>”" when you installed Diagnostics 1.1, the next time your role restarts or the VM reboots it will be automatically updated to the most recent version matching the regular expression “1.<ept id="3">&lt;/em&gt;</ept>” If “–Version “1.1”” when you installed Diagnostics 1.1 you can update a newer version be re-executing the Set- cmdlet and specifying the version you want to install.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>A.<ept id="1">&lt;/strong&gt;</ept> If you specified “–Version “1.<bpt id="3">&lt;em&gt;</bpt>”" when you installed Diagnostics 1.1, the next time your role restarts or the VM reboots it will be automatically updated to the most recent version matching the regular expression “1.<ept id="3">&lt;/em&gt;</ept>” If “–Version “1.1”” when you installed Diagnostics 1.1 you can update a newer version be re-executing the Set- cmdlet and specifying the version you want to install.</target>
+          </trans-unit>
+          <trans-unit id="324" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Q.<ept id="1">&lt;/strong&gt;</ept> How are tables named?</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Q.<ept id="1">&lt;/strong&gt;</ept> How are tables named?</target>
+          </trans-unit>
+          <trans-unit id="325" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>A.<ept id="1">&lt;/strong&gt;</ept> Tables are named according to the following:</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>A.<ept id="1">&lt;/strong&gt;</ept> Tables are named according to the following:</target>
+          </trans-unit>
+          <trans-unit id="326" xml:space="preserve">
+            <source>Here is an example:</source>
+            <target state="new">Here is an example:</target>
+          </trans-unit>
+          <trans-unit id="327" xml:space="preserve">
+            <source>That will generate 4 tables:</source>
+            <target state="new">That will generate 4 tables:</target>
+          </trans-unit>
+          <trans-unit id="328" xml:space="preserve">
+            <source>Event</source>
+            <target state="new">Event</target>
+          </trans-unit>
+          <trans-unit id="329" xml:space="preserve">
+            <source>Table Name</source>
+            <target state="new">Table Name</target>
+          </trans-unit>
+          <trans-unit id="330" xml:space="preserve">
+            <source>provider=”prov1” &lt;Event id=”1” /&gt;</source>
+            <target state="new">provider=”prov1” &lt;Event id=”1” /&gt;</target>
+          </trans-unit>
+          <trans-unit id="331" xml:space="preserve">
+            <source>WADEvent+MD5(“prov1”)+”1”</source>
+            <target state="new">WADEvent+MD5(“prov1”)+”1”</target>
+          </trans-unit>
+          <trans-unit id="332" xml:space="preserve">
+            <source>provider=”prov1” &lt;Event id=”2” eventDestination=”dest1” /&gt;</source>
+            <target state="new">provider=”prov1” &lt;Event id=”2” eventDestination=”dest1” /&gt;</target>
+          </trans-unit>
+          <trans-unit id="333" xml:space="preserve">
+            <source>WADdest1</source>
+            <target state="new">WADdest1</target>
+          </trans-unit>
+          <trans-unit id="334" xml:space="preserve">
+            <source>provider=”prov1” &lt;DefaultEvents /&gt;</source>
+            <target state="new">provider=”prov1” &lt;DefaultEvents /&gt;</target>
+          </trans-unit>
+          <trans-unit id="335" xml:space="preserve">
+            <source>WADDefault+MD5(“prov1”)</source>
+            <target state="new">WADDefault+MD5(“prov1”)</target>
+          </trans-unit>
+          <trans-unit id="336" xml:space="preserve">
+            <source>provider=”prov2” &lt;DefaultEvents eventDestination=”dest2” /&gt;</source>
+            <target state="new">provider=”prov2” &lt;DefaultEvents eventDestination=”dest2” /&gt;</target>
+          </trans-unit>
+          <trans-unit id="337" xml:space="preserve">
+            <source>WADdest2</source>
+            <target state="new">WADdest2</target>
+          </trans-unit>
+          <trans-unit id="338" xml:space="preserve">
+            <source>Comparing Azure Diagnostics Versions</source>
+            <target state="new">Comparing Azure Diagnostics Versions</target>
+          </trans-unit>
+          <trans-unit id="339" xml:space="preserve">
+            <source>The following table compare the features supported by Azure Diagnostics versions 1.0 and 1.1/1.2/1.3:</source>
+            <target state="new">The following table compare the features supported by Azure Diagnostics versions 1.0 and 1.1/1.2/1.3:</target>
+          </trans-unit>
+          <trans-unit id="340" xml:space="preserve">
+            <source>Role Types Supported</source>
+            <target state="new">Role Types Supported</target>
+          </trans-unit>
+          <trans-unit id="341" xml:space="preserve">
+            <source>Diagnostics 1.0</source>
+            <target state="new">Diagnostics 1.0</target>
+          </trans-unit>
+          <trans-unit id="342" xml:space="preserve">
+            <source>Diagnostics 1.1/1.2/1.3</source>
+            <target state="new">Diagnostics 1.1/1.2/1.3</target>
+          </trans-unit>
+          <trans-unit id="343" xml:space="preserve">
+            <source>Web role</source>
+            <target state="new">Web role</target>
+          </trans-unit>
+          <trans-unit id="344" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="345" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="346" xml:space="preserve">
+            <source>Worker role</source>
+            <target state="new">Worker role</target>
+          </trans-unit>
+          <trans-unit id="347" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="348" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="349" xml:space="preserve">
+            <source>IaaS</source>
+            <target state="new">IaaS</target>
+          </trans-unit>
+          <trans-unit id="350" xml:space="preserve">
+            <source>No</source>
+            <target state="new">No</target>
+          </trans-unit>
+          <trans-unit id="351" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="352" xml:space="preserve">
+            <source>Configuration and deployment</source>
+            <target state="new">Configuration and deployment</target>
+          </trans-unit>
+          <trans-unit id="353" xml:space="preserve">
+            <source>Diagnostics 1.0</source>
+            <target state="new">Diagnostics 1.0</target>
+          </trans-unit>
+          <trans-unit id="354" xml:space="preserve">
+            <source>Diagnostics 1.1/1.2/1.3</source>
+            <target state="new">Diagnostics 1.1/1.2/1.3</target>
+          </trans-unit>
+          <trans-unit id="355" xml:space="preserve">
+            <source>Integration with Visual Studio- Integrated into the Azure web/worker development experience.</source>
+            <target state="new">Integration with Visual Studio- Integrated into the Azure web/worker development experience.</target>
+          </trans-unit>
+          <trans-unit id="356" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="357" xml:space="preserve">
+            <source>No</source>
+            <target state="new">No</target>
+          </trans-unit>
+          <trans-unit id="358" xml:space="preserve">
+            <source>PowerShell Scripts- Scripts to manage the installation and configuration of Diagnostics on the role.</source>
+            <target state="new">PowerShell Scripts- Scripts to manage the installation and configuration of Diagnostics on the role.</target>
+          </trans-unit>
+          <trans-unit id="359" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="360" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="361" xml:space="preserve">
+            <source>Data Source</source>
+            <target state="new">Data Source</target>
+          </trans-unit>
+          <trans-unit id="362" xml:space="preserve">
+            <source>Default Collection</source>
+            <target state="new">Default Collection</target>
+          </trans-unit>
+          <trans-unit id="363" xml:space="preserve">
+            <source>Format</source>
+            <target state="new">Format</target>
+          </trans-unit>
+          <trans-unit id="364" xml:space="preserve">
+            <source>Description</source>
+            <target state="new">Description</target>
+          </trans-unit>
+          <trans-unit id="365" xml:space="preserve">
+            <source>Diagnostics 1.0</source>
+            <target state="new">Diagnostics 1.0</target>
+          </trans-unit>
+          <trans-unit id="366" xml:space="preserve">
+            <source>Diagnostics 1.1/1.2</source>
+            <target state="new">Diagnostics 1.1/1.2</target>
+          </trans-unit>
+          <trans-unit id="367" xml:space="preserve">
+            <source>Diagnostics 1.3</source>
+            <target state="new">Diagnostics 1.3</target>
+          </trans-unit>
+          <trans-unit id="368" xml:space="preserve">
+            <source>System.Diagnostics.Trace Logs</source>
+            <target state="new">System.Diagnostics.Trace Logs</target>
+          </trans-unit>
+          <trans-unit id="369" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="370" xml:space="preserve">
+            <source>Table</source>
+            <target state="new">Table</target>
+          </trans-unit>
+          <trans-unit id="371" xml:space="preserve">
+            <source>Logs trace messages sent from your code to the trace listener (a trace listener must be added to the web.config or app.config file).</source>
+            <target state="new">Logs trace messages sent from your code to the trace listener (a trace listener must be added to the web.config or app.config file).</target>
+          </trans-unit>
+          <trans-unit id="372" xml:space="preserve">
+            <source>Log data will be transferred at the scheduledTransferPeriod transfer interval to storage table WADLogsTable.</source>
+            <target state="new">Log data will be transferred at the scheduledTransferPeriod transfer interval to storage table WADLogsTable.</target>
+          </trans-unit>
+          <trans-unit id="373" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="374" xml:space="preserve">
+            <source>No (Use EventSource)</source>
+            <target state="new">No (Use EventSource)</target>
+          </trans-unit>
+          <trans-unit id="375" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="376" xml:space="preserve">
+            <source>IIS logs</source>
+            <target state="new">IIS logs</target>
+          </trans-unit>
+          <trans-unit id="377" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="378" xml:space="preserve">
+            <source>Blob</source>
+            <target state="new">Blob</target>
+          </trans-unit>
+          <trans-unit id="379" xml:space="preserve">
+            <source>Logs information about IIS sites.</source>
+            <target state="new">Logs information about IIS sites.</target>
+          </trans-unit>
+          <trans-unit id="380" xml:space="preserve">
+            <source>Log data will be transferred at the scheduledTransferPeriod transfer interval to the container you specify.</source>
+            <target state="new">Log data will be transferred at the scheduledTransferPeriod transfer interval to the container you specify.</target>
+          </trans-unit>
+          <trans-unit id="381" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="382" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="383" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="384" xml:space="preserve">
+            <source>Azure Diagnostic infrastructure logs</source>
+            <target state="new">Azure Diagnostic infrastructure logs</target>
+          </trans-unit>
+          <trans-unit id="385" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="386" xml:space="preserve">
+            <source>Table</source>
+            <target state="new">Table</target>
+          </trans-unit>
+          <trans-unit id="387" xml:space="preserve">
+            <source>Logs information about the diagnostic infrastructure, the RemoteAccess module, and the RemoteForwarder module.</source>
+            <target state="new">Logs information about the diagnostic infrastructure, the RemoteAccess module, and the RemoteForwarder module.</target>
+          </trans-unit>
+          <trans-unit id="388" xml:space="preserve">
+            <source>Log data will transferred at the scheduledTransferPeriodtransfer interval to storage table WADDiagnosticInfrastructureLogsTable.</source>
+            <target state="new">Log data will transferred at the scheduledTransferPeriodtransfer interval to storage table WADDiagnosticInfrastructureLogsTable.</target>
+          </trans-unit>
+          <trans-unit id="389" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="390" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="391" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="392" xml:space="preserve">
+            <source>IIS Failed Request logs</source>
+            <target state="new">IIS Failed Request logs</target>
+          </trans-unit>
+          <trans-unit id="393" xml:space="preserve">
+            <source>No</source>
+            <target state="new">No</target>
+          </trans-unit>
+          <trans-unit id="394" xml:space="preserve">
+            <source>Blob</source>
+            <target state="new">Blob</target>
+          </trans-unit>
+          <trans-unit id="395" xml:space="preserve">
+            <source>Logs information about failed requests to an IIS site or application.</source>
+            <target state="new">Logs information about failed requests to an IIS site or application.</target>
+          </trans-unit>
+          <trans-unit id="396" xml:space="preserve">
+            <source>You must also enable by setting tracing options under system.WebServer in Web.config.</source>
+            <target state="new">You must also enable by setting tracing options under system.WebServer in Web.config.</target>
+          </trans-unit>
+          <trans-unit id="397" xml:space="preserve">
+            <source>Log data will be transferred at the scheduledTransferPeriod transfer interval to the container you specify.</source>
+            <target state="new">Log data will be transferred at the scheduledTransferPeriod transfer interval to the container you specify.</target>
+          </trans-unit>
+          <trans-unit id="398" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="399" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="400" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="401" xml:space="preserve">
+            <source>Windows Event logs</source>
+            <target state="new">Windows Event logs</target>
+          </trans-unit>
+          <trans-unit id="402" xml:space="preserve">
+            <source>No</source>
+            <target state="new">No</target>
+          </trans-unit>
+          <trans-unit id="403" xml:space="preserve">
+            <source>Table</source>
+            <target state="new">Table</target>
+          </trans-unit>
+          <trans-unit id="404" xml:space="preserve">
+            <source>Logs information about how well the operating system, application, or driver is performing.</source>
+            <target state="new">Logs information about how well the operating system, application, or driver is performing.</target>
+          </trans-unit>
+          <trans-unit id="405" xml:space="preserve">
+            <source>Performance counters must be specified explicitly.</source>
+            <target state="new">Performance counters must be specified explicitly.</target>
+          </trans-unit>
+          <trans-unit id="406" xml:space="preserve">
+            <source>When these are added, performance counter data will be transferred at the scheduledTransferPeriod transfer interval to storage table WADPerformanceCountersTable.</source>
+            <target state="new">When these are added, performance counter data will be transferred at the scheduledTransferPeriod transfer interval to storage table WADPerformanceCountersTable.</target>
+          </trans-unit>
+          <trans-unit id="407" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="408" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="409" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="410" xml:space="preserve">
+            <source>Performance counters</source>
+            <target state="new">Performance counters</target>
+          </trans-unit>
+          <trans-unit id="411" xml:space="preserve">
+            <source>No</source>
+            <target state="new">No</target>
+          </trans-unit>
+          <trans-unit id="412" xml:space="preserve">
+            <source>Table</source>
+            <target state="new">Table</target>
+          </trans-unit>
+          <trans-unit id="413" xml:space="preserve">
+            <source>Logs information about how well the operating system, application, or driver is performing.</source>
+            <target state="new">Logs information about how well the operating system, application, or driver is performing.</target>
+          </trans-unit>
+          <trans-unit id="414" xml:space="preserve">
+            <source>Performance counters must be specified explicitly.</source>
+            <target state="new">Performance counters must be specified explicitly.</target>
+          </trans-unit>
+          <trans-unit id="415" xml:space="preserve">
+            <source>When these are added, performance counter data will be transferred at the scheduledTransferPeriod transfer interval to storage table WADPerformanceCountersTable.</source>
+            <target state="new">When these are added, performance counter data will be transferred at the scheduledTransferPeriod transfer interval to storage table WADPerformanceCountersTable.</target>
+          </trans-unit>
+          <trans-unit id="416" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="417" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="418" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="419" xml:space="preserve">
+            <source>Crash dumps</source>
+            <target state="new">Crash dumps</target>
+          </trans-unit>
+          <trans-unit id="420" xml:space="preserve">
+            <source>No</source>
+            <target state="new">No</target>
+          </trans-unit>
+          <trans-unit id="421" xml:space="preserve">
+            <source>Blob</source>
+            <target state="new">Blob</target>
+          </trans-unit>
+          <trans-unit id="422" xml:space="preserve">
+            <source>Logs information about the state of the operating system in the event of a system crash.</source>
+            <target state="new">Logs information about the state of the operating system in the event of a system crash.</target>
+          </trans-unit>
+          <trans-unit id="423" xml:space="preserve">
+            <source>Mini crash dumps are collected locally.</source>
+            <target state="new">Mini crash dumps are collected locally.</target>
+          </trans-unit>
+          <trans-unit id="424" xml:space="preserve">
+            <source>Full dumps can be enabled.</source>
+            <target state="new">Full dumps can be enabled.</target>
+          </trans-unit>
+          <trans-unit id="425" xml:space="preserve">
+            <source>Log data will be transferred at the scheduledTransferPeriod transfer interval to the container you specify.</source>
+            <target state="new">Log data will be transferred at the scheduledTransferPeriod transfer interval to the container you specify.</target>
+          </trans-unit>
+          <trans-unit id="426" xml:space="preserve">
+            <source>Because ASP.NET handles most exceptions, this is generally useful only for a worker role or a VM.</source>
+            <target state="new">Because ASP.NET handles most exceptions, this is generally useful only for a worker role or a VM.</target>
+          </trans-unit>
+          <trans-unit id="427" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="428" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="429" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="430" xml:space="preserve">
+            <source>Custom error logs</source>
+            <target state="new">Custom error logs</target>
+          </trans-unit>
+          <trans-unit id="431" xml:space="preserve">
+            <source>No</source>
+            <target state="new">No</target>
+          </trans-unit>
+          <trans-unit id="432" xml:space="preserve">
+            <source>Blob</source>
+            <target state="new">Blob</target>
+          </trans-unit>
+          <trans-unit id="433" xml:space="preserve">
+            <source>By using local storage resources, custom data can be logged and transferred immediately to the container you specify.</source>
+            <target state="new">By using local storage resources, custom data can be logged and transferred immediately to the container you specify.</target>
+          </trans-unit>
+          <trans-unit id="434" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="435" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="436" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="437" xml:space="preserve">
+            <source>EventSource</source>
+            <target state="new">EventSource</target>
+          </trans-unit>
+          <trans-unit id="438" xml:space="preserve">
+            <source>No</source>
+            <target state="new">No</target>
+          </trans-unit>
+          <trans-unit id="439" xml:space="preserve">
+            <source>Table</source>
+            <target state="new">Table</target>
+          </trans-unit>
+          <trans-unit id="440" xml:space="preserve">
+            <source>Logs events generated by your code using the .NET EventSource class.</source>
+            <target state="new">Logs events generated by your code using the .NET EventSource class.</target>
+          </trans-unit>
+          <trans-unit id="441" xml:space="preserve">
+            <source>No</source>
+            <target state="new">No</target>
+          </trans-unit>
+          <trans-unit id="442" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="443" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="444" xml:space="preserve">
+            <source>Manifest based ETW</source>
+            <target state="new">Manifest based ETW</target>
+          </trans-unit>
+          <trans-unit id="445" xml:space="preserve">
+            <source>No</source>
+            <target state="new">No</target>
+          </trans-unit>
+          <trans-unit id="446" xml:space="preserve">
+            <source>Table</source>
+            <target state="new">Table</target>
+          </trans-unit>
+          <trans-unit id="447" xml:space="preserve">
+            <source>ETW events generated by any process.</source>
+            <target state="new">ETW events generated by any process.</target>
+          </trans-unit>
+          <trans-unit id="448" xml:space="preserve">
+            <source>No</source>
+            <target state="new">No</target>
+          </trans-unit>
+          <trans-unit id="449" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="450" xml:space="preserve">
+            <source>Yes</source>
+            <target state="new">Yes</target>
+          </trans-unit>
+          <trans-unit id="451" xml:space="preserve">
+            <source>Additional Resources</source>
+            <target state="new">Additional Resources</target>
+          </trans-unit>
+          <trans-unit id="452" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Troubleshooting Best Practices for Developing Azure Applications[]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Troubleshooting Best Practices for Developing Azure Applications[]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="453" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Collect Logging Data by Using Azure Diagnostics[]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Collect Logging Data by Using Azure Diagnostics[]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="454" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Debugging an Azure Application[]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Debugging an Azure Application[]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="455" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Configuring Diagnostics for Azure Cloud Services and Virtual Machines[]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Configuring Diagnostics for Azure Cloud Services and Virtual Machines[]<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>

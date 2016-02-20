@@ -1,0 +1,1275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="ja-jp" original="2/20/2016 8:40:13 AM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">303ca2e8a3c5a7ebd2bd7a76f94ca3dc281ca6a0</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Create a Web App in Azure App Service using the Azure SDK for Java</source>
+            <target state="new">Create a Web App in Azure App Service using the Azure SDK for Java</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>Learn how to create a Web App on Azure App Service programmatically using the Azure SDK for Java.</source>
+            <target state="new">Learn how to create a Web App on Azure App Service programmatically using the Azure SDK for Java.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Create a Web App in Azure App Service using the Azure SDK for Java</source>
+            <target state="new">Create a Web App in Azure App Service using the Azure SDK for Java</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source>Overview</source>
+            <target state="new">Overview</target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>This walkthrough shows you how to create an Azure SDK for Java application that creates a Web App in <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure App Service[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, then deploy an application to it.</source>
+            <target state="new">This walkthrough shows you how to create an Azure SDK for Java application that creates a Web App in <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure App Service[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, then deploy an application to it.</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>It consists of two parts:</source>
+            <target state="new">It consists of two parts:</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>Part 1 demonstrates how to build a Java application that creates a web app.</source>
+            <target state="new">Part 1 demonstrates how to build a Java application that creates a web app.</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>Part 2 demonstrates how to create a simple JSP "Hello World" application, then use an FTP client to deploy code to App Service.</source>
+            <target state="new">Part 2 demonstrates how to create a simple JSP "Hello World" application, then use an FTP client to deploy code to App Service.</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source>Prerequisites</source>
+            <target state="new">Prerequisites</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source>Software Installations</source>
+            <target state="new">Software Installations</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>The AzureWebDemo application code in this article was written using Azure Java SDK 0.7.0, which you can install using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Web Platform Installer[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> (WebPI).</source>
+            <target state="new">The AzureWebDemo application code in this article was written using Azure Java SDK 0.7.0, which you can install using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Web Platform Installer[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> (WebPI).</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source>In addition, make sure to use the latest version of the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Toolkit for Eclipse[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">In addition, make sure to use the latest version of the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Toolkit for Eclipse[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>After you install the SDK, update the dependencies in your Eclipse project by running <bpt id="2">&lt;strong&gt;</bpt>Update Index<ept id="2">&lt;/strong&gt;</ept> in <bpt id="4">&lt;strong&gt;</bpt>Maven Repositories<ept id="4">&lt;/strong&gt;</ept>, then re-add the latest version of each package in the <bpt id="6">&lt;strong&gt;</bpt>Dependencies<ept id="6">&lt;/strong&gt;</ept> window.</source>
+            <target state="new">After you install the SDK, update the dependencies in your Eclipse project by running <bpt id="2">&lt;strong&gt;</bpt>Update Index<ept id="2">&lt;/strong&gt;</ept> in <bpt id="4">&lt;strong&gt;</bpt>Maven Repositories<ept id="4">&lt;/strong&gt;</ept>, then re-add the latest version of each package in the <bpt id="6">&lt;strong&gt;</bpt>Dependencies<ept id="6">&lt;/strong&gt;</ept> window.</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source>You can verify the version of your installed software in Eclipse by clicking <bpt id="2">&lt;strong&gt;</bpt>Help &gt; Installation Details<ept id="2">&lt;/strong&gt;</ept>; you should have at least the following versions:</source>
+            <target state="new">You can verify the version of your installed software in Eclipse by clicking <bpt id="2">&lt;strong&gt;</bpt>Help &gt; Installation Details<ept id="2">&lt;/strong&gt;</ept>; you should have at least the following versions:</target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>Package for Microsoft Azure Libraries for Java 0.7.0.20150309</source>
+            <target state="new">Package for Microsoft Azure Libraries for Java 0.7.0.20150309</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source>Eclipse IDE for Java EE Developers 4.4.2.20150219</source>
+            <target state="new">Eclipse IDE for Java EE Developers 4.4.2.20150219</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>Create and Configure Cloud Resources in Azure</source>
+            <target state="new">Create and Configure Cloud Resources in Azure</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>Before you begin this procedure, you need to have an active Azure subscription and set up a default Active Directory (AD) on Azure.</source>
+            <target state="new">Before you begin this procedure, you need to have an active Azure subscription and set up a default Active Directory (AD) on Azure.</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source>Create an Active Directory (AD) in Azure</source>
+            <target state="new">Create an Active Directory (AD) in Azure</target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source>If you do not already have an Active Directory (AD) on your Azure subscription, log into the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure classic portal[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> with your Microsoft account.</source>
+            <target state="new">If you do not already have an Active Directory (AD) on your Azure subscription, log into the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure classic portal[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> with your Microsoft account.</target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source>If you have multiple subscriptions, click <bpt id="2">&lt;strong&gt;</bpt>Subscriptions<ept id="2">&lt;/strong&gt;</ept> and select the default directory for the subscription you want to use for this project.</source>
+            <target state="new">If you have multiple subscriptions, click <bpt id="2">&lt;strong&gt;</bpt>Subscriptions<ept id="2">&lt;/strong&gt;</ept> and select the default directory for the subscription you want to use for this project.</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source>Then click <bpt id="2">&lt;strong&gt;</bpt>Apply<ept id="2">&lt;/strong&gt;</ept> to switch to that subscription view.</source>
+            <target state="new">Then click <bpt id="2">&lt;strong&gt;</bpt>Apply<ept id="2">&lt;/strong&gt;</ept> to switch to that subscription view.</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>Select <bpt id="2">&lt;strong&gt;</bpt>Active Directory<ept id="2">&lt;/strong&gt;</ept> from the menu at left.</source>
+            <target state="new">Select <bpt id="2">&lt;strong&gt;</bpt>Active Directory<ept id="2">&lt;/strong&gt;</ept> from the menu at left.</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Click New &gt; Directory &gt; Custom Create<ept id="1">&lt;/strong&gt;</ept>.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Click New &gt; Directory &gt; Custom Create<ept id="1">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>In <bpt id="2">&lt;strong&gt;</bpt>Add Directory<ept id="2">&lt;/strong&gt;</ept>, select <bpt id="4">&lt;strong&gt;</bpt>Create New Directory<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In <bpt id="2">&lt;strong&gt;</bpt>Add Directory<ept id="2">&lt;/strong&gt;</ept>, select <bpt id="4">&lt;strong&gt;</bpt>Create New Directory<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>In <bpt id="2">&lt;strong&gt;</bpt>Name<ept id="2">&lt;/strong&gt;</ept>, enter a directory name.</source>
+            <target state="new">In <bpt id="2">&lt;strong&gt;</bpt>Name<ept id="2">&lt;/strong&gt;</ept>, enter a directory name.</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source>In <bpt id="2">&lt;strong&gt;</bpt>Domain<ept id="2">&lt;/strong&gt;</ept>, enter a domain name. This is a basic domain name that is included by default with your directory; it has the form <bpt id="4">&lt;code&gt;</bpt>&lt;domain_name&gt;.onmicrosoft.com<ept id="4">&lt;/code&gt;</ept>. You can name it based on the directory name or another domain name that you own. Later, you can add another domain name that your organization already uses.</source>
+            <target state="new">In <bpt id="2">&lt;strong&gt;</bpt>Domain<ept id="2">&lt;/strong&gt;</ept>, enter a domain name. This is a basic domain name that is included by default with your directory; it has the form <bpt id="4">&lt;code&gt;</bpt>&lt;domain_name&gt;.onmicrosoft.com<ept id="4">&lt;/code&gt;</ept>. You can name it based on the directory name or another domain name that you own. Later, you can add another domain name that your organization already uses.</target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source>In <bpt id="2">&lt;strong&gt;</bpt>Country or region<ept id="2">&lt;/strong&gt;</ept>, select your locale.</source>
+            <target state="new">In <bpt id="2">&lt;strong&gt;</bpt>Country or region<ept id="2">&lt;/strong&gt;</ept>, select your locale.</target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source>For more information on AD, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>What is an Azure AD directory[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>?</source>
+            <target state="new">For more information on AD, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>What is an Azure AD directory[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>?</target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source>Create a Management Certificate for Azure</source>
+            <target state="new">Create a Management Certificate for Azure</target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source>The Azure SDK for Java uses management certificates to authenticate with Azure subscriptions.</source>
+            <target state="new">The Azure SDK for Java uses management certificates to authenticate with Azure subscriptions.</target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source>These are X.509 v3 certificates you use to authenticate a client application that uses the Service Management API to act on behalf of the subscription owner to manage subscription resources.</source>
+            <target state="new">These are X.509 v3 certificates you use to authenticate a client application that uses the Service Management API to act on behalf of the subscription owner to manage subscription resources.</target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source>The code in this procedure uses a self-signed certificate to authenticate with Azure.</source>
+            <target state="new">The code in this procedure uses a self-signed certificate to authenticate with Azure.</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source>For this procedure, you need to create a certificate and upload it to the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure classic portal[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> beforehand.</source>
+            <target state="new">For this procedure, you need to create a certificate and upload it to the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure classic portal[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> beforehand.</target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source>This involves the following steps:</source>
+            <target state="new">This involves the following steps:</target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source>Generate a PFX file representing your client certificate and save it locally.</source>
+            <target state="new">Generate a PFX file representing your client certificate and save it locally.</target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source>Generate a management certificate (CER file) from the PFX file.</source>
+            <target state="new">Generate a management certificate (CER file) from the PFX file.</target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source>Upload the CER file to your Azure subscription.</source>
+            <target state="new">Upload the CER file to your Azure subscription.</target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source>Convert the PFX file into JKS, because Java uses that format to authenticate using certificates.</source>
+            <target state="new">Convert the PFX file into JKS, because Java uses that format to authenticate using certificates.</target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source>Write the application's authentication code, which refers to the local JKS file.</source>
+            <target state="new">Write the application's authentication code, which refers to the local JKS file.</target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source>When you complete this procedure, the CER certificate will reside in your Azure subscription and the JKS certificate will reside on your local drive.</source>
+            <target state="new">When you complete this procedure, the CER certificate will reside in your Azure subscription and the JKS certificate will reside on your local drive.</target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source>For more information on management certificates, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Create and Upload a Management Certificate for Azure[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information on management certificates, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Create and Upload a Management Certificate for Azure[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source>Create a certificate</source>
+            <target state="new">Create a certificate</target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source>To create your own self-signed certificate, open a command console on your operating system and run the following commands.</source>
+            <target state="new">To create your own self-signed certificate, open a command console on your operating system and run the following commands.</target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Note:<ept id="1">&lt;/strong&gt;</ept>  The computer on which you run this command must have the JDK installed.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Note:<ept id="1">&lt;/strong&gt;</ept>  The computer on which you run this command must have the JDK installed.</target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source>Also, the path to the keytool depends on the location in which you install the JDK.</source>
+            <target state="new">Also, the path to the keytool depends on the location in which you install the JDK.</target>
+          </trans-unit>
+          <trans-unit id="147" xml:space="preserve">
+            <source>For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Key and Certificate Management Tool (keytool)[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> in the Java online docs.</source>
+            <target state="new">For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Key and Certificate Management Tool (keytool)[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> in the Java online docs.</target>
+          </trans-unit>
+          <trans-unit id="148" xml:space="preserve">
+            <source>To create the .pfx file:</source>
+            <target state="new">To create the .pfx file:</target>
+          </trans-unit>
+          <trans-unit id="149" xml:space="preserve">
+            <source>To create the .cer file:</source>
+            <target state="new">To create the .cer file:</target>
+          </trans-unit>
+          <trans-unit id="150" xml:space="preserve">
+            <source>where:</source>
+            <target state="new">where:</target>
+          </trans-unit>
+          <trans-unit id="151" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>&lt;java-install-dir&gt;<ept id="1">&lt;/code&gt;</ept> is the path to the directory in which you installed Java.</source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>&lt;java-install-dir&gt;<ept id="1">&lt;/code&gt;</ept> is the path to the directory in which you installed Java.</target>
+          </trans-unit>
+          <trans-unit id="152" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>&lt;keystore-id&gt;<ept id="1">&lt;/code&gt;</ept> is the keystore entry identifier (for example, <bpt id="3">&lt;code&gt;</bpt>AzureRemoteAccess<ept id="3">&lt;/code&gt;</ept>).</source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>&lt;keystore-id&gt;<ept id="1">&lt;/code&gt;</ept> is the keystore entry identifier (for example, <bpt id="3">&lt;code&gt;</bpt>AzureRemoteAccess<ept id="3">&lt;/code&gt;</ept>).</target>
+          </trans-unit>
+          <trans-unit id="153" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>&lt;cert-store-dir&gt;<ept id="1">&lt;/code&gt;</ept> is the path to the directory in which you want to store certificates (for example <bpt id="3">&lt;code&gt;</bpt>C:/Certificates<ept id="3">&lt;/code&gt;</ept>).</source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>&lt;cert-store-dir&gt;<ept id="1">&lt;/code&gt;</ept> is the path to the directory in which you want to store certificates (for example <bpt id="3">&lt;code&gt;</bpt>C:/Certificates<ept id="3">&lt;/code&gt;</ept>).</target>
+          </trans-unit>
+          <trans-unit id="154" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>&lt;cert-file-name&gt;<ept id="1">&lt;/code&gt;</ept> is the name of the certificate file (for example <bpt id="3">&lt;code&gt;</bpt>AzureWebDemoCert<ept id="3">&lt;/code&gt;</ept>).</source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>&lt;cert-file-name&gt;<ept id="1">&lt;/code&gt;</ept> is the name of the certificate file (for example <bpt id="3">&lt;code&gt;</bpt>AzureWebDemoCert<ept id="3">&lt;/code&gt;</ept>).</target>
+          </trans-unit>
+          <trans-unit id="155" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>&lt;password&gt;<ept id="1">&lt;/code&gt;</ept> is the password you choose to protect the certificate; it must be at least 6 characters long. You can enter no password, although this is not recommended.</source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>&lt;password&gt;<ept id="1">&lt;/code&gt;</ept> is the password you choose to protect the certificate; it must be at least 6 characters long. You can enter no password, although this is not recommended.</target>
+          </trans-unit>
+          <trans-unit id="156" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>&lt;dname&gt;<ept id="1">&lt;/code&gt;</ept> is the X.500 Distinguished Name to be associated with alias, and is used as the issuer and subject fields in the self-signed certificate.</source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>&lt;dname&gt;<ept id="1">&lt;/code&gt;</ept> is the X.500 Distinguished Name to be associated with alias, and is used as the issuer and subject fields in the self-signed certificate.</target>
+          </trans-unit>
+          <trans-unit id="157" xml:space="preserve">
+            <source>For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Create and Upload a Management Certificate for Azure[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Create and Upload a Management Certificate for Azure[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="158" xml:space="preserve">
+            <source>Upload the certificate</source>
+            <target state="new">Upload the certificate</target>
+          </trans-unit>
+          <trans-unit id="159" xml:space="preserve">
+            <source>To upload a self-signed certificate to Azure, go to the <bpt id="2">&lt;strong&gt;</bpt>Settings<ept id="2">&lt;/strong&gt;</ept> page in the classic portal, then click the <bpt id="4">&lt;strong&gt;</bpt>Management Certificates<ept id="4">&lt;/strong&gt;</ept> tab.</source>
+            <target state="new">To upload a self-signed certificate to Azure, go to the <bpt id="2">&lt;strong&gt;</bpt>Settings<ept id="2">&lt;/strong&gt;</ept> page in the classic portal, then click the <bpt id="4">&lt;strong&gt;</bpt>Management Certificates<ept id="4">&lt;/strong&gt;</ept> tab.</target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Upload<ept id="2">&lt;/strong&gt;</ept> at the bottom of the page and navigate to the location of the CER file you created.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Upload<ept id="2">&lt;/strong&gt;</ept> at the bottom of the page and navigate to the location of the CER file you created.</target>
+          </trans-unit>
+          <trans-unit id="161" xml:space="preserve">
+            <source>Convert the PFX file into JKS</source>
+            <target state="new">Convert the PFX file into JKS</target>
+          </trans-unit>
+          <trans-unit id="162" xml:space="preserve">
+            <source>In the Windows Command Prompt (running as admin), cd to the directory containing the certificates and run the following command, where <bpt id="2">&lt;code&gt;</bpt>&lt;java-install-dir&gt;<ept id="2">&lt;/code&gt;</ept> is the directory in which you installed Java on your computer:</source>
+            <target state="new">In the Windows Command Prompt (running as admin), cd to the directory containing the certificates and run the following command, where <bpt id="2">&lt;code&gt;</bpt>&lt;java-install-dir&gt;<ept id="2">&lt;/code&gt;</ept> is the directory in which you installed Java on your computer:</target>
+          </trans-unit>
+          <trans-unit id="163" xml:space="preserve">
+            <source>When prompted, enter the destination keystore password; this will be the password for the JKS file.</source>
+            <target state="new">When prompted, enter the destination keystore password; this will be the password for the JKS file.</target>
+          </trans-unit>
+          <trans-unit id="164" xml:space="preserve">
+            <source>When prompted, enter the source keystore password; this is the password you specified for the PFX file.</source>
+            <target state="new">When prompted, enter the source keystore password; this is the password you specified for the PFX file.</target>
+          </trans-unit>
+          <trans-unit id="165" xml:space="preserve">
+            <source>The two passwords do not have to be the same.</source>
+            <target state="new">The two passwords do not have to be the same.</target>
+          </trans-unit>
+          <trans-unit id="166" xml:space="preserve">
+            <source>You can enter no password, although this is not recommended.</source>
+            <target state="new">You can enter no password, although this is not recommended.</target>
+          </trans-unit>
+          <trans-unit id="167" xml:space="preserve">
+            <source>Build a Web App creation application</source>
+            <target state="new">Build a Web App creation application</target>
+          </trans-unit>
+          <trans-unit id="168" xml:space="preserve">
+            <source>Create the Eclipse Workspace and Maven Project</source>
+            <target state="new">Create the Eclipse Workspace and Maven Project</target>
+          </trans-unit>
+          <trans-unit id="169" xml:space="preserve">
+            <source>In this section you create a workspace and a Maven project for the web app creation application, named AzureWebDemo.</source>
+            <target state="new">In this section you create a workspace and a Maven project for the web app creation application, named AzureWebDemo.</target>
+          </trans-unit>
+          <trans-unit id="170" xml:space="preserve">
+            <source>Create a new Maven project.</source>
+            <target state="new">Create a new Maven project.</target>
+          </trans-unit>
+          <trans-unit id="171" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>File &gt; New &gt; Maven Project<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>File &gt; New &gt; Maven Project<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="172" xml:space="preserve">
+            <source>In <bpt id="2">&lt;strong&gt;</bpt>New Maven Project<ept id="2">&lt;/strong&gt;</ept>, select <bpt id="4">&lt;strong&gt;</bpt>Create a simple project<ept id="4">&lt;/strong&gt;</ept> and <bpt id="6">&lt;strong&gt;</bpt>Use default workspace location<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In <bpt id="2">&lt;strong&gt;</bpt>New Maven Project<ept id="2">&lt;/strong&gt;</ept>, select <bpt id="4">&lt;strong&gt;</bpt>Create a simple project<ept id="4">&lt;/strong&gt;</ept> and <bpt id="6">&lt;strong&gt;</bpt>Use default workspace location<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="173" xml:space="preserve">
+            <source>On the second page of <bpt id="2">&lt;strong&gt;</bpt>New Maven Project<ept id="2">&lt;/strong&gt;</ept>, specify the following:</source>
+            <target state="new">On the second page of <bpt id="2">&lt;strong&gt;</bpt>New Maven Project<ept id="2">&lt;/strong&gt;</ept>, specify the following:</target>
+          </trans-unit>
+          <trans-unit id="174" xml:space="preserve">
+            <source>Group ID: <bpt id="2">&lt;code&gt;</bpt>com.&lt;username&gt;.azure.webdemo<ept id="2">&lt;/code&gt;</ept></source>
+            <target state="new">Group ID: <bpt id="2">&lt;code&gt;</bpt>com.&lt;username&gt;.azure.webdemo<ept id="2">&lt;/code&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="175" xml:space="preserve">
+            <source>Artifact ID: AzureWebDemo</source>
+            <target state="new">Artifact ID: AzureWebDemo</target>
+          </trans-unit>
+          <trans-unit id="176" xml:space="preserve">
+            <source>Version: 0.0.1-SNAPSHOT</source>
+            <target state="new">Version: 0.0.1-SNAPSHOT</target>
+          </trans-unit>
+          <trans-unit id="177" xml:space="preserve">
+            <source>Packaging: jar</source>
+            <target state="new">Packaging: jar</target>
+          </trans-unit>
+          <trans-unit id="178" xml:space="preserve">
+            <source>Name: AzureWebDemo</source>
+            <target state="new">Name: AzureWebDemo</target>
+          </trans-unit>
+          <trans-unit id="179" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Finish<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Finish<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="180" xml:space="preserve">
+            <source>Open the new project's pom.xml file in Project Explorer.</source>
+            <target state="new">Open the new project's pom.xml file in Project Explorer.</target>
+          </trans-unit>
+          <trans-unit id="181" xml:space="preserve">
+            <source>Select the <bpt id="2">&lt;strong&gt;</bpt>Dependencies<ept id="2">&lt;/strong&gt;</ept> tab.</source>
+            <target state="new">Select the <bpt id="2">&lt;strong&gt;</bpt>Dependencies<ept id="2">&lt;/strong&gt;</ept> tab.</target>
+          </trans-unit>
+          <trans-unit id="182" xml:space="preserve">
+            <source>As this is a new project, no packages are listed yet.</source>
+            <target state="new">As this is a new project, no packages are listed yet.</target>
+          </trans-unit>
+          <trans-unit id="183" xml:space="preserve">
+            <source>Open the Maven Repositories view.</source>
+            <target state="new">Open the Maven Repositories view.</target>
+          </trans-unit>
+          <trans-unit id="184" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Click Window &gt; Show View &gt; Other &gt; Maven &gt; Maven Repositories<ept id="1">&lt;/strong&gt;</ept> and click <bpt id="3">&lt;strong&gt;</bpt>OK<ept id="3">&lt;/strong&gt;</ept>.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Click Window &gt; Show View &gt; Other &gt; Maven &gt; Maven Repositories<ept id="1">&lt;/strong&gt;</ept> and click <bpt id="3">&lt;strong&gt;</bpt>OK<ept id="3">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="185" xml:space="preserve">
+            <source>The <bpt id="2">&lt;strong&gt;</bpt>Maven Repositories<ept id="2">&lt;/strong&gt;</ept> view will appear at the bottom of the IDE.</source>
+            <target state="new">The <bpt id="2">&lt;strong&gt;</bpt>Maven Repositories<ept id="2">&lt;/strong&gt;</ept> view will appear at the bottom of the IDE.</target>
+          </trans-unit>
+          <trans-unit id="186" xml:space="preserve">
+            <source>Open <bpt id="2">&lt;strong&gt;</bpt>Global Repositories<ept id="2">&lt;/strong&gt;</ept>, right-click the <bpt id="4">&lt;strong&gt;</bpt>central<ept id="4">&lt;/strong&gt;</ept> repository, and select <bpt id="6">&lt;strong&gt;</bpt>Rebuild Index<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Open <bpt id="2">&lt;strong&gt;</bpt>Global Repositories<ept id="2">&lt;/strong&gt;</ept>, right-click the <bpt id="4">&lt;strong&gt;</bpt>central<ept id="4">&lt;/strong&gt;</ept> repository, and select <bpt id="6">&lt;strong&gt;</bpt>Rebuild Index<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="187" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="188" xml:space="preserve">
+            <source>This step can take several minutes depending on the speed of your connection.</source>
+            <target state="new">This step can take several minutes depending on the speed of your connection.</target>
+          </trans-unit>
+          <trans-unit id="189" xml:space="preserve">
+            <source>When the index rebuilds, you should see the Microsoft Azure packages in the <bpt id="2">&lt;strong&gt;</bpt>central<ept id="2">&lt;/strong&gt;</ept> Maven repository.</source>
+            <target state="new">When the index rebuilds, you should see the Microsoft Azure packages in the <bpt id="2">&lt;strong&gt;</bpt>central<ept id="2">&lt;/strong&gt;</ept> Maven repository.</target>
+          </trans-unit>
+          <trans-unit id="190" xml:space="preserve">
+            <source>In <bpt id="2">&lt;strong&gt;</bpt>Dependencies<ept id="2">&lt;/strong&gt;</ept>, click <bpt id="4">&lt;strong&gt;</bpt>Add<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In <bpt id="2">&lt;strong&gt;</bpt>Dependencies<ept id="2">&lt;/strong&gt;</ept>, click <bpt id="4">&lt;strong&gt;</bpt>Add<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="191" xml:space="preserve">
+            <source>In <bpt id="2">&lt;strong&gt;</bpt>Enter Group ID...<ept id="2">&lt;/strong&gt;</ept> enter <bpt id="4">&lt;code&gt;</bpt>azure-management<ept id="4">&lt;/code&gt;</ept>.</source>
+            <target state="new">In <bpt id="2">&lt;strong&gt;</bpt>Enter Group ID...<ept id="2">&lt;/strong&gt;</ept> enter <bpt id="4">&lt;code&gt;</bpt>azure-management<ept id="4">&lt;/code&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="192" xml:space="preserve">
+            <source>Select the packages for base management and App Service Web Apps management:</source>
+            <target state="new">Select the packages for base management and App Service Web Apps management:</target>
+          </trans-unit>
+          <trans-unit id="193" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Note:<ept id="1">&lt;/strong&gt;</ept> If you are updating the dependencies after a new version</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Note:<ept id="1">&lt;/strong&gt;</ept> If you are updating the dependencies after a new version</target>
+          </trans-unit>
+          <trans-unit id="194" xml:space="preserve">
+            <source>release, you need to re-add each of the dependencies in this list.</source>
+            <target state="new">release, you need to re-add each of the dependencies in this list.</target>
+          </trans-unit>
+          <trans-unit id="195" xml:space="preserve">
+            <source>After you click <bpt id="2">&lt;strong&gt;</bpt>Add<ept id="2">&lt;/strong&gt;</ept> and select each dependency, it appears</source>
+            <target state="new">After you click <bpt id="2">&lt;strong&gt;</bpt>Add<ept id="2">&lt;/strong&gt;</ept> and select each dependency, it appears</target>
+          </trans-unit>
+          <trans-unit id="196" xml:space="preserve">
+            <source>with the new version number in the <bpt id="2">&lt;strong&gt;</bpt>Dependencies<ept id="2">&lt;/strong&gt;</ept> list.</source>
+            <target state="new">with the new version number in the <bpt id="2">&lt;strong&gt;</bpt>Dependencies<ept id="2">&lt;/strong&gt;</ept> list.</target>
+          </trans-unit>
+          <trans-unit id="197" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>OK<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>OK<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="198" xml:space="preserve">
+            <source>The Azure packages then appear in the <bpt id="2">&lt;strong&gt;</bpt>Dependencies<ept id="2">&lt;/strong&gt;</ept> list.</source>
+            <target state="new">The Azure packages then appear in the <bpt id="2">&lt;strong&gt;</bpt>Dependencies<ept id="2">&lt;/strong&gt;</ept> list.</target>
+          </trans-unit>
+          <trans-unit id="199" xml:space="preserve">
+            <source>Writing Java Code to Create a Web App by Calling the Azure SDK</source>
+            <target state="new">Writing Java Code to Create a Web App by Calling the Azure SDK</target>
+          </trans-unit>
+          <trans-unit id="200" xml:space="preserve">
+            <source>Next, write the code that calls APIs in the Azure SDK for Java to create the App Service web app.</source>
+            <target state="new">Next, write the code that calls APIs in the Azure SDK for Java to create the App Service web app.</target>
+          </trans-unit>
+          <trans-unit id="201" xml:space="preserve">
+            <source>Create a Java class to contain the main entry point code.</source>
+            <target state="new">Create a Java class to contain the main entry point code.</target>
+          </trans-unit>
+          <trans-unit id="202" xml:space="preserve">
+            <source>In Project Explorer, right-click on the project node and select <bpt id="2">&lt;strong&gt;</bpt>New &gt; Class<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In Project Explorer, right-click on the project node and select <bpt id="2">&lt;strong&gt;</bpt>New &gt; Class<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="203" xml:space="preserve">
+            <source>In <bpt id="2">&lt;strong&gt;</bpt>New Java Class<ept id="2">&lt;/strong&gt;</ept>, name the class <bpt id="4">&lt;code&gt;</bpt>WebCreator<ept id="4">&lt;/code&gt;</ept> and check the <bpt id="6">&lt;strong&gt;</bpt>public static void main<ept id="6">&lt;/strong&gt;</ept> checkbox.</source>
+            <target state="new">In <bpt id="2">&lt;strong&gt;</bpt>New Java Class<ept id="2">&lt;/strong&gt;</ept>, name the class <bpt id="4">&lt;code&gt;</bpt>WebCreator<ept id="4">&lt;/code&gt;</ept> and check the <bpt id="6">&lt;strong&gt;</bpt>public static void main<ept id="6">&lt;/strong&gt;</ept> checkbox.</target>
+          </trans-unit>
+          <trans-unit id="204" xml:space="preserve">
+            <source>The selections should appear as follows:</source>
+            <target state="new">The selections should appear as follows:</target>
+          </trans-unit>
+          <trans-unit id="205" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="206" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Finish<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Finish<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="207" xml:space="preserve">
+            <source>The WebCreator.java file appears in Project Explorer.</source>
+            <target state="new">The WebCreator.java file appears in Project Explorer.</target>
+          </trans-unit>
+          <trans-unit id="208" xml:space="preserve">
+            <source>Calling the Azure API to Create an App Service Web App</source>
+            <target state="new">Calling the Azure API to Create an App Service Web App</target>
+          </trans-unit>
+          <trans-unit id="209" xml:space="preserve">
+            <source>Add necessary imports</source>
+            <target state="new">Add necessary imports</target>
+          </trans-unit>
+          <trans-unit id="210" xml:space="preserve">
+            <source>In WebCreator.java, add the following imports; these imports provide access to classes in the management libraries for consuming Azure APIs:</source>
+            <target state="new">In WebCreator.java, add the following imports; these imports provide access to classes in the management libraries for consuming Azure APIs:</target>
+          </trans-unit>
+          <trans-unit id="211" xml:space="preserve">
+            <source>Define the main entry point class</source>
+            <target state="new">Define the main entry point class</target>
+          </trans-unit>
+          <trans-unit id="212" xml:space="preserve">
+            <source>Because the purpose of the AzureWebDemo application is to create an App Service Web App, name the main class for this application <bpt id="2">&lt;code&gt;</bpt>WebAppCreator<ept id="2">&lt;/code&gt;</ept>.</source>
+            <target state="new">Because the purpose of the AzureWebDemo application is to create an App Service Web App, name the main class for this application <bpt id="2">&lt;code&gt;</bpt>WebAppCreator<ept id="2">&lt;/code&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="213" xml:space="preserve">
+            <source>This class provides the main entry point code that calls the Azure Service Management API to create the web app.</source>
+            <target state="new">This class provides the main entry point code that calls the Azure Service Management API to create the web app.</target>
+          </trans-unit>
+          <trans-unit id="214" xml:space="preserve">
+            <source>Add the following parameter definitions for the web app and webspace.</source>
+            <target state="new">Add the following parameter definitions for the web app and webspace.</target>
+          </trans-unit>
+          <trans-unit id="215" xml:space="preserve">
+            <source>You will need to provide your own Azure subscription ID and certificate information.</source>
+            <target state="new">You will need to provide your own Azure subscription ID and certificate information.</target>
+          </trans-unit>
+          <trans-unit id="216" xml:space="preserve">
+            <source>where:</source>
+            <target state="new">where:</target>
+          </trans-unit>
+          <trans-unit id="217" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>&lt;subscription-id&gt;<ept id="1">&lt;/code&gt;</ept> is the Azure subscription ID in which you want to create the resource.</source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>&lt;subscription-id&gt;<ept id="1">&lt;/code&gt;</ept> is the Azure subscription ID in which you want to create the resource.</target>
+          </trans-unit>
+          <trans-unit id="218" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>&lt;certificate-store-path&gt;<ept id="1">&lt;/code&gt;</ept> is the path and filename to the JKS file in your local certificate store directory. For example, <bpt id="3">&lt;code&gt;</bpt>C:/Certificates/CertificateName.jks<ept id="3">&lt;/code&gt;</ept> for Linux and <bpt id="5">&lt;code&gt;</bpt>C:\Certificates\CertificateName.jks<ept id="5">&lt;/code&gt;</ept> for Windows.</source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>&lt;certificate-store-path&gt;<ept id="1">&lt;/code&gt;</ept> is the path and filename to the JKS file in your local certificate store directory. For example, <bpt id="3">&lt;code&gt;</bpt>C:/Certificates/CertificateName.jks<ept id="3">&lt;/code&gt;</ept> for Linux and <bpt id="5">&lt;code&gt;</bpt>C:\Certificates\CertificateName.jks<ept id="5">&lt;/code&gt;</ept> for Windows.</target>
+          </trans-unit>
+          <trans-unit id="219" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>&lt;certificate-password&gt;<ept id="1">&lt;/code&gt;</ept> is the password you specified when you created your JKS certificate.</source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>&lt;certificate-password&gt;<ept id="1">&lt;/code&gt;</ept> is the password you specified when you created your JKS certificate.</target>
+          </trans-unit>
+          <trans-unit id="220" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>webAppName<ept id="1">&lt;/code&gt;</ept> can be any name you choose; this procedure uses the name <bpt id="3">&lt;code&gt;</bpt>WebDemoWebApp<ept id="3">&lt;/code&gt;</ept>.</source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>webAppName<ept id="1">&lt;/code&gt;</ept> can be any name you choose; this procedure uses the name <bpt id="3">&lt;code&gt;</bpt>WebDemoWebApp<ept id="3">&lt;/code&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="221" xml:space="preserve">
+            <source>The full domain name is the <bpt id="2">&lt;code&gt;</bpt>webAppName<ept id="2">&lt;/code&gt;</ept> with the <bpt id="4">&lt;code&gt;</bpt>domainName<ept id="4">&lt;/code&gt;</ept> appended, so in this case the full domain is <bpt id="6">&lt;code&gt;</bpt>webdemowebapp.azurewebsites.net<ept id="6">&lt;/code&gt;</ept>.</source>
+            <target state="new">The full domain name is the <bpt id="2">&lt;code&gt;</bpt>webAppName<ept id="2">&lt;/code&gt;</ept> with the <bpt id="4">&lt;code&gt;</bpt>domainName<ept id="4">&lt;/code&gt;</ept> appended, so in this case the full domain is <bpt id="6">&lt;code&gt;</bpt>webdemowebapp.azurewebsites.net<ept id="6">&lt;/code&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="222" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>domainName<ept id="1">&lt;/code&gt;</ept> should be specified as shown above.</source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>domainName<ept id="1">&lt;/code&gt;</ept> should be specified as shown above.</target>
+          </trans-unit>
+          <trans-unit id="223" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>webSpaceName<ept id="1">&lt;/code&gt;</ept> should be one of the values defined in the <bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>WebSpaceNames[]<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept> class.</source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>webSpaceName<ept id="1">&lt;/code&gt;</ept> should be one of the values defined in the <bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>WebSpaceNames[]<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept> class.</target>
+          </trans-unit>
+          <trans-unit id="224" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>appServicePlanName<ept id="1">&lt;/code&gt;</ept> should be specified as shown above.</source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>appServicePlanName<ept id="1">&lt;/code&gt;</ept> should be specified as shown above.</target>
+          </trans-unit>
+          <trans-unit id="225" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Note:<ept id="1">&lt;/strong&gt;</ept> Each time you run this application, you need to change the value</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Note:<ept id="1">&lt;/strong&gt;</ept> Each time you run this application, you need to change the value</target>
+          </trans-unit>
+          <trans-unit id="226" xml:space="preserve">
+            <source>of <bpt id="2">&lt;code&gt;</bpt>webAppName<ept id="2">&lt;/code&gt;</ept> and <bpt id="4">&lt;code&gt;</bpt>appServicePlanName<ept id="4">&lt;/code&gt;</ept> (or delete the web app on the Azure</source>
+            <target state="new">of <bpt id="2">&lt;code&gt;</bpt>webAppName<ept id="2">&lt;/code&gt;</ept> and <bpt id="4">&lt;code&gt;</bpt>appServicePlanName<ept id="4">&lt;/code&gt;</ept> (or delete the web app on the Azure</target>
+          </trans-unit>
+          <trans-unit id="227" xml:space="preserve">
+            <source>Portal) before running the application again.</source>
+            <target state="new">Portal) before running the application again.</target>
+          </trans-unit>
+          <trans-unit id="228" xml:space="preserve">
+            <source>Otherwise, execution will</source>
+            <target state="new">Otherwise, execution will</target>
+          </trans-unit>
+          <trans-unit id="229" xml:space="preserve">
+            <source>fail because the same resource already exists on Azure.</source>
+            <target state="new">fail because the same resource already exists on Azure.</target>
+          </trans-unit>
+          <trans-unit id="230" xml:space="preserve">
+            <source>Define the web creation method</source>
+            <target state="new">Define the web creation method</target>
+          </trans-unit>
+          <trans-unit id="231" xml:space="preserve">
+            <source>Next, define a method to create the web app.</source>
+            <target state="new">Next, define a method to create the web app.</target>
+          </trans-unit>
+          <trans-unit id="232" xml:space="preserve">
+            <source>This method, <bpt id="2">&lt;code&gt;</bpt>createWebApp<ept id="2">&lt;/code&gt;</ept>, specifies the parameters of the web app and the webspace.</source>
+            <target state="new">This method, <bpt id="2">&lt;code&gt;</bpt>createWebApp<ept id="2">&lt;/code&gt;</ept>, specifies the parameters of the web app and the webspace.</target>
+          </trans-unit>
+          <trans-unit id="233" xml:space="preserve">
+            <source>It also creates and configures the App Service Web Apps management client, which is defined by the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>WebSiteManagementClient[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> object.</source>
+            <target state="new">It also creates and configures the App Service Web Apps management client, which is defined by the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>WebSiteManagementClient[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> object.</target>
+          </trans-unit>
+          <trans-unit id="234" xml:space="preserve">
+            <source>The management client is key to creating Web Apps.</source>
+            <target state="new">The management client is key to creating Web Apps.</target>
+          </trans-unit>
+          <trans-unit id="235" xml:space="preserve">
+            <source>It provides RESTful web services that allow applications to manage web apps (performing operations such as create, update, and delete) by calling the service management API.</source>
+            <target state="new">It provides RESTful web services that allow applications to manage web apps (performing operations such as create, update, and delete) by calling the service management API.</target>
+          </trans-unit>
+          <trans-unit id="236" xml:space="preserve">
+            <source>The code will output the HTTP status of the response indicating success or failure, and if successful, will output the name of the created web app.</source>
+            <target state="new">The code will output the HTTP status of the response indicating success or failure, and if successful, will output the name of the created web app.</target>
+          </trans-unit>
+          <trans-unit id="237" xml:space="preserve">
+            <source>Define the main() method</source>
+            <target state="new">Define the main() method</target>
+          </trans-unit>
+          <trans-unit id="238" xml:space="preserve">
+            <source>Provide the main() method code that calls createWebApp() to create the web app.</source>
+            <target state="new">Provide the main() method code that calls createWebApp() to create the web app.</target>
+          </trans-unit>
+          <trans-unit id="239" xml:space="preserve">
+            <source>Finally, call <bpt id="2">&lt;code&gt;</bpt>createWebApp<ept id="2">&lt;/code&gt;</ept> from <bpt id="4">&lt;code&gt;</bpt>main<ept id="4">&lt;/code&gt;</ept>:</source>
+            <target state="new">Finally, call <bpt id="2">&lt;code&gt;</bpt>createWebApp<ept id="2">&lt;/code&gt;</ept> from <bpt id="4">&lt;code&gt;</bpt>main<ept id="4">&lt;/code&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="240" xml:space="preserve">
+            <source>Run the application and verify web app creation</source>
+            <target state="new">Run the application and verify web app creation</target>
+          </trans-unit>
+          <trans-unit id="241" xml:space="preserve">
+            <source>To verify that your application runs, click <bpt id="2">&lt;strong&gt;</bpt>Run &gt; Run<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">To verify that your application runs, click <bpt id="2">&lt;strong&gt;</bpt>Run &gt; Run<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="242" xml:space="preserve">
+            <source>When the application completes running, you should see the following output in the Eclipse console:</source>
+            <target state="new">When the application completes running, you should see the following output in the Eclipse console:</target>
+          </trans-unit>
+          <trans-unit id="243" xml:space="preserve">
+            <source>Log into the Azure classic portal and click <bpt id="2">&lt;strong&gt;</bpt>Web Apps<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Log into the Azure classic portal and click <bpt id="2">&lt;strong&gt;</bpt>Web Apps<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="244" xml:space="preserve">
+            <source>The new web app should appear in the Web Apps list within a few minutes.</source>
+            <target state="new">The new web app should appear in the Web Apps list within a few minutes.</target>
+          </trans-unit>
+          <trans-unit id="245" xml:space="preserve">
+            <source>Deploying an Application to the Web App</source>
+            <target state="new">Deploying an Application to the Web App</target>
+          </trans-unit>
+          <trans-unit id="246" xml:space="preserve">
+            <source>After you have run AzureWebDemo and created the new web app, log into the classic portal, click <bpt id="2">&lt;strong&gt;</bpt>Web Apps<ept id="2">&lt;/strong&gt;</ept>, and select <bpt id="4">&lt;strong&gt;</bpt>WebDemoWebApp<ept id="4">&lt;/strong&gt;</ept> in the <bpt id="6">&lt;strong&gt;</bpt>Web Apps<ept id="6">&lt;/strong&gt;</ept> list.</source>
+            <target state="new">After you have run AzureWebDemo and created the new web app, log into the classic portal, click <bpt id="2">&lt;strong&gt;</bpt>Web Apps<ept id="2">&lt;/strong&gt;</ept>, and select <bpt id="4">&lt;strong&gt;</bpt>WebDemoWebApp<ept id="4">&lt;/strong&gt;</ept> in the <bpt id="6">&lt;strong&gt;</bpt>Web Apps<ept id="6">&lt;/strong&gt;</ept> list.</target>
+          </trans-unit>
+          <trans-unit id="247" xml:space="preserve">
+            <source>In the web app's dashboard page, click <bpt id="2">&lt;strong&gt;</bpt>Browse<ept id="2">&lt;/strong&gt;</ept> (or click the URL, <bpt id="4">&lt;code&gt;</bpt>webdemowebapp.azurewebsites.net<ept id="4">&lt;/code&gt;</ept>) to navigate to it.</source>
+            <target state="new">In the web app's dashboard page, click <bpt id="2">&lt;strong&gt;</bpt>Browse<ept id="2">&lt;/strong&gt;</ept> (or click the URL, <bpt id="4">&lt;code&gt;</bpt>webdemowebapp.azurewebsites.net<ept id="4">&lt;/code&gt;</ept>) to navigate to it.</target>
+          </trans-unit>
+          <trans-unit id="248" xml:space="preserve">
+            <source>You will see a blank placeholder page, because no content has been published to the web app yet.</source>
+            <target state="new">You will see a blank placeholder page, because no content has been published to the web app yet.</target>
+          </trans-unit>
+          <trans-unit id="249" xml:space="preserve">
+            <source>Next you will create a "Hello World" application and deploy it to the web app.</source>
+            <target state="new">Next you will create a "Hello World" application and deploy it to the web app.</target>
+          </trans-unit>
+          <trans-unit id="250" xml:space="preserve">
+            <source>Create a JSP Hello World application</source>
+            <target state="new">Create a JSP Hello World application</target>
+          </trans-unit>
+          <trans-unit id="251" xml:space="preserve">
+            <source>Create the application</source>
+            <target state="new">Create the application</target>
+          </trans-unit>
+          <trans-unit id="252" xml:space="preserve">
+            <source>In order to demonstrate how to deploy an application to the web, the following procedure shows you how to create a simple "Hello World" Java application and upload it to the App Service Web App that your application created.</source>
+            <target state="new">In order to demonstrate how to deploy an application to the web, the following procedure shows you how to create a simple "Hello World" Java application and upload it to the App Service Web App that your application created.</target>
+          </trans-unit>
+          <trans-unit id="253" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>File &gt; New &gt; Dynamic Web Project<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>File &gt; New &gt; Dynamic Web Project<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="254" xml:space="preserve">
+            <source>Name it <bpt id="2">&lt;code&gt;</bpt>JSPHello<ept id="2">&lt;/code&gt;</ept>.</source>
+            <target state="new">Name it <bpt id="2">&lt;code&gt;</bpt>JSPHello<ept id="2">&lt;/code&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="255" xml:space="preserve">
+            <source>You do not need to change any other settings in this dialog.</source>
+            <target state="new">You do not need to change any other settings in this dialog.</target>
+          </trans-unit>
+          <trans-unit id="256" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Finish<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Finish<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="257" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="258" xml:space="preserve">
+            <source>In Project Explorer, expand the <bpt id="2">&lt;strong&gt;</bpt>JSPHello<ept id="2">&lt;/strong&gt;</ept> project, right-click <bpt id="4">&lt;strong&gt;</bpt>WebContent<ept id="4">&lt;/strong&gt;</ept>, then click <bpt id="6">&lt;strong&gt;</bpt>New &gt; JSP File<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In Project Explorer, expand the <bpt id="2">&lt;strong&gt;</bpt>JSPHello<ept id="2">&lt;/strong&gt;</ept> project, right-click <bpt id="4">&lt;strong&gt;</bpt>WebContent<ept id="4">&lt;/strong&gt;</ept>, then click <bpt id="6">&lt;strong&gt;</bpt>New &gt; JSP File<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="259" xml:space="preserve">
+            <source>In the New JSP File dialog, name the new file <bpt id="2">&lt;code&gt;</bpt>index.jsp<ept id="2">&lt;/code&gt;</ept>.</source>
+            <target state="new">In the New JSP File dialog, name the new file <bpt id="2">&lt;code&gt;</bpt>index.jsp<ept id="2">&lt;/code&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="260" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Next<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Next<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="261" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Select JSP Template<ept id="2">&lt;/strong&gt;</ept> dialog, select <bpt id="4">&lt;strong&gt;</bpt>New JSP File (html)<ept id="4">&lt;/strong&gt;</ept> and click <bpt id="6">&lt;strong&gt;</bpt>Finish<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Select JSP Template<ept id="2">&lt;/strong&gt;</ept> dialog, select <bpt id="4">&lt;strong&gt;</bpt>New JSP File (html)<ept id="4">&lt;/strong&gt;</ept> and click <bpt id="6">&lt;strong&gt;</bpt>Finish<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="262" xml:space="preserve">
+            <source>In index.jsp, add the following code in the <bpt id="2">&lt;code&gt;</bpt>&lt;head&gt;<ept id="2">&lt;/code&gt;</ept> and <bpt id="4">&lt;code&gt;</bpt>&lt;body&gt;<ept id="4">&lt;/code&gt;</ept> tag sections:</source>
+            <target state="new">In index.jsp, add the following code in the <bpt id="2">&lt;code&gt;</bpt>&lt;head&gt;<ept id="2">&lt;/code&gt;</ept> and <bpt id="4">&lt;code&gt;</bpt>&lt;body&gt;<ept id="4">&lt;/code&gt;</ept> tag sections:</target>
+          </trans-unit>
+          <trans-unit id="263" xml:space="preserve">
+            <source>Run the Hello World application in localhost</source>
+            <target state="new">Run the Hello World application in localhost</target>
+          </trans-unit>
+          <trans-unit id="264" xml:space="preserve">
+            <source>Before you run this application, you need to configure a few properties.</source>
+            <target state="new">Before you run this application, you need to configure a few properties.</target>
+          </trans-unit>
+          <trans-unit id="265" xml:space="preserve">
+            <source>Right-click the <bpt id="2">&lt;strong&gt;</bpt>JSPHello<ept id="2">&lt;/strong&gt;</ept> project and select <bpt id="4">&lt;strong&gt;</bpt>Properties<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Right-click the <bpt id="2">&lt;strong&gt;</bpt>JSPHello<ept id="2">&lt;/strong&gt;</ept> project and select <bpt id="4">&lt;strong&gt;</bpt>Properties<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="266" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Properties<ept id="2">&lt;/strong&gt;</ept> dialog: select <bpt id="4">&lt;strong&gt;</bpt>Java Build Path<ept id="4">&lt;/strong&gt;</ept>, select the <bpt id="6">&lt;strong&gt;</bpt>Order and Export<ept id="6">&lt;/strong&gt;</ept> tab, check <bpt id="8">&lt;strong&gt;</bpt>JRE System Library<ept id="8">&lt;/strong&gt;</ept>, then click <bpt id="10">&lt;strong&gt;</bpt>Up<ept id="10">&lt;/strong&gt;</ept> to move it to the top of the list.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Properties<ept id="2">&lt;/strong&gt;</ept> dialog: select <bpt id="4">&lt;strong&gt;</bpt>Java Build Path<ept id="4">&lt;/strong&gt;</ept>, select the <bpt id="6">&lt;strong&gt;</bpt>Order and Export<ept id="6">&lt;/strong&gt;</ept> tab, check <bpt id="8">&lt;strong&gt;</bpt>JRE System Library<ept id="8">&lt;/strong&gt;</ept>, then click <bpt id="10">&lt;strong&gt;</bpt>Up<ept id="10">&lt;/strong&gt;</ept> to move it to the top of the list.</target>
+          </trans-unit>
+          <trans-unit id="267" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="268" xml:space="preserve">
+            <source>Also in the <bpt id="2">&lt;strong&gt;</bpt>Properties<ept id="2">&lt;/strong&gt;</ept> dialog: select <bpt id="4">&lt;strong&gt;</bpt>Targeted Runtimes<ept id="4">&lt;/strong&gt;</ept> and click <bpt id="6">&lt;strong&gt;</bpt>New<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Also in the <bpt id="2">&lt;strong&gt;</bpt>Properties<ept id="2">&lt;/strong&gt;</ept> dialog: select <bpt id="4">&lt;strong&gt;</bpt>Targeted Runtimes<ept id="4">&lt;/strong&gt;</ept> and click <bpt id="6">&lt;strong&gt;</bpt>New<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="269" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>New Server Runtime Environment<ept id="2">&lt;/strong&gt;</ept> dialog, select a server such as <bpt id="4">&lt;strong&gt;</bpt>Apache Tomcat v7.0<ept id="4">&lt;/strong&gt;</ept> and click <bpt id="6">&lt;strong&gt;</bpt>Next<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>New Server Runtime Environment<ept id="2">&lt;/strong&gt;</ept> dialog, select a server such as <bpt id="4">&lt;strong&gt;</bpt>Apache Tomcat v7.0<ept id="4">&lt;/strong&gt;</ept> and click <bpt id="6">&lt;strong&gt;</bpt>Next<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="270" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Tomcat Server<ept id="2">&lt;/strong&gt;</ept> dialog, set <bpt id="4">&lt;strong&gt;</bpt>Name<ept id="4">&lt;/strong&gt;</ept> to <bpt id="6">&lt;code&gt;</bpt>Apache Tomcat v7.0<ept id="6">&lt;/code&gt;</ept>, and set <bpt id="8">&lt;strong&gt;</bpt>Tomcat Installation Directory<ept id="8">&lt;/strong&gt;</ept> to the directory in which you installed the version of Tomcat server you want to use.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Tomcat Server<ept id="2">&lt;/strong&gt;</ept> dialog, set <bpt id="4">&lt;strong&gt;</bpt>Name<ept id="4">&lt;/strong&gt;</ept> to <bpt id="6">&lt;code&gt;</bpt>Apache Tomcat v7.0<ept id="6">&lt;/code&gt;</ept>, and set <bpt id="8">&lt;strong&gt;</bpt>Tomcat Installation Directory<ept id="8">&lt;/strong&gt;</ept> to the directory in which you installed the version of Tomcat server you want to use.</target>
+          </trans-unit>
+          <trans-unit id="271" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="272" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Finish<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Finish<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="273" xml:space="preserve">
+            <source>You then return to the <bpt id="2">&lt;strong&gt;</bpt>Targeted Runtimes<ept id="2">&lt;/strong&gt;</ept> page of the <bpt id="4">&lt;strong&gt;</bpt>Properties<ept id="4">&lt;/strong&gt;</ept> dialog.</source>
+            <target state="new">You then return to the <bpt id="2">&lt;strong&gt;</bpt>Targeted Runtimes<ept id="2">&lt;/strong&gt;</ept> page of the <bpt id="4">&lt;strong&gt;</bpt>Properties<ept id="4">&lt;/strong&gt;</ept> dialog.</target>
+          </trans-unit>
+          <trans-unit id="274" xml:space="preserve">
+            <source>Select <bpt id="2">&lt;strong&gt;</bpt>Apache Tomcat v7.0<ept id="2">&lt;/strong&gt;</ept>, then click <bpt id="4">&lt;strong&gt;</bpt>OK<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Select <bpt id="2">&lt;strong&gt;</bpt>Apache Tomcat v7.0<ept id="2">&lt;/strong&gt;</ept>, then click <bpt id="4">&lt;strong&gt;</bpt>OK<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="275" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="276" xml:space="preserve">
+            <source>In the Eclipse <bpt id="2">&lt;strong&gt;</bpt>Run<ept id="2">&lt;/strong&gt;</ept> menu, click <bpt id="4">&lt;strong&gt;</bpt>Run<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the Eclipse <bpt id="2">&lt;strong&gt;</bpt>Run<ept id="2">&lt;/strong&gt;</ept> menu, click <bpt id="4">&lt;strong&gt;</bpt>Run<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="277" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Run As<ept id="2">&lt;/strong&gt;</ept> dialog, select <bpt id="4">&lt;strong&gt;</bpt>Run on Server<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Run As<ept id="2">&lt;/strong&gt;</ept> dialog, select <bpt id="4">&lt;strong&gt;</bpt>Run on Server<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="278" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Run on Server<ept id="2">&lt;/strong&gt;</ept> dialog, select <bpt id="4">&lt;strong&gt;</bpt>Tomcat v7.0 Server<ept id="4">&lt;/strong&gt;</ept>:</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Run on Server<ept id="2">&lt;/strong&gt;</ept> dialog, select <bpt id="4">&lt;strong&gt;</bpt>Tomcat v7.0 Server<ept id="4">&lt;/strong&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="279" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="280" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Finish<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Finish<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="281" xml:space="preserve">
+            <source>When the application runs, you should see the <bpt id="2">&lt;strong&gt;</bpt>JSPHello<ept id="2">&lt;/strong&gt;</ept> page appear in a localhost window in Eclipse (<bpt id="4">&lt;code&gt;</bpt>http://localhost:8080/JSPHello/<ept id="4">&lt;/code&gt;</ept>), displaying the following message:</source>
+            <target state="new">When the application runs, you should see the <bpt id="2">&lt;strong&gt;</bpt>JSPHello<ept id="2">&lt;/strong&gt;</ept> page appear in a localhost window in Eclipse (<bpt id="4">&lt;code&gt;</bpt>http://localhost:8080/JSPHello/<ept id="4">&lt;/code&gt;</ept>), displaying the following message:</target>
+          </trans-unit>
+          <trans-unit id="282" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>Hello World, the time is Tue Mar 24 23:21:10 GMT 2015<ept id="1">&lt;/code&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>Hello World, the time is Tue Mar 24 23:21:10 GMT 2015<ept id="1">&lt;/code&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="283" xml:space="preserve">
+            <source>Export the application as a WAR</source>
+            <target state="new">Export the application as a WAR</target>
+          </trans-unit>
+          <trans-unit id="284" xml:space="preserve">
+            <source>Export the web project files as a web archive (WAR) file so that you can deploy it to the web app.</source>
+            <target state="new">Export the web project files as a web archive (WAR) file so that you can deploy it to the web app.</target>
+          </trans-unit>
+          <trans-unit id="285" xml:space="preserve">
+            <source>The following web project files reside in the WebContent folder:</source>
+            <target state="new">The following web project files reside in the WebContent folder:</target>
+          </trans-unit>
+          <trans-unit id="286" xml:space="preserve">
+            <source>Right-click the WebContent folder and select <bpt id="2">&lt;strong&gt;</bpt>Export<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Right-click the WebContent folder and select <bpt id="2">&lt;strong&gt;</bpt>Export<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="287" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Export Select<ept id="2">&lt;/strong&gt;</ept> dialog, click <bpt id="4">&lt;strong&gt;</bpt>Web &gt; WAR<ept id="4">&lt;/strong&gt;</ept> file, then click <bpt id="6">&lt;strong&gt;</bpt>Next<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Export Select<ept id="2">&lt;/strong&gt;</ept> dialog, click <bpt id="4">&lt;strong&gt;</bpt>Web &gt; WAR<ept id="4">&lt;/strong&gt;</ept> file, then click <bpt id="6">&lt;strong&gt;</bpt>Next<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="288" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>WAR Export<ept id="2">&lt;/strong&gt;</ept> dialog, select the src directory in the current project, and include the name of the WAR file at the end.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>WAR Export<ept id="2">&lt;/strong&gt;</ept> dialog, select the src directory in the current project, and include the name of the WAR file at the end.</target>
+          </trans-unit>
+          <trans-unit id="289" xml:space="preserve">
+            <source>For example:</source>
+            <target state="new">For example:</target>
+          </trans-unit>
+          <trans-unit id="290" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>&lt;project-path&gt;/JSPHello/src/JSPHello.war<ept id="1">&lt;/code&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>&lt;project-path&gt;/JSPHello/src/JSPHello.war<ept id="1">&lt;/code&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="291" xml:space="preserve">
+            <source>For more information on deploying WAR files, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Add a Java application to Azure App Service Web Apps<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information on deploying WAR files, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Add a Java application to Azure App Service Web Apps<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="292" xml:space="preserve">
+            <source>Deploying the Hello World Application Using FTP</source>
+            <target state="new">Deploying the Hello World Application Using FTP</target>
+          </trans-unit>
+          <trans-unit id="293" xml:space="preserve">
+            <source>Select a third-party FTP client to publish the application.</source>
+            <target state="new">Select a third-party FTP client to publish the application.</target>
+          </trans-unit>
+          <trans-unit id="294" xml:space="preserve">
+            <source>This procedure describes two options: the Kudu console built into Azure; and FileZilla, a popular tool with a convenient, graphical UI.</source>
+            <target state="new">This procedure describes two options: the Kudu console built into Azure; and FileZilla, a popular tool with a convenient, graphical UI.</target>
+          </trans-unit>
+          <trans-unit id="295" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Note:<ept id="1">&lt;/strong&gt;</ept> The Azure Plugin for Eclipse with Java 2.4 supports deployment to storage accounts and cloud services, but does not currently support deployment to web apps.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Note:<ept id="1">&lt;/strong&gt;</ept> The Azure Plugin for Eclipse with Java 2.4 supports deployment to storage accounts and cloud services, but does not currently support deployment to web apps.</target>
+          </trans-unit>
+          <trans-unit id="296" xml:space="preserve">
+            <source>You can deploy to storage accounts and cloud services using an Azure Deployment Project as described in <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Creating a Hello World Application for Azure in Eclipse<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, but not to web apps.</source>
+            <target state="new">You can deploy to storage accounts and cloud services using an Azure Deployment Project as described in <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Creating a Hello World Application for Azure in Eclipse<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, but not to web apps.</target>
+          </trans-unit>
+          <trans-unit id="297" xml:space="preserve">
+            <source>Use other methods such as FTP or GitHub to transfer files to your web app.</source>
+            <target state="new">Use other methods such as FTP or GitHub to transfer files to your web app.</target>
+          </trans-unit>
+          <trans-unit id="298" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Note:<ept id="1">&lt;/strong&gt;</ept> We do not recommend using FTP from the Windows command prompt (the command-line FTP.EXE utility that ships with Windows).</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Note:<ept id="1">&lt;/strong&gt;</ept> We do not recommend using FTP from the Windows command prompt (the command-line FTP.EXE utility that ships with Windows).</target>
+          </trans-unit>
+          <trans-unit id="299" xml:space="preserve">
+            <source>FTP clients that use active FTP, such as FTP.EXE, often fail to work over firewalls.</source>
+            <target state="new">FTP clients that use active FTP, such as FTP.EXE, often fail to work over firewalls.</target>
+          </trans-unit>
+          <trans-unit id="300" xml:space="preserve">
+            <source>Active FTP specifies an internal LAN-based address, to which an FTP server will likely fail to connect.</source>
+            <target state="new">Active FTP specifies an internal LAN-based address, to which an FTP server will likely fail to connect.</target>
+          </trans-unit>
+          <trans-unit id="301" xml:space="preserve">
+            <source>For more information on deployment to an App Service web app using FTP, see the following topics:</source>
+            <target state="new">For more information on deployment to an App Service web app using FTP, see the following topics:</target>
+          </trans-unit>
+          <trans-unit id="302" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Deploy using an FTP utility<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Deploy using an FTP utility<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="303" xml:space="preserve">
+            <source>Set up deployment credentials</source>
+            <target state="new">Set up deployment credentials</target>
+          </trans-unit>
+          <trans-unit id="304" xml:space="preserve">
+            <source>Make sure you have run the <bpt id="2">&lt;strong&gt;</bpt>AzureWebDemo<ept id="2">&lt;/strong&gt;</ept> application to create a web app.</source>
+            <target state="new">Make sure you have run the <bpt id="2">&lt;strong&gt;</bpt>AzureWebDemo<ept id="2">&lt;/strong&gt;</ept> application to create a web app.</target>
+          </trans-unit>
+          <trans-unit id="305" xml:space="preserve">
+            <source>You will transfer files to this location.</source>
+            <target state="new">You will transfer files to this location.</target>
+          </trans-unit>
+          <trans-unit id="306" xml:space="preserve">
+            <source>Log into the classic portal and click <bpt id="2">&lt;strong&gt;</bpt>Web Apps<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Log into the classic portal and click <bpt id="2">&lt;strong&gt;</bpt>Web Apps<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="307" xml:space="preserve">
+            <source>Make sure <bpt id="2">&lt;strong&gt;</bpt>WebDemoWebApp<ept id="2">&lt;/strong&gt;</ept> appears in the list of web apps, and make sure that it is running.</source>
+            <target state="new">Make sure <bpt id="2">&lt;strong&gt;</bpt>WebDemoWebApp<ept id="2">&lt;/strong&gt;</ept> appears in the list of web apps, and make sure that it is running.</target>
+          </trans-unit>
+          <trans-unit id="308" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>WebDemoWebApp<ept id="2">&lt;/strong&gt;</ept> to open its <bpt id="4">&lt;strong&gt;</bpt>Dashboard<ept id="4">&lt;/strong&gt;</ept> page.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>WebDemoWebApp<ept id="2">&lt;/strong&gt;</ept> to open its <bpt id="4">&lt;strong&gt;</bpt>Dashboard<ept id="4">&lt;/strong&gt;</ept> page.</target>
+          </trans-unit>
+          <trans-unit id="309" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Dashboard<ept id="2">&lt;/strong&gt;</ept> page, under <bpt id="4">&lt;strong&gt;</bpt>Quick Glance<ept id="4">&lt;/strong&gt;</ept>, click <bpt id="6">&lt;strong&gt;</bpt>Set up your deployment credentials<ept id="6">&lt;/strong&gt;</ept> (if you already have deployment credentials, this reads <bpt id="8">&lt;strong&gt;</bpt>Reset your deployment credentials<ept id="8">&lt;/strong&gt;</ept>).</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Dashboard<ept id="2">&lt;/strong&gt;</ept> page, under <bpt id="4">&lt;strong&gt;</bpt>Quick Glance<ept id="4">&lt;/strong&gt;</ept>, click <bpt id="6">&lt;strong&gt;</bpt>Set up your deployment credentials<ept id="6">&lt;/strong&gt;</ept> (if you already have deployment credentials, this reads <bpt id="8">&lt;strong&gt;</bpt>Reset your deployment credentials<ept id="8">&lt;/strong&gt;</ept>).</target>
+          </trans-unit>
+          <trans-unit id="310" xml:space="preserve">
+            <source>Deployment credentials are associated with a Microsoft account.</source>
+            <target state="new">Deployment credentials are associated with a Microsoft account.</target>
+          </trans-unit>
+          <trans-unit id="311" xml:space="preserve">
+            <source>You need to specify a username and password that you can use to deploy using Git and FTP.</source>
+            <target state="new">You need to specify a username and password that you can use to deploy using Git and FTP.</target>
+          </trans-unit>
+          <trans-unit id="312" xml:space="preserve">
+            <source>You can use these credentials to deploy to any web app in all Azure subscriptions associated with your Microsoft account.</source>
+            <target state="new">You can use these credentials to deploy to any web app in all Azure subscriptions associated with your Microsoft account.</target>
+          </trans-unit>
+          <trans-unit id="313" xml:space="preserve">
+            <source>Provide Git and FTP deployment credentials in the dialog, and record the username and password for future use.</source>
+            <target state="new">Provide Git and FTP deployment credentials in the dialog, and record the username and password for future use.</target>
+          </trans-unit>
+          <trans-unit id="314" xml:space="preserve">
+            <source>Get FTP connection information</source>
+            <target state="new">Get FTP connection information</target>
+          </trans-unit>
+          <trans-unit id="315" xml:space="preserve">
+            <source>To use FTP to deploy application files to the newly created web app, you need to obtain connection information.</source>
+            <target state="new">To use FTP to deploy application files to the newly created web app, you need to obtain connection information.</target>
+          </trans-unit>
+          <trans-unit id="316" xml:space="preserve">
+            <source>There are two ways to obtain connection information.</source>
+            <target state="new">There are two ways to obtain connection information.</target>
+          </trans-unit>
+          <trans-unit id="317" xml:space="preserve">
+            <source>One way is to visit the web app's <bpt id="2">&lt;strong&gt;</bpt>Dashboard<ept id="2">&lt;/strong&gt;</ept> page; the other way is to download the web app's publish profile.</source>
+            <target state="new">One way is to visit the web app's <bpt id="2">&lt;strong&gt;</bpt>Dashboard<ept id="2">&lt;/strong&gt;</ept> page; the other way is to download the web app's publish profile.</target>
+          </trans-unit>
+          <trans-unit id="318" xml:space="preserve">
+            <source>The publish profile is an XML file that provides information such as FTP host name and logon credentials for your web apps in Azure App Service.</source>
+            <target state="new">The publish profile is an XML file that provides information such as FTP host name and logon credentials for your web apps in Azure App Service.</target>
+          </trans-unit>
+          <trans-unit id="319" xml:space="preserve">
+            <source>You can use this username and password to deploy to any web app in all subscriptions associated with the Azure account, not only this one.</source>
+            <target state="new">You can use this username and password to deploy to any web app in all subscriptions associated with the Azure account, not only this one.</target>
+          </trans-unit>
+          <trans-unit id="320" xml:space="preserve">
+            <source>To obtain FTP connection information from the web app's blade in the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Portal[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>:</source>
+            <target state="new">To obtain FTP connection information from the web app's blade in the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Portal[]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="321" xml:space="preserve">
+            <source>Under <bpt id="2">&lt;strong&gt;</bpt>Essentials<ept id="2">&lt;/strong&gt;</ept>, find and copy the <bpt id="4">&lt;strong&gt;</bpt>FTP hostname<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Under <bpt id="2">&lt;strong&gt;</bpt>Essentials<ept id="2">&lt;/strong&gt;</ept>, find and copy the <bpt id="4">&lt;strong&gt;</bpt>FTP hostname<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="322" xml:space="preserve">
+            <source>This is a URI similar to <bpt id="2">&lt;code&gt;</bpt>ftp://waws-prod-bay-NNN.ftp.azurewebsites.windows.net<ept id="2">&lt;/code&gt;</ept>.</source>
+            <target state="new">This is a URI similar to <bpt id="2">&lt;code&gt;</bpt>ftp://waws-prod-bay-NNN.ftp.azurewebsites.windows.net<ept id="2">&lt;/code&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="323" xml:space="preserve">
+            <source>Under <bpt id="2">&lt;strong&gt;</bpt>Essentials<ept id="2">&lt;/strong&gt;</ept>, find and copy <bpt id="4">&lt;strong&gt;</bpt>FTP/Deployment username<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Under <bpt id="2">&lt;strong&gt;</bpt>Essentials<ept id="2">&lt;/strong&gt;</ept>, find and copy <bpt id="4">&lt;strong&gt;</bpt>FTP/Deployment username<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="324" xml:space="preserve">
+            <source>This will have the form <bpt id="2">&lt;em&gt;</bpt>webappname\deployment-username<ept id="2">&lt;/em&gt;</ept>; for example <bpt id="4">&lt;code&gt;</bpt>WebDemoWebApp\deployer77<ept id="4">&lt;/code&gt;</ept>.</source>
+            <target state="new">This will have the form <bpt id="2">&lt;em&gt;</bpt>webappname\deployment-username<ept id="2">&lt;/em&gt;</ept>; for example <bpt id="4">&lt;code&gt;</bpt>WebDemoWebApp\deployer77<ept id="4">&lt;/code&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="325" xml:space="preserve">
+            <source>To obtain FTP connection information from the publish profile:</source>
+            <target state="new">To obtain FTP connection information from the publish profile:</target>
+          </trans-unit>
+          <trans-unit id="326" xml:space="preserve">
+            <source>In the web app's blade, click <bpt id="2">&lt;strong&gt;</bpt>Get publish profile<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the web app's blade, click <bpt id="2">&lt;strong&gt;</bpt>Get publish profile<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="327" xml:space="preserve">
+            <source>This will download a .publishsettings file to your local drive.</source>
+            <target state="new">This will download a .publishsettings file to your local drive.</target>
+          </trans-unit>
+          <trans-unit id="328" xml:space="preserve">
+            <source>Open the .publishsettings file in an XML editor or text editor and find the <bpt id="2">&lt;code&gt;</bpt>&lt;publishProfile&gt;<ept id="2">&lt;/code&gt;</ept> element containing <bpt id="4">&lt;code&gt;</bpt>publishMethod="FTP"<ept id="4">&lt;/code&gt;</ept>. It should look like the following:</source>
+            <target state="new">Open the .publishsettings file in an XML editor or text editor and find the <bpt id="2">&lt;code&gt;</bpt>&lt;publishProfile&gt;<ept id="2">&lt;/code&gt;</ept> element containing <bpt id="4">&lt;code&gt;</bpt>publishMethod="FTP"<ept id="4">&lt;/code&gt;</ept>. It should look like the following:</target>
+          </trans-unit>
+          <trans-unit id="329" xml:space="preserve">
+            <source>Note that the web app's <bpt id="2">&lt;code&gt;</bpt>publishProfile<ept id="2">&lt;/code&gt;</ept> settings map to the FileZilla Site Manager settings as follows:</source>
+            <target state="new">Note that the web app's <bpt id="2">&lt;code&gt;</bpt>publishProfile<ept id="2">&lt;/code&gt;</ept> settings map to the FileZilla Site Manager settings as follows:</target>
+          </trans-unit>
+          <trans-unit id="330" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>publishUrl<ept id="1">&lt;/code&gt;</ept> is the same as <bpt id="3">&lt;strong&gt;</bpt>FTP host name<ept id="3">&lt;/strong&gt;</ept>, the value you set in <bpt id="5">&lt;strong&gt;</bpt>Host<ept id="5">&lt;/strong&gt;</ept>.</source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>publishUrl<ept id="1">&lt;/code&gt;</ept> is the same as <bpt id="3">&lt;strong&gt;</bpt>FTP host name<ept id="3">&lt;/strong&gt;</ept>, the value you set in <bpt id="5">&lt;strong&gt;</bpt>Host<ept id="5">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="331" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>publishMethod="FTP"<ept id="1">&lt;/code&gt;</ept> means that you set <bpt id="3">&lt;strong&gt;</bpt>Protocol<ept id="3">&lt;/strong&gt;</ept> to <bpt id="5">&lt;strong&gt;</bpt>FTP - File Transfer Protocol<ept id="5">&lt;/strong&gt;</ept>, and <bpt id="7">&lt;strong&gt;</bpt>Encryption<ept id="7">&lt;/strong&gt;</ept> to <bpt id="9">&lt;strong&gt;</bpt>Use plain FTP<ept id="9">&lt;/strong&gt;</ept>.</source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>publishMethod="FTP"<ept id="1">&lt;/code&gt;</ept> means that you set <bpt id="3">&lt;strong&gt;</bpt>Protocol<ept id="3">&lt;/strong&gt;</ept> to <bpt id="5">&lt;strong&gt;</bpt>FTP - File Transfer Protocol<ept id="5">&lt;/strong&gt;</ept>, and <bpt id="7">&lt;strong&gt;</bpt>Encryption<ept id="7">&lt;/strong&gt;</ept> to <bpt id="9">&lt;strong&gt;</bpt>Use plain FTP<ept id="9">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="332" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>userName<ept id="1">&lt;/code&gt;</ept> and <bpt id="3">&lt;code&gt;</bpt>userPWD<ept id="3">&lt;/code&gt;</ept> are keys for the actual username and password values you specified when you reset the deployment credentials.</source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>userName<ept id="1">&lt;/code&gt;</ept> and <bpt id="3">&lt;code&gt;</bpt>userPWD<ept id="3">&lt;/code&gt;</ept> are keys for the actual username and password values you specified when you reset the deployment credentials.</target>
+          </trans-unit>
+          <trans-unit id="333" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>userName<ept id="1">&lt;/code&gt;</ept> is the same as <bpt id="3">&lt;strong&gt;</bpt>Deployment / FTP user<ept id="3">&lt;/strong&gt;</ept>.</source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>userName<ept id="1">&lt;/code&gt;</ept> is the same as <bpt id="3">&lt;strong&gt;</bpt>Deployment / FTP user<ept id="3">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="334" xml:space="preserve">
+            <source>They map to <bpt id="2">&lt;strong&gt;</bpt>User<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>Password<ept id="4">&lt;/strong&gt;</ept> in FileZilla.</source>
+            <target state="new">They map to <bpt id="2">&lt;strong&gt;</bpt>User<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>Password<ept id="4">&lt;/strong&gt;</ept> in FileZilla.</target>
+          </trans-unit>
+          <trans-unit id="335" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>ftpPassiveMode="True"<ept id="1">&lt;/code&gt;</ept> means that the FTP site uses passive FTP transfer; select <bpt id="3">&lt;strong&gt;</bpt>Passive<ept id="3">&lt;/strong&gt;</ept> on the <bpt id="5">&lt;strong&gt;</bpt>Transfer Settings<ept id="5">&lt;/strong&gt;</ept> tab.</source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>ftpPassiveMode="True"<ept id="1">&lt;/code&gt;</ept> means that the FTP site uses passive FTP transfer; select <bpt id="3">&lt;strong&gt;</bpt>Passive<ept id="3">&lt;/strong&gt;</ept> on the <bpt id="5">&lt;strong&gt;</bpt>Transfer Settings<ept id="5">&lt;/strong&gt;</ept> tab.</target>
+          </trans-unit>
+          <trans-unit id="336" xml:space="preserve">
+            <source>Configure the Web App to host a Java application</source>
+            <target state="new">Configure the Web App to host a Java application</target>
+          </trans-unit>
+          <trans-unit id="337" xml:space="preserve">
+            <source>Before you publish the application, you need to change a few configuration settings so that the web app can host a Java application.</source>
+            <target state="new">Before you publish the application, you need to change a few configuration settings so that the web app can host a Java application.</target>
+          </trans-unit>
+          <trans-unit id="338" xml:space="preserve">
+            <source>In the classic portal, go to the web app's <bpt id="2">&lt;strong&gt;</bpt>Dashboard<ept id="2">&lt;/strong&gt;</ept> page and click <bpt id="4">&lt;strong&gt;</bpt>Configure<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the classic portal, go to the web app's <bpt id="2">&lt;strong&gt;</bpt>Dashboard<ept id="2">&lt;/strong&gt;</ept> page and click <bpt id="4">&lt;strong&gt;</bpt>Configure<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="339" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Configure<ept id="2">&lt;/strong&gt;</ept> page, specify the following settings.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Configure<ept id="2">&lt;/strong&gt;</ept> page, specify the following settings.</target>
+          </trans-unit>
+          <trans-unit id="340" xml:space="preserve">
+            <source>In <bpt id="2">&lt;strong&gt;</bpt>Java version<ept id="2">&lt;/strong&gt;</ept> the default is <bpt id="4">&lt;strong&gt;</bpt>Off<ept id="4">&lt;/strong&gt;</ept>; select the Java version your application targets; for example 1.7.0_51.</source>
+            <target state="new">In <bpt id="2">&lt;strong&gt;</bpt>Java version<ept id="2">&lt;/strong&gt;</ept> the default is <bpt id="4">&lt;strong&gt;</bpt>Off<ept id="4">&lt;/strong&gt;</ept>; select the Java version your application targets; for example 1.7.0_51.</target>
+          </trans-unit>
+          <trans-unit id="341" xml:space="preserve">
+            <source>After you do this, also make sure that <bpt id="2">&lt;strong&gt;</bpt>Web container<ept id="2">&lt;/strong&gt;</ept> is set to a version of Tomcat Server.</source>
+            <target state="new">After you do this, also make sure that <bpt id="2">&lt;strong&gt;</bpt>Web container<ept id="2">&lt;/strong&gt;</ept> is set to a version of Tomcat Server.</target>
+          </trans-unit>
+          <trans-unit id="342" xml:space="preserve">
+            <source>In <bpt id="2">&lt;strong&gt;</bpt>Default Documents<ept id="2">&lt;/strong&gt;</ept>, add index.jsp and move it up to the top of the list.</source>
+            <target state="new">In <bpt id="2">&lt;strong&gt;</bpt>Default Documents<ept id="2">&lt;/strong&gt;</ept>, add index.jsp and move it up to the top of the list.</target>
+          </trans-unit>
+          <trans-unit id="343" xml:space="preserve">
+            <source>(The default file for web apps is hostingstart.html.)</source>
+            <target state="new">(The default file for web apps is hostingstart.html.)</target>
+          </trans-unit>
+          <trans-unit id="344" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Save<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Save<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="345" xml:space="preserve">
+            <source>Publish your application using Kudu</source>
+            <target state="new">Publish your application using Kudu</target>
+          </trans-unit>
+          <trans-unit id="346" xml:space="preserve">
+            <source>One way to publish the application is to use the Kudu debug console built into Azure.</source>
+            <target state="new">One way to publish the application is to use the Kudu debug console built into Azure.</target>
+          </trans-unit>
+          <trans-unit id="347" xml:space="preserve">
+            <source>Kudu is known to be stable and consistent with App Service Web Apps and Tomcat Server.</source>
+            <target state="new">Kudu is known to be stable and consistent with App Service Web Apps and Tomcat Server.</target>
+          </trans-unit>
+          <trans-unit id="348" xml:space="preserve">
+            <source>You access the console for the web app by browsing to a URL of the following form:</source>
+            <target state="new">You access the console for the web app by browsing to a URL of the following form:</target>
+          </trans-unit>
+          <trans-unit id="349" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>https://&lt;webappname&gt;.scm.azurewebsites.net/DebugConsole<ept id="1">&lt;/code&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>https://&lt;webappname&gt;.scm.azurewebsites.net/DebugConsole<ept id="1">&lt;/code&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="350" xml:space="preserve">
+            <source>For this procedure, the Kudu console is located at the following URL; browse to this location:</source>
+            <target state="new">For this procedure, the Kudu console is located at the following URL; browse to this location:</target>
+          </trans-unit>
+          <trans-unit id="351" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>https://webdemowebapp.scm.azurewebsites.net/DebugConsole<ept id="1">&lt;/code&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>https://webdemowebapp.scm.azurewebsites.net/DebugConsole<ept id="1">&lt;/code&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="352" xml:space="preserve">
+            <source>From the top menu, select <bpt id="2">&lt;strong&gt;</bpt>Debug Console &gt; CMD<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">From the top menu, select <bpt id="2">&lt;strong&gt;</bpt>Debug Console &gt; CMD<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="353" xml:space="preserve">
+            <source>In the console command line, navigate to <bpt id="2">&lt;code&gt;</bpt>/site/wwwroot<ept id="2">&lt;/code&gt;</ept> (or click <bpt id="4">&lt;code&gt;</bpt>site<ept id="4">&lt;/code&gt;</ept>, then <bpt id="6">&lt;code&gt;</bpt>wwwroot<ept id="6">&lt;/code&gt;</ept> in the directory view at the top of the page):</source>
+            <target state="new">In the console command line, navigate to <bpt id="2">&lt;code&gt;</bpt>/site/wwwroot<ept id="2">&lt;/code&gt;</ept> (or click <bpt id="4">&lt;code&gt;</bpt>site<ept id="4">&lt;/code&gt;</ept>, then <bpt id="6">&lt;code&gt;</bpt>wwwroot<ept id="6">&lt;/code&gt;</ept> in the directory view at the top of the page):</target>
+          </trans-unit>
+          <trans-unit id="354" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>cd /site/wwwroot<ept id="1">&lt;/code&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>cd /site/wwwroot<ept id="1">&lt;/code&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="355" xml:space="preserve">
+            <source>After you specify <bpt id="2">&lt;strong&gt;</bpt>Java version<ept id="2">&lt;/strong&gt;</ept>, Tomcat server should create a webapps directory.</source>
+            <target state="new">After you specify <bpt id="2">&lt;strong&gt;</bpt>Java version<ept id="2">&lt;/strong&gt;</ept>, Tomcat server should create a webapps directory.</target>
+          </trans-unit>
+          <trans-unit id="356" xml:space="preserve">
+            <source>In the console command line, navigate to the webapps directory:</source>
+            <target state="new">In the console command line, navigate to the webapps directory:</target>
+          </trans-unit>
+          <trans-unit id="357" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>mkdir webapps<ept id="1">&lt;/code&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>mkdir webapps<ept id="1">&lt;/code&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="358" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>cd webapps<ept id="1">&lt;/code&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>cd webapps<ept id="1">&lt;/code&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="359" xml:space="preserve">
+            <source>Drag JSPHello.war from <bpt id="2">&lt;code&gt;</bpt>&lt;project-path&gt;/JSPHello/src/<ept id="2">&lt;/code&gt;</ept> and drop it into the Kudu directory view under <bpt id="4">&lt;code&gt;</bpt>/site/wwwroot/webapps<ept id="4">&lt;/code&gt;</ept>. Do not drag it to the "Drag here to upload and zip" area, because Tomcat will unzip it.</source>
+            <target state="new">Drag JSPHello.war from <bpt id="2">&lt;code&gt;</bpt>&lt;project-path&gt;/JSPHello/src/<ept id="2">&lt;/code&gt;</ept> and drop it into the Kudu directory view under <bpt id="4">&lt;code&gt;</bpt>/site/wwwroot/webapps<ept id="4">&lt;/code&gt;</ept>. Do not drag it to the "Drag here to upload and zip" area, because Tomcat will unzip it.</target>
+          </trans-unit>
+          <trans-unit id="360" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="361" xml:space="preserve">
+            <source>At first JSPHello.war appears in the directory area by itself:</source>
+            <target state="new">At first JSPHello.war appears in the directory area by itself:</target>
+          </trans-unit>
+          <trans-unit id="362" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="363" xml:space="preserve">
+            <source>In a short time (probably less than 5 minutes) Tomcat Server will unzip the WAR file into an unpacked JSPHello directory.</source>
+            <target state="new">In a short time (probably less than 5 minutes) Tomcat Server will unzip the WAR file into an unpacked JSPHello directory.</target>
+          </trans-unit>
+          <trans-unit id="364" xml:space="preserve">
+            <source>Click the ROOT directory to see whether index.jsp has been unzipped and copied there.</source>
+            <target state="new">Click the ROOT directory to see whether index.jsp has been unzipped and copied there.</target>
+          </trans-unit>
+          <trans-unit id="365" xml:space="preserve">
+            <source>If so, navigate back to the webapps directory to see whether the unpacked JSPHello directory has been created.</source>
+            <target state="new">If so, navigate back to the webapps directory to see whether the unpacked JSPHello directory has been created.</target>
+          </trans-unit>
+          <trans-unit id="366" xml:space="preserve">
+            <source>If you do not see these items, wait and repeat.</source>
+            <target state="new">If you do not see these items, wait and repeat.</target>
+          </trans-unit>
+          <trans-unit id="367" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="368" xml:space="preserve">
+            <source>Publish your application using FileZilla (optional)</source>
+            <target state="new">Publish your application using FileZilla (optional)</target>
+          </trans-unit>
+          <trans-unit id="369" xml:space="preserve">
+            <source>Another tool you can use to publish the application is FileZilla, a popular third-party FTP client with a convenient, graphical UI.</source>
+            <target state="new">Another tool you can use to publish the application is FileZilla, a popular third-party FTP client with a convenient, graphical UI.</target>
+          </trans-unit>
+          <trans-unit id="370" xml:space="preserve">
+            <source>You can download and install FileZilla from <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>http://filezilla-project.org/<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> if you do not already have it.</source>
+            <target state="new">You can download and install FileZilla from <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>http://filezilla-project.org/<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> if you do not already have it.</target>
+          </trans-unit>
+          <trans-unit id="371" xml:space="preserve">
+            <source>For more information on using the client, see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>FileZilla documentation<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> and this blog entry on <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>FTP Clients - Part 4: FileZilla<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information on using the client, see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>FileZilla documentation<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> and this blog entry on <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>FTP Clients - Part 4: FileZilla<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="372" xml:space="preserve">
+            <source>In FileZilla, click <bpt id="2">&lt;strong&gt;</bpt>File &gt; Site Manager<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In FileZilla, click <bpt id="2">&lt;strong&gt;</bpt>File &gt; Site Manager<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="373" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Site Manager<ept id="2">&lt;/strong&gt;</ept> dialog, click <bpt id="4">&lt;strong&gt;</bpt>New Site<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Site Manager<ept id="2">&lt;/strong&gt;</ept> dialog, click <bpt id="4">&lt;strong&gt;</bpt>New Site<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="374" xml:space="preserve">
+            <source>A new blank FTP site will appear in <bpt id="2">&lt;strong&gt;</bpt>Select Entry<ept id="2">&lt;/strong&gt;</ept> prompting you to provide a name.</source>
+            <target state="new">A new blank FTP site will appear in <bpt id="2">&lt;strong&gt;</bpt>Select Entry<ept id="2">&lt;/strong&gt;</ept> prompting you to provide a name.</target>
+          </trans-unit>
+          <trans-unit id="375" xml:space="preserve">
+            <source>For this procedure, name it <bpt id="2">&lt;code&gt;</bpt>AzureWebDemo-FTP<ept id="2">&lt;/code&gt;</ept>.</source>
+            <target state="new">For this procedure, name it <bpt id="2">&lt;code&gt;</bpt>AzureWebDemo-FTP<ept id="2">&lt;/code&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="376" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>General<ept id="2">&lt;/strong&gt;</ept> tab, specify the following settings:</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>General<ept id="2">&lt;/strong&gt;</ept> tab, specify the following settings:</target>
+          </trans-unit>
+          <trans-unit id="377" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Host:<ept id="1">&lt;/strong&gt;</ept> Enter the <bpt id="3">&lt;strong&gt;</bpt>FTP Host Name<ept id="3">&lt;/strong&gt;</ept> that you copied from the dashboard.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Host:<ept id="1">&lt;/strong&gt;</ept> Enter the <bpt id="3">&lt;strong&gt;</bpt>FTP Host Name<ept id="3">&lt;/strong&gt;</ept> that you copied from the dashboard.</target>
+          </trans-unit>
+          <trans-unit id="378" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Port:<ept id="1">&lt;/strong&gt;</ept> (Leave this blank, as this is a passive transfer and the server will determine the port to use.)</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Port:<ept id="1">&lt;/strong&gt;</ept> (Leave this blank, as this is a passive transfer and the server will determine the port to use.)</target>
+          </trans-unit>
+          <trans-unit id="379" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Protocol:<ept id="1">&lt;/strong&gt;</ept> FTP File Transfer Protocol</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Protocol:<ept id="1">&lt;/strong&gt;</ept> FTP File Transfer Protocol</target>
+          </trans-unit>
+          <trans-unit id="380" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Encryption:<ept id="1">&lt;/strong&gt;</ept> Use plain FTP</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Encryption:<ept id="1">&lt;/strong&gt;</ept> Use plain FTP</target>
+          </trans-unit>
+          <trans-unit id="381" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Logon Type:<ept id="1">&lt;/strong&gt;</ept> Normal</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Logon Type:<ept id="1">&lt;/strong&gt;</ept> Normal</target>
+          </trans-unit>
+          <trans-unit id="382" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>User:<ept id="1">&lt;/strong&gt;</ept> Enter the Deployment / FTP user that you copied from the dashboard.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>User:<ept id="1">&lt;/strong&gt;</ept> Enter the Deployment / FTP user that you copied from the dashboard.</target>
+          </trans-unit>
+          <trans-unit id="383" xml:space="preserve">
+            <source>This is the full FTP username, which has the form <bpt id="2">&lt;em&gt;</bpt>webappname\username<ept id="2">&lt;/em&gt;</ept>.</source>
+            <target state="new">This is the full FTP username, which has the form <bpt id="2">&lt;em&gt;</bpt>webappname\username<ept id="2">&lt;/em&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="384" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Password:<ept id="1">&lt;/strong&gt;</ept> Enter the password that you specified when you set the deployment credentials.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Password:<ept id="1">&lt;/strong&gt;</ept> Enter the password that you specified when you set the deployment credentials.</target>
+          </trans-unit>
+          <trans-unit id="385" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Transfer Settings<ept id="2">&lt;/strong&gt;</ept> tab, select <bpt id="4">&lt;strong&gt;</bpt>Passive<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Transfer Settings<ept id="2">&lt;/strong&gt;</ept> tab, select <bpt id="4">&lt;strong&gt;</bpt>Passive<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="386" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Connect<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Connect<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="387" xml:space="preserve">
+            <source>If successful, FileZilla's console will display a <bpt id="2">&lt;code&gt;</bpt>Status: Connected<ept id="2">&lt;/code&gt;</ept> message and issue a <bpt id="4">&lt;code&gt;</bpt>LIST<ept id="4">&lt;/code&gt;</ept> command to list the directory contents.</source>
+            <target state="new">If successful, FileZilla's console will display a <bpt id="2">&lt;code&gt;</bpt>Status: Connected<ept id="2">&lt;/code&gt;</ept> message and issue a <bpt id="4">&lt;code&gt;</bpt>LIST<ept id="4">&lt;/code&gt;</ept> command to list the directory contents.</target>
+          </trans-unit>
+          <trans-unit id="388" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Local<ept id="2">&lt;/strong&gt;</ept> site panel, select the source directory in which the JSPHello.war file resides; the path will be similar to the following:</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Local<ept id="2">&lt;/strong&gt;</ept> site panel, select the source directory in which the JSPHello.war file resides; the path will be similar to the following:</target>
+          </trans-unit>
+          <trans-unit id="389" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>&lt;project-path&gt;/JSPHello/src/<ept id="1">&lt;/code&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>&lt;project-path&gt;/JSPHello/src/<ept id="1">&lt;/code&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="390" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Remote<ept id="2">&lt;/strong&gt;</ept> site panel, select the destination folder.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Remote<ept id="2">&lt;/strong&gt;</ept> site panel, select the destination folder.</target>
+          </trans-unit>
+          <trans-unit id="391" xml:space="preserve">
+            <source>You will deploy the WAR file to the <bpt id="2">&lt;code&gt;</bpt>webapps<ept id="2">&lt;/code&gt;</ept> directory under the web app's root.</source>
+            <target state="new">You will deploy the WAR file to the <bpt id="2">&lt;code&gt;</bpt>webapps<ept id="2">&lt;/code&gt;</ept> directory under the web app's root.</target>
+          </trans-unit>
+          <trans-unit id="392" xml:space="preserve">
+            <source>Navigate to <bpt id="2">&lt;code&gt;</bpt>/site/wwwroot<ept id="2">&lt;/code&gt;</ept>, right-click on <bpt id="4">&lt;code&gt;</bpt>wwwroot<ept id="4">&lt;/code&gt;</ept>, and select <bpt id="6">&lt;strong&gt;</bpt>Create directory<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Navigate to <bpt id="2">&lt;code&gt;</bpt>/site/wwwroot<ept id="2">&lt;/code&gt;</ept>, right-click on <bpt id="4">&lt;code&gt;</bpt>wwwroot<ept id="4">&lt;/code&gt;</ept>, and select <bpt id="6">&lt;strong&gt;</bpt>Create directory<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="393" xml:space="preserve">
+            <source>Name the directory <bpt id="2">&lt;code&gt;</bpt>webapps<ept id="2">&lt;/code&gt;</ept> and enter that directory.</source>
+            <target state="new">Name the directory <bpt id="2">&lt;code&gt;</bpt>webapps<ept id="2">&lt;/code&gt;</ept> and enter that directory.</target>
+          </trans-unit>
+          <trans-unit id="394" xml:space="preserve">
+            <source>Transfer JSPHello.war to <bpt id="2">&lt;code&gt;</bpt>/site/wwwroot/webapps<ept id="2">&lt;/code&gt;</ept>.</source>
+            <target state="new">Transfer JSPHello.war to <bpt id="2">&lt;code&gt;</bpt>/site/wwwroot/webapps<ept id="2">&lt;/code&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="395" xml:space="preserve">
+            <source>Select JSPHello.war in the <bpt id="2">&lt;strong&gt;</bpt>Local<ept id="2">&lt;/strong&gt;</ept> file list, right-click on it and select <bpt id="4">&lt;strong&gt;</bpt>Upload<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Select JSPHello.war in the <bpt id="2">&lt;strong&gt;</bpt>Local<ept id="2">&lt;/strong&gt;</ept> file list, right-click on it and select <bpt id="4">&lt;strong&gt;</bpt>Upload<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="396" xml:space="preserve">
+            <source>You should see it appear in <bpt id="2">&lt;code&gt;</bpt>/site/wwwroot/webapps<ept id="2">&lt;/code&gt;</ept>.</source>
+            <target state="new">You should see it appear in <bpt id="2">&lt;code&gt;</bpt>/site/wwwroot/webapps<ept id="2">&lt;/code&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="397" xml:space="preserve">
+            <source>After you copy JSPHello.war to the webapps directory, Tomcat Server will automatically unpack (unzip) the files in the WAR file.</source>
+            <target state="new">After you copy JSPHello.war to the webapps directory, Tomcat Server will automatically unpack (unzip) the files in the WAR file.</target>
+          </trans-unit>
+          <trans-unit id="398" xml:space="preserve">
+            <source>Although Tomcat Server begins unpacking almost immediately, it might take a long time (possibly hours) for the files to appear in the FTP client.</source>
+            <target state="new">Although Tomcat Server begins unpacking almost immediately, it might take a long time (possibly hours) for the files to appear in the FTP client.</target>
+          </trans-unit>
+          <trans-unit id="399" xml:space="preserve">
+            <source>Run the Hello World application on the Web App</source>
+            <target state="new">Run the Hello World application on the Web App</target>
+          </trans-unit>
+          <trans-unit id="400" xml:space="preserve">
+            <source>After you have uploaded the WAR file and verified that Tomcat server has created an unpacked <bpt id="2">&lt;code&gt;</bpt>JSPHello<ept id="2">&lt;/code&gt;</ept> directory, browse to <bpt id="4">&lt;code&gt;</bpt>http://webdemowebapp.azurewebsites.net/JSPHello<ept id="4">&lt;/code&gt;</ept> to run the application.</source>
+            <target state="new">After you have uploaded the WAR file and verified that Tomcat server has created an unpacked <bpt id="2">&lt;code&gt;</bpt>JSPHello<ept id="2">&lt;/code&gt;</ept> directory, browse to <bpt id="4">&lt;code&gt;</bpt>http://webdemowebapp.azurewebsites.net/JSPHello<ept id="4">&lt;/code&gt;</ept> to run the application.</target>
+          </trans-unit>
+          <trans-unit id="401" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Note:<ept id="1">&lt;/strong&gt;</ept> If you click <bpt id="3">&lt;strong&gt;</bpt>Browse<ept id="3">&lt;/strong&gt;</ept> from the classic portal, you might</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Note:<ept id="1">&lt;/strong&gt;</ept> If you click <bpt id="3">&lt;strong&gt;</bpt>Browse<ept id="3">&lt;/strong&gt;</ept> from the classic portal, you might</target>
+          </trans-unit>
+          <trans-unit id="402" xml:space="preserve">
+            <source>get the default webpage, saying "This Java based web application has</source>
+            <target state="new">get the default webpage, saying "This Java based web application has</target>
+          </trans-unit>
+          <trans-unit id="403" xml:space="preserve">
+            <source>been successfully created."</source>
+            <target state="new">been successfully created."</target>
+          </trans-unit>
+          <trans-unit id="404" xml:space="preserve">
+            <source>You might have to refresh the webpage in</source>
+            <target state="new">You might have to refresh the webpage in</target>
+          </trans-unit>
+          <trans-unit id="405" xml:space="preserve">
+            <source>order to view the application output instead of the default webpage.</source>
+            <target state="new">order to view the application output instead of the default webpage.</target>
+          </trans-unit>
+          <trans-unit id="406" xml:space="preserve">
+            <source>When the application runs, you should see a web page with the following output:</source>
+            <target state="new">When the application runs, you should see a web page with the following output:</target>
+          </trans-unit>
+          <trans-unit id="407" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>Hello World, the time is Tue Mar 24 23:21:10 GMT 2015<ept id="1">&lt;/code&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>Hello World, the time is Tue Mar 24 23:21:10 GMT 2015<ept id="1">&lt;/code&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="408" xml:space="preserve">
+            <source>Clean up Azure resources</source>
+            <target state="new">Clean up Azure resources</target>
+          </trans-unit>
+          <trans-unit id="409" xml:space="preserve">
+            <source>This procedure creates an App Service web app.</source>
+            <target state="new">This procedure creates an App Service web app.</target>
+          </trans-unit>
+          <trans-unit id="410" xml:space="preserve">
+            <source>You will be billed for the resource as long as it exists.</source>
+            <target state="new">You will be billed for the resource as long as it exists.</target>
+          </trans-unit>
+          <trans-unit id="411" xml:space="preserve">
+            <source>Unless you plan to continue using the web app for testing or development, you should consider stopping or deleting it.</source>
+            <target state="new">Unless you plan to continue using the web app for testing or development, you should consider stopping or deleting it.</target>
+          </trans-unit>
+          <trans-unit id="412" xml:space="preserve">
+            <source>A web app that has been stopped will still incur a small charge, but you can restart it at any time.</source>
+            <target state="new">A web app that has been stopped will still incur a small charge, but you can restart it at any time.</target>
+          </trans-unit>
+          <trans-unit id="413" xml:space="preserve">
+            <source>Deleting a web app erases all data you have uploaded to it.</source>
+            <target state="new">Deleting a web app erases all data you have uploaded to it.</target>
+          </trans-unit>
+          <trans-unit id="414" xml:space="preserve">
+            <source><ph id="1">&lt;token href="../../includes/app-service-web-whats-changed.md"/&gt;</ph></source>
+            <target state="new"><ph id="1">&lt;token href="../../includes/app-service-web-whats-changed.md"/&gt;</ph></target>
+          </trans-unit>
+          <trans-unit id="415" xml:space="preserve">
+            <source><ph id="1">&lt;token href="../../includes/app-service-web-try-app-service.md"/&gt;</ph></source>
+            <target state="new"><ph id="1">&lt;token href="../../includes/app-service-web-try-app-service.md"/&gt;</ph></target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>

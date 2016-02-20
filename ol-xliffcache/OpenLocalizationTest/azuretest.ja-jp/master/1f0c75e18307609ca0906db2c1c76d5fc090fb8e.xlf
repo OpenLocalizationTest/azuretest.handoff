@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="ja-jp" original="2/20/2016 8:58:22 AM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1f0c75e18307609ca0906db2c1c76d5fc090fb8e</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Event Hubs Programming Guide</source>
+            <target state="new">Event Hubs Programming Guide</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>Describes programming with Azure Event Hubs using the Azure .NET SDK.</source>
+            <target state="new">Describes programming with Azure Event Hubs using the Azure .NET SDK.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Event Hubs programming guide</source>
+            <target state="new">Event Hubs programming guide</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source>This topic describes programming with Azure Event Hubs using the Azure .NET SDK.</source>
+            <target state="new">This topic describes programming with Azure Event Hubs using the Azure .NET SDK.</target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>It assumes a preliminary understanding of Event Hubs.</source>
+            <target state="new">It assumes a preliminary understanding of Event Hubs.</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>For conceptual an overview of Event Hubs, see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Event Hubs overview<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For conceptual an overview of Event Hubs, see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Event Hubs overview<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>Publishing events: event publishers</source>
+            <target state="new">Publishing events: event publishers</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>Sending events to an Event Hub is accomplished either using HTTP POST or via an AMQP 1.0 connection.</source>
+            <target state="new">Sending events to an Event Hub is accomplished either using HTTP POST or via an AMQP 1.0 connection.</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source>The choice of which to use when depends on the specific scenario being addressed.</source>
+            <target state="new">The choice of which to use when depends on the specific scenario being addressed.</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source>AMQP 1.0 connections are metered as brokered connections in Service Bus and are more appropriate in scenarios with frequent higher message volumes and lower latency requirements as they provide a persistent messaging channel.</source>
+            <target state="new">AMQP 1.0 connections are metered as brokered connections in Service Bus and are more appropriate in scenarios with frequent higher message volumes and lower latency requirements as they provide a persistent messaging channel.</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>Event Hubs are created and managed using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>NamespaceManager<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> class.</source>
+            <target state="new">Event Hubs are created and managed using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>NamespaceManager<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> class.</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source>When using the .NET managed APIs, the primary constructs for publishing data to Event Hubs are the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>EventHubClient<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> and <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>EventData<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept> classes.</source>
+            <target state="new">When using the .NET managed APIs, the primary constructs for publishing data to Event Hubs are the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>EventHubClient<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> and <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>EventData<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept> classes.</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>The <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>EventHubClient<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> class provides the AMQP communication channel over which events are sent to the Event Hub.</source>
+            <target state="new">The <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>EventHubClient<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> class provides the AMQP communication channel over which events are sent to the Event Hub.</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source>The <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>EventData<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> class represents an event and is used to publish messages to an Event Hub.</source>
+            <target state="new">The <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>EventData<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> class represents an event and is used to publish messages to an Event Hub.</target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>This class includes the body, some metadata, and header information about the event.</source>
+            <target state="new">This class includes the body, some metadata, and header information about the event.</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source>Other properties are added to the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>EventData<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>object as it passes through an Event Hub.</source>
+            <target state="new">Other properties are added to the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>EventData<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>object as it passes through an Event Hub.</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>Get started</source>
+            <target state="new">Get started</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>The .NET  classes that support Event Hubs are part of the Microsoft.ServiceBus.dll assembly.</source>
+            <target state="new">The .NET  classes that support Event Hubs are part of the Microsoft.ServiceBus.dll assembly.</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source>The easiest way to reference the Service Bus API and to configure your application with all of the Service Bus dependencies is to download the Service Bus NuGet package.</source>
+            <target state="new">The easiest way to reference the Service Bus API and to configure your application with all of the Service Bus dependencies is to download the Service Bus NuGet package.</target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source>For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Using the NuGet Service Bus Package<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Using the NuGet Service Bus Package<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source>Alternatively, you can use the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Package Manager Console<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> in Visual Studio.</source>
+            <target state="new">Alternatively, you can use the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Package Manager Console<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> in Visual Studio.</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source>To do so, issue the following command in the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Package Manager Console<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> window:</source>
+            <target state="new">To do so, issue the following command in the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Package Manager Console<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> window:</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>Create an Event Hub</source>
+            <target state="new">Create an Event Hub</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source>You can use the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>NamespaceManager<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> class to create Event Hubs.</source>
+            <target state="new">You can use the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>NamespaceManager<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> class to create Event Hubs.</target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>For example:</source>
+            <target state="new">For example:</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>In most cases, it is recommended that you use the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>CreateEventHubIfNotExists<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> methods to avoid generating exceptions if the service restarts.</source>
+            <target state="new">In most cases, it is recommended that you use the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>CreateEventHubIfNotExists<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> methods to avoid generating exceptions if the service restarts.</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source>For example:</source>
+            <target state="new">For example:</target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source>All Event Hub creation operations, including <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>CreateEventHubIfNotExists<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, require <bpt id="4">&lt;strong&gt;</bpt>Manage<ept id="4">&lt;/strong&gt;</ept> permissions on the namespace in question.</source>
+            <target state="new">All Event Hub creation operations, including <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>CreateEventHubIfNotExists<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, require <bpt id="4">&lt;strong&gt;</bpt>Manage<ept id="4">&lt;/strong&gt;</ept> permissions on the namespace in question.</target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source>If you want to limit the permissions of your publisher or consumer applications, you can avoid these create operation calls in production code when you use credentials with limited permissions.</source>
+            <target state="new">If you want to limit the permissions of your publisher or consumer applications, you can avoid these create operation calls in production code when you use credentials with limited permissions.</target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source>The <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>EventHubDescription<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> class contains details about an Event Hub, including the authorization rules, the message retention interval, partition IDs, status, and path.</source>
+            <target state="new">The <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>EventHubDescription<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> class contains details about an Event Hub, including the authorization rules, the message retention interval, partition IDs, status, and path.</target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source>You can use this class to update the metadata on an Event Hub.</source>
+            <target state="new">You can use this class to update the metadata on an Event Hub.</target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source>Create an Event Hub client</source>
+            <target state="new">Create an Event Hub client</target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source>The primary class for interacting with Event Hubs is <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Microsoft.ServiceBus.Messaging.EventHubClient<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">The primary class for interacting with Event Hubs is <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Microsoft.ServiceBus.Messaging.EventHubClient<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source>This class provides both sender and receiver capabilities.</source>
+            <target state="new">This class provides both sender and receiver capabilities.</target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source>You can instantiate this class using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Create<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> method, as shown in the following example.</source>
+            <target state="new">You can instantiate this class using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Create<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> method, as shown in the following example.</target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source>This method uses the Service Bus connection information in the App.config file, in the <bpt id="2">&lt;code&gt;</bpt>appSettings<ept id="2">&lt;/code&gt;</ept> section.</source>
+            <target state="new">This method uses the Service Bus connection information in the App.config file, in the <bpt id="2">&lt;code&gt;</bpt>appSettings<ept id="2">&lt;/code&gt;</ept> section.</target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source>For an example of the <bpt id="2">&lt;code&gt;</bpt>appSettings<ept id="2">&lt;/code&gt;</ept> XML used to store the Service Bus connection information, see the documentation for the <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Microsoft.ServiceBus.Messaging.EventHubClient.Create(System.String)<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept> method.</source>
+            <target state="new">For an example of the <bpt id="2">&lt;code&gt;</bpt>appSettings<ept id="2">&lt;/code&gt;</ept> XML used to store the Service Bus connection information, see the documentation for the <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Microsoft.ServiceBus.Messaging.EventHubClient.Create(System.String)<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept> method.</target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source>Another option is to create the client from a connection string.</source>
+            <target state="new">Another option is to create the client from a connection string.</target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source>This option works well when using Azure worker roles, because you can store the string in the configuration properties for the worker.</source>
+            <target state="new">This option works well when using Azure worker roles, because you can store the string in the configuration properties for the worker.</target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source>For example:</source>
+            <target state="new">For example:</target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source>Endpoint=sb://[namespace].servicebus.windows.net/;SharedAccessKeyName=Manage;SharedAccessKey=[key]</source>
+            <target state="new">Endpoint=sb://[namespace].servicebus.windows.net/;SharedAccessKeyName=Manage;SharedAccessKey=[key]</target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source>var factory = MessagingFactory.CreateFromConnectionString("your_connection_string");</source>
+            <target state="new">var factory = MessagingFactory.CreateFromConnectionString("your_connection_string");</target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source>var client = factory.CreateEventHubClient("MyEventHub");</source>
+            <target state="new">var client = factory.CreateEventHubClient("MyEventHub");</target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source>public void SendBatch(IEnumerable<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept> eventDataList);</source>
+            <target state="new">public void SendBatch(IEnumerable<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept> eventDataList);</target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source>var partitionedSender = client.CreatePartitionedSender(description.PartitionIds[0]);</source>
+            <target state="new">var partitionedSender = client.CreatePartitionedSender(description.PartitionIds[0]);</target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source>EventHubConsumerGroup group = client.GetDefaultConsumerGroup();</source>
+            <target state="new">EventHubConsumerGroup group = client.GetDefaultConsumerGroup();</target>
+          </trans-unit>
+          <trans-unit id="147" xml:space="preserve">
+            <source>var receiver = group.CreateReceiver(client.GetRuntimeInformation().PartitionIds[0]);</source>
+            <target state="new">var receiver = group.CreateReceiver(client.GetRuntimeInformation().PartitionIds[0]);</target>
+          </trans-unit>
+          <trans-unit id="148" xml:space="preserve">
+            <source>bool receive = true;</source>
+            <target state="new">bool receive = true;</target>
+          </trans-unit>
+          <trans-unit id="149" xml:space="preserve">
+            <source>string myOffset;</source>
+            <target state="new">string myOffset;</target>
+          </trans-unit>
+          <trans-unit id="150" xml:space="preserve">
+            <source>while(receive)</source>
+            <target state="new">while(receive)</target>
+          </trans-unit>
+          <trans-unit id="151" xml:space="preserve">
+            <source>{</source>
+            <target state="new">{</target>
+          </trans-unit>
+          <trans-unit id="152" xml:space="preserve">
+            <source>var message = receiver.Receive();</source>
+            <target state="new">var message = receiver.Receive();</target>
+          </trans-unit>
+          <trans-unit id="153" xml:space="preserve">
+            <source>myOffset = message.Offset;</source>
+            <target state="new">myOffset = message.Offset;</target>
+          </trans-unit>
+          <trans-unit id="154" xml:space="preserve">
+            <source>string body = Encoding.UTF8.GetString(message.GetBytes());</source>
+            <target state="new">string body = Encoding.UTF8.GetString(message.GetBytes());</target>
+          </trans-unit>
+          <trans-unit id="155" xml:space="preserve">
+            <source>Console.WriteLine(String.Format("Received message offset: {0} \nbody: {1}", myOffset, body));</source>
+            <target state="new">Console.WriteLine(String.Format("Received message offset: {0} \nbody: {1}", myOffset, body));</target>
+          </trans-unit>
+          <trans-unit id="156" xml:space="preserve">
+            <source>}</source>
+            <target state="new">}</target>
+          </trans-unit>
+          <trans-unit id="157" xml:space="preserve">
+            <source>```</source>
+            <target state="new">```</target>
+          </trans-unit>
+          <trans-unit id="158" xml:space="preserve">
+            <source>With respect to a specific partition, the messages are received in the order in which they were sent to the Event Hub.</source>
+            <target state="new">With respect to a specific partition, the messages are received in the order in which they were sent to the Event Hub.</target>
+          </trans-unit>
+          <trans-unit id="159" xml:space="preserve">
+            <source>The offset is a string token used to identify a message in a partition.</source>
+            <target state="new">The offset is a string token used to identify a message in a partition.</target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
+            <source>It is important to note that a single partition within a consumer group cannot have more than 5 concurrent readers connected at any time.</source>
+            <target state="new">It is important to note that a single partition within a consumer group cannot have more than 5 concurrent readers connected at any time.</target>
+          </trans-unit>
+          <trans-unit id="161" xml:space="preserve">
+            <source>As readers connect or become disconnected, their sessions might stay active for several minutes before the service recognizes that they have disconnected.</source>
+            <target state="new">As readers connect or become disconnected, their sessions might stay active for several minutes before the service recognizes that they have disconnected.</target>
+          </trans-unit>
+          <trans-unit id="162" xml:space="preserve">
+            <source>During this time, reconnecting to a partition may fail.</source>
+            <target state="new">During this time, reconnecting to a partition may fail.</target>
+          </trans-unit>
+          <trans-unit id="163" xml:space="preserve">
+            <source>For a complete example of writing a direct receiver for Event Hubs, see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Service Bus Event Hubs Direct Receivers<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> sample.</source>
+            <target state="new">For a complete example of writing a direct receiver for Event Hubs, see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Service Bus Event Hubs Direct Receivers<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> sample.</target>
+          </trans-unit>
+          <trans-unit id="164" xml:space="preserve">
+            <source>Event processor host</source>
+            <target state="new">Event processor host</target>
+          </trans-unit>
+          <trans-unit id="165" xml:space="preserve">
+            <source>The <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>EventProcessorHost<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> class processes data from Event Hubs.</source>
+            <target state="new">The <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>EventProcessorHost<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> class processes data from Event Hubs.</target>
+          </trans-unit>
+          <trans-unit id="166" xml:space="preserve">
+            <source>You should use this implementation when building event readers on the .NET platform.</source>
+            <target state="new">You should use this implementation when building event readers on the .NET platform.</target>
+          </trans-unit>
+          <trans-unit id="167" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>EventProcessorHost<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept> provides a thread-safe, multi-process, safe runtime environment for event processor implementations that also provides checkpointing and partition lease management.</source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>EventProcessorHost<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept> provides a thread-safe, multi-process, safe runtime environment for event processor implementations that also provides checkpointing and partition lease management.</target>
+          </trans-unit>
+          <trans-unit id="168" xml:space="preserve">
+            <source>To use the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>EventProcessorHost<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> class, you can implement <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>IEventProcessor<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">To use the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>EventProcessorHost<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> class, you can implement <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>IEventProcessor<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="169" xml:space="preserve">
+            <source>This interface contains three methods:</source>
+            <target state="new">This interface contains three methods:</target>
+          </trans-unit>
+          <trans-unit id="170" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>OpenAsync<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>OpenAsync<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="171" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>CloseAsync<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>CloseAsync<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="172" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>ProcessEventsAsync<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>ProcessEventsAsync<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="173" xml:space="preserve">
+            <source>To start event processing, instantiate <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>EventProcessorHost<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, providing the appropriate parameters for your Event Hub.</source>
+            <target state="new">To start event processing, instantiate <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>EventProcessorHost<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, providing the appropriate parameters for your Event Hub.</target>
+          </trans-unit>
+          <trans-unit id="174" xml:space="preserve">
+            <source>Then call <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>RegisterEventProcessorAsync<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> to register your <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>IEventProcessor<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept> implementation with the runtime.</source>
+            <target state="new">Then call <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>RegisterEventProcessorAsync<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> to register your <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>IEventProcessor<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept> implementation with the runtime.</target>
+          </trans-unit>
+          <trans-unit id="175" xml:space="preserve">
+            <source>At this point, the host will attempt to acquire a lease on every partition in the Event Hub using a "greedy" algorithm.</source>
+            <target state="new">At this point, the host will attempt to acquire a lease on every partition in the Event Hub using a "greedy" algorithm.</target>
+          </trans-unit>
+          <trans-unit id="176" xml:space="preserve">
+            <source>These leases will last for a given timeframe and must then be renewed.</source>
+            <target state="new">These leases will last for a given timeframe and must then be renewed.</target>
+          </trans-unit>
+          <trans-unit id="177" xml:space="preserve">
+            <source>As new nodes, worker instances in this case, come online, they place lease reservations and over time the load shifts between nodes as each attempts to acquire more leases.</source>
+            <target state="new">As new nodes, worker instances in this case, come online, they place lease reservations and over time the load shifts between nodes as each attempts to acquire more leases.</target>
+          </trans-unit>
+          <trans-unit id="178" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Event Processor Host<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Event Processor Host<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="179" xml:space="preserve">
+            <source>Over time, an equilibrium is established.</source>
+            <target state="new">Over time, an equilibrium is established.</target>
+          </trans-unit>
+          <trans-unit id="180" xml:space="preserve">
+            <source>This dynamic capability enables CPU-based autoscaling to be applied to consumers for both scale-up and scale-down.</source>
+            <target state="new">This dynamic capability enables CPU-based autoscaling to be applied to consumers for both scale-up and scale-down.</target>
+          </trans-unit>
+          <trans-unit id="181" xml:space="preserve">
+            <source>Because Event Hubs do not have a direct concept of message counts, average CPU utilization is often the best mechanism to measure back end or consumer scale.</source>
+            <target state="new">Because Event Hubs do not have a direct concept of message counts, average CPU utilization is often the best mechanism to measure back end or consumer scale.</target>
+          </trans-unit>
+          <trans-unit id="182" xml:space="preserve">
+            <source>If publishers begin to publish more events than consumers can process, the CPU increase on consumers can be used to cause an auto-scale on worker instance count.</source>
+            <target state="new">If publishers begin to publish more events than consumers can process, the CPU increase on consumers can be used to cause an auto-scale on worker instance count.</target>
+          </trans-unit>
+          <trans-unit id="183" xml:space="preserve">
+            <source>The <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>EventProcessorHost<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> class also implements an Azure storage-based checkpointing mechanism.</source>
+            <target state="new">The <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>EventProcessorHost<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> class also implements an Azure storage-based checkpointing mechanism.</target>
+          </trans-unit>
+          <trans-unit id="184" xml:space="preserve">
+            <source>This mechanism stores the offset on a per partition basis, so that each consumer can determine what the last checkpoint from the previous consumer was.</source>
+            <target state="new">This mechanism stores the offset on a per partition basis, so that each consumer can determine what the last checkpoint from the previous consumer was.</target>
+          </trans-unit>
+          <trans-unit id="185" xml:space="preserve">
+            <source>As partitions transition between nodes via leases, this is the synchronization mechanism that facilitates load shifting.</source>
+            <target state="new">As partitions transition between nodes via leases, this is the synchronization mechanism that facilitates load shifting.</target>
+          </trans-unit>
+          <trans-unit id="186" xml:space="preserve">
+            <source>Publisher revocation</source>
+            <target state="new">Publisher revocation</target>
+          </trans-unit>
+          <trans-unit id="187" xml:space="preserve">
+            <source>In addition to the advanced runtime features of <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>EventProcessorHost<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, Event Hubs enables publisher revocation in order to block specific publishers from sending event to an Event Hub.</source>
+            <target state="new">In addition to the advanced runtime features of <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>EventProcessorHost<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, Event Hubs enables publisher revocation in order to block specific publishers from sending event to an Event Hub.</target>
+          </trans-unit>
+          <trans-unit id="188" xml:space="preserve">
+            <source>These features are particularly useful if a publisher’s token has been compromised, or a software update is causing them to behave inappropriately.</source>
+            <target state="new">These features are particularly useful if a publisher’s token has been compromised, or a software update is causing them to behave inappropriately.</target>
+          </trans-unit>
+          <trans-unit id="189" xml:space="preserve">
+            <source>In these situations, the publisher’s identity, which is part of their SAS token, can be blocked from publishing events.</source>
+            <target state="new">In these situations, the publisher’s identity, which is part of their SAS token, can be blocked from publishing events.</target>
+          </trans-unit>
+          <trans-unit id="190" xml:space="preserve">
+            <source>For more information about publisher revocation and how to send to Event Hubs as a publisher, see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Service Bus Event Hubs Large Scale Secure Publishing<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> sample.</source>
+            <target state="new">For more information about publisher revocation and how to send to Event Hubs as a publisher, see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Service Bus Event Hubs Large Scale Secure Publishing<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> sample.</target>
+          </trans-unit>
+          <trans-unit id="191" xml:space="preserve">
+            <source>Next steps</source>
+            <target state="new">Next steps</target>
+          </trans-unit>
+          <trans-unit id="192" xml:space="preserve">
+            <source>To learn more about Event Hubs scenarios, visit these links:</source>
+            <target state="new">To learn more about Event Hubs scenarios, visit these links:</target>
+          </trans-unit>
+          <trans-unit id="193" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Event Hubs API overview<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Event Hubs API overview<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="194" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Event Hubs overview<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Event Hubs overview<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="195" xml:space="preserve">
+            <source>[Event Hubs Code Samples](http://code.msdn.microsoft.com/site/search?query=event hub&amp;f[0].Value=event hub&amp;f[0].Type=SearchText&amp;ac=5)</source>
+            <target state="new">[Event Hubs Code Samples](http://code.msdn.microsoft.com/site/search?query=event hub&amp;f[0].Value=event hub&amp;f[0].Type=SearchText&amp;ac=5)</target>
+          </trans-unit>
+          <trans-unit id="196" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Event processor host API reference<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Event processor host API reference<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>
