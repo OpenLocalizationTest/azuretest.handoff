@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="pl-pl" original="2/20/2016 8:49:38 PM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1ad549a76ca1696320b3a1605e483eb6fd589438</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Add a certificate to the Java CA store | Microsoft Azure</source>
+            <target state="new">Add a certificate to the Java CA store | Microsoft Azure</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>Learn how to add a certificate authority (CA) certificate to the Java CA certificate (cacerts) store for Twilio service or Azure Service Bus.</source>
+            <target state="new">Learn how to add a certificate authority (CA) certificate to the Java CA certificate (cacerts) store for Twilio service or Azure Service Bus.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Adding a Certificate to the Java CA Certificates Store</source>
+            <target state="new">Adding a Certificate to the Java CA Certificates Store</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source>The following steps show you how to add a certificate authority (CA) certificate to the Java CA certificate (cacerts) store.</source>
+            <target state="new">The following steps show you how to add a certificate authority (CA) certificate to the Java CA certificate (cacerts) store.</target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>The example used is for the CA certificate required by the Twilio service.</source>
+            <target state="new">The example used is for the CA certificate required by the Twilio service.</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>Information provided later in the topic describes how to install the CA certificate for the Azure Service Bus.</source>
+            <target state="new">Information provided later in the topic describes how to install the CA certificate for the Azure Service Bus.</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>You can use keytool to add the CA certificate prior to zipping your JDK and adding it to your Azure project's <bpt id="2">&lt;strong&gt;</bpt>approot<ept id="2">&lt;/strong&gt;</ept> folder, or you could run an Azure start-up task that uses keytool to add the certificate.</source>
+            <target state="new">You can use keytool to add the CA certificate prior to zipping your JDK and adding it to your Azure project's <bpt id="2">&lt;strong&gt;</bpt>approot<ept id="2">&lt;/strong&gt;</ept> folder, or you could run an Azure start-up task that uses keytool to add the certificate.</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>This example assumes you will add a CA certificate prior to the JDK being zipped.</source>
+            <target state="new">This example assumes you will add a CA certificate prior to the JDK being zipped.</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source>Also, a specific CA certificate will be used in the example, but the steps of obtaining a different CA certificate and importing it into the cacerts store would be similar.</source>
+            <target state="new">Also, a specific CA certificate will be used in the example, but the steps of obtaining a different CA certificate and importing it into the cacerts store would be similar.</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source>To add a certificate to the cacerts store</source>
+            <target state="new">To add a certificate to the cacerts store</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>At a command prompt that is set to your JDK's <bpt id="2">&lt;strong&gt;</bpt>jdk\jre\lib\security<ept id="2">&lt;/strong&gt;</ept> folder, run the following to see what certificates are installed:</source>
+            <target state="new">At a command prompt that is set to your JDK's <bpt id="2">&lt;strong&gt;</bpt>jdk\jre\lib\security<ept id="2">&lt;/strong&gt;</ept> folder, run the following to see what certificates are installed:</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>keytool -list -keystore cacerts<ept id="1">&lt;/code&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>keytool -list -keystore cacerts<ept id="1">&lt;/code&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>You'll be prompted for the store password. The default password is <bpt id="2">&lt;strong&gt;</bpt>changeit<ept id="2">&lt;/strong&gt;</ept>. (If you want to change the password, see the keytool documentation at <bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>.) This example assumes that the certificate with MD5 fingerprint 67:CB:9D:C0:13:24:8A:82:9B:B2:17:1E:D1:1B:EC:D4 is not listed, and that you want to import it (this particular certificate is needed by the Twilio API service).</source>
+            <target state="new">You'll be prompted for the store password. The default password is <bpt id="2">&lt;strong&gt;</bpt>changeit<ept id="2">&lt;/strong&gt;</ept>. (If you want to change the password, see the keytool documentation at <bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>.) This example assumes that the certificate with MD5 fingerprint 67:CB:9D:C0:13:24:8A:82:9B:B2:17:1E:D1:1B:EC:D4 is not listed, and that you want to import it (this particular certificate is needed by the Twilio API service).</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source>Obtain the certificate from the list of certificates listed at <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>GeoTrust Root Certificates<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">Obtain the certificate from the list of certificates listed at <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>GeoTrust Root Certificates<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>Right-click the link for the certificate with serial number 35:DE:F4:CF and save it to the <bpt id="2">&lt;strong&gt;</bpt>jdk\jre\lib\security<ept id="2">&lt;/strong&gt;</ept> folder.</source>
+            <target state="new">Right-click the link for the certificate with serial number 35:DE:F4:CF and save it to the <bpt id="2">&lt;strong&gt;</bpt>jdk\jre\lib\security<ept id="2">&lt;/strong&gt;</ept> folder.</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source>For purposes of this example, it was saved to a file named <bpt id="2">&lt;strong&gt;</bpt>Equifax\_Secure\_Certificate\_Authority.cer<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">For purposes of this example, it was saved to a file named <bpt id="2">&lt;strong&gt;</bpt>Equifax\_Secure\_Certificate\_Authority.cer<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>Import the certificate via the following command:</source>
+            <target state="new">Import the certificate via the following command:</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>keytool -keystore cacerts -importcert -alias equifaxsecureca -file Equifax_Secure_Certificate_Authority.cer<ept id="1">&lt;/code&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>keytool -keystore cacerts -importcert -alias equifaxsecureca -file Equifax_Secure_Certificate_Authority.cer<ept id="1">&lt;/code&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source>When prompted to trust this certificate, if the certificate has MD5 fingerprint 67:CB:9D:C0:13:24:8A:82:9B:B2:17:1E:D1:1B:EC:D4, respond by typing <bpt id="2">&lt;strong&gt;</bpt>y<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">When prompted to trust this certificate, if the certificate has MD5 fingerprint 67:CB:9D:C0:13:24:8A:82:9B:B2:17:1E:D1:1B:EC:D4, respond by typing <bpt id="2">&lt;strong&gt;</bpt>y<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source>Run the following command to ensure the CA certificate has been successfully imported:</source>
+            <target state="new">Run the following command to ensure the CA certificate has been successfully imported:</target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>keytool -list -keystore cacerts<ept id="1">&lt;/code&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>keytool -list -keystore cacerts<ept id="1">&lt;/code&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source>Zip the JDK and add it to your Azure project's <bpt id="2">&lt;strong&gt;</bpt>approot<ept id="2">&lt;/strong&gt;</ept> folder.</source>
+            <target state="new">Zip the JDK and add it to your Azure project's <bpt id="2">&lt;strong&gt;</bpt>approot<ept id="2">&lt;/strong&gt;</ept> folder.</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>For information about keytool, see <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>.</source>
+            <target state="new">For information about keytool, see <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source>Azure Root Certificates</source>
+            <target state="new">Azure Root Certificates</target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>Your applications that use Azure services (such as Azure Service Bus) need to trust the Baltimore CyberTrust Root certificate.</source>
+            <target state="new">Your applications that use Azure services (such as Azure Service Bus) need to trust the Baltimore CyberTrust Root certificate.</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>(Beginning April 15, 2013, Azure began migrating from the GTE CyberTrust Global Root to the Baltimore CyberTrust Root.</source>
+            <target state="new">(Beginning April 15, 2013, Azure began migrating from the GTE CyberTrust Global Root to the Baltimore CyberTrust Root.</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source>This migration took several months to complete.)</source>
+            <target state="new">This migration took several months to complete.)</target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source>The Baltimore certificate might already be installed in your cacerts store, so remember to run the <bpt id="2">&lt;strong&gt;</bpt>keytool -list<ept id="2">&lt;/strong&gt;</ept> command first to see if it already exists.</source>
+            <target state="new">The Baltimore certificate might already be installed in your cacerts store, so remember to run the <bpt id="2">&lt;strong&gt;</bpt>keytool -list<ept id="2">&lt;/strong&gt;</ept> command first to see if it already exists.</target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source>If you need to add the Baltimore CyberTrust Root, it has serial number 02:00:00:b9 and SHA1 fingerprint d4:de:20:d0:5e:66:fc:53:fe:1a:50:88:2c:78:db:28:52:ca:e4:74. It can be downloaded from <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>, saved to a local file with extension <bpt id="4">&lt;strong&gt;</bpt>.cer<ept id="4">&lt;/strong&gt;</ept>, and then imported using <bpt id="6">&lt;strong&gt;</bpt>keytool<ept id="6">&lt;/strong&gt;</ept> as shown above.</source>
+            <target state="new">If you need to add the Baltimore CyberTrust Root, it has serial number 02:00:00:b9 and SHA1 fingerprint d4:de:20:d0:5e:66:fc:53:fe:1a:50:88:2c:78:db:28:52:ca:e4:74. It can be downloaded from <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>, saved to a local file with extension <bpt id="4">&lt;strong&gt;</bpt>.cer<ept id="4">&lt;/strong&gt;</ept>, and then imported using <bpt id="6">&lt;strong&gt;</bpt>keytool<ept id="6">&lt;/strong&gt;</ept> as shown above.</target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source>For more information about the root certificates used by Azure, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Root Certificate Migration<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information about the root certificates used by Azure, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Root Certificate Migration<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>

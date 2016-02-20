@@ -1,0 +1,715 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="pl-pl" original="2/20/2016 6:34:53 PM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c83a57aee9740517f0b349879a7884858419fc27</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Azure AD Connect sync Configure filtering | Microsoft Azure</source>
+            <target state="new">Azure AD Connect sync Configure filtering | Microsoft Azure</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>Explains how to configure filtering in Azure AD Connect sync.</source>
+            <target state="new">Explains how to configure filtering in Azure AD Connect sync.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Azure AD Connect sync: Configure Filtering</source>
+            <target state="new">Azure AD Connect sync: Configure Filtering</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source>In Azure AD Connect sync, you can enable filtering at any time.</source>
+            <target state="new">In Azure AD Connect sync, you can enable filtering at any time.</target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>If you have already run the default configurations of directory synchronization and then configured the filtering, the objects that are filtered out are no longer synchronized to Azure AD.</source>
+            <target state="new">If you have already run the default configurations of directory synchronization and then configured the filtering, the objects that are filtered out are no longer synchronized to Azure AD.</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>As a result of this, any objects in Azure AD that were previously synchronized but were then filtered are deleted in Azure AD.</source>
+            <target state="new">As a result of this, any objects in Azure AD that were previously synchronized but were then filtered are deleted in Azure AD.</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>If objects were inadvertently deleted because of a filtering error, you can re-create the objects in Azure AD by removing your filtering configurations, and then synchronize your directories again.</source>
+            <target state="new">If objects were inadvertently deleted because of a filtering error, you can re-create the objects in Azure AD by removing your filtering configurations, and then synchronize your directories again.</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>Microsoft does not support modification or operation of the Azure AD Connect sync outside of those actions formally documented.</source>
+            <target state="new">Microsoft does not support modification or operation of the Azure AD Connect sync outside of those actions formally documented.</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source>Any of these actions may result in an inconsistent or unsupported state of Azure AD Connect sync and as a result, Microsoft cannot provide technical support for such deployments.</source>
+            <target state="new">Any of these actions may result in an inconsistent or unsupported state of Azure AD Connect sync and as a result, Microsoft cannot provide technical support for such deployments.</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source>With the exception of outbound attribute-based filtering, the configurations will be retained when you install or upgrade to a newer version of Azure AD Connect.</source>
+            <target state="new">With the exception of outbound attribute-based filtering, the configurations will be retained when you install or upgrade to a newer version of Azure AD Connect.</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>It is always a best practice to verify that the configuration was not inadvertently changed after an upgrade to a newer version before running the first synchronization cycle.</source>
+            <target state="new">It is always a best practice to verify that the configuration was not inadvertently changed after an upgrade to a newer version before running the first synchronization cycle.</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source>Filtering Options</source>
+            <target state="new">Filtering Options</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>In this topic, Source AD is used as name for your Active Directory Domain Service Connector.</source>
+            <target state="new">In this topic, Source AD is used as name for your Active Directory Domain Service Connector.</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source>If you have multiple forests, you will have one Connector per forest and the configuration must be repeated for each forest.</source>
+            <target state="new">If you have multiple forests, you will have one Connector per forest and the configuration must be repeated for each forest.</target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>The following three filtering configuration types can be applied to the Directory Synchronization tool:</source>
+            <target state="new">The following three filtering configuration types can be applied to the Directory Synchronization tool:</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source>[<bpt id="2">&lt;strong&gt;</bpt>Domain-based<ept id="2">&lt;/strong&gt;</ept>](#configure-domain-based filtering): You can use this filtering type to manage the properties of the SourceAD Connector in Azure AD Connect sync.</source>
+            <target state="new">[<bpt id="2">&lt;strong&gt;</bpt>Domain-based<ept id="2">&lt;/strong&gt;</ept>](#configure-domain-based filtering): You can use this filtering type to manage the properties of the SourceAD Connector in Azure AD Connect sync.</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>This type enables you to select which domains are allowed to synchronize to Azure AD.</source>
+            <target state="new">This type enables you to select which domains are allowed to synchronize to Azure AD.</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>[<bpt id="2">&lt;strong&gt;</bpt>Configure organizational-unit–based filtering<ept id="2">&lt;/strong&gt;</ept>](#configure-organizational-unit–based filtering): You can use this filtering type to manage the properties of the SourceAD Connector in Azure AD Connect sync.</source>
+            <target state="new">[<bpt id="2">&lt;strong&gt;</bpt>Configure organizational-unit–based filtering<ept id="2">&lt;/strong&gt;</ept>](#configure-organizational-unit–based filtering): You can use this filtering type to manage the properties of the SourceAD Connector in Azure AD Connect sync.</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source>This filtering type enables you to select which OUs are allowed to synchronize to Azure AD.</source>
+            <target state="new">This filtering type enables you to select which OUs are allowed to synchronize to Azure AD.</target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>**Attribute–based**<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept>: You can use this filtering method to specify attribute-based filters.</source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>**Attribute–based**<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept>: You can use this filtering method to specify attribute-based filters.</target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source>This enables you to control which objects should be synchronized to the cloud.</source>
+            <target state="new">This enables you to control which objects should be synchronized to the cloud.</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source>If you make a change to filter configuration and you use password synchronization then you need to trigger a full sync of all passwords after you have completed the configuration.</source>
+            <target state="new">If you make a change to filter configuration and you use password synchronization then you need to trigger a full sync of all passwords after you have completed the configuration.</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>For steps on how to trigger a password full sync see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Trigger a full sync of all passwords<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new">For steps on how to trigger a password full sync see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Trigger a full sync of all passwords<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source>Configure domain-based filtering</source>
+            <target state="new">Configure domain-based filtering</target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>This section provides you with the steps you need to perform to configure your domain filter.</source>
+            <target state="new">This section provides you with the steps you need to perform to configure your domain filter.</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>If you have added or removed domains in your forest after you have installed Azure AD Connect you will also have to update the filtering configuration.</source>
+            <target state="new">If you have added or removed domains in your forest after you have installed Azure AD Connect you will also have to update the filtering configuration.</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source>Changing the filter for existing domains</source>
+            <target state="new">Changing the filter for existing domains</target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source>If you have modified your domain filter, you also need to update your run profiles.</source>
+            <target state="new">If you have modified your domain filter, you also need to update your run profiles.</target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>To set the domain filter, perform the following steps:<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>To set the domain filter, perform the following steps:<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source>Log on to the computer that is running Azure AD Connect sync by using an account that is a member of the <bpt id="2">&lt;strong&gt;</bpt>ADSyncAdmins<ept id="2">&lt;/strong&gt;</ept> security group.</source>
+            <target state="new">Log on to the computer that is running Azure AD Connect sync by using an account that is a member of the <bpt id="2">&lt;strong&gt;</bpt>ADSyncAdmins<ept id="2">&lt;/strong&gt;</ept> security group.</target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source>On <bpt id="2">&lt;strong&gt;</bpt>Start<ept id="2">&lt;/strong&gt;</ept>, tap or click <bpt id="4">&lt;strong&gt;</bpt>Synchronization Service<ept id="4">&lt;/strong&gt;</ept> to open the <bpt id="6">&lt;strong&gt;</bpt>Synchronization Service Manager<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">On <bpt id="2">&lt;strong&gt;</bpt>Start<ept id="2">&lt;/strong&gt;</ept>, tap or click <bpt id="4">&lt;strong&gt;</bpt>Synchronization Service<ept id="4">&lt;/strong&gt;</ept> to open the <bpt id="6">&lt;strong&gt;</bpt>Synchronization Service Manager<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source>To open the connectors view, click <bpt id="2">&lt;strong&gt;</bpt>Connectors<ept id="2">&lt;/strong&gt;</ept> in the <bpt id="4">&lt;strong&gt;</bpt>Tools<ept id="4">&lt;/strong&gt;</ept> menu.</source>
+            <target state="new">To open the connectors view, click <bpt id="2">&lt;strong&gt;</bpt>Connectors<ept id="2">&lt;/strong&gt;</ept> in the <bpt id="4">&lt;strong&gt;</bpt>Tools<ept id="4">&lt;/strong&gt;</ept> menu.</target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Connectors<ept id="2">&lt;/strong&gt;</ept> list, select the connector that has <bpt id="4">&lt;strong&gt;</bpt>Active Directory Domain Service<ept id="4">&lt;/strong&gt;</ept> as <bpt id="6">&lt;strong&gt;</bpt>Type<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Connectors<ept id="2">&lt;/strong&gt;</ept> list, select the connector that has <bpt id="4">&lt;strong&gt;</bpt>Active Directory Domain Service<ept id="4">&lt;/strong&gt;</ept> as <bpt id="6">&lt;strong&gt;</bpt>Type<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source>To open the <bpt id="2">&lt;strong&gt;</bpt>Properties<ept id="2">&lt;/strong&gt;</ept> dialog, click <bpt id="4">&lt;strong&gt;</bpt>Properties<ept id="4">&lt;/strong&gt;</ept> in the <bpt id="6">&lt;strong&gt;</bpt>Actions<ept id="6">&lt;/strong&gt;</ept> menu.</source>
+            <target state="new">To open the <bpt id="2">&lt;strong&gt;</bpt>Properties<ept id="2">&lt;/strong&gt;</ept> dialog, click <bpt id="4">&lt;strong&gt;</bpt>Properties<ept id="4">&lt;/strong&gt;</ept> in the <bpt id="6">&lt;strong&gt;</bpt>Actions<ept id="6">&lt;/strong&gt;</ept> menu.</target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Configure Directory Partitions<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Configure Directory Partitions<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Select directory partitions<ept id="2">&lt;/strong&gt;</ept> list, verify that only the partitions you want to synchronize are selected. <bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept> To remove a domain from the synchronization process, clear the domain’s check box.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Select directory partitions<ept id="2">&lt;/strong&gt;</ept> list, verify that only the partitions you want to synchronize are selected. <bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept> To remove a domain from the synchronization process, clear the domain’s check box.</target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source>To close the <bpt id="2">&lt;strong&gt;</bpt>Properties<ept id="2">&lt;/strong&gt;</ept> dialog, click <bpt id="4">&lt;strong&gt;</bpt>OK<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">To close the <bpt id="2">&lt;strong&gt;</bpt>Properties<ept id="2">&lt;/strong&gt;</ept> dialog, click <bpt id="4">&lt;strong&gt;</bpt>OK<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source>If you have updated your domain filter, you also need to update the following run profiles:</source>
+            <target state="new">If you have updated your domain filter, you also need to update the following run profiles:</target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source>Full Import</source>
+            <target state="new">Full Import</target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source>Full Synchronization</source>
+            <target state="new">Full Synchronization</target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source>Delta Import</source>
+            <target state="new">Delta Import</target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source>Delta Synchronization</source>
+            <target state="new">Delta Synchronization</target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source>Export</source>
+            <target state="new">Export</target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source>If you have <bpt id="2">&lt;strong&gt;</bpt>removed<ept id="2">&lt;/strong&gt;</ept> a partition from the directory partitions list, you need to make sure that all run profile steps that are referencing this partition are also removed.</source>
+            <target state="new">If you have <bpt id="2">&lt;strong&gt;</bpt>removed<ept id="2">&lt;/strong&gt;</ept> a partition from the directory partitions list, you need to make sure that all run profile steps that are referencing this partition are also removed.</target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>To remove a step from a run profile, perform the following steps:<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>To remove a step from a run profile, perform the following steps:<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Connectors<ept id="2">&lt;/strong&gt;</ept> list, select the connector that has <bpt id="4">&lt;strong&gt;</bpt>Active Directory Domain Service<ept id="4">&lt;/strong&gt;</ept> as <bpt id="6">&lt;strong&gt;</bpt>Type<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Connectors<ept id="2">&lt;/strong&gt;</ept> list, select the connector that has <bpt id="4">&lt;strong&gt;</bpt>Active Directory Domain Service<ept id="4">&lt;/strong&gt;</ept> as <bpt id="6">&lt;strong&gt;</bpt>Type<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="147" xml:space="preserve">
+            <source>To open the <bpt id="2">&lt;strong&gt;</bpt>Configure Run Profiles for<ept id="2">&lt;/strong&gt;</ept> dialog, click <bpt id="4">&lt;strong&gt;</bpt>Configure Run Profiles<ept id="4">&lt;/strong&gt;</ept> in the <bpt id="6">&lt;strong&gt;</bpt>Actions<ept id="6">&lt;/strong&gt;</ept> menu.</source>
+            <target state="new">To open the <bpt id="2">&lt;strong&gt;</bpt>Configure Run Profiles for<ept id="2">&lt;/strong&gt;</ept> dialog, click <bpt id="4">&lt;strong&gt;</bpt>Configure Run Profiles<ept id="4">&lt;/strong&gt;</ept> in the <bpt id="6">&lt;strong&gt;</bpt>Actions<ept id="6">&lt;/strong&gt;</ept> menu.</target>
+          </trans-unit>
+          <trans-unit id="148" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Connector run profiles<ept id="2">&lt;/strong&gt;</ept> list, select the run profile you want to configure</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Connector run profiles<ept id="2">&lt;/strong&gt;</ept> list, select the run profile you want to configure</target>
+          </trans-unit>
+          <trans-unit id="149" xml:space="preserve">
+            <source>For each step in the step details list, perform the following steps:</source>
+            <target state="new">For each step in the step details list, perform the following steps:</target>
+          </trans-unit>
+          <trans-unit id="150" xml:space="preserve">
+            <source>If necessary, click the step to expand the step details.</source>
+            <target state="new">If necessary, click the step to expand the step details.</target>
+          </trans-unit>
+          <trans-unit id="151" xml:space="preserve">
+            <source>If the <bpt id="2">&lt;strong&gt;</bpt>Value<ept id="2">&lt;/strong&gt;</ept> of the <bpt id="4">&lt;strong&gt;</bpt>Partition<ept id="4">&lt;/strong&gt;</ept> attribute is a GUID, click Delete Step.</source>
+            <target state="new">If the <bpt id="2">&lt;strong&gt;</bpt>Value<ept id="2">&lt;/strong&gt;</ept> of the <bpt id="4">&lt;strong&gt;</bpt>Partition<ept id="4">&lt;/strong&gt;</ept> attribute is a GUID, click Delete Step.</target>
+          </trans-unit>
+          <trans-unit id="152" xml:space="preserve">
+            <source>To close the <bpt id="2">&lt;strong&gt;</bpt>Configure Run Profiles for<ept id="2">&lt;/strong&gt;</ept> dialog, click <bpt id="4">&lt;strong&gt;</bpt>OK<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">To close the <bpt id="2">&lt;strong&gt;</bpt>Configure Run Profiles for<ept id="2">&lt;/strong&gt;</ept> dialog, click <bpt id="4">&lt;strong&gt;</bpt>OK<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="153" xml:space="preserve">
+            <source>If you have <bpt id="2">&lt;strong&gt;</bpt>added<ept id="2">&lt;/strong&gt;</ept> a partition to the directory partitions list, you need to make sure that a run profile step for that partition is available on each of the run profiles in the list above.</source>
+            <target state="new">If you have <bpt id="2">&lt;strong&gt;</bpt>added<ept id="2">&lt;/strong&gt;</ept> a partition to the directory partitions list, you need to make sure that a run profile step for that partition is available on each of the run profiles in the list above.</target>
+          </trans-unit>
+          <trans-unit id="154" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>To add a step to a run profile, perform the following steps:<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>To add a step to a run profile, perform the following steps:<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="155" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Connectors<ept id="2">&lt;/strong&gt;</ept> list, select the connector that has <bpt id="4">&lt;strong&gt;</bpt>Active Directory Domain Service<ept id="4">&lt;/strong&gt;</ept> as <bpt id="6">&lt;strong&gt;</bpt>Type<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Connectors<ept id="2">&lt;/strong&gt;</ept> list, select the connector that has <bpt id="4">&lt;strong&gt;</bpt>Active Directory Domain Service<ept id="4">&lt;/strong&gt;</ept> as <bpt id="6">&lt;strong&gt;</bpt>Type<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="156" xml:space="preserve">
+            <source>To open the <bpt id="2">&lt;strong&gt;</bpt>Configure Run Profiles for<ept id="2">&lt;/strong&gt;</ept> dialog, click <bpt id="4">&lt;strong&gt;</bpt>Configure Run Profiles<ept id="4">&lt;/strong&gt;</ept> in the <bpt id="6">&lt;strong&gt;</bpt>Actions<ept id="6">&lt;/strong&gt;</ept> menu.</source>
+            <target state="new">To open the <bpt id="2">&lt;strong&gt;</bpt>Configure Run Profiles for<ept id="2">&lt;/strong&gt;</ept> dialog, click <bpt id="4">&lt;strong&gt;</bpt>Configure Run Profiles<ept id="4">&lt;/strong&gt;</ept> in the <bpt id="6">&lt;strong&gt;</bpt>Actions<ept id="6">&lt;/strong&gt;</ept> menu.</target>
+          </trans-unit>
+          <trans-unit id="157" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Connector run profiles<ept id="2">&lt;/strong&gt;</ept> list, select the run profile you want to configure</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Connector run profiles<ept id="2">&lt;/strong&gt;</ept> list, select the run profile you want to configure</target>
+          </trans-unit>
+          <trans-unit id="158" xml:space="preserve">
+            <source>To open the <bpt id="2">&lt;strong&gt;</bpt>Configure Run Profile<ept id="2">&lt;/strong&gt;</ept> dialog, click <bpt id="4">&lt;strong&gt;</bpt>New Step<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">To open the <bpt id="2">&lt;strong&gt;</bpt>Configure Run Profile<ept id="2">&lt;/strong&gt;</ept> dialog, click <bpt id="4">&lt;strong&gt;</bpt>New Step<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="159" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Configure Step<ept id="2">&lt;/strong&gt;</ept> page, in the step type list, select the step type, and then click <bpt id="4">&lt;strong&gt;</bpt>Next<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Configure Step<ept id="2">&lt;/strong&gt;</ept> page, in the step type list, select the step type, and then click <bpt id="4">&lt;strong&gt;</bpt>Next<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Connector Configuration<ept id="2">&lt;/strong&gt;</ept> page, in the <bpt id="4">&lt;strong&gt;</bpt>Partition<ept id="4">&lt;/strong&gt;</ept> list, select the name of the partition you have added to your domain filter.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Connector Configuration<ept id="2">&lt;/strong&gt;</ept> page, in the <bpt id="4">&lt;strong&gt;</bpt>Partition<ept id="4">&lt;/strong&gt;</ept> list, select the name of the partition you have added to your domain filter.</target>
+          </trans-unit>
+          <trans-unit id="161" xml:space="preserve">
+            <source>To close the <bpt id="2">&lt;strong&gt;</bpt>Configure Run Profile<ept id="2">&lt;/strong&gt;</ept> dialog, click <bpt id="4">&lt;strong&gt;</bpt>Finish<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">To close the <bpt id="2">&lt;strong&gt;</bpt>Configure Run Profile<ept id="2">&lt;/strong&gt;</ept> dialog, click <bpt id="4">&lt;strong&gt;</bpt>Finish<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="162" xml:space="preserve">
+            <source>To close the <bpt id="2">&lt;strong&gt;</bpt>Configure Run Profiles<ept id="2">&lt;/strong&gt;</ept> for dialog, click <bpt id="4">&lt;strong&gt;</bpt>OK<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">To close the <bpt id="2">&lt;strong&gt;</bpt>Configure Run Profiles<ept id="2">&lt;/strong&gt;</ept> for dialog, click <bpt id="4">&lt;strong&gt;</bpt>OK<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="163" xml:space="preserve">
+            <source>Changing the filter for new or removed domains</source>
+            <target state="new">Changing the filter for new or removed domains</target>
+          </trans-unit>
+          <trans-unit id="164" xml:space="preserve">
+            <source>If you have added a new domain to the forest or removed a domain from the forest, the domain filtering configuration must be updated.</source>
+            <target state="new">If you have added a new domain to the forest or removed a domain from the forest, the domain filtering configuration must be updated.</target>
+          </trans-unit>
+          <trans-unit id="165" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Steps if you have added a domain<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Steps if you have added a domain<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="166" xml:space="preserve">
+            <source>Log on to the computer that is running Azure AD Connect sync by using an account that is a member of the <bpt id="2">&lt;strong&gt;</bpt>ADSyncAdmins<ept id="2">&lt;/strong&gt;</ept> security group.</source>
+            <target state="new">Log on to the computer that is running Azure AD Connect sync by using an account that is a member of the <bpt id="2">&lt;strong&gt;</bpt>ADSyncAdmins<ept id="2">&lt;/strong&gt;</ept> security group.</target>
+          </trans-unit>
+          <trans-unit id="167" xml:space="preserve">
+            <source>On <bpt id="2">&lt;strong&gt;</bpt>Start<ept id="2">&lt;/strong&gt;</ept>, tap or click <bpt id="4">&lt;strong&gt;</bpt>Synchronization Service<ept id="4">&lt;/strong&gt;</ept> to open the <bpt id="6">&lt;strong&gt;</bpt>Synchronization Service Manager<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">On <bpt id="2">&lt;strong&gt;</bpt>Start<ept id="2">&lt;/strong&gt;</ept>, tap or click <bpt id="4">&lt;strong&gt;</bpt>Synchronization Service<ept id="4">&lt;/strong&gt;</ept> to open the <bpt id="6">&lt;strong&gt;</bpt>Synchronization Service Manager<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="168" xml:space="preserve">
+            <source>To open the connectors view, click <bpt id="2">&lt;strong&gt;</bpt>Connectors<ept id="2">&lt;/strong&gt;</ept> in the <bpt id="4">&lt;strong&gt;</bpt>Tools<ept id="4">&lt;/strong&gt;</ept> menu.</source>
+            <target state="new">To open the connectors view, click <bpt id="2">&lt;strong&gt;</bpt>Connectors<ept id="2">&lt;/strong&gt;</ept> in the <bpt id="4">&lt;strong&gt;</bpt>Tools<ept id="4">&lt;/strong&gt;</ept> menu.</target>
+          </trans-unit>
+          <trans-unit id="169" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Connectors<ept id="2">&lt;/strong&gt;</ept> list, select the connector that has <bpt id="4">&lt;strong&gt;</bpt>Active Directory Domain Service<ept id="4">&lt;/strong&gt;</ept> as <bpt id="6">&lt;strong&gt;</bpt>Type<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Connectors<ept id="2">&lt;/strong&gt;</ept> list, select the connector that has <bpt id="4">&lt;strong&gt;</bpt>Active Directory Domain Service<ept id="4">&lt;/strong&gt;</ept> as <bpt id="6">&lt;strong&gt;</bpt>Type<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="170" xml:space="preserve">
+            <source>To open the <bpt id="2">&lt;strong&gt;</bpt>Properties<ept id="2">&lt;/strong&gt;</ept> dialog, click <bpt id="4">&lt;strong&gt;</bpt>Properties<ept id="4">&lt;/strong&gt;</ept> in the <bpt id="6">&lt;strong&gt;</bpt>Actions<ept id="6">&lt;/strong&gt;</ept> menu.</source>
+            <target state="new">To open the <bpt id="2">&lt;strong&gt;</bpt>Properties<ept id="2">&lt;/strong&gt;</ept> dialog, click <bpt id="4">&lt;strong&gt;</bpt>Properties<ept id="4">&lt;/strong&gt;</ept> in the <bpt id="6">&lt;strong&gt;</bpt>Actions<ept id="6">&lt;/strong&gt;</ept> menu.</target>
+          </trans-unit>
+          <trans-unit id="171" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Configure Directory Partitions<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Configure Directory Partitions<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="172" xml:space="preserve">
+            <source>Click the <bpt id="2">&lt;strong&gt;</bpt>Refresh<ept id="2">&lt;/strong&gt;</ept> button at the top of the page.</source>
+            <target state="new">Click the <bpt id="2">&lt;strong&gt;</bpt>Refresh<ept id="2">&lt;/strong&gt;</ept> button at the top of the page.</target>
+          </trans-unit>
+          <trans-unit id="173" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Select directory partitions<ept id="2">&lt;/strong&gt;</ept> list, select the new domain.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Select directory partitions<ept id="2">&lt;/strong&gt;</ept> list, select the new domain.</target>
+          </trans-unit>
+          <trans-unit id="174" xml:space="preserve">
+            <source>To close the <bpt id="2">&lt;strong&gt;</bpt>Properties<ept id="2">&lt;/strong&gt;</ept> dialog, click OK.</source>
+            <target state="new">To close the <bpt id="2">&lt;strong&gt;</bpt>Properties<ept id="2">&lt;/strong&gt;</ept> dialog, click OK.</target>
+          </trans-unit>
+          <trans-unit id="175" xml:space="preserve">
+            <source>Make sure the same Connector is still selected.</source>
+            <target state="new">Make sure the same Connector is still selected.</target>
+          </trans-unit>
+          <trans-unit id="176" xml:space="preserve">
+            <source>The run profiles for the Connector must now be configured.</source>
+            <target state="new">The run profiles for the Connector must now be configured.</target>
+          </trans-unit>
+          <trans-unit id="177" xml:space="preserve">
+            <source>Full Import</source>
+            <target state="new">Full Import</target>
+          </trans-unit>
+          <trans-unit id="178" xml:space="preserve">
+            <source>Full Synchronization</source>
+            <target state="new">Full Synchronization</target>
+          </trans-unit>
+          <trans-unit id="179" xml:space="preserve">
+            <source>Delta Import</source>
+            <target state="new">Delta Import</target>
+          </trans-unit>
+          <trans-unit id="180" xml:space="preserve">
+            <source>Delta Synchronization</source>
+            <target state="new">Delta Synchronization</target>
+          </trans-unit>
+          <trans-unit id="181" xml:space="preserve">
+            <source>Export</source>
+            <target state="new">Export</target>
+          </trans-unit>
+          <trans-unit id="182" xml:space="preserve">
+            <source>To open the <bpt id="2">&lt;strong&gt;</bpt>Configure Run Profiles for<ept id="2">&lt;/strong&gt;</ept> dialog, click <bpt id="4">&lt;strong&gt;</bpt>Configure Run Profiles<ept id="4">&lt;/strong&gt;</ept> in the <bpt id="6">&lt;strong&gt;</bpt>Actions<ept id="6">&lt;/strong&gt;</ept> menu.</source>
+            <target state="new">To open the <bpt id="2">&lt;strong&gt;</bpt>Configure Run Profiles for<ept id="2">&lt;/strong&gt;</ept> dialog, click <bpt id="4">&lt;strong&gt;</bpt>Configure Run Profiles<ept id="4">&lt;/strong&gt;</ept> in the <bpt id="6">&lt;strong&gt;</bpt>Actions<ept id="6">&lt;/strong&gt;</ept> menu.</target>
+          </trans-unit>
+          <trans-unit id="183" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Connector run profiles<ept id="2">&lt;/strong&gt;</ept> list, select the run profile you want to configure</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Connector run profiles<ept id="2">&lt;/strong&gt;</ept> list, select the run profile you want to configure</target>
+          </trans-unit>
+          <trans-unit id="184" xml:space="preserve">
+            <source>To open the <bpt id="2">&lt;strong&gt;</bpt>Configure Run Profile<ept id="2">&lt;/strong&gt;</ept> dialog, click <bpt id="4">&lt;strong&gt;</bpt>New Step<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">To open the <bpt id="2">&lt;strong&gt;</bpt>Configure Run Profile<ept id="2">&lt;/strong&gt;</ept> dialog, click <bpt id="4">&lt;strong&gt;</bpt>New Step<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="185" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Configure Step<ept id="2">&lt;/strong&gt;</ept> page, in the step type list, select the step type, and then click <bpt id="4">&lt;strong&gt;</bpt>Next<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Configure Step<ept id="2">&lt;/strong&gt;</ept> page, in the step type list, select the step type, and then click <bpt id="4">&lt;strong&gt;</bpt>Next<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="186" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Connector Configuration<ept id="2">&lt;/strong&gt;</ept> page, in the <bpt id="4">&lt;strong&gt;</bpt>Partition<ept id="4">&lt;/strong&gt;</ept> list, select the name of the partition you have added to your domain filter.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Connector Configuration<ept id="2">&lt;/strong&gt;</ept> page, in the <bpt id="4">&lt;strong&gt;</bpt>Partition<ept id="4">&lt;/strong&gt;</ept> list, select the name of the partition you have added to your domain filter.</target>
+          </trans-unit>
+          <trans-unit id="187" xml:space="preserve">
+            <source>To close the <bpt id="2">&lt;strong&gt;</bpt>Configure Run Profile<ept id="2">&lt;/strong&gt;</ept> dialog, click <bpt id="4">&lt;strong&gt;</bpt>Finish<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">To close the <bpt id="2">&lt;strong&gt;</bpt>Configure Run Profile<ept id="2">&lt;/strong&gt;</ept> dialog, click <bpt id="4">&lt;strong&gt;</bpt>Finish<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="188" xml:space="preserve">
+            <source>To close the <bpt id="2">&lt;strong&gt;</bpt>Configure Run Profiles<ept id="2">&lt;/strong&gt;</ept> for dialog, click <bpt id="4">&lt;strong&gt;</bpt>OK<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">To close the <bpt id="2">&lt;strong&gt;</bpt>Configure Run Profiles<ept id="2">&lt;/strong&gt;</ept> for dialog, click <bpt id="4">&lt;strong&gt;</bpt>OK<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="189" xml:space="preserve">
+            <source>Repeat these steps for all run profiles.</source>
+            <target state="new">Repeat these steps for all run profiles.</target>
+          </trans-unit>
+          <trans-unit id="190" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Steps if you have removed a domain<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Steps if you have removed a domain<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="191" xml:space="preserve">
+            <source>Log on to the computer that is running Azure AD Connect sync by using an account that is a member of the <bpt id="2">&lt;strong&gt;</bpt>ADSyncAdmins<ept id="2">&lt;/strong&gt;</ept> security group.</source>
+            <target state="new">Log on to the computer that is running Azure AD Connect sync by using an account that is a member of the <bpt id="2">&lt;strong&gt;</bpt>ADSyncAdmins<ept id="2">&lt;/strong&gt;</ept> security group.</target>
+          </trans-unit>
+          <trans-unit id="192" xml:space="preserve">
+            <source>On <bpt id="2">&lt;strong&gt;</bpt>Start<ept id="2">&lt;/strong&gt;</ept>, tap or click <bpt id="4">&lt;strong&gt;</bpt>Synchronization Service<ept id="4">&lt;/strong&gt;</ept> to open the <bpt id="6">&lt;strong&gt;</bpt>Synchronization Service Manager<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">On <bpt id="2">&lt;strong&gt;</bpt>Start<ept id="2">&lt;/strong&gt;</ept>, tap or click <bpt id="4">&lt;strong&gt;</bpt>Synchronization Service<ept id="4">&lt;/strong&gt;</ept> to open the <bpt id="6">&lt;strong&gt;</bpt>Synchronization Service Manager<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="193" xml:space="preserve">
+            <source>To open the connectors view, click <bpt id="2">&lt;strong&gt;</bpt>Connectors<ept id="2">&lt;/strong&gt;</ept> in the <bpt id="4">&lt;strong&gt;</bpt>Tools<ept id="4">&lt;/strong&gt;</ept> menu.</source>
+            <target state="new">To open the connectors view, click <bpt id="2">&lt;strong&gt;</bpt>Connectors<ept id="2">&lt;/strong&gt;</ept> in the <bpt id="4">&lt;strong&gt;</bpt>Tools<ept id="4">&lt;/strong&gt;</ept> menu.</target>
+          </trans-unit>
+          <trans-unit id="194" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Connectors<ept id="2">&lt;/strong&gt;</ept> list, select the connector that has <bpt id="4">&lt;strong&gt;</bpt>Active Directory Domain Service<ept id="4">&lt;/strong&gt;</ept> as <bpt id="6">&lt;strong&gt;</bpt>Type<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Connectors<ept id="2">&lt;/strong&gt;</ept> list, select the connector that has <bpt id="4">&lt;strong&gt;</bpt>Active Directory Domain Service<ept id="4">&lt;/strong&gt;</ept> as <bpt id="6">&lt;strong&gt;</bpt>Type<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="195" xml:space="preserve">
+            <source>To open the <bpt id="2">&lt;strong&gt;</bpt>Properties<ept id="2">&lt;/strong&gt;</ept> dialog, click <bpt id="4">&lt;strong&gt;</bpt>Properties<ept id="4">&lt;/strong&gt;</ept> in the <bpt id="6">&lt;strong&gt;</bpt>Actions<ept id="6">&lt;/strong&gt;</ept> menu.</source>
+            <target state="new">To open the <bpt id="2">&lt;strong&gt;</bpt>Properties<ept id="2">&lt;/strong&gt;</ept> dialog, click <bpt id="4">&lt;strong&gt;</bpt>Properties<ept id="4">&lt;/strong&gt;</ept> in the <bpt id="6">&lt;strong&gt;</bpt>Actions<ept id="6">&lt;/strong&gt;</ept> menu.</target>
+          </trans-unit>
+          <trans-unit id="196" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Configure Directory Partitions<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Configure Directory Partitions<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="197" xml:space="preserve">
+            <source>Click the <bpt id="2">&lt;strong&gt;</bpt>Refresh<ept id="2">&lt;/strong&gt;</ept> button at the top of the page.</source>
+            <target state="new">Click the <bpt id="2">&lt;strong&gt;</bpt>Refresh<ept id="2">&lt;/strong&gt;</ept> button at the top of the page.</target>
+          </trans-unit>
+          <trans-unit id="198" xml:space="preserve">
+            <source>To close the <bpt id="2">&lt;strong&gt;</bpt>Properties<ept id="2">&lt;/strong&gt;</ept> dialog, click OK.</source>
+            <target state="new">To close the <bpt id="2">&lt;strong&gt;</bpt>Properties<ept id="2">&lt;/strong&gt;</ept> dialog, click OK.</target>
+          </trans-unit>
+          <trans-unit id="199" xml:space="preserve">
+            <source>A message will pop-up saying a domain was removed and that configuration will be cleaned up.</source>
+            <target state="new">A message will pop-up saying a domain was removed and that configuration will be cleaned up.</target>
+          </trans-unit>
+          <trans-unit id="200" xml:space="preserve">
+            <source>Configure organizational-unit–based filtering</source>
+            <target state="new">Configure organizational-unit–based filtering</target>
+          </trans-unit>
+          <trans-unit id="201" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>To configure organizational-unit–based filtering, perform the following steps:<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>To configure organizational-unit–based filtering, perform the following steps:<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="202" xml:space="preserve">
+            <source>Log on to the computer that is running Azure AD Connect sync by using an account that is a member of the <bpt id="2">&lt;strong&gt;</bpt>ADSyncAdmins<ept id="2">&lt;/strong&gt;</ept> security group.</source>
+            <target state="new">Log on to the computer that is running Azure AD Connect sync by using an account that is a member of the <bpt id="2">&lt;strong&gt;</bpt>ADSyncAdmins<ept id="2">&lt;/strong&gt;</ept> security group.</target>
+          </trans-unit>
+          <trans-unit id="203" xml:space="preserve">
+            <source>On <bpt id="2">&lt;strong&gt;</bpt>Start<ept id="2">&lt;/strong&gt;</ept>, tap or click <bpt id="4">&lt;strong&gt;</bpt>Synchronization Service<ept id="4">&lt;/strong&gt;</ept> to open the <bpt id="6">&lt;strong&gt;</bpt>Synchronization Service Manager<ept id="6">&lt;/strong&gt;</ept>.<bpt id="8">&lt;html&gt;</bpt><ept id="8">&lt;/html&gt;</ept></source>
+            <target state="new">On <bpt id="2">&lt;strong&gt;</bpt>Start<ept id="2">&lt;/strong&gt;</ept>, tap or click <bpt id="4">&lt;strong&gt;</bpt>Synchronization Service<ept id="4">&lt;/strong&gt;</ept> to open the <bpt id="6">&lt;strong&gt;</bpt>Synchronization Service Manager<ept id="6">&lt;/strong&gt;</ept>.<bpt id="8">&lt;html&gt;</bpt><ept id="8">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="204" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Synchronization Service Manager<ept id="2">&lt;/strong&gt;</ept>, click <bpt id="4">&lt;strong&gt;</bpt>Connectors<ept id="4">&lt;/strong&gt;</ept>, and then double-click <bpt id="6">&lt;strong&gt;</bpt>SourceAD<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Synchronization Service Manager<ept id="2">&lt;/strong&gt;</ept>, click <bpt id="4">&lt;strong&gt;</bpt>Connectors<ept id="4">&lt;/strong&gt;</ept>, and then double-click <bpt id="6">&lt;strong&gt;</bpt>SourceAD<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="205" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Configure Directory Partitions<ept id="2">&lt;/strong&gt;</ept>, select the domain you want to configure, and then click <bpt id="4">&lt;strong&gt;</bpt>Containers<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Configure Directory Partitions<ept id="2">&lt;/strong&gt;</ept>, select the domain you want to configure, and then click <bpt id="4">&lt;strong&gt;</bpt>Containers<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="206" xml:space="preserve">
+            <source>When prompted, enter your domain credentials for the on-premises Active Directory forest.<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept> &gt; [AZURE.NOTE]When presented with the credentials dialog box, the account used to import and export to AD DS will be displayed. If you do not know the password to the account you can enter another account to use. The account you use must have read permissions to the domain currently being configured.</source>
+            <target state="new">When prompted, enter your domain credentials for the on-premises Active Directory forest.<bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept> &gt; [AZURE.NOTE]When presented with the credentials dialog box, the account used to import and export to AD DS will be displayed. If you do not know the password to the account you can enter another account to use. The account you use must have read permissions to the domain currently being configured.</target>
+          </trans-unit>
+          <trans-unit id="207" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Select Containers<ept id="2">&lt;/strong&gt;</ept> dialog box, clear the OUs that you don’t want to sync with the cloud directory, and then click <bpt id="4">&lt;strong&gt;</bpt>OK<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Select Containers<ept id="2">&lt;/strong&gt;</ept> dialog box, clear the OUs that you don’t want to sync with the cloud directory, and then click <bpt id="4">&lt;strong&gt;</bpt>OK<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="208" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>OK<ept id="2">&lt;/strong&gt;</ept> on the <bpt id="4">&lt;strong&gt;</bpt>SourceAD Properties<ept id="4">&lt;/strong&gt;</ept> page.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>OK<ept id="2">&lt;/strong&gt;</ept> on the <bpt id="4">&lt;strong&gt;</bpt>SourceAD Properties<ept id="4">&lt;/strong&gt;</ept> page.</target>
+          </trans-unit>
+          <trans-unit id="209" xml:space="preserve">
+            <source>Run a full import and a delta sync by completing the following steps:</source>
+            <target state="new">Run a full import and a delta sync by completing the following steps:</target>
+          </trans-unit>
+          <trans-unit id="210" xml:space="preserve">
+            <source>In the connectors list, select <bpt id="2">&lt;strong&gt;</bpt>SourceAD<ept id="2">&lt;/strong&gt;</ept></source>
+            <target state="new">In the connectors list, select <bpt id="2">&lt;strong&gt;</bpt>SourceAD<ept id="2">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="211" xml:space="preserve">
+            <source>To open the <bpt id="2">&lt;strong&gt;</bpt>Run Connector<ept id="2">&lt;/strong&gt;</ept> dialog, select <bpt id="4">&lt;strong&gt;</bpt>Run<ept id="4">&lt;/strong&gt;</ept> from the <bpt id="6">&lt;strong&gt;</bpt>Actions<ept id="6">&lt;/strong&gt;</ept> menu.</source>
+            <target state="new">To open the <bpt id="2">&lt;strong&gt;</bpt>Run Connector<ept id="2">&lt;/strong&gt;</ept> dialog, select <bpt id="4">&lt;strong&gt;</bpt>Run<ept id="4">&lt;/strong&gt;</ept> from the <bpt id="6">&lt;strong&gt;</bpt>Actions<ept id="6">&lt;/strong&gt;</ept> menu.</target>
+          </trans-unit>
+          <trans-unit id="212" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Run profiles<ept id="2">&lt;/strong&gt;</ept> list, select <bpt id="4">&lt;strong&gt;</bpt>Full Import<ept id="4">&lt;/strong&gt;</ept>, and then wait for the run profile to complete.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Run profiles<ept id="2">&lt;/strong&gt;</ept> list, select <bpt id="4">&lt;strong&gt;</bpt>Full Import<ept id="4">&lt;/strong&gt;</ept>, and then wait for the run profile to complete.</target>
+          </trans-unit>
+          <trans-unit id="213" xml:space="preserve">
+            <source>To open the <bpt id="2">&lt;strong&gt;</bpt>Run Connector<ept id="2">&lt;/strong&gt;</ept> dialog, select <bpt id="4">&lt;strong&gt;</bpt>Run<ept id="4">&lt;/strong&gt;</ept> from the <bpt id="6">&lt;strong&gt;</bpt>Actions<ept id="6">&lt;/strong&gt;</ept> menu.</source>
+            <target state="new">To open the <bpt id="2">&lt;strong&gt;</bpt>Run Connector<ept id="2">&lt;/strong&gt;</ept> dialog, select <bpt id="4">&lt;strong&gt;</bpt>Run<ept id="4">&lt;/strong&gt;</ept> from the <bpt id="6">&lt;strong&gt;</bpt>Actions<ept id="6">&lt;/strong&gt;</ept> menu.</target>
+          </trans-unit>
+          <trans-unit id="214" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Run profiles<ept id="2">&lt;/strong&gt;</ept> list, select <bpt id="4">&lt;strong&gt;</bpt>Delta Synchronization<ept id="4">&lt;/strong&gt;</ept>, and then wait for the run profile to complete.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Run profiles<ept id="2">&lt;/strong&gt;</ept> list, select <bpt id="4">&lt;strong&gt;</bpt>Delta Synchronization<ept id="4">&lt;/strong&gt;</ept>, and then wait for the run profile to complete.</target>
+          </trans-unit>
+          <trans-unit id="215" xml:space="preserve">
+            <source>Configure attribute based filtering</source>
+            <target state="new">Configure attribute based filtering</target>
+          </trans-unit>
+          <trans-unit id="216" xml:space="preserve">
+            <source>There are several ways to configure filtering based on attributes.</source>
+            <target state="new">There are several ways to configure filtering based on attributes.</target>
+          </trans-unit>
+          <trans-unit id="217" xml:space="preserve">
+            <source>Configuration on inbound from AD is recommended since these configuration settings will be kept even after an upgrade to a newer version.</source>
+            <target state="new">Configuration on inbound from AD is recommended since these configuration settings will be kept even after an upgrade to a newer version.</target>
+          </trans-unit>
+          <trans-unit id="218" xml:space="preserve">
+            <source>Configuration on outbound to AAD is supported, but these settings will not be kept after an upgrade to a newer version and should only be used when it is required to look at the combined object in the metaverse to determine filtering.</source>
+            <target state="new">Configuration on outbound to AAD is supported, but these settings will not be kept after an upgrade to a newer version and should only be used when it is required to look at the combined object in the metaverse to determine filtering.</target>
+          </trans-unit>
+          <trans-unit id="219" xml:space="preserve">
+            <source>Inbound filtering</source>
+            <target state="new">Inbound filtering</target>
+          </trans-unit>
+          <trans-unit id="220" xml:space="preserve">
+            <source>Inbound based filtering is leveraging the default configuration where objects going to AAD must have the metaverse attribute cloudFiltered not set to a value and the metaverse attribute sourceObjectType set to either “User” or “Contact”.</source>
+            <target state="new">Inbound based filtering is leveraging the default configuration where objects going to AAD must have the metaverse attribute cloudFiltered not set to a value and the metaverse attribute sourceObjectType set to either “User” or “Contact”.</target>
+          </trans-unit>
+          <trans-unit id="221" xml:space="preserve">
+            <source>The attribute cloudFiltered should be set to True when the object should not be synchronized to Azure AD and kept empty in other cases.</source>
+            <target state="new">The attribute cloudFiltered should be set to True when the object should not be synchronized to Azure AD and kept empty in other cases.</target>
+          </trans-unit>
+          <trans-unit id="222" xml:space="preserve">
+            <source>This method is used when we can look at an object and say that we do not want to synchronize an object (negative filtering).</source>
+            <target state="new">This method is used when we can look at an object and say that we do not want to synchronize an object (negative filtering).</target>
+          </trans-unit>
+          <trans-unit id="223" xml:space="preserve">
+            <source>In the following example, we will filter out all users where extensionAttribute15 has the value NoSync:</source>
+            <target state="new">In the following example, we will filter out all users where extensionAttribute15 has the value NoSync:</target>
+          </trans-unit>
+          <trans-unit id="224" xml:space="preserve">
+            <source>Log on to the computer that is running Azure AD Connect Sync by using an account that is a member of the ADSyncAdmins security group.</source>
+            <target state="new">Log on to the computer that is running Azure AD Connect Sync by using an account that is a member of the ADSyncAdmins security group.</target>
+          </trans-unit>
+          <trans-unit id="225" xml:space="preserve">
+            <source>Open the <bpt id="2">&lt;strong&gt;</bpt>Synchronization Rules Editor<ept id="2">&lt;/strong&gt;</ept> from the <bpt id="4">&lt;strong&gt;</bpt>Start Menu<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Open the <bpt id="2">&lt;strong&gt;</bpt>Synchronization Rules Editor<ept id="2">&lt;/strong&gt;</ept> from the <bpt id="4">&lt;strong&gt;</bpt>Start Menu<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="226" xml:space="preserve">
+            <source>Make sure <bpt id="2">&lt;strong&gt;</bpt>Inbound<ept id="2">&lt;/strong&gt;</ept> is selected and click <bpt id="4">&lt;strong&gt;</bpt>Add New Rule<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Make sure <bpt id="2">&lt;strong&gt;</bpt>Inbound<ept id="2">&lt;/strong&gt;</ept> is selected and click <bpt id="4">&lt;strong&gt;</bpt>Add New Rule<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="227" xml:space="preserve">
+            <source>Give the rule a descriptive name, such as "<bpt id="2">&lt;em&gt;</bpt>In from AD – User DoNotSyncFilter<ept id="2">&lt;/em&gt;</ept>", select the correct forest, <bpt id="4">&lt;strong&gt;</bpt>User<ept id="4">&lt;/strong&gt;</ept> as the <bpt id="6">&lt;strong&gt;</bpt>CS object type<ept id="6">&lt;/strong&gt;</ept>, and <bpt id="8">&lt;strong&gt;</bpt>Person<ept id="8">&lt;/strong&gt;</ept> as the <bpt id="10">&lt;strong&gt;</bpt>MV object type<ept id="10">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Give the rule a descriptive name, such as "<bpt id="2">&lt;em&gt;</bpt>In from AD – User DoNotSyncFilter<ept id="2">&lt;/em&gt;</ept>", select the correct forest, <bpt id="4">&lt;strong&gt;</bpt>User<ept id="4">&lt;/strong&gt;</ept> as the <bpt id="6">&lt;strong&gt;</bpt>CS object type<ept id="6">&lt;/strong&gt;</ept>, and <bpt id="8">&lt;strong&gt;</bpt>Person<ept id="8">&lt;/strong&gt;</ept> as the <bpt id="10">&lt;strong&gt;</bpt>MV object type<ept id="10">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="228" xml:space="preserve">
+            <source>As <bpt id="2">&lt;strong&gt;</bpt>Link Type<ept id="2">&lt;/strong&gt;</ept>, select <bpt id="4">&lt;strong&gt;</bpt>Join<ept id="4">&lt;/strong&gt;</ept> and in precedence type a value currently not used by another Synchronization Rule (e.g.: 50), and then click <bpt id="6">&lt;strong&gt;</bpt>Next<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">As <bpt id="2">&lt;strong&gt;</bpt>Link Type<ept id="2">&lt;/strong&gt;</ept>, select <bpt id="4">&lt;strong&gt;</bpt>Join<ept id="4">&lt;/strong&gt;</ept> and in precedence type a value currently not used by another Synchronization Rule (e.g.: 50), and then click <bpt id="6">&lt;strong&gt;</bpt>Next<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="229" xml:space="preserve">
+            <source>In <bpt id="2">&lt;strong&gt;</bpt>Scoping filter<ept id="2">&lt;/strong&gt;</ept>, click <bpt id="4">&lt;strong&gt;</bpt>Add Group<ept id="4">&lt;/strong&gt;</ept>, click <bpt id="6">&lt;strong&gt;</bpt>Add Clause<ept id="6">&lt;/strong&gt;</ept> and in attribute select <bpt id="8">&lt;strong&gt;</bpt>ExtensionAttribute15<ept id="8">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In <bpt id="2">&lt;strong&gt;</bpt>Scoping filter<ept id="2">&lt;/strong&gt;</ept>, click <bpt id="4">&lt;strong&gt;</bpt>Add Group<ept id="4">&lt;/strong&gt;</ept>, click <bpt id="6">&lt;strong&gt;</bpt>Add Clause<ept id="6">&lt;/strong&gt;</ept> and in attribute select <bpt id="8">&lt;strong&gt;</bpt>ExtensionAttribute15<ept id="8">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="230" xml:space="preserve">
+            <source>Make sure the Operator is set to <bpt id="2">&lt;strong&gt;</bpt>EQUAL<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>type<ept id="4">&lt;/strong&gt;</ept> in the value NoSync in the Value box.</source>
+            <target state="new">Make sure the Operator is set to <bpt id="2">&lt;strong&gt;</bpt>EQUAL<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>type<ept id="4">&lt;/strong&gt;</ept> in the value NoSync in the Value box.</target>
+          </trans-unit>
+          <trans-unit id="231" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Next<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Next<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="232" xml:space="preserve">
+            <source>Leave the <bpt id="2">&lt;strong&gt;</bpt>Join<ept id="2">&lt;/strong&gt;</ept> rules empty, and then click <bpt id="4">&lt;strong&gt;</bpt>Next<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Leave the <bpt id="2">&lt;strong&gt;</bpt>Join<ept id="2">&lt;/strong&gt;</ept> rules empty, and then click <bpt id="4">&lt;strong&gt;</bpt>Next<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="233" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Add Transformation<ept id="2">&lt;/strong&gt;</ept>, select the <bpt id="4">&lt;strong&gt;</bpt>FlowType<ept id="4">&lt;/strong&gt;</ept> to <bpt id="6">&lt;strong&gt;</bpt>Constant<ept id="6">&lt;/strong&gt;</ept>, select the Target Attribute cloudFiltered and in the Source text box, type in True.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Add Transformation<ept id="2">&lt;/strong&gt;</ept>, select the <bpt id="4">&lt;strong&gt;</bpt>FlowType<ept id="4">&lt;/strong&gt;</ept> to <bpt id="6">&lt;strong&gt;</bpt>Constant<ept id="6">&lt;/strong&gt;</ept>, select the Target Attribute cloudFiltered and in the Source text box, type in True.</target>
+          </trans-unit>
+          <trans-unit id="234" xml:space="preserve">
+            <source>Click Add to save the rule.</source>
+            <target state="new">Click Add to save the rule.</target>
+          </trans-unit>
+          <trans-unit id="235" xml:space="preserve">
+            <source>Perform a full sync: on the <bpt id="2">&lt;strong&gt;</bpt>Connectors<ept id="2">&lt;/strong&gt;</ept> tab, right-click <bpt id="4">&lt;strong&gt;</bpt>SourceAD<ept id="4">&lt;/strong&gt;</ept>, click <bpt id="6">&lt;strong&gt;</bpt>Run<ept id="6">&lt;/strong&gt;</ept>, click <bpt id="8">&lt;strong&gt;</bpt>Full Synchronization<ept id="8">&lt;/strong&gt;</ept>, and then click <bpt id="10">&lt;strong&gt;</bpt>OK<ept id="10">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Perform a full sync: on the <bpt id="2">&lt;strong&gt;</bpt>Connectors<ept id="2">&lt;/strong&gt;</ept> tab, right-click <bpt id="4">&lt;strong&gt;</bpt>SourceAD<ept id="4">&lt;/strong&gt;</ept>, click <bpt id="6">&lt;strong&gt;</bpt>Run<ept id="6">&lt;/strong&gt;</ept>, click <bpt id="8">&lt;strong&gt;</bpt>Full Synchronization<ept id="8">&lt;/strong&gt;</ept>, and then click <bpt id="10">&lt;strong&gt;</bpt>OK<ept id="10">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="236" xml:space="preserve">
+            <source>The attribute <bpt id="2">&lt;strong&gt;</bpt>sourceObjectType<ept id="2">&lt;/strong&gt;</ept> will provision an <bpt id="4">&lt;strong&gt;</bpt>User<ept id="4">&lt;/strong&gt;</ept> or <bpt id="6">&lt;strong&gt;</bpt>Contact<ept id="6">&lt;/strong&gt;</ept> to Azure AD if this attribute has the value <bpt id="8">&lt;strong&gt;</bpt>User<ept id="8">&lt;/strong&gt;</ept> or <bpt id="10">&lt;strong&gt;</bpt>Contact<ept id="10">&lt;/strong&gt;</ept> respectively.</source>
+            <target state="new">The attribute <bpt id="2">&lt;strong&gt;</bpt>sourceObjectType<ept id="2">&lt;/strong&gt;</ept> will provision an <bpt id="4">&lt;strong&gt;</bpt>User<ept id="4">&lt;/strong&gt;</ept> or <bpt id="6">&lt;strong&gt;</bpt>Contact<ept id="6">&lt;/strong&gt;</ept> to Azure AD if this attribute has the value <bpt id="8">&lt;strong&gt;</bpt>User<ept id="8">&lt;/strong&gt;</ept> or <bpt id="10">&lt;strong&gt;</bpt>Contact<ept id="10">&lt;/strong&gt;</ept> respectively.</target>
+          </trans-unit>
+          <trans-unit id="237" xml:space="preserve">
+            <source>By creating a Synchronization Rule with a higher precedence than those out of box, you can override the default behavior.</source>
+            <target state="new">By creating a Synchronization Rule with a higher precedence than those out of box, you can override the default behavior.</target>
+          </trans-unit>
+          <trans-unit id="238" xml:space="preserve">
+            <source>This method also gives you an opportunity to express both positive and negative rules.</source>
+            <target state="new">This method also gives you an opportunity to express both positive and negative rules.</target>
+          </trans-unit>
+          <trans-unit id="239" xml:space="preserve">
+            <source>In the following example, you will only synchronize users when the department attribute is “<bpt id="2">&lt;em&gt;</bpt>Sales<ept id="2">&lt;/em&gt;</ept>” or is empty:</source>
+            <target state="new">In the following example, you will only synchronize users when the department attribute is “<bpt id="2">&lt;em&gt;</bpt>Sales<ept id="2">&lt;/em&gt;</ept>” or is empty:</target>
+          </trans-unit>
+          <trans-unit id="240" xml:space="preserve">
+            <source>Log on to the computer that is running Azure AD Connect Sync by using an account that is a member of the ADSyncAdmins security group.</source>
+            <target state="new">Log on to the computer that is running Azure AD Connect Sync by using an account that is a member of the ADSyncAdmins security group.</target>
+          </trans-unit>
+          <trans-unit id="241" xml:space="preserve">
+            <source>Open the <bpt id="2">&lt;strong&gt;</bpt>Synchronization Rules Editor<ept id="2">&lt;/strong&gt;</ept> from the <bpt id="4">&lt;strong&gt;</bpt>Start Menu<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Open the <bpt id="2">&lt;strong&gt;</bpt>Synchronization Rules Editor<ept id="2">&lt;/strong&gt;</ept> from the <bpt id="4">&lt;strong&gt;</bpt>Start Menu<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="242" xml:space="preserve">
+            <source>Make sure <bpt id="2">&lt;strong&gt;</bpt>Inbound<ept id="2">&lt;/strong&gt;</ept> is selected, and then click <bpt id="4">&lt;strong&gt;</bpt>Add New Rule<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Make sure <bpt id="2">&lt;strong&gt;</bpt>Inbound<ept id="2">&lt;/strong&gt;</ept> is selected, and then click <bpt id="4">&lt;strong&gt;</bpt>Add New Rule<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="243" xml:space="preserve">
+            <source>Give the rule a descriptive name (e.g.: "<bpt id="2">&lt;em&gt;</bpt>In from AD – User DoNotSyncFilter<ept id="2">&lt;/em&gt;</ept>"), select the correct forest, <bpt id="4">&lt;strong&gt;</bpt>User<ept id="4">&lt;/strong&gt;</ept> as the <bpt id="6">&lt;strong&gt;</bpt>CS object type<ept id="6">&lt;/strong&gt;</ept>, and <bpt id="8">&lt;strong&gt;</bpt>Person<ept id="8">&lt;/strong&gt;</ept> as the <bpt id="10">&lt;strong&gt;</bpt>MV object type<ept id="10">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Give the rule a descriptive name (e.g.: "<bpt id="2">&lt;em&gt;</bpt>In from AD – User DoNotSyncFilter<ept id="2">&lt;/em&gt;</ept>"), select the correct forest, <bpt id="4">&lt;strong&gt;</bpt>User<ept id="4">&lt;/strong&gt;</ept> as the <bpt id="6">&lt;strong&gt;</bpt>CS object type<ept id="6">&lt;/strong&gt;</ept>, and <bpt id="8">&lt;strong&gt;</bpt>Person<ept id="8">&lt;/strong&gt;</ept> as the <bpt id="10">&lt;strong&gt;</bpt>MV object type<ept id="10">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="244" xml:space="preserve">
+            <source>As <bpt id="2">&lt;strong&gt;</bpt>Link Type<ept id="2">&lt;/strong&gt;</ept>, select <bpt id="4">&lt;strong&gt;</bpt>Join<ept id="4">&lt;/strong&gt;</ept> and in <bpt id="6">&lt;strong&gt;</bpt>precedence type<ept id="6">&lt;/strong&gt;</ept>, a value currently not used by another Synchronization Rule (e.g.: 60).</source>
+            <target state="new">As <bpt id="2">&lt;strong&gt;</bpt>Link Type<ept id="2">&lt;/strong&gt;</ept>, select <bpt id="4">&lt;strong&gt;</bpt>Join<ept id="4">&lt;/strong&gt;</ept> and in <bpt id="6">&lt;strong&gt;</bpt>precedence type<ept id="6">&lt;/strong&gt;</ept>, a value currently not used by another Synchronization Rule (e.g.: 60).</target>
+          </trans-unit>
+          <trans-unit id="245" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Next<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Next<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="246" xml:space="preserve">
+            <source>Leave the <bpt id="2">&lt;strong&gt;</bpt>scoping filter<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>join rules<ept id="4">&lt;/strong&gt;</ept> empty and click <bpt id="6">&lt;strong&gt;</bpt>Next<ept id="6">&lt;/strong&gt;</ept> twice.</source>
+            <target state="new">Leave the <bpt id="2">&lt;strong&gt;</bpt>scoping filter<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>join rules<ept id="4">&lt;/strong&gt;</ept> empty and click <bpt id="6">&lt;strong&gt;</bpt>Next<ept id="6">&lt;/strong&gt;</ept> twice.</target>
+          </trans-unit>
+          <trans-unit id="247" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Add Transformation<ept id="2">&lt;/strong&gt;</ept>, select the <bpt id="4">&lt;strong&gt;</bpt>FlowType<ept id="4">&lt;/strong&gt;</ept> to <bpt id="6">&lt;strong&gt;</bpt>Expression<ept id="6">&lt;/strong&gt;</ept> and select the <bpt id="8">&lt;strong&gt;</bpt>Target Attribute<ept id="8">&lt;/strong&gt;</ept> to <bpt id="10">&lt;strong&gt;</bpt>sourceObjectType<ept id="10">&lt;/strong&gt;</ept>. In the <bpt id="12">&lt;strong&gt;</bpt>Source<ept id="12">&lt;/strong&gt;</ept>, type in the following expression:<bpt id="14">&lt;html&gt;</bpt><ept id="14">&lt;/html&gt;</ept><bpt id="15">&lt;code&gt;</bpt>IIF(IsNullOrEmpty([department]),NULL,IIF([department]&lt;&gt;”Sales”,”DoNotSync”,NULL))<ept id="15">&lt;/code&gt;</ept></source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Add Transformation<ept id="2">&lt;/strong&gt;</ept>, select the <bpt id="4">&lt;strong&gt;</bpt>FlowType<ept id="4">&lt;/strong&gt;</ept> to <bpt id="6">&lt;strong&gt;</bpt>Expression<ept id="6">&lt;/strong&gt;</ept> and select the <bpt id="8">&lt;strong&gt;</bpt>Target Attribute<ept id="8">&lt;/strong&gt;</ept> to <bpt id="10">&lt;strong&gt;</bpt>sourceObjectType<ept id="10">&lt;/strong&gt;</ept>. In the <bpt id="12">&lt;strong&gt;</bpt>Source<ept id="12">&lt;/strong&gt;</ept>, type in the following expression:<bpt id="14">&lt;html&gt;</bpt><ept id="14">&lt;/html&gt;</ept><bpt id="15">&lt;code&gt;</bpt>IIF(IsNullOrEmpty([department]),NULL,IIF([department]&lt;&gt;”Sales”,”DoNotSync”,NULL))<ept id="15">&lt;/code&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="248" xml:space="preserve">
+            <source>Click Add to save the rule.</source>
+            <target state="new">Click Add to save the rule.</target>
+          </trans-unit>
+          <trans-unit id="249" xml:space="preserve">
+            <source>Perform a full sync: on the <bpt id="2">&lt;strong&gt;</bpt>Connectors<ept id="2">&lt;/strong&gt;</ept> tab, right-click <bpt id="4">&lt;strong&gt;</bpt>SourceAD<ept id="4">&lt;/strong&gt;</ept>, click <bpt id="6">&lt;strong&gt;</bpt>Run<ept id="6">&lt;/strong&gt;</ept>, click <bpt id="8">&lt;strong&gt;</bpt>Full Synchronization<ept id="8">&lt;/strong&gt;</ept>, and then click <bpt id="10">&lt;strong&gt;</bpt>OK<ept id="10">&lt;/strong&gt;</ept>. Here is a result how this would look like:<bpt id="12">&lt;html&gt;</bpt><ept id="12">&lt;/html&gt;</ept></source>
+            <target state="new">Perform a full sync: on the <bpt id="2">&lt;strong&gt;</bpt>Connectors<ept id="2">&lt;/strong&gt;</ept> tab, right-click <bpt id="4">&lt;strong&gt;</bpt>SourceAD<ept id="4">&lt;/strong&gt;</ept>, click <bpt id="6">&lt;strong&gt;</bpt>Run<ept id="6">&lt;/strong&gt;</ept>, click <bpt id="8">&lt;strong&gt;</bpt>Full Synchronization<ept id="8">&lt;/strong&gt;</ept>, and then click <bpt id="10">&lt;strong&gt;</bpt>OK<ept id="10">&lt;/strong&gt;</ept>. Here is a result how this would look like:<bpt id="12">&lt;html&gt;</bpt><ept id="12">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="250" xml:space="preserve">
+            <source>Note that we are using a mix of cloudFiltered and sourceObjectType to determine which objects we want to synchronize to AAD.</source>
+            <target state="new">Note that we are using a mix of cloudFiltered and sourceObjectType to determine which objects we want to synchronize to AAD.</target>
+          </trans-unit>
+          <trans-unit id="251" xml:space="preserve">
+            <source>With the use of expressions, you have very powerful filtering options.</source>
+            <target state="new">With the use of expressions, you have very powerful filtering options.</target>
+          </trans-unit>
+          <trans-unit id="252" xml:space="preserve">
+            <source>In the expression above, note that we provided the literal NULL when department is not present and when the department was Sales.</source>
+            <target state="new">In the expression above, note that we provided the literal NULL when department is not present and when the department was Sales.</target>
+          </trans-unit>
+          <trans-unit id="253" xml:space="preserve">
+            <source>This indicates that this attribute did not contribute a value and the out-of-box rules will be evaluated.</source>
+            <target state="new">This indicates that this attribute did not contribute a value and the out-of-box rules will be evaluated.</target>
+          </trans-unit>
+          <trans-unit id="254" xml:space="preserve">
+            <source>We want this so they can determine if it is a <bpt id="2">&lt;strong&gt;</bpt>User<ept id="2">&lt;/strong&gt;</ept> or <bpt id="4">&lt;strong&gt;</bpt>Contact<ept id="4">&lt;/strong&gt;</ept> we should create in Azure AD.</source>
+            <target state="new">We want this so they can determine if it is a <bpt id="2">&lt;strong&gt;</bpt>User<ept id="2">&lt;/strong&gt;</ept> or <bpt id="4">&lt;strong&gt;</bpt>Contact<ept id="4">&lt;/strong&gt;</ept> we should create in Azure AD.</target>
+          </trans-unit>
+          <trans-unit id="255" xml:space="preserve">
+            <source>Outbound based filtering</source>
+            <target state="new">Outbound based filtering</target>
+          </trans-unit>
+          <trans-unit id="256" xml:space="preserve">
+            <source>In some cases it is necessary to do the filtering only after the objects have joined in the metaverse.</source>
+            <target state="new">In some cases it is necessary to do the filtering only after the objects have joined in the metaverse.</target>
+          </trans-unit>
+          <trans-unit id="257" xml:space="preserve">
+            <source>It could for example be required to look at the mail attribute from the resource forest and the userPrincipalName attribute from the account forest to determine if an object should be synchronizedx.</source>
+            <target state="new">It could for example be required to look at the mail attribute from the resource forest and the userPrincipalName attribute from the account forest to determine if an object should be synchronizedx.</target>
+          </trans-unit>
+          <trans-unit id="258" xml:space="preserve">
+            <source>In these cases we will create the filtering on the outbound rule.</source>
+            <target state="new">In these cases we will create the filtering on the outbound rule.</target>
+          </trans-unit>
+          <trans-unit id="259" xml:space="preserve">
+            <source>This method requires a change to the out-of-box Synchronization Rules.</source>
+            <target state="new">This method requires a change to the out-of-box Synchronization Rules.</target>
+          </trans-unit>
+          <trans-unit id="260" xml:space="preserve">
+            <source>Changing the scope of a Synchronization Rule is supported, but the change might not be preserved after upgrading to a newer version of Azure AD Connect.</source>
+            <target state="new">Changing the scope of a Synchronization Rule is supported, but the change might not be preserved after upgrading to a newer version of Azure AD Connect.</target>
+          </trans-unit>
+          <trans-unit id="261" xml:space="preserve">
+            <source>If you use outbound based filtering, make a note of the changes to make and after an upgrade ensure the filtering is still there and reapply if required.</source>
+            <target state="new">If you use outbound based filtering, make a note of the changes to make and after an upgrade ensure the filtering is still there and reapply if required.</target>
+          </trans-unit>
+          <trans-unit id="262" xml:space="preserve">
+            <source>In this example, we will change the filtering so only users where both mail and userPrincipalName ends with @contoso.com will be synchronized:</source>
+            <target state="new">In this example, we will change the filtering so only users where both mail and userPrincipalName ends with @contoso.com will be synchronized:</target>
+          </trans-unit>
+          <trans-unit id="263" xml:space="preserve">
+            <source>Log on to the computer that is running Azure AD Connect Sync by using an account that is a member of the ADSyncAdmins security group.</source>
+            <target state="new">Log on to the computer that is running Azure AD Connect Sync by using an account that is a member of the ADSyncAdmins security group.</target>
+          </trans-unit>
+          <trans-unit id="264" xml:space="preserve">
+            <source>Open Synchronization Rules Editor by finding it in the Start Menu.</source>
+            <target state="new">Open Synchronization Rules Editor by finding it in the Start Menu.</target>
+          </trans-unit>
+          <trans-unit id="265" xml:space="preserve">
+            <source>Under Rule Types click on Outbound.</source>
+            <target state="new">Under Rule Types click on Outbound.</target>
+          </trans-unit>
+          <trans-unit id="266" xml:space="preserve">
+            <source>Find the rule named Out to AAD – User Join.</source>
+            <target state="new">Find the rule named Out to AAD – User Join.</target>
+          </trans-unit>
+          <trans-unit id="267" xml:space="preserve">
+            <source>Click Edit.</source>
+            <target state="new">Click Edit.</target>
+          </trans-unit>
+          <trans-unit id="268" xml:space="preserve">
+            <source>Click Scoping filter on the left hand navigation.</source>
+            <target state="new">Click Scoping filter on the left hand navigation.</target>
+          </trans-unit>
+          <trans-unit id="269" xml:space="preserve">
+            <source>Click Add clause and in Attribute select mail, in Operator select ENDSWITH, and in Value type @contoso.com.</source>
+            <target state="new">Click Add clause and in Attribute select mail, in Operator select ENDSWITH, and in Value type @contoso.com.</target>
+          </trans-unit>
+          <trans-unit id="270" xml:space="preserve">
+            <source>Click Add clause and in Attribiute select userPrincipalName, in Operator select ENDSWITH, and in Value type @contoso.com.</source>
+            <target state="new">Click Add clause and in Attribiute select userPrincipalName, in Operator select ENDSWITH, and in Value type @contoso.com.</target>
+          </trans-unit>
+          <trans-unit id="271" xml:space="preserve">
+            <source>Click Save.</source>
+            <target state="new">Click Save.</target>
+          </trans-unit>
+          <trans-unit id="272" xml:space="preserve">
+            <source>Perform a full sync: on the Connectors tab, right-click SourceAD, click Run, click Full Synchronization, and then click OK.</source>
+            <target state="new">Perform a full sync: on the Connectors tab, right-click SourceAD, click Run, click Full Synchronization, and then click OK.</target>
+          </trans-unit>
+          <trans-unit id="273" xml:space="preserve">
+            <source>Additional Resources</source>
+            <target state="new">Additional Resources</target>
+          </trans-unit>
+          <trans-unit id="274" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Azure AD Connect Sync: Customizing Synchronization options<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Azure AD Connect Sync: Customizing Synchronization options<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="275" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Integrating your on-premises identities with Azure Active Directory<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Integrating your on-premises identities with Azure Active Directory<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>

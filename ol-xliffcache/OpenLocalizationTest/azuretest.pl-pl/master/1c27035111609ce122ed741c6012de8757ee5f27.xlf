@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="pl-pl" original="2/20/2016 8:26:22 PM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1c27035111609ce122ed741c6012de8757ee5f27</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Tutorial: Create a pipeline with Copy Activity using Visual Studio</source>
+            <target state="new">Tutorial: Create a pipeline with Copy Activity using Visual Studio</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>In this tutorial, you will create an Azure Data Factory pipeline with a Copy Activity by using Visual Studio.</source>
+            <target state="new">In this tutorial, you will create an Azure Data Factory pipeline with a Copy Activity by using Visual Studio.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Tutorial: Create and monitor a data factory using Visual Studio</source>
+            <target state="new">Tutorial: Create and monitor a data factory using Visual Studio</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source>In This Tutorial</source>
+            <target state="new">In This Tutorial</target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>In This tutorial you will first create an Azure data factory named  <bpt id="2">&lt;strong&gt;</bpt>ADFTutorialDataFactoryVS<ept id="2">&lt;/strong&gt;</ept> using the Azure Preview Portal and then do the following using Visual Studio 2013:</source>
+            <target state="new">In This tutorial you will first create an Azure data factory named  <bpt id="2">&lt;strong&gt;</bpt>ADFTutorialDataFactoryVS<ept id="2">&lt;/strong&gt;</ept> using the Azure Preview Portal and then do the following using Visual Studio 2013:</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>Create two linked services: <bpt id="2">&lt;strong&gt;</bpt>AzureStorageLinkedService1<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>AzureSqlinkedService1<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Create two linked services: <bpt id="2">&lt;strong&gt;</bpt>AzureStorageLinkedService1<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>AzureSqlinkedService1<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>The AzureStorageLinkedService1 links an Azure storage and AzureSqlLinkedService1 links an Azure SQL database to the data factory: <bpt id="2">&lt;strong&gt;</bpt>ADFTutorialDataFactoryVS<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">The AzureStorageLinkedService1 links an Azure storage and AzureSqlLinkedService1 links an Azure SQL database to the data factory: <bpt id="2">&lt;strong&gt;</bpt>ADFTutorialDataFactoryVS<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>The input data for the pipeline resides in a blob container in the Azure blob storage and output data will be stored in a table in the Azure SQL database.</source>
+            <target state="new">The input data for the pipeline resides in a blob container in the Azure blob storage and output data will be stored in a table in the Azure SQL database.</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source>Therefore, you add these two data stores as linked services to the data factory.</source>
+            <target state="new">Therefore, you add these two data stores as linked services to the data factory.</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source>Create two data factory tables: <bpt id="2">&lt;strong&gt;</bpt>EmpTableFromBlob<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>EmpSQLTable<ept id="4">&lt;/strong&gt;</ept>, which represent the input/output data that is stored in the data stores.</source>
+            <target state="new">Create two data factory tables: <bpt id="2">&lt;strong&gt;</bpt>EmpTableFromBlob<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>EmpSQLTable<ept id="4">&lt;/strong&gt;</ept>, which represent the input/output data that is stored in the data stores.</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>For the EmpTableFromBlob, you will specify the blob container that contains a blob with the source data and for the EmpSQLTable, you will specify the SQL table that will store the output data.</source>
+            <target state="new">For the EmpTableFromBlob, you will specify the blob container that contains a blob with the source data and for the EmpSQLTable, you will specify the SQL table that will store the output data.</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source>You will also specify other properties such as structure of the data, availability of the data, etc...</source>
+            <target state="new">You will also specify other properties such as structure of the data, availability of the data, etc...</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>Create a pipeline named <bpt id="2">&lt;strong&gt;</bpt>ADFTutorialPipeline<ept id="2">&lt;/strong&gt;</ept> in the ADFTutorialDataFactoryVS.</source>
+            <target state="new">Create a pipeline named <bpt id="2">&lt;strong&gt;</bpt>ADFTutorialPipeline<ept id="2">&lt;/strong&gt;</ept> in the ADFTutorialDataFactoryVS.</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source>The pipeline will have a <bpt id="2">&lt;strong&gt;</bpt>Copy Activity<ept id="2">&lt;/strong&gt;</ept> that copies input data from the Azure blob to the output Azure SQL table</source>
+            <target state="new">The pipeline will have a <bpt id="2">&lt;strong&gt;</bpt>Copy Activity<ept id="2">&lt;/strong&gt;</ept> that copies input data from the Azure blob to the output Azure SQL table</target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Create an Azure Data Factory</source>
+            <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Create an Azure Data Factory</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source>In this step, you use the Azure Preview Portal to create an Azure data factory named <bpt id="2">&lt;strong&gt;</bpt>ADFTutorialDataFactoryVS<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In this step, you use the Azure Preview Portal to create an Azure data factory named <bpt id="2">&lt;strong&gt;</bpt>ADFTutorialDataFactoryVS<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>After logging into the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Preview Portal<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, click <bpt id="4">&lt;strong&gt;</bpt>NEW<ept id="4">&lt;/strong&gt;</ept> from the bottom-left corner, select <bpt id="6">&lt;strong&gt;</bpt>Data analytics<ept id="6">&lt;/strong&gt;</ept> in the <bpt id="8">&lt;strong&gt;</bpt>Create<ept id="8">&lt;/strong&gt;</ept> blade, and click <bpt id="10">&lt;strong&gt;</bpt>Data Factory<ept id="10">&lt;/strong&gt;</ept> in the <bpt id="12">&lt;strong&gt;</bpt>Data analytics<ept id="12">&lt;/strong&gt;</ept> blade.</source>
+            <target state="new">After logging into the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Preview Portal<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, click <bpt id="4">&lt;strong&gt;</bpt>NEW<ept id="4">&lt;/strong&gt;</ept> from the bottom-left corner, select <bpt id="6">&lt;strong&gt;</bpt>Data analytics<ept id="6">&lt;/strong&gt;</ept> in the <bpt id="8">&lt;strong&gt;</bpt>Create<ept id="8">&lt;/strong&gt;</ept> blade, and click <bpt id="10">&lt;strong&gt;</bpt>Data Factory<ept id="10">&lt;/strong&gt;</ept> in the <bpt id="12">&lt;strong&gt;</bpt>Data analytics<ept id="12">&lt;/strong&gt;</ept> blade.</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>New-&gt;DataFactory<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>New-&gt;DataFactory<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>New data factory<ept id="2">&lt;/strong&gt;</ept> blade:</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>New data factory<ept id="2">&lt;/strong&gt;</ept> blade:</target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source>Enter <bpt id="2">&lt;strong&gt;</bpt>ADFTutorialDataFactoryVS<ept id="2">&lt;/strong&gt;</ept> for the <bpt id="4">&lt;strong&gt;</bpt>name<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Enter <bpt id="2">&lt;strong&gt;</bpt>ADFTutorialDataFactoryVS<ept id="2">&lt;/strong&gt;</ept> for the <bpt id="4">&lt;strong&gt;</bpt>name<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>New data factory blade<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>New data factory blade<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>RESOURCE GROUP NAME<ept id="2">&lt;/strong&gt;</ept> and do the following:</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>RESOURCE GROUP NAME<ept id="2">&lt;/strong&gt;</ept> and do the following:</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Create a new resource group<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Create a new resource group<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Create resource group<ept id="2">&lt;/strong&gt;</ept> blade, enter <bpt id="4">&lt;strong&gt;</bpt>ADFTutorialResourceGroup<ept id="4">&lt;/strong&gt;</ept> for the <bpt id="6">&lt;strong&gt;</bpt>name<ept id="6">&lt;/strong&gt;</ept> of the resource group, and click <bpt id="8">&lt;strong&gt;</bpt>OK<ept id="8">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Create resource group<ept id="2">&lt;/strong&gt;</ept> blade, enter <bpt id="4">&lt;strong&gt;</bpt>ADFTutorialResourceGroup<ept id="4">&lt;/strong&gt;</ept> for the <bpt id="6">&lt;strong&gt;</bpt>name<ept id="6">&lt;/strong&gt;</ept> of the resource group, and click <bpt id="8">&lt;strong&gt;</bpt>OK<ept id="8">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Create Resource Group<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Create Resource Group<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>Some of the steps in this tutorial assume that you use the name: <bpt id="2">&lt;strong&gt;</bpt>ADFTutorialResourceGroup<ept id="2">&lt;/strong&gt;</ept> for the resource group.</source>
+            <target state="new">Some of the steps in this tutorial assume that you use the name: <bpt id="2">&lt;strong&gt;</bpt>ADFTutorialResourceGroup<ept id="2">&lt;/strong&gt;</ept> for the resource group.</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source>To learn about resource groups, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Using resource groups to manage your Azure resources<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">To learn about resource groups, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Using resource groups to manage your Azure resources<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>New data factory<ept id="2">&lt;/strong&gt;</ept> blade, notice that <bpt id="4">&lt;strong&gt;</bpt>Add to Startboard<ept id="4">&lt;/strong&gt;</ept> is selected.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>New data factory<ept id="2">&lt;/strong&gt;</ept> blade, notice that <bpt id="4">&lt;strong&gt;</bpt>Add to Startboard<ept id="4">&lt;/strong&gt;</ept> is selected.</target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Create<ept id="2">&lt;/strong&gt;</ept> in the <bpt id="4">&lt;strong&gt;</bpt>New data factory<ept id="4">&lt;/strong&gt;</ept> blade.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Create<ept id="2">&lt;/strong&gt;</ept> in the <bpt id="4">&lt;strong&gt;</bpt>New data factory<ept id="4">&lt;/strong&gt;</ept> blade.</target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source>The name of the Azure data factory must be globally unique.</source>
+            <target state="new">The name of the Azure data factory must be globally unique.</target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source>If you receive the error: <bpt id="2">&lt;strong&gt;</bpt>Data factory name “ADFTutorialDataFactoryVS” is not available<ept id="2">&lt;/strong&gt;</ept>, change the name of the data factory (for example, yournameADFTutorialDataFactoryVS) and try creating again.</source>
+            <target state="new">If you receive the error: <bpt id="2">&lt;strong&gt;</bpt>Data factory name “ADFTutorialDataFactoryVS” is not available<ept id="2">&lt;/strong&gt;</ept>, change the name of the data factory (for example, yournameADFTutorialDataFactoryVS) and try creating again.</target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source>Use this name in place of ADFTutorialFactory while performing remaining steps in this tutorial.</source>
+            <target state="new">Use this name in place of ADFTutorialFactory while performing remaining steps in this tutorial.</target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source>See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Data Factory - Naming Rules[data-factory-naming-rules]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> topic for naming rules for Data Factory artifacts.</source>
+            <target state="new">See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Data Factory - Naming Rules[data-factory-naming-rules]<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> topic for naming rules for Data Factory artifacts.</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Data Factory name not available<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Data Factory name not available<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>NOTIFICATIONS<ept id="2">&lt;/strong&gt;</ept> hub on the left and look for notifications from the creation process.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>NOTIFICATIONS<ept id="2">&lt;/strong&gt;</ept> hub on the left and look for notifications from the creation process.</target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>X<ept id="2">&lt;/strong&gt;</ept> to close the <bpt id="4">&lt;strong&gt;</bpt>NOTIFICATIONS<ept id="4">&lt;/strong&gt;</ept> blade if it is open.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>X<ept id="2">&lt;/strong&gt;</ept> to close the <bpt id="4">&lt;strong&gt;</bpt>NOTIFICATIONS<ept id="4">&lt;/strong&gt;</ept> blade if it is open.</target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source>After the creation is complete, you will see the <bpt id="2">&lt;strong&gt;</bpt>DATA FACTORY<ept id="2">&lt;/strong&gt;</ept> blade as shown below.</source>
+            <target state="new">After the creation is complete, you will see the <bpt id="2">&lt;strong&gt;</bpt>DATA FACTORY<ept id="2">&lt;/strong&gt;</ept> blade as shown below.</target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Data factory home page<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Data factory home page<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source>Create and deploy Data Factory entities using Visual Studio</source>
+            <target state="new">Create and deploy Data Factory entities using Visual Studio</target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source>Pre-requisites</source>
+            <target state="new">Pre-requisites</target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source>You must have the following installed on your computer:</source>
+            <target state="new">You must have the following installed on your computer:</target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source>Visual Studio 2013</source>
+            <target state="new">Visual Studio 2013</target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source>Download Azure SDK for Visual Studio 2013.</source>
+            <target state="new">Download Azure SDK for Visual Studio 2013.</target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source>Navigate to <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Download Page<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> and click <bpt id="4">&lt;strong&gt;</bpt>VS 2013 install<ept id="4">&lt;/strong&gt;</ept> in the <bpt id="6">&lt;strong&gt;</bpt>.NET<ept id="6">&lt;/strong&gt;</ept> section.</source>
+            <target state="new">Navigate to <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Download Page<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> and click <bpt id="4">&lt;strong&gt;</bpt>VS 2013 install<ept id="4">&lt;/strong&gt;</ept> in the <bpt id="6">&lt;strong&gt;</bpt>.NET<ept id="6">&lt;/strong&gt;</ept> section.</target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source>Walkthrough</source>
+            <target state="new">Walkthrough</target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source>Create the Visual Studio project</source>
+            <target state="new">Create the Visual Studio project</target>
+          </trans-unit>
+          <trans-unit id="147" xml:space="preserve">
+            <source>Launch <bpt id="2">&lt;strong&gt;</bpt>Visual Studio 2013<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Launch <bpt id="2">&lt;strong&gt;</bpt>Visual Studio 2013<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="148" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>File<ept id="2">&lt;/strong&gt;</ept>, point to <bpt id="4">&lt;strong&gt;</bpt>New<ept id="4">&lt;/strong&gt;</ept>, and click <bpt id="6">&lt;strong&gt;</bpt>Project<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>File<ept id="2">&lt;/strong&gt;</ept>, point to <bpt id="4">&lt;strong&gt;</bpt>New<ept id="4">&lt;/strong&gt;</ept>, and click <bpt id="6">&lt;strong&gt;</bpt>Project<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="149" xml:space="preserve">
+            <source>You should see the <bpt id="2">&lt;strong&gt;</bpt>New Project<ept id="2">&lt;/strong&gt;</ept> dialog box.</source>
+            <target state="new">You should see the <bpt id="2">&lt;strong&gt;</bpt>New Project<ept id="2">&lt;/strong&gt;</ept> dialog box.</target>
+          </trans-unit>
+          <trans-unit id="150" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>New Project<ept id="2">&lt;/strong&gt;</ept> dialog, select the <bpt id="4">&lt;strong&gt;</bpt>DataFactory<ept id="4">&lt;/strong&gt;</ept> template, and click <bpt id="6">&lt;strong&gt;</bpt>Empty Data Factory Project<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>New Project<ept id="2">&lt;/strong&gt;</ept> dialog, select the <bpt id="4">&lt;strong&gt;</bpt>DataFactory<ept id="4">&lt;/strong&gt;</ept> template, and click <bpt id="6">&lt;strong&gt;</bpt>Empty Data Factory Project<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="151" xml:space="preserve">
+            <source>If you don't see the DataFactory template, close Visual Studio, install Azure SDK for Visual Studio 2013, and reopen Visual Studio.</source>
+            <target state="new">If you don't see the DataFactory template, close Visual Studio, install Azure SDK for Visual Studio 2013, and reopen Visual Studio.</target>
+          </trans-unit>
+          <trans-unit id="152" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>New project dialog box<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>New project dialog box<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="153" xml:space="preserve">
+            <source>Enter a <bpt id="2">&lt;strong&gt;</bpt>name<ept id="2">&lt;/strong&gt;</ept> for the project, <bpt id="4">&lt;strong&gt;</bpt>location<ept id="4">&lt;/strong&gt;</ept>, and a name for the <bpt id="6">&lt;strong&gt;</bpt>solution<ept id="6">&lt;/strong&gt;</ept>, and click <bpt id="8">&lt;strong&gt;</bpt>OK<ept id="8">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Enter a <bpt id="2">&lt;strong&gt;</bpt>name<ept id="2">&lt;/strong&gt;</ept> for the project, <bpt id="4">&lt;strong&gt;</bpt>location<ept id="4">&lt;/strong&gt;</ept>, and a name for the <bpt id="6">&lt;strong&gt;</bpt>solution<ept id="6">&lt;/strong&gt;</ept>, and click <bpt id="8">&lt;strong&gt;</bpt>OK<ept id="8">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="154" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Solution Explorer<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Solution Explorer<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="155" xml:space="preserve">
+            <source>Create linked services</source>
+            <target state="new">Create linked services</target>
+          </trans-unit>
+          <trans-unit id="156" xml:space="preserve">
+            <source>Linked services link data stores or compute services to an Azure data factory.</source>
+            <target state="new">Linked services link data stores or compute services to an Azure data factory.</target>
+          </trans-unit>
+          <trans-unit id="157" xml:space="preserve">
+            <source>A data store can be an Azure Storage, Azure SQL Database or an on-premises SQL Server database.</source>
+            <target state="new">A data store can be an Azure Storage, Azure SQL Database or an on-premises SQL Server database.</target>
+          </trans-unit>
+          <trans-unit id="158" xml:space="preserve">
+            <source>In this step, you will create two linked services: <bpt id="2">&lt;strong&gt;</bpt>AzureStorageLinkedService1<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>AzureSqlLinkedService1<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In this step, you will create two linked services: <bpt id="2">&lt;strong&gt;</bpt>AzureStorageLinkedService1<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>AzureSqlLinkedService1<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="159" xml:space="preserve">
+            <source>AzureStorageLinkedService1 linked service links an Azure Storage Account and AzureSqlLinkedService links an Azure SQL database to the data factory: <bpt id="2">&lt;strong&gt;</bpt>ADFTutorialDataFactory<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">AzureStorageLinkedService1 linked service links an Azure Storage Account and AzureSqlLinkedService links an Azure SQL database to the data factory: <bpt id="2">&lt;strong&gt;</bpt>ADFTutorialDataFactory<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
+            <source>Create the Azure Storage linked service</source>
+            <target state="new">Create the Azure Storage linked service</target>
+          </trans-unit>
+          <trans-unit id="161" xml:space="preserve">
+            <source>Right-click <bpt id="2">&lt;strong&gt;</bpt>Linked Services<ept id="2">&lt;/strong&gt;</ept> in the solution explorer, point to <bpt id="4">&lt;strong&gt;</bpt>Add<ept id="4">&lt;/strong&gt;</ept>, and click <bpt id="6">&lt;strong&gt;</bpt>New Item<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Right-click <bpt id="2">&lt;strong&gt;</bpt>Linked Services<ept id="2">&lt;/strong&gt;</ept> in the solution explorer, point to <bpt id="4">&lt;strong&gt;</bpt>Add<ept id="4">&lt;/strong&gt;</ept>, and click <bpt id="6">&lt;strong&gt;</bpt>New Item<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="162" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Add New Item<ept id="2">&lt;/strong&gt;</ept> dialog box, select <bpt id="4">&lt;strong&gt;</bpt>Azure Storage Linked Service<ept id="4">&lt;/strong&gt;</ept> from the list, and click <bpt id="6">&lt;strong&gt;</bpt>Add<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Add New Item<ept id="2">&lt;/strong&gt;</ept> dialog box, select <bpt id="4">&lt;strong&gt;</bpt>Azure Storage Linked Service<ept id="4">&lt;/strong&gt;</ept> from the list, and click <bpt id="6">&lt;strong&gt;</bpt>Add<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="163" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>New Linked Service<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>New Linked Service<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="164" xml:space="preserve">
+            <source>Replace <bpt id="2">&lt;strong&gt;</bpt>accountname<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>accountkey<ept id="4">&lt;/strong&gt;</ept> with the name of your Azure storage account and its key.</source>
+            <target state="new">Replace <bpt id="2">&lt;strong&gt;</bpt>accountname<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>accountkey<ept id="4">&lt;/strong&gt;</ept> with the name of your Azure storage account and its key.</target>
+          </trans-unit>
+          <trans-unit id="165" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Azure Storage Linked Service<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Azure Storage Linked Service<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="166" xml:space="preserve">
+            <source>Save the <bpt id="2">&lt;strong&gt;</bpt>AzureStorageLinkedService1.json<ept id="2">&lt;/strong&gt;</ept> file.</source>
+            <target state="new">Save the <bpt id="2">&lt;strong&gt;</bpt>AzureStorageLinkedService1.json<ept id="2">&lt;/strong&gt;</ept> file.</target>
+          </trans-unit>
+          <trans-unit id="167" xml:space="preserve">
+            <source>Create the Azure SQL linked service</source>
+            <target state="new">Create the Azure SQL linked service</target>
+          </trans-unit>
+          <trans-unit id="168" xml:space="preserve">
+            <source>Right-click on <bpt id="2">&lt;strong&gt;</bpt>Linked Services<ept id="2">&lt;/strong&gt;</ept> node in the <bpt id="4">&lt;strong&gt;</bpt>Solution Explorer<ept id="4">&lt;/strong&gt;</ept> again, point to <bpt id="6">&lt;strong&gt;</bpt>Add<ept id="6">&lt;/strong&gt;</ept>, and click <bpt id="8">&lt;strong&gt;</bpt>New Item<ept id="8">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Right-click on <bpt id="2">&lt;strong&gt;</bpt>Linked Services<ept id="2">&lt;/strong&gt;</ept> node in the <bpt id="4">&lt;strong&gt;</bpt>Solution Explorer<ept id="4">&lt;/strong&gt;</ept> again, point to <bpt id="6">&lt;strong&gt;</bpt>Add<ept id="6">&lt;/strong&gt;</ept>, and click <bpt id="8">&lt;strong&gt;</bpt>New Item<ept id="8">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="169" xml:space="preserve">
+            <source>This time, select <bpt id="2">&lt;strong&gt;</bpt>Azure SQL Linked Service<ept id="2">&lt;/strong&gt;</ept>, and click <bpt id="4">&lt;strong&gt;</bpt>Add<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">This time, select <bpt id="2">&lt;strong&gt;</bpt>Azure SQL Linked Service<ept id="2">&lt;/strong&gt;</ept>, and click <bpt id="4">&lt;strong&gt;</bpt>Add<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="170" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>AzureSqlLinkedService1.json file<ept id="2">&lt;/strong&gt;</ept>, replace <bpt id="4">&lt;strong&gt;</bpt>servername<ept id="4">&lt;/strong&gt;</ept>, <bpt id="6">&lt;strong&gt;</bpt>databasename<ept id="6">&lt;/strong&gt;</ept>, <bpt id="8">&lt;strong&gt;</bpt>username@servername<ept id="8">&lt;/strong&gt;</ept>, and <bpt id="10">&lt;strong&gt;</bpt>password<ept id="10">&lt;/strong&gt;</ept> with names of your Azure SQL server, database, user account, and  password.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>AzureSqlLinkedService1.json file<ept id="2">&lt;/strong&gt;</ept>, replace <bpt id="4">&lt;strong&gt;</bpt>servername<ept id="4">&lt;/strong&gt;</ept>, <bpt id="6">&lt;strong&gt;</bpt>databasename<ept id="6">&lt;/strong&gt;</ept>, <bpt id="8">&lt;strong&gt;</bpt>username@servername<ept id="8">&lt;/strong&gt;</ept>, and <bpt id="10">&lt;strong&gt;</bpt>password<ept id="10">&lt;/strong&gt;</ept> with names of your Azure SQL server, database, user account, and  password.</target>
+          </trans-unit>
+          <trans-unit id="171" xml:space="preserve">
+            <source>Save the <bpt id="2">&lt;strong&gt;</bpt>AzureSqlLinkedService1.json<ept id="2">&lt;/strong&gt;</ept> file.</source>
+            <target state="new">Save the <bpt id="2">&lt;strong&gt;</bpt>AzureSqlLinkedService1.json<ept id="2">&lt;/strong&gt;</ept> file.</target>
+          </trans-unit>
+          <trans-unit id="172" xml:space="preserve">
+            <source>Create input and output tables</source>
+            <target state="new">Create input and output tables</target>
+          </trans-unit>
+          <trans-unit id="173" xml:space="preserve">
+            <source>In the previous step, you created linked services <bpt id="2">&lt;strong&gt;</bpt>AzureStorageLinkedService1<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>AzureSqlLinkedService1<ept id="4">&lt;/strong&gt;</ept> to link an Azure Storage account and Azure SQL database to the data factory: <bpt id="6">&lt;strong&gt;</bpt>ADFTutorialDataFactory<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the previous step, you created linked services <bpt id="2">&lt;strong&gt;</bpt>AzureStorageLinkedService1<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>AzureSqlLinkedService1<ept id="4">&lt;/strong&gt;</ept> to link an Azure Storage account and Azure SQL database to the data factory: <bpt id="6">&lt;strong&gt;</bpt>ADFTutorialDataFactory<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="174" xml:space="preserve">
+            <source>In this step, you will define two data factory tables -- <bpt id="2">&lt;strong&gt;</bpt>EmpTableFromBlob<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>EmpSQLTable<ept id="4">&lt;/strong&gt;</ept> -- that represent the input/output data that is stored in the data stores referred by AzureStorageLinkedService1 and AzureSqlLinkedService1 respectively.</source>
+            <target state="new">In this step, you will define two data factory tables -- <bpt id="2">&lt;strong&gt;</bpt>EmpTableFromBlob<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>EmpSQLTable<ept id="4">&lt;/strong&gt;</ept> -- that represent the input/output data that is stored in the data stores referred by AzureStorageLinkedService1 and AzureSqlLinkedService1 respectively.</target>
+          </trans-unit>
+          <trans-unit id="175" xml:space="preserve">
+            <source>For  EmpTableFromBlob, you will specify the blob container that contains a blob with the source data and for EmpSQLTable, you will specify the SQL table that will store the output data.</source>
+            <target state="new">For  EmpTableFromBlob, you will specify the blob container that contains a blob with the source data and for EmpSQLTable, you will specify the SQL table that will store the output data.</target>
+          </trans-unit>
+          <trans-unit id="176" xml:space="preserve">
+            <source>Create the input table</source>
+            <target state="new">Create the input table</target>
+          </trans-unit>
+          <trans-unit id="177" xml:space="preserve">
+            <source>Right-click <bpt id="2">&lt;strong&gt;</bpt>Tables<ept id="2">&lt;/strong&gt;</ept> in the <bpt id="4">&lt;strong&gt;</bpt>Solution Explorer<ept id="4">&lt;/strong&gt;</ept>, point to <bpt id="6">&lt;strong&gt;</bpt>Add<ept id="6">&lt;/strong&gt;</ept>, and click <bpt id="8">&lt;strong&gt;</bpt>New Item<ept id="8">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Right-click <bpt id="2">&lt;strong&gt;</bpt>Tables<ept id="2">&lt;/strong&gt;</ept> in the <bpt id="4">&lt;strong&gt;</bpt>Solution Explorer<ept id="4">&lt;/strong&gt;</ept>, point to <bpt id="6">&lt;strong&gt;</bpt>Add<ept id="6">&lt;/strong&gt;</ept>, and click <bpt id="8">&lt;strong&gt;</bpt>New Item<ept id="8">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="178" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Add New Item<ept id="2">&lt;/strong&gt;</ept> dialog box, select <bpt id="4">&lt;strong&gt;</bpt>Azure Blob<ept id="4">&lt;/strong&gt;</ept>, and click <bpt id="6">&lt;strong&gt;</bpt>Add<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Add New Item<ept id="2">&lt;/strong&gt;</ept> dialog box, select <bpt id="4">&lt;strong&gt;</bpt>Azure Blob<ept id="4">&lt;/strong&gt;</ept>, and click <bpt id="6">&lt;strong&gt;</bpt>Add<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="179" xml:space="preserve">
+            <source>Replace the JSON text with the following text and save the <bpt id="2">&lt;strong&gt;</bpt>AzureBlobLocation1.json<ept id="2">&lt;/strong&gt;</ept> file.</source>
+            <target state="new">Replace the JSON text with the following text and save the <bpt id="2">&lt;strong&gt;</bpt>AzureBlobLocation1.json<ept id="2">&lt;/strong&gt;</ept> file.</target>
+          </trans-unit>
+          <trans-unit id="180" xml:space="preserve">
+            <source>Create the output table</source>
+            <target state="new">Create the output table</target>
+          </trans-unit>
+          <trans-unit id="181" xml:space="preserve">
+            <source>Right-click <bpt id="2">&lt;strong&gt;</bpt>Tables<ept id="2">&lt;/strong&gt;</ept> in the <bpt id="4">&lt;strong&gt;</bpt>Solution Explorer<ept id="4">&lt;/strong&gt;</ept> again, point to <bpt id="6">&lt;strong&gt;</bpt>Add<ept id="6">&lt;/strong&gt;</ept>, and click <bpt id="8">&lt;strong&gt;</bpt>New Item<ept id="8">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Right-click <bpt id="2">&lt;strong&gt;</bpt>Tables<ept id="2">&lt;/strong&gt;</ept> in the <bpt id="4">&lt;strong&gt;</bpt>Solution Explorer<ept id="4">&lt;/strong&gt;</ept> again, point to <bpt id="6">&lt;strong&gt;</bpt>Add<ept id="6">&lt;/strong&gt;</ept>, and click <bpt id="8">&lt;strong&gt;</bpt>New Item<ept id="8">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="182" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Add New Item<ept id="2">&lt;/strong&gt;</ept> dialog box, select <bpt id="4">&lt;strong&gt;</bpt>Azure SQL<ept id="4">&lt;/strong&gt;</ept>, and click <bpt id="6">&lt;strong&gt;</bpt>Add<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Add New Item<ept id="2">&lt;/strong&gt;</ept> dialog box, select <bpt id="4">&lt;strong&gt;</bpt>Azure SQL<ept id="4">&lt;/strong&gt;</ept>, and click <bpt id="6">&lt;strong&gt;</bpt>Add<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="183" xml:space="preserve">
+            <source>Replace the JSON text with the following JSON and save the <bpt id="2">&lt;strong&gt;</bpt>AzureSqlTableLocation1.json<ept id="2">&lt;/strong&gt;</ept> file.</source>
+            <target state="new">Replace the JSON text with the following JSON and save the <bpt id="2">&lt;strong&gt;</bpt>AzureSqlTableLocation1.json<ept id="2">&lt;/strong&gt;</ept> file.</target>
+          </trans-unit>
+          <trans-unit id="184" xml:space="preserve">
+            <source>Create the pipeline</source>
+            <target state="new">Create the pipeline</target>
+          </trans-unit>
+          <trans-unit id="185" xml:space="preserve">
+            <source>You have created input/output linked services and tables so far.</source>
+            <target state="new">You have created input/output linked services and tables so far.</target>
+          </trans-unit>
+          <trans-unit id="186" xml:space="preserve">
+            <source>Now, you will create a pipeline with a <bpt id="2">&lt;strong&gt;</bpt>Copy Activity<ept id="2">&lt;/strong&gt;</ept> to copy data from the Azure blob to Azure SQL database.</source>
+            <target state="new">Now, you will create a pipeline with a <bpt id="2">&lt;strong&gt;</bpt>Copy Activity<ept id="2">&lt;/strong&gt;</ept> to copy data from the Azure blob to Azure SQL database.</target>
+          </trans-unit>
+          <trans-unit id="187" xml:space="preserve">
+            <source>Right-click <bpt id="2">&lt;strong&gt;</bpt>Pipelines<ept id="2">&lt;/strong&gt;</ept> in the <bpt id="4">&lt;strong&gt;</bpt>Solution Explorer<ept id="4">&lt;/strong&gt;</ept>, point to <bpt id="6">&lt;strong&gt;</bpt>Add<ept id="6">&lt;/strong&gt;</ept>, and click <bpt id="8">&lt;strong&gt;</bpt>New Item<ept id="8">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Right-click <bpt id="2">&lt;strong&gt;</bpt>Pipelines<ept id="2">&lt;/strong&gt;</ept> in the <bpt id="4">&lt;strong&gt;</bpt>Solution Explorer<ept id="4">&lt;/strong&gt;</ept>, point to <bpt id="6">&lt;strong&gt;</bpt>Add<ept id="6">&lt;/strong&gt;</ept>, and click <bpt id="8">&lt;strong&gt;</bpt>New Item<ept id="8">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="188" xml:space="preserve">
+            <source>Select <bpt id="2">&lt;strong&gt;</bpt>Copy Data Pipeline<ept id="2">&lt;/strong&gt;</ept> in the <bpt id="4">&lt;strong&gt;</bpt>Add New Item<ept id="4">&lt;/strong&gt;</ept> dialog box and click <bpt id="6">&lt;strong&gt;</bpt>Add<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Select <bpt id="2">&lt;strong&gt;</bpt>Copy Data Pipeline<ept id="2">&lt;/strong&gt;</ept> in the <bpt id="4">&lt;strong&gt;</bpt>Add New Item<ept id="4">&lt;/strong&gt;</ept> dialog box and click <bpt id="6">&lt;strong&gt;</bpt>Add<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="189" xml:space="preserve">
+            <source>Replace the JSON with the following JSON and save the <bpt id="2">&lt;strong&gt;</bpt>CopyActivity1.json<ept id="2">&lt;/strong&gt;</ept> file..</source>
+            <target state="new">Replace the JSON with the following JSON and save the <bpt id="2">&lt;strong&gt;</bpt>CopyActivity1.json<ept id="2">&lt;/strong&gt;</ept> file..</target>
+          </trans-unit>
+          <trans-unit id="190" xml:space="preserve">
+            <source>Publish/deploy Data Factory entities</source>
+            <target state="new">Publish/deploy Data Factory entities</target>
+          </trans-unit>
+          <trans-unit id="191" xml:space="preserve">
+            <source>In the toolbar area, right-click and select <bpt id="2">&lt;strong&gt;</bpt>Data Factory<ept id="2">&lt;/strong&gt;</ept> to enabled the Data Factory toolbar if it is not already enabled.</source>
+            <target state="new">In the toolbar area, right-click and select <bpt id="2">&lt;strong&gt;</bpt>Data Factory<ept id="2">&lt;/strong&gt;</ept> to enabled the Data Factory toolbar if it is not already enabled.</target>
+          </trans-unit>
+          <trans-unit id="192" xml:space="preserve">
+            <source>In the <bpt id="2">&lt;strong&gt;</bpt>Data Factory toolbar<ept id="2">&lt;/strong&gt;</ept>, click the <bpt id="4">&lt;strong&gt;</bpt>drop-down box<ept id="4">&lt;/strong&gt;</ept> to see all the data factories in your Azure subscription.</source>
+            <target state="new">In the <bpt id="2">&lt;strong&gt;</bpt>Data Factory toolbar<ept id="2">&lt;/strong&gt;</ept>, click the <bpt id="4">&lt;strong&gt;</bpt>drop-down box<ept id="4">&lt;/strong&gt;</ept> to see all the data factories in your Azure subscription.</target>
+          </trans-unit>
+          <trans-unit id="193" xml:space="preserve">
+            <source>If you see the <bpt id="2">&lt;strong&gt;</bpt>Sign-in to Visual Studio<ept id="2">&lt;/strong&gt;</ept> dialog box:</source>
+            <target state="new">If you see the <bpt id="2">&lt;strong&gt;</bpt>Sign-in to Visual Studio<ept id="2">&lt;/strong&gt;</ept> dialog box:</target>
+          </trans-unit>
+          <trans-unit id="194" xml:space="preserve">
+            <source>Enter the <bpt id="2">&lt;strong&gt;</bpt>email account<ept id="2">&lt;/strong&gt;</ept> associated with the Azure subscription in which you want to create the data factory, enter <bpt id="4">&lt;strong&gt;</bpt>Password<ept id="4">&lt;/strong&gt;</ept>, and click <bpt id="6">&lt;strong&gt;</bpt>Sign-in<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Enter the <bpt id="2">&lt;strong&gt;</bpt>email account<ept id="2">&lt;/strong&gt;</ept> associated with the Azure subscription in which you want to create the data factory, enter <bpt id="4">&lt;strong&gt;</bpt>Password<ept id="4">&lt;/strong&gt;</ept>, and click <bpt id="6">&lt;strong&gt;</bpt>Sign-in<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="195" xml:space="preserve">
+            <source>Once the sign-in is successful, you should see all the data factories in the Azure subscription.</source>
+            <target state="new">Once the sign-in is successful, you should see all the data factories in the Azure subscription.</target>
+          </trans-unit>
+          <trans-unit id="196" xml:space="preserve">
+            <source>In this tutorial, you will create a new data facotry.</source>
+            <target state="new">In this tutorial, you will create a new data facotry.</target>
+          </trans-unit>
+          <trans-unit id="197" xml:space="preserve">
+            <source>In the drop-down list, select <bpt id="2">&lt;strong&gt;</bpt>ADFTutorialFactoryVS<ept id="2">&lt;/strong&gt;</ept>, and click <bpt id="4">&lt;strong&gt;</bpt>Publish<ept id="4">&lt;/strong&gt;</ept> button to deploy/publish the linked services, datasets, and the pipeline.</source>
+            <target state="new">In the drop-down list, select <bpt id="2">&lt;strong&gt;</bpt>ADFTutorialFactoryVS<ept id="2">&lt;/strong&gt;</ept>, and click <bpt id="4">&lt;strong&gt;</bpt>Publish<ept id="4">&lt;/strong&gt;</ept> button to deploy/publish the linked services, datasets, and the pipeline.</target>
+          </trans-unit>
+          <trans-unit id="198" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Publish button<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Publish button<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="199" xml:space="preserve">
+            <source>You should see the status of publishing in the Data Factory Task List window that is shown in the picture above.</source>
+            <target state="new">You should see the status of publishing in the Data Factory Task List window that is shown in the picture above.</target>
+          </trans-unit>
+          <trans-unit id="200" xml:space="preserve">
+            <source>Confirm that publishing has succeeded.</source>
+            <target state="new">Confirm that publishing has succeeded.</target>
+          </trans-unit>
+          <trans-unit id="201" xml:space="preserve">
+            <source>Use Server Explorer to review Data Factory entities</source>
+            <target state="new">Use Server Explorer to review Data Factory entities</target>
+          </trans-unit>
+          <trans-unit id="202" xml:space="preserve">
+            <source>In <bpt id="2">&lt;strong&gt;</bpt>Visual Studio<ept id="2">&lt;/strong&gt;</ept>, click <bpt id="4">&lt;strong&gt;</bpt>View<ept id="4">&lt;/strong&gt;</ept> on the menu, and click <bpt id="6">&lt;strong&gt;</bpt>Server Explorer<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In <bpt id="2">&lt;strong&gt;</bpt>Visual Studio<ept id="2">&lt;/strong&gt;</ept>, click <bpt id="4">&lt;strong&gt;</bpt>View<ept id="4">&lt;/strong&gt;</ept> on the menu, and click <bpt id="6">&lt;strong&gt;</bpt>Server Explorer<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="203" xml:space="preserve">
+            <source>In the Server Explorer window, expand <bpt id="2">&lt;strong&gt;</bpt>Azure<ept id="2">&lt;/strong&gt;</ept> and expand <bpt id="4">&lt;strong&gt;</bpt>Data Factory<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the Server Explorer window, expand <bpt id="2">&lt;strong&gt;</bpt>Azure<ept id="2">&lt;/strong&gt;</ept> and expand <bpt id="4">&lt;strong&gt;</bpt>Data Factory<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="204" xml:space="preserve">
+            <source>If you see <bpt id="2">&lt;strong&gt;</bpt>Sign in to Visual Studio<ept id="2">&lt;/strong&gt;</ept>, enter the <bpt id="4">&lt;strong&gt;</bpt>account<ept id="4">&lt;/strong&gt;</ept> associated with your Azure subscription and click <bpt id="6">&lt;strong&gt;</bpt>Continue<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">If you see <bpt id="2">&lt;strong&gt;</bpt>Sign in to Visual Studio<ept id="2">&lt;/strong&gt;</ept>, enter the <bpt id="4">&lt;strong&gt;</bpt>account<ept id="4">&lt;/strong&gt;</ept> associated with your Azure subscription and click <bpt id="6">&lt;strong&gt;</bpt>Continue<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="205" xml:space="preserve">
+            <source>Enter <bpt id="2">&lt;strong&gt;</bpt>password<ept id="2">&lt;/strong&gt;</ept>, and click <bpt id="4">&lt;strong&gt;</bpt>Sign in<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Enter <bpt id="2">&lt;strong&gt;</bpt>password<ept id="2">&lt;/strong&gt;</ept>, and click <bpt id="4">&lt;strong&gt;</bpt>Sign in<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="206" xml:space="preserve">
+            <source>Visual Studio tries to get information about all Azure data factories in your subscription.</source>
+            <target state="new">Visual Studio tries to get information about all Azure data factories in your subscription.</target>
+          </trans-unit>
+          <trans-unit id="207" xml:space="preserve">
+            <source>You will see the status of this operation in the <bpt id="2">&lt;strong&gt;</bpt>Data Factory Task List<ept id="2">&lt;/strong&gt;</ept> window.</source>
+            <target state="new">You will see the status of this operation in the <bpt id="2">&lt;strong&gt;</bpt>Data Factory Task List<ept id="2">&lt;/strong&gt;</ept> window.</target>
+          </trans-unit>
+          <trans-unit id="208" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Server Explorer<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Server Explorer<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="209" xml:space="preserve">
+            <source>You can right-click on a data factory, and select Export Data Factory to New Project to create a Visual Studio project based on an existing data factory.</source>
+            <target state="new">You can right-click on a data factory, and select Export Data Factory to New Project to create a Visual Studio project based on an existing data factory.</target>
+          </trans-unit>
+          <trans-unit id="210" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Export data factory to a VS project<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Export data factory to a VS project<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="211" xml:space="preserve">
+            <source>Update Data Factory tools for Visual Studio</source>
+            <target state="new">Update Data Factory tools for Visual Studio</target>
+          </trans-unit>
+          <trans-unit id="212" xml:space="preserve">
+            <source>To update Azure Data Factory tools for Visual Studio, do the following:</source>
+            <target state="new">To update Azure Data Factory tools for Visual Studio, do the following:</target>
+          </trans-unit>
+          <trans-unit id="213" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Tools<ept id="2">&lt;/strong&gt;</ept> on the menu and select <bpt id="4">&lt;strong&gt;</bpt>Extensions and Updates<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Tools<ept id="2">&lt;/strong&gt;</ept> on the menu and select <bpt id="4">&lt;strong&gt;</bpt>Extensions and Updates<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="214" xml:space="preserve">
+            <source>Select <bpt id="2">&lt;strong&gt;</bpt>Updates<ept id="2">&lt;/strong&gt;</ept> in the left pane and then select <bpt id="4">&lt;strong&gt;</bpt>Visual Studio Gallery<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Select <bpt id="2">&lt;strong&gt;</bpt>Updates<ept id="2">&lt;/strong&gt;</ept> in the left pane and then select <bpt id="4">&lt;strong&gt;</bpt>Visual Studio Gallery<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="215" xml:space="preserve">
+            <source>Select <bpt id="2">&lt;strong&gt;</bpt>Azure Data Factory tools for Visual Studio<ept id="2">&lt;/strong&gt;</ept> and click <bpt id="4">&lt;strong&gt;</bpt>Update<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Select <bpt id="2">&lt;strong&gt;</bpt>Azure Data Factory tools for Visual Studio<ept id="2">&lt;/strong&gt;</ept> and click <bpt id="4">&lt;strong&gt;</bpt>Update<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="216" xml:space="preserve">
+            <source>If you do not see this entry, you already have the latest version of the tools.</source>
+            <target state="new">If you do not see this entry, you already have the latest version of the tools.</target>
+          </trans-unit>
+          <trans-unit id="217" xml:space="preserve">
+            <source>See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Monitor datasets and pipeline<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for instructions on how to use the Azure Preview Portal to monitor the pipeline and datasets you have created in this tutorial.</source>
+            <target state="new">See <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Monitor datasets and pipeline<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for instructions on how to use the Azure Preview Portal to monitor the pipeline and datasets you have created in this tutorial.</target>
+          </trans-unit>
+          <trans-unit id="218" xml:space="preserve">
+            <source>Send Feedback</source>
+            <target state="new">Send Feedback</target>
+          </trans-unit>
+          <trans-unit id="219" xml:space="preserve">
+            <source>We would really appreciate your feedback on this article.</source>
+            <target state="new">We would really appreciate your feedback on this article.</target>
+          </trans-unit>
+          <trans-unit id="220" xml:space="preserve">
+            <source>Please take a few minutes to submit your feedback via <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>email<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">Please take a few minutes to submit your feedback via <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>email<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>
