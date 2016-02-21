@@ -1,0 +1,1235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="ko-kr" original="2/21/2016 5:56:18 AM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">40c217c53b2064ac42ffcf6c2d987beeb276f8c6</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Use PowerShell to Create an Azure VM With a Native Mode Report Server</source>
+            <target state="new">Use PowerShell to Create an Azure VM With a Native Mode Report Server</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>This topic describes and walks you through the deployment and configuration of a SQL Server Reporting Services native mode report server in an Azure Virtual Machine. </source>
+            <target state="new">This topic describes and walks you through the deployment and configuration of a SQL Server Reporting Services native mode report server in an Azure Virtual Machine. </target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Use PowerShell to Create an Azure VM With a Native Mode Report Server</source>
+            <target state="new">Use PowerShell to Create an Azure VM With a Native Mode Report Server</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source>This topic describes and walks you through the deployment and configuration of a SQL Server Reporting Services native mode report server in an Azure Virtual Machine.</source>
+            <target state="new">This topic describes and walks you through the deployment and configuration of a SQL Server Reporting Services native mode report server in an Azure Virtual Machine.</target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>The steps in this document use a combination of manual steps to create the virtual machine and a Windows PowerShell script to configure Reporting Services on the VM.</source>
+            <target state="new">The steps in this document use a combination of manual steps to create the virtual machine and a Windows PowerShell script to configure Reporting Services on the VM.</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>The configuration script includes opening a firewall port for HTTP or HTTPs.</source>
+            <target state="new">The configuration script includes opening a firewall port for HTTP or HTTPs.</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>If you do not require <bpt id="2">&lt;strong&gt;</bpt>HTTPS<ept id="2">&lt;/strong&gt;</ept> on the report server, <bpt id="4">&lt;strong&gt;</bpt>skip step 2<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">If you do not require <bpt id="2">&lt;strong&gt;</bpt>HTTPS<ept id="2">&lt;/strong&gt;</ept> on the report server, <bpt id="4">&lt;strong&gt;</bpt>skip step 2<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>After creating the VM in step 1, go to the section Use script to configure the report server and HTTP.</source>
+            <target state="new">After creating the VM in step 1, go to the section Use script to configure the report server and HTTP.</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source>After you run the script, the report server is ready to use.</source>
+            <target state="new">After you run the script, the report server is ready to use.</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source>Prerequisites and Assumptions</source>
+            <target state="new">Prerequisites and Assumptions</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Azure Subscription<ept id="1">&lt;/strong&gt;</ept>: Verify the number of cores available in your Azure Subscription.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Azure Subscription<ept id="1">&lt;/strong&gt;</ept>: Verify the number of cores available in your Azure Subscription.</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source>If you create the recommended VM size of <bpt id="2">&lt;strong&gt;</bpt>A3<ept id="2">&lt;/strong&gt;</ept>, you need <bpt id="4">&lt;strong&gt;</bpt>4<ept id="4">&lt;/strong&gt;</ept> available cores.</source>
+            <target state="new">If you create the recommended VM size of <bpt id="2">&lt;strong&gt;</bpt>A3<ept id="2">&lt;/strong&gt;</ept>, you need <bpt id="4">&lt;strong&gt;</bpt>4<ept id="4">&lt;/strong&gt;</ept> available cores.</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>If you use a VM size of <bpt id="2">&lt;strong&gt;</bpt>A2<ept id="2">&lt;/strong&gt;</ept>, you need <bpt id="4">&lt;strong&gt;</bpt>2<ept id="4">&lt;/strong&gt;</ept> available cores.</source>
+            <target state="new">If you use a VM size of <bpt id="2">&lt;strong&gt;</bpt>A2<ept id="2">&lt;/strong&gt;</ept>, you need <bpt id="4">&lt;strong&gt;</bpt>2<ept id="4">&lt;/strong&gt;</ept> available cores.</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source>To verify the core limit of your subscription, in the Azure Management Portal, click SETTINGS in the left pane and then Click USAGE in the top menu.</source>
+            <target state="new">To verify the core limit of your subscription, in the Azure Management Portal, click SETTINGS in the left pane and then Click USAGE in the top menu.</target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>To increase the core quota, contact <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Support<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">To increase the core quota, contact <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Support<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source>For VM size information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Virtual Machine Sizes for Azure<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For VM size information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Virtual Machine Sizes for Azure<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Windows PowerShell Scripting<ept id="1">&lt;/strong&gt;</ept>: The topic assumes that you have a basic working knowledge of Windows PowerShell.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Windows PowerShell Scripting<ept id="1">&lt;/strong&gt;</ept>: The topic assumes that you have a basic working knowledge of Windows PowerShell.</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>For more information about using Windows PowerShell, see the following:</source>
+            <target state="new">For more information about using Windows PowerShell, see the following:</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Starting Windows PowerShell on Windows Server<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Starting Windows PowerShell on Windows Server<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Getting Started with Windows PowerShell<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Getting Started with Windows PowerShell<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source>Step 1: Provision an Azure Virtual Machine</source>
+            <target state="new">Step 1: Provision an Azure Virtual Machine</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source>Browse to the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Management Portal<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">Browse to the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Management Portal<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Virtual Machines<ept id="2">&lt;/strong&gt;</ept> in the left pane.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Virtual Machines<ept id="2">&lt;/strong&gt;</ept> in the left pane.</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>microsoft azure virtual machines<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>microsoft azure virtual machines<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>New<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>New<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>new button<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>new button<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>From Gallery<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>From Gallery<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>new vm from gallery<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>new vm from gallery<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>SQL Server 2014 RTM Standard – Windows Server 2012 R2<ept id="2">&lt;/strong&gt;</ept> and then click the arrow to continue.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>SQL Server 2014 RTM Standard – Windows Server 2012 R2<ept id="2">&lt;/strong&gt;</ept> and then click the arrow to continue.</target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>next<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>next<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source>If you need the Reporting Services data driven subscriptions feature, choose <bpt id="2">&lt;strong&gt;</bpt>SQL Server 2014 RTM Enterprise – Windows Server 2012 R2<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">If you need the Reporting Services data driven subscriptions feature, choose <bpt id="2">&lt;strong&gt;</bpt>SQL Server 2014 RTM Enterprise – Windows Server 2012 R2<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source>For more information on SQL Server editions and feature support, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Features Supported by the Editions of SQL Server 2012<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information on SQL Server editions and feature support, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Features Supported by the Editions of SQL Server 2012<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Virtual machine configuration<ept id="2">&lt;/strong&gt;</ept> page, edit the following fields:</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Virtual machine configuration<ept id="2">&lt;/strong&gt;</ept> page, edit the following fields:</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source>If there is more than one <bpt id="2">&lt;strong&gt;</bpt>VERSION RELEASE DATE<ept id="2">&lt;/strong&gt;</ept>, select the most recent version.</source>
+            <target state="new">If there is more than one <bpt id="2">&lt;strong&gt;</bpt>VERSION RELEASE DATE<ept id="2">&lt;/strong&gt;</ept>, select the most recent version.</target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Virtual Machine Name<ept id="1">&lt;/strong&gt;</ept>: The machine name is also used on the next configuration page as the default Cloud Service DNS name.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Virtual Machine Name<ept id="1">&lt;/strong&gt;</ept>: The machine name is also used on the next configuration page as the default Cloud Service DNS name.</target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source>The DNS name must be unique across the Azure service.</source>
+            <target state="new">The DNS name must be unique across the Azure service.</target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source>Consider configuring the VM with a computer name that describes what the VM is used for.</source>
+            <target state="new">Consider configuring the VM with a computer name that describes what the VM is used for.</target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source>For example ssrsnativecloud.</source>
+            <target state="new">For example ssrsnativecloud.</target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Tier<ept id="1">&lt;/strong&gt;</ept>: Standard</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Tier<ept id="1">&lt;/strong&gt;</ept>: Standard</target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Size:A3<ept id="1">&lt;/strong&gt;</ept> is the recommended VM size for SQL Server workloads.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Size:A3<ept id="1">&lt;/strong&gt;</ept> is the recommended VM size for SQL Server workloads.</target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source>If a VM is only used as a report server, a VM size of A2 is sufficient unless the report server experiences a large workload.</source>
+            <target state="new">If a VM is only used as a report server, a VM size of A2 is sufficient unless the report server experiences a large workload.</target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source>For VM pricing information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Virtual Machines Pricing<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For VM pricing information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Virtual Machines Pricing<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>New User Name<ept id="1">&lt;/strong&gt;</ept>: the name you provide is created as an administrator on the VM.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>New User Name<ept id="1">&lt;/strong&gt;</ept>: the name you provide is created as an administrator on the VM.</target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>New Password<ept id="1">&lt;/strong&gt;</ept> and <bpt id="3">&lt;strong&gt;</bpt>confirm<ept id="3">&lt;/strong&gt;</ept>.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>New Password<ept id="1">&lt;/strong&gt;</ept> and <bpt id="3">&lt;strong&gt;</bpt>confirm<ept id="3">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source>This password is used for the new administrator account and it is recommended you use a strong password.</source>
+            <target state="new">This password is used for the new administrator account and it is recommended you use a strong password.</target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Next<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Next<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="147" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>next<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>next<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="148" xml:space="preserve">
+            <source>On the next page, edit the following fields:</source>
+            <target state="new">On the next page, edit the following fields:</target>
+          </trans-unit>
+          <trans-unit id="149" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Cloud Service<ept id="1">&lt;/strong&gt;</ept>: select <bpt id="3">&lt;strong&gt;</bpt>Create a new Cloud Service<ept id="3">&lt;/strong&gt;</ept>.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Cloud Service<ept id="1">&lt;/strong&gt;</ept>: select <bpt id="3">&lt;strong&gt;</bpt>Create a new Cloud Service<ept id="3">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="150" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Cloud Service DNS Name<ept id="1">&lt;/strong&gt;</ept>: This is the public DNS name of the Cloud Service that is associated with the VM.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Cloud Service DNS Name<ept id="1">&lt;/strong&gt;</ept>: This is the public DNS name of the Cloud Service that is associated with the VM.</target>
+          </trans-unit>
+          <trans-unit id="151" xml:space="preserve">
+            <source>The default name is the name you typed in for the VM name.</source>
+            <target state="new">The default name is the name you typed in for the VM name.</target>
+          </trans-unit>
+          <trans-unit id="152" xml:space="preserve">
+            <source>If in later steps of the topic, you create a trusted SSL certificate and then the DNS name is used for the value of the “<bpt id="2">&lt;strong&gt;</bpt>Issued to<ept id="2">&lt;/strong&gt;</ept>” of the certificate.</source>
+            <target state="new">If in later steps of the topic, you create a trusted SSL certificate and then the DNS name is used for the value of the “<bpt id="2">&lt;strong&gt;</bpt>Issued to<ept id="2">&lt;/strong&gt;</ept>” of the certificate.</target>
+          </trans-unit>
+          <trans-unit id="153" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Region/Affinity Group/Virtual Network<ept id="1">&lt;/strong&gt;</ept>: Choose the region closest to your end users.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Region/Affinity Group/Virtual Network<ept id="1">&lt;/strong&gt;</ept>: Choose the region closest to your end users.</target>
+          </trans-unit>
+          <trans-unit id="154" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Storage Account<ept id="1">&lt;/strong&gt;</ept>: Use an automatically generated storage account.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Storage Account<ept id="1">&lt;/strong&gt;</ept>: Use an automatically generated storage account.</target>
+          </trans-unit>
+          <trans-unit id="155" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Availability Set<ept id="1">&lt;/strong&gt;</ept>: None.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Availability Set<ept id="1">&lt;/strong&gt;</ept>: None.</target>
+          </trans-unit>
+          <trans-unit id="156" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>ENDPOINTS<ept id="1">&lt;/strong&gt;</ept> Keep the <bpt id="3">&lt;strong&gt;</bpt>Remote Desktop<ept id="3">&lt;/strong&gt;</ept> and <bpt id="5">&lt;strong&gt;</bpt>PowerShell<ept id="5">&lt;/strong&gt;</ept> endpoints and then add either an HTTP or HTTPS endpoint, depending on your environment.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>ENDPOINTS<ept id="1">&lt;/strong&gt;</ept> Keep the <bpt id="3">&lt;strong&gt;</bpt>Remote Desktop<ept id="3">&lt;/strong&gt;</ept> and <bpt id="5">&lt;strong&gt;</bpt>PowerShell<ept id="5">&lt;/strong&gt;</ept> endpoints and then add either an HTTP or HTTPS endpoint, depending on your environment.</target>
+          </trans-unit>
+          <trans-unit id="157" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>HTTP<ept id="1">&lt;/strong&gt;</ept>: The default public and private ports are <bpt id="3">&lt;strong&gt;</bpt>80<ept id="3">&lt;/strong&gt;</ept>.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>HTTP<ept id="1">&lt;/strong&gt;</ept>: The default public and private ports are <bpt id="3">&lt;strong&gt;</bpt>80<ept id="3">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="158" xml:space="preserve">
+            <source>Note that if you use a private port other than 80, modify <bpt id="2">&lt;strong&gt;</bpt>$HTTPport = 80<ept id="2">&lt;/strong&gt;</ept> in the http script.</source>
+            <target state="new">Note that if you use a private port other than 80, modify <bpt id="2">&lt;strong&gt;</bpt>$HTTPport = 80<ept id="2">&lt;/strong&gt;</ept> in the http script.</target>
+          </trans-unit>
+          <trans-unit id="159" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>HTTPS<ept id="1">&lt;/strong&gt;</ept>: The default public and private ports are <bpt id="3">&lt;strong&gt;</bpt>443<ept id="3">&lt;/strong&gt;</ept>.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>HTTPS<ept id="1">&lt;/strong&gt;</ept>: The default public and private ports are <bpt id="3">&lt;strong&gt;</bpt>443<ept id="3">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
+            <source>A security best practice is to change the private port and configure your firewall and the report server to use the private port.</source>
+            <target state="new">A security best practice is to change the private port and configure your firewall and the report server to use the private port.</target>
+          </trans-unit>
+          <trans-unit id="161" xml:space="preserve">
+            <source>For more information on endpoints, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>How to Set Up Communication with a Virtual Machine<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information on endpoints, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>How to Set Up Communication with a Virtual Machine<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="162" xml:space="preserve">
+            <source>Note that if you use a port other than 443, change the parameter <bpt id="2">&lt;strong&gt;</bpt>$HTTPsport = 443<ept id="2">&lt;/strong&gt;</ept> in the HTTPS script.</source>
+            <target state="new">Note that if you use a port other than 443, change the parameter <bpt id="2">&lt;strong&gt;</bpt>$HTTPsport = 443<ept id="2">&lt;/strong&gt;</ept> in the HTTPS script.</target>
+          </trans-unit>
+          <trans-unit id="163" xml:space="preserve">
+            <source>Click next .</source>
+            <target state="new">Click next .</target>
+          </trans-unit>
+          <trans-unit id="164" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>next<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>next<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="165" xml:space="preserve">
+            <source>On the last page of the wizard, keep the default <bpt id="2">&lt;strong&gt;</bpt>Install the VM agent<ept id="2">&lt;/strong&gt;</ept> selected.</source>
+            <target state="new">On the last page of the wizard, keep the default <bpt id="2">&lt;strong&gt;</bpt>Install the VM agent<ept id="2">&lt;/strong&gt;</ept> selected.</target>
+          </trans-unit>
+          <trans-unit id="166" xml:space="preserve">
+            <source>The steps in this topic do not utilize the VM agent but if you plan to keep this VM, the VM agent and extensions will allow you to enhance he CM.</source>
+            <target state="new">The steps in this topic do not utilize the VM agent but if you plan to keep this VM, the VM agent and extensions will allow you to enhance he CM.</target>
+          </trans-unit>
+          <trans-unit id="167" xml:space="preserve">
+            <source>For more information on the VM agent, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>VM Agent and Extensions – Part 1<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information on the VM agent, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>VM Agent and Extensions – Part 1<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="168" xml:space="preserve">
+            <source>One of the default extensions installed ad running is the “BGINFO” extension that displays on the VM desktop, system information such as internal IP and free drive space.</source>
+            <target state="new">One of the default extensions installed ad running is the “BGINFO” extension that displays on the VM desktop, system information such as internal IP and free drive space.</target>
+          </trans-unit>
+          <trans-unit id="169" xml:space="preserve">
+            <source>Click complete .</source>
+            <target state="new">Click complete .</target>
+          </trans-unit>
+          <trans-unit id="170" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>ok<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>ok<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="171" xml:space="preserve">
+            <source>The <bpt id="2">&lt;strong&gt;</bpt>Status<ept id="2">&lt;/strong&gt;</ept> of the VM displays as <bpt id="4">&lt;strong&gt;</bpt>Starting (Provisioning)<ept id="4">&lt;/strong&gt;</ept> during the provision process and then displays as <bpt id="6">&lt;strong&gt;</bpt>Running<ept id="6">&lt;/strong&gt;</ept> when the VM is provisioned and ready to use.</source>
+            <target state="new">The <bpt id="2">&lt;strong&gt;</bpt>Status<ept id="2">&lt;/strong&gt;</ept> of the VM displays as <bpt id="4">&lt;strong&gt;</bpt>Starting (Provisioning)<ept id="4">&lt;/strong&gt;</ept> during the provision process and then displays as <bpt id="6">&lt;strong&gt;</bpt>Running<ept id="6">&lt;/strong&gt;</ept> when the VM is provisioned and ready to use.</target>
+          </trans-unit>
+          <trans-unit id="172" xml:space="preserve">
+            <source>Step 2: Create a Server Certificate</source>
+            <target state="new">Step 2: Create a Server Certificate</target>
+          </trans-unit>
+          <trans-unit id="173" xml:space="preserve">
+            <source>If you do not require HTTPS on the report server, you can <bpt id="2">&lt;strong&gt;</bpt>skip step 2<ept id="2">&lt;/strong&gt;</ept> and go to the section <bpt id="4">&lt;strong&gt;</bpt>Use script to configure the report server and HTTP<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">If you do not require HTTPS on the report server, you can <bpt id="2">&lt;strong&gt;</bpt>skip step 2<ept id="2">&lt;/strong&gt;</ept> and go to the section <bpt id="4">&lt;strong&gt;</bpt>Use script to configure the report server and HTTP<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="174" xml:space="preserve">
+            <source>Use the HTTP script to quickly configure the report server and the report server will be ready to use.</source>
+            <target state="new">Use the HTTP script to quickly configure the report server and the report server will be ready to use.</target>
+          </trans-unit>
+          <trans-unit id="175" xml:space="preserve">
+            <source>In order to use HTTPS on the VM, you need a trusted SSL certificate.</source>
+            <target state="new">In order to use HTTPS on the VM, you need a trusted SSL certificate.</target>
+          </trans-unit>
+          <trans-unit id="176" xml:space="preserve">
+            <source>Depending on your scenario, you can use one of the following two methods:</source>
+            <target state="new">Depending on your scenario, you can use one of the following two methods:</target>
+          </trans-unit>
+          <trans-unit id="177" xml:space="preserve">
+            <source>A valid SSL certificate issued by a Certification Authority (CA) and trusted by Microsoft.</source>
+            <target state="new">A valid SSL certificate issued by a Certification Authority (CA) and trusted by Microsoft.</target>
+          </trans-unit>
+          <trans-unit id="178" xml:space="preserve">
+            <source>The CA root certificates are required to be distributed via the Microsoft Root Certificate Program.</source>
+            <target state="new">The CA root certificates are required to be distributed via the Microsoft Root Certificate Program.</target>
+          </trans-unit>
+          <trans-unit id="179" xml:space="preserve">
+            <source>For more information about this program, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Windows and Windows Phone 8 SSL Root Certificate Program (Member CAs)<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> and <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Introduction to The Microsoft Root Certificate Program<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information about this program, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Windows and Windows Phone 8 SSL Root Certificate Program (Member CAs)<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> and <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Introduction to The Microsoft Root Certificate Program<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="180" xml:space="preserve">
+            <source>A self-signed certificate.</source>
+            <target state="new">A self-signed certificate.</target>
+          </trans-unit>
+          <trans-unit id="181" xml:space="preserve">
+            <source>Self-signed certificates are not recommended for production environments.</source>
+            <target state="new">Self-signed certificates are not recommended for production environments.</target>
+          </trans-unit>
+          <trans-unit id="182" xml:space="preserve">
+            <source>To use a certificate created by a trusted Certificate Authority (CA)</source>
+            <target state="new">To use a certificate created by a trusted Certificate Authority (CA)</target>
+          </trans-unit>
+          <trans-unit id="183" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Request a server certificate for the website from a certification authority<ept id="1">&lt;/strong&gt;</ept>.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Request a server certificate for the website from a certification authority<ept id="1">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="184" xml:space="preserve">
+            <source>You can use the Web Server Certificate Wizard either to generate a certificate request file (Certreq.txt) that you send to a certification authority, or to generate a request for an online certification authority.</source>
+            <target state="new">You can use the Web Server Certificate Wizard either to generate a certificate request file (Certreq.txt) that you send to a certification authority, or to generate a request for an online certification authority.</target>
+          </trans-unit>
+          <trans-unit id="185" xml:space="preserve">
+            <source>For example, Microsoft Certificate Services in Windows Server 2012.</source>
+            <target state="new">For example, Microsoft Certificate Services in Windows Server 2012.</target>
+          </trans-unit>
+          <trans-unit id="186" xml:space="preserve">
+            <source>Depending on the level of identification assurance offered by your server certificate, it is several days to several months for the certification authority to approve your request and send you a certificate file.</source>
+            <target state="new">Depending on the level of identification assurance offered by your server certificate, it is several days to several months for the certification authority to approve your request and send you a certificate file.</target>
+          </trans-unit>
+          <trans-unit id="187" xml:space="preserve">
+            <source>For more information about requesting a server certificates, see the following:</source>
+            <target state="new">For more information about requesting a server certificates, see the following:</target>
+          </trans-unit>
+          <trans-unit id="188" xml:space="preserve">
+            <source>Use <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Certreq<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Certreq<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">Use <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Certreq<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>Certreq<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="189" xml:space="preserve">
+            <source>Security Tools to Administer Windows Server 2012.</source>
+            <target state="new">Security Tools to Administer Windows Server 2012.</target>
+          </trans-unit>
+          <trans-unit id="190" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Security Tools to Administer Windows Server 2012<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Security Tools to Administer Windows Server 2012<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="191" xml:space="preserve">
+            <source>The <bpt id="2">&lt;strong&gt;</bpt>issued to<ept id="2">&lt;/strong&gt;</ept> field of the trusted SSL certificate should be the same as the <bpt id="4">&lt;strong&gt;</bpt>Cloud Service DNS NAME<ept id="4">&lt;/strong&gt;</ept> you used for the new VM.</source>
+            <target state="new">The <bpt id="2">&lt;strong&gt;</bpt>issued to<ept id="2">&lt;/strong&gt;</ept> field of the trusted SSL certificate should be the same as the <bpt id="4">&lt;strong&gt;</bpt>Cloud Service DNS NAME<ept id="4">&lt;/strong&gt;</ept> you used for the new VM.</target>
+          </trans-unit>
+          <trans-unit id="192" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Install the server certificate on the Web server<ept id="1">&lt;/strong&gt;</ept>.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Install the server certificate on the Web server<ept id="1">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="193" xml:space="preserve">
+            <source>The Web server in this case is the VM that hosts the report server and the website is created in later steps when you configure Reporting Services.</source>
+            <target state="new">The Web server in this case is the VM that hosts the report server and the website is created in later steps when you configure Reporting Services.</target>
+          </trans-unit>
+          <trans-unit id="194" xml:space="preserve">
+            <source>For more information about installing the server certificate on the Web server by using the Certificate MMC snap-in, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Install a Server Certificate<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information about installing the server certificate on the Web server by using the Certificate MMC snap-in, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Install a Server Certificate<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="195" xml:space="preserve">
+            <source>If you want to use the script included with this topic, to configure the report server, the value of the certificates <bpt id="2">&lt;strong&gt;</bpt>Thumbprint<ept id="2">&lt;/strong&gt;</ept> is required as a parameter of the script.</source>
+            <target state="new">If you want to use the script included with this topic, to configure the report server, the value of the certificates <bpt id="2">&lt;strong&gt;</bpt>Thumbprint<ept id="2">&lt;/strong&gt;</ept> is required as a parameter of the script.</target>
+          </trans-unit>
+          <trans-unit id="196" xml:space="preserve">
+            <source>See the next section for details on how to obtain the thumbprint of the certificate.</source>
+            <target state="new">See the next section for details on how to obtain the thumbprint of the certificate.</target>
+          </trans-unit>
+          <trans-unit id="197" xml:space="preserve">
+            <source>Assign the server certificate to the report server.</source>
+            <target state="new">Assign the server certificate to the report server.</target>
+          </trans-unit>
+          <trans-unit id="198" xml:space="preserve">
+            <source>The assignment is completed in the next section when you configure the report server.</source>
+            <target state="new">The assignment is completed in the next section when you configure the report server.</target>
+          </trans-unit>
+          <trans-unit id="199" xml:space="preserve">
+            <source>To use the Virtual Machines Self-signed Certificate</source>
+            <target state="new">To use the Virtual Machines Self-signed Certificate</target>
+          </trans-unit>
+          <trans-unit id="200" xml:space="preserve">
+            <source>A self-signed certificate was created on the VM when the VM was provisioned.</source>
+            <target state="new">A self-signed certificate was created on the VM when the VM was provisioned.</target>
+          </trans-unit>
+          <trans-unit id="201" xml:space="preserve">
+            <source>The certificate has the same name as the VM DNS name.</source>
+            <target state="new">The certificate has the same name as the VM DNS name.</target>
+          </trans-unit>
+          <trans-unit id="202" xml:space="preserve">
+            <source>In order to avoid certificate errors, it is required that the certificate is trusted on the VM itself, and also by all users of the site.</source>
+            <target state="new">In order to avoid certificate errors, it is required that the certificate is trusted on the VM itself, and also by all users of the site.</target>
+          </trans-unit>
+          <trans-unit id="203" xml:space="preserve">
+            <source>To trust the root CA of the certificate on the Local VM, add the certificate to the <bpt id="2">&lt;strong&gt;</bpt>Trusted Root Certification Authorities<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">To trust the root CA of the certificate on the Local VM, add the certificate to the <bpt id="2">&lt;strong&gt;</bpt>Trusted Root Certification Authorities<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="204" xml:space="preserve">
+            <source>The following is a summary of the steps required.</source>
+            <target state="new">The following is a summary of the steps required.</target>
+          </trans-unit>
+          <trans-unit id="205" xml:space="preserve">
+            <source>For detailed steps on how to trust the CA, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Install a Server Certificate<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For detailed steps on how to trust the CA, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Install a Server Certificate<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="206" xml:space="preserve">
+            <source>From the Azure Management portal, select the VM and click connect.</source>
+            <target state="new">From the Azure Management portal, select the VM and click connect.</target>
+          </trans-unit>
+          <trans-unit id="207" xml:space="preserve">
+            <source>Depending on your browser configuration, you may be prompted to save an .rdp file for connecting to the VM.</source>
+            <target state="new">Depending on your browser configuration, you may be prompted to save an .rdp file for connecting to the VM.</target>
+          </trans-unit>
+          <trans-unit id="208" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>connect to azure virtual machine<ept id="1">&lt;/linkText&gt;</ept> Use the user VM name, user name and password you configured when you created the VM.</source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>connect to azure virtual machine<ept id="1">&lt;/linkText&gt;</ept> Use the user VM name, user name and password you configured when you created the VM.</target>
+          </trans-unit>
+          <trans-unit id="209" xml:space="preserve">
+            <source>For example, in the following image, the VM name is <bpt id="2">&lt;strong&gt;</bpt>ssrsnativecloud<ept id="2">&lt;/strong&gt;</ept> and the user name is <bpt id="4">&lt;strong&gt;</bpt>testuser<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">For example, in the following image, the VM name is <bpt id="2">&lt;strong&gt;</bpt>ssrsnativecloud<ept id="2">&lt;/strong&gt;</ept> and the user name is <bpt id="4">&lt;strong&gt;</bpt>testuser<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="210" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>login inlcudes vm name<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>login inlcudes vm name<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="211" xml:space="preserve">
+            <source>Run mmc.exe.</source>
+            <target state="new">Run mmc.exe.</target>
+          </trans-unit>
+          <trans-unit id="212" xml:space="preserve">
+            <source>For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>How to: View Certificates with the MMC Snap-in<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>How to: View Certificates with the MMC Snap-in<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="213" xml:space="preserve">
+            <source>In the console application <bpt id="2">&lt;strong&gt;</bpt>File<ept id="2">&lt;/strong&gt;</ept> menu, add the <bpt id="4">&lt;strong&gt;</bpt>Certificates<ept id="4">&lt;/strong&gt;</ept> snap-in, select <bpt id="6">&lt;strong&gt;</bpt>Computer Account<ept id="6">&lt;/strong&gt;</ept> when prompted, and then click <bpt id="8">&lt;strong&gt;</bpt>Next<ept id="8">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the console application <bpt id="2">&lt;strong&gt;</bpt>File<ept id="2">&lt;/strong&gt;</ept> menu, add the <bpt id="4">&lt;strong&gt;</bpt>Certificates<ept id="4">&lt;/strong&gt;</ept> snap-in, select <bpt id="6">&lt;strong&gt;</bpt>Computer Account<ept id="6">&lt;/strong&gt;</ept> when prompted, and then click <bpt id="8">&lt;strong&gt;</bpt>Next<ept id="8">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="214" xml:space="preserve">
+            <source>Select <bpt id="2">&lt;strong&gt;</bpt>Local Computer<ept id="2">&lt;/strong&gt;</ept> to manage and then click <bpt id="4">&lt;strong&gt;</bpt>Finish<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Select <bpt id="2">&lt;strong&gt;</bpt>Local Computer<ept id="2">&lt;/strong&gt;</ept> to manage and then click <bpt id="4">&lt;strong&gt;</bpt>Finish<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="215" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Ok<ept id="2">&lt;/strong&gt;</ept> and then expand the <bpt id="4">&lt;strong&gt;</bpt>Certificates -Personal<ept id="4">&lt;/strong&gt;</ept> nodes and then click <bpt id="6">&lt;strong&gt;</bpt>Certificates<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Ok<ept id="2">&lt;/strong&gt;</ept> and then expand the <bpt id="4">&lt;strong&gt;</bpt>Certificates -Personal<ept id="4">&lt;/strong&gt;</ept> nodes and then click <bpt id="6">&lt;strong&gt;</bpt>Certificates<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="216" xml:space="preserve">
+            <source>The certificate is named after the DNS name of the VM and ends with <bpt id="2">&lt;strong&gt;</bpt>cloudapp.net<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">The certificate is named after the DNS name of the VM and ends with <bpt id="2">&lt;strong&gt;</bpt>cloudapp.net<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="217" xml:space="preserve">
+            <source>Right-click the certificate name and click <bpt id="2">&lt;strong&gt;</bpt>Copy<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Right-click the certificate name and click <bpt id="2">&lt;strong&gt;</bpt>Copy<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="218" xml:space="preserve">
+            <source>Expand the <bpt id="2">&lt;strong&gt;</bpt>Trusted Root Certification Authorities<ept id="2">&lt;/strong&gt;</ept> node and then right-click <bpt id="4">&lt;strong&gt;</bpt>Certificates<ept id="4">&lt;/strong&gt;</ept> and then click <bpt id="6">&lt;strong&gt;</bpt>Paste<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Expand the <bpt id="2">&lt;strong&gt;</bpt>Trusted Root Certification Authorities<ept id="2">&lt;/strong&gt;</ept> node and then right-click <bpt id="4">&lt;strong&gt;</bpt>Certificates<ept id="4">&lt;/strong&gt;</ept> and then click <bpt id="6">&lt;strong&gt;</bpt>Paste<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="219" xml:space="preserve">
+            <source>To validate, double click on the certificate name under <bpt id="2">&lt;strong&gt;</bpt>Trusted Root Certification Authorities<ept id="2">&lt;/strong&gt;</ept> and verify that there are no errors and you see your certificate.</source>
+            <target state="new">To validate, double click on the certificate name under <bpt id="2">&lt;strong&gt;</bpt>Trusted Root Certification Authorities<ept id="2">&lt;/strong&gt;</ept> and verify that there are no errors and you see your certificate.</target>
+          </trans-unit>
+          <trans-unit id="220" xml:space="preserve">
+            <source>If you want to use the HTTPS script included with this topic, to configure the report server, the value of the certificates <bpt id="2">&lt;strong&gt;</bpt>Thumbprint<ept id="2">&lt;/strong&gt;</ept> is required as a parameter of the script.</source>
+            <target state="new">If you want to use the HTTPS script included with this topic, to configure the report server, the value of the certificates <bpt id="2">&lt;strong&gt;</bpt>Thumbprint<ept id="2">&lt;/strong&gt;</ept> is required as a parameter of the script.</target>
+          </trans-unit>
+          <trans-unit id="221" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>To get the thumbprint value<ept id="1">&lt;/strong&gt;</ept>, complete the following.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>To get the thumbprint value<ept id="1">&lt;/strong&gt;</ept>, complete the following.</target>
+          </trans-unit>
+          <trans-unit id="222" xml:space="preserve">
+            <source>There is also a PowerShell sample to retrieve the thumbprint in section <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Use script to configure the report server and HTTPS<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">There is also a PowerShell sample to retrieve the thumbprint in section <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Use script to configure the report server and HTTPS<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="223" xml:space="preserve">
+            <source>Double-click the name of the certificate, for example ssrsnativecloud.cloudapp.net.</source>
+            <target state="new">Double-click the name of the certificate, for example ssrsnativecloud.cloudapp.net.</target>
+          </trans-unit>
+          <trans-unit id="224" xml:space="preserve">
+            <source>Click the <bpt id="2">&lt;strong&gt;</bpt>Details<ept id="2">&lt;/strong&gt;</ept> tab.</source>
+            <target state="new">Click the <bpt id="2">&lt;strong&gt;</bpt>Details<ept id="2">&lt;/strong&gt;</ept> tab.</target>
+          </trans-unit>
+          <trans-unit id="225" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Thumbprint<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Thumbprint<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="226" xml:space="preserve">
+            <source>The value of the thumbprint is displayed in the details field, for example ‎a6 08 3c df f9 0b f7 e3 7c 25 ed a4 ed 7e ac 91 9c 2c fb 2f.</source>
+            <target state="new">The value of the thumbprint is displayed in the details field, for example ‎a6 08 3c df f9 0b f7 e3 7c 25 ed a4 ed 7e ac 91 9c 2c fb 2f.</target>
+          </trans-unit>
+          <trans-unit id="227" xml:space="preserve">
+            <source>Copy the thumbprint and save the value for later or edit the script now.</source>
+            <target state="new">Copy the thumbprint and save the value for later or edit the script now.</target>
+          </trans-unit>
+          <trans-unit id="228" xml:space="preserve">
+            <source>(*) Before you run the script, remove the spaces in between the pairs of values.</source>
+            <target state="new">(*) Before you run the script, remove the spaces in between the pairs of values.</target>
+          </trans-unit>
+          <trans-unit id="229" xml:space="preserve">
+            <source>For example the thumbprint noted before would now be ‎a6083cdff90bf7e37c25eda4ed7eac919c2cfb2f.</source>
+            <target state="new">For example the thumbprint noted before would now be ‎a6083cdff90bf7e37c25eda4ed7eac919c2cfb2f.</target>
+          </trans-unit>
+          <trans-unit id="230" xml:space="preserve">
+            <source>Assign the server certificate to the report server.</source>
+            <target state="new">Assign the server certificate to the report server.</target>
+          </trans-unit>
+          <trans-unit id="231" xml:space="preserve">
+            <source>The assignment is completed in the next section when you configure the report server.</source>
+            <target state="new">The assignment is completed in the next section when you configure the report server.</target>
+          </trans-unit>
+          <trans-unit id="232" xml:space="preserve">
+            <source>If you are using a self-signed SSL certificate, the name on the certificate already matches the hostname of the VM.</source>
+            <target state="new">If you are using a self-signed SSL certificate, the name on the certificate already matches the hostname of the VM.</target>
+          </trans-unit>
+          <trans-unit id="233" xml:space="preserve">
+            <source>Therefore, the DNS of the machine is already registered globally and can be accessed from any client.</source>
+            <target state="new">Therefore, the DNS of the machine is already registered globally and can be accessed from any client.</target>
+          </trans-unit>
+          <trans-unit id="234" xml:space="preserve">
+            <source>Step 3: Configure the Report Server</source>
+            <target state="new">Step 3: Configure the Report Server</target>
+          </trans-unit>
+          <trans-unit id="235" xml:space="preserve">
+            <source>This section walks you through configuring the VM as a Reporting Services native mode report server.</source>
+            <target state="new">This section walks you through configuring the VM as a Reporting Services native mode report server.</target>
+          </trans-unit>
+          <trans-unit id="236" xml:space="preserve">
+            <source>You can use one of the following methods to configure the report server:</source>
+            <target state="new">You can use one of the following methods to configure the report server:</target>
+          </trans-unit>
+          <trans-unit id="237" xml:space="preserve">
+            <source>Use the script to configure the report server</source>
+            <target state="new">Use the script to configure the report server</target>
+          </trans-unit>
+          <trans-unit id="238" xml:space="preserve">
+            <source>Use Configuration Manager to Configure the Report Server.</source>
+            <target state="new">Use Configuration Manager to Configure the Report Server.</target>
+          </trans-unit>
+          <trans-unit id="239" xml:space="preserve">
+            <source>For more detailed steps, see the section <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Connect to the Virtual Machine and Start the Reporting Services Configuration Manager<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more detailed steps, see the section <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Connect to the Virtual Machine and Start the Reporting Services Configuration Manager<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="240" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Authentication Note:<ept id="1">&lt;/strong&gt;</ept> Windows authentication is the recommended authentication method and it is the default Reporting Services authentication.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Authentication Note:<ept id="1">&lt;/strong&gt;</ept> Windows authentication is the recommended authentication method and it is the default Reporting Services authentication.</target>
+          </trans-unit>
+          <trans-unit id="241" xml:space="preserve">
+            <source>Only users that are configured on the VM can access Reporting Services and assigned to Reporting Services roles.</source>
+            <target state="new">Only users that are configured on the VM can access Reporting Services and assigned to Reporting Services roles.</target>
+          </trans-unit>
+          <trans-unit id="242" xml:space="preserve">
+            <source>Use script to configure the report server and HTTP</source>
+            <target state="new">Use script to configure the report server and HTTP</target>
+          </trans-unit>
+          <trans-unit id="243" xml:space="preserve">
+            <source>To use the Windows PowerShell script to configure the report server, complete the following steps.</source>
+            <target state="new">To use the Windows PowerShell script to configure the report server, complete the following steps.</target>
+          </trans-unit>
+          <trans-unit id="244" xml:space="preserve">
+            <source>The configuration includes HTTP, not HTTPS:</source>
+            <target state="new">The configuration includes HTTP, not HTTPS:</target>
+          </trans-unit>
+          <trans-unit id="245" xml:space="preserve">
+            <source>From the Azure Management portal, select the VM and click connect.</source>
+            <target state="new">From the Azure Management portal, select the VM and click connect.</target>
+          </trans-unit>
+          <trans-unit id="246" xml:space="preserve">
+            <source>Depending on your browser configuration, you may be prompted to save an .rdp file for connecting to the VM.</source>
+            <target state="new">Depending on your browser configuration, you may be prompted to save an .rdp file for connecting to the VM.</target>
+          </trans-unit>
+          <trans-unit id="247" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>connect to azure virtual machine<ept id="1">&lt;/linkText&gt;</ept> Use the user VM name, user name and password you configured when you created the VM.</source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>connect to azure virtual machine<ept id="1">&lt;/linkText&gt;</ept> Use the user VM name, user name and password you configured when you created the VM.</target>
+          </trans-unit>
+          <trans-unit id="248" xml:space="preserve">
+            <source>For example, in the following image, the VM name is <bpt id="2">&lt;strong&gt;</bpt>ssrsnativecloud<ept id="2">&lt;/strong&gt;</ept> and the user name is <bpt id="4">&lt;strong&gt;</bpt>testuser<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">For example, in the following image, the VM name is <bpt id="2">&lt;strong&gt;</bpt>ssrsnativecloud<ept id="2">&lt;/strong&gt;</ept> and the user name is <bpt id="4">&lt;strong&gt;</bpt>testuser<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="249" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>login inlcudes vm name<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>login inlcudes vm name<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="250" xml:space="preserve">
+            <source>On the VM, open <bpt id="2">&lt;strong&gt;</bpt>Windows PowerShell ISE<ept id="2">&lt;/strong&gt;</ept> with administrative privileges.</source>
+            <target state="new">On the VM, open <bpt id="2">&lt;strong&gt;</bpt>Windows PowerShell ISE<ept id="2">&lt;/strong&gt;</ept> with administrative privileges.</target>
+          </trans-unit>
+          <trans-unit id="251" xml:space="preserve">
+            <source>The PowerShell ISE is installed by default on Windows server 2012.</source>
+            <target state="new">The PowerShell ISE is installed by default on Windows server 2012.</target>
+          </trans-unit>
+          <trans-unit id="252" xml:space="preserve">
+            <source>It is recommended you use the ISE instead of a standard Windows PowerShell window so that you can paste the script into the ISE, modify the script, and then run the script.</source>
+            <target state="new">It is recommended you use the ISE instead of a standard Windows PowerShell window so that you can paste the script into the ISE, modify the script, and then run the script.</target>
+          </trans-unit>
+          <trans-unit id="253" xml:space="preserve">
+            <source>In Windows PowerShell ISE, click the <bpt id="2">&lt;strong&gt;</bpt>View<ept id="2">&lt;/strong&gt;</ept> menu and then click <bpt id="4">&lt;strong&gt;</bpt>Show Script Pane<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In Windows PowerShell ISE, click the <bpt id="2">&lt;strong&gt;</bpt>View<ept id="2">&lt;/strong&gt;</ept> menu and then click <bpt id="4">&lt;strong&gt;</bpt>Show Script Pane<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="254" xml:space="preserve">
+            <source>Copy the following script, and paste the script into the Windows PowerShell ISE script pane.</source>
+            <target state="new">Copy the following script, and paste the script into the Windows PowerShell ISE script pane.</target>
+          </trans-unit>
+          <trans-unit id="255" xml:space="preserve">
+            <source>If you created the VM with an HTTP port other than 80, modify the parameter $HTTPport = 80.</source>
+            <target state="new">If you created the VM with an HTTP port other than 80, modify the parameter $HTTPport = 80.</target>
+          </trans-unit>
+          <trans-unit id="256" xml:space="preserve">
+            <source>The script is currently configured for  Reporting Services.</source>
+            <target state="new">The script is currently configured for  Reporting Services.</target>
+          </trans-unit>
+          <trans-unit id="257" xml:space="preserve">
+            <source>If you want to run the script for  Reporting Services, modify the version portion of the path to the namespace to “v11”, on the Get-WmiObject statement.</source>
+            <target state="new">If you want to run the script for  Reporting Services, modify the version portion of the path to the namespace to “v11”, on the Get-WmiObject statement.</target>
+          </trans-unit>
+          <trans-unit id="258" xml:space="preserve">
+            <source>Run the script.</source>
+            <target state="new">Run the script.</target>
+          </trans-unit>
+          <trans-unit id="259" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Validation<ept id="1">&lt;/strong&gt;</ept>: To verify that the basic report server functionality is working, see the <bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>Verify the configuration<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept> section later in this topic.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Validation<ept id="1">&lt;/strong&gt;</ept>: To verify that the basic report server functionality is working, see the <bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>Verify the configuration<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept> section later in this topic.</target>
+          </trans-unit>
+          <trans-unit id="260" xml:space="preserve">
+            <source>Use script to configure the report server and HTTPS</source>
+            <target state="new">Use script to configure the report server and HTTPS</target>
+          </trans-unit>
+          <trans-unit id="261" xml:space="preserve">
+            <source>To use Windows PowerShell to configure the report server, complete the following steps.</source>
+            <target state="new">To use Windows PowerShell to configure the report server, complete the following steps.</target>
+          </trans-unit>
+          <trans-unit id="262" xml:space="preserve">
+            <source>The configuration includes HTTPS, not HTTP.</source>
+            <target state="new">The configuration includes HTTPS, not HTTP.</target>
+          </trans-unit>
+          <trans-unit id="263" xml:space="preserve">
+            <source>From the Azure Management portal, select the VM and click connect.</source>
+            <target state="new">From the Azure Management portal, select the VM and click connect.</target>
+          </trans-unit>
+          <trans-unit id="264" xml:space="preserve">
+            <source>Depending on your browser configuration, you may be prompted to save an .rdp file for connecting to the VM.</source>
+            <target state="new">Depending on your browser configuration, you may be prompted to save an .rdp file for connecting to the VM.</target>
+          </trans-unit>
+          <trans-unit id="265" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>connect to azure virtual machine<ept id="1">&lt;/linkText&gt;</ept> Use the user VM name, user name and password you configured when you created the VM.</source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>connect to azure virtual machine<ept id="1">&lt;/linkText&gt;</ept> Use the user VM name, user name and password you configured when you created the VM.</target>
+          </trans-unit>
+          <trans-unit id="266" xml:space="preserve">
+            <source>For example, in the following image, the VM name is <bpt id="2">&lt;strong&gt;</bpt>ssrsnativecloud<ept id="2">&lt;/strong&gt;</ept> and the user name is <bpt id="4">&lt;strong&gt;</bpt>testuser<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">For example, in the following image, the VM name is <bpt id="2">&lt;strong&gt;</bpt>ssrsnativecloud<ept id="2">&lt;/strong&gt;</ept> and the user name is <bpt id="4">&lt;strong&gt;</bpt>testuser<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="267" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>login inlcudes vm name<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>login inlcudes vm name<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="268" xml:space="preserve">
+            <source>On the VM, open <bpt id="2">&lt;strong&gt;</bpt>Windows PowerShell ISE<ept id="2">&lt;/strong&gt;</ept> with administrative privileges.</source>
+            <target state="new">On the VM, open <bpt id="2">&lt;strong&gt;</bpt>Windows PowerShell ISE<ept id="2">&lt;/strong&gt;</ept> with administrative privileges.</target>
+          </trans-unit>
+          <trans-unit id="269" xml:space="preserve">
+            <source>The PowerShell ISE is installed by default on Windows server 2012.</source>
+            <target state="new">The PowerShell ISE is installed by default on Windows server 2012.</target>
+          </trans-unit>
+          <trans-unit id="270" xml:space="preserve">
+            <source>It is recommended you use the ISE instead of a standard Windows PowerShell window so that you can paste the script into the ISE, modify the script, and then run the script.</source>
+            <target state="new">It is recommended you use the ISE instead of a standard Windows PowerShell window so that you can paste the script into the ISE, modify the script, and then run the script.</target>
+          </trans-unit>
+          <trans-unit id="271" xml:space="preserve">
+            <source>To enable running scripts, run the following Windows PowerShell command:</source>
+            <target state="new">To enable running scripts, run the following Windows PowerShell command:</target>
+          </trans-unit>
+          <trans-unit id="272" xml:space="preserve">
+            <source>You can then run the following to verify the policy:</source>
+            <target state="new">You can then run the following to verify the policy:</target>
+          </trans-unit>
+          <trans-unit id="273" xml:space="preserve">
+            <source>In <bpt id="2">&lt;strong&gt;</bpt>Windows PowerShell ISE<ept id="2">&lt;/strong&gt;</ept>, click the <bpt id="4">&lt;strong&gt;</bpt>View<ept id="4">&lt;/strong&gt;</ept> menu and then click <bpt id="6">&lt;strong&gt;</bpt>Show Script Pane<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In <bpt id="2">&lt;strong&gt;</bpt>Windows PowerShell ISE<ept id="2">&lt;/strong&gt;</ept>, click the <bpt id="4">&lt;strong&gt;</bpt>View<ept id="4">&lt;/strong&gt;</ept> menu and then click <bpt id="6">&lt;strong&gt;</bpt>Show Script Pane<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="274" xml:space="preserve">
+            <source>Copy the following script and paste it into the Windows PowerShell ISE script pane.</source>
+            <target state="new">Copy the following script and paste it into the Windows PowerShell ISE script pane.</target>
+          </trans-unit>
+          <trans-unit id="275" xml:space="preserve">
+            <source>Modify the <bpt id="2">&lt;strong&gt;</bpt>$certificatehash<ept id="2">&lt;/strong&gt;</ept> parameter in the script:</source>
+            <target state="new">Modify the <bpt id="2">&lt;strong&gt;</bpt>$certificatehash<ept id="2">&lt;/strong&gt;</ept> parameter in the script:</target>
+          </trans-unit>
+          <trans-unit id="276" xml:space="preserve">
+            <source>This is a <bpt id="2">&lt;strong&gt;</bpt>required<ept id="2">&lt;/strong&gt;</ept> parameter.</source>
+            <target state="new">This is a <bpt id="2">&lt;strong&gt;</bpt>required<ept id="2">&lt;/strong&gt;</ept> parameter.</target>
+          </trans-unit>
+          <trans-unit id="277" xml:space="preserve">
+            <source>If you did not save the certificate value from the previous steps, use one of the following methods to copy the certificate hash value from the certificates thumbprint.:</source>
+            <target state="new">If you did not save the certificate value from the previous steps, use one of the following methods to copy the certificate hash value from the certificates thumbprint.:</target>
+          </trans-unit>
+          <trans-unit id="278" xml:space="preserve">
+            <source>On the VM, open Windows PowerShell ISE and run the following command:</source>
+            <target state="new">On the VM, open Windows PowerShell ISE and run the following command:</target>
+          </trans-unit>
+          <trans-unit id="279" xml:space="preserve">
+            <source>The output will look similar to the following.</source>
+            <target state="new">The output will look similar to the following.</target>
+          </trans-unit>
+          <trans-unit id="280" xml:space="preserve">
+            <source>If the script returns a blank line, the VM does not have a certificate configured for example, see the section <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>To use the Virtual Machines Self-signed Certificate<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">If the script returns a blank line, the VM does not have a certificate configured for example, see the section <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>To use the Virtual Machines Self-signed Certificate<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="281" xml:space="preserve">
+            <source>OR</source>
+            <target state="new">OR</target>
+          </trans-unit>
+          <trans-unit id="282" xml:space="preserve">
+            <source>On the VM Run mmc.exe and then add the <bpt id="2">&lt;strong&gt;</bpt>Certificates<ept id="2">&lt;/strong&gt;</ept> snap-in.</source>
+            <target state="new">On the VM Run mmc.exe and then add the <bpt id="2">&lt;strong&gt;</bpt>Certificates<ept id="2">&lt;/strong&gt;</ept> snap-in.</target>
+          </trans-unit>
+          <trans-unit id="283" xml:space="preserve">
+            <source>Under the <bpt id="2">&lt;strong&gt;</bpt>Trusted Root Certificate Authorities<ept id="2">&lt;/strong&gt;</ept> node double-click your certificate name.</source>
+            <target state="new">Under the <bpt id="2">&lt;strong&gt;</bpt>Trusted Root Certificate Authorities<ept id="2">&lt;/strong&gt;</ept> node double-click your certificate name.</target>
+          </trans-unit>
+          <trans-unit id="284" xml:space="preserve">
+            <source>If you are using the self-signed certificate of the VM, the certificate is named after the DNS name of the VM and ends with <bpt id="2">&lt;strong&gt;</bpt>cloudapp.net<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">If you are using the self-signed certificate of the VM, the certificate is named after the DNS name of the VM and ends with <bpt id="2">&lt;strong&gt;</bpt>cloudapp.net<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="285" xml:space="preserve">
+            <source>Click the <bpt id="2">&lt;strong&gt;</bpt>Details<ept id="2">&lt;/strong&gt;</ept> tab.</source>
+            <target state="new">Click the <bpt id="2">&lt;strong&gt;</bpt>Details<ept id="2">&lt;/strong&gt;</ept> tab.</target>
+          </trans-unit>
+          <trans-unit id="286" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Thumbprint<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Thumbprint<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="287" xml:space="preserve">
+            <source>The value of the thumbprint is displayed in the details field, for example af 11 60 b6 4b 28 8d 89 0a 82 12 ff 6b a9 c3 66 4f 31 90 48</source>
+            <target state="new">The value of the thumbprint is displayed in the details field, for example af 11 60 b6 4b 28 8d 89 0a 82 12 ff 6b a9 c3 66 4f 31 90 48</target>
+          </trans-unit>
+          <trans-unit id="288" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Before you run the script<ept id="1">&lt;/strong&gt;</ept>, remove the spaces in between the pairs of values.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Before you run the script<ept id="1">&lt;/strong&gt;</ept>, remove the spaces in between the pairs of values.</target>
+          </trans-unit>
+          <trans-unit id="289" xml:space="preserve">
+            <source>For example af1160b64b288d890a8212ff6ba9c3664f319048</source>
+            <target state="new">For example af1160b64b288d890a8212ff6ba9c3664f319048</target>
+          </trans-unit>
+          <trans-unit id="290" xml:space="preserve">
+            <source>Modify the <bpt id="2">&lt;strong&gt;</bpt>$httpsport<ept id="2">&lt;/strong&gt;</ept> parameter:</source>
+            <target state="new">Modify the <bpt id="2">&lt;strong&gt;</bpt>$httpsport<ept id="2">&lt;/strong&gt;</ept> parameter:</target>
+          </trans-unit>
+          <trans-unit id="291" xml:space="preserve">
+            <source>If you used port 443 for the HTTPS endpoint, then you do not need to update this parameter in the script.</source>
+            <target state="new">If you used port 443 for the HTTPS endpoint, then you do not need to update this parameter in the script.</target>
+          </trans-unit>
+          <trans-unit id="292" xml:space="preserve">
+            <source>Otherwise use the port value you selected when you configured the HTTPS private endpoint on the VM.</source>
+            <target state="new">Otherwise use the port value you selected when you configured the HTTPS private endpoint on the VM.</target>
+          </trans-unit>
+          <trans-unit id="293" xml:space="preserve">
+            <source>Modify the <bpt id="2">&lt;strong&gt;</bpt>$DNSName<ept id="2">&lt;/strong&gt;</ept> parameter:</source>
+            <target state="new">Modify the <bpt id="2">&lt;strong&gt;</bpt>$DNSName<ept id="2">&lt;/strong&gt;</ept> parameter:</target>
+          </trans-unit>
+          <trans-unit id="294" xml:space="preserve">
+            <source>The script is configured for a wild card certificate $DNSName="+".</source>
+            <target state="new">The script is configured for a wild card certificate $DNSName="+".</target>
+          </trans-unit>
+          <trans-unit id="295" xml:space="preserve">
+            <source>If you do no want to configure for a wildcard certificate binding, comment out $DNSName="+" and enable the following line, the full $DNSNAme reference, ##$DNSName="$server.cloudapp.net".</source>
+            <target state="new">If you do no want to configure for a wildcard certificate binding, comment out $DNSName="+" and enable the following line, the full $DNSNAme reference, ##$DNSName="$server.cloudapp.net".</target>
+          </trans-unit>
+          <trans-unit id="296" xml:space="preserve">
+            <source>Change the $DNSName value if you do not want to use the virtual machine’s DNS name for Reporting Services.</source>
+            <target state="new">Change the $DNSName value if you do not want to use the virtual machine’s DNS name for Reporting Services.</target>
+          </trans-unit>
+          <trans-unit id="297" xml:space="preserve">
+            <source>If you use the parameter, the certificate must also use this name and you register the name globally on a DNS server.</source>
+            <target state="new">If you use the parameter, the certificate must also use this name and you register the name globally on a DNS server.</target>
+          </trans-unit>
+          <trans-unit id="298" xml:space="preserve">
+            <source>The script is currently configured for  Reporting Services.</source>
+            <target state="new">The script is currently configured for  Reporting Services.</target>
+          </trans-unit>
+          <trans-unit id="299" xml:space="preserve">
+            <source>If you want to run the script for  Reporting Services, modify the version portion of the path to the namespace to “v11”, on the Get-WmiObject statement.</source>
+            <target state="new">If you want to run the script for  Reporting Services, modify the version portion of the path to the namespace to “v11”, on the Get-WmiObject statement.</target>
+          </trans-unit>
+          <trans-unit id="300" xml:space="preserve">
+            <source>Run the script.</source>
+            <target state="new">Run the script.</target>
+          </trans-unit>
+          <trans-unit id="301" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Validation<ept id="1">&lt;/strong&gt;</ept>: To verify that the basic report server functionality is working, see the <bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>Verify the configuration<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept> section later in this topic.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Validation<ept id="1">&lt;/strong&gt;</ept>: To verify that the basic report server functionality is working, see the <bpt id="3CapsExtId1">&lt;link&gt;</bpt><bpt id="3CapsExtId2">&lt;linkText&gt;</bpt>Verify the configuration<ept id="3CapsExtId2">&lt;/linkText&gt;</ept><bpt id="3CapsExtId3">&lt;title&gt;</bpt><ept id="3CapsExtId3">&lt;/title&gt;</ept><ept id="3CapsExtId1">&lt;/link&gt;</ept> section later in this topic.</target>
+          </trans-unit>
+          <trans-unit id="302" xml:space="preserve">
+            <source>To verify the certificate binding open a command prompt with administrative privileges, and then run the following command:</source>
+            <target state="new">To verify the certificate binding open a command prompt with administrative privileges, and then run the following command:</target>
+          </trans-unit>
+          <trans-unit id="303" xml:space="preserve">
+            <source>The result will include the following:</source>
+            <target state="new">The result will include the following:</target>
+          </trans-unit>
+          <trans-unit id="304" xml:space="preserve">
+            <source>Use Configuration Manager to Configure the Report Server</source>
+            <target state="new">Use Configuration Manager to Configure the Report Server</target>
+          </trans-unit>
+          <trans-unit id="305" xml:space="preserve">
+            <source>If you do not want to run the PowerShell script to configure the report server, follow the steps in this section to use the Reporting Services native mode configuration manager to configure the report server.</source>
+            <target state="new">If you do not want to run the PowerShell script to configure the report server, follow the steps in this section to use the Reporting Services native mode configuration manager to configure the report server.</target>
+          </trans-unit>
+          <trans-unit id="306" xml:space="preserve">
+            <source>From the Azure Management portal, select the VM and click connect.</source>
+            <target state="new">From the Azure Management portal, select the VM and click connect.</target>
+          </trans-unit>
+          <trans-unit id="307" xml:space="preserve">
+            <source>Use the user name and password you configured when you created the VM.</source>
+            <target state="new">Use the user name and password you configured when you created the VM.</target>
+          </trans-unit>
+          <trans-unit id="308" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>connect to azure virtual machine<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>connect to azure virtual machine<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="309" xml:space="preserve">
+            <source>Run Windows update and install updates to the VM.</source>
+            <target state="new">Run Windows update and install updates to the VM.</target>
+          </trans-unit>
+          <trans-unit id="310" xml:space="preserve">
+            <source>If a restart of the VM is required, restart the VM and reconnect to the VM from the Azure Management portal.</source>
+            <target state="new">If a restart of the VM is required, restart the VM and reconnect to the VM from the Azure Management portal.</target>
+          </trans-unit>
+          <trans-unit id="311" xml:space="preserve">
+            <source>From the Start menu on the VM, type <bpt id="2">&lt;strong&gt;</bpt>Reporting Services<ept id="2">&lt;/strong&gt;</ept> and open <bpt id="4">&lt;strong&gt;</bpt>Reporting Services Configuration Manager<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">From the Start menu on the VM, type <bpt id="2">&lt;strong&gt;</bpt>Reporting Services<ept id="2">&lt;/strong&gt;</ept> and open <bpt id="4">&lt;strong&gt;</bpt>Reporting Services Configuration Manager<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="312" xml:space="preserve">
+            <source>Leave the default values for <bpt id="2">&lt;strong&gt;</bpt>Server Name<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>Report Server Instance<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Leave the default values for <bpt id="2">&lt;strong&gt;</bpt>Server Name<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>Report Server Instance<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="313" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Connect<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Connect<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="314" xml:space="preserve">
+            <source>In the left pane, click <bpt id="2">&lt;strong&gt;</bpt>Web Service URL<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the left pane, click <bpt id="2">&lt;strong&gt;</bpt>Web Service URL<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="315" xml:space="preserve">
+            <source>By default, RS is configured for HTTP port 80 with IP “All Assigned”.</source>
+            <target state="new">By default, RS is configured for HTTP port 80 with IP “All Assigned”.</target>
+          </trans-unit>
+          <trans-unit id="316" xml:space="preserve">
+            <source>To add HTTPS:</source>
+            <target state="new">To add HTTPS:</target>
+          </trans-unit>
+          <trans-unit id="317" xml:space="preserve">
+            <source>In <bpt id="2">&lt;strong&gt;</bpt>SSL Certificate<ept id="2">&lt;/strong&gt;</ept>: select the certificate you want to use, for example [VM name].cloudapp.net.</source>
+            <target state="new">In <bpt id="2">&lt;strong&gt;</bpt>SSL Certificate<ept id="2">&lt;/strong&gt;</ept>: select the certificate you want to use, for example [VM name].cloudapp.net.</target>
+          </trans-unit>
+          <trans-unit id="318" xml:space="preserve">
+            <source>If no certificates are listed, see the section <bpt id="2">&lt;strong&gt;</bpt>Step 2: Create a Server Certificate<ept id="2">&lt;/strong&gt;</ept> for information on how to install and trust the certificate on the VM.</source>
+            <target state="new">If no certificates are listed, see the section <bpt id="2">&lt;strong&gt;</bpt>Step 2: Create a Server Certificate<ept id="2">&lt;/strong&gt;</ept> for information on how to install and trust the certificate on the VM.</target>
+          </trans-unit>
+          <trans-unit id="319" xml:space="preserve">
+            <source>Under <bpt id="2">&lt;strong&gt;</bpt>SSL Port<ept id="2">&lt;/strong&gt;</ept>: choose 443.</source>
+            <target state="new">Under <bpt id="2">&lt;strong&gt;</bpt>SSL Port<ept id="2">&lt;/strong&gt;</ept>: choose 443.</target>
+          </trans-unit>
+          <trans-unit id="320" xml:space="preserve">
+            <source>If you configured the HTTPS private endpoint in the VM with a different private port, use that value here.</source>
+            <target state="new">If you configured the HTTPS private endpoint in the VM with a different private port, use that value here.</target>
+          </trans-unit>
+          <trans-unit id="321" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Apply<ept id="2">&lt;/strong&gt;</ept> and wait for the operation to complete.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Apply<ept id="2">&lt;/strong&gt;</ept> and wait for the operation to complete.</target>
+          </trans-unit>
+          <trans-unit id="322" xml:space="preserve">
+            <source>In the left pane, click <bpt id="2">&lt;strong&gt;</bpt>Database<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the left pane, click <bpt id="2">&lt;strong&gt;</bpt>Database<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="323" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Change Databas<ept id="2">&lt;/strong&gt;</ept>e.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Change Databas<ept id="2">&lt;/strong&gt;</ept>e.</target>
+          </trans-unit>
+          <trans-unit id="324" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Create a new report server database<ept id="2">&lt;/strong&gt;</ept> and then click <bpt id="4">&lt;strong&gt;</bpt>Next<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Create a new report server database<ept id="2">&lt;/strong&gt;</ept> and then click <bpt id="4">&lt;strong&gt;</bpt>Next<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="325" xml:space="preserve">
+            <source>Leave the default <bpt id="2">&lt;strong&gt;</bpt>Server Name<ept id="2">&lt;/strong&gt;</ept>: as the VM name and leave the default <bpt id="4">&lt;strong&gt;</bpt>Authentication Type<ept id="4">&lt;/strong&gt;</ept> as <bpt id="6">&lt;strong&gt;</bpt>Current User<ept id="6">&lt;/strong&gt;</ept> – <bpt id="8">&lt;strong&gt;</bpt>Integrated Security<ept id="8">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Leave the default <bpt id="2">&lt;strong&gt;</bpt>Server Name<ept id="2">&lt;/strong&gt;</ept>: as the VM name and leave the default <bpt id="4">&lt;strong&gt;</bpt>Authentication Type<ept id="4">&lt;/strong&gt;</ept> as <bpt id="6">&lt;strong&gt;</bpt>Current User<ept id="6">&lt;/strong&gt;</ept> – <bpt id="8">&lt;strong&gt;</bpt>Integrated Security<ept id="8">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="326" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Next<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Next<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="327" xml:space="preserve">
+            <source>Leave the default <bpt id="2">&lt;strong&gt;</bpt>Database Name<ept id="2">&lt;/strong&gt;</ept> as <bpt id="4">&lt;strong&gt;</bpt>ReportServer<ept id="4">&lt;/strong&gt;</ept> and click <bpt id="6">&lt;strong&gt;</bpt>Next<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Leave the default <bpt id="2">&lt;strong&gt;</bpt>Database Name<ept id="2">&lt;/strong&gt;</ept> as <bpt id="4">&lt;strong&gt;</bpt>ReportServer<ept id="4">&lt;/strong&gt;</ept> and click <bpt id="6">&lt;strong&gt;</bpt>Next<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="328" xml:space="preserve">
+            <source>Leave the default <bpt id="2">&lt;strong&gt;</bpt>Authentication Type<ept id="2">&lt;/strong&gt;</ept> as <bpt id="4">&lt;strong&gt;</bpt>Service Credentials<ept id="4">&lt;/strong&gt;</ept> and click <bpt id="6">&lt;strong&gt;</bpt>Next<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Leave the default <bpt id="2">&lt;strong&gt;</bpt>Authentication Type<ept id="2">&lt;/strong&gt;</ept> as <bpt id="4">&lt;strong&gt;</bpt>Service Credentials<ept id="4">&lt;/strong&gt;</ept> and click <bpt id="6">&lt;strong&gt;</bpt>Next<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="329" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Next<ept id="2">&lt;/strong&gt;</ept> on the <bpt id="4">&lt;strong&gt;</bpt>Summary<ept id="4">&lt;/strong&gt;</ept> page.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Next<ept id="2">&lt;/strong&gt;</ept> on the <bpt id="4">&lt;strong&gt;</bpt>Summary<ept id="4">&lt;/strong&gt;</ept> page.</target>
+          </trans-unit>
+          <trans-unit id="330" xml:space="preserve">
+            <source>When the configuration is complete, click <bpt id="2">&lt;strong&gt;</bpt>Finish<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">When the configuration is complete, click <bpt id="2">&lt;strong&gt;</bpt>Finish<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="331" xml:space="preserve">
+            <source>In the left pane, click <bpt id="2">&lt;strong&gt;</bpt>Report Manager URL<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the left pane, click <bpt id="2">&lt;strong&gt;</bpt>Report Manager URL<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="332" xml:space="preserve">
+            <source>Leave the default <bpt id="2">&lt;strong&gt;</bpt>Virtual Directory<ept id="2">&lt;/strong&gt;</ept> as <bpt id="4">&lt;strong&gt;</bpt>Reports<ept id="4">&lt;/strong&gt;</ept> and click <bpt id="6">&lt;strong&gt;</bpt>Apply<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Leave the default <bpt id="2">&lt;strong&gt;</bpt>Virtual Directory<ept id="2">&lt;/strong&gt;</ept> as <bpt id="4">&lt;strong&gt;</bpt>Reports<ept id="4">&lt;/strong&gt;</ept> and click <bpt id="6">&lt;strong&gt;</bpt>Apply<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="333" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Exit<ept id="2">&lt;/strong&gt;</ept> to close the Reporting Services Configuration Manager.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Exit<ept id="2">&lt;/strong&gt;</ept> to close the Reporting Services Configuration Manager.</target>
+          </trans-unit>
+          <trans-unit id="334" xml:space="preserve">
+            <source>Step 4: Open Windows Firewall Port</source>
+            <target state="new">Step 4: Open Windows Firewall Port</target>
+          </trans-unit>
+          <trans-unit id="335" xml:space="preserve">
+            <source>If you used one of the scripts to configure the report server, you can skip this section.</source>
+            <target state="new">If you used one of the scripts to configure the report server, you can skip this section.</target>
+          </trans-unit>
+          <trans-unit id="336" xml:space="preserve">
+            <source>The script included a step to open the firewall port.</source>
+            <target state="new">The script included a step to open the firewall port.</target>
+          </trans-unit>
+          <trans-unit id="337" xml:space="preserve">
+            <source>The default was port 80 for HTTP and port 443 for HTTPS.</source>
+            <target state="new">The default was port 80 for HTTP and port 443 for HTTPS.</target>
+          </trans-unit>
+          <trans-unit id="338" xml:space="preserve">
+            <source>To connect remotely to Report Manager or the Report Server on the virtual machine, a TCP Endpoint is required on the VM.</source>
+            <target state="new">To connect remotely to Report Manager or the Report Server on the virtual machine, a TCP Endpoint is required on the VM.</target>
+          </trans-unit>
+          <trans-unit id="339" xml:space="preserve">
+            <source>It is required to open the same port in the VM’s firewall.</source>
+            <target state="new">It is required to open the same port in the VM’s firewall.</target>
+          </trans-unit>
+          <trans-unit id="340" xml:space="preserve">
+            <source>The endpoint was created when the VM was provisioned.</source>
+            <target state="new">The endpoint was created when the VM was provisioned.</target>
+          </trans-unit>
+          <trans-unit id="341" xml:space="preserve">
+            <source>This section provides basic information on how to open the firewall port.</source>
+            <target state="new">This section provides basic information on how to open the firewall port.</target>
+          </trans-unit>
+          <trans-unit id="342" xml:space="preserve">
+            <source>For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Configure a Firewall for Report Server Access<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new">For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Configure a Firewall for Report Server Access<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="343" xml:space="preserve">
+            <source>If you used the script to configure the report server, you can skip this section.</source>
+            <target state="new">If you used the script to configure the report server, you can skip this section.</target>
+          </trans-unit>
+          <trans-unit id="344" xml:space="preserve">
+            <source>The script included a step to open the firewall port.</source>
+            <target state="new">The script included a step to open the firewall port.</target>
+          </trans-unit>
+          <trans-unit id="345" xml:space="preserve">
+            <source>If you configured a private port for HTTPS other than 443, modify the following script appropriately.</source>
+            <target state="new">If you configured a private port for HTTPS other than 443, modify the following script appropriately.</target>
+          </trans-unit>
+          <trans-unit id="346" xml:space="preserve">
+            <source>To open port <bpt id="2">&lt;strong&gt;</bpt>443<ept id="2">&lt;/strong&gt;</ept> on the Windows Firewall, complete the following:</source>
+            <target state="new">To open port <bpt id="2">&lt;strong&gt;</bpt>443<ept id="2">&lt;/strong&gt;</ept> on the Windows Firewall, complete the following:</target>
+          </trans-unit>
+          <trans-unit id="347" xml:space="preserve">
+            <source>Open a Windows PowerShell window with administrative privileges.</source>
+            <target state="new">Open a Windows PowerShell window with administrative privileges.</target>
+          </trans-unit>
+          <trans-unit id="348" xml:space="preserve">
+            <source>If you used a port other than 443 when you configured the HTTPS endpoint on the VM, update the port in the following command and then run the command:</source>
+            <target state="new">If you used a port other than 443 when you configured the HTTPS endpoint on the VM, update the port in the following command and then run the command:</target>
+          </trans-unit>
+          <trans-unit id="349" xml:space="preserve">
+            <source>When the command completes, <bpt id="2">&lt;strong&gt;</bpt>Ok<ept id="2">&lt;/strong&gt;</ept> is displayed in the command prompt.</source>
+            <target state="new">When the command completes, <bpt id="2">&lt;strong&gt;</bpt>Ok<ept id="2">&lt;/strong&gt;</ept> is displayed in the command prompt.</target>
+          </trans-unit>
+          <trans-unit id="350" xml:space="preserve">
+            <source>To verify that the port is opened, open a Windows PowerShell window and run the following command:</source>
+            <target state="new">To verify that the port is opened, open a Windows PowerShell window and run the following command:</target>
+          </trans-unit>
+          <trans-unit id="351" xml:space="preserve">
+            <source>Verify the configuration</source>
+            <target state="new">Verify the configuration</target>
+          </trans-unit>
+          <trans-unit id="352" xml:space="preserve">
+            <source>To verify that the basic report server functionality is now working, open your browser with administrative privileges and then browse to the following report server ad report manager URLS:</source>
+            <target state="new">To verify that the basic report server functionality is now working, open your browser with administrative privileges and then browse to the following report server ad report manager URLS:</target>
+          </trans-unit>
+          <trans-unit id="353" xml:space="preserve">
+            <source>On the VM, browse to the report server URL:</source>
+            <target state="new">On the VM, browse to the report server URL:</target>
+          </trans-unit>
+          <trans-unit id="354" xml:space="preserve">
+            <source>On the VM, browse to the report manger URL:</source>
+            <target state="new">On the VM, browse to the report manger URL:</target>
+          </trans-unit>
+          <trans-unit id="355" xml:space="preserve">
+            <source>From your local computer, browse to the <bpt id="2">&lt;strong&gt;</bpt>remote<ept id="2">&lt;/strong&gt;</ept> report Manager on the VM.</source>
+            <target state="new">From your local computer, browse to the <bpt id="2">&lt;strong&gt;</bpt>remote<ept id="2">&lt;/strong&gt;</ept> report Manager on the VM.</target>
+          </trans-unit>
+          <trans-unit id="356" xml:space="preserve">
+            <source>Update the DNS name in the following example as appropriate.</source>
+            <target state="new">Update the DNS name in the following example as appropriate.</target>
+          </trans-unit>
+          <trans-unit id="357" xml:space="preserve">
+            <source>When prompted for a password, use the administrator credentials you created when the VM was provisioned.</source>
+            <target state="new">When prompted for a password, use the administrator credentials you created when the VM was provisioned.</target>
+          </trans-unit>
+          <trans-unit id="358" xml:space="preserve">
+            <source>The user name is in the [Domain]\[user name] format, where the domain is the VM computer name, for example ssrsnativecloud\testuser.</source>
+            <target state="new">The user name is in the [Domain]\[user name] format, where the domain is the VM computer name, for example ssrsnativecloud\testuser.</target>
+          </trans-unit>
+          <trans-unit id="359" xml:space="preserve">
+            <source>If you are not using HTTP<bpt id="2">&lt;strong&gt;</bpt>S<ept id="2">&lt;/strong&gt;</ept>, remove the <bpt id="4">&lt;strong&gt;</bpt>s<ept id="4">&lt;/strong&gt;</ept> in the URL.</source>
+            <target state="new">If you are not using HTTP<bpt id="2">&lt;strong&gt;</bpt>S<ept id="2">&lt;/strong&gt;</ept>, remove the <bpt id="4">&lt;strong&gt;</bpt>s<ept id="4">&lt;/strong&gt;</ept> in the URL.</target>
+          </trans-unit>
+          <trans-unit id="360" xml:space="preserve">
+            <source>See the next section for information on creating additional users on VM.</source>
+            <target state="new">See the next section for information on creating additional users on VM.</target>
+          </trans-unit>
+          <trans-unit id="361" xml:space="preserve">
+            <source>From your local computer, browse to the remote report server URL.</source>
+            <target state="new">From your local computer, browse to the remote report server URL.</target>
+          </trans-unit>
+          <trans-unit id="362" xml:space="preserve">
+            <source>Update the DNS name in the following example as appropriate.</source>
+            <target state="new">Update the DNS name in the following example as appropriate.</target>
+          </trans-unit>
+          <trans-unit id="363" xml:space="preserve">
+            <source>If you are not using HTTPS, remove the s in the URL.</source>
+            <target state="new">If you are not using HTTPS, remove the s in the URL.</target>
+          </trans-unit>
+          <trans-unit id="364" xml:space="preserve">
+            <source>Create Users and Assign Roles</source>
+            <target state="new">Create Users and Assign Roles</target>
+          </trans-unit>
+          <trans-unit id="365" xml:space="preserve">
+            <source>After configuring and verifying the report server, a common administrative task is to create one or more users and assign users to Reporting Services roles.</source>
+            <target state="new">After configuring and verifying the report server, a common administrative task is to create one or more users and assign users to Reporting Services roles.</target>
+          </trans-unit>
+          <trans-unit id="366" xml:space="preserve">
+            <source>For more information, see the following:</source>
+            <target state="new">For more information, see the following:</target>
+          </trans-unit>
+          <trans-unit id="367" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Create a local user account<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Create a local user account<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="368" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Grant User Access to a Report Server (Report Manager)<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Grant User Access to a Report Server (Report Manager)<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="369" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Create and Manage Role Assignments<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Create and Manage Role Assignments<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="370" xml:space="preserve">
+            <source>To Create and Publish Reports to the Azure Virtual Machine</source>
+            <target state="new">To Create and Publish Reports to the Azure Virtual Machine</target>
+          </trans-unit>
+          <trans-unit id="371" xml:space="preserve">
+            <source>The following table summarizes some of the options available to publish existing reports from an on-premises computer to the report server hosted on the Microsoft Azure Virtual Machine:</source>
+            <target state="new">The following table summarizes some of the options available to publish existing reports from an on-premises computer to the report server hosted on the Microsoft Azure Virtual Machine:</target>
+          </trans-unit>
+          <trans-unit id="372" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>RS.exe script<ept id="1">&lt;/strong&gt;</ept>: Use RS.exe script to copy report items from and existing report server to your Microsoft Azure Virtual Machine.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>RS.exe script<ept id="1">&lt;/strong&gt;</ept>: Use RS.exe script to copy report items from and existing report server to your Microsoft Azure Virtual Machine.</target>
+          </trans-unit>
+          <trans-unit id="373" xml:space="preserve">
+            <source>For more information, see the section “Native mode to Native Mode – Microsoft Azure Virtual Machine” in <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Sample Reporting Services rs.exe Script to Migrate Content between Report Servers<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information, see the section “Native mode to Native Mode – Microsoft Azure Virtual Machine” in <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Sample Reporting Services rs.exe Script to Migrate Content between Report Servers<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="374" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Report Builder<ept id="1">&lt;/strong&gt;</ept>: The virtual machine includes the click-once version of Microsoft SQL Server Report Builder.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Report Builder<ept id="1">&lt;/strong&gt;</ept>: The virtual machine includes the click-once version of Microsoft SQL Server Report Builder.</target>
+          </trans-unit>
+          <trans-unit id="375" xml:space="preserve">
+            <source>To start Report builder the first time on the virtual machine:</source>
+            <target state="new">To start Report builder the first time on the virtual machine:</target>
+          </trans-unit>
+          <trans-unit id="376" xml:space="preserve">
+            <source>Start your browser with administrative privileges.</source>
+            <target state="new">Start your browser with administrative privileges.</target>
+          </trans-unit>
+          <trans-unit id="377" xml:space="preserve">
+            <source>Browse to report manager on the virtual machine and click <bpt id="2">&lt;strong&gt;</bpt>Report Builder<ept id="2">&lt;/strong&gt;</ept>  in the ribbon.</source>
+            <target state="new">Browse to report manager on the virtual machine and click <bpt id="2">&lt;strong&gt;</bpt>Report Builder<ept id="2">&lt;/strong&gt;</ept>  in the ribbon.</target>
+          </trans-unit>
+          <trans-unit id="378" xml:space="preserve">
+            <source>For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Installing, Uninstalling, and Supporting Report Builder<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Installing, Uninstalling, and Supporting Report Builder<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="379" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>SQL Server Data Tools: VM<ept id="1">&lt;/strong&gt;</ept>:  If you created the VM with SQL Server 2012, then SQL Server Data Tools is installed on the virtual machine and can be used to create <bpt id="3">&lt;strong&gt;</bpt>Report Server Projects<ept id="3">&lt;/strong&gt;</ept> and reports on the virtual machine.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>SQL Server Data Tools: VM<ept id="1">&lt;/strong&gt;</ept>:  If you created the VM with SQL Server 2012, then SQL Server Data Tools is installed on the virtual machine and can be used to create <bpt id="3">&lt;strong&gt;</bpt>Report Server Projects<ept id="3">&lt;/strong&gt;</ept> and reports on the virtual machine.</target>
+          </trans-unit>
+          <trans-unit id="380" xml:space="preserve">
+            <source>SQL Server Data Tools can publish the reports to the report server on the virtual machine.</source>
+            <target state="new">SQL Server Data Tools can publish the reports to the report server on the virtual machine.</target>
+          </trans-unit>
+          <trans-unit id="381" xml:space="preserve">
+            <source>If you created the VM with SQL server 2014, you can install SQL Server Data Tools- BI for visual Studio.</source>
+            <target state="new">If you created the VM with SQL server 2014, you can install SQL Server Data Tools- BI for visual Studio.</target>
+          </trans-unit>
+          <trans-unit id="382" xml:space="preserve">
+            <source>For more information, see the following:</source>
+            <target state="new">For more information, see the following:</target>
+          </trans-unit>
+          <trans-unit id="383" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Microsoft SQL Server Data Tools - Business Intelligence for Visual Studio 2013<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Microsoft SQL Server Data Tools - Business Intelligence for Visual Studio 2013<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="384" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Microsoft SQL Server Data Tools - Business Intelligence for Visual Studio 2012<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Microsoft SQL Server Data Tools - Business Intelligence for Visual Studio 2012<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="385" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>SQL Server Data Tools and SQL Server Business Intelligence (SSDT-BI)<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>SQL Server Data Tools and SQL Server Business Intelligence (SSDT-BI)<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="386" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>SQL Server Data Tools: Remote<ept id="1">&lt;/strong&gt;</ept>:  On your local computer, create a Reporting Services project in SQL Server Data Tools that contains Reporting Services reports.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>SQL Server Data Tools: Remote<ept id="1">&lt;/strong&gt;</ept>:  On your local computer, create a Reporting Services project in SQL Server Data Tools that contains Reporting Services reports.</target>
+          </trans-unit>
+          <trans-unit id="387" xml:space="preserve">
+            <source>Configure the project to connect to the web service URL.</source>
+            <target state="new">Configure the project to connect to the web service URL.</target>
+          </trans-unit>
+          <trans-unit id="388" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>ssdt project properties for SSRS project<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>ssdt project properties for SSRS project<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="389" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Use script<ept id="1">&lt;/strong&gt;</ept>: Use script to copy report server content.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Use script<ept id="1">&lt;/strong&gt;</ept>: Use script to copy report server content.</target>
+          </trans-unit>
+          <trans-unit id="390" xml:space="preserve">
+            <source>For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Sample Reporting Services rs.exe Script to Migrate Content between Report Servers<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Sample Reporting Services rs.exe Script to Migrate Content between Report Servers<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="391" xml:space="preserve">
+            <source>Minimize cost if you are not using the VM</source>
+            <target state="new">Minimize cost if you are not using the VM</target>
+          </trans-unit>
+          <trans-unit id="392" xml:space="preserve">
+            <source>To minimize charges for your Azure Virtual Machines when not in use, shut down the VM from the Azure Management portal.</source>
+            <target state="new">To minimize charges for your Azure Virtual Machines when not in use, shut down the VM from the Azure Management portal.</target>
+          </trans-unit>
+          <trans-unit id="393" xml:space="preserve">
+            <source>If you use the Windows power options inside a VM to shut down the VM, you are still charged the same amount for the VM.</source>
+            <target state="new">If you use the Windows power options inside a VM to shut down the VM, you are still charged the same amount for the VM.</target>
+          </trans-unit>
+          <trans-unit id="394" xml:space="preserve">
+            <source>To reduce charges, you need to shut down the VM in the Azure Management Portal.</source>
+            <target state="new">To reduce charges, you need to shut down the VM in the Azure Management Portal.</target>
+          </trans-unit>
+          <trans-unit id="395" xml:space="preserve">
+            <source>If you no longer need the VM, remember to delete the VM and the associated .vhd files to avoid storage charges.For more information, see the FAQ section at <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Virtual Machines Pricing Details<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">If you no longer need the VM, remember to delete the VM and the associated .vhd files to avoid storage charges.For more information, see the FAQ section at <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Virtual Machines Pricing Details<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="396" xml:space="preserve">
+            <source>More Information</source>
+            <target state="new">More Information</target>
+          </trans-unit>
+          <trans-unit id="397" xml:space="preserve">
+            <source>Resources</source>
+            <target state="new">Resources</target>
+          </trans-unit>
+          <trans-unit id="398" xml:space="preserve">
+            <source>For similar content related to a single server deployment of SQL Server Business Intelligence and SharePoint 2013, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Use Windows PowerShell to Create an Azure VM With SQL Server BI and SharePoint 2013<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For similar content related to a single server deployment of SQL Server Business Intelligence and SharePoint 2013, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Use Windows PowerShell to Create an Azure VM With SQL Server BI and SharePoint 2013<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="399" xml:space="preserve">
+            <source>For similar content related to a multi-server deployment of SQL Server Business Intelligence and SharePoint 2013, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Deploy SQL Server Business Intelligence in Azure Virtual Machines<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For similar content related to a multi-server deployment of SQL Server Business Intelligence and SharePoint 2013, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Deploy SQL Server Business Intelligence in Azure Virtual Machines<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="400" xml:space="preserve">
+            <source>For General information related to deployments of SQL Server Business Intelligence in Azure Virtual Machines, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>SQL Server Business Intelligence in Azure Virtual Machines<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For General information related to deployments of SQL Server Business Intelligence in Azure Virtual Machines, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>SQL Server Business Intelligence in Azure Virtual Machines<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="401" xml:space="preserve">
+            <source>For more information about the cost of Azure compute charges, see the Virtual Machines tab of <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure pricing calculator<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information about the cost of Azure compute charges, see the Virtual Machines tab of <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure pricing calculator<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="402" xml:space="preserve">
+            <source>Community Content</source>
+            <target state="new">Community Content</target>
+          </trans-unit>
+          <trans-unit id="403" xml:space="preserve">
+            <source>For step by step instructions on how to create a Reporting Services Native mode report server without using script, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Hosting SQL Reporting Service on Azure Virtual Machine<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For step by step instructions on how to create a Reporting Services Native mode report server without using script, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Hosting SQL Reporting Service on Azure Virtual Machine<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="404" xml:space="preserve">
+            <source>Links to other resources for SQL Server in Azure VMs</source>
+            <target state="new">Links to other resources for SQL Server in Azure VMs</target>
+          </trans-unit>
+          <trans-unit id="405" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>SQL Server on Azure Virtual Machines Overview<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>SQL Server on Azure Virtual Machines Overview<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>

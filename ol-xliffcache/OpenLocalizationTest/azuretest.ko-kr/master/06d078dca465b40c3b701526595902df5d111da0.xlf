@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="ko-kr" original="2/21/2016 4:46:38 AM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">06d078dca465b40c3b701526595902df5d111da0</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Getting Started with Microsoft Azure Service Fabric Reliable Services</source>
+            <target state="new">Getting Started with Microsoft Azure Service Fabric Reliable Services</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>How to create a Service Fabric Application with stateless and stateful services.</source>
+            <target state="new">How to create a Service Fabric Application with stateless and stateful services.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Getting Started with Microsoft Azure Service Fabric Reliable Services</source>
+            <target state="new">Getting Started with Microsoft Azure Service Fabric Reliable Services</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source>A Service Fabric Application contains one or more services that run your code.</source>
+            <target state="new">A Service Fabric Application contains one or more services that run your code.</target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>This tutorial walks you through the steps of creating both stateless and stateful "Hello World" Service Fabric Applications using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>*Reliable Services* programming model<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">This tutorial walks you through the steps of creating both stateless and stateful "Hello World" Service Fabric Applications using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>*Reliable Services* programming model<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>A stateless service is the type of service that mostly exists in cloud applications today.</source>
+            <target state="new">A stateless service is the type of service that mostly exists in cloud applications today.</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>The service is considered stateless because the service itself does not contain data that needs to be stored reliably or made highly available - in other words, if an instance of a stateless service shuts down, all of its internal state is lost.</source>
+            <target state="new">The service is considered stateless because the service itself does not contain data that needs to be stored reliably or made highly available - in other words, if an instance of a stateless service shuts down, all of its internal state is lost.</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>In these types of services, state must be persisted to an external store, such as Azure Tables or a SQL database, to be made highly-available and reliable.</source>
+            <target state="new">In these types of services, state must be persisted to an external store, such as Azure Tables or a SQL database, to be made highly-available and reliable.</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source>Service Fabric introduces a new kind of service that is stateful: A service that can maintain state reliably within the service itself, co-located with the code that's using it.</source>
+            <target state="new">Service Fabric introduces a new kind of service that is stateful: A service that can maintain state reliably within the service itself, co-located with the code that's using it.</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source>Your state is  made highly available by Service Fabric without the need to persist state to an external store.</source>
+            <target state="new">Your state is  made highly available by Service Fabric without the need to persist state to an external store.</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>In this tutorial, you'll implement both a stateless service and a stateful service that keeps an internal counter.</source>
+            <target state="new">In this tutorial, you'll implement both a stateless service and a stateful service that keeps an internal counter.</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source>In the stateless service, the value of the counter is lost when the service restarts or moves.</source>
+            <target state="new">In the stateless service, the value of the counter is lost when the service restarts or moves.</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>However, in the stateful service, the counter state is made reliable by Service Fabric so that if the service execution is interrupted for any reason in the middle of counting, it can pick up right where it left off.</source>
+            <target state="new">However, in the stateful service, the counter state is made reliable by Service Fabric so that if the service execution is interrupted for any reason in the middle of counting, it can pick up right where it left off.</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source>Create a Stateless Service</source>
+            <target state="new">Create a Stateless Service</target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>Let's start with a stateless service.</source>
+            <target state="new">Let's start with a stateless service.</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source>Launch Visual Studio 2015 RC as <bpt id="2">&lt;strong&gt;</bpt>Administrator<ept id="2">&lt;/strong&gt;</ept>, and create a new <bpt id="4">&lt;strong&gt;</bpt>Service Fabric Application<ept id="4">&lt;/strong&gt;</ept> Project named <bpt id="6">&lt;em&gt;</bpt>HelloWorld<ept id="6">&lt;/em&gt;</ept>:</source>
+            <target state="new">Launch Visual Studio 2015 RC as <bpt id="2">&lt;strong&gt;</bpt>Administrator<ept id="2">&lt;/strong&gt;</ept>, and create a new <bpt id="4">&lt;strong&gt;</bpt>Service Fabric Application<ept id="4">&lt;/strong&gt;</ept> Project named <bpt id="6">&lt;em&gt;</bpt>HelloWorld<ept id="6">&lt;/em&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Use the New Project dialog to create a new Service Fabric Application<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Use the New Project dialog to create a new Service Fabric Application<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>Then create a <bpt id="2">&lt;strong&gt;</bpt>Stateless Service<ept id="2">&lt;/strong&gt;</ept> project named <bpt id="4">&lt;em&gt;</bpt>HelloWorldStateless<ept id="4">&lt;/em&gt;</ept>:</source>
+            <target state="new">Then create a <bpt id="2">&lt;strong&gt;</bpt>Stateless Service<ept id="2">&lt;/strong&gt;</ept> project named <bpt id="4">&lt;em&gt;</bpt>HelloWorldStateless<ept id="4">&lt;/em&gt;</ept>:</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>In the second dialog, create a stateless service<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>In the second dialog, create a stateless service<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source>Your solution now contains 2 projects:</source>
+            <target state="new">Your solution now contains 2 projects:</target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>HelloWorld<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>HelloWorld<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source>This is the <bpt id="2">&lt;em&gt;</bpt>application<ept id="2">&lt;/em&gt;</ept> project that contains your <bpt id="4">&lt;em&gt;</bpt>services<ept id="4">&lt;/em&gt;</ept>.</source>
+            <target state="new">This is the <bpt id="2">&lt;em&gt;</bpt>application<ept id="2">&lt;/em&gt;</ept> project that contains your <bpt id="4">&lt;em&gt;</bpt>services<ept id="4">&lt;/em&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>It also contains the application manifest that describes the application and a number of PowerShell scripts that help you to deploy your application.</source>
+            <target state="new">It also contains the application manifest that describes the application and a number of PowerShell scripts that help you to deploy your application.</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>HelloWorldStateless<ept id="1">&lt;/strong&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>HelloWorldStateless<ept id="1">&lt;/strong&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>This is the service project, which contains the stateless service implementation.</source>
+            <target state="new">This is the service project, which contains the stateless service implementation.</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>Implement the service</source>
+            <target state="new">Implement the service</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source>Open the <bpt id="2">&lt;strong&gt;</bpt>HelloWorld.cs<ept id="2">&lt;/strong&gt;</ept> file in the service project.</source>
+            <target state="new">Open the <bpt id="2">&lt;strong&gt;</bpt>HelloWorld.cs<ept id="2">&lt;/strong&gt;</ept> file in the service project.</target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source>In Service Fabric, a service can run any business logic whatsoever.</source>
+            <target state="new">In Service Fabric, a service can run any business logic whatsoever.</target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source>The service API provides two entry points for your code:</source>
+            <target state="new">The service API provides two entry points for your code:</target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source>An open-ended entry point method called <bpt id="2">&lt;em&gt;</bpt>RunAsync<ept id="2">&lt;/em&gt;</ept> where you can begin executing any workload you want, such as long-running compute workloads.</source>
+            <target state="new">An open-ended entry point method called <bpt id="2">&lt;em&gt;</bpt>RunAsync<ept id="2">&lt;/em&gt;</ept> where you can begin executing any workload you want, such as long-running compute workloads.</target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source>A communication entry point where you can plug in your communication stack of choice, such as Web API, where you can start receiving requests from users or other services.</source>
+            <target state="new">A communication entry point where you can plug in your communication stack of choice, such as Web API, where you can start receiving requests from users or other services.</target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source>In this tutorial, we will focus on the <bpt id="2">&lt;code&gt;</bpt>RunAsync()<ept id="2">&lt;/code&gt;</ept> entry point method where you can immediately start running your code.</source>
+            <target state="new">In this tutorial, we will focus on the <bpt id="2">&lt;code&gt;</bpt>RunAsync()<ept id="2">&lt;/code&gt;</ept> entry point method where you can immediately start running your code.</target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source>The project template includes an example implementation of <bpt id="2">&lt;code&gt;</bpt>RunAsync()<ept id="2">&lt;/code&gt;</ept> that increments a rolling count.</source>
+            <target state="new">The project template includes an example implementation of <bpt id="2">&lt;code&gt;</bpt>RunAsync()<ept id="2">&lt;/code&gt;</ept> that increments a rolling count.</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source>For details on working with a communication stack, check out <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Getting Started with Microsoft Azure Service Fabric Web API Services with OWIN self-host<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new">For details on working with a communication stack, check out <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Getting Started with Microsoft Azure Service Fabric Web API Services with OWIN self-host<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source>RunAsync</source>
+            <target state="new">RunAsync</target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source>The platform calls this method when an instance of your service is placed and ready to execute.</source>
+            <target state="new">The platform calls this method when an instance of your service is placed and ready to execute.</target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source>For stateless services, that simply means when the service instance is opened.</source>
+            <target state="new">For stateless services, that simply means when the service instance is opened.</target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source>A cancellation token is provided to coordinate when your service instance needs to be closed.</source>
+            <target state="new">A cancellation token is provided to coordinate when your service instance needs to be closed.</target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source>In Service Fabric, this open-close cycle of a service instance can occur many times over the lifetime of your service as a whole for various reasons, including:</source>
+            <target state="new">In Service Fabric, this open-close cycle of a service instance can occur many times over the lifetime of your service as a whole for various reasons, including:</target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source>The system may move your service instances around for resource balancing.</source>
+            <target state="new">The system may move your service instances around for resource balancing.</target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source>Faults occured within your code.</source>
+            <target state="new">Faults occured within your code.</target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source>During application or system upgrades.</source>
+            <target state="new">During application or system upgrades.</target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source>When the underlying hardware experiences an outage.</source>
+            <target state="new">When the underlying hardware experiences an outage.</target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source>This orchestration is managed by the system in the interest of keeping your service highly available and properly balanced.</source>
+            <target state="new">This orchestration is managed by the system in the interest of keeping your service highly available and properly balanced.</target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>RunAsync()<ept id="1">&lt;/code&gt;</ept> is executed in its own <bpt id="3">&lt;strong&gt;</bpt>Task<ept id="3">&lt;/strong&gt;</ept>.</source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>RunAsync()<ept id="1">&lt;/code&gt;</ept> is executed in its own <bpt id="3">&lt;strong&gt;</bpt>Task<ept id="3">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source>Note that in the code snippet above we jump right into a <bpt id="2">&lt;strong&gt;</bpt>while<ept id="2">&lt;/strong&gt;</ept> loop; there is no need to schedule a separate task for your workload.</source>
+            <target state="new">Note that in the code snippet above we jump right into a <bpt id="2">&lt;strong&gt;</bpt>while<ept id="2">&lt;/strong&gt;</ept> loop; there is no need to schedule a separate task for your workload.</target>
+          </trans-unit>
+          <trans-unit id="147" xml:space="preserve">
+            <source>Cancellation of your workload is a cooperative effort orchestrated by the provided cancellation token.</source>
+            <target state="new">Cancellation of your workload is a cooperative effort orchestrated by the provided cancellation token.</target>
+          </trans-unit>
+          <trans-unit id="148" xml:space="preserve">
+            <source>The system will wait for your task to end (either by successful completion, cancellation, or faulted) before it moves on.</source>
+            <target state="new">The system will wait for your task to end (either by successful completion, cancellation, or faulted) before it moves on.</target>
+          </trans-unit>
+          <trans-unit id="149" xml:space="preserve">
+            <source>It is <bpt id="2">&lt;strong&gt;</bpt>important<ept id="2">&lt;/strong&gt;</ept> to honor the cancellation token, finish up any work, and exit <bpt id="4">&lt;code&gt;</bpt>RunAsync()<ept id="4">&lt;/code&gt;</ept> as quickly as possible when cancellation is requested by the system.</source>
+            <target state="new">It is <bpt id="2">&lt;strong&gt;</bpt>important<ept id="2">&lt;/strong&gt;</ept> to honor the cancellation token, finish up any work, and exit <bpt id="4">&lt;code&gt;</bpt>RunAsync()<ept id="4">&lt;/code&gt;</ept> as quickly as possible when cancellation is requested by the system.</target>
+          </trans-unit>
+          <trans-unit id="150" xml:space="preserve">
+            <source>In the this stateless service example, the count is stored in a local variable.</source>
+            <target state="new">In the this stateless service example, the count is stored in a local variable.</target>
+          </trans-unit>
+          <trans-unit id="151" xml:space="preserve">
+            <source>But because this is a stateless service, the value that's being stored only exists for the current lifecycle of the service instance that it's in.</source>
+            <target state="new">But because this is a stateless service, the value that's being stored only exists for the current lifecycle of the service instance that it's in.</target>
+          </trans-unit>
+          <trans-unit id="152" xml:space="preserve">
+            <source>When the service moves or restarts, the value is lost.</source>
+            <target state="new">When the service moves or restarts, the value is lost.</target>
+          </trans-unit>
+          <trans-unit id="153" xml:space="preserve">
+            <source>Create a Stateful Service</source>
+            <target state="new">Create a Stateful Service</target>
+          </trans-unit>
+          <trans-unit id="154" xml:space="preserve">
+            <source>To convert our counter value from stateless to highly-available and persistent, even when the service moves or restarts, we need a stateful service.</source>
+            <target state="new">To convert our counter value from stateless to highly-available and persistent, even when the service moves or restarts, we need a stateful service.</target>
+          </trans-unit>
+          <trans-unit id="155" xml:space="preserve">
+            <source>In the same <bpt id="2">&lt;strong&gt;</bpt>HelloWorld<ept id="2">&lt;/strong&gt;</ept> application, add a new service by right-clicking on the application project and selecting <bpt id="4">&lt;strong&gt;</bpt>New Fabric Service<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the same <bpt id="2">&lt;strong&gt;</bpt>HelloWorld<ept id="2">&lt;/strong&gt;</ept> application, add a new service by right-clicking on the application project and selecting <bpt id="4">&lt;strong&gt;</bpt>New Fabric Service<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="156" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Add a service to your Service Fabric application<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Add a service to your Service Fabric application<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="157" xml:space="preserve">
+            <source>Select <bpt id="2">&lt;strong&gt;</bpt>Service Fabric Stateful Service<ept id="2">&lt;/strong&gt;</ept> and name it "HelloWorldStateful".</source>
+            <target state="new">Select <bpt id="2">&lt;strong&gt;</bpt>Service Fabric Stateful Service<ept id="2">&lt;/strong&gt;</ept> and name it "HelloWorldStateful".</target>
+          </trans-unit>
+          <trans-unit id="158" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Add<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Add<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="159" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Use the New Project dialog to create a new Service Fabric Stateful Service<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Use the New Project dialog to create a new Service Fabric Stateful Service<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
+            <source>Your application should now have two services: the stateless service <bpt id="2">&lt;em&gt;</bpt>HelloWorld<ept id="2">&lt;/em&gt;</ept> and the stateful service <bpt id="4">&lt;em&gt;</bpt>HelloWorldStateful<ept id="4">&lt;/em&gt;</ept>.</source>
+            <target state="new">Your application should now have two services: the stateless service <bpt id="2">&lt;em&gt;</bpt>HelloWorld<ept id="2">&lt;/em&gt;</ept> and the stateful service <bpt id="4">&lt;em&gt;</bpt>HelloWorldStateful<ept id="4">&lt;/em&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="161" xml:space="preserve">
+            <source>Open <bpt id="2">&lt;strong&gt;</bpt>HelloWorldStateful.cs<ept id="2">&lt;/strong&gt;</ept> in <bpt id="4">&lt;em&gt;</bpt>HelloWorldStateful<ept id="4">&lt;/em&gt;</ept> which contains the following <bpt id="6">&lt;code&gt;</bpt>RunAsync<ept id="6">&lt;/code&gt;</ept> method:</source>
+            <target state="new">Open <bpt id="2">&lt;strong&gt;</bpt>HelloWorldStateful.cs<ept id="2">&lt;/strong&gt;</ept> in <bpt id="4">&lt;em&gt;</bpt>HelloWorldStateful<ept id="4">&lt;/em&gt;</ept> which contains the following <bpt id="6">&lt;code&gt;</bpt>RunAsync<ept id="6">&lt;/code&gt;</ept> method:</target>
+          </trans-unit>
+          <trans-unit id="162" xml:space="preserve">
+            <source>RunAsync</source>
+            <target state="new">RunAsync</target>
+          </trans-unit>
+          <trans-unit id="163" xml:space="preserve">
+            <source>A stateful service has the same entry points as a stateless service.</source>
+            <target state="new">A stateful service has the same entry points as a stateless service.</target>
+          </trans-unit>
+          <trans-unit id="164" xml:space="preserve">
+            <source>The main difference is the availability of <bpt id="2">&lt;em&gt;</bpt>Reliable Collections<ept id="2">&lt;/em&gt;</ept> and the <bpt id="4">&lt;em&gt;</bpt>State Manager<ept id="4">&lt;/em&gt;</ept>.</source>
+            <target state="new">The main difference is the availability of <bpt id="2">&lt;em&gt;</bpt>Reliable Collections<ept id="2">&lt;/em&gt;</ept> and the <bpt id="4">&lt;em&gt;</bpt>State Manager<ept id="4">&lt;/em&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="165" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>RunAsync()<ept id="1">&lt;/code&gt;</ept> in a stateful service operates similar to a stateless service, except that in a stateful service the platform performs additional work on your behalf before executing <bpt id="3">&lt;code&gt;</bpt>RunAsync()<ept id="3">&lt;/code&gt;</ept>, such as ensuring the <bpt id="5">&lt;em&gt;</bpt>State Manager<ept id="5">&lt;/em&gt;</ept> and <bpt id="7">&lt;em&gt;</bpt>Reliable Collections<ept id="7">&lt;/em&gt;</ept> are ready for use.</source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>RunAsync()<ept id="1">&lt;/code&gt;</ept> in a stateful service operates similar to a stateless service, except that in a stateful service the platform performs additional work on your behalf before executing <bpt id="3">&lt;code&gt;</bpt>RunAsync()<ept id="3">&lt;/code&gt;</ept>, such as ensuring the <bpt id="5">&lt;em&gt;</bpt>State Manager<ept id="5">&lt;/em&gt;</ept> and <bpt id="7">&lt;em&gt;</bpt>Reliable Collections<ept id="7">&lt;/em&gt;</ept> are ready for use.</target>
+          </trans-unit>
+          <trans-unit id="166" xml:space="preserve">
+            <source>Reliable Collections and State Manager</source>
+            <target state="new">Reliable Collections and State Manager</target>
+          </trans-unit>
+          <trans-unit id="167" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>IReliableDictionary<ept id="1">&lt;/strong&gt;</ept> is a dictionary implementation that lets you reliably store state in the service.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>IReliableDictionary<ept id="1">&lt;/strong&gt;</ept> is a dictionary implementation that lets you reliably store state in the service.</target>
+          </trans-unit>
+          <trans-unit id="168" xml:space="preserve">
+            <source>This is part of Service Fabric's built-in <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Reliable Collections<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">This is part of Service Fabric's built-in <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Reliable Collections<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="169" xml:space="preserve">
+            <source>With Service Fabric and Reliable Collections, you can now store data directly in your service without the need for an external persistent store, making your data highly-available.</source>
+            <target state="new">With Service Fabric and Reliable Collections, you can now store data directly in your service without the need for an external persistent store, making your data highly-available.</target>
+          </trans-unit>
+          <trans-unit id="170" xml:space="preserve">
+            <source>Service Fabric accomplishes this by creating and managing multiple <bpt id="2">&lt;em&gt;</bpt>replicas<ept id="2">&lt;/em&gt;</ept> of your service for you while providing an API that abstracts away the complexities of managing those replicas and their state transitions.</source>
+            <target state="new">Service Fabric accomplishes this by creating and managing multiple <bpt id="2">&lt;em&gt;</bpt>replicas<ept id="2">&lt;/em&gt;</ept> of your service for you while providing an API that abstracts away the complexities of managing those replicas and their state transitions.</target>
+          </trans-unit>
+          <trans-unit id="171" xml:space="preserve">
+            <source>Reliable Collections can store any .NET type - including your custom types - with a couple of caveats:</source>
+            <target state="new">Reliable Collections can store any .NET type - including your custom types - with a couple of caveats:</target>
+          </trans-unit>
+          <trans-unit id="172" xml:space="preserve">
+            <source>Service Fabric makes your state highly-available by <bpt id="2">&lt;em&gt;</bpt>replicating<ept id="2">&lt;/em&gt;</ept> state across nodes and storing it to local disk.</source>
+            <target state="new">Service Fabric makes your state highly-available by <bpt id="2">&lt;em&gt;</bpt>replicating<ept id="2">&lt;/em&gt;</ept> state across nodes and storing it to local disk.</target>
+          </trans-unit>
+          <trans-unit id="173" xml:space="preserve">
+            <source>This means everything that is stored in a Reliable Collection must be <bpt id="2">&lt;em&gt;</bpt>serializable<ept id="2">&lt;/em&gt;</ept>.</source>
+            <target state="new">This means everything that is stored in a Reliable Collection must be <bpt id="2">&lt;em&gt;</bpt>serializable<ept id="2">&lt;/em&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="174" xml:space="preserve">
+            <source>By default, Reliable Collections use <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>DataContract<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for serialization, so it's important to make sure your types are <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>supported by the Data Contract Serializer<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept> when using the default serializer.</source>
+            <target state="new">By default, Reliable Collections use <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>DataContract<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for serialization, so it's important to make sure your types are <bpt id="4CapsExtId1">&lt;link&gt;</bpt><bpt id="4CapsExtId2">&lt;linkText&gt;</bpt>supported by the Data Contract Serializer<ept id="4CapsExtId2">&lt;/linkText&gt;</ept><bpt id="4CapsExtId3">&lt;title&gt;</bpt><ept id="4CapsExtId3">&lt;/title&gt;</ept><ept id="4CapsExtId1">&lt;/link&gt;</ept> when using the default serializer.</target>
+          </trans-unit>
+          <trans-unit id="175" xml:space="preserve">
+            <source>Objects are replicated for high-availability when you commit a transaction on a Reliable Collection.</source>
+            <target state="new">Objects are replicated for high-availability when you commit a transaction on a Reliable Collection.</target>
+          </trans-unit>
+          <trans-unit id="176" xml:space="preserve">
+            <source>Objects stored in Reliable Collections are kept in local memory in your service, which means you have a local reference to the object.</source>
+            <target state="new">Objects stored in Reliable Collections are kept in local memory in your service, which means you have a local reference to the object.</target>
+          </trans-unit>
+          <trans-unit id="177" xml:space="preserve">
+            <source>It is important that you do not mutate local instances of those objects without performing an update operation on the Reliable Collection in a transaction, as those changes will not be replicated automatically.</source>
+            <target state="new">It is important that you do not mutate local instances of those objects without performing an update operation on the Reliable Collection in a transaction, as those changes will not be replicated automatically.</target>
+          </trans-unit>
+          <trans-unit id="178" xml:space="preserve">
+            <source>The <bpt id="2">&lt;em&gt;</bpt>StateManager<ept id="2">&lt;/em&gt;</ept> takes care of managing Reliable Collections for you.</source>
+            <target state="new">The <bpt id="2">&lt;em&gt;</bpt>StateManager<ept id="2">&lt;/em&gt;</ept> takes care of managing Reliable Collections for you.</target>
+          </trans-unit>
+          <trans-unit id="179" xml:space="preserve">
+            <source>Simply ask the StateManager for a reliable collection by name at any time, any place in your service and it ensures you get a reference back.</source>
+            <target state="new">Simply ask the StateManager for a reliable collection by name at any time, any place in your service and it ensures you get a reference back.</target>
+          </trans-unit>
+          <trans-unit id="180" xml:space="preserve">
+            <source>Saving references to Reliable Collection instances in class member variables or properties is not recommended, as special care must be taken to ensure the reference is set to an instance at all times in the service lifecycle.</source>
+            <target state="new">Saving references to Reliable Collection instances in class member variables or properties is not recommended, as special care must be taken to ensure the reference is set to an instance at all times in the service lifecycle.</target>
+          </trans-unit>
+          <trans-unit id="181" xml:space="preserve">
+            <source>The StateManager handles this work for you, optimized for repeat visits.</source>
+            <target state="new">The StateManager handles this work for you, optimized for repeat visits.</target>
+          </trans-unit>
+          <trans-unit id="182" xml:space="preserve">
+            <source>Transactional and asynchronous</source>
+            <target state="new">Transactional and asynchronous</target>
+          </trans-unit>
+          <trans-unit id="183" xml:space="preserve">
+            <source>Reliable Collections have many of the same operations as their <bpt id="2">&lt;code&gt;</bpt>System.Collections.Generic<ept id="2">&lt;/code&gt;</ept> and <bpt id="4">&lt;code&gt;</bpt>System.Collections.Concurrent<ept id="4">&lt;/code&gt;</ept> counterparts, including LINQ.</source>
+            <target state="new">Reliable Collections have many of the same operations as their <bpt id="2">&lt;code&gt;</bpt>System.Collections.Generic<ept id="2">&lt;/code&gt;</ept> and <bpt id="4">&lt;code&gt;</bpt>System.Collections.Concurrent<ept id="4">&lt;/code&gt;</ept> counterparts, including LINQ.</target>
+          </trans-unit>
+          <trans-unit id="184" xml:space="preserve">
+            <source>However, operations on Reliable Collections are asynchronous.</source>
+            <target state="new">However, operations on Reliable Collections are asynchronous.</target>
+          </trans-unit>
+          <trans-unit id="185" xml:space="preserve">
+            <source>This is because write operations with Reliable Collections are <bpt id="2">&lt;em&gt;</bpt>replicated<ept id="2">&lt;/em&gt;</ept>, that is, the operation is sent to other replicas of the service on different nodes for high-availability.</source>
+            <target state="new">This is because write operations with Reliable Collections are <bpt id="2">&lt;em&gt;</bpt>replicated<ept id="2">&lt;/em&gt;</ept>, that is, the operation is sent to other replicas of the service on different nodes for high-availability.</target>
+          </trans-unit>
+          <trans-unit id="186" xml:space="preserve">
+            <source>They also support <bpt id="2">&lt;em&gt;</bpt>transactional<ept id="2">&lt;/em&gt;</ept> operations so you can keep state consistent between multiple Reliable Collections.</source>
+            <target state="new">They also support <bpt id="2">&lt;em&gt;</bpt>transactional<ept id="2">&lt;/em&gt;</ept> operations so you can keep state consistent between multiple Reliable Collections.</target>
+          </trans-unit>
+          <trans-unit id="187" xml:space="preserve">
+            <source>For example, you may dequeue a work item from a Reliable Queue, perform an operation on it, and save the result in a Reliable Dictionary, all within a single transaction.</source>
+            <target state="new">For example, you may dequeue a work item from a Reliable Queue, perform an operation on it, and save the result in a Reliable Dictionary, all within a single transaction.</target>
+          </trans-unit>
+          <trans-unit id="188" xml:space="preserve">
+            <source>This is treated as an atomic operation, guaranteeing that either the entire operation will succeed, or none of it will - so if an error occurs after you've dequeued the item but before you could save the result, the entire transaction is rolled back and the item remains on the queue for processing.</source>
+            <target state="new">This is treated as an atomic operation, guaranteeing that either the entire operation will succeed, or none of it will - so if an error occurs after you've dequeued the item but before you could save the result, the entire transaction is rolled back and the item remains on the queue for processing.</target>
+          </trans-unit>
+          <trans-unit id="189" xml:space="preserve">
+            <source>Run the application</source>
+            <target state="new">Run the application</target>
+          </trans-unit>
+          <trans-unit id="190" xml:space="preserve">
+            <source>Back to the <bpt id="2">&lt;em&gt;</bpt>HelloWorld<ept id="2">&lt;/em&gt;</ept> application.</source>
+            <target state="new">Back to the <bpt id="2">&lt;em&gt;</bpt>HelloWorld<ept id="2">&lt;/em&gt;</ept> application.</target>
+          </trans-unit>
+          <trans-unit id="191" xml:space="preserve">
+            <source>You can now build and deploy your services.</source>
+            <target state="new">You can now build and deploy your services.</target>
+          </trans-unit>
+          <trans-unit id="192" xml:space="preserve">
+            <source>Press <bpt id="2">&lt;strong&gt;</bpt>F5<ept id="2">&lt;/strong&gt;</ept>, and your application will be built and deployed to your local cluster.</source>
+            <target state="new">Press <bpt id="2">&lt;strong&gt;</bpt>F5<ept id="2">&lt;/strong&gt;</ept>, and your application will be built and deployed to your local cluster.</target>
+          </trans-unit>
+          <trans-unit id="193" xml:space="preserve">
+            <source>Once the services are running, you can see the generated ETW events in a <bpt id="2">&lt;strong&gt;</bpt>Diagnostic Events<ept id="2">&lt;/strong&gt;</ept> window.</source>
+            <target state="new">Once the services are running, you can see the generated ETW events in a <bpt id="2">&lt;strong&gt;</bpt>Diagnostic Events<ept id="2">&lt;/strong&gt;</ept> window.</target>
+          </trans-unit>
+          <trans-unit id="194" xml:space="preserve">
+            <source>Note that there are events displayed from both the stateless service and the stateful service in the application.</source>
+            <target state="new">Note that there are events displayed from both the stateless service and the stateful service in the application.</target>
+          </trans-unit>
+          <trans-unit id="195" xml:space="preserve">
+            <source>You can pause the stream by clicking the <bpt id="2">&lt;em&gt;</bpt>Pause<ept id="2">&lt;/em&gt;</ept> button, and then examine message details by expanding a message.</source>
+            <target state="new">You can pause the stream by clicking the <bpt id="2">&lt;em&gt;</bpt>Pause<ept id="2">&lt;/em&gt;</ept> button, and then examine message details by expanding a message.</target>
+          </trans-unit>
+          <trans-unit id="196" xml:space="preserve">
+            <source>Before running the application, make sure you have a local development cluster running.</source>
+            <target state="new">Before running the application, make sure you have a local development cluster running.</target>
+          </trans-unit>
+          <trans-unit id="197" xml:space="preserve">
+            <source>Check out the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Getting Started Guide<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> to get your local environment set up.</source>
+            <target state="new">Check out the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Getting Started Guide<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> to get your local environment set up.</target>
+          </trans-unit>
+          <trans-unit id="198" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>View diagnostic events in Visual Studio<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>View diagnostic events in Visual Studio<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="199" xml:space="preserve">
+            <source>Next Steps</source>
+            <target state="new">Next Steps</target>
+          </trans-unit>
+          <trans-unit id="200" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Debugging your Service Fabric Application in Visual Studio<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Debugging your Service Fabric Application in Visual Studio<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="201" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Getting Started with Microsoft Azure Service Fabric Web API Services with OWIN self-host<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Getting Started with Microsoft Azure Service Fabric Web API Services with OWIN self-host<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="202" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Learn more about Reliable Collections<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Learn more about Reliable Collections<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="203" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Manage a Service Fabric service<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Manage a Service Fabric service<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="204" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Developer reference for Reliable Services<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Developer reference for Reliable Services<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>

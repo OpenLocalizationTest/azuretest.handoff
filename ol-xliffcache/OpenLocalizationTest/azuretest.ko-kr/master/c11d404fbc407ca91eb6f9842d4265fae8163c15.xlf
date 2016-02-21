@@ -1,0 +1,635 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="ko-kr" original="2/21/2016 4:04:20 AM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c11d404fbc407ca91eb6f9842d4265fae8163c15</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Handle database write conflicts with optimistic concurrency (Windows Store) | Microsoft Azure</source>
+            <target state="new">Handle database write conflicts with optimistic concurrency (Windows Store) | Microsoft Azure</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>Learn how to handle database write conflicts on both the server and in your Windows Store application.</source>
+            <target state="new">Learn how to handle database write conflicts on both the server and in your Windows Store application.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Handling database write conflicts</source>
+            <target state="new">Handling database write conflicts</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source>Overview</source>
+            <target state="new">Overview</target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>This tutorial is intended to help you better understand how to handle conflicts that occur when two or more clients write to the same database record in a Windows Store app.</source>
+            <target state="new">This tutorial is intended to help you better understand how to handle conflicts that occur when two or more clients write to the same database record in a Windows Store app.</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>Two or more clients may write changes to the same item, at the same time, in some scenarios.</source>
+            <target state="new">Two or more clients may write changes to the same item, at the same time, in some scenarios.</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>Without any conflict detection, the last write would overwrite any previous updates even if this was not the desired result.</source>
+            <target state="new">Without any conflict detection, the last write would overwrite any previous updates even if this was not the desired result.</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>Azure Mobile Services provides support for detecting and resolving these conflicts.</source>
+            <target state="new">Azure Mobile Services provides support for detecting and resolving these conflicts.</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source>This topic walks you through the steps that allow you to handle database write conflicts on both the server and in your application.</source>
+            <target state="new">This topic walks you through the steps that allow you to handle database write conflicts on both the server and in your application.</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source>In this tutorial you will add functionality to the quickstart app to handle contentions that can occur when updating the TodoItem database.</source>
+            <target state="new">In this tutorial you will add functionality to the quickstart app to handle contentions that can occur when updating the TodoItem database.</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>Prerequisites</source>
+            <target state="new">Prerequisites</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source>This tutorial requires the following</source>
+            <target state="new">This tutorial requires the following</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>Microsoft Visual Studio 2013 or later.</source>
+            <target state="new">Microsoft Visual Studio 2013 or later.</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source>This tutorial is based on the Mobile Services quickstart.</source>
+            <target state="new">This tutorial is based on the Mobile Services quickstart.</target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>Before you start this tutorial, you must first complete [Get started with Mobile Services].</source>
+            <target state="new">Before you start this tutorial, you must first complete [Get started with Mobile Services].</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source>[Azure Account]</source>
+            <target state="new">[Azure Account]</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>Azure Mobile Services NuGet Package 1.1.0 or later.</source>
+            <target state="new">Azure Mobile Services NuGet Package 1.1.0 or later.</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>To get the latest version, follow these steps below:</source>
+            <target state="new">To get the latest version, follow these steps below:</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source>In Visual Studio, open the project and right-click the project in Solution Explorer then click <bpt id="2">&lt;strong&gt;</bpt>Manage Nuget Packages<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In Visual Studio, open the project and right-click the project in Solution Explorer then click <bpt id="2">&lt;strong&gt;</bpt>Manage Nuget Packages<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source>Expand <bpt id="2">&lt;strong&gt;</bpt>Online<ept id="2">&lt;/strong&gt;</ept> and click <bpt id="4">&lt;strong&gt;</bpt>Microsoft and .NET<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Expand <bpt id="2">&lt;strong&gt;</bpt>Online<ept id="2">&lt;/strong&gt;</ept> and click <bpt id="4">&lt;strong&gt;</bpt>Microsoft and .NET<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source>In the search text box enter <bpt id="2">&lt;strong&gt;</bpt>Azure Mobile Services<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In the search text box enter <bpt id="2">&lt;strong&gt;</bpt>Azure Mobile Services<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Install<ept id="2">&lt;/strong&gt;</ept> on the <bpt id="4">&lt;strong&gt;</bpt>Azure Mobile Services<ept id="4">&lt;/strong&gt;</ept> NuGet Package.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Install<ept id="2">&lt;/strong&gt;</ept> on the <bpt id="4">&lt;strong&gt;</bpt>Azure Mobile Services<ept id="4">&lt;/strong&gt;</ept> NuGet Package.</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>Update the application to allow updates</source>
+            <target state="new">Update the application to allow updates</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>In this section you will update the TodoList user interface to allow updating the text of each item in a ListBox control.</source>
+            <target state="new">In this section you will update the TodoList user interface to allow updating the text of each item in a ListBox control.</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source>The ListBox will contain a CheckBox and TextBox control for each item in the database table.</source>
+            <target state="new">The ListBox will contain a CheckBox and TextBox control for each item in the database table.</target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source>You will be able to update the text field of the TodoItem.</source>
+            <target state="new">You will be able to update the text field of the TodoItem.</target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source>The application will handle the <bpt id="2">&lt;code&gt;</bpt>LostFocus<ept id="2">&lt;/code&gt;</ept> event from that TextBox to update the item in the database.</source>
+            <target state="new">The application will handle the <bpt id="2">&lt;code&gt;</bpt>LostFocus<ept id="2">&lt;/code&gt;</ept> event from that TextBox to update the item in the database.</target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source>In Visual Studio, open the TodoList project you downloaded in the [Get started with Mobile Services] tutorial.</source>
+            <target state="new">In Visual Studio, open the TodoList project you downloaded in the [Get started with Mobile Services] tutorial.</target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source>In the Visual Studio Solution Explorer, open MainPage.xaml and replace the <bpt id="2">&lt;code&gt;</bpt>ListView<ept id="2">&lt;/code&gt;</ept> definition with the <bpt id="4">&lt;code&gt;</bpt>ListView<ept id="4">&lt;/code&gt;</ept> shown below and save the change.</source>
+            <target state="new">In the Visual Studio Solution Explorer, open MainPage.xaml and replace the <bpt id="2">&lt;code&gt;</bpt>ListView<ept id="2">&lt;/code&gt;</ept> definition with the <bpt id="4">&lt;code&gt;</bpt>ListView<ept id="4">&lt;/code&gt;</ept> shown below and save the change.</target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source>In the Visual Studio Solution Explorer, open MainPage.cs in the shared project.</source>
+            <target state="new">In the Visual Studio Solution Explorer, open MainPage.cs in the shared project.</target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source>Add the event handler to the MainPage for the TextBox <bpt id="2">&lt;code&gt;</bpt>LostFocus<ept id="2">&lt;/code&gt;</ept> event as shown below.</source>
+            <target state="new">Add the event handler to the MainPage for the TextBox <bpt id="2">&lt;code&gt;</bpt>LostFocus<ept id="2">&lt;/code&gt;</ept> event as shown below.</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source>In MainPage.cs for the shared project, add the definition for the MainPage <bpt id="2">&lt;code&gt;</bpt>UpdateToDoItem()<ept id="2">&lt;/code&gt;</ept> method referenced in the event handler as shown below.</source>
+            <target state="new">In MainPage.cs for the shared project, add the definition for the MainPage <bpt id="2">&lt;code&gt;</bpt>UpdateToDoItem()<ept id="2">&lt;/code&gt;</ept> method referenced in the event handler as shown below.</target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source>The application now writes the text changes to each item back to the database when the TextBox loses focus.</source>
+            <target state="new">The application now writes the text changes to each item back to the database when the TextBox loses focus.</target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source>Enable Conflict Detection in your application</source>
+            <target state="new">Enable Conflict Detection in your application</target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source>Two or more clients may write changes to the same item, at the same time, in some scenarios.</source>
+            <target state="new">Two or more clients may write changes to the same item, at the same time, in some scenarios.</target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source>Without any conflict detection, the last write would overwrite any previous updates even if this was not the desired result.</source>
+            <target state="new">Without any conflict detection, the last write would overwrite any previous updates even if this was not the desired result.</target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source>[Optimistic Concurrency Control] assumes that each transaction can commit and therefore does not use any resource locking.</source>
+            <target state="new">[Optimistic Concurrency Control] assumes that each transaction can commit and therefore does not use any resource locking.</target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source>Before committing a transaction, optimistic concurrency control verifies that no other transaction has modified the data.</source>
+            <target state="new">Before committing a transaction, optimistic concurrency control verifies that no other transaction has modified the data.</target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source>If the data has been modified, the committing transaction is rolled back.</source>
+            <target state="new">If the data has been modified, the committing transaction is rolled back.</target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source>Azure Mobile Services supports optimistic concurrency control by tracking changes to each item using the <bpt id="2">&lt;code&gt;</bpt>__version<ept id="2">&lt;/code&gt;</ept> system property column that is added to each table.</source>
+            <target state="new">Azure Mobile Services supports optimistic concurrency control by tracking changes to each item using the <bpt id="2">&lt;code&gt;</bpt>__version<ept id="2">&lt;/code&gt;</ept> system property column that is added to each table.</target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source>In this section, we will enable the application to detect these write conflicts through the <bpt id="2">&lt;code&gt;</bpt>__version<ept id="2">&lt;/code&gt;</ept> system property.</source>
+            <target state="new">In this section, we will enable the application to detect these write conflicts through the <bpt id="2">&lt;code&gt;</bpt>__version<ept id="2">&lt;/code&gt;</ept> system property.</target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source>The application will be notified by a <bpt id="2">&lt;code&gt;</bpt>MobileServicePreconditionFailedException<ept id="2">&lt;/code&gt;</ept> during an update attempt if the record has changed since the last query.</source>
+            <target state="new">The application will be notified by a <bpt id="2">&lt;code&gt;</bpt>MobileServicePreconditionFailedException<ept id="2">&lt;/code&gt;</ept> during an update attempt if the record has changed since the last query.</target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source>It will then be able to make a choice of whether to commit its change to the database or leave the last change to the database intact.</source>
+            <target state="new">It will then be able to make a choice of whether to commit its change to the database or leave the last change to the database intact.</target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source>For more information on the System Properties for Mobile Services, see [System Properties].</source>
+            <target state="new">For more information on the System Properties for Mobile Services, see [System Properties].</target>
+          </trans-unit>
+          <trans-unit id="147" xml:space="preserve">
+            <source>Open TodoItem.cs in the shared project and update the <bpt id="2">&lt;code&gt;</bpt>TodoItem<ept id="2">&lt;/code&gt;</ept> class definition with the following code to include the <bpt id="4">&lt;code&gt;</bpt>__version<ept id="4">&lt;/code&gt;</ept> system property enabling support for write conflict detection.</source>
+            <target state="new">Open TodoItem.cs in the shared project and update the <bpt id="2">&lt;code&gt;</bpt>TodoItem<ept id="2">&lt;/code&gt;</ept> class definition with the following code to include the <bpt id="4">&lt;code&gt;</bpt>__version<ept id="4">&lt;/code&gt;</ept> system property enabling support for write conflict detection.</target>
+          </trans-unit>
+          <trans-unit id="148" xml:space="preserve">
+            <source>When using untyped tables, enable optimistic concurrency by adding the Version flag to the SystemProperties of the table.</source>
+            <target state="new">When using untyped tables, enable optimistic concurrency by adding the Version flag to the SystemProperties of the table.</target>
+          </trans-unit>
+          <trans-unit id="149" xml:space="preserve">
+            <source>`````</source>
+            <target state="new">`````</target>
+          </trans-unit>
+          <trans-unit id="150" xml:space="preserve">
+            <source>//Enable optimistic concurrency by retrieving __version</source>
+            <target state="new">//Enable optimistic concurrency by retrieving __version</target>
+          </trans-unit>
+          <trans-unit id="151" xml:space="preserve">
+            <source>todoTable.SystemProperties |= MobileServiceSystemProperties.Version;</source>
+            <target state="new">todoTable.SystemProperties |= MobileServiceSystemProperties.Version;</target>
+          </trans-unit>
+          <trans-unit id="152" xml:space="preserve">
+            <source>`````</source>
+            <target state="new">`````</target>
+          </trans-unit>
+          <trans-unit id="153" xml:space="preserve">
+            <source>By adding the <bpt id="2">&lt;code&gt;</bpt>Version<ept id="2">&lt;/code&gt;</ept> property to the <bpt id="4">&lt;code&gt;</bpt>TodoItem<ept id="4">&lt;/code&gt;</ept> class, the application will be notified with a <bpt id="6">&lt;code&gt;</bpt>MobileServicePreconditionFailedException<ept id="6">&lt;/code&gt;</ept> exception during an update if the record has changed since the last query.</source>
+            <target state="new">By adding the <bpt id="2">&lt;code&gt;</bpt>Version<ept id="2">&lt;/code&gt;</ept> property to the <bpt id="4">&lt;code&gt;</bpt>TodoItem<ept id="4">&lt;/code&gt;</ept> class, the application will be notified with a <bpt id="6">&lt;code&gt;</bpt>MobileServicePreconditionFailedException<ept id="6">&lt;/code&gt;</ept> exception during an update if the record has changed since the last query.</target>
+          </trans-unit>
+          <trans-unit id="154" xml:space="preserve">
+            <source>This exception includes the latest version of the item from the server.</source>
+            <target state="new">This exception includes the latest version of the item from the server.</target>
+          </trans-unit>
+          <trans-unit id="155" xml:space="preserve">
+            <source>In MainPage.cs for the shared project, add the following code to handle the exception in the <bpt id="2">&lt;code&gt;</bpt>UpdateToDoItem()<ept id="2">&lt;/code&gt;</ept> method.</source>
+            <target state="new">In MainPage.cs for the shared project, add the following code to handle the exception in the <bpt id="2">&lt;code&gt;</bpt>UpdateToDoItem()<ept id="2">&lt;/code&gt;</ept> method.</target>
+          </trans-unit>
+          <trans-unit id="156" xml:space="preserve">
+            <source>In MainPage.cs, add the definition for the <bpt id="2">&lt;code&gt;</bpt>ResolveConflict()<ept id="2">&lt;/code&gt;</ept> method referenced in <bpt id="4">&lt;code&gt;</bpt>UpdateToDoItem()<ept id="4">&lt;/code&gt;</ept>.</source>
+            <target state="new">In MainPage.cs, add the definition for the <bpt id="2">&lt;code&gt;</bpt>ResolveConflict()<ept id="2">&lt;/code&gt;</ept> method referenced in <bpt id="4">&lt;code&gt;</bpt>UpdateToDoItem()<ept id="4">&lt;/code&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="157" xml:space="preserve">
+            <source>Notice that in order to resolve the conflict, you set the local item's version to the updated version from the server before committing the user's decision.</source>
+            <target state="new">Notice that in order to resolve the conflict, you set the local item's version to the updated version from the server before committing the user's decision.</target>
+          </trans-unit>
+          <trans-unit id="158" xml:space="preserve">
+            <source>Otherwise, you will continually encounter the conflict.</source>
+            <target state="new">Otherwise, you will continually encounter the conflict.</target>
+          </trans-unit>
+          <trans-unit id="159" xml:space="preserve">
+            <source>Test database write conflicts in the application</source>
+            <target state="new">Test database write conflicts in the application</target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
+            <source>In this section you will build a Windows Store app package to install the app on a second machine or virtual machine.</source>
+            <target state="new">In this section you will build a Windows Store app package to install the app on a second machine or virtual machine.</target>
+          </trans-unit>
+          <trans-unit id="161" xml:space="preserve">
+            <source>Then you will run the app on both machines generating a write conflict to test the code.</source>
+            <target state="new">Then you will run the app on both machines generating a write conflict to test the code.</target>
+          </trans-unit>
+          <trans-unit id="162" xml:space="preserve">
+            <source>Both instances of the app will attempt to update the same item's <bpt id="2">&lt;code&gt;</bpt>text<ept id="2">&lt;/code&gt;</ept> property requiring the user to resolve the conflict.</source>
+            <target state="new">Both instances of the app will attempt to update the same item's <bpt id="2">&lt;code&gt;</bpt>text<ept id="2">&lt;/code&gt;</ept> property requiring the user to resolve the conflict.</target>
+          </trans-unit>
+          <trans-unit id="163" xml:space="preserve">
+            <source>Create a Windows Store app package to install on second machine or virtual machine.</source>
+            <target state="new">Create a Windows Store app package to install on second machine or virtual machine.</target>
+          </trans-unit>
+          <trans-unit id="164" xml:space="preserve">
+            <source>To do this, click <bpt id="2">&lt;strong&gt;</bpt>Project<ept id="2">&lt;/strong&gt;</ept>-&gt;<bpt id="4">&lt;strong&gt;</bpt>Store<ept id="4">&lt;/strong&gt;</ept>-&gt;<bpt id="6">&lt;strong&gt;</bpt>Create App Packages<ept id="6">&lt;/strong&gt;</ept> in Visual Studio.</source>
+            <target state="new">To do this, click <bpt id="2">&lt;strong&gt;</bpt>Project<ept id="2">&lt;/strong&gt;</ept>-&gt;<bpt id="4">&lt;strong&gt;</bpt>Store<ept id="4">&lt;/strong&gt;</ept>-&gt;<bpt id="6">&lt;strong&gt;</bpt>Create App Packages<ept id="6">&lt;/strong&gt;</ept> in Visual Studio.</target>
+          </trans-unit>
+          <trans-unit id="165" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="166" xml:space="preserve">
+            <source>On the Create Your Packages screen, click <bpt id="2">&lt;strong&gt;</bpt>No<ept id="2">&lt;/strong&gt;</ept> as this package will not be uploaded to the Windows Store.</source>
+            <target state="new">On the Create Your Packages screen, click <bpt id="2">&lt;strong&gt;</bpt>No<ept id="2">&lt;/strong&gt;</ept> as this package will not be uploaded to the Windows Store.</target>
+          </trans-unit>
+          <trans-unit id="167" xml:space="preserve">
+            <source>Then click <bpt id="2">&lt;strong&gt;</bpt>Next<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Then click <bpt id="2">&lt;strong&gt;</bpt>Next<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="168" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="169" xml:space="preserve">
+            <source>On the Select and Configure Packages screen, accept the defaults and click <bpt id="2">&lt;strong&gt;</bpt>Create<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">On the Select and Configure Packages screen, accept the defaults and click <bpt id="2">&lt;strong&gt;</bpt>Create<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="170" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="171" xml:space="preserve">
+            <source>On the Package Creation Completed screen, click the <bpt id="2">&lt;strong&gt;</bpt>Output location<ept id="2">&lt;/strong&gt;</ept> link to open the package location.</source>
+            <target state="new">On the Package Creation Completed screen, click the <bpt id="2">&lt;strong&gt;</bpt>Output location<ept id="2">&lt;/strong&gt;</ept> link to open the package location.</target>
+          </trans-unit>
+          <trans-unit id="172" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="173" xml:space="preserve">
+            <source>Copy the package folder, "todolist_1.0.0.0_AnyCPU_Debug_Test", to the second machine.</source>
+            <target state="new">Copy the package folder, "todolist_1.0.0.0_AnyCPU_Debug_Test", to the second machine.</target>
+          </trans-unit>
+          <trans-unit id="174" xml:space="preserve">
+            <source>On that machine, open the package folder and right click on the <bpt id="2">&lt;strong&gt;</bpt>Add-AppDevPackage.ps1<ept id="2">&lt;/strong&gt;</ept> PowerShell script and click <bpt id="4">&lt;strong&gt;</bpt>Run with PowerShell<ept id="4">&lt;/strong&gt;</ept> as shown below.</source>
+            <target state="new">On that machine, open the package folder and right click on the <bpt id="2">&lt;strong&gt;</bpt>Add-AppDevPackage.ps1<ept id="2">&lt;/strong&gt;</ept> PowerShell script and click <bpt id="4">&lt;strong&gt;</bpt>Run with PowerShell<ept id="4">&lt;/strong&gt;</ept> as shown below.</target>
+          </trans-unit>
+          <trans-unit id="175" xml:space="preserve">
+            <source>Follow the prompts to install the app.</source>
+            <target state="new">Follow the prompts to install the app.</target>
+          </trans-unit>
+          <trans-unit id="176" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="177" xml:space="preserve">
+            <source>Run instance 1 of the app in Visual Studio by clicking <bpt id="2">&lt;strong&gt;</bpt>Debug<ept id="2">&lt;/strong&gt;</ept>-&gt;<bpt id="4">&lt;strong&gt;</bpt>Start Debugging<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Run instance 1 of the app in Visual Studio by clicking <bpt id="2">&lt;strong&gt;</bpt>Debug<ept id="2">&lt;/strong&gt;</ept>-&gt;<bpt id="4">&lt;strong&gt;</bpt>Start Debugging<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="178" xml:space="preserve">
+            <source>On the Start screen of the second machine, click the down arrow to see "Apps by name".</source>
+            <target state="new">On the Start screen of the second machine, click the down arrow to see "Apps by name".</target>
+          </trans-unit>
+          <trans-unit id="179" xml:space="preserve">
+            <source>Then click the <bpt id="2">&lt;strong&gt;</bpt>todolist<ept id="2">&lt;/strong&gt;</ept> app to run instance 2 of the app.</source>
+            <target state="new">Then click the <bpt id="2">&lt;strong&gt;</bpt>todolist<ept id="2">&lt;/strong&gt;</ept> app to run instance 2 of the app.</target>
+          </trans-unit>
+          <trans-unit id="180" xml:space="preserve">
+            <source>App Instance 1</source>
+            <target state="new">App Instance 1</target>
+          </trans-unit>
+          <trans-unit id="181" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="182" xml:space="preserve">
+            <source>App Instance 2</source>
+            <target state="new">App Instance 2</target>
+          </trans-unit>
+          <trans-unit id="183" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="184" xml:space="preserve">
+            <source>In instance 1 of the app, update the text of the last item to <bpt id="2">&lt;strong&gt;</bpt>Test Write 1<ept id="2">&lt;/strong&gt;</ept>, then click another text box so that the <bpt id="4">&lt;code&gt;</bpt>LostFocus<ept id="4">&lt;/code&gt;</ept> event handler updates the database.</source>
+            <target state="new">In instance 1 of the app, update the text of the last item to <bpt id="2">&lt;strong&gt;</bpt>Test Write 1<ept id="2">&lt;/strong&gt;</ept>, then click another text box so that the <bpt id="4">&lt;code&gt;</bpt>LostFocus<ept id="4">&lt;/code&gt;</ept> event handler updates the database.</target>
+          </trans-unit>
+          <trans-unit id="185" xml:space="preserve">
+            <source>The screenshot below shows an example.</source>
+            <target state="new">The screenshot below shows an example.</target>
+          </trans-unit>
+          <trans-unit id="186" xml:space="preserve">
+            <source>App Instance 1</source>
+            <target state="new">App Instance 1</target>
+          </trans-unit>
+          <trans-unit id="187" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="188" xml:space="preserve">
+            <source>App Instance 2</source>
+            <target state="new">App Instance 2</target>
+          </trans-unit>
+          <trans-unit id="189" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="190" xml:space="preserve">
+            <source>At this point the corresponding item in instance 2 of the app has an old version of the item.</source>
+            <target state="new">At this point the corresponding item in instance 2 of the app has an old version of the item.</target>
+          </trans-unit>
+          <trans-unit id="191" xml:space="preserve">
+            <source>In that instance of the app, enter <bpt id="2">&lt;strong&gt;</bpt>Test Write 2<ept id="2">&lt;/strong&gt;</ept> for the <bpt id="4">&lt;code&gt;</bpt>text<ept id="4">&lt;/code&gt;</ept> property.</source>
+            <target state="new">In that instance of the app, enter <bpt id="2">&lt;strong&gt;</bpt>Test Write 2<ept id="2">&lt;/strong&gt;</ept> for the <bpt id="4">&lt;code&gt;</bpt>text<ept id="4">&lt;/code&gt;</ept> property.</target>
+          </trans-unit>
+          <trans-unit id="192" xml:space="preserve">
+            <source>Then click another text box so the <bpt id="2">&lt;code&gt;</bpt>LostFocus<ept id="2">&lt;/code&gt;</ept> event handler attempts to update the database with the old <bpt id="4">&lt;code&gt;</bpt>_version<ept id="4">&lt;/code&gt;</ept> property.</source>
+            <target state="new">Then click another text box so the <bpt id="2">&lt;code&gt;</bpt>LostFocus<ept id="2">&lt;/code&gt;</ept> event handler attempts to update the database with the old <bpt id="4">&lt;code&gt;</bpt>_version<ept id="4">&lt;/code&gt;</ept> property.</target>
+          </trans-unit>
+          <trans-unit id="193" xml:space="preserve">
+            <source>App Instance 1</source>
+            <target state="new">App Instance 1</target>
+          </trans-unit>
+          <trans-unit id="194" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="195" xml:space="preserve">
+            <source>App Instance 2</source>
+            <target state="new">App Instance 2</target>
+          </trans-unit>
+          <trans-unit id="196" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="197" xml:space="preserve">
+            <source>Since the <bpt id="2">&lt;code&gt;</bpt>__version<ept id="2">&lt;/code&gt;</ept> value used with the update attempt didn't match the server <bpt id="4">&lt;code&gt;</bpt>__version<ept id="4">&lt;/code&gt;</ept> value, the Mobile Services SDK throws a <bpt id="6">&lt;code&gt;</bpt>MobileServicePreconditionFailedException<ept id="6">&lt;/code&gt;</ept> allowing the app to resolve this conflict.</source>
+            <target state="new">Since the <bpt id="2">&lt;code&gt;</bpt>__version<ept id="2">&lt;/code&gt;</ept> value used with the update attempt didn't match the server <bpt id="4">&lt;code&gt;</bpt>__version<ept id="4">&lt;/code&gt;</ept> value, the Mobile Services SDK throws a <bpt id="6">&lt;code&gt;</bpt>MobileServicePreconditionFailedException<ept id="6">&lt;/code&gt;</ept> allowing the app to resolve this conflict.</target>
+          </trans-unit>
+          <trans-unit id="198" xml:space="preserve">
+            <source>To resolve the conflict, you can click <bpt id="2">&lt;strong&gt;</bpt>Commit Local Text<ept id="2">&lt;/strong&gt;</ept> to commit the values from instance 2.</source>
+            <target state="new">To resolve the conflict, you can click <bpt id="2">&lt;strong&gt;</bpt>Commit Local Text<ept id="2">&lt;/strong&gt;</ept> to commit the values from instance 2.</target>
+          </trans-unit>
+          <trans-unit id="199" xml:space="preserve">
+            <source>Alternatively, click <bpt id="2">&lt;strong&gt;</bpt>Leave Server Text<ept id="2">&lt;/strong&gt;</ept> to discard the values in instance 2, leaving the values from instance 1 of the app committed.</source>
+            <target state="new">Alternatively, click <bpt id="2">&lt;strong&gt;</bpt>Leave Server Text<ept id="2">&lt;/strong&gt;</ept> to discard the values in instance 2, leaving the values from instance 1 of the app committed.</target>
+          </trans-unit>
+          <trans-unit id="200" xml:space="preserve">
+            <source>App Instance 1</source>
+            <target state="new">App Instance 1</target>
+          </trans-unit>
+          <trans-unit id="201" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="202" xml:space="preserve">
+            <source>App Instance 2</source>
+            <target state="new">App Instance 2</target>
+          </trans-unit>
+          <trans-unit id="203" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="204" xml:space="preserve">
+            <source>Automatically handling conflict resolution in server scripts</source>
+            <target state="new">Automatically handling conflict resolution in server scripts</target>
+          </trans-unit>
+          <trans-unit id="205" xml:space="preserve">
+            <source>You can detect and resolve write conflicts in server scripts.</source>
+            <target state="new">You can detect and resolve write conflicts in server scripts.</target>
+          </trans-unit>
+          <trans-unit id="206" xml:space="preserve">
+            <source>This is a good idea when you can use scripted logic instead of user interaction to resolve the conflict.</source>
+            <target state="new">This is a good idea when you can use scripted logic instead of user interaction to resolve the conflict.</target>
+          </trans-unit>
+          <trans-unit id="207" xml:space="preserve">
+            <source>In this section, you will add a server side script to the TodoItem table for the application.</source>
+            <target state="new">In this section, you will add a server side script to the TodoItem table for the application.</target>
+          </trans-unit>
+          <trans-unit id="208" xml:space="preserve">
+            <source>The logic this script will use to resolve conflicts is as follows:</source>
+            <target state="new">The logic this script will use to resolve conflicts is as follows:</target>
+          </trans-unit>
+          <trans-unit id="209" xml:space="preserve">
+            <source>If the TodoItem's <bpt id="2">&lt;code&gt;</bpt> complete<ept id="2">&lt;/code&gt;</ept> field is set to true, then it is considered completed and <bpt id="4">&lt;code&gt;</bpt>text<ept id="4">&lt;/code&gt;</ept> can no longer be changed.</source>
+            <target state="new">If the TodoItem's <bpt id="2">&lt;code&gt;</bpt> complete<ept id="2">&lt;/code&gt;</ept> field is set to true, then it is considered completed and <bpt id="4">&lt;code&gt;</bpt>text<ept id="4">&lt;/code&gt;</ept> can no longer be changed.</target>
+          </trans-unit>
+          <trans-unit id="210" xml:space="preserve">
+            <source>If the TodoItem's <bpt id="2">&lt;code&gt;</bpt> complete<ept id="2">&lt;/code&gt;</ept> field is still false, then attempts to update <bpt id="4">&lt;code&gt;</bpt>text<ept id="4">&lt;/code&gt;</ept> will be comitted.</source>
+            <target state="new">If the TodoItem's <bpt id="2">&lt;code&gt;</bpt> complete<ept id="2">&lt;/code&gt;</ept> field is still false, then attempts to update <bpt id="4">&lt;code&gt;</bpt>text<ept id="4">&lt;/code&gt;</ept> will be comitted.</target>
+          </trans-unit>
+          <trans-unit id="211" xml:space="preserve">
+            <source>The following steps walk you through adding the server update script and testing it.</source>
+            <target state="new">The following steps walk you through adding the server update script and testing it.</target>
+          </trans-unit>
+          <trans-unit id="212" xml:space="preserve">
+            <source>Log into the [Azure Management Portal], click <bpt id="2">&lt;strong&gt;</bpt>Mobile Services<ept id="2">&lt;/strong&gt;</ept>, and then click your app.</source>
+            <target state="new">Log into the [Azure Management Portal], click <bpt id="2">&lt;strong&gt;</bpt>Mobile Services<ept id="2">&lt;/strong&gt;</ept>, and then click your app.</target>
+          </trans-unit>
+          <trans-unit id="213" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="214" xml:space="preserve">
+            <source>Click the <bpt id="2">&lt;strong&gt;</bpt>Data<ept id="2">&lt;/strong&gt;</ept> tab, then click the <bpt id="4">&lt;strong&gt;</bpt>TodoItem<ept id="4">&lt;/strong&gt;</ept> table.</source>
+            <target state="new">Click the <bpt id="2">&lt;strong&gt;</bpt>Data<ept id="2">&lt;/strong&gt;</ept> tab, then click the <bpt id="4">&lt;strong&gt;</bpt>TodoItem<ept id="4">&lt;/strong&gt;</ept> table.</target>
+          </trans-unit>
+          <trans-unit id="215" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="216" xml:space="preserve">
+            <source>Click <bpt id="2">&lt;strong&gt;</bpt>Script<ept id="2">&lt;/strong&gt;</ept>, then select the <bpt id="4">&lt;strong&gt;</bpt>Update<ept id="4">&lt;/strong&gt;</ept> operation.</source>
+            <target state="new">Click <bpt id="2">&lt;strong&gt;</bpt>Script<ept id="2">&lt;/strong&gt;</ept>, then select the <bpt id="4">&lt;strong&gt;</bpt>Update<ept id="4">&lt;/strong&gt;</ept> operation.</target>
+          </trans-unit>
+          <trans-unit id="217" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="218" xml:space="preserve">
+            <source>Replace the existing script with the following function, and then click <bpt id="2">&lt;strong&gt;</bpt>Save<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Replace the existing script with the following function, and then click <bpt id="2">&lt;strong&gt;</bpt>Save<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="219" xml:space="preserve">
+            <source>Run the <bpt id="2">&lt;strong&gt;</bpt>todolist<ept id="2">&lt;/strong&gt;</ept> app on both machines.</source>
+            <target state="new">Run the <bpt id="2">&lt;strong&gt;</bpt>todolist<ept id="2">&lt;/strong&gt;</ept> app on both machines.</target>
+          </trans-unit>
+          <trans-unit id="220" xml:space="preserve">
+            <source>Change the TodoItem <bpt id="2">&lt;code&gt;</bpt>text<ept id="2">&lt;/code&gt;</ept> for the last item in instance 2.</source>
+            <target state="new">Change the TodoItem <bpt id="2">&lt;code&gt;</bpt>text<ept id="2">&lt;/code&gt;</ept> for the last item in instance 2.</target>
+          </trans-unit>
+          <trans-unit id="221" xml:space="preserve">
+            <source>Then click another text box so the <bpt id="2">&lt;code&gt;</bpt>LostFocus<ept id="2">&lt;/code&gt;</ept> event handler updates the database.</source>
+            <target state="new">Then click another text box so the <bpt id="2">&lt;code&gt;</bpt>LostFocus<ept id="2">&lt;/code&gt;</ept> event handler updates the database.</target>
+          </trans-unit>
+          <trans-unit id="222" xml:space="preserve">
+            <source>App Instance 1</source>
+            <target state="new">App Instance 1</target>
+          </trans-unit>
+          <trans-unit id="223" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="224" xml:space="preserve">
+            <source>App Instance 2</source>
+            <target state="new">App Instance 2</target>
+          </trans-unit>
+          <trans-unit id="225" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="226" xml:space="preserve">
+            <source>In instance 1 of the app, enter a different value for the last text property.</source>
+            <target state="new">In instance 1 of the app, enter a different value for the last text property.</target>
+          </trans-unit>
+          <trans-unit id="227" xml:space="preserve">
+            <source>Then click another text box so the <bpt id="2">&lt;code&gt;</bpt>LostFocus<ept id="2">&lt;/code&gt;</ept> event handler attempts to update the database with an incorrect <bpt id="4">&lt;code&gt;</bpt>__version<ept id="4">&lt;/code&gt;</ept> property.</source>
+            <target state="new">Then click another text box so the <bpt id="2">&lt;code&gt;</bpt>LostFocus<ept id="2">&lt;/code&gt;</ept> event handler attempts to update the database with an incorrect <bpt id="4">&lt;code&gt;</bpt>__version<ept id="4">&lt;/code&gt;</ept> property.</target>
+          </trans-unit>
+          <trans-unit id="228" xml:space="preserve">
+            <source>App Instance 1</source>
+            <target state="new">App Instance 1</target>
+          </trans-unit>
+          <trans-unit id="229" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="230" xml:space="preserve">
+            <source>App Instance 2</source>
+            <target state="new">App Instance 2</target>
+          </trans-unit>
+          <trans-unit id="231" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="232" xml:space="preserve">
+            <source>Notice that no exception was encountered in the app since the server script resolved the conflict allowing the update since the item is not marked complete.</source>
+            <target state="new">Notice that no exception was encountered in the app since the server script resolved the conflict allowing the update since the item is not marked complete.</target>
+          </trans-unit>
+          <trans-unit id="233" xml:space="preserve">
+            <source>To see that the update was truly successful, click <bpt id="2">&lt;strong&gt;</bpt>Refresh<ept id="2">&lt;/strong&gt;</ept> in instance 2 to re-query the database.</source>
+            <target state="new">To see that the update was truly successful, click <bpt id="2">&lt;strong&gt;</bpt>Refresh<ept id="2">&lt;/strong&gt;</ept> in instance 2 to re-query the database.</target>
+          </trans-unit>
+          <trans-unit id="234" xml:space="preserve">
+            <source>App Instance 1</source>
+            <target state="new">App Instance 1</target>
+          </trans-unit>
+          <trans-unit id="235" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="236" xml:space="preserve">
+            <source>App Instance 2</source>
+            <target state="new">App Instance 2</target>
+          </trans-unit>
+          <trans-unit id="237" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="238" xml:space="preserve">
+            <source>In instance 1, click the check box to complete the last Todo item.</source>
+            <target state="new">In instance 1, click the check box to complete the last Todo item.</target>
+          </trans-unit>
+          <trans-unit id="239" xml:space="preserve">
+            <source>App Instance 1</source>
+            <target state="new">App Instance 1</target>
+          </trans-unit>
+          <trans-unit id="240" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="241" xml:space="preserve">
+            <source>App Instance 2</source>
+            <target state="new">App Instance 2</target>
+          </trans-unit>
+          <trans-unit id="242" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="243" xml:space="preserve">
+            <source>In instance 2, try to update the last TodoItem's text and trigger the <bpt id="2">&lt;code&gt;</bpt>LostFocus<ept id="2">&lt;/code&gt;</ept> event.</source>
+            <target state="new">In instance 2, try to update the last TodoItem's text and trigger the <bpt id="2">&lt;code&gt;</bpt>LostFocus<ept id="2">&lt;/code&gt;</ept> event.</target>
+          </trans-unit>
+          <trans-unit id="244" xml:space="preserve">
+            <source>In response to the conflict, the script resolved it by refusing the update because the item was already completed.</source>
+            <target state="new">In response to the conflict, the script resolved it by refusing the update because the item was already completed.</target>
+          </trans-unit>
+          <trans-unit id="245" xml:space="preserve">
+            <source>App Instance 1</source>
+            <target state="new">App Instance 1</target>
+          </trans-unit>
+          <trans-unit id="246" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="247" xml:space="preserve">
+            <source>App Instance 2</source>
+            <target state="new">App Instance 2</target>
+          </trans-unit>
+          <trans-unit id="248" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt><ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="249" xml:space="preserve">
+            <source>Next steps</source>
+            <target state="new">Next steps</target>
+          </trans-unit>
+          <trans-unit id="250" xml:space="preserve">
+            <source>This tutorial demonstrated how to enable a Windows Store app to handle write conflicts when working with data in Mobile Services.</source>
+            <target state="new">This tutorial demonstrated how to enable a Windows Store app to handle write conflicts when working with data in Mobile Services.</target>
+          </trans-unit>
+          <trans-unit id="251" xml:space="preserve">
+            <source>Next, consider completing one of the following Windows Store tutorials:</source>
+            <target state="new">Next, consider completing one of the following Windows Store tutorials:</target>
+          </trans-unit>
+          <trans-unit id="252" xml:space="preserve">
+            <source>[Add authentication to your app]</source>
+            <target state="new">[Add authentication to your app]</target>
+          </trans-unit>
+          <trans-unit id="253" xml:space="preserve">
+            <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept>Learn how to authenticate users of your app.</source>
+            <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept>Learn how to authenticate users of your app.</target>
+          </trans-unit>
+          <trans-unit id="254" xml:space="preserve">
+            <source>[Add push notifications to your app]</source>
+            <target state="new">[Add push notifications to your app]</target>
+          </trans-unit>
+          <trans-unit id="255" xml:space="preserve">
+            <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept>Learn how to send a very basic push notification to your app with Mobile Services.</source>
+            <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept>Learn how to send a very basic push notification to your app with Mobile Services.</target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>

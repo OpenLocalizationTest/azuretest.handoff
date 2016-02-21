@@ -1,0 +1,905 @@
+﻿<markdown_skeleton_root>
+  <block_element>
+    <ArrayOfMarkdownBlockBase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <MarkdownBlockBase
+        xsi:type="MarkdownAzureMetadataBlock"
+        item_id="19c2b31d-ab46-4bf2-8158-3386260af5a5"
+        item_type="AzureMetadata"
+        item_footer="footer_not_set"
+        trans_unit_id="19c2b31d-ab46-4bf2-8158-3386260af5a5">
+        <LocalizeItemList>
+          <MarkdownInternalXmlItem
+            internal_item_id="6d6d1a3d-27db-45c6-95a9-e734afcc78a3"
+            trans_unit_id="101"
+            internal_item_type="Xml">
+            <internal_items />
+          </MarkdownInternalXmlItem>
+          <MarkdownInternalXmlItem
+            internal_item_id="dcda08f4-a086-4b26-84f2-9733a27a5621"
+            trans_unit_id="102"
+            internal_item_type="Xml">
+            <internal_items />
+          </MarkdownInternalXmlItem>
+        </LocalizeItemList>
+        <ItemValue>&lt;properties 
+    title="How to add a users to an elastic database pool" 
+    pageTitle="6d6d1a3d-27db-45c6-95a9-e734afcc78a3" 
+    description="dcda08f4-a086-4b26-84f2-9733a27a5621" 
+    metaKeywords="azure sql database elastic databases credentials" 
+    services="sql-database" documentationCenter=""  
+    manager="jeffreyg" 
+    authors="sidneyh"/&gt;
+
+&lt;tags 
+    ms.service="sql-database" 
+    ms.workload="sql-database" 
+    ms.tgt_pltfrm="na" 
+    ms.devlang="na" 
+    ms.topic="article" 
+    ms.date="07/27/2015" 
+    ms.author="ddove; sidneyh" /&gt;
+
+</ItemValue>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownHeaderBlock"
+        item_id="8fe829bd-0076-428f-abba-41372c848f79"
+        item_type="Header"
+        item_footer="footer_not_set"
+        trans_unit_id="8fe829bd-0076-428f-abba-41372c848f79">
+        <segment
+          trans_unit_id="103">
+          <SegmentId>f635477f-7f7a-4dd2-aa55-693ad68a4d2d</SegmentId>
+          <InternalNormalItem
+            internal_item_id="1"
+            internal_item_parent_id="103"
+            trans_unit_id="103-1"
+            internal_item_type="Normal">
+            <internal_items />
+          </InternalNormalItem>
+        </segment>
+        <header_type>Star</header_type>
+        <header_level>1</header_level>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownParagraphBlock"
+        item_id="f8d6cf57-63c3-4666-8661-22fcf28329f9"
+        item_type="NormalParagraph"
+        item_footer=""
+        trans_unit_id="f8d6cf57-63c3-4666-8661-22fcf28329f9">
+        <Lines>
+          <MarkdownLine>
+            <LineId>9882bba4-2dc6-4b94-9d2b-38e65bacdfe0</LineId>
+            <paragraph_segments>
+              <MarkdownSegment
+                trans_unit_id="104">
+                <SegmentId>20d9adae-d711-4413-8ddf-5fa2b4051917</SegmentId>
+                <InternalNormalItem
+                  internal_item_id="1"
+                  internal_item_parent_id="104"
+                  trans_unit_id="104-1"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+                <MarkdownInternalBoldItem
+                  internal_item_id="2"
+                  internal_item_parent_id="104"
+                  trans_unit_id="104-2"
+                  internal_item_type="Bold">
+                  <internal_items />
+                  <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
+                </MarkdownInternalBoldItem>
+                <InternalNormalItem
+                  internal_item_id="3"
+                  internal_item_parent_id="104"
+                  trans_unit_id="104-3"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+                <MarkdownInternalBoldItem
+                  internal_item_id="4"
+                  internal_item_parent_id="104"
+                  trans_unit_id="104-4"
+                  internal_item_type="Bold">
+                  <internal_items />
+                  <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
+                </MarkdownInternalBoldItem>
+                <InternalNormalItem
+                  internal_item_id="5"
+                  internal_item_parent_id="104"
+                  trans_unit_id="104-5"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+                <MarkdownInternalBoldItem
+                  internal_item_id="6"
+                  internal_item_parent_id="104"
+                  trans_unit_id="104-6"
+                  internal_item_type="Bold">
+                  <internal_items />
+                  <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
+                </MarkdownInternalBoldItem>
+                <InternalNormalItem
+                  internal_item_id="7"
+                  internal_item_parent_id="104"
+                  trans_unit_id="104-7"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+              </MarkdownSegment>
+              <MarkdownSegment
+                trans_unit_id="105">
+                <SegmentId>f547e3f2-fd5e-41fb-8214-2d6890afad74</SegmentId>
+                <InternalNormalItem
+                  internal_item_id="1"
+                  internal_item_parent_id="105"
+                  trans_unit_id="105-1"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+              </MarkdownSegment>
+              <MarkdownSegment
+                trans_unit_id="106">
+                <SegmentId>e2a9e4e8-3fce-442b-ba5c-550f164aef20</SegmentId>
+                <InternalNormalItem
+                  internal_item_id="1"
+                  internal_item_parent_id="106"
+                  trans_unit_id="106-1"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+                <LinkItem
+                  internal_item_id="2"
+                  internal_item_parent_id="106"
+                  trans_unit_id="106-2"
+                  internal_item_type="Link">
+                  <internal_items />
+                  <internal_link_type>Inline</internal_link_type>
+                  <internal_link_text>Managing Databases and Logins in Azure SQL Database</internal_link_text>
+                  <internal_link_url>https://msdn.microsoft.com/library/azure/ee336235.aspx</internal_link_url>
+                  <internal_link_title />
+                </LinkItem>
+                <InternalNormalItem
+                  internal_item_id="3"
+                  internal_item_parent_id="106"
+                  trans_unit_id="106-3"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+                <LinkItem
+                  internal_item_id="4"
+                  internal_item_parent_id="106"
+                  trans_unit_id="106-4"
+                  internal_item_type="Link">
+                  <internal_items />
+                  <internal_link_type>Inline</internal_link_type>
+                  <internal_link_text>Adding Users to Your SQL Azure Database</internal_link_text>
+                  <internal_link_url>http://azure.microsoft.com/blog/2010/06/21/adding-users-to-your-sql-azure-database/</internal_link_url>
+                  <internal_link_title />
+                </LinkItem>
+              </MarkdownSegment>
+            </paragraph_segments>
+            <PrefixWSLength>0</PrefixWSLength>
+            <SuffixWSLength>0</SuffixWSLength>
+          </MarkdownLine>
+        </Lines>
+        <paragraph_segments>
+          <MarkdownSegment
+            trans_unit_id="104">
+            <SegmentId>20d9adae-d711-4413-8ddf-5fa2b4051917</SegmentId>
+            <InternalNormalItem
+              internal_item_id="1"
+              internal_item_parent_id="104"
+              trans_unit_id="104-1"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+            <MarkdownInternalBoldItem
+              internal_item_id="2"
+              internal_item_parent_id="104"
+              trans_unit_id="104-2"
+              internal_item_type="Bold">
+              <internal_items />
+              <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
+            </MarkdownInternalBoldItem>
+            <InternalNormalItem
+              internal_item_id="3"
+              internal_item_parent_id="104"
+              trans_unit_id="104-3"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+            <MarkdownInternalBoldItem
+              internal_item_id="4"
+              internal_item_parent_id="104"
+              trans_unit_id="104-4"
+              internal_item_type="Bold">
+              <internal_items />
+              <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
+            </MarkdownInternalBoldItem>
+            <InternalNormalItem
+              internal_item_id="5"
+              internal_item_parent_id="104"
+              trans_unit_id="104-5"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+            <MarkdownInternalBoldItem
+              internal_item_id="6"
+              internal_item_parent_id="104"
+              trans_unit_id="104-6"
+              internal_item_type="Bold">
+              <internal_items />
+              <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
+            </MarkdownInternalBoldItem>
+            <InternalNormalItem
+              internal_item_id="7"
+              internal_item_parent_id="104"
+              trans_unit_id="104-7"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+          </MarkdownSegment>
+          <MarkdownSegment
+            trans_unit_id="105">
+            <SegmentId>f547e3f2-fd5e-41fb-8214-2d6890afad74</SegmentId>
+            <InternalNormalItem
+              internal_item_id="1"
+              internal_item_parent_id="105"
+              trans_unit_id="105-1"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+          </MarkdownSegment>
+          <MarkdownSegment
+            trans_unit_id="106">
+            <SegmentId>e2a9e4e8-3fce-442b-ba5c-550f164aef20</SegmentId>
+            <InternalNormalItem
+              internal_item_id="1"
+              internal_item_parent_id="106"
+              trans_unit_id="106-1"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+            <LinkItem
+              internal_item_id="2"
+              internal_item_parent_id="106"
+              trans_unit_id="106-2"
+              internal_item_type="Link">
+              <internal_items />
+              <internal_link_type>Inline</internal_link_type>
+              <internal_link_text>Managing Databases and Logins in Azure SQL Database</internal_link_text>
+              <internal_link_url>https://msdn.microsoft.com/library/azure/ee336235.aspx</internal_link_url>
+              <internal_link_title />
+            </LinkItem>
+            <InternalNormalItem
+              internal_item_id="3"
+              internal_item_parent_id="106"
+              trans_unit_id="106-3"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+            <LinkItem
+              internal_item_id="4"
+              internal_item_parent_id="106"
+              trans_unit_id="106-4"
+              internal_item_type="Link">
+              <internal_items />
+              <internal_link_type>Inline</internal_link_type>
+              <internal_link_text>Adding Users to Your SQL Azure Database</internal_link_text>
+              <internal_link_url>http://azure.microsoft.com/blog/2010/06/21/adding-users-to-your-sql-azure-database/</internal_link_url>
+              <internal_link_title />
+            </LinkItem>
+          </MarkdownSegment>
+        </paragraph_segments>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownHeaderBlock"
+        item_id="939995b9-1e62-4223-a7b7-3f2ba2d35231"
+        item_type="Header"
+        item_footer="footer_not_set"
+        trans_unit_id="939995b9-1e62-4223-a7b7-3f2ba2d35231">
+        <segment
+          trans_unit_id="107">
+          <SegmentId>5b72107c-013f-4a89-b63f-096beb72c4ba</SegmentId>
+          <InternalNormalItem
+            internal_item_id="1"
+            internal_item_parent_id="107"
+            trans_unit_id="107-1"
+            internal_item_type="Normal">
+            <internal_items />
+          </InternalNormalItem>
+        </segment>
+        <header_type>Star</header_type>
+        <header_level>2</header_level>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownListBlock"
+        item_id="0aacaa34-5bab-47e6-9d58-0a6ce88e7ecc"
+        item_type="List"
+        item_footer=""
+        trans_unit_id="0aacaa34-5bab-47e6-9d58-0a6ce88e7ecc">
+        <inner_list_items>
+          <ListItem>
+            <MarkdownParagraphBlock
+              item_id="37cdadc1-af4b-464a-a035-3737ecdc1f62"
+              item_type="NormalParagraph"
+              item_footer="footer_not_set"
+              trans_unit_id="37cdadc1-af4b-464a-a035-3737ecdc1f62">
+              <Lines>
+                <MarkdownLine>
+                  <LineId>358e298f-3353-4275-8a21-3f7595c334b1</LineId>
+                  <paragraph_segments>
+                    <MarkdownSegment
+                      trans_unit_id="108">
+                      <SegmentId>9c6c6555-3544-42e8-b038-35d71f76adf0</SegmentId>
+                      <InternalNormalItem
+                        internal_item_id="1"
+                        internal_item_parent_id="108"
+                        trans_unit_id="108-1"
+                        internal_item_type="Normal">
+                        <internal_items />
+                      </InternalNormalItem>
+                      <LinkItem
+                        internal_item_id="2"
+                        internal_item_parent_id="108"
+                        trans_unit_id="108-2"
+                        internal_item_type="Link">
+                        <internal_items />
+                        <internal_link_type>Inline</internal_link_type>
+                        <internal_link_text>elastic job components</internal_link_text>
+                        <internal_link_url>sql-database-elastic-jobs-service-installation.md</internal_link_url>
+                        <internal_link_title />
+                      </LinkItem>
+                      <InternalNormalItem
+                        internal_item_id="3"
+                        internal_item_parent_id="108"
+                        trans_unit_id="108-3"
+                        internal_item_type="Normal">
+                        <internal_items />
+                      </InternalNormalItem>
+                    </MarkdownSegment>
+                  </paragraph_segments>
+                  <PrefixWSLength>1</PrefixWSLength>
+                  <SuffixWSLength>0</SuffixWSLength>
+                </MarkdownLine>
+              </Lines>
+              <paragraph_segments>
+                <MarkdownSegment
+                  trans_unit_id="108">
+                  <SegmentId>9c6c6555-3544-42e8-b038-35d71f76adf0</SegmentId>
+                  <InternalNormalItem
+                    internal_item_id="1"
+                    internal_item_parent_id="108"
+                    trans_unit_id="108-1"
+                    internal_item_type="Normal">
+                    <internal_items />
+                  </InternalNormalItem>
+                  <LinkItem
+                    internal_item_id="2"
+                    internal_item_parent_id="108"
+                    trans_unit_id="108-2"
+                    internal_item_type="Link">
+                    <internal_items />
+                    <internal_link_type>Inline</internal_link_type>
+                    <internal_link_text>elastic job components</internal_link_text>
+                    <internal_link_url>sql-database-elastic-jobs-service-installation.md</internal_link_url>
+                    <internal_link_title />
+                  </LinkItem>
+                  <InternalNormalItem
+                    internal_item_id="3"
+                    internal_item_parent_id="108"
+                    trans_unit_id="108-3"
+                    internal_item_type="Normal">
+                    <internal_items />
+                  </InternalNormalItem>
+                </MarkdownSegment>
+              </paragraph_segments>
+            </MarkdownParagraphBlock>
+            <Identifier>*</Identifier>
+            <IndentsLength>
+              <int>0</int>
+            </IndentsLength>
+          </ListItem>
+        </inner_list_items>
+        <ListType>Charactor</ListType>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownHeaderBlock"
+        item_id="42dc2736-6cd7-4dbe-9ed2-1e34d41e0cc7"
+        item_type="Header"
+        item_footer="footer_not_set"
+        trans_unit_id="42dc2736-6cd7-4dbe-9ed2-1e34d41e0cc7">
+        <segment
+          trans_unit_id="109">
+          <SegmentId>3fb0bb57-8955-46e3-8025-07ab7a60e499</SegmentId>
+          <InternalNormalItem
+            internal_item_id="1"
+            internal_item_parent_id="109"
+            trans_unit_id="109-1"
+            internal_item_type="Normal">
+            <internal_items />
+          </InternalNormalItem>
+        </segment>
+        <header_type>Star</header_type>
+        <header_level>2</header_level>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownListBlock"
+        item_id="99775b04-b7da-490e-a0d8-4ba75c301bee"
+        item_type="List"
+        item_footer=""
+        trans_unit_id="99775b04-b7da-490e-a0d8-4ba75c301bee">
+        <inner_list_items>
+          <ListItem>
+            <MarkdownParagraphBlock
+              item_id="75cda322-7f0f-40d9-8b63-82503021f6e1"
+              item_type="NormalParagraph"
+              item_footer=""
+              trans_unit_id="75cda322-7f0f-40d9-8b63-82503021f6e1">
+              <Lines>
+                <MarkdownLine>
+                  <LineId>6917132f-3a65-4cb2-9329-bd09db47b4d7</LineId>
+                  <paragraph_segments>
+                    <MarkdownSegment
+                      trans_unit_id="110">
+                      <SegmentId>63e3b731-924a-47ab-85d3-7df9b42705dd</SegmentId>
+                      <InternalNormalItem
+                        internal_item_id="1"
+                        internal_item_parent_id="110"
+                        trans_unit_id="110-1"
+                        internal_item_type="Normal">
+                        <internal_items />
+                      </InternalNormalItem>
+                      <MarkdownInternalBoldItem
+                        internal_item_id="2"
+                        internal_item_parent_id="110"
+                        trans_unit_id="110-2"
+                        internal_item_type="Bold">
+                        <internal_items />
+                        <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
+                      </MarkdownInternalBoldItem>
+                      <InternalNormalItem
+                        internal_item_id="3"
+                        internal_item_parent_id="110"
+                        trans_unit_id="110-3"
+                        internal_item_type="Normal">
+                        <internal_items />
+                      </InternalNormalItem>
+                      <MarkdownInternalBoldItem
+                        internal_item_id="4"
+                        internal_item_parent_id="110"
+                        trans_unit_id="110-4"
+                        internal_item_type="Bold">
+                        <internal_items />
+                        <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
+                      </MarkdownInternalBoldItem>
+                      <InternalNormalItem
+                        internal_item_id="5"
+                        internal_item_parent_id="110"
+                        trans_unit_id="110-5"
+                        internal_item_type="Normal">
+                        <internal_items />
+                      </InternalNormalItem>
+                    </MarkdownSegment>
+                  </paragraph_segments>
+                  <PrefixWSLength>2</PrefixWSLength>
+                  <SuffixWSLength>0</SuffixWSLength>
+                </MarkdownLine>
+              </Lines>
+              <paragraph_segments>
+                <MarkdownSegment
+                  trans_unit_id="110">
+                  <SegmentId>63e3b731-924a-47ab-85d3-7df9b42705dd</SegmentId>
+                  <InternalNormalItem
+                    internal_item_id="1"
+                    internal_item_parent_id="110"
+                    trans_unit_id="110-1"
+                    internal_item_type="Normal">
+                    <internal_items />
+                  </InternalNormalItem>
+                  <MarkdownInternalBoldItem
+                    internal_item_id="2"
+                    internal_item_parent_id="110"
+                    trans_unit_id="110-2"
+                    internal_item_type="Bold">
+                    <internal_items />
+                    <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
+                  </MarkdownInternalBoldItem>
+                  <InternalNormalItem
+                    internal_item_id="3"
+                    internal_item_parent_id="110"
+                    trans_unit_id="110-3"
+                    internal_item_type="Normal">
+                    <internal_items />
+                  </InternalNormalItem>
+                  <MarkdownInternalBoldItem
+                    internal_item_id="4"
+                    internal_item_parent_id="110"
+                    trans_unit_id="110-4"
+                    internal_item_type="Bold">
+                    <internal_items />
+                    <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
+                  </MarkdownInternalBoldItem>
+                  <InternalNormalItem
+                    internal_item_id="5"
+                    internal_item_parent_id="110"
+                    trans_unit_id="110-5"
+                    internal_item_type="Normal">
+                    <internal_items />
+                  </InternalNormalItem>
+                </MarkdownSegment>
+              </paragraph_segments>
+            </MarkdownParagraphBlock>
+            <MarkdownCodeBlock
+              item_id="0fba8d57-26d7-4c8f-a726-594bf41ce189"
+              item_type="CodeBlock"
+              item_footer="footer_not_set"
+              trans_unit_id="0fba8d57-26d7-4c8f-a726-594bf41ce189">
+              <code_block>CREATE LOGIN login1 WITH password='&lt;ProvidePassword&gt;';
+
+</code_block>
+            </MarkdownCodeBlock>
+            <Identifier>1.</Identifier>
+            <IndentsLength>
+              <int>0</int>
+              <int>4</int>
+            </IndentsLength>
+          </ListItem>
+          <ListItem>
+            <MarkdownParagraphBlock
+              item_id="4463490e-3d32-42e8-9aaa-e539974996f1"
+              item_type="NormalParagraph"
+              item_footer=""
+              trans_unit_id="4463490e-3d32-42e8-9aaa-e539974996f1">
+              <Lines>
+                <MarkdownLine>
+                  <LineId>ed5313fb-4e92-4b0d-86d9-314c59416c9a</LineId>
+                  <paragraph_segments>
+                    <MarkdownSegment
+                      trans_unit_id="111">
+                      <SegmentId>415b1067-8420-43bc-a4e4-71167bf64b7e</SegmentId>
+                      <InternalNormalItem
+                        internal_item_id="1"
+                        internal_item_parent_id="111"
+                        trans_unit_id="111-1"
+                        internal_item_type="Normal">
+                        <internal_items />
+                      </InternalNormalItem>
+                    </MarkdownSegment>
+                    <MarkdownSegment
+                      trans_unit_id="112">
+                      <SegmentId>b34b27ef-dfd7-4cf3-82c0-89b1911bdde2</SegmentId>
+                      <InternalNormalItem
+                        internal_item_id="1"
+                        internal_item_parent_id="112"
+                        trans_unit_id="112-1"
+                        internal_item_type="Normal">
+                        <internal_items />
+                      </InternalNormalItem>
+                    </MarkdownSegment>
+                    <MarkdownSegment
+                      trans_unit_id="113">
+                      <SegmentId>79e5f3df-d0ec-417c-9a3a-069070229bde</SegmentId>
+                      <InternalNormalItem
+                        internal_item_id="1"
+                        internal_item_parent_id="113"
+                        trans_unit_id="113-1"
+                        internal_item_type="Normal">
+                        <internal_items />
+                      </InternalNormalItem>
+                    </MarkdownSegment>
+                  </paragraph_segments>
+                  <PrefixWSLength>1</PrefixWSLength>
+                  <SuffixWSLength>0</SuffixWSLength>
+                </MarkdownLine>
+              </Lines>
+              <paragraph_segments>
+                <MarkdownSegment
+                  trans_unit_id="111">
+                  <SegmentId>415b1067-8420-43bc-a4e4-71167bf64b7e</SegmentId>
+                  <InternalNormalItem
+                    internal_item_id="1"
+                    internal_item_parent_id="111"
+                    trans_unit_id="111-1"
+                    internal_item_type="Normal">
+                    <internal_items />
+                  </InternalNormalItem>
+                </MarkdownSegment>
+                <MarkdownSegment
+                  trans_unit_id="112">
+                  <SegmentId>b34b27ef-dfd7-4cf3-82c0-89b1911bdde2</SegmentId>
+                  <InternalNormalItem
+                    internal_item_id="1"
+                    internal_item_parent_id="112"
+                    trans_unit_id="112-1"
+                    internal_item_type="Normal">
+                    <internal_items />
+                  </InternalNormalItem>
+                </MarkdownSegment>
+                <MarkdownSegment
+                  trans_unit_id="113">
+                  <SegmentId>79e5f3df-d0ec-417c-9a3a-069070229bde</SegmentId>
+                  <InternalNormalItem
+                    internal_item_id="1"
+                    internal_item_parent_id="113"
+                    trans_unit_id="113-1"
+                    internal_item_type="Normal">
+                    <internal_items />
+                  </InternalNormalItem>
+                </MarkdownSegment>
+              </paragraph_segments>
+            </MarkdownParagraphBlock>
+            <MarkdownCodeBlock
+              item_id="75c12f04-0fe3-4923-9712-cc807d4e0302"
+              item_type="CodeBlock"
+              item_footer="footer_not_set"
+              trans_unit_id="75c12f04-0fe3-4923-9712-cc807d4e0302">
+              <code_block> CREATE USER admin1 FROM LOGIN login1;
+
+</code_block>
+            </MarkdownCodeBlock>
+            <Identifier>2.</Identifier>
+            <IndentsLength>
+              <int>0</int>
+              <int>3</int>
+            </IndentsLength>
+          </ListItem>
+          <ListItem>
+            <MarkdownParagraphBlock
+              item_id="5d517d6c-909a-4418-ab76-78db86cc4e17"
+              item_type="NormalParagraph"
+              item_footer="footer_not_set"
+              trans_unit_id="5d517d6c-909a-4418-ab76-78db86cc4e17">
+              <Lines>
+                <MarkdownLine>
+                  <LineId>a59e65a3-0afd-4847-8b7d-c00622f6528f</LineId>
+                  <paragraph_segments>
+                    <MarkdownSegment
+                      trans_unit_id="114">
+                      <SegmentId>1231a0d3-ac54-482a-a718-b0b97914f05c</SegmentId>
+                      <InternalNormalItem
+                        internal_item_id="1"
+                        internal_item_parent_id="114"
+                        trans_unit_id="114-1"
+                        internal_item_type="Normal">
+                        <internal_items />
+                      </InternalNormalItem>
+                    </MarkdownSegment>
+                    <MarkdownSegment
+                      trans_unit_id="115">
+                      <SegmentId>fab619f1-8828-4546-9aa2-eda3ed68e463</SegmentId>
+                      <InternalNormalItem
+                        internal_item_id="1"
+                        internal_item_parent_id="115"
+                        trans_unit_id="115-1"
+                        internal_item_type="Normal">
+                        <internal_items />
+                      </InternalNormalItem>
+                      <MarkdownInternalBoldItem
+                        internal_item_id="2"
+                        internal_item_parent_id="115"
+                        trans_unit_id="115-2"
+                        internal_item_type="Bold">
+                        <internal_items />
+                        <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
+                      </MarkdownInternalBoldItem>
+                      <InternalNormalItem
+                        internal_item_id="3"
+                        internal_item_parent_id="115"
+                        trans_unit_id="115-3"
+                        internal_item_type="Normal">
+                        <internal_items />
+                      </InternalNormalItem>
+                    </MarkdownSegment>
+                  </paragraph_segments>
+                  <PrefixWSLength>1</PrefixWSLength>
+                  <SuffixWSLength>0</SuffixWSLength>
+                </MarkdownLine>
+              </Lines>
+              <paragraph_segments>
+                <MarkdownSegment
+                  trans_unit_id="114">
+                  <SegmentId>1231a0d3-ac54-482a-a718-b0b97914f05c</SegmentId>
+                  <InternalNormalItem
+                    internal_item_id="1"
+                    internal_item_parent_id="114"
+                    trans_unit_id="114-1"
+                    internal_item_type="Normal">
+                    <internal_items />
+                  </InternalNormalItem>
+                </MarkdownSegment>
+                <MarkdownSegment
+                  trans_unit_id="115">
+                  <SegmentId>fab619f1-8828-4546-9aa2-eda3ed68e463</SegmentId>
+                  <InternalNormalItem
+                    internal_item_id="1"
+                    internal_item_parent_id="115"
+                    trans_unit_id="115-1"
+                    internal_item_type="Normal">
+                    <internal_items />
+                  </InternalNormalItem>
+                  <MarkdownInternalBoldItem
+                    internal_item_id="2"
+                    internal_item_parent_id="115"
+                    trans_unit_id="115-2"
+                    internal_item_type="Bold">
+                    <internal_items />
+                    <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
+                  </MarkdownInternalBoldItem>
+                  <InternalNormalItem
+                    internal_item_id="3"
+                    internal_item_parent_id="115"
+                    trans_unit_id="115-3"
+                    internal_item_type="Normal">
+                    <internal_items />
+                  </InternalNormalItem>
+                </MarkdownSegment>
+              </paragraph_segments>
+            </MarkdownParagraphBlock>
+            <Identifier>3.</Identifier>
+            <IndentsLength>
+              <int>0</int>
+            </IndentsLength>
+          </ListItem>
+        </inner_list_items>
+        <ListType>Number</ListType>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownHeaderBlock"
+        item_id="76fea1cf-4b8a-4f01-918f-4e8ed23c726c"
+        item_type="Header"
+        item_footer="footer_not_set"
+        trans_unit_id="76fea1cf-4b8a-4f01-918f-4e8ed23c726c">
+        <segment
+          trans_unit_id="116">
+          <SegmentId>5b6be758-90c9-4e34-bf80-daa8de6f7f4e</SegmentId>
+          <InternalNormalItem
+            internal_item_id="1"
+            internal_item_parent_id="116"
+            trans_unit_id="116-1"
+            internal_item_type="Normal">
+            <internal_items />
+          </InternalNormalItem>
+        </segment>
+        <header_type>Star</header_type>
+        <header_level>2</header_level>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownParagraphBlock"
+        item_id="e355febc-68ad-4cbe-b0b3-412e780d8a8c"
+        item_type="NormalParagraph"
+        item_footer=""
+        trans_unit_id="e355febc-68ad-4cbe-b0b3-412e780d8a8c">
+        <Lines>
+          <MarkdownLine>
+            <LineId>aca0ec85-79c6-4c43-b776-83de48f1c3e2</LineId>
+            <paragraph_segments>
+              <MarkdownSegment
+                trans_unit_id="117">
+                <SegmentId>36cd0f74-aa0f-47ba-a4fb-32ae6f4e577a</SegmentId>
+                <InternalNormalItem
+                  internal_item_id="1"
+                  internal_item_parent_id="117"
+                  trans_unit_id="117-1"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+                <LinkItem
+                  internal_item_id="2"
+                  internal_item_parent_id="117"
+                  trans_unit_id="117-2"
+                  internal_item_type="Link">
+                  <internal_items />
+                  <internal_link_type>Inline</internal_link_type>
+                  <internal_link_text>Creating and managing elastic database jobs</internal_link_text>
+                  <internal_link_url>sql-database-elastic-jobs-create-and-manage.md</internal_link_url>
+                  <internal_link_title />
+                </LinkItem>
+                <InternalNormalItem
+                  internal_item_id="3"
+                  internal_item_parent_id="117"
+                  trans_unit_id="117-3"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+              </MarkdownSegment>
+            </paragraph_segments>
+            <PrefixWSLength>0</PrefixWSLength>
+            <SuffixWSLength>0</SuffixWSLength>
+          </MarkdownLine>
+        </Lines>
+        <paragraph_segments>
+          <MarkdownSegment
+            trans_unit_id="117">
+            <SegmentId>36cd0f74-aa0f-47ba-a4fb-32ae6f4e577a</SegmentId>
+            <InternalNormalItem
+              internal_item_id="1"
+              internal_item_parent_id="117"
+              trans_unit_id="117-1"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+            <LinkItem
+              internal_item_id="2"
+              internal_item_parent_id="117"
+              trans_unit_id="117-2"
+              internal_item_type="Link">
+              <internal_items />
+              <internal_link_type>Inline</internal_link_type>
+              <internal_link_text>Creating and managing elastic database jobs</internal_link_text>
+              <internal_link_url>sql-database-elastic-jobs-create-and-manage.md</internal_link_url>
+              <internal_link_title />
+            </LinkItem>
+            <InternalNormalItem
+              internal_item_id="3"
+              internal_item_parent_id="117"
+              trans_unit_id="117-3"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+          </MarkdownSegment>
+        </paragraph_segments>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownParagraphBlock"
+        item_id="33a62490-76d3-4fe5-a258-d077e9e184e2"
+        item_type="NormalParagraph"
+        item_footer="&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;"
+        trans_unit_id="33a62490-76d3-4fe5-a258-d077e9e184e2">
+        <Lines>
+          <MarkdownLine>
+            <LineId>36c03255-796e-45b4-9090-8ea5ff4ae7cc</LineId>
+            <paragraph_segments>
+              <MarkdownSegment
+                trans_unit_id="118">
+                <SegmentId>0740d32a-20e9-41b3-b835-c80f22565213</SegmentId>
+                <MarkdownInternalTokenItem
+                  internal_item_id="1"
+                  internal_item_parent_id="118"
+                  trans_unit_id="118-1"
+                  internal_item_type="Token">
+                  <internal_items />
+                  <TokenPrefix>AZURE.INCLUDE </TokenPrefix>
+                  <TokenShortName>elastic-scale-include</TokenShortName>
+                  <TokenHyperLink>../../includes/elastic-scale-include.md</TokenHyperLink>
+                </MarkdownInternalTokenItem>
+              </MarkdownSegment>
+            </paragraph_segments>
+            <PrefixWSLength>0</PrefixWSLength>
+            <SuffixWSLength>0</SuffixWSLength>
+          </MarkdownLine>
+        </Lines>
+        <paragraph_segments>
+          <MarkdownSegment
+            trans_unit_id="118">
+            <SegmentId>0740d32a-20e9-41b3-b835-c80f22565213</SegmentId>
+            <MarkdownInternalTokenItem
+              internal_item_id="1"
+              internal_item_parent_id="118"
+              trans_unit_id="118-1"
+              internal_item_type="Token">
+              <internal_items />
+              <TokenPrefix>AZURE.INCLUDE </TokenPrefix>
+              <TokenShortName>elastic-scale-include</TokenShortName>
+              <TokenHyperLink>../../includes/elastic-scale-include.md</TokenHyperLink>
+            </MarkdownInternalTokenItem>
+          </MarkdownSegment>
+        </paragraph_segments>
+      </MarkdownBlockBase>
+    </ArrayOfMarkdownBlockBase>
+  </block_element>
+  <references>
+    <ArrayOfMarkdownLinkedReference xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <MarkdownLinkedReference
+        item_id="44a2ead9-a160-45ee-984a-219fa2b3c3e7"
+        item_type="LinkedReference"
+        item_footer="footer_not_set"
+        trans_unit_id="44a2ead9-a160-45ee-984a-219fa2b3c3e7">
+        <link_id>1</link_id>
+        <link_uri>./media/sql-database-elastic-jobs-overview/elastic-jobs.png</link_uri>
+        <link_title />
+      </MarkdownLinkedReference>
+    </ArrayOfMarkdownLinkedReference>
+  </references>
+</markdown_skeleton_root>

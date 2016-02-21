@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="ko-kr" original="2/21/2016 3:14:55 AM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">bbea81f5d6c7ebcf761fdedf633232064559fec6</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Use Hadoop Pig with Curl in HDInsight | Microsoft Azure</source>
+            <target state="new">Use Hadoop Pig with Curl in HDInsight | Microsoft Azure</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>Learn how to use Curl to run Pig Latin jobs on a Hadoop cluster in Azure HDInsight.</source>
+            <target state="new">Learn how to use Curl to run Pig Latin jobs on a Hadoop cluster in Azure HDInsight.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Run Pig jobs with Hadoop on HDInsight by using Curl</source>
+            <target state="new">Run Pig jobs with Hadoop on HDInsight by using Curl</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source><ph id="1">&lt;token href="../../includes/hdinsight-selector-use-pig.md"/&gt;</ph></source>
+            <target state="new"><ph id="1">&lt;token href="../../includes/hdinsight-selector-use-pig.md"/&gt;</ph></target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>In this document, you will learn how to use Curl to run Pig Latin jobs on an Azure HDInsight cluster.</source>
+            <target state="new">In this document, you will learn how to use Curl to run Pig Latin jobs on an Azure HDInsight cluster.</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>The Pig Latin programming language allows you to describe transformations that are applied to the input data to produce the desired output.</source>
+            <target state="new">The Pig Latin programming language allows you to describe transformations that are applied to the input data to produce the desired output.</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>Curl is used to demonstrate how you can interact with HDInsight by using raw HTTP requests to run, monitor, and retrieve the results of Pig jobs.</source>
+            <target state="new">Curl is used to demonstrate how you can interact with HDInsight by using raw HTTP requests to run, monitor, and retrieve the results of Pig jobs.</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>This works by using the WebHCat REST API (formerly known as Templeton) that is provided by your HDInsight cluster.</source>
+            <target state="new">This works by using the WebHCat REST API (formerly known as Templeton) that is provided by your HDInsight cluster.</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source>If you are already familiar with using Linux-based Hadoop servers, but are new to HDInsight, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Linux-based HDInsight Tips<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">If you are already familiar with using Linux-based Hadoop servers, but are new to HDInsight, see <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Linux-based HDInsight Tips<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Prerequisites</source>
+            <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Prerequisites</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>To complete the steps in this article, you will need the following:</source>
+            <target state="new">To complete the steps in this article, you will need the following:</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source>An Azure HDInsight (Hadoop on HDInsight) cluster (Linux-based or Windows-based)</source>
+            <target state="new">An Azure HDInsight (Hadoop on HDInsight) cluster (Linux-based or Windows-based)</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Curl<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Curl<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>jq<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>jq<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Run Pig jobs by using Curl</source>
+            <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Run Pig jobs by using Curl</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source>When using Curl or any other REST communication with WebHCat, you must authenticate the requests by providing the administrator user name and password for the HDInsight cluster.</source>
+            <target state="new">When using Curl or any other REST communication with WebHCat, you must authenticate the requests by providing the administrator user name and password for the HDInsight cluster.</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>You must also use the cluster name as part of the Uniform Resource Identifier (URI) that is used to send the requests to the server.</source>
+            <target state="new">You must also use the cluster name as part of the Uniform Resource Identifier (URI) that is used to send the requests to the server.</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>For the commands in this section, replace <bpt id="2">&lt;strong&gt;</bpt>USERNAME<ept id="2">&lt;/strong&gt;</ept> with the user to authenticate to the cluster, and replace <bpt id="4">&lt;strong&gt;</bpt>PASSWORD<ept id="4">&lt;/strong&gt;</ept> with the password for the user account.</source>
+            <target state="new">For the commands in this section, replace <bpt id="2">&lt;strong&gt;</bpt>USERNAME<ept id="2">&lt;/strong&gt;</ept> with the user to authenticate to the cluster, and replace <bpt id="4">&lt;strong&gt;</bpt>PASSWORD<ept id="4">&lt;/strong&gt;</ept> with the password for the user account.</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source>Replace <bpt id="2">&lt;strong&gt;</bpt>CLUSTERNAME<ept id="2">&lt;/strong&gt;</ept> with the name of your cluster.</source>
+            <target state="new">Replace <bpt id="2">&lt;strong&gt;</bpt>CLUSTERNAME<ept id="2">&lt;/strong&gt;</ept> with the name of your cluster.</target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source>The REST API is secured via <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>basic access authentication<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">The REST API is secured via <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>basic access authentication<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source>You should always make requests by using Secure HTTP (HTTPS) to help ensure that your credentials are securely sent to the server.</source>
+            <target state="new">You should always make requests by using Secure HTTP (HTTPS) to help ensure that your credentials are securely sent to the server.</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source>From a command line, use the following command to verify that you can connect to your HDInsight cluster:</source>
+            <target state="new">From a command line, use the following command to verify that you can connect to your HDInsight cluster:</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>You should receive a response similar to the following:</source>
+            <target state="new">You should receive a response similar to the following:</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source>The parameters used in this command are as follows:</source>
+            <target state="new">The parameters used in this command are as follows:</target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>-u<ept id="1">&lt;/strong&gt;</ept>: The user name and password used to authenticate the request</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>-u<ept id="1">&lt;/strong&gt;</ept>: The user name and password used to authenticate the request</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>-G<ept id="1">&lt;/strong&gt;</ept>: Indicates that this is a GET request</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>-G<ept id="1">&lt;/strong&gt;</ept>: Indicates that this is a GET request</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source>The beginning of the URL, <bpt id="2">&lt;strong&gt;</bpt>https://CLUSTERNAME.azurehdinsight.net/templeton/v1<ept id="2">&lt;/strong&gt;</ept>, will be the same for all requests.</source>
+            <target state="new">The beginning of the URL, <bpt id="2">&lt;strong&gt;</bpt>https://CLUSTERNAME.azurehdinsight.net/templeton/v1<ept id="2">&lt;/strong&gt;</ept>, will be the same for all requests.</target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source>The path, <bpt id="2">&lt;strong&gt;</bpt>/status<ept id="2">&lt;/strong&gt;</ept>, indicates that the request is to return the status of WebHCat (also known as Templeton) for the server.</source>
+            <target state="new">The path, <bpt id="2">&lt;strong&gt;</bpt>/status<ept id="2">&lt;/strong&gt;</ept>, indicates that the request is to return the status of WebHCat (also known as Templeton) for the server.</target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source>Use the following code to submit a Pig Latin job to the cluster:</source>
+            <target state="new">Use the following code to submit a Pig Latin job to the cluster:</target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source>The parameters used in this command are as follows:</source>
+            <target state="new">The parameters used in this command are as follows:</target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>-d<ept id="1">&lt;/strong&gt;</ept>: Because <bpt id="3">&lt;code&gt;</bpt>-G<ept id="3">&lt;/code&gt;</ept> is not used, the request defaults to the POST method.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>-d<ept id="1">&lt;/strong&gt;</ept>: Because <bpt id="3">&lt;code&gt;</bpt>-G<ept id="3">&lt;/code&gt;</ept> is not used, the request defaults to the POST method.</target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>-d<ept id="1">&lt;/code&gt;</ept> specifies the data values that are sent with the request.</source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>-d<ept id="1">&lt;/code&gt;</ept> specifies the data values that are sent with the request.</target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>user.name<ept id="1">&lt;/strong&gt;</ept>: The user who is running the command</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>user.name<ept id="1">&lt;/strong&gt;</ept>: The user who is running the command</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>execute<ept id="1">&lt;/strong&gt;</ept>: The Pig Latin statements to execute</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>execute<ept id="1">&lt;/strong&gt;</ept>: The Pig Latin statements to execute</target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>statusdir<ept id="1">&lt;/strong&gt;</ept>: The directory that the status for this job will be written to</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>statusdir<ept id="1">&lt;/strong&gt;</ept>: The directory that the status for this job will be written to</target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source>Notice that the spaces in Pig Latin statements are replaced by the <bpt id="2">&lt;code&gt;</bpt>+<ept id="2">&lt;/code&gt;</ept> character when used with Curl.</source>
+            <target state="new">Notice that the spaces in Pig Latin statements are replaced by the <bpt id="2">&lt;code&gt;</bpt>+<ept id="2">&lt;/code&gt;</ept> character when used with Curl.</target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source>This command should return a job ID that can be used to check the status of the job, for example:</source>
+            <target state="new">This command should return a job ID that can be used to check the status of the job, for example:</target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source>{"id":"job_1415651640909_0026"}</source>
+            <target state="new">{"id":"job_1415651640909_0026"}</target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source>To check the status of the job, use the following command.</source>
+            <target state="new">To check the status of the job, use the following command.</target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source>Replace <bpt id="2">&lt;strong&gt;</bpt>JOBID<ept id="2">&lt;/strong&gt;</ept> with the value returned in the previous step.</source>
+            <target state="new">Replace <bpt id="2">&lt;strong&gt;</bpt>JOBID<ept id="2">&lt;/strong&gt;</ept> with the value returned in the previous step.</target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source>For example, if the return value was <bpt id="2">&lt;code&gt;</bpt>{"id":"job_1415651640909_0026"}<ept id="2">&lt;/code&gt;</ept>, then <bpt id="4">&lt;strong&gt;</bpt>JOBID<ept id="4">&lt;/strong&gt;</ept> would be <bpt id="6">&lt;code&gt;</bpt>job_1415651640909_0026<ept id="6">&lt;/code&gt;</ept>.</source>
+            <target state="new">For example, if the return value was <bpt id="2">&lt;code&gt;</bpt>{"id":"job_1415651640909_0026"}<ept id="2">&lt;/code&gt;</ept>, then <bpt id="4">&lt;strong&gt;</bpt>JOBID<ept id="4">&lt;/strong&gt;</ept> would be <bpt id="6">&lt;code&gt;</bpt>job_1415651640909_0026<ept id="6">&lt;/code&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source>If the job has finished, the state will be <bpt id="2">&lt;strong&gt;</bpt>SUCCEEDED<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">If the job has finished, the state will be <bpt id="2">&lt;strong&gt;</bpt>SUCCEEDED<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source>This Curl request returns a JavaScript Object Notation (JSON) document with information about the job, and jq is used to retrieve only the state value.</source>
+            <target state="new">This Curl request returns a JavaScript Object Notation (JSON) document with information about the job, and jq is used to retrieve only the state value.</target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>View results</source>
+            <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>View results</target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source>When the state of the job has changed to <bpt id="2">&lt;strong&gt;</bpt>SUCCEEDED<ept id="2">&lt;/strong&gt;</ept>, you can retrieve the results of the job from Azure Blob storage.</source>
+            <target state="new">When the state of the job has changed to <bpt id="2">&lt;strong&gt;</bpt>SUCCEEDED<ept id="2">&lt;/strong&gt;</ept>, you can retrieve the results of the job from Azure Blob storage.</target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source>The <bpt id="2">&lt;code&gt;</bpt>statusdir<ept id="2">&lt;/code&gt;</ept> parameter passed with the query contains the location of the output file; in this case, <bpt id="4">&lt;strong&gt;</bpt>wasb:///example/pigcurl<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">The <bpt id="2">&lt;code&gt;</bpt>statusdir<ept id="2">&lt;/code&gt;</ept> parameter passed with the query contains the location of the output file; in this case, <bpt id="4">&lt;strong&gt;</bpt>wasb:///example/pigcurl<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="147" xml:space="preserve">
+            <source>This address stores the output of the job in the <bpt id="2">&lt;strong&gt;</bpt>example/pigcurl<ept id="2">&lt;/strong&gt;</ept> directory in the default storage container used by your HDInsight cluster.</source>
+            <target state="new">This address stores the output of the job in the <bpt id="2">&lt;strong&gt;</bpt>example/pigcurl<ept id="2">&lt;/strong&gt;</ept> directory in the default storage container used by your HDInsight cluster.</target>
+          </trans-unit>
+          <trans-unit id="148" xml:space="preserve">
+            <source>You can list and download these files by using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure CLI for Mac, Linux and Windows<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">You can list and download these files by using the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure CLI for Mac, Linux and Windows<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="149" xml:space="preserve">
+            <source>For example, to list files in <bpt id="2">&lt;strong&gt;</bpt>example/pigcurl<ept id="2">&lt;/strong&gt;</ept>, use the following command:</source>
+            <target state="new">For example, to list files in <bpt id="2">&lt;strong&gt;</bpt>example/pigcurl<ept id="2">&lt;/strong&gt;</ept>, use the following command:</target>
+          </trans-unit>
+          <trans-unit id="150" xml:space="preserve">
+            <source>To download a file, use the following:</source>
+            <target state="new">To download a file, use the following:</target>
+          </trans-unit>
+          <trans-unit id="151" xml:space="preserve">
+            <source>You must specify the storage account name that contains the blob by using the <bpt id="2">&lt;code&gt;</bpt>-a<ept id="2">&lt;/code&gt;</ept> and <bpt id="4">&lt;code&gt;</bpt>-k<ept id="4">&lt;/code&gt;</ept> parameters, or set the <bpt id="6">&lt;strong&gt;</bpt>AZURE\_STORAGE\_ACCOUNT<ept id="6">&lt;/strong&gt;</ept> and <bpt id="8">&lt;strong&gt;</bpt>AZURE\_STORAGE\_ACCESS\_KEY<ept id="8">&lt;/strong&gt;</ept> environment variables.</source>
+            <target state="new">You must specify the storage account name that contains the blob by using the <bpt id="2">&lt;code&gt;</bpt>-a<ept id="2">&lt;/code&gt;</ept> and <bpt id="4">&lt;code&gt;</bpt>-k<ept id="4">&lt;/code&gt;</ept> parameters, or set the <bpt id="6">&lt;strong&gt;</bpt>AZURE\_STORAGE\_ACCOUNT<ept id="6">&lt;/strong&gt;</ept> and <bpt id="8">&lt;strong&gt;</bpt>AZURE\_STORAGE\_ACCESS\_KEY<ept id="8">&lt;/strong&gt;</ept> environment variables.</target>
+          </trans-unit>
+          <trans-unit id="152" xml:space="preserve">
+            <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Summary</source>
+            <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Summary</target>
+          </trans-unit>
+          <trans-unit id="153" xml:space="preserve">
+            <source>As demonstrated in this document, you can use a raw HTTP request to run, monitor, and view the results of Pig jobs on your HDInsight cluster.</source>
+            <target state="new">As demonstrated in this document, you can use a raw HTTP request to run, monitor, and view the results of Pig jobs on your HDInsight cluster.</target>
+          </trans-unit>
+          <trans-unit id="154" xml:space="preserve">
+            <source>For more information about the REST interface used in this article, see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>WebHCat Reference<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">For more information about the REST interface used in this article, see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>WebHCat Reference<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="155" xml:space="preserve">
+            <source><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Next steps</source>
+            <target state="new"><bpt id="1">&lt;html&gt;</bpt><ept id="1">&lt;/html&gt;</ept><bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Next steps</target>
+          </trans-unit>
+          <trans-unit id="156" xml:space="preserve">
+            <source>For general information about Pig on HDInsight:</source>
+            <target state="new">For general information about Pig on HDInsight:</target>
+          </trans-unit>
+          <trans-unit id="157" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use Pig with Hadoop on HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use Pig with Hadoop on HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="158" xml:space="preserve">
+            <source>For information about other ways you can work with Hadoop on HDInsight:</source>
+            <target state="new">For information about other ways you can work with Hadoop on HDInsight:</target>
+          </trans-unit>
+          <trans-unit id="159" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use Hive with Hadoop on HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use Hive with Hadoop on HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use MapReduce with Hadoop on HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Use MapReduce with Hadoop on HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>

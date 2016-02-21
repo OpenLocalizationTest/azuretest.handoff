@@ -1,0 +1,1167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="ko-kr" original="2/21/2016 3:18:57 AM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">aed496d6fb581c074ba221845c4cec04f067da42</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Process events from Event Hubs with Storm on HDInsight | Microsoft Azure</source>
+            <target state="new">Process events from Event Hubs with Storm on HDInsight | Microsoft Azure</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>Learn how to process Event Hubs data with a C# Storm topology created in Visual Studio using the HDInsight Tools for Visual Studio.</source>
+            <target state="new">Learn how to process Event Hubs data with a C# Storm topology created in Visual Studio using the HDInsight Tools for Visual Studio.</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>Process events from Azure Event Hubs with Storm on HDInsight (C#)</source>
+            <target state="new">Process events from Azure Event Hubs with Storm on HDInsight (C#)</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source>Azure Event Hubs allows you to process massive amounts of data from websites, apps, and devices.</source>
+            <target state="new">Azure Event Hubs allows you to process massive amounts of data from websites, apps, and devices.</target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source>The Event Hubs spout makes it easy to use Apache Storm on HDInsight to analyze this data in real time.</source>
+            <target state="new">The Event Hubs spout makes it easy to use Apache Storm on HDInsight to analyze this data in real time.</target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>You can also write data to Event Hubs from Storm by using the Event Hubs bolt.</source>
+            <target state="new">You can also write data to Event Hubs from Storm by using the Event Hubs bolt.</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>In this tutorial, you will learn how to use the HDInsight Tools for Visual Studio and the Event Hubs spout and bolt to create two hybrid C#/Java topologies:</source>
+            <target state="new">In this tutorial, you will learn how to use the HDInsight Tools for Visual Studio and the Event Hubs spout and bolt to create two hybrid C#/Java topologies:</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>EventHubWriter<ept id="1">&lt;/strong&gt;</ept>: Randomly generates data and writes it to Event Hubs</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>EventHubWriter<ept id="1">&lt;/strong&gt;</ept>: Randomly generates data and writes it to Event Hubs</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>EventHubReader<ept id="1">&lt;/strong&gt;</ept>: Reads data from Event Hubs and stores it in Azure Table storage</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>EventHubReader<ept id="1">&lt;/strong&gt;</ept>: Reads data from Event Hubs and stores it in Azure Table storage</target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source>Prerequisites</source>
+            <target state="new">Prerequisites</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>An <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Apache Storm on HDInsight cluster<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept></source>
+            <target state="new">An <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Apache Storm on HDInsight cluster<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source>An <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Azure Event Hub<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept></source>
+            <target state="new">An <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Azure Event Hub<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>The <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Azure .NET SDK<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept></source>
+            <target state="new">The <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Azure .NET SDK<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source>The <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>HDInsight Tools for Visual Studio<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept> (the 2/17/2015 version or later)</source>
+            <target state="new">The <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>HDInsight Tools for Visual Studio<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept> (the 2/17/2015 version or later)</target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>Completed project</source>
+            <target state="new">Completed project</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source>You can download a complete version of the project created in this tutorial from GitHub: <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>eventhub-storm-hybrid<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</source>
+            <target state="new">You can download a complete version of the project created in this tutorial from GitHub: <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>eventhub-storm-hybrid<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>However, you still need to provide configuration settings by following the steps in this tutorial.</source>
+            <target state="new">However, you still need to provide configuration settings by following the steps in this tutorial.</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>When you use the completed project, you must use the <bpt id="2">&lt;strong&gt;</bpt>NuGet Package Manager<ept id="2">&lt;/strong&gt;</ept> to restore the packages that are required by this solution.</source>
+            <target state="new">When you use the completed project, you must use the <bpt id="2">&lt;strong&gt;</bpt>NuGet Package Manager<ept id="2">&lt;/strong&gt;</ept> to restore the packages that are required by this solution.</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source>Event Hubs spout and bolt</source>
+            <target state="new">Event Hubs spout and bolt</target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source>The Event Hubs spout and bolt are Java components that allow you to easily work with Event Hubs from Apache Storm.</source>
+            <target state="new">The Event Hubs spout and bolt are Java components that allow you to easily work with Event Hubs from Apache Storm.</target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source>Although these components are written in Java, the HDInsight Tools for Visual Studio allow you to create hybrid topologies that mix C# and Java components.</source>
+            <target state="new">Although these components are written in Java, the HDInsight Tools for Visual Studio allow you to create hybrid topologies that mix C# and Java components.</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source>The spout and bolt are distributed as a single Java archive (.jar) file named <bpt id="2">&lt;strong&gt;</bpt>eventhubs-storm-spout-0.9-jar-with-dependencies.jar<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">The spout and bolt are distributed as a single Java archive (.jar) file named <bpt id="2">&lt;strong&gt;</bpt>eventhubs-storm-spout-0.9-jar-with-dependencies.jar<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>Download the .jar file</source>
+            <target state="new">Download the .jar file</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source>The most recent version of the <bpt id="2">&lt;strong&gt;</bpt>eventhubs-storm-spout-0.9-jar-with-dependencies.jar<ept id="2">&lt;/strong&gt;</ept> file is included in the <bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>HDInsight Storm examples<bpt id="6">&lt;html&gt;</bpt><ept id="6">&lt;/html&gt;</ept> project under the <bpt id="8">&lt;strong&gt;</bpt>lib<ept id="8">&lt;/strong&gt;</ept> folder.</source>
+            <target state="new">The most recent version of the <bpt id="2">&lt;strong&gt;</bpt>eventhubs-storm-spout-0.9-jar-with-dependencies.jar<ept id="2">&lt;/strong&gt;</ept> file is included in the <bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>HDInsight Storm examples<bpt id="6">&lt;html&gt;</bpt><ept id="6">&lt;/html&gt;</ept> project under the <bpt id="8">&lt;strong&gt;</bpt>lib<ept id="8">&lt;/strong&gt;</ept> folder.</target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>To download the file, use one of the following methods.</source>
+            <target state="new">To download the file, use one of the following methods.</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>The spout and bolt have been submitted for inclusion in the Apache Storm project.</source>
+            <target state="new">The spout and bolt have been submitted for inclusion in the Apache Storm project.</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source>For more information, see <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>STORM-583: Initial check-in for storm-event hubs<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept> in GitHub.</source>
+            <target state="new">For more information, see <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>STORM-583: Initial check-in for storm-event hubs<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept> in GitHub.</target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Download a ZIP file<ept id="1">&lt;/strong&gt;</ept>: From the <bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>HDInsight Storm examples<bpt id="5">&lt;html&gt;</bpt><ept id="5">&lt;/html&gt;</ept> site, select <bpt id="7">&lt;strong&gt;</bpt>Download ZIP<ept id="7">&lt;/strong&gt;</ept> in the right pane to download a .zip file that contains the project.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Download a ZIP file<ept id="1">&lt;/strong&gt;</ept>: From the <bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>HDInsight Storm examples<bpt id="5">&lt;html&gt;</bpt><ept id="5">&lt;/html&gt;</ept> site, select <bpt id="7">&lt;strong&gt;</bpt>Download ZIP<ept id="7">&lt;/strong&gt;</ept> in the right pane to download a .zip file that contains the project.</target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>download zip button<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>download zip button<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="130" xml:space="preserve">
+            <source>After the file is downloaded, you can extract the archive, and the file will be in the <bpt id="2">&lt;strong&gt;</bpt>lib<ept id="2">&lt;/strong&gt;</ept> directory.</source>
+            <target state="new">After the file is downloaded, you can extract the archive, and the file will be in the <bpt id="2">&lt;strong&gt;</bpt>lib<ept id="2">&lt;/strong&gt;</ept> directory.</target>
+          </trans-unit>
+          <trans-unit id="131" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Clone the project<ept id="1">&lt;/strong&gt;</ept>: If you have <bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>Git<bpt id="5">&lt;html&gt;</bpt><ept id="5">&lt;/html&gt;</ept> installed, use the following command to clone the repository locally, then find the file in the <bpt id="7">&lt;strong&gt;</bpt>lib<ept id="7">&lt;/strong&gt;</ept> directory.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Clone the project<ept id="1">&lt;/strong&gt;</ept>: If you have <bpt id="3">&lt;html&gt;</bpt><ept id="3">&lt;/html&gt;</ept>Git<bpt id="5">&lt;html&gt;</bpt><ept id="5">&lt;/html&gt;</ept> installed, use the following command to clone the repository locally, then find the file in the <bpt id="7">&lt;strong&gt;</bpt>lib<ept id="7">&lt;/strong&gt;</ept> directory.</target>
+          </trans-unit>
+          <trans-unit id="132" xml:space="preserve">
+            <source>Configure Event Hub</source>
+            <target state="new">Configure Event Hub</target>
+          </trans-unit>
+          <trans-unit id="133" xml:space="preserve">
+            <source>Event Hubs is the data source for this example.</source>
+            <target state="new">Event Hubs is the data source for this example.</target>
+          </trans-unit>
+          <trans-unit id="134" xml:space="preserve">
+            <source>Use the following steps to create a new Event Hub.</source>
+            <target state="new">Use the following steps to create a new Event Hub.</target>
+          </trans-unit>
+          <trans-unit id="135" xml:space="preserve">
+            <source>From the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure portal<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, select <bpt id="4">&lt;strong&gt;</bpt>NEW<ept id="4">&lt;/strong&gt;</ept> &gt; <bpt id="6">&lt;strong&gt;</bpt>Service Bus<ept id="6">&lt;/strong&gt;</ept> &gt; <bpt id="8">&lt;strong&gt;</bpt>Event Hub<ept id="8">&lt;/strong&gt;</ept> &gt; <bpt id="10">&lt;strong&gt;</bpt>Custom Create<ept id="10">&lt;/strong&gt;</ept>.</source>
+            <target state="new">From the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure portal<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, select <bpt id="4">&lt;strong&gt;</bpt>NEW<ept id="4">&lt;/strong&gt;</ept> &gt; <bpt id="6">&lt;strong&gt;</bpt>Service Bus<ept id="6">&lt;/strong&gt;</ept> &gt; <bpt id="8">&lt;strong&gt;</bpt>Event Hub<ept id="8">&lt;/strong&gt;</ept> &gt; <bpt id="10">&lt;strong&gt;</bpt>Custom Create<ept id="10">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="136" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Add a new Event Hub<ept id="2">&lt;/strong&gt;</ept> screen, enter an <bpt id="4">&lt;strong&gt;</bpt>Event Hub Name<ept id="4">&lt;/strong&gt;</ept>, select the <bpt id="6">&lt;strong&gt;</bpt>Region<ept id="6">&lt;/strong&gt;</ept> to create the hub in, and create a new namespace or select an existing one.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Add a new Event Hub<ept id="2">&lt;/strong&gt;</ept> screen, enter an <bpt id="4">&lt;strong&gt;</bpt>Event Hub Name<ept id="4">&lt;/strong&gt;</ept>, select the <bpt id="6">&lt;strong&gt;</bpt>Region<ept id="6">&lt;/strong&gt;</ept> to create the hub in, and create a new namespace or select an existing one.</target>
+          </trans-unit>
+          <trans-unit id="137" xml:space="preserve">
+            <source>Click the <bpt id="2">&lt;strong&gt;</bpt>Arrow<ept id="2">&lt;/strong&gt;</ept> to continue.</source>
+            <target state="new">Click the <bpt id="2">&lt;strong&gt;</bpt>Arrow<ept id="2">&lt;/strong&gt;</ept> to continue.</target>
+          </trans-unit>
+          <trans-unit id="138" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>wizard page 1<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>wizard page 1<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="139" xml:space="preserve">
+            <source>You should select the same <bpt id="2">&lt;strong&gt;</bpt>Location<ept id="2">&lt;/strong&gt;</ept> as your Storm on HDInsight server to reduce latency and costs.</source>
+            <target state="new">You should select the same <bpt id="2">&lt;strong&gt;</bpt>Location<ept id="2">&lt;/strong&gt;</ept> as your Storm on HDInsight server to reduce latency and costs.</target>
+          </trans-unit>
+          <trans-unit id="140" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Configure Event Hub<ept id="2">&lt;/strong&gt;</ept> screen, enter the <bpt id="4">&lt;strong&gt;</bpt>Partition count<ept id="4">&lt;/strong&gt;</ept> and <bpt id="6">&lt;strong&gt;</bpt>Message Retention<ept id="6">&lt;/strong&gt;</ept> values.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Configure Event Hub<ept id="2">&lt;/strong&gt;</ept> screen, enter the <bpt id="4">&lt;strong&gt;</bpt>Partition count<ept id="4">&lt;/strong&gt;</ept> and <bpt id="6">&lt;strong&gt;</bpt>Message Retention<ept id="6">&lt;/strong&gt;</ept> values.</target>
+          </trans-unit>
+          <trans-unit id="141" xml:space="preserve">
+            <source>For this example, use a partition count of 10 and a message retention of 1.</source>
+            <target state="new">For this example, use a partition count of 10 and a message retention of 1.</target>
+          </trans-unit>
+          <trans-unit id="142" xml:space="preserve">
+            <source>Note the partition count because you will need this value later.</source>
+            <target state="new">Note the partition count because you will need this value later.</target>
+          </trans-unit>
+          <trans-unit id="143" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>wizard page 2<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>wizard page 2<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="144" xml:space="preserve">
+            <source>After the event hub has been created, select the namespace, select <bpt id="2">&lt;strong&gt;</bpt>Event Hubs<ept id="2">&lt;/strong&gt;</ept>, and then select the event hub that you created earlier.</source>
+            <target state="new">After the event hub has been created, select the namespace, select <bpt id="2">&lt;strong&gt;</bpt>Event Hubs<ept id="2">&lt;/strong&gt;</ept>, and then select the event hub that you created earlier.</target>
+          </trans-unit>
+          <trans-unit id="145" xml:space="preserve">
+            <source>Select <bpt id="2">&lt;strong&gt;</bpt>Configure<ept id="2">&lt;/strong&gt;</ept>, then create two new access policies by using the following information.</source>
+            <target state="new">Select <bpt id="2">&lt;strong&gt;</bpt>Configure<ept id="2">&lt;/strong&gt;</ept>, then create two new access policies by using the following information.</target>
+          </trans-unit>
+          <trans-unit id="146" xml:space="preserve">
+            <source>Name</source>
+            <target state="new">Name</target>
+          </trans-unit>
+          <trans-unit id="147" xml:space="preserve">
+            <source>Permissions</source>
+            <target state="new">Permissions</target>
+          </trans-unit>
+          <trans-unit id="148" xml:space="preserve">
+            <source>Writer</source>
+            <target state="new">Writer</target>
+          </trans-unit>
+          <trans-unit id="149" xml:space="preserve">
+            <source>Send</source>
+            <target state="new">Send</target>
+          </trans-unit>
+          <trans-unit id="150" xml:space="preserve">
+            <source>Reader</source>
+            <target state="new">Reader</target>
+          </trans-unit>
+          <trans-unit id="151" xml:space="preserve">
+            <source>Listen</source>
+            <target state="new">Listen</target>
+          </trans-unit>
+          <trans-unit id="152" xml:space="preserve">
+            <source>After You create the permissions, select the <bpt id="2">&lt;strong&gt;</bpt>Save<ept id="2">&lt;/strong&gt;</ept> icon at the bottom of the page.</source>
+            <target state="new">After You create the permissions, select the <bpt id="2">&lt;strong&gt;</bpt>Save<ept id="2">&lt;/strong&gt;</ept> icon at the bottom of the page.</target>
+          </trans-unit>
+          <trans-unit id="153" xml:space="preserve">
+            <source>This creates the shared access policies that will be used to send (writer) and listen (reader) to this Event Hub.</source>
+            <target state="new">This creates the shared access policies that will be used to send (writer) and listen (reader) to this Event Hub.</target>
+          </trans-unit>
+          <trans-unit id="154" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>policies<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>policies<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="155" xml:space="preserve">
+            <source>After you save the policies, use the <bpt id="2">&lt;strong&gt;</bpt>Shared access key generator<ept id="2">&lt;/strong&gt;</ept> at the bottom of the page to retrieve the key for the <bpt id="4">&lt;strong&gt;</bpt>writer<ept id="4">&lt;/strong&gt;</ept> and <bpt id="6">&lt;strong&gt;</bpt>reader<ept id="6">&lt;/strong&gt;</ept> policies.</source>
+            <target state="new">After you save the policies, use the <bpt id="2">&lt;strong&gt;</bpt>Shared access key generator<ept id="2">&lt;/strong&gt;</ept> at the bottom of the page to retrieve the key for the <bpt id="4">&lt;strong&gt;</bpt>writer<ept id="4">&lt;/strong&gt;</ept> and <bpt id="6">&lt;strong&gt;</bpt>reader<ept id="6">&lt;/strong&gt;</ept> policies.</target>
+          </trans-unit>
+          <trans-unit id="156" xml:space="preserve">
+            <source>Save these because they will be used later.</source>
+            <target state="new">Save these because they will be used later.</target>
+          </trans-unit>
+          <trans-unit id="157" xml:space="preserve">
+            <source>Configure Table storage</source>
+            <target state="new">Configure Table storage</target>
+          </trans-unit>
+          <trans-unit id="158" xml:space="preserve">
+            <source>Table storage will be used to hold the values that are read from Event Hubs because you can easily view Table storage from inside Visual Studio through <bpt id="2">&lt;strong&gt;</bpt>Server Explorer<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Table storage will be used to hold the values that are read from Event Hubs because you can easily view Table storage from inside Visual Studio through <bpt id="2">&lt;strong&gt;</bpt>Server Explorer<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="159" xml:space="preserve">
+            <source>Use the following steps to create new Table storage:</source>
+            <target state="new">Use the following steps to create new Table storage:</target>
+          </trans-unit>
+          <trans-unit id="160" xml:space="preserve">
+            <source>From the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure portal<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, select <bpt id="4">&lt;strong&gt;</bpt>NEW<ept id="4">&lt;/strong&gt;</ept> &gt; <bpt id="6">&lt;strong&gt;</bpt>Data Services<ept id="6">&lt;/strong&gt;</ept> &gt; <bpt id="8">&lt;strong&gt;</bpt>Storage<ept id="8">&lt;/strong&gt;</ept> &gt; <bpt id="10">&lt;strong&gt;</bpt>Quick Create<ept id="10">&lt;/strong&gt;</ept>.</source>
+            <target state="new">From the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure portal<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept>, select <bpt id="4">&lt;strong&gt;</bpt>NEW<ept id="4">&lt;/strong&gt;</ept> &gt; <bpt id="6">&lt;strong&gt;</bpt>Data Services<ept id="6">&lt;/strong&gt;</ept> &gt; <bpt id="8">&lt;strong&gt;</bpt>Storage<ept id="8">&lt;/strong&gt;</ept> &gt; <bpt id="10">&lt;strong&gt;</bpt>Quick Create<ept id="10">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="161" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>quick create storage<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>quick create storage<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="162" xml:space="preserve">
+            <source>Enter a <bpt id="2">&lt;strong&gt;</bpt>Name<ept id="2">&lt;/strong&gt;</ept> for the storage account, select a <bpt id="4">&lt;strong&gt;</bpt>Location<ept id="4">&lt;/strong&gt;</ept>, and then click the <bpt id="6">&lt;strong&gt;</bpt>check mark<ept id="6">&lt;/strong&gt;</ept> to create the storage account.</source>
+            <target state="new">Enter a <bpt id="2">&lt;strong&gt;</bpt>Name<ept id="2">&lt;/strong&gt;</ept> for the storage account, select a <bpt id="4">&lt;strong&gt;</bpt>Location<ept id="4">&lt;/strong&gt;</ept>, and then click the <bpt id="6">&lt;strong&gt;</bpt>check mark<ept id="6">&lt;/strong&gt;</ept> to create the storage account.</target>
+          </trans-unit>
+          <trans-unit id="163" xml:space="preserve">
+            <source>You should select the same <bpt id="2">&lt;strong&gt;</bpt>Location<ept id="2">&lt;/strong&gt;</ept> as your Event Hubs and Storm on HDInsight server to reduce latency and costs.</source>
+            <target state="new">You should select the same <bpt id="2">&lt;strong&gt;</bpt>Location<ept id="2">&lt;/strong&gt;</ept> as your Event Hubs and Storm on HDInsight server to reduce latency and costs.</target>
+          </trans-unit>
+          <trans-unit id="164" xml:space="preserve">
+            <source>When the new storage account is provisioned, select the account and then use the <bpt id="2">&lt;strong&gt;</bpt>Manage Access Keys<ept id="2">&lt;/strong&gt;</ept> link at the bottom of the page to retrieve the <bpt id="4">&lt;strong&gt;</bpt>Storage Account Name<ept id="4">&lt;/strong&gt;</ept> and <bpt id="6">&lt;strong&gt;</bpt>Primary Access Key<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">When the new storage account is provisioned, select the account and then use the <bpt id="2">&lt;strong&gt;</bpt>Manage Access Keys<ept id="2">&lt;/strong&gt;</ept> link at the bottom of the page to retrieve the <bpt id="4">&lt;strong&gt;</bpt>Storage Account Name<ept id="4">&lt;/strong&gt;</ept> and <bpt id="6">&lt;strong&gt;</bpt>Primary Access Key<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="165" xml:space="preserve">
+            <source>Save this information because it will be used later.</source>
+            <target state="new">Save this information because it will be used later.</target>
+          </trans-unit>
+          <trans-unit id="166" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>access keys<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>access keys<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="167" xml:space="preserve">
+            <source>Create EventHubWriter</source>
+            <target state="new">Create EventHubWriter</target>
+          </trans-unit>
+          <trans-unit id="168" xml:space="preserve">
+            <source>In this section, you will create a topology that writes data to Event Hubs by using the Event Hubs bolt.</source>
+            <target state="new">In this section, you will create a topology that writes data to Event Hubs by using the Event Hubs bolt.</target>
+          </trans-unit>
+          <trans-unit id="169" xml:space="preserve">
+            <source>If you have not already installed the latest version of the HDInsight Tools for Visual Studio, see <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Get started using HDInsight Tools for Visual Studio<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>.</source>
+            <target state="new">If you have not already installed the latest version of the HDInsight Tools for Visual Studio, see <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Get started using HDInsight Tools for Visual Studio<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="170" xml:space="preserve">
+            <source>Open Visual Studio, select <bpt id="2">&lt;strong&gt;</bpt>File<ept id="2">&lt;/strong&gt;</ept> &gt; <bpt id="4">&lt;strong&gt;</bpt>New<ept id="4">&lt;/strong&gt;</ept> and then <bpt id="6">&lt;strong&gt;</bpt>Project<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Open Visual Studio, select <bpt id="2">&lt;strong&gt;</bpt>File<ept id="2">&lt;/strong&gt;</ept> &gt; <bpt id="4">&lt;strong&gt;</bpt>New<ept id="4">&lt;/strong&gt;</ept> and then <bpt id="6">&lt;strong&gt;</bpt>Project<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="171" xml:space="preserve">
+            <source>From the <bpt id="2">&lt;strong&gt;</bpt>New Project<ept id="2">&lt;/strong&gt;</ept> screen, expand <bpt id="4">&lt;strong&gt;</bpt>Installed<ept id="4">&lt;/strong&gt;</ept> &gt; <bpt id="6">&lt;strong&gt;</bpt>Templates<ept id="6">&lt;/strong&gt;</ept>, and select <bpt id="8">&lt;strong&gt;</bpt>HDInsight<ept id="8">&lt;/strong&gt;</ept>.</source>
+            <target state="new">From the <bpt id="2">&lt;strong&gt;</bpt>New Project<ept id="2">&lt;/strong&gt;</ept> screen, expand <bpt id="4">&lt;strong&gt;</bpt>Installed<ept id="4">&lt;/strong&gt;</ept> &gt; <bpt id="6">&lt;strong&gt;</bpt>Templates<ept id="6">&lt;/strong&gt;</ept>, and select <bpt id="8">&lt;strong&gt;</bpt>HDInsight<ept id="8">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="172" xml:space="preserve">
+            <source>From the list of templates, select <bpt id="2">&lt;strong&gt;</bpt>Storm Application<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">From the list of templates, select <bpt id="2">&lt;strong&gt;</bpt>Storm Application<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="173" xml:space="preserve">
+            <source>At the bottom of the screen, enter <bpt id="2">&lt;strong&gt;</bpt>EventHubWriter<ept id="2">&lt;/strong&gt;</ept> as the name of the application.</source>
+            <target state="new">At the bottom of the screen, enter <bpt id="2">&lt;strong&gt;</bpt>EventHubWriter<ept id="2">&lt;/strong&gt;</ept> as the name of the application.</target>
+          </trans-unit>
+          <trans-unit id="174" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>image<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>image<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="175" xml:space="preserve">
+            <source>After the project is created, you should have the following files:</source>
+            <target state="new">After the project is created, you should have the following files:</target>
+          </trans-unit>
+          <trans-unit id="176" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Program.cs<ept id="1">&lt;/strong&gt;</ept>: This defines the topology for your project.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Program.cs<ept id="1">&lt;/strong&gt;</ept>: This defines the topology for your project.</target>
+          </trans-unit>
+          <trans-unit id="177" xml:space="preserve">
+            <source>Note that a default topology that consists of one spout and one bolt is created by default.</source>
+            <target state="new">Note that a default topology that consists of one spout and one bolt is created by default.</target>
+          </trans-unit>
+          <trans-unit id="178" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Spout.cs<ept id="1">&lt;/strong&gt;</ept>: An example spout.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Spout.cs<ept id="1">&lt;/strong&gt;</ept>: An example spout.</target>
+          </trans-unit>
+          <trans-unit id="179" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Bolt.cs<ept id="1">&lt;/strong&gt;</ept>: An example bolt.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Bolt.cs<ept id="1">&lt;/strong&gt;</ept>: An example bolt.</target>
+          </trans-unit>
+          <trans-unit id="180" xml:space="preserve">
+            <source>This will be deleted because you will use the Event Hubs bolt to write to Event Hub.</source>
+            <target state="new">This will be deleted because you will use the Event Hubs bolt to write to Event Hub.</target>
+          </trans-unit>
+          <trans-unit id="181" xml:space="preserve">
+            <source>Configuration</source>
+            <target state="new">Configuration</target>
+          </trans-unit>
+          <trans-unit id="182" xml:space="preserve">
+            <source>In <bpt id="2">&lt;strong&gt;</bpt>Solution Explorer<ept id="2">&lt;/strong&gt;</ept>, right-click <bpt id="4">&lt;strong&gt;</bpt>EventHubWriter<ept id="4">&lt;/strong&gt;</ept>, and then select <bpt id="6">&lt;strong&gt;</bpt>Properties<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In <bpt id="2">&lt;strong&gt;</bpt>Solution Explorer<ept id="2">&lt;/strong&gt;</ept>, right-click <bpt id="4">&lt;strong&gt;</bpt>EventHubWriter<ept id="4">&lt;/strong&gt;</ept>, and then select <bpt id="6">&lt;strong&gt;</bpt>Properties<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="183" xml:space="preserve">
+            <source>In the project properties, select <bpt id="2">&lt;strong&gt;</bpt>Settings<ept id="2">&lt;/strong&gt;</ept>, and then select **This project does not contain a default settings file.</source>
+            <target state="new">In the project properties, select <bpt id="2">&lt;strong&gt;</bpt>Settings<ept id="2">&lt;/strong&gt;</ept>, and then select **This project does not contain a default settings file.</target>
+          </trans-unit>
+          <trans-unit id="184" xml:space="preserve">
+            <source>Click here to create one.**</source>
+            <target state="new">Click here to create one.**</target>
+          </trans-unit>
+          <trans-unit id="185" xml:space="preserve">
+            <source>Enter the following settings.</source>
+            <target state="new">Enter the following settings.</target>
+          </trans-unit>
+          <trans-unit id="186" xml:space="preserve">
+            <source>Use the information for the Event Hub you created earlier in the <bpt id="2">&lt;strong&gt;</bpt>Value<ept id="2">&lt;/strong&gt;</ept> column.</source>
+            <target state="new">Use the information for the Event Hub you created earlier in the <bpt id="2">&lt;strong&gt;</bpt>Value<ept id="2">&lt;/strong&gt;</ept> column.</target>
+          </trans-unit>
+          <trans-unit id="187" xml:space="preserve">
+            <source>Name</source>
+            <target state="new">Name</target>
+          </trans-unit>
+          <trans-unit id="188" xml:space="preserve">
+            <source>Type</source>
+            <target state="new">Type</target>
+          </trans-unit>
+          <trans-unit id="189" xml:space="preserve">
+            <source>Scope</source>
+            <target state="new">Scope</target>
+          </trans-unit>
+          <trans-unit id="190" xml:space="preserve">
+            <source>EventHubPolicyName</source>
+            <target state="new">EventHubPolicyName</target>
+          </trans-unit>
+          <trans-unit id="191" xml:space="preserve">
+            <source>string</source>
+            <target state="new">string</target>
+          </trans-unit>
+          <trans-unit id="192" xml:space="preserve">
+            <source>Application</source>
+            <target state="new">Application</target>
+          </trans-unit>
+          <trans-unit id="193" xml:space="preserve">
+            <source>EventHubPolicyKey</source>
+            <target state="new">EventHubPolicyKey</target>
+          </trans-unit>
+          <trans-unit id="194" xml:space="preserve">
+            <source>string</source>
+            <target state="new">string</target>
+          </trans-unit>
+          <trans-unit id="195" xml:space="preserve">
+            <source>Application</source>
+            <target state="new">Application</target>
+          </trans-unit>
+          <trans-unit id="196" xml:space="preserve">
+            <source>EventHubNamespace</source>
+            <target state="new">EventHubNamespace</target>
+          </trans-unit>
+          <trans-unit id="197" xml:space="preserve">
+            <source>string</source>
+            <target state="new">string</target>
+          </trans-unit>
+          <trans-unit id="198" xml:space="preserve">
+            <source>Application</source>
+            <target state="new">Application</target>
+          </trans-unit>
+          <trans-unit id="199" xml:space="preserve">
+            <source>EventHubName</source>
+            <target state="new">EventHubName</target>
+          </trans-unit>
+          <trans-unit id="200" xml:space="preserve">
+            <source>string</source>
+            <target state="new">string</target>
+          </trans-unit>
+          <trans-unit id="201" xml:space="preserve">
+            <source>Application</source>
+            <target state="new">Application</target>
+          </trans-unit>
+          <trans-unit id="202" xml:space="preserve">
+            <source>EventHubPartitionCount</source>
+            <target state="new">EventHubPartitionCount</target>
+          </trans-unit>
+          <trans-unit id="203" xml:space="preserve">
+            <source>int</source>
+            <target state="new">int</target>
+          </trans-unit>
+          <trans-unit id="204" xml:space="preserve">
+            <source>Application</source>
+            <target state="new">Application</target>
+          </trans-unit>
+          <trans-unit id="205" xml:space="preserve">
+            <source>Save and close the <bpt id="2">&lt;strong&gt;</bpt>Properties<ept id="2">&lt;/strong&gt;</ept> page.</source>
+            <target state="new">Save and close the <bpt id="2">&lt;strong&gt;</bpt>Properties<ept id="2">&lt;/strong&gt;</ept> page.</target>
+          </trans-unit>
+          <trans-unit id="206" xml:space="preserve">
+            <source>Define the topology</source>
+            <target state="new">Define the topology</target>
+          </trans-unit>
+          <trans-unit id="207" xml:space="preserve">
+            <source>In <bpt id="2">&lt;strong&gt;</bpt>Solution Explorer<ept id="2">&lt;/strong&gt;</ept>, right-click <bpt id="4">&lt;strong&gt;</bpt>Bolt.cs<ept id="4">&lt;/strong&gt;</ept>, and select <bpt id="6">&lt;strong&gt;</bpt>Delete<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In <bpt id="2">&lt;strong&gt;</bpt>Solution Explorer<ept id="2">&lt;/strong&gt;</ept>, right-click <bpt id="4">&lt;strong&gt;</bpt>Bolt.cs<ept id="4">&lt;/strong&gt;</ept>, and select <bpt id="6">&lt;strong&gt;</bpt>Delete<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="208" xml:space="preserve">
+            <source>You are using the Java Event Hubs bolt, so you do not need this file.</source>
+            <target state="new">You are using the Java Event Hubs bolt, so you do not need this file.</target>
+          </trans-unit>
+          <trans-unit id="209" xml:space="preserve">
+            <source>Open the <bpt id="2">&lt;strong&gt;</bpt>Program.cs<ept id="2">&lt;/strong&gt;</ept> file and add the following code immediately after the <bpt id="4">&lt;code&gt;</bpt>TopologyBuilder topologyBuilder = new TopologyBuilder("EventHubWriter");<ept id="4">&lt;/code&gt;</ept> line.</source>
+            <target state="new">Open the <bpt id="2">&lt;strong&gt;</bpt>Program.cs<ept id="2">&lt;/strong&gt;</ept> file and add the following code immediately after the <bpt id="4">&lt;code&gt;</bpt>TopologyBuilder topologyBuilder = new TopologyBuilder("EventHubWriter");<ept id="4">&lt;/code&gt;</ept> line.</target>
+          </trans-unit>
+          <trans-unit id="210" xml:space="preserve">
+            <source>The first line reads the partition count from the properties defined earlier.</source>
+            <target state="new">The first line reads the partition count from the properties defined earlier.</target>
+          </trans-unit>
+          <trans-unit id="211" xml:space="preserve">
+            <source>The second line defines a deserializer that is used to deseralize JSON data produced by the spout, into a <bpt id="2">&lt;code&gt;</bpt>java.lang.String<ept id="2">&lt;/code&gt;</ept> so that Java components can consume the data.</source>
+            <target state="new">The second line defines a deserializer that is used to deseralize JSON data produced by the spout, into a <bpt id="2">&lt;code&gt;</bpt>java.lang.String<ept id="2">&lt;/code&gt;</ept> so that Java components can consume the data.</target>
+          </trans-unit>
+          <trans-unit id="212" xml:space="preserve">
+            <source>Find the following code:</source>
+            <target state="new">Find the following code:</target>
+          </trans-unit>
+          <trans-unit id="213" xml:space="preserve">
+            <source>Replace it with the following:</source>
+            <target state="new">Replace it with the following:</target>
+          </trans-unit>
+          <trans-unit id="214" xml:space="preserve">
+            <source>This creates a spout and uses the Event Hubs partition count as the parallelism hint for this component.</source>
+            <target state="new">This creates a spout and uses the Event Hubs partition count as the parallelism hint for this component.</target>
+          </trans-unit>
+          <trans-unit id="215" xml:space="preserve">
+            <source>This should create an instance of the spout for each partition.</source>
+            <target state="new">This should create an instance of the spout for each partition.</target>
+          </trans-unit>
+          <trans-unit id="216" xml:space="preserve">
+            <source>This also associates the deserializer created previously with the output stream from this component.</source>
+            <target state="new">This also associates the deserializer created previously with the output stream from this component.</target>
+          </trans-unit>
+          <trans-unit id="217" xml:space="preserve">
+            <source>This allows the downstream EventHubSpout component to consume the data produced from the C# spout.</source>
+            <target state="new">This allows the downstream EventHubSpout component to consume the data produced from the C# spout.</target>
+          </trans-unit>
+          <trans-unit id="218" xml:space="preserve">
+            <source>Immediately after the previous code, add the following:</source>
+            <target state="new">Immediately after the previous code, add the following:</target>
+          </trans-unit>
+          <trans-unit id="219" xml:space="preserve">
+            <source>This creates a new constructor for the Java bolt, which is used at run time to configure a new instance of the bolt.</source>
+            <target state="new">This creates a new constructor for the Java bolt, which is used at run time to configure a new instance of the bolt.</target>
+          </trans-unit>
+          <trans-unit id="220" xml:space="preserve">
+            <source>In this case, you are using the <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Apache Storm Clojure DSL<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept> to configure the spout with the Event Hubs configuration information you added previously.</source>
+            <target state="new">In this case, you are using the <bpt id="2">&lt;html&gt;</bpt><ept id="2">&lt;/html&gt;</ept>Apache Storm Clojure DSL<bpt id="4">&lt;html&gt;</bpt><ept id="4">&lt;/html&gt;</ept> to configure the spout with the Event Hubs configuration information you added previously.</target>
+          </trans-unit>
+          <trans-unit id="221" xml:space="preserve">
+            <source>More specifically, this code is used by HDInsight at run time to do the following:</source>
+            <target state="new">More specifically, this code is used by HDInsight at run time to do the following:</target>
+          </trans-unit>
+          <trans-unit id="222" xml:space="preserve">
+            <source>Create a new instance of <bpt id="2">&lt;strong&gt;</bpt>com.microsoft.eventhubs.bolt.EventHubBoltConfig<ept id="2">&lt;/strong&gt;</ept> using the Event Hubs information you provide.</source>
+            <target state="new">Create a new instance of <bpt id="2">&lt;strong&gt;</bpt>com.microsoft.eventhubs.bolt.EventHubBoltConfig<ept id="2">&lt;/strong&gt;</ept> using the Event Hubs information you provide.</target>
+          </trans-unit>
+          <trans-unit id="223" xml:space="preserve">
+            <source>Create a new instance of <bpt id="2">&lt;strong&gt;</bpt>com.microsoft.eventhubs.bolt.EventHubBolt<ept id="2">&lt;/strong&gt;</ept>, passing in the <bpt id="4">&lt;strong&gt;</bpt>EventHubBoltConfig<ept id="4">&lt;/strong&gt;</ept> instance.</source>
+            <target state="new">Create a new instance of <bpt id="2">&lt;strong&gt;</bpt>com.microsoft.eventhubs.bolt.EventHubBolt<ept id="2">&lt;/strong&gt;</ept>, passing in the <bpt id="4">&lt;strong&gt;</bpt>EventHubBoltConfig<ept id="4">&lt;/strong&gt;</ept> instance.</target>
+          </trans-unit>
+          <trans-unit id="224" xml:space="preserve">
+            <source>Find the following code:</source>
+            <target state="new">Find the following code:</target>
+          </trans-unit>
+          <trans-unit id="225" xml:space="preserve">
+            <source>Replace it with the following:</source>
+            <target state="new">Replace it with the following:</target>
+          </trans-unit>
+          <trans-unit id="226" xml:space="preserve">
+            <source>This instructs the topology to use the <bpt id="2">&lt;strong&gt;</bpt>JavaComponentConstructor<ept id="2">&lt;/strong&gt;</ept> from the previous step as the bolt.</source>
+            <target state="new">This instructs the topology to use the <bpt id="2">&lt;strong&gt;</bpt>JavaComponentConstructor<ept id="2">&lt;/strong&gt;</ept> from the previous step as the bolt.</target>
+          </trans-unit>
+          <trans-unit id="227" xml:space="preserve">
+            <source>The component can be referred to in this topology by the friendly name of "EventHubBolt."</source>
+            <target state="new">The component can be referred to in this topology by the friendly name of "EventHubBolt."</target>
+          </trans-unit>
+          <trans-unit id="228" xml:space="preserve">
+            <source>The parallelism hint is set to the number of partitions for the Event Hub, and it subscribes to data produced by the spout ("Spout").</source>
+            <target state="new">The parallelism hint is set to the number of partitions for the Event Hub, and it subscribes to data produced by the spout ("Spout").</target>
+          </trans-unit>
+          <trans-unit id="229" xml:space="preserve">
+            <source>At this point, you are done with the <bpt id="2">&lt;strong&gt;</bpt>Program.cs<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">At this point, you are done with the <bpt id="2">&lt;strong&gt;</bpt>Program.cs<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="230" xml:space="preserve">
+            <source>The topology has been defined, but now you must modify <bpt id="2">&lt;strong&gt;</bpt>Spout.cs<ept id="2">&lt;/strong&gt;</ept> so that it produces data in a format that the Event Hubs bolt can use.</source>
+            <target state="new">The topology has been defined, but now you must modify <bpt id="2">&lt;strong&gt;</bpt>Spout.cs<ept id="2">&lt;/strong&gt;</ept> so that it produces data in a format that the Event Hubs bolt can use.</target>
+          </trans-unit>
+          <trans-unit id="231" xml:space="preserve">
+            <source>This topology will default to creating one worker process, which is sufficient for example purposes.</source>
+            <target state="new">This topology will default to creating one worker process, which is sufficient for example purposes.</target>
+          </trans-unit>
+          <trans-unit id="232" xml:space="preserve">
+            <source>If you are adapting this for a production cluster, you should can add the following to change the number of workers:</source>
+            <target state="new">If you are adapting this for a production cluster, you should can add the following to change the number of workers:</target>
+          </trans-unit>
+          <trans-unit id="233" xml:space="preserve">
+            <source>Modify the spout</source>
+            <target state="new">Modify the spout</target>
+          </trans-unit>
+          <trans-unit id="234" xml:space="preserve">
+            <source>The Event Hubs bolt expects a single string value, which it will route to Event Hub.</source>
+            <target state="new">The Event Hubs bolt expects a single string value, which it will route to Event Hub.</target>
+          </trans-unit>
+          <trans-unit id="235" xml:space="preserve">
+            <source>In the following example, you will modify the default <bpt id="2">&lt;strong&gt;</bpt>Spout.cs<ept id="2">&lt;/strong&gt;</ept> file to produce a JSON string.</source>
+            <target state="new">In the following example, you will modify the default <bpt id="2">&lt;strong&gt;</bpt>Spout.cs<ept id="2">&lt;/strong&gt;</ept> file to produce a JSON string.</target>
+          </trans-unit>
+          <trans-unit id="236" xml:space="preserve">
+            <source>In <bpt id="2">&lt;strong&gt;</bpt>Solution Explorer<ept id="2">&lt;/strong&gt;</ept>, open <bpt id="4">&lt;strong&gt;</bpt>Spout.cs<ept id="4">&lt;/strong&gt;</ept> and add the following at the top of the file:</source>
+            <target state="new">In <bpt id="2">&lt;strong&gt;</bpt>Solution Explorer<ept id="2">&lt;/strong&gt;</ept>, open <bpt id="4">&lt;strong&gt;</bpt>Spout.cs<ept id="4">&lt;/strong&gt;</ept> and add the following at the top of the file:</target>
+          </trans-unit>
+          <trans-unit id="237" xml:space="preserve">
+            <source>This allows you to more easily work with JSON data.</source>
+            <target state="new">This allows you to more easily work with JSON data.</target>
+          </trans-unit>
+          <trans-unit id="238" xml:space="preserve">
+            <source>The JSON.NET package should already be installed, as it is required by the SCP.NET framework used for C# Storm topologies.</source>
+            <target state="new">The JSON.NET package should already be installed, as it is required by the SCP.NET framework used for C# Storm topologies.</target>
+          </trans-unit>
+          <trans-unit id="239" xml:space="preserve">
+            <source>Find the following code:</source>
+            <target state="new">Find the following code:</target>
+          </trans-unit>
+          <trans-unit id="240" xml:space="preserve">
+            <source>Replace it with the following:</source>
+            <target state="new">Replace it with the following:</target>
+          </trans-unit>
+          <trans-unit id="241" xml:space="preserve">
+            <source>This changes the definition of the data created by the spout to use <bpt id="2">&lt;strong&gt;</bpt>string<ept id="2">&lt;/strong&gt;</ept> data, and the <bpt id="4">&lt;strong&gt;</bpt>CustomizedInteropJSONSerializer<ept id="4">&lt;/strong&gt;</ept> declared eariler in the topology (in program.cs).</source>
+            <target state="new">This changes the definition of the data created by the spout to use <bpt id="2">&lt;strong&gt;</bpt>string<ept id="2">&lt;/strong&gt;</ept> data, and the <bpt id="4">&lt;strong&gt;</bpt>CustomizedInteropJSONSerializer<ept id="4">&lt;/strong&gt;</ept> declared eariler in the topology (in program.cs).</target>
+          </trans-unit>
+          <trans-unit id="242" xml:space="preserve">
+            <source>Replace the <bpt id="2">&lt;strong&gt;</bpt>NextTuple<ept id="2">&lt;/strong&gt;</ept> method with the following:</source>
+            <target state="new">Replace the <bpt id="2">&lt;strong&gt;</bpt>NextTuple<ept id="2">&lt;/strong&gt;</ept> method with the following:</target>
+          </trans-unit>
+          <trans-unit id="243" xml:space="preserve">
+            <source>This randomly generates a device ID, a value, and then uses Json.NET to emit a JSON object using these values.</source>
+            <target state="new">This randomly generates a device ID, a value, and then uses Json.NET to emit a JSON object using these values.</target>
+          </trans-unit>
+          <trans-unit id="244" xml:space="preserve">
+            <source>Save the <bpt id="2">&lt;strong&gt;</bpt>Spout.cs<ept id="2">&lt;/strong&gt;</ept> file.</source>
+            <target state="new">Save the <bpt id="2">&lt;strong&gt;</bpt>Spout.cs<ept id="2">&lt;/strong&gt;</ept> file.</target>
+          </trans-unit>
+          <trans-unit id="245" xml:space="preserve">
+            <source>At this point, you have a basic topology that will generate random data and store it in Event Hubs by using the Event Hubs bolt.</source>
+            <target state="new">At this point, you have a basic topology that will generate random data and store it in Event Hubs by using the Event Hubs bolt.</target>
+          </trans-unit>
+          <trans-unit id="246" xml:space="preserve">
+            <source>Next, you will create the reader.</source>
+            <target state="new">Next, you will create the reader.</target>
+          </trans-unit>
+          <trans-unit id="247" xml:space="preserve">
+            <source>Create EventHubReader</source>
+            <target state="new">Create EventHubReader</target>
+          </trans-unit>
+          <trans-unit id="248" xml:space="preserve">
+            <source>In this section, you will create a topology that reads data from Event Hubs by using the Event Hubs spout.</source>
+            <target state="new">In this section, you will create a topology that reads data from Event Hubs by using the Event Hubs spout.</target>
+          </trans-unit>
+          <trans-unit id="249" xml:space="preserve">
+            <source>Open Visual Studio, select <bpt id="2">&lt;strong&gt;</bpt>File<ept id="2">&lt;/strong&gt;</ept> &gt; <bpt id="4">&lt;strong&gt;</bpt>New<ept id="4">&lt;/strong&gt;</ept> &gt; <bpt id="6">&lt;strong&gt;</bpt>Project<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Open Visual Studio, select <bpt id="2">&lt;strong&gt;</bpt>File<ept id="2">&lt;/strong&gt;</ept> &gt; <bpt id="4">&lt;strong&gt;</bpt>New<ept id="4">&lt;/strong&gt;</ept> &gt; <bpt id="6">&lt;strong&gt;</bpt>Project<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="250" xml:space="preserve">
+            <source>From the <bpt id="2">&lt;strong&gt;</bpt>New Project<ept id="2">&lt;/strong&gt;</ept> screen, expand <bpt id="4">&lt;strong&gt;</bpt>Installed<ept id="4">&lt;/strong&gt;</ept> &gt; <bpt id="6">&lt;strong&gt;</bpt>Templates<ept id="6">&lt;/strong&gt;</ept>, and select <bpt id="8">&lt;strong&gt;</bpt>HDInsight<ept id="8">&lt;/strong&gt;</ept>.</source>
+            <target state="new">From the <bpt id="2">&lt;strong&gt;</bpt>New Project<ept id="2">&lt;/strong&gt;</ept> screen, expand <bpt id="4">&lt;strong&gt;</bpt>Installed<ept id="4">&lt;/strong&gt;</ept> &gt; <bpt id="6">&lt;strong&gt;</bpt>Templates<ept id="6">&lt;/strong&gt;</ept>, and select <bpt id="8">&lt;strong&gt;</bpt>HDInsight<ept id="8">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="251" xml:space="preserve">
+            <source>From the list of templates, select <bpt id="2">&lt;strong&gt;</bpt>Storm Application<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">From the list of templates, select <bpt id="2">&lt;strong&gt;</bpt>Storm Application<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="252" xml:space="preserve">
+            <source>At the bottom of the screen, enter <bpt id="2">&lt;strong&gt;</bpt>EventHubReader<ept id="2">&lt;/strong&gt;</ept> as the name of the application.</source>
+            <target state="new">At the bottom of the screen, enter <bpt id="2">&lt;strong&gt;</bpt>EventHubReader<ept id="2">&lt;/strong&gt;</ept> as the name of the application.</target>
+          </trans-unit>
+          <trans-unit id="253" xml:space="preserve">
+            <source>Configuration</source>
+            <target state="new">Configuration</target>
+          </trans-unit>
+          <trans-unit id="254" xml:space="preserve">
+            <source>In <bpt id="2">&lt;strong&gt;</bpt>Solution Explorer<ept id="2">&lt;/strong&gt;</ept>, right-click <bpt id="4">&lt;strong&gt;</bpt>EventHubReader<ept id="4">&lt;/strong&gt;</ept> and then select <bpt id="6">&lt;strong&gt;</bpt>Properties<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In <bpt id="2">&lt;strong&gt;</bpt>Solution Explorer<ept id="2">&lt;/strong&gt;</ept>, right-click <bpt id="4">&lt;strong&gt;</bpt>EventHubReader<ept id="4">&lt;/strong&gt;</ept> and then select <bpt id="6">&lt;strong&gt;</bpt>Properties<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="255" xml:space="preserve">
+            <source>In the project properties, select <bpt id="2">&lt;strong&gt;</bpt>Settings<ept id="2">&lt;/strong&gt;</ept>, and then select **This project does not contain a default settings file.</source>
+            <target state="new">In the project properties, select <bpt id="2">&lt;strong&gt;</bpt>Settings<ept id="2">&lt;/strong&gt;</ept>, and then select **This project does not contain a default settings file.</target>
+          </trans-unit>
+          <trans-unit id="256" xml:space="preserve">
+            <source>Click here to create one.**</source>
+            <target state="new">Click here to create one.**</target>
+          </trans-unit>
+          <trans-unit id="257" xml:space="preserve">
+            <source>Enter the following settings.</source>
+            <target state="new">Enter the following settings.</target>
+          </trans-unit>
+          <trans-unit id="258" xml:space="preserve">
+            <source>Use the information for the Event Hub and storage account you created earlier in the <bpt id="2">&lt;strong&gt;</bpt>Value<ept id="2">&lt;/strong&gt;</ept> column.</source>
+            <target state="new">Use the information for the Event Hub and storage account you created earlier in the <bpt id="2">&lt;strong&gt;</bpt>Value<ept id="2">&lt;/strong&gt;</ept> column.</target>
+          </trans-unit>
+          <trans-unit id="259" xml:space="preserve">
+            <source>Name</source>
+            <target state="new">Name</target>
+          </trans-unit>
+          <trans-unit id="260" xml:space="preserve">
+            <source>Type</source>
+            <target state="new">Type</target>
+          </trans-unit>
+          <trans-unit id="261" xml:space="preserve">
+            <source>Scope</source>
+            <target state="new">Scope</target>
+          </trans-unit>
+          <trans-unit id="262" xml:space="preserve">
+            <source>EventHubPolicyName</source>
+            <target state="new">EventHubPolicyName</target>
+          </trans-unit>
+          <trans-unit id="263" xml:space="preserve">
+            <source>string</source>
+            <target state="new">string</target>
+          </trans-unit>
+          <trans-unit id="264" xml:space="preserve">
+            <source>Application</source>
+            <target state="new">Application</target>
+          </trans-unit>
+          <trans-unit id="265" xml:space="preserve">
+            <source>EventHubPolicyKey</source>
+            <target state="new">EventHubPolicyKey</target>
+          </trans-unit>
+          <trans-unit id="266" xml:space="preserve">
+            <source>string</source>
+            <target state="new">string</target>
+          </trans-unit>
+          <trans-unit id="267" xml:space="preserve">
+            <source>Application</source>
+            <target state="new">Application</target>
+          </trans-unit>
+          <trans-unit id="268" xml:space="preserve">
+            <source>EventHubNamespace</source>
+            <target state="new">EventHubNamespace</target>
+          </trans-unit>
+          <trans-unit id="269" xml:space="preserve">
+            <source>string</source>
+            <target state="new">string</target>
+          </trans-unit>
+          <trans-unit id="270" xml:space="preserve">
+            <source>Application</source>
+            <target state="new">Application</target>
+          </trans-unit>
+          <trans-unit id="271" xml:space="preserve">
+            <source>EventHubName</source>
+            <target state="new">EventHubName</target>
+          </trans-unit>
+          <trans-unit id="272" xml:space="preserve">
+            <source>string</source>
+            <target state="new">string</target>
+          </trans-unit>
+          <trans-unit id="273" xml:space="preserve">
+            <source>Application</source>
+            <target state="new">Application</target>
+          </trans-unit>
+          <trans-unit id="274" xml:space="preserve">
+            <source>EventHubPartitionCount</source>
+            <target state="new">EventHubPartitionCount</target>
+          </trans-unit>
+          <trans-unit id="275" xml:space="preserve">
+            <source>int</source>
+            <target state="new">int</target>
+          </trans-unit>
+          <trans-unit id="276" xml:space="preserve">
+            <source>Application</source>
+            <target state="new">Application</target>
+          </trans-unit>
+          <trans-unit id="277" xml:space="preserve">
+            <source>StorageConnection</source>
+            <target state="new">StorageConnection</target>
+          </trans-unit>
+          <trans-unit id="278" xml:space="preserve">
+            <source>(Connection String)</source>
+            <target state="new">(Connection String)</target>
+          </trans-unit>
+          <trans-unit id="279" xml:space="preserve">
+            <source>Application</source>
+            <target state="new">Application</target>
+          </trans-unit>
+          <trans-unit id="280" xml:space="preserve">
+            <source>TableName</source>
+            <target state="new">TableName</target>
+          </trans-unit>
+          <trans-unit id="281" xml:space="preserve">
+            <source>string</source>
+            <target state="new">string</target>
+          </trans-unit>
+          <trans-unit id="282" xml:space="preserve">
+            <source>Application</source>
+            <target state="new">Application</target>
+          </trans-unit>
+          <trans-unit id="283" xml:space="preserve">
+            <source>For <bpt id="2">&lt;strong&gt;</bpt>TableName<ept id="2">&lt;/strong&gt;</ept>, enter the name of the table that you want events to be stored in.</source>
+            <target state="new">For <bpt id="2">&lt;strong&gt;</bpt>TableName<ept id="2">&lt;/strong&gt;</ept>, enter the name of the table that you want events to be stored in.</target>
+          </trans-unit>
+          <trans-unit id="284" xml:space="preserve">
+            <source>For <bpt id="2">&lt;strong&gt;</bpt>StorageConnection<ept id="2">&lt;/strong&gt;</ept>, enter a value of <bpt id="4">&lt;code&gt;</bpt>DefaultEndpointsProtocol=https;AccountName=myAccount;AccountKey=myKey;<ept id="4">&lt;/code&gt;</ept>.</source>
+            <target state="new">For <bpt id="2">&lt;strong&gt;</bpt>StorageConnection<ept id="2">&lt;/strong&gt;</ept>, enter a value of <bpt id="4">&lt;code&gt;</bpt>DefaultEndpointsProtocol=https;AccountName=myAccount;AccountKey=myKey;<ept id="4">&lt;/code&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="285" xml:space="preserve">
+            <source>Replace <bpt id="2">&lt;strong&gt;</bpt>myAccount<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>myKey<ept id="4">&lt;/strong&gt;</ept> with the storage account name and key obtained earlier.</source>
+            <target state="new">Replace <bpt id="2">&lt;strong&gt;</bpt>myAccount<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>myKey<ept id="4">&lt;/strong&gt;</ept> with the storage account name and key obtained earlier.</target>
+          </trans-unit>
+          <trans-unit id="286" xml:space="preserve">
+            <source>These values will be used by the topology to communicate with Event Hubs and Table Storage.</source>
+            <target state="new">These values will be used by the topology to communicate with Event Hubs and Table Storage.</target>
+          </trans-unit>
+          <trans-unit id="287" xml:space="preserve">
+            <source>Save and close the <bpt id="2">&lt;strong&gt;</bpt>Properties<ept id="2">&lt;/strong&gt;</ept> page.</source>
+            <target state="new">Save and close the <bpt id="2">&lt;strong&gt;</bpt>Properties<ept id="2">&lt;/strong&gt;</ept> page.</target>
+          </trans-unit>
+          <trans-unit id="288" xml:space="preserve">
+            <source>Define the topology</source>
+            <target state="new">Define the topology</target>
+          </trans-unit>
+          <trans-unit id="289" xml:space="preserve">
+            <source>In <bpt id="2">&lt;strong&gt;</bpt>Solution Explorer<ept id="2">&lt;/strong&gt;</ept>, right-click <bpt id="4">&lt;strong&gt;</bpt>Spout.cs<ept id="4">&lt;/strong&gt;</ept> and select <bpt id="6">&lt;strong&gt;</bpt>Delete<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In <bpt id="2">&lt;strong&gt;</bpt>Solution Explorer<ept id="2">&lt;/strong&gt;</ept>, right-click <bpt id="4">&lt;strong&gt;</bpt>Spout.cs<ept id="4">&lt;/strong&gt;</ept> and select <bpt id="6">&lt;strong&gt;</bpt>Delete<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="290" xml:space="preserve">
+            <source>You are using the Java Event Hubs spout, so you do not need this file.</source>
+            <target state="new">You are using the Java Event Hubs spout, so you do not need this file.</target>
+          </trans-unit>
+          <trans-unit id="291" xml:space="preserve">
+            <source>Open the <bpt id="2">&lt;strong&gt;</bpt>Program.cs<ept id="2">&lt;/strong&gt;</ept> file and add the following code immediately after the <bpt id="4">&lt;code&gt;</bpt>TopologyBuilder topologyBuilder = new TopologyBuilder("EventHubReader");<ept id="4">&lt;/code&gt;</ept> line:</source>
+            <target state="new">Open the <bpt id="2">&lt;strong&gt;</bpt>Program.cs<ept id="2">&lt;/strong&gt;</ept> file and add the following code immediately after the <bpt id="4">&lt;code&gt;</bpt>TopologyBuilder topologyBuilder = new TopologyBuilder("EventHubReader");<ept id="4">&lt;/code&gt;</ept> line:</target>
+          </trans-unit>
+          <trans-unit id="292" xml:space="preserve">
+            <source>The partition count is read and assigned to a local variable.</source>
+            <target state="new">The partition count is read and assigned to a local variable.</target>
+          </trans-unit>
+          <trans-unit id="293" xml:space="preserve">
+            <source>It will be used multiple times.</source>
+            <target state="new">It will be used multiple times.</target>
+          </trans-unit>
+          <trans-unit id="294" xml:space="preserve">
+            <source>The <bpt id="2">&lt;code&gt;</bpt>EventHubSpoutConfig<ept id="2">&lt;/code&gt;</ept> defines the configuration for the Event Hub spout.</source>
+            <target state="new">The <bpt id="2">&lt;code&gt;</bpt>EventHubSpoutConfig<ept id="2">&lt;/code&gt;</ept> defines the configuration for the Event Hub spout.</target>
+          </trans-unit>
+          <trans-unit id="295" xml:space="preserve">
+            <source>In this case, the Event Hubs configuration information you added previously.</source>
+            <target state="new">In this case, the Event Hubs configuration information you added previously.</target>
+          </trans-unit>
+          <trans-unit id="296" xml:space="preserve">
+            <source>Behind the scenes this uses the Java Event Hub spout, and will create a new instance of <bpt id="2">&lt;strong&gt;</bpt>com.microsoft.eventhubs.spout.EventHubSpoutConfig<ept id="2">&lt;/strong&gt;</ept> using the Event Hubs information.</source>
+            <target state="new">Behind the scenes this uses the Java Event Hub spout, and will create a new instance of <bpt id="2">&lt;strong&gt;</bpt>com.microsoft.eventhubs.spout.EventHubSpoutConfig<ept id="2">&lt;/strong&gt;</ept> using the Event Hubs information.</target>
+          </trans-unit>
+          <trans-unit id="297" xml:space="preserve">
+            <source>Find the following code:</source>
+            <target state="new">Find the following code:</target>
+          </trans-unit>
+          <trans-unit id="298" xml:space="preserve">
+            <source>Replace it with the following:</source>
+            <target state="new">Replace it with the following:</target>
+          </trans-unit>
+          <trans-unit id="299" xml:space="preserve">
+            <source>This instructs the topology to create a new Event Hub spout and use the <bpt id="2">&lt;code&gt;</bpt>EventHubSpoutConfig<ept id="2">&lt;/code&gt;</ept> from the previous step as the configuration.</source>
+            <target state="new">This instructs the topology to create a new Event Hub spout and use the <bpt id="2">&lt;code&gt;</bpt>EventHubSpoutConfig<ept id="2">&lt;/code&gt;</ept> from the previous step as the configuration.</target>
+          </trans-unit>
+          <trans-unit id="300" xml:space="preserve">
+            <source>"EventHubSpout" sets the friendly name of the spout, and <bpt id="2">&lt;code&gt;</bpt>partitionCount<ept id="2">&lt;/code&gt;</ept> is used to set the parallelism hint.</source>
+            <target state="new">"EventHubSpout" sets the friendly name of the spout, and <bpt id="2">&lt;code&gt;</bpt>partitionCount<ept id="2">&lt;/code&gt;</ept> is used to set the parallelism hint.</target>
+          </trans-unit>
+          <trans-unit id="301" xml:space="preserve">
+            <source>Behind the scenes this creates a new instance of <bpt id="2">&lt;strong&gt;</bpt>com.microsoft.eventhubs.spout.EventHubSpout<ept id="2">&lt;/strong&gt;</ept> Java component using the provided configuration information.</source>
+            <target state="new">Behind the scenes this creates a new instance of <bpt id="2">&lt;strong&gt;</bpt>com.microsoft.eventhubs.spout.EventHubSpout<ept id="2">&lt;/strong&gt;</ept> Java component using the provided configuration information.</target>
+          </trans-unit>
+          <trans-unit id="302" xml:space="preserve">
+            <source>Add the following immediately after the previous code:</source>
+            <target state="new">Add the following immediately after the previous code:</target>
+          </trans-unit>
+          <trans-unit id="303" xml:space="preserve">
+            <source>This creates a custom serializer, which will be used to serialize information produced by the Java components (such as the EventHubSpout) into a JSON format that downstream C# components can use.</source>
+            <target state="new">This creates a custom serializer, which will be used to serialize information produced by the Java components (such as the EventHubSpout) into a JSON format that downstream C# components can use.</target>
+          </trans-unit>
+          <trans-unit id="304" xml:space="preserve">
+            <source>Find the following code:</source>
+            <target state="new">Find the following code:</target>
+          </trans-unit>
+          <trans-unit id="305" xml:space="preserve">
+            <source>Replace it with the following:</source>
+            <target state="new">Replace it with the following:</target>
+          </trans-unit>
+          <trans-unit id="306" xml:space="preserve">
+            <source>This code instructs the topology to use a bolt (defined in Bolt.cs).</source>
+            <target state="new">This code instructs the topology to use a bolt (defined in Bolt.cs).</target>
+          </trans-unit>
+          <trans-unit id="307" xml:space="preserve">
+            <source>The custom serializer defined earlier is used here so that this bolt can consume data produced by upstream Java components.</source>
+            <target state="new">The custom serializer defined earlier is used here so that this bolt can consume data produced by upstream Java components.</target>
+          </trans-unit>
+          <trans-unit id="308" xml:space="preserve">
+            <source>In this case, the EventHubSpout.</source>
+            <target state="new">In this case, the EventHubSpout.</target>
+          </trans-unit>
+          <trans-unit id="309" xml:space="preserve">
+            <source>The last parameter for SetBolt, (with a value of <bpt id="2">&lt;code&gt;</bpt>true<ept id="2">&lt;/code&gt;</ept>,) enables ACK functionality for this bolt.</source>
+            <target state="new">The last parameter for SetBolt, (with a value of <bpt id="2">&lt;code&gt;</bpt>true<ept id="2">&lt;/code&gt;</ept>,) enables ACK functionality for this bolt.</target>
+          </trans-unit>
+          <trans-unit id="310" xml:space="preserve">
+            <source>This is required, as the EventHubSpout component expects an ACK for data that it emits.</source>
+            <target state="new">This is required, as the EventHubSpout component expects an ACK for data that it emits.</target>
+          </trans-unit>
+          <trans-unit id="311" xml:space="preserve">
+            <source>If ACKs are not returned by downstream components, the spout will stop receiving after processing around 1000 messages.</source>
+            <target state="new">If ACKs are not returned by downstream components, the spout will stop receiving after processing around 1000 messages.</target>
+          </trans-unit>
+          <trans-unit id="312" xml:space="preserve">
+            <source>At this point, you are done with <bpt id="2">&lt;strong&gt;</bpt>Program.cs<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">At this point, you are done with <bpt id="2">&lt;strong&gt;</bpt>Program.cs<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="313" xml:space="preserve">
+            <source>The topology has been defined, but now you must create a helper class to write data to Table storage, then you must modify <bpt id="2">&lt;strong&gt;</bpt>Bolt.cs<ept id="2">&lt;/strong&gt;</ept> so that it can understand the data produced by the spout.</source>
+            <target state="new">The topology has been defined, but now you must create a helper class to write data to Table storage, then you must modify <bpt id="2">&lt;strong&gt;</bpt>Bolt.cs<ept id="2">&lt;/strong&gt;</ept> so that it can understand the data produced by the spout.</target>
+          </trans-unit>
+          <trans-unit id="314" xml:space="preserve">
+            <source>This topology will default to creating one worker process, which is sufficient for example purposes.</source>
+            <target state="new">This topology will default to creating one worker process, which is sufficient for example purposes.</target>
+          </trans-unit>
+          <trans-unit id="315" xml:space="preserve">
+            <source>If you are adapting this for a production cluster, you should can add the following to change the number of workers:</source>
+            <target state="new">If you are adapting this for a production cluster, you should can add the following to change the number of workers:</target>
+          </trans-unit>
+          <trans-unit id="316" xml:space="preserve">
+            <source>Create a helper class</source>
+            <target state="new">Create a helper class</target>
+          </trans-unit>
+          <trans-unit id="317" xml:space="preserve">
+            <source>When writing data to Table storage, you must create a class that describes the data that will be written.</source>
+            <target state="new">When writing data to Table storage, you must create a class that describes the data that will be written.</target>
+          </trans-unit>
+          <trans-unit id="318" xml:space="preserve">
+            <source>In <bpt id="2">&lt;strong&gt;</bpt>Solution Explorer<ept id="2">&lt;/strong&gt;</ept>, right-click the <bpt id="4">&lt;strong&gt;</bpt>EventHubReader<ept id="4">&lt;/strong&gt;</ept> project, and select <bpt id="6">&lt;strong&gt;</bpt>Add<ept id="6">&lt;/strong&gt;</ept>, then <bpt id="8">&lt;strong&gt;</bpt>New Class<ept id="8">&lt;/strong&gt;</ept>.</source>
+            <target state="new">In <bpt id="2">&lt;strong&gt;</bpt>Solution Explorer<ept id="2">&lt;/strong&gt;</ept>, right-click the <bpt id="4">&lt;strong&gt;</bpt>EventHubReader<ept id="4">&lt;/strong&gt;</ept> project, and select <bpt id="6">&lt;strong&gt;</bpt>Add<ept id="6">&lt;/strong&gt;</ept>, then <bpt id="8">&lt;strong&gt;</bpt>New Class<ept id="8">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="319" xml:space="preserve">
+            <source>Name the new class <bpt id="2">&lt;strong&gt;</bpt>Devices.cs<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Name the new class <bpt id="2">&lt;strong&gt;</bpt>Devices.cs<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="320" xml:space="preserve">
+            <source>Open <bpt id="2">&lt;strong&gt;</bpt>Devices.cs<ept id="2">&lt;/strong&gt;</ept> and replace the default code with the following:</source>
+            <target state="new">Open <bpt id="2">&lt;strong&gt;</bpt>Devices.cs<ept id="2">&lt;/strong&gt;</ept> and replace the default code with the following:</target>
+          </trans-unit>
+          <trans-unit id="321" xml:space="preserve">
+            <source>This creates entities in Table storage that consist of a partition key (which will be set to the device ID read from Event Hub,) a unique row key, and a value that is read from Event Hub.</source>
+            <target state="new">This creates entities in Table storage that consist of a partition key (which will be set to the device ID read from Event Hub,) a unique row key, and a value that is read from Event Hub.</target>
+          </trans-unit>
+          <trans-unit id="322" xml:space="preserve">
+            <source>Each entity will also have a timestamp, which will be created automatically when the entity is inserted in the table.</source>
+            <target state="new">Each entity will also have a timestamp, which will be created automatically when the entity is inserted in the table.</target>
+          </trans-unit>
+          <trans-unit id="323" xml:space="preserve">
+            <source>Modify the bolt</source>
+            <target state="new">Modify the bolt</target>
+          </trans-unit>
+          <trans-unit id="324" xml:space="preserve">
+            <source>In <bpt id="2">&lt;strong&gt;</bpt>Solution Explorer<ept id="2">&lt;/strong&gt;</ept>, expand the <bpt id="4">&lt;strong&gt;</bpt>EventHubReader<ept id="4">&lt;/strong&gt;</ept> project and open the <bpt id="6">&lt;strong&gt;</bpt>Bolt.cs<ept id="6">&lt;/strong&gt;</ept> file.</source>
+            <target state="new">In <bpt id="2">&lt;strong&gt;</bpt>Solution Explorer<ept id="2">&lt;/strong&gt;</ept>, expand the <bpt id="4">&lt;strong&gt;</bpt>EventHubReader<ept id="4">&lt;/strong&gt;</ept> project and open the <bpt id="6">&lt;strong&gt;</bpt>Bolt.cs<ept id="6">&lt;/strong&gt;</ept> file.</target>
+          </trans-unit>
+          <trans-unit id="325" xml:space="preserve">
+            <source>Add the following at the top of the file:</source>
+            <target state="new">Add the following at the top of the file:</target>
+          </trans-unit>
+          <trans-unit id="326" xml:space="preserve">
+            <source>This allows you to more easily work with JSON data from the bolt and write data to Table storage.</source>
+            <target state="new">This allows you to more easily work with JSON data from the bolt and write data to Table storage.</target>
+          </trans-unit>
+          <trans-unit id="327" xml:space="preserve">
+            <source>Find the <bpt id="2">&lt;code&gt;</bpt>private int count;<ept id="2">&lt;/code&gt;</ept> statement and replace it with the following:</source>
+            <target state="new">Find the <bpt id="2">&lt;code&gt;</bpt>private int count;<ept id="2">&lt;/code&gt;</ept> statement and replace it with the following:</target>
+          </trans-unit>
+          <trans-unit id="328" xml:space="preserve">
+            <source>This will be used when connecting to the table.</source>
+            <target state="new">This will be used when connecting to the table.</target>
+          </trans-unit>
+          <trans-unit id="329" xml:space="preserve">
+            <source>Find the following code:</source>
+            <target state="new">Find the following code:</target>
+          </trans-unit>
+          <trans-unit id="330" xml:space="preserve">
+            <source>Replace it with the following:</source>
+            <target state="new">Replace it with the following:</target>
+          </trans-unit>
+          <trans-unit id="331" xml:space="preserve">
+            <source>This instructs the bolt that it will be receiving a <bpt id="2">&lt;strong&gt;</bpt>string<ept id="2">&lt;/strong&gt;</ept> value instead of an <bpt id="4">&lt;strong&gt;</bpt>int<ept id="4">&lt;/strong&gt;</ept>, and that the data should be deserialized using the <bpt id="6">&lt;strong&gt;</bpt>CustomizedInteropJSONDeserialzer<ept id="6">&lt;/strong&gt;</ept> that was declared in the topology earlier (in the program.cs file).</source>
+            <target state="new">This instructs the bolt that it will be receiving a <bpt id="2">&lt;strong&gt;</bpt>string<ept id="2">&lt;/strong&gt;</ept> value instead of an <bpt id="4">&lt;strong&gt;</bpt>int<ept id="4">&lt;/strong&gt;</ept>, and that the data should be deserialized using the <bpt id="6">&lt;strong&gt;</bpt>CustomizedInteropJSONDeserialzer<ept id="6">&lt;/strong&gt;</ept> that was declared in the topology earlier (in the program.cs file).</target>
+          </trans-unit>
+          <trans-unit id="332" xml:space="preserve">
+            <source>Immediately after the previous code, add the following:</source>
+            <target state="new">Immediately after the previous code, add the following:</target>
+          </trans-unit>
+          <trans-unit id="333" xml:space="preserve">
+            <source>This connects to the <bpt id="2">&lt;strong&gt;</bpt>events<ept id="2">&lt;/strong&gt;</ept> table by using the connection string configured previously.</source>
+            <target state="new">This connects to the <bpt id="2">&lt;strong&gt;</bpt>events<ept id="2">&lt;/strong&gt;</ept> table by using the connection string configured previously.</target>
+          </trans-unit>
+          <trans-unit id="334" xml:space="preserve">
+            <source>If it does not exist, it will be created.</source>
+            <target state="new">If it does not exist, it will be created.</target>
+          </trans-unit>
+          <trans-unit id="335" xml:space="preserve">
+            <source>Find the <bpt id="2">&lt;strong&gt;</bpt>Execute<ept id="2">&lt;/strong&gt;</ept> method and replace it with the following:</source>
+            <target state="new">Find the <bpt id="2">&lt;strong&gt;</bpt>Execute<ept id="2">&lt;/strong&gt;</ept> method and replace it with the following:</target>
+          </trans-unit>
+          <trans-unit id="336" xml:space="preserve">
+            <source>This uses Json.NET to parse the JSON data from the spout, and then picks out the <bpt id="2">&lt;strong&gt;</bpt>deviceId<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>deviceValue<ept id="4">&lt;/strong&gt;</ept> fields.</source>
+            <target state="new">This uses Json.NET to parse the JSON data from the spout, and then picks out the <bpt id="2">&lt;strong&gt;</bpt>deviceId<ept id="2">&lt;/strong&gt;</ept> and <bpt id="4">&lt;strong&gt;</bpt>deviceValue<ept id="4">&lt;/strong&gt;</ept> fields.</target>
+          </trans-unit>
+          <trans-unit id="337" xml:space="preserve">
+            <source>A new <bpt id="2">&lt;strong&gt;</bpt>Device<ept id="2">&lt;/strong&gt;</ept> object is then created by using the <bpt id="4">&lt;strong&gt;</bpt>deviceId<ept id="4">&lt;/strong&gt;</ept> during initialization to set the partition key for the table.</source>
+            <target state="new">A new <bpt id="2">&lt;strong&gt;</bpt>Device<ept id="2">&lt;/strong&gt;</ept> object is then created by using the <bpt id="4">&lt;strong&gt;</bpt>deviceId<ept id="4">&lt;/strong&gt;</ept> during initialization to set the partition key for the table.</target>
+          </trans-unit>
+          <trans-unit id="338" xml:space="preserve">
+            <source>The value is then set to the <bpt id="2">&lt;strong&gt;</bpt>deviceValue<ept id="2">&lt;/strong&gt;</ept>, and finally the entity is inserted into the table.</source>
+            <target state="new">The value is then set to the <bpt id="2">&lt;strong&gt;</bpt>deviceValue<ept id="2">&lt;/strong&gt;</ept>, and finally the entity is inserted into the table.</target>
+          </trans-unit>
+          <trans-unit id="339" xml:space="preserve">
+            <source>After the entity is inserted into the table, <bpt id="2">&lt;code&gt;</bpt>Ack()<ept id="2">&lt;/code&gt;</ept> is called for the tuple, to inform the spout that we have successfully processed the data.</source>
+            <target state="new">After the entity is inserted into the table, <bpt id="2">&lt;code&gt;</bpt>Ack()<ept id="2">&lt;/code&gt;</ept> is called for the tuple, to inform the spout that we have successfully processed the data.</target>
+          </trans-unit>
+          <trans-unit id="340" xml:space="preserve">
+            <source>The EventHubSpout component expects an ACK for each tuple from downstream components such as this bolt.</source>
+            <target state="new">The EventHubSpout component expects an ACK for each tuple from downstream components such as this bolt.</target>
+          </trans-unit>
+          <trans-unit id="341" xml:space="preserve">
+            <source>If ACKS are not received, the EventHubSpout will assume processing for the tuple has failed.</source>
+            <target state="new">If ACKS are not received, the EventHubSpout will assume processing for the tuple has failed.</target>
+          </trans-unit>
+          <trans-unit id="342" xml:space="preserve">
+            <source>At this point, you have a complete topology that will read data from Event Hub, and store it in Table Storage in a table named <bpt id="2">&lt;strong&gt;</bpt>events<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">At this point, you have a complete topology that will read data from Event Hub, and store it in Table Storage in a table named <bpt id="2">&lt;strong&gt;</bpt>events<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="343" xml:space="preserve">
+            <source>Deploy the topologies</source>
+            <target state="new">Deploy the topologies</target>
+          </trans-unit>
+          <trans-unit id="344" xml:space="preserve">
+            <source>From <bpt id="2">&lt;strong&gt;</bpt>Solution Explorer<ept id="2">&lt;/strong&gt;</ept>, right-click the <bpt id="4">&lt;strong&gt;</bpt>EventHubReader<ept id="4">&lt;/strong&gt;</ept> project and select <bpt id="6">&lt;strong&gt;</bpt>Submit to Storm on HDInsight<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">From <bpt id="2">&lt;strong&gt;</bpt>Solution Explorer<ept id="2">&lt;/strong&gt;</ept>, right-click the <bpt id="4">&lt;strong&gt;</bpt>EventHubReader<ept id="4">&lt;/strong&gt;</ept> project and select <bpt id="6">&lt;strong&gt;</bpt>Submit to Storm on HDInsight<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="345" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>submit to storm<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>submit to storm<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="346" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Submit Topology<ept id="2">&lt;/strong&gt;</ept> screen, select your <bpt id="4">&lt;strong&gt;</bpt>Storm Cluster<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Submit Topology<ept id="2">&lt;/strong&gt;</ept> screen, select your <bpt id="4">&lt;strong&gt;</bpt>Storm Cluster<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="347" xml:space="preserve">
+            <source>Expand <bpt id="2">&lt;strong&gt;</bpt>Additional Configurations<ept id="2">&lt;/strong&gt;</ept>, select <bpt id="4">&lt;strong&gt;</bpt>Java File Paths<ept id="4">&lt;/strong&gt;</ept>, select <bpt id="6">&lt;strong&gt;</bpt>...<ept id="6">&lt;/strong&gt;</ept> and select the directory that contains the <bpt id="8">&lt;strong&gt;</bpt>eventhubs-storm-spout-0.9-jar-with-dependencies.jar<ept id="8">&lt;/strong&gt;</ept> file that you downloaded earlier.</source>
+            <target state="new">Expand <bpt id="2">&lt;strong&gt;</bpt>Additional Configurations<ept id="2">&lt;/strong&gt;</ept>, select <bpt id="4">&lt;strong&gt;</bpt>Java File Paths<ept id="4">&lt;/strong&gt;</ept>, select <bpt id="6">&lt;strong&gt;</bpt>...<ept id="6">&lt;/strong&gt;</ept> and select the directory that contains the <bpt id="8">&lt;strong&gt;</bpt>eventhubs-storm-spout-0.9-jar-with-dependencies.jar<ept id="8">&lt;/strong&gt;</ept> file that you downloaded earlier.</target>
+          </trans-unit>
+          <trans-unit id="348" xml:space="preserve">
+            <source>Finally, click <bpt id="2">&lt;strong&gt;</bpt>Submit<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Finally, click <bpt id="2">&lt;strong&gt;</bpt>Submit<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="349" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Image of submission dialog<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Image of submission dialog<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="350" xml:space="preserve">
+            <source>When the topology has been submitted, the <bpt id="2">&lt;strong&gt;</bpt>Storm Topologies Viewer<ept id="2">&lt;/strong&gt;</ept> will appear.</source>
+            <target state="new">When the topology has been submitted, the <bpt id="2">&lt;strong&gt;</bpt>Storm Topologies Viewer<ept id="2">&lt;/strong&gt;</ept> will appear.</target>
+          </trans-unit>
+          <trans-unit id="351" xml:space="preserve">
+            <source>Select the <bpt id="2">&lt;strong&gt;</bpt>EventHubReader<ept id="2">&lt;/strong&gt;</ept> topology in the left pane to view statistics for the topology.</source>
+            <target state="new">Select the <bpt id="2">&lt;strong&gt;</bpt>EventHubReader<ept id="2">&lt;/strong&gt;</ept> topology in the left pane to view statistics for the topology.</target>
+          </trans-unit>
+          <trans-unit id="352" xml:space="preserve">
+            <source>Currently, nothing should be happening because no events have been written to Event Hubs yet.</source>
+            <target state="new">Currently, nothing should be happening because no events have been written to Event Hubs yet.</target>
+          </trans-unit>
+          <trans-unit id="353" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>example storage view<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>example storage view<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="354" xml:space="preserve">
+            <source>From <bpt id="2">&lt;strong&gt;</bpt>Solution Explorer<ept id="2">&lt;/strong&gt;</ept>, right-click the <bpt id="4">&lt;strong&gt;</bpt>EventHubWriter<ept id="4">&lt;/strong&gt;</ept> project and select <bpt id="6">&lt;strong&gt;</bpt>Submit to Storm on HDInsight<ept id="6">&lt;/strong&gt;</ept>.</source>
+            <target state="new">From <bpt id="2">&lt;strong&gt;</bpt>Solution Explorer<ept id="2">&lt;/strong&gt;</ept>, right-click the <bpt id="4">&lt;strong&gt;</bpt>EventHubWriter<ept id="4">&lt;/strong&gt;</ept> project and select <bpt id="6">&lt;strong&gt;</bpt>Submit to Storm on HDInsight<ept id="6">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="355" xml:space="preserve">
+            <source>On the <bpt id="2">&lt;strong&gt;</bpt>Submit Topology<ept id="2">&lt;/strong&gt;</ept> screen, select your <bpt id="4">&lt;strong&gt;</bpt>Storm Cluster<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">On the <bpt id="2">&lt;strong&gt;</bpt>Submit Topology<ept id="2">&lt;/strong&gt;</ept> screen, select your <bpt id="4">&lt;strong&gt;</bpt>Storm Cluster<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="356" xml:space="preserve">
+            <source>Expand <bpt id="2">&lt;strong&gt;</bpt>Additional Configurations<ept id="2">&lt;/strong&gt;</ept>, select <bpt id="4">&lt;strong&gt;</bpt>Java File Paths<ept id="4">&lt;/strong&gt;</ept>, select <bpt id="6">&lt;strong&gt;</bpt>...<ept id="6">&lt;/strong&gt;</ept> and select the directory that contains the <bpt id="8">&lt;strong&gt;</bpt>eventhubs-storm-spout-0.9-jar-with-dependencies.jar<ept id="8">&lt;/strong&gt;</ept> file you downloaded earlier.</source>
+            <target state="new">Expand <bpt id="2">&lt;strong&gt;</bpt>Additional Configurations<ept id="2">&lt;/strong&gt;</ept>, select <bpt id="4">&lt;strong&gt;</bpt>Java File Paths<ept id="4">&lt;/strong&gt;</ept>, select <bpt id="6">&lt;strong&gt;</bpt>...<ept id="6">&lt;/strong&gt;</ept> and select the directory that contains the <bpt id="8">&lt;strong&gt;</bpt>eventhubs-storm-spout-0.9-jar-with-dependencies.jar<ept id="8">&lt;/strong&gt;</ept> file you downloaded earlier.</target>
+          </trans-unit>
+          <trans-unit id="357" xml:space="preserve">
+            <source>Finally, click <bpt id="2">&lt;strong&gt;</bpt>Submit<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Finally, click <bpt id="2">&lt;strong&gt;</bpt>Submit<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="358" xml:space="preserve">
+            <source>When the topology has been submitted, refresh the topology list in the <bpt id="2">&lt;strong&gt;</bpt>Storm Topologies Viewer<ept id="2">&lt;/strong&gt;</ept> to verify that both topologies are running on the cluster.</source>
+            <target state="new">When the topology has been submitted, refresh the topology list in the <bpt id="2">&lt;strong&gt;</bpt>Storm Topologies Viewer<ept id="2">&lt;/strong&gt;</ept> to verify that both topologies are running on the cluster.</target>
+          </trans-unit>
+          <trans-unit id="359" xml:space="preserve">
+            <source>When both topologies are running, select <bpt id="2">&lt;strong&gt;</bpt>Server Explorer<ept id="2">&lt;/strong&gt;</ept>, then expand <bpt id="4">&lt;strong&gt;</bpt>Azure<ept id="4">&lt;/strong&gt;</ept> &gt; <bpt id="6">&lt;strong&gt;</bpt>Storage<ept id="6">&lt;/strong&gt;</ept>, and select the Storage Account you created earlier.</source>
+            <target state="new">When both topologies are running, select <bpt id="2">&lt;strong&gt;</bpt>Server Explorer<ept id="2">&lt;/strong&gt;</ept>, then expand <bpt id="4">&lt;strong&gt;</bpt>Azure<ept id="4">&lt;/strong&gt;</ept> &gt; <bpt id="6">&lt;strong&gt;</bpt>Storage<ept id="6">&lt;/strong&gt;</ept>, and select the Storage Account you created earlier.</target>
+          </trans-unit>
+          <trans-unit id="360" xml:space="preserve">
+            <source>Under the Storage Account, expand <bpt id="2">&lt;strong&gt;</bpt>Tables<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">Under the Storage Account, expand <bpt id="2">&lt;strong&gt;</bpt>Tables<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="361" xml:space="preserve">
+            <source>Finally, double-click the <bpt id="2">&lt;strong&gt;</bpt>events<ept id="2">&lt;/strong&gt;</ept> table to open the table.</source>
+            <target state="new">Finally, double-click the <bpt id="2">&lt;strong&gt;</bpt>events<ept id="2">&lt;/strong&gt;</ept> table to open the table.</target>
+          </trans-unit>
+          <trans-unit id="362" xml:space="preserve">
+            <source>You should see data that has been stored in the table from the <bpt id="2">&lt;strong&gt;</bpt>EventHubReader<ept id="2">&lt;/strong&gt;</ept> topology.</source>
+            <target state="new">You should see data that has been stored in the table from the <bpt id="2">&lt;strong&gt;</bpt>EventHubReader<ept id="2">&lt;/strong&gt;</ept> topology.</target>
+          </trans-unit>
+          <trans-unit id="363" xml:space="preserve">
+            <source>The events are being generated by the <bpt id="2">&lt;strong&gt;</bpt>EventHubWriter<ept id="2">&lt;/strong&gt;</ept> topology, which writes them to Event Hub.</source>
+            <target state="new">The events are being generated by the <bpt id="2">&lt;strong&gt;</bpt>EventHubWriter<ept id="2">&lt;/strong&gt;</ept> topology, which writes them to Event Hub.</target>
+          </trans-unit>
+          <trans-unit id="364" xml:space="preserve">
+            <source>The <bpt id="2">&lt;strong&gt;</bpt>EventHubReader<ept id="2">&lt;/strong&gt;</ept> then reads the events from Event Hubs and stores them in Table storage in the <bpt id="4">&lt;strong&gt;</bpt>events<ept id="4">&lt;/strong&gt;</ept> table.</source>
+            <target state="new">The <bpt id="2">&lt;strong&gt;</bpt>EventHubReader<ept id="2">&lt;/strong&gt;</ept> then reads the events from Event Hubs and stores them in Table storage in the <bpt id="4">&lt;strong&gt;</bpt>events<ept id="4">&lt;/strong&gt;</ept> table.</target>
+          </trans-unit>
+          <trans-unit id="365" xml:space="preserve">
+            <source>Stop the topologies</source>
+            <target state="new">Stop the topologies</target>
+          </trans-unit>
+          <trans-unit id="366" xml:space="preserve">
+            <source>To stop the topologies, select each topology in the <bpt id="2">&lt;strong&gt;</bpt>Storm Topology Viewer<ept id="2">&lt;/strong&gt;</ept>, then click <bpt id="4">&lt;strong&gt;</bpt>Kill<ept id="4">&lt;/strong&gt;</ept>.</source>
+            <target state="new">To stop the topologies, select each topology in the <bpt id="2">&lt;strong&gt;</bpt>Storm Topology Viewer<ept id="2">&lt;/strong&gt;</ept>, then click <bpt id="4">&lt;strong&gt;</bpt>Kill<ept id="4">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="367" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>image of killing a topology<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>image of killing a topology<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="368" xml:space="preserve">
+            <source>Notes</source>
+            <target state="new">Notes</target>
+          </trans-unit>
+          <trans-unit id="369" xml:space="preserve">
+            <source>Checkpointing</source>
+            <target state="new">Checkpointing</target>
+          </trans-unit>
+          <trans-unit id="370" xml:space="preserve">
+            <source>The EventHubSpout periodically checkpoints its state to the Zookeeper node, which saves the current offset for messages read from the queue.</source>
+            <target state="new">The EventHubSpout periodically checkpoints its state to the Zookeeper node, which saves the current offset for messages read from the queue.</target>
+          </trans-unit>
+          <trans-unit id="371" xml:space="preserve">
+            <source>This allows the component to start receiving messages at the saved offset in the following scenarios:</source>
+            <target state="new">This allows the component to start receiving messages at the saved offset in the following scenarios:</target>
+          </trans-unit>
+          <trans-unit id="372" xml:space="preserve">
+            <source>The component instance fails and is restarted.</source>
+            <target state="new">The component instance fails and is restarted.</target>
+          </trans-unit>
+          <trans-unit id="373" xml:space="preserve">
+            <source>You grow or shrink the cluster by adding or removing nodes.</source>
+            <target state="new">You grow or shrink the cluster by adding or removing nodes.</target>
+          </trans-unit>
+          <trans-unit id="374" xml:space="preserve">
+            <source>The topology is killed and restarted <bpt id="2">&lt;strong&gt;</bpt>with the same name<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">The topology is killed and restarted <bpt id="2">&lt;strong&gt;</bpt>with the same name<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="375" xml:space="preserve">
+            <source>You can also export and import the persisted checkpoints to WASB (the Azure Storage used by your HDInsight cluster.)</source>
+            <target state="new">You can also export and import the persisted checkpoints to WASB (the Azure Storage used by your HDInsight cluster.)</target>
+          </trans-unit>
+          <trans-unit id="376" xml:space="preserve">
+            <source>The scripts to do this are located on the Storm on HDInsight cluster, at <bpt id="2">&lt;strong&gt;</bpt>c:\apps\dist\storm-0.9.3.2.2.1.0-2340\zkdatatool-1.0\bin<ept id="2">&lt;/strong&gt;</ept>.</source>
+            <target state="new">The scripts to do this are located on the Storm on HDInsight cluster, at <bpt id="2">&lt;strong&gt;</bpt>c:\apps\dist\storm-0.9.3.2.2.1.0-2340\zkdatatool-1.0\bin<ept id="2">&lt;/strong&gt;</ept>.</target>
+          </trans-unit>
+          <trans-unit id="377" xml:space="preserve">
+            <source>The version number in the path may be different, as the version of Storm installed on the cluster may change in the future.</source>
+            <target state="new">The version number in the path may be different, as the version of Storm installed on the cluster may change in the future.</target>
+          </trans-unit>
+          <trans-unit id="378" xml:space="preserve">
+            <source>The scripts in this directory are:</source>
+            <target state="new">The scripts in this directory are:</target>
+          </trans-unit>
+          <trans-unit id="379" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>stormmeta_import.cmd<ept id="1">&lt;/strong&gt;</ept>: Import all Storm metadata from the cluster default storage container into Zookeeper.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>stormmeta_import.cmd<ept id="1">&lt;/strong&gt;</ept>: Import all Storm metadata from the cluster default storage container into Zookeeper.</target>
+          </trans-unit>
+          <trans-unit id="380" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>stormmeta_export.cmd<ept id="1">&lt;/strong&gt;</ept>: Export all Storm metadata from Zookeeper to the cluster default storage container.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>stormmeta_export.cmd<ept id="1">&lt;/strong&gt;</ept>: Export all Storm metadata from Zookeeper to the cluster default storage container.</target>
+          </trans-unit>
+          <trans-unit id="381" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>stormmeta_delete.cmd<ept id="1">&lt;/strong&gt;</ept>: Delete all Storm metadata from Zookeeper.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>stormmeta_delete.cmd<ept id="1">&lt;/strong&gt;</ept>: Delete all Storm metadata from Zookeeper.</target>
+          </trans-unit>
+          <trans-unit id="382" xml:space="preserve">
+            <source>Export an import allows you to persist checkpoint data when you need to delete the cluster, but want to resume processing from the current offset in the hub when you bring a new cluster back online.</source>
+            <target state="new">Export an import allows you to persist checkpoint data when you need to delete the cluster, but want to resume processing from the current offset in the hub when you bring a new cluster back online.</target>
+          </trans-unit>
+          <trans-unit id="383" xml:space="preserve">
+            <source>Since the data is persisted to the default storage container, the new cluster <bpt id="2">&lt;strong&gt;</bpt>must<ept id="2">&lt;/strong&gt;</ept> use the same storage account and container as the previous cluster.</source>
+            <target state="new">Since the data is persisted to the default storage container, the new cluster <bpt id="2">&lt;strong&gt;</bpt>must<ept id="2">&lt;/strong&gt;</ept> use the same storage account and container as the previous cluster.</target>
+          </trans-unit>
+          <trans-unit id="384" xml:space="preserve">
+            <source>Summary</source>
+            <target state="new">Summary</target>
+          </trans-unit>
+          <trans-unit id="385" xml:space="preserve">
+            <source>In this document, you have learned how to use the Java Event Hubs Spout and Bolt from a C# topology to work with data in Azure Event Hub.</source>
+            <target state="new">In this document, you have learned how to use the Java Event Hubs Spout and Bolt from a C# topology to work with data in Azure Event Hub.</target>
+          </trans-unit>
+          <trans-unit id="386" xml:space="preserve">
+            <source>To learn more about creating C# topologies, see the following.</source>
+            <target state="new">To learn more about creating C# topologies, see the following.</target>
+          </trans-unit>
+          <trans-unit id="387" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Develop C# topologies for Apache Storm on HDInsight using Visual Studio<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Develop C# topologies for Apache Storm on HDInsight using Visual Studio<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="388" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Example topologies for Storm on HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Example topologies for Storm on HDInsight<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>
