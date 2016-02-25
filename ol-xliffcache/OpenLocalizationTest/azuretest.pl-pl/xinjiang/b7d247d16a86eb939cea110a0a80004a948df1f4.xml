@@ -1,0 +1,677 @@
+{
+  "nodes": [
+    {
+      "content": "How to use the Azure slave plug-in with Jenkins Continuous Integration | Microsoft Azure",
+      "pos": [
+        27,
+        115
+      ]
+    },
+    {
+      "content": "Describes how to use the Azure slave plug-in with Jenkins Continuous Integration.",
+      "pos": [
+        134,
+        215
+      ]
+    },
+    {
+      "content": "How to use the Azure slave plug-in with Jenkins Continuous Integration",
+      "pos": [
+        521,
+        591
+      ]
+    },
+    {
+      "content": "You can use the Azure slave plug-in for Jenkins to provision slave nodes on Azure when running distributed builds.",
+      "pos": [
+        593,
+        707
+      ]
+    },
+    {
+      "content": "To install the Azure slave plug-in",
+      "pos": [
+        712,
+        746
+      ]
+    },
+    {
+      "pos": [
+        750,
+        801
+      ],
+      "content": "In the Jenkins dashboard, click <bpt id=\"p1\">**</bpt>Manage Jenkins<ept id=\"p1\">**</ept>."
+    },
+    {
+      "pos": [
+        805,
+        862
+      ],
+      "content": "On the <bpt id=\"p1\">**</bpt>Manage Jenkins<ept id=\"p1\">**</ept> page, click <bpt id=\"p2\">**</bpt>Manage Plugins<ept id=\"p2\">**</ept>."
+    },
+    {
+      "pos": [
+        866,
+        894
+      ],
+      "content": "Click the <bpt id=\"p1\">**</bpt>Available<ept id=\"p1\">**</ept> tab."
+    },
+    {
+      "pos": [
+        898,
+        1010
+      ],
+      "content": "In the filter field above the list of available plug-ins, type <bpt id=\"p1\">**</bpt>Azure<ept id=\"p1\">**</ept> to limit the list to relevant plug-ins."
+    },
+    {
+      "pos": [
+        1016,
+        1178
+      ],
+      "content": "If you opt to scroll through the list of available plug-ins, you will find the Azure slave plug-in under the <bpt id=\"p1\">**</bpt>Cluster Management and Distributed Build<ept id=\"p1\">**</ept> section."
+    },
+    {
+      "pos": [
+        1183,
+        1227
+      ],
+      "content": "Select the <bpt id=\"p1\">**</bpt>Azure Slave Plugin<ept id=\"p1\">**</ept> check box."
+    },
+    {
+      "pos": [
+        1231,
+        1311
+      ],
+      "content": "Click <bpt id=\"p1\">**</bpt>Install without restart<ept id=\"p1\">**</ept> or <bpt id=\"p2\">**</bpt>Download now and install after restart<ept id=\"p2\">**</ept>."
+    },
+    {
+      "content": "Now that the plug-in is installed, the next steps are to configure the plug-in with your Azure subscription profile and to create a template that will be used in creating the virtual machine for the slave node.",
+      "pos": [
+        1313,
+        1523
+      ]
+    },
+    {
+      "content": "To configure the Azure slave plug-in with your subscription profile",
+      "pos": [
+        1529,
+        1596
+      ]
+    },
+    {
+      "content": "A subscription profile, also referred to as publish settings, is an XML file that contains secure credentials and some additional information you'll need to work with Azure in your development environment.",
+      "pos": [
+        1598,
+        1803
+      ]
+    },
+    {
+      "content": "To configure the Azure slave plug-in, you need:",
+      "pos": [
+        1804,
+        1851
+      ]
+    },
+    {
+      "content": "your subscription id",
+      "pos": [
+        1855,
+        1875
+      ]
+    },
+    {
+      "content": "a management certificate for your subscription",
+      "pos": [
+        1878,
+        1924
+      ]
+    },
+    {
+      "content": "These can be found in your subscription profile.",
+      "pos": [
+        1926,
+        1974
+      ]
+    },
+    {
+      "content": "If you don't have a copy of your subscription profile, you can download it from <bpt id=\"p1\">[</bpt>the subscription site<ept id=\"p1\">](https://manage.windowsazure.com/publishsettings/Index?SchemaVersion=2.0)</ept>.",
+      "pos": [
+        1975,
+        2152
+      ]
+    },
+    {
+      "content": "Below is an example of a subscription profile.",
+      "pos": [
+        2153,
+        2199
+      ]
+    },
+    {
+      "content": "After you have your subscription profile, follow these steps to configure the Azure slave plug-in:",
+      "pos": [
+        2636,
+        2734
+      ]
+    },
+    {
+      "pos": [
+        2739,
+        2790
+      ],
+      "content": "In the Jenkins dashboard, click <bpt id=\"p1\">**</bpt>Manage Jenkins<ept id=\"p1\">**</ept>."
+    },
+    {
+      "pos": [
+        2794,
+        2821
+      ],
+      "content": "Click <bpt id=\"p1\">**</bpt>Configure System<ept id=\"p1\">**</ept>."
+    },
+    {
+      "pos": [
+        2825,
+        2876
+      ],
+      "content": "Scroll down the page to find the <bpt id=\"p1\">**</bpt>Cloud<ept id=\"p1\">**</ept> section."
+    },
+    {
+      "pos": [
+        2880,
+        2922
+      ],
+      "content": "Click <bpt id=\"p1\">**</bpt>Add new cloud &gt; Microsoft Azure<ept id=\"p1\">**</ept>."
+    },
+    {
+      "content": "cloud section",
+      "pos": [
+        2930,
+        2943
+      ]
+    },
+    {
+      "content": "This will show the fields where you need to enter your subscription details.",
+      "pos": [
+        3016,
+        3092
+      ]
+    },
+    {
+      "content": "subscription configuration",
+      "pos": [
+        3100,
+        3126
+      ]
+    },
+    {
+      "content": "Copy the subscription id and management certificate values from your subscription profile and paste them in the appropriate fields.",
+      "pos": [
+        3213,
+        3344
+      ]
+    },
+    {
+      "content": "When copying the subscription id and management certificate, do not include the quotes that enclose the values.",
+      "pos": [
+        3350,
+        3461
+      ]
+    },
+    {
+      "pos": [
+        3466,
+        3497
+      ],
+      "content": "Click <bpt id=\"p1\">**</bpt>Verify Configuration<ept id=\"p1\">**</ept>."
+    },
+    {
+      "pos": [
+        3501,
+        3566
+      ],
+      "content": "When the configuration is verified to be correct, click <bpt id=\"p1\">**</bpt>Save<ept id=\"p1\">**</ept>."
+    },
+    {
+      "content": "To set up a virtual machine template for the Azure slave plug-in",
+      "pos": [
+        3571,
+        3635
+      ]
+    },
+    {
+      "content": "A virtual machine template defines the parameters that the plug-in will use to create a slave node on Azure.",
+      "pos": [
+        3637,
+        3745
+      ]
+    },
+    {
+      "content": "In the following steps, we'll create a template for an Ubuntu virtual machine.",
+      "pos": [
+        3746,
+        3824
+      ]
+    },
+    {
+      "pos": [
+        3829,
+        3880
+      ],
+      "content": "In the Jenkins dashboard, click <bpt id=\"p1\">**</bpt>Manage Jenkins<ept id=\"p1\">**</ept>."
+    },
+    {
+      "pos": [
+        3884,
+        3911
+      ],
+      "content": "Click <bpt id=\"p1\">**</bpt>Configure System<ept id=\"p1\">**</ept>."
+    },
+    {
+      "pos": [
+        3915,
+        3966
+      ],
+      "content": "Scroll down the page to find the <bpt id=\"p1\">**</bpt>Cloud<ept id=\"p1\">**</ept> section."
+    },
+    {
+      "pos": [
+        3970,
+        4064
+      ],
+      "content": "In the <bpt id=\"p1\">**</bpt>Cloud<ept id=\"p1\">**</ept> section, find <bpt id=\"p2\">**</bpt>Add Azure Virtual Machine Template<ept id=\"p2\">**</ept>, and then click <bpt id=\"p3\">**</bpt>Add<ept id=\"p3\">**</ept>."
+    },
+    {
+      "content": "add vm template",
+      "pos": [
+        4072,
+        4087
+      ]
+    },
+    {
+      "content": "This will show the fields where you enter details about the template you are creating.",
+      "pos": [
+        4162,
+        4248
+      ]
+    },
+    {
+      "content": "blank general configuration",
+      "pos": [
+        4256,
+        4283
+      ]
+    },
+    {
+      "content": "In the <bpt id=\"p1\">**</bpt>Name<ept id=\"p1\">**</ept> box, enter an Azure cloud service name.",
+      "pos": [
+        4384,
+        4439
+      ]
+    },
+    {
+      "content": "If the name you entered refers to an existing cloud service, the virtual machine will be provisioned in that service.",
+      "pos": [
+        4440,
+        4557
+      ]
+    },
+    {
+      "content": "Otherwise, Azure will create a new one.",
+      "pos": [
+        4558,
+        4597
+      ]
+    },
+    {
+      "content": "In the <bpt id=\"p1\">**</bpt>Description<ept id=\"p1\">**</ept> box, enter text that describes the template you are creating.",
+      "pos": [
+        4601,
+        4685
+      ]
+    },
+    {
+      "content": "This is only for your records and is not used in provisioning a virtual machine.",
+      "pos": [
+        4686,
+        4766
+      ]
+    },
+    {
+      "content": "The <bpt id=\"p1\">**</bpt>Labels<ept id=\"p1\">**</ept> box is used to identify the template you are creating and is subsequently used to reference the template when creating a Jenkins job.",
+      "pos": [
+        4770,
+        4918
+      ]
+    },
+    {
+      "content": "For our purpose, enter <bpt id=\"p1\">**</bpt>linux<ept id=\"p1\">**</ept> in this box.",
+      "pos": [
+        4919,
+        4964
+      ]
+    },
+    {
+      "pos": [
+        4968,
+        5051
+      ],
+      "content": "In the <bpt id=\"p1\">**</bpt>Region<ept id=\"p1\">**</ept> list, click the region where the virtual machine will be created."
+    },
+    {
+      "pos": [
+        5055,
+        5120
+      ],
+      "content": "In the <bpt id=\"p1\">**</bpt>Virtual Machine Size<ept id=\"p1\">**</ept> list, click the appropriate size."
+    },
+    {
+      "content": "In the <bpt id=\"p1\">**</bpt>Storage Account Name<ept id=\"p1\">**</ept> box, specify a storage account where the virtual machine will be created.",
+      "pos": [
+        5125,
+        5230
+      ]
+    },
+    {
+      "content": "Make sure that it is in the same region as the cloud service you'll be using.",
+      "pos": [
+        5231,
+        5308
+      ]
+    },
+    {
+      "content": "If you want new storage to be created, you can leave this box blank.",
+      "pos": [
+        5309,
+        5377
+      ]
+    },
+    {
+      "content": "Retention time specifies the number of minutes before Jenkins deletes an idle slave.",
+      "pos": [
+        5382,
+        5466
+      ]
+    },
+    {
+      "content": "Leave this at the default value of 60.",
+      "pos": [
+        5467,
+        5505
+      ]
+    },
+    {
+      "content": "You can also choose to shut down the slave instead of deleting it when it's idle.",
+      "pos": [
+        5506,
+        5587
+      ]
+    },
+    {
+      "content": "To do that, select the <bpt id=\"p1\">**</bpt>Shutdown Only (Do Not Delete) After Retention Time<ept id=\"p1\">**</ept> check box.",
+      "pos": [
+        5588,
+        5676
+      ]
+    },
+    {
+      "content": "In the <bpt id=\"p1\">**</bpt>Usage<ept id=\"p1\">**</ept> list, click the appropriate condition when this slave node will be used.",
+      "pos": [
+        5681,
+        5770
+      ]
+    },
+    {
+      "content": "For now, click <bpt id=\"p1\">**</bpt>Utilize this node as much as possible<ept id=\"p1\">**</ept>.",
+      "pos": [
+        5771,
+        5828
+      ]
+    },
+    {
+      "content": "At this point, your form should look somewhat similar to this:",
+      "pos": [
+        5834,
+        5896
+      ]
+    },
+    {
+      "content": "checkpoint general template config",
+      "pos": [
+        5904,
+        5938
+      ]
+    },
+    {
+      "content": "The next step is to provide details about the operating system image that you want your slave to be created in.",
+      "pos": [
+        6034,
+        6145
+      ]
+    },
+    {
+      "content": "In the <bpt id=\"p1\">**</bpt>Image Family or Id<ept id=\"p1\">**</ept> box, you have to specify what system image will be installed on your virtual machine.",
+      "pos": [
+        6151,
+        6266
+      ]
+    },
+    {
+      "content": "You can either select from a list of image families or specify a custom image.",
+      "pos": [
+        6267,
+        6345
+      ]
+    },
+    {
+      "content": "If you want to select from a list of image families, enter the first character (case-sensitive) of the image family name.",
+      "pos": [
+        6351,
+        6472
+      ]
+    },
+    {
+      "content": "For instance, typing <bpt id=\"p1\">**</bpt>U<ept id=\"p1\">**</ept> will bring up a list of Ubuntu Server families.",
+      "pos": [
+        6473,
+        6547
+      ]
+    },
+    {
+      "content": "After you select from the list, Jenkins will use the latest version of that system image from that family when provisioning your virtual machine.",
+      "pos": [
+        6548,
+        6693
+      ]
+    },
+    {
+      "content": "OS Image list sample",
+      "pos": [
+        6701,
+        6721
+      ]
+    },
+    {
+      "content": "If you have a custom image that you want to use instead, enter the name of that custom image.",
+      "pos": [
+        6802,
+        6895
+      ]
+    },
+    {
+      "content": "Custom image names are not shown in a list, so you have to ensure that the name is entered correctly.",
+      "pos": [
+        6896,
+        6997
+      ]
+    },
+    {
+      "pos": [
+        7003,
+        7113
+      ],
+      "content": "For this tutorial, type <bpt id=\"p1\">**</bpt>U<ept id=\"p1\">**</ept> to bring up a list of Ubuntu images, and then click <bpt id=\"p2\">**</bpt>Ubuntu Server 14.04 LTS<ept id=\"p2\">**</ept>."
+    },
+    {
+      "pos": [
+        7119,
+        7164
+      ],
+      "content": "In the <bpt id=\"p1\">**</bpt>Launch Method<ept id=\"p1\">**</ept> list, click <bpt id=\"p2\">**</bpt>SSH<ept id=\"p2\">**</ept>."
+    },
+    {
+      "pos": [
+        7169,
+        7231
+      ],
+      "content": "Copy the script below and paste it in the <bpt id=\"p1\">**</bpt>Init Script<ept id=\"p1\">**</ept> box."
+    },
+    {
+      "content": "The init script will be executed after the virtual machine is created.",
+      "pos": [
+        7627,
+        7697
+      ]
+    },
+    {
+      "content": "In this example, the script installs Java, Git, and ant.",
+      "pos": [
+        7698,
+        7754
+      ]
+    },
+    {
+      "pos": [
+        7760,
+        7907
+      ],
+      "content": "In the <bpt id=\"p1\">**</bpt>Username<ept id=\"p1\">**</ept> and <bpt id=\"p2\">**</bpt>Password<ept id=\"p2\">**</ept> boxes, enter your preferred values for the administrator account that will be created on your virtual machine."
+    },
+    {
+      "pos": [
+        7912,
+        7989
+      ],
+      "content": "Click <bpt id=\"p1\">**</bpt>Verify Template<ept id=\"p1\">**</ept> to check if the parameters you specified are valid."
+    },
+    {
+      "pos": [
+        7994,
+        8009
+      ],
+      "content": "Click <bpt id=\"p1\">**</bpt>Save<ept id=\"p1\">**</ept>."
+    },
+    {
+      "content": "To create a Jenkins job that runs on a slave node on Azure",
+      "pos": [
+        8015,
+        8073
+      ]
+    },
+    {
+      "content": "In this section, you'll be creating a Jenkins task that will run on a slave node on Azure.",
+      "pos": [
+        8075,
+        8165
+      ]
+    },
+    {
+      "content": "You'll need to have your own project up on GitHub to follow along.",
+      "pos": [
+        8166,
+        8232
+      ]
+    },
+    {
+      "pos": [
+        8237,
+        8282
+      ],
+      "content": "In the Jenkins dashboard, click <bpt id=\"p1\">**</bpt>New Item<ept id=\"p1\">**</ept>."
+    },
+    {
+      "content": "Enter a name for the task you are creating.",
+      "pos": [
+        8286,
+        8329
+      ]
+    },
+    {
+      "pos": [
+        8333,
+        8383
+      ],
+      "content": "For the project type, click <bpt id=\"p1\">**</bpt>Freestyle project<ept id=\"p1\">**</ept>."
+    },
+    {
+      "pos": [
+        8387,
+        8400
+      ],
+      "content": "Click <bpt id=\"p1\">**</bpt>Ok<ept id=\"p1\">**</ept>."
+    },
+    {
+      "pos": [
+        8404,
+        8486
+      ],
+      "content": "In the task configuration page, select <bpt id=\"p1\">**</bpt>Restrict where this project can be run<ept id=\"p1\">**</ept>."
+    },
+    {
+      "content": "In the <bpt id=\"p1\">**</bpt>Label Expression<ept id=\"p1\">**</ept> box, enter <bpt id=\"p2\">**</bpt>linux<ept id=\"p2\">**</ept>.",
+      "pos": [
+        8490,
+        8539
+      ]
+    },
+    {
+      "content": "In the previous section, we created a slave template that we named <bpt id=\"p1\">**</bpt>linux<ept id=\"p1\">**</ept>, which is what we're specifying here.",
+      "pos": [
+        8540,
+        8654
+      ]
+    },
+    {
+      "pos": [
+        8658,
+        8738
+      ],
+      "content": "In the <bpt id=\"p1\">**</bpt>Build<ept id=\"p1\">**</ept> section, click <bpt id=\"p2\">**</bpt>Add build step<ept id=\"p2\">**</ept> and select <bpt id=\"p3\">**</bpt>Execute shell<ept id=\"p3\">**</ept>."
+    },
+    {
+      "pos": [
+        8742,
+        8952
+      ],
+      "content": "Edit the following script, replacing <bpt id=\"p1\">**</bpt>(your GitHub account name)<ept id=\"p1\">**</ept>, <bpt id=\"p2\">**</bpt>(your project name)<ept id=\"p2\">**</ept>, and <bpt id=\"p3\">**</bpt>(your project directory)<ept id=\"p3\">**</ept> with appropriate values, and paste the edited script in the text area that appears."
+    },
+    {
+      "pos": [
+        9382,
+        9397
+      ],
+      "content": "Click <bpt id=\"p1\">**</bpt>Save<ept id=\"p1\">**</ept>."
+    },
+    {
+      "content": "In the Jenkins dashboard, hover over the task you just created and click the drop-down arrow to display task options.",
+      "pos": [
+        9402,
+        9519
+      ]
+    },
+    {
+      "pos": [
+        9524,
+        9544
+      ],
+      "content": "Click <bpt id=\"p1\">**</bpt>Build now<ept id=\"p1\">**</ept>."
+    },
+    {
+      "content": "Jenkins will then create a slave node by using the template created in the previous section and execute the script you specified in the build step for this task.",
+      "pos": [
+        9546,
+        9707
+      ]
+    }
+  ],
+  "content": "<properties\n    pageTitle=\"How to use the Azure slave plug-in with Jenkins Continuous Integration | Microsoft Azure\"\n    description=\"Describes how to use the Azure slave plug-in with Jenkins Continuous Integration.\"\n    services=\"storage\"\n    documentationCenter=\"java\"\n    authors=\"rmcmurray\"\n    manager=\"wpickett\"\n    editor=\"jimbe\" />\n\n<tags\n    ms.service=\"storage\"\n    ms.workload=\"storage\"\n    ms.tgt_pltfrm=\"na\"\n    ms.devlang=\"Java\"\n    ms.topic=\"article\"\n    ms.date=\"09/01/2015\"\n    ms.author=\"v-dedomi\"/>\n\n# How to use the Azure slave plug-in with Jenkins Continuous Integration\n\nYou can use the Azure slave plug-in for Jenkins to provision slave nodes on Azure when running distributed builds.\n\n## To install the Azure slave plug-in\n1. In the Jenkins dashboard, click **Manage Jenkins**.\n2. On the **Manage Jenkins** page, click **Manage Plugins**.\n3. Click the **Available** tab.\n4. In the filter field above the list of available plug-ins, type **Azure** to limit the list to relevant plug-ins.\n\n    If you opt to scroll through the list of available plug-ins, you will find the Azure slave plug-in under the **Cluster Management and Distributed Build** section.\n\n5. Select the **Azure Slave Plugin** check box.\n6. Click **Install without restart** or **Download now and install after restart**.\n\nNow that the plug-in is installed, the next steps are to configure the plug-in with your Azure subscription profile and to create a template that will be used in creating the virtual machine for the slave node.\n\n\n## To configure the Azure slave plug-in with your subscription profile\n\nA subscription profile, also referred to as publish settings, is an XML file that contains secure credentials and some additional information you'll need to work with Azure in your development environment. To configure the Azure slave plug-in, you need:\n\n* your subscription id\n* a management certificate for your subscription\n\nThese can be found in your subscription profile. If you don't have a copy of your subscription profile, you can download it from [the subscription site](https://manage.windowsazure.com/publishsettings/Index?SchemaVersion=2.0). Below is an example of a subscription profile.\n\n    <?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n        <PublishData>\r\n        <PublishProfile SchemaVersion=\"2.0\" PublishMethod=\"AzureServiceManagementAPI\">\r\n        <Subscription\r\n            ServiceManagementUrl=\"https://management.core.windows.net\"\r\n            Id=\"<Subscription ID value>\"\r\n            Name=\"Pay-As-You-Go\"\n            ManagementCertificate=\"<Management certificate value>\" />\r\n        </PublishProfile>\r\n    </PublishData>\n\nAfter you have your subscription profile, follow these steps to configure the Azure slave plug-in:\n\n1. In the Jenkins dashboard, click **Manage Jenkins**.\n2. Click **Configure System**.\n3. Scroll down the page to find the **Cloud** section.\n4. Click **Add new cloud > Microsoft Azure**.\n\n    ![cloud section](./media/azure-slave-plugin-for-jenkins/jenkins-cloud-section.png)\n\n    This will show the fields where you need to enter your subscription details.\n\n    ![subscription configuration](./media/azure-slave-plugin-for-jenkins/jenkins-account-configuration-fields.png)\n\n5. Copy the subscription id and management certificate values from your subscription profile and paste them in the appropriate fields.\n\n    When copying the subscription id and management certificate, do not include the quotes that enclose the values.\n\n6. Click **Verify Configuration**.\n7. When the configuration is verified to be correct, click **Save**.\n\n## To set up a virtual machine template for the Azure slave plug-in\n\nA virtual machine template defines the parameters that the plug-in will use to create a slave node on Azure. In the following steps, we'll create a template for an Ubuntu virtual machine.\n\n1. In the Jenkins dashboard, click **Manage Jenkins**.\n2. Click **Configure System**.\n3. Scroll down the page to find the **Cloud** section.\r\n4. In the **Cloud** section, find **Add Azure Virtual Machine Template**, and then click **Add**.\n\n    ![add vm template](./media/azure-slave-plugin-for-jenkins/jenkins-add-vm-template.png)\n\n    This will show the fields where you enter details about the template you are creating.\n\n    ![blank general configuration](./media/azure-slave-plugin-for-jenkins/jenkins-slave-template-general-configuration-blank.png)\n\n5. In the **Name** box, enter an Azure cloud service name. If the name you entered refers to an existing cloud service, the virtual machine will be provisioned in that service. Otherwise, Azure will create a new one.\r\n6. In the **Description** box, enter text that describes the template you are creating. This is only for your records and is not used in provisioning a virtual machine.\n7. The **Labels** box is used to identify the template you are creating and is subsequently used to reference the template when creating a Jenkins job. For our purpose, enter **linux** in this box.\n8. In the **Region** list, click the region where the virtual machine will be created.\n9. In the **Virtual Machine Size** list, click the appropriate size.\n10. In the **Storage Account Name** box, specify a storage account where the virtual machine will be created. Make sure that it is in the same region as the cloud service you'll be using. If you want new storage to be created, you can leave this box blank.\n11. Retention time specifies the number of minutes before Jenkins deletes an idle slave. Leave this at the default value of 60. You can also choose to shut down the slave instead of deleting it when it's idle. To do that, select the **Shutdown Only (Do Not Delete) After Retention Time** check box.\n12. In the **Usage** list, click the appropriate condition when this slave node will be used. For now, click **Utilize this node as much as possible**.\n\n    At this point, your form should look somewhat similar to this:\n\n    ![checkpoint general template config](./media/azure-slave-plugin-for-jenkins/jenkins-slave-template-general-configuration.png)\n\n    The next step is to provide details about the operating system image that you want your slave to be created in.\n\n13. In the **Image Family or Id** box, you have to specify what system image will be installed on your virtual machine. You can either select from a list of image families or specify a custom image.\n\n    If you want to select from a list of image families, enter the first character (case-sensitive) of the image family name. For instance, typing **U** will bring up a list of Ubuntu Server families. After you select from the list, Jenkins will use the latest version of that system image from that family when provisioning your virtual machine.\n\n    ![OS Image list sample](./media/azure-slave-plugin-for-jenkins/jenkins-os-family-list-sample.png)\n\n    If you have a custom image that you want to use instead, enter the name of that custom image. Custom image names are not shown in a list, so you have to ensure that the name is entered correctly.\n\n    For this tutorial, type **U** to bring up a list of Ubuntu images, and then click **Ubuntu Server 14.04 LTS**.\n\n14. In the **Launch Method** list, click **SSH**.\n15. Copy the script below and paste it in the **Init Script** box.\n\n        # Install Java\n        sudo apt-get -y update\r\n        sudo apt-get install -y openjdk-7-jdk\r\n        sudo apt-get -y update --fix-missing\r\n        sudo apt-get install -y openjdk-7-jdk\r\n\r\n        # Install git\r\n        sudo apt-get install -y git\r\n\r\n        #Install ant\r\n        sudo apt-get install -y ant\r\n        sudo apt-get -y update --fix-missing\r\n        sudo apt-get install -y ant\n\n    The init script will be executed after the virtual machine is created. In this example, the script installs Java, Git, and ant.\n\n16. In the **Username** and **Password** boxes, enter your preferred values for the administrator account that will be created on your virtual machine.\n17. Click **Verify Template** to check if the parameters you specified are valid.\n18. Click **Save**.\n\n\n## To create a Jenkins job that runs on a slave node on Azure\n\nIn this section, you'll be creating a Jenkins task that will run on a slave node on Azure. You'll need to have your own project up on GitHub to follow along.\n\n1. In the Jenkins dashboard, click **New Item**.\n2. Enter a name for the task you are creating.\n3. For the project type, click **Freestyle project**.\n4. Click **Ok**.\n5. In the task configuration page, select **Restrict where this project can be run**.\n6. In the **Label Expression** box, enter **linux**. In the previous section, we created a slave template that we named **linux**, which is what we're specifying here.\n7. In the **Build** section, click **Add build step** and select **Execute shell**.\n8. Edit the following script, replacing **(your GitHub account name)**, **(your project name)**, and **(your project directory)** with appropriate values, and paste the edited script in the text area that appears.\n\n        # Clone from git repo\r\n        currentDir=\"$PWD\"\r\n        if [ -e (your project directory) ]; then\r\n            cd (your project directory)\r\n            git pull origin master\r\n        else\r\n            git clone https://github.com/(your GitHub account name)/(your project name).git\r\n        fi\n\n        # change directory to project\r\n        cd $currentDir/(your project directory)\r\n\r\n        #Execute build task\r\n        ant\n\n9. Click **Save**.\n10. In the Jenkins dashboard, hover over the task you just created and click the drop-down arrow to display task options.\n11. Click **Build now**.\n\nJenkins will then create a slave node by using the template created in the previous section and execute the script you specified in the build step for this task.\n"
+}
