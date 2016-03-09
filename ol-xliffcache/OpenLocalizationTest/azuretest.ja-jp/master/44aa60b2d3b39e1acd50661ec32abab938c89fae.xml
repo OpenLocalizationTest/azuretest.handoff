@@ -1,2116 +1,257 @@
-﻿<markdown_skeleton_root>
-  <block_element>
-    <ArrayOfMarkdownBlockBase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <MarkdownBlockBase
-        xsi:type="MarkdownAzureMetadataBlock"
-        item_id="8a669e7e-4b27-4738-8a87-bae051373370"
-        item_type="AzureMetadata"
-        item_footer="footer_not_set"
-        trans_unit_id="8a669e7e-4b27-4738-8a87-bae051373370">
-        <LocalizeItemList>
-          <MarkdownInternalXmlItem
-            internal_item_id="698b8386-96c2-405c-bdf3-e8bc59dc71a3"
-            trans_unit_id="101"
-            internal_item_type="Xml">
-            <internal_items />
-          </MarkdownInternalXmlItem>
-          <MarkdownInternalXmlItem
-            internal_item_id="8a77d99b-a8ce-49aa-9802-26e1596eed4e"
-            trans_unit_id="102"
-            internal_item_type="Xml">
-            <internal_items />
-          </MarkdownInternalXmlItem>
-        </LocalizeItemList>
-        <ItemValue>&lt;properties
-    urlDisplayName="How to connect to an Azure SQL database using SSMS"
-    pageTitle="698b8386-96c2-405c-bdf3-e8bc59dc71a3"
-    metaKeywords=""
-    description="8a77d99b-a8ce-49aa-9802-26e1596eed4e"
-    metaCanonical=""
-    services="sql-database"
-    documentationCenter=""
-    title="How to connect to an Azure SQL database using SSMS"
-    authors="sidneyh" solutions=""
-    manager="jhubbard" editor="" /&gt;
-
-&lt;tags
-    ms.service="sql-database"
-    ms.workload="data-management"
-    ms.tgt_pltfrm="na"
-    ms.devlang="na"
-    ms.topic="get-started-article"
-    ms.date="07/15/2015"
-    ms.author="sidneyh" /&gt;
-
-</ItemValue>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownHeaderBlock"
-        item_id="40257e0f-b0f9-464a-a3f8-4aa8c173db63"
-        item_type="Header"
-        item_footer="footer_not_set"
-        trans_unit_id="40257e0f-b0f9-464a-a3f8-4aa8c173db63">
-        <segment
-          trans_unit_id="103">
-          <SegmentId>9f127200-df4b-47f2-bfbd-80231ba2e2e8</SegmentId>
-          <InternalNormalItem
-            internal_item_id="1"
-            internal_item_parent_id="103"
-            trans_unit_id="103-1"
-            internal_item_type="Normal">
-            <internal_items />
-          </InternalNormalItem>
-        </segment>
-        <header_type>Star</header_type>
-        <header_level>1</header_level>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownParagraphBlock"
-        item_id="0f60f441-f91e-4135-b2bd-ca95c55c459b"
-        item_type="NormalParagraph"
-        item_footer=""
-        trans_unit_id="0f60f441-f91e-4135-b2bd-ca95c55c459b">
-        <Lines>
-          <MarkdownLine>
-            <LineId>f73766d5-c7bc-4f78-85cb-bff35679eeb0</LineId>
-            <paragraph_segments>
-              <MarkdownSegment
-                trans_unit_id="104">
-                <SegmentId>a474b52b-4569-4c55-a664-5bb6fbc4ff85</SegmentId>
-                <InternalNormalItem
-                  internal_item_id="1"
-                  internal_item_parent_id="104"
-                  trans_unit_id="104-1"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-              </MarkdownSegment>
-            </paragraph_segments>
-            <PrefixWSLength>0</PrefixWSLength>
-            <SuffixWSLength>0</SuffixWSLength>
-          </MarkdownLine>
-        </Lines>
-        <paragraph_segments>
-          <MarkdownSegment
-            trans_unit_id="104">
-            <SegmentId>a474b52b-4569-4c55-a664-5bb6fbc4ff85</SegmentId>
-            <InternalNormalItem
-              internal_item_id="1"
-              internal_item_parent_id="104"
-              trans_unit_id="104-1"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-          </MarkdownSegment>
-        </paragraph_segments>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownHeaderBlock"
-        item_id="e1f46a02-a800-4022-99bb-f1a6ef176771"
-        item_type="Header"
-        item_footer="footer_not_set"
-        trans_unit_id="e1f46a02-a800-4022-99bb-f1a6ef176771">
-        <segment
-          trans_unit_id="105">
-          <SegmentId>114cb5e4-7cb2-47d2-a07e-c5348f8858eb</SegmentId>
-          <InternalNormalItem
-            internal_item_id="1"
-            internal_item_parent_id="105"
-            trans_unit_id="105-1"
-            internal_item_type="Normal">
-            <internal_items />
-          </InternalNormalItem>
-        </segment>
-        <header_type>Star</header_type>
-        <header_level>2</header_level>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownListBlock"
-        item_id="86a41ff9-0be1-458d-a8af-8d56e54fa31b"
-        item_type="List"
-        item_footer=""
-        trans_unit_id="86a41ff9-0be1-458d-a8af-8d56e54fa31b">
-        <inner_list_items>
-          <ListItem>
-            <MarkdownParagraphBlock
-              item_id="467db61d-60ed-45c2-a4f9-36bdddbdb446"
-              item_type="NormalParagraph"
-              item_footer="footer_not_set"
-              trans_unit_id="467db61d-60ed-45c2-a4f9-36bdddbdb446">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>920e70f2-53ae-4a96-8d57-e9a19f9ddd00</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="106">
-                      <SegmentId>58a1c1fa-8b41-4046-b424-e4c4d83fd581</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="106"
-                        trans_unit_id="106-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                      <LinkItem
-                        internal_item_id="2"
-                        internal_item_parent_id="106"
-                        trans_unit_id="106-2"
-                        internal_item_type="Link">
-                        <internal_items />
-                        <internal_link_type>Inline</internal_link_type>
-                        <internal_link_text>Getting Started with Microsoft Azure SQL Database</internal_link_text>
-                        <internal_link_url>sql-database-get-started.md</internal_link_url>
-                        <internal_link_title />
-                      </LinkItem>
-                      <InternalNormalItem
-                        internal_item_id="3"
-                        internal_item_parent_id="106"
-                        trans_unit_id="106-3"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="106">
-                  <SegmentId>58a1c1fa-8b41-4046-b424-e4c4d83fd581</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="106"
-                    trans_unit_id="106-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                  <LinkItem
-                    internal_item_id="2"
-                    internal_item_parent_id="106"
-                    trans_unit_id="106-2"
-                    internal_item_type="Link">
-                    <internal_items />
-                    <internal_link_type>Inline</internal_link_type>
-                    <internal_link_text>Getting Started with Microsoft Azure SQL Database</internal_link_text>
-                    <internal_link_url>sql-database-get-started.md</internal_link_url>
-                    <internal_link_title />
-                  </LinkItem>
-                  <InternalNormalItem
-                    internal_item_id="3"
-                    internal_item_parent_id="106"
-                    trans_unit_id="106-3"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <Identifier>*</Identifier>
-            <IndentsLength>
-              <int>0</int>
-            </IndentsLength>
-          </ListItem>
-        </inner_list_items>
-        <ListType>Charactor</ListType>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownHeaderBlock"
-        item_id="2abcc221-13ba-48f7-a0ba-fce5ac9eca68"
-        item_type="Header"
-        item_footer="footer_not_set"
-        trans_unit_id="2abcc221-13ba-48f7-a0ba-fce5ac9eca68">
-        <segment
-          trans_unit_id="107">
-          <SegmentId>814c5d55-679f-4564-83c8-b3e55ef74fe0</SegmentId>
-          <InternalNormalItem
-            internal_item_id="1"
-            internal_item_parent_id="107"
-            trans_unit_id="107-1"
-            internal_item_type="Normal">
-            <internal_items />
-          </InternalNormalItem>
-        </segment>
-        <header_type>Star</header_type>
-        <header_level>2</header_level>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownListBlock"
-        item_id="ee066c90-f21a-4eab-a10f-67eea8fdd99f"
-        item_type="List"
-        item_footer="&#xA;"
-        trans_unit_id="ee066c90-f21a-4eab-a10f-67eea8fdd99f">
-        <inner_list_items>
-          <ListItem>
-            <MarkdownParagraphBlock
-              item_id="c9402086-ef42-48e0-b0cc-33c9fb5dd207"
-              item_type="NormalParagraph"
-              item_footer=""
-              trans_unit_id="c9402086-ef42-48e0-b0cc-33c9fb5dd207">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>6f57716d-0f3a-47b3-a3b9-4cfdec7b4ebf</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="108">
-                      <SegmentId>e57aa33c-6f4f-485d-b8b3-4569bd227336</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="108"
-                        trans_unit_id="108-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                      <LinkItem
-                        internal_item_id="2"
-                        internal_item_parent_id="108"
-                        trans_unit_id="108-2"
-                        internal_item_type="Link">
-                        <internal_items />
-                        <internal_link_type>Inline</internal_link_type>
-                        <internal_link_text>SQL Server 2014 Express</internal_link_text>
-                        <internal_link_url>http://www.microsoft.com/download/details.aspx?id=42299</internal_link_url>
-                        <internal_link_title />
-                      </LinkItem>
-                      <InternalNormalItem
-                        internal_item_id="3"
-                        internal_item_parent_id="108"
-                        trans_unit_id="108-3"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                      <MarkdownInternalBoldItem
-                        internal_item_id="4"
-                        internal_item_parent_id="108"
-                        trans_unit_id="108-4"
-                        internal_item_type="Bold">
-                        <internal_items />
-                        <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                      </MarkdownInternalBoldItem>
-                      <InternalNormalItem
-                        internal_item_id="5"
-                        internal_item_parent_id="108"
-                        trans_unit_id="108-5"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="108">
-                  <SegmentId>e57aa33c-6f4f-485d-b8b3-4569bd227336</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="108"
-                    trans_unit_id="108-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                  <LinkItem
-                    internal_item_id="2"
-                    internal_item_parent_id="108"
-                    trans_unit_id="108-2"
-                    internal_item_type="Link">
-                    <internal_items />
-                    <internal_link_type>Inline</internal_link_type>
-                    <internal_link_text>SQL Server 2014 Express</internal_link_text>
-                    <internal_link_url>http://www.microsoft.com/download/details.aspx?id=42299</internal_link_url>
-                    <internal_link_title />
-                  </LinkItem>
-                  <InternalNormalItem
-                    internal_item_id="3"
-                    internal_item_parent_id="108"
-                    trans_unit_id="108-3"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                  <MarkdownInternalBoldItem
-                    internal_item_id="4"
-                    internal_item_parent_id="108"
-                    trans_unit_id="108-4"
-                    internal_item_type="Bold">
-                    <internal_items />
-                    <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                  </MarkdownInternalBoldItem>
-                  <InternalNormalItem
-                    internal_item_id="5"
-                    internal_item_parent_id="108"
-                    trans_unit_id="108-5"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <MarkdownParagraphBlock
-              item_id="588cad54-aa4c-48ba-a3e6-9d4b868e28f1"
-              item_type="NormalParagraph"
-              item_footer="footer_not_set"
-              trans_unit_id="588cad54-aa4c-48ba-a3e6-9d4b868e28f1">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>8174a9e5-ff9c-4af5-81d6-4e6775af8659</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="109">
-                      <SegmentId>f32ea0ce-9dc3-4e53-aea5-bb3419d2038c</SegmentId>
-                      <ImageItem
-                        internal_item_id="1"
-                        internal_item_parent_id="109"
-                        trans_unit_id="109-1"
-                        internal_item_type="Image">
-                        <internal_items />
-                        <internal_Image_type>Reference</internal_Image_type>
-                        <internal_link_text>MgtmtStudio32BIT or MgmtStudio64BIT</internal_link_text>
-                        <internal_link_id>1</internal_link_id>
-                      </ImageItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="109">
-                  <SegmentId>f32ea0ce-9dc3-4e53-aea5-bb3419d2038c</SegmentId>
-                  <ImageItem
-                    internal_item_id="1"
-                    internal_item_parent_id="109"
-                    trans_unit_id="109-1"
-                    internal_item_type="Image">
-                    <internal_items />
-                    <internal_Image_type>Reference</internal_Image_type>
-                    <internal_link_text>MgtmtStudio32BIT or MgmtStudio64BIT</internal_link_text>
-                    <internal_link_id>1</internal_link_id>
-                  </ImageItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <Identifier>1.</Identifier>
-            <IndentsLength>
-              <int>0</int>
-              <int>3</int>
-            </IndentsLength>
-          </ListItem>
-          <ListItem>
-            <MarkdownParagraphBlock
-              item_id="4eb7202c-ce33-4ecc-8ff8-4a3cd86657d5"
-              item_type="NormalParagraph"
-              item_footer="footer_not_set"
-              trans_unit_id="4eb7202c-ce33-4ecc-8ff8-4a3cd86657d5">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>e6c35f8f-90f9-4d8a-90f9-85cef3bd8634</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="110">
-                      <SegmentId>42e26db9-46c4-4d65-bc7a-92a2d04f7143</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="110"
-                        trans_unit_id="110-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>2</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="110">
-                  <SegmentId>42e26db9-46c4-4d65-bc7a-92a2d04f7143</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="110"
-                    trans_unit_id="110-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <Identifier>2.</Identifier>
-            <IndentsLength>
-              <int>0</int>
-            </IndentsLength>
-          </ListItem>
-          <ListItem>
-            <MarkdownParagraphBlock
-              item_id="054aba0b-2bba-4b7a-b2f0-12390cd48222"
-              item_type="NormalParagraph"
-              item_footer="footer_not_set"
-              trans_unit_id="054aba0b-2bba-4b7a-b2f0-12390cd48222">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>c797cd44-22f0-49d6-9e63-0600cf4ba783</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="111">
-                      <SegmentId>c5258a95-b1ae-4011-a5d9-07aa5706d97d</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="111"
-                        trans_unit_id="111-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>2</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="111">
-                  <SegmentId>c5258a95-b1ae-4011-a5d9-07aa5706d97d</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="111"
-                    trans_unit_id="111-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <Identifier>3.</Identifier>
-            <IndentsLength>
-              <int>0</int>
-            </IndentsLength>
-          </ListItem>
-        </inner_list_items>
-        <ListType>Number</ListType>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownHeaderBlock"
-        item_id="535a18a8-c242-4c26-be76-d44b295cf35c"
-        item_type="Header"
-        item_footer="footer_not_set"
-        trans_unit_id="535a18a8-c242-4c26-be76-d44b295cf35c">
-        <segment
-          trans_unit_id="112">
-          <SegmentId>dae4aa3c-1b85-420c-b8c7-160c4147f22e</SegmentId>
-          <InternalNormalItem
-            internal_item_id="1"
-            internal_item_parent_id="112"
-            trans_unit_id="112-1"
-            internal_item_type="Normal">
-            <internal_items />
-          </InternalNormalItem>
-        </segment>
-        <header_type>Star</header_type>
-        <header_level>2</header_level>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownListBlock"
-        item_id="920a6f11-42c7-4ad1-8ea7-150915d6ec17"
-        item_type="List"
-        item_footer=""
-        trans_unit_id="920a6f11-42c7-4ad1-8ea7-150915d6ec17">
-        <inner_list_items>
-          <ListItem>
-            <MarkdownParagraphBlock
-              item_id="f1d9af19-c3a6-4889-b157-74dc7fbe05e2"
-              item_type="NormalParagraph"
-              item_footer="footer_not_set"
-              trans_unit_id="f1d9af19-c3a6-4889-b157-74dc7fbe05e2">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>cfe6ade1-807d-4470-8b19-2d0575afddb0</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="113">
-                      <SegmentId>87959c2d-e2c7-4773-8868-31a2ba170cbc</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="113"
-                        trans_unit_id="113-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="113">
-                  <SegmentId>87959c2d-e2c7-4773-8868-31a2ba170cbc</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="113"
-                    trans_unit_id="113-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <Identifier>1.</Identifier>
-            <IndentsLength>
-              <int>0</int>
-            </IndentsLength>
-          </ListItem>
-          <ListItem>
-            <MarkdownParagraphBlock
-              item_id="2733d703-05cc-4d68-b4b9-3cacd24d2206"
-              item_type="NormalParagraph"
-              item_footer="footer_not_set"
-              trans_unit_id="2733d703-05cc-4d68-b4b9-3cacd24d2206">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>e354b52f-f421-4911-9e06-e39eb73a956e</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="114">
-                      <SegmentId>bd731bfa-b83f-4cef-9d2e-9acdebb8b7c8</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="114"
-                        trans_unit_id="114-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                      <MarkdownInternalBoldItem
-                        internal_item_id="2"
-                        internal_item_parent_id="114"
-                        trans_unit_id="114-2"
-                        internal_item_type="Bold">
-                        <internal_items />
-                        <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                      </MarkdownInternalBoldItem>
-                      <InternalNormalItem
-                        internal_item_id="3"
-                        internal_item_parent_id="114"
-                        trans_unit_id="114-3"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                      <MarkdownInternalBoldItem
-                        internal_item_id="4"
-                        internal_item_parent_id="114"
-                        trans_unit_id="114-4"
-                        internal_item_type="Bold">
-                        <internal_items />
-                        <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                      </MarkdownInternalBoldItem>
-                      <InternalNormalItem
-                        internal_item_id="5"
-                        internal_item_parent_id="114"
-                        trans_unit_id="114-5"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                      <ItalicsItem
-                        internal_item_id="6"
-                        internal_item_parent_id="114"
-                        trans_unit_id="114-6"
-                        internal_item_type="Italics">
-                        <internal_items />
-                        <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                      </ItalicsItem>
-                      <InternalNormalItem
-                        internal_item_id="7"
-                        internal_item_parent_id="114"
-                        trans_unit_id="114-7"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                      <MarkdownInternalBoldItem
-                        internal_item_id="8"
-                        internal_item_parent_id="114"
-                        trans_unit_id="114-8"
-                        internal_item_type="Bold">
-                        <internal_items />
-                        <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                      </MarkdownInternalBoldItem>
-                      <InternalNormalItem
-                        internal_item_id="9"
-                        internal_item_parent_id="114"
-                        trans_unit_id="114-9"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="114">
-                  <SegmentId>bd731bfa-b83f-4cef-9d2e-9acdebb8b7c8</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="114"
-                    trans_unit_id="114-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                  <MarkdownInternalBoldItem
-                    internal_item_id="2"
-                    internal_item_parent_id="114"
-                    trans_unit_id="114-2"
-                    internal_item_type="Bold">
-                    <internal_items />
-                    <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                  </MarkdownInternalBoldItem>
-                  <InternalNormalItem
-                    internal_item_id="3"
-                    internal_item_parent_id="114"
-                    trans_unit_id="114-3"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                  <MarkdownInternalBoldItem
-                    internal_item_id="4"
-                    internal_item_parent_id="114"
-                    trans_unit_id="114-4"
-                    internal_item_type="Bold">
-                    <internal_items />
-                    <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                  </MarkdownInternalBoldItem>
-                  <InternalNormalItem
-                    internal_item_id="5"
-                    internal_item_parent_id="114"
-                    trans_unit_id="114-5"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                  <ItalicsItem
-                    internal_item_id="6"
-                    internal_item_parent_id="114"
-                    trans_unit_id="114-6"
-                    internal_item_type="Italics">
-                    <internal_items />
-                    <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                  </ItalicsItem>
-                  <InternalNormalItem
-                    internal_item_id="7"
-                    internal_item_parent_id="114"
-                    trans_unit_id="114-7"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                  <MarkdownInternalBoldItem
-                    internal_item_id="8"
-                    internal_item_parent_id="114"
-                    trans_unit_id="114-8"
-                    internal_item_type="Bold">
-                    <internal_items />
-                    <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                  </MarkdownInternalBoldItem>
-                  <InternalNormalItem
-                    internal_item_id="9"
-                    internal_item_parent_id="114"
-                    trans_unit_id="114-9"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <Identifier>2.</Identifier>
-            <IndentsLength>
-              <int>0</int>
-            </IndentsLength>
-          </ListItem>
-          <ListItem>
-            <MarkdownParagraphBlock
-              item_id="f546448f-0dc1-4ca5-a445-8ab4018399ac"
-              item_type="NormalParagraph"
-              item_footer="footer_not_set"
-              trans_unit_id="f546448f-0dc1-4ca5-a445-8ab4018399ac">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>1f0547ee-490f-4622-8983-9a32601e403a</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="115">
-                      <SegmentId>2c606e7c-cb00-495b-b90f-e70ccb8b0627</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="115"
-                        trans_unit_id="115-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                      <MarkdownInternalBoldItem
-                        internal_item_id="2"
-                        internal_item_parent_id="115"
-                        trans_unit_id="115-2"
-                        internal_item_type="Bold">
-                        <internal_items />
-                        <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                      </MarkdownInternalBoldItem>
-                      <InternalNormalItem
-                        internal_item_id="3"
-                        internal_item_parent_id="115"
-                        trans_unit_id="115-3"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                      <MarkdownInternalBoldItem
-                        internal_item_id="4"
-                        internal_item_parent_id="115"
-                        trans_unit_id="115-4"
-                        internal_item_type="Bold">
-                        <internal_items />
-                        <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                      </MarkdownInternalBoldItem>
-                      <InternalNormalItem
-                        internal_item_id="5"
-                        internal_item_parent_id="115"
-                        trans_unit_id="115-5"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="115">
-                  <SegmentId>2c606e7c-cb00-495b-b90f-e70ccb8b0627</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="115"
-                    trans_unit_id="115-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                  <MarkdownInternalBoldItem
-                    internal_item_id="2"
-                    internal_item_parent_id="115"
-                    trans_unit_id="115-2"
-                    internal_item_type="Bold">
-                    <internal_items />
-                    <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                  </MarkdownInternalBoldItem>
-                  <InternalNormalItem
-                    internal_item_id="3"
-                    internal_item_parent_id="115"
-                    trans_unit_id="115-3"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                  <MarkdownInternalBoldItem
-                    internal_item_id="4"
-                    internal_item_parent_id="115"
-                    trans_unit_id="115-4"
-                    internal_item_type="Bold">
-                    <internal_items />
-                    <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                  </MarkdownInternalBoldItem>
-                  <InternalNormalItem
-                    internal_item_id="5"
-                    internal_item_parent_id="115"
-                    trans_unit_id="115-5"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <Identifier>3.</Identifier>
-            <IndentsLength>
-              <int>0</int>
-            </IndentsLength>
-          </ListItem>
-          <ListItem>
-            <MarkdownParagraphBlock
-              item_id="5b62df53-9b6b-496b-9d71-fd8f99d1d7bb"
-              item_type="NormalParagraph"
-              item_footer=""
-              trans_unit_id="5b62df53-9b6b-496b-9d71-fd8f99d1d7bb">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>b25a3906-b1d2-411b-bbd1-8028c58f3525</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="116">
-                      <SegmentId>4978e319-0951-4001-94ae-c92602e2a056</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="116"
-                        trans_unit_id="116-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                      <MarkdownInternalBoldItem
-                        internal_item_id="2"
-                        internal_item_parent_id="116"
-                        trans_unit_id="116-2"
-                        internal_item_type="Bold">
-                        <internal_items />
-                        <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                      </MarkdownInternalBoldItem>
-                      <InternalNormalItem
-                        internal_item_id="3"
-                        internal_item_parent_id="116"
-                        trans_unit_id="116-3"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                      <MarkdownInternalBoldItem
-                        internal_item_id="4"
-                        internal_item_parent_id="116"
-                        trans_unit_id="116-4"
-                        internal_item_type="Bold">
-                        <internal_items />
-                        <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                      </MarkdownInternalBoldItem>
-                      <InternalNormalItem
-                        internal_item_id="5"
-                        internal_item_parent_id="116"
-                        trans_unit_id="116-5"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="116">
-                  <SegmentId>4978e319-0951-4001-94ae-c92602e2a056</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="116"
-                    trans_unit_id="116-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                  <MarkdownInternalBoldItem
-                    internal_item_id="2"
-                    internal_item_parent_id="116"
-                    trans_unit_id="116-2"
-                    internal_item_type="Bold">
-                    <internal_items />
-                    <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                  </MarkdownInternalBoldItem>
-                  <InternalNormalItem
-                    internal_item_id="3"
-                    internal_item_parent_id="116"
-                    trans_unit_id="116-3"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                  <MarkdownInternalBoldItem
-                    internal_item_id="4"
-                    internal_item_parent_id="116"
-                    trans_unit_id="116-4"
-                    internal_item_type="Bold">
-                    <internal_items />
-                    <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                  </MarkdownInternalBoldItem>
-                  <InternalNormalItem
-                    internal_item_id="5"
-                    internal_item_parent_id="116"
-                    trans_unit_id="116-5"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <MarkdownParagraphBlock
-              item_id="c1cf5145-0ebe-4b5f-a216-8a3ef1f4ec1f"
-              item_type="NormalParagraph"
-              item_footer="footer_not_set"
-              trans_unit_id="c1cf5145-0ebe-4b5f-a216-8a3ef1f4ec1f">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>1daa5a7c-5651-4705-bce8-f8de83aa47aa</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="117">
-                      <SegmentId>1e9e2be1-ac99-438f-bafe-e3ff86bdaa16</SegmentId>
-                      <ImageItem
-                        internal_item_id="1"
-                        internal_item_parent_id="117"
-                        trans_unit_id="117-1"
-                        internal_item_type="Image">
-                        <internal_items />
-                        <internal_Image_type>Reference</internal_Image_type>
-                        <internal_link_text>Connect to server dialog</internal_link_text>
-                        <internal_link_id>2</internal_link_id>
-                      </ImageItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="117">
-                  <SegmentId>1e9e2be1-ac99-438f-bafe-e3ff86bdaa16</SegmentId>
-                  <ImageItem
-                    internal_item_id="1"
-                    internal_item_parent_id="117"
-                    trans_unit_id="117-1"
-                    internal_item_type="Image">
-                    <internal_items />
-                    <internal_Image_type>Reference</internal_Image_type>
-                    <internal_link_text>Connect to server dialog</internal_link_text>
-                    <internal_link_id>2</internal_link_id>
-                  </ImageItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <Identifier>4.</Identifier>
-            <IndentsLength>
-              <int>0</int>
-              <int>3</int>
-            </IndentsLength>
-          </ListItem>
-          <ListItem>
-            <MarkdownParagraphBlock
-              item_id="56d4ef8f-69b5-4ef7-9d97-434681e2387d"
-              item_type="NormalParagraph"
-              item_footer="footer_not_set"
-              trans_unit_id="56d4ef8f-69b5-4ef7-9d97-434681e2387d">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>dcc73e3e-a73b-44c1-bfb8-0a6b5080907c</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="118">
-                      <SegmentId>60fb4ff7-cf57-40fa-9afc-fe91714f5681</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="118"
-                        trans_unit_id="118-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                      <MarkdownInternalBoldItem
-                        internal_item_id="2"
-                        internal_item_parent_id="118"
-                        trans_unit_id="118-2"
-                        internal_item_type="Bold">
-                        <internal_items />
-                        <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                      </MarkdownInternalBoldItem>
-                      <InternalNormalItem
-                        internal_item_id="3"
-                        internal_item_parent_id="118"
-                        trans_unit_id="118-3"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="118">
-                  <SegmentId>60fb4ff7-cf57-40fa-9afc-fe91714f5681</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="118"
-                    trans_unit_id="118-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                  <MarkdownInternalBoldItem
-                    internal_item_id="2"
-                    internal_item_parent_id="118"
-                    trans_unit_id="118-2"
-                    internal_item_type="Bold">
-                    <internal_items />
-                    <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                  </MarkdownInternalBoldItem>
-                  <InternalNormalItem
-                    internal_item_id="3"
-                    internal_item_parent_id="118"
-                    trans_unit_id="118-3"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <Identifier>5.</Identifier>
-            <IndentsLength>
-              <int>0</int>
-            </IndentsLength>
-          </ListItem>
-          <ListItem>
-            <MarkdownParagraphBlock
-              item_id="ecb61031-2792-4e57-a018-f726a448c39b"
-              item_type="NormalParagraph"
-              item_footer=""
-              trans_unit_id="ecb61031-2792-4e57-a018-f726a448c39b">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>b7e2eddb-17a3-4e8b-94af-e7617af44a5f</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="119">
-                      <SegmentId>2259721a-4105-46f1-9fd3-7609651c3d46</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="119"
-                        trans_unit_id="119-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                      <MarkdownInternalBoldItem
-                        internal_item_id="2"
-                        internal_item_parent_id="119"
-                        trans_unit_id="119-2"
-                        internal_item_type="Bold">
-                        <internal_items />
-                        <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                      </MarkdownInternalBoldItem>
-                      <InternalNormalItem
-                        internal_item_id="3"
-                        internal_item_parent_id="119"
-                        trans_unit_id="119-3"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                      <MarkdownInternalBoldItem
-                        internal_item_id="4"
-                        internal_item_parent_id="119"
-                        trans_unit_id="119-4"
-                        internal_item_type="Bold">
-                        <internal_items />
-                        <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                      </MarkdownInternalBoldItem>
-                      <InternalNormalItem
-                        internal_item_id="5"
-                        internal_item_parent_id="119"
-                        trans_unit_id="119-5"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                      <MarkdownInternalBoldItem
-                        internal_item_id="6"
-                        internal_item_parent_id="119"
-                        trans_unit_id="119-6"
-                        internal_item_type="Bold">
-                        <internal_items />
-                        <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                      </MarkdownInternalBoldItem>
-                      <InternalNormalItem
-                        internal_item_id="7"
-                        internal_item_parent_id="119"
-                        trans_unit_id="119-7"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="119">
-                  <SegmentId>2259721a-4105-46f1-9fd3-7609651c3d46</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="119"
-                    trans_unit_id="119-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                  <MarkdownInternalBoldItem
-                    internal_item_id="2"
-                    internal_item_parent_id="119"
-                    trans_unit_id="119-2"
-                    internal_item_type="Bold">
-                    <internal_items />
-                    <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                  </MarkdownInternalBoldItem>
-                  <InternalNormalItem
-                    internal_item_id="3"
-                    internal_item_parent_id="119"
-                    trans_unit_id="119-3"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                  <MarkdownInternalBoldItem
-                    internal_item_id="4"
-                    internal_item_parent_id="119"
-                    trans_unit_id="119-4"
-                    internal_item_type="Bold">
-                    <internal_items />
-                    <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                  </MarkdownInternalBoldItem>
-                  <InternalNormalItem
-                    internal_item_id="5"
-                    internal_item_parent_id="119"
-                    trans_unit_id="119-5"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                  <MarkdownInternalBoldItem
-                    internal_item_id="6"
-                    internal_item_parent_id="119"
-                    trans_unit_id="119-6"
-                    internal_item_type="Bold">
-                    <internal_items />
-                    <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                  </MarkdownInternalBoldItem>
-                  <InternalNormalItem
-                    internal_item_id="7"
-                    internal_item_parent_id="119"
-                    trans_unit_id="119-7"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <MarkdownParagraphBlock
-              item_id="e7df8d98-5c0d-47e4-b710-884981635c53"
-              item_type="NormalParagraph"
-              item_footer="footer_not_set"
-              trans_unit_id="e7df8d98-5c0d-47e4-b710-884981635c53">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>a41936a1-9729-4194-a0b8-19e0d5290a15</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="120">
-                      <SegmentId>5d045448-1a09-49db-bfde-227c85abeefb</SegmentId>
-                      <ImageItem
-                        internal_item_id="1"
-                        internal_item_parent_id="120"
-                        trans_unit_id="120-1"
-                        internal_item_type="Image">
-                        <internal_items />
-                        <internal_Image_type>Reference</internal_Image_type>
-                        <internal_link_text>Connect to database</internal_link_text>
-                        <internal_link_id>3</internal_link_id>
-                      </ImageItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="120">
-                  <SegmentId>5d045448-1a09-49db-bfde-227c85abeefb</SegmentId>
-                  <ImageItem
-                    internal_item_id="1"
-                    internal_item_parent_id="120"
-                    trans_unit_id="120-1"
-                    internal_item_type="Image">
-                    <internal_items />
-                    <internal_Image_type>Reference</internal_Image_type>
-                    <internal_link_text>Connect to database</internal_link_text>
-                    <internal_link_id>3</internal_link_id>
-                  </ImageItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <Identifier>6.</Identifier>
-            <IndentsLength>
-              <int>0</int>
-              <int>3</int>
-            </IndentsLength>
-          </ListItem>
-        </inner_list_items>
-        <ListType>Number</ListType>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownHeaderBlock"
-        item_id="5125c76d-a9c6-4140-99cd-5c67b912eedb"
-        item_type="Header"
-        item_footer="footer_not_set"
-        trans_unit_id="5125c76d-a9c6-4140-99cd-5c67b912eedb">
-        <segment
-          trans_unit_id="121">
-          <SegmentId>532e7c25-d1e4-4847-bda9-9a9afff1973b</SegmentId>
-          <InternalNormalItem
-            internal_item_id="1"
-            internal_item_parent_id="121"
-            trans_unit_id="121-1"
-            internal_item_type="Normal">
-            <internal_items />
-          </InternalNormalItem>
-        </segment>
-        <header_type>Star</header_type>
-        <header_level>3</header_level>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownParagraphBlock"
-        item_id="a2ceb1e7-ca63-4817-960f-bb5d8957993c"
-        item_type="NormalParagraph"
-        item_footer=""
-        trans_unit_id="a2ceb1e7-ca63-4817-960f-bb5d8957993c">
-        <Lines>
-          <MarkdownLine>
-            <LineId>d62a0bb2-8958-49d1-8f4f-36e74d4c918d</LineId>
-            <paragraph_segments>
-              <MarkdownSegment
-                trans_unit_id="122">
-                <SegmentId>a54c0845-d10f-4548-a3c2-e21fe309484c</SegmentId>
-                <InternalNormalItem
-                  internal_item_id="1"
-                  internal_item_parent_id="122"
-                  trans_unit_id="122-1"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-              </MarkdownSegment>
-              <MarkdownSegment
-                trans_unit_id="123">
-                <SegmentId>e10b64c3-a43f-456b-b0a3-2bc6fee1dc67</SegmentId>
-                <InternalNormalItem
-                  internal_item_id="1"
-                  internal_item_parent_id="123"
-                  trans_unit_id="123-1"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-                <LinkItem
-                  internal_item_id="2"
-                  internal_item_parent_id="123"
-                  trans_unit_id="123-2"
-                  internal_item_type="Link">
-                  <internal_items />
-                  <internal_link_type>Inline</internal_link_type>
-                  <internal_link_text>How to: Configure Firewall Settings (Azure SQL Database)</internal_link_text>
-                  <internal_link_url>https://msdn.microsoft.com/library/azure/jj553530.aspx</internal_link_url>
-                  <internal_link_title />
-                </LinkItem>
-                <InternalNormalItem
-                  internal_item_id="3"
-                  internal_item_parent_id="123"
-                  trans_unit_id="123-3"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-              </MarkdownSegment>
-            </paragraph_segments>
-            <PrefixWSLength>0</PrefixWSLength>
-            <SuffixWSLength>0</SuffixWSLength>
-          </MarkdownLine>
-        </Lines>
-        <paragraph_segments>
-          <MarkdownSegment
-            trans_unit_id="122">
-            <SegmentId>a54c0845-d10f-4548-a3c2-e21fe309484c</SegmentId>
-            <InternalNormalItem
-              internal_item_id="1"
-              internal_item_parent_id="122"
-              trans_unit_id="122-1"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-          </MarkdownSegment>
-          <MarkdownSegment
-            trans_unit_id="123">
-            <SegmentId>e10b64c3-a43f-456b-b0a3-2bc6fee1dc67</SegmentId>
-            <InternalNormalItem
-              internal_item_id="1"
-              internal_item_parent_id="123"
-              trans_unit_id="123-1"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-            <LinkItem
-              internal_item_id="2"
-              internal_item_parent_id="123"
-              trans_unit_id="123-2"
-              internal_item_type="Link">
-              <internal_items />
-              <internal_link_type>Inline</internal_link_type>
-              <internal_link_text>How to: Configure Firewall Settings (Azure SQL Database)</internal_link_text>
-              <internal_link_url>https://msdn.microsoft.com/library/azure/jj553530.aspx</internal_link_url>
-              <internal_link_title />
-            </LinkItem>
-            <InternalNormalItem
-              internal_item_id="3"
-              internal_item_parent_id="123"
-              trans_unit_id="123-3"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-          </MarkdownSegment>
-        </paragraph_segments>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownHeaderBlock"
-        item_id="3a3e4f14-a080-44bf-a6ef-7d5cf7b5bb78"
-        item_type="Header"
-        item_footer="footer_not_set"
-        trans_unit_id="3a3e4f14-a080-44bf-a6ef-7d5cf7b5bb78">
-        <segment
-          trans_unit_id="124">
-          <SegmentId>0cedc166-5e46-4c53-931d-e94bc727b58f</SegmentId>
-          <InternalNormalItem
-            internal_item_id="1"
-            internal_item_parent_id="124"
-            trans_unit_id="124-1"
-            internal_item_type="Normal">
-            <internal_items />
-          </InternalNormalItem>
-        </segment>
-        <header_type>Star</header_type>
-        <header_level>2</header_level>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownListBlock"
-        item_id="3dee16de-3649-4c38-afdd-c5c4dfe8781a"
-        item_type="List"
-        item_footer=""
-        trans_unit_id="3dee16de-3649-4c38-afdd-c5c4dfe8781a">
-        <inner_list_items>
-          <ListItem>
-            <MarkdownParagraphBlock
-              item_id="0cd4039d-1a98-416f-a4de-6c2d3e438888"
-              item_type="NormalParagraph"
-              item_footer="footer_not_set"
-              trans_unit_id="0cd4039d-1a98-416f-a4de-6c2d3e438888">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>ee207560-6f3d-4771-8cfa-dc3efdd6f9c3</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="125">
-                      <SegmentId>12c5cc9a-22fd-45bf-842b-62410e719816</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="125"
-                        trans_unit_id="125-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                      <MarkdownInternalBoldItem
-                        internal_item_id="2"
-                        internal_item_parent_id="125"
-                        trans_unit_id="125-2"
-                        internal_item_type="Bold">
-                        <internal_items />
-                        <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                      </MarkdownInternalBoldItem>
-                      <InternalNormalItem
-                        internal_item_id="3"
-                        internal_item_parent_id="125"
-                        trans_unit_id="125-3"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                      <MarkdownInternalBoldItem
-                        internal_item_id="4"
-                        internal_item_parent_id="125"
-                        trans_unit_id="125-4"
-                        internal_item_type="Bold">
-                        <internal_items />
-                        <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                      </MarkdownInternalBoldItem>
-                      <InternalNormalItem
-                        internal_item_id="5"
-                        internal_item_parent_id="125"
-                        trans_unit_id="125-5"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="125">
-                  <SegmentId>12c5cc9a-22fd-45bf-842b-62410e719816</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="125"
-                    trans_unit_id="125-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                  <MarkdownInternalBoldItem
-                    internal_item_id="2"
-                    internal_item_parent_id="125"
-                    trans_unit_id="125-2"
-                    internal_item_type="Bold">
-                    <internal_items />
-                    <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                  </MarkdownInternalBoldItem>
-                  <InternalNormalItem
-                    internal_item_id="3"
-                    internal_item_parent_id="125"
-                    trans_unit_id="125-3"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                  <MarkdownInternalBoldItem
-                    internal_item_id="4"
-                    internal_item_parent_id="125"
-                    trans_unit_id="125-4"
-                    internal_item_type="Bold">
-                    <internal_items />
-                    <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                  </MarkdownInternalBoldItem>
-                  <InternalNormalItem
-                    internal_item_id="5"
-                    internal_item_parent_id="125"
-                    trans_unit_id="125-5"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <Identifier>1.</Identifier>
-            <IndentsLength>
-              <int>0</int>
-            </IndentsLength>
-          </ListItem>
-          <ListItem>
-            <MarkdownParagraphBlock
-              item_id="3401a38a-ad55-4805-a51c-3615a739e385"
-              item_type="NormalParagraph"
-              item_footer=""
-              trans_unit_id="3401a38a-ad55-4805-a51c-3615a739e385">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>e0ee012e-57ea-41c8-a025-fd2a13ac7fa1</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="126">
-                      <SegmentId>74b360e6-bd95-489b-8183-c9b590c467e8</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="126"
-                        trans_unit_id="126-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                      <MarkdownInternalBoldItem
-                        internal_item_id="2"
-                        internal_item_parent_id="126"
-                        trans_unit_id="126-2"
-                        internal_item_type="Bold">
-                        <internal_items />
-                        <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                      </MarkdownInternalBoldItem>
-                      <InternalNormalItem
-                        internal_item_id="3"
-                        internal_item_parent_id="126"
-                        trans_unit_id="126-3"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="126">
-                  <SegmentId>74b360e6-bd95-489b-8183-c9b590c467e8</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="126"
-                    trans_unit_id="126-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                  <MarkdownInternalBoldItem
-                    internal_item_id="2"
-                    internal_item_parent_id="126"
-                    trans_unit_id="126-2"
-                    internal_item_type="Bold">
-                    <internal_items />
-                    <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                  </MarkdownInternalBoldItem>
-                  <InternalNormalItem
-                    internal_item_id="3"
-                    internal_item_parent_id="126"
-                    trans_unit_id="126-3"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <MarkdownParagraphBlock
-              item_id="cbff36e8-9259-40ce-b075-f057112d3d64"
-              item_type="NormalParagraph"
-              item_footer=""
-              trans_unit_id="cbff36e8-9259-40ce-b075-f057112d3d64">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>3b2ba440-20c2-4006-9ae0-2c2b6102c006</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="127">
-                      <SegmentId>5316ac54-4b69-47e1-88c5-e23b2ac0afc3</SegmentId>
-                      <ImageItem
-                        internal_item_id="1"
-                        internal_item_parent_id="127"
-                        trans_unit_id="127-1"
-                        internal_item_type="Image">
-                        <internal_items />
-                        <internal_Image_type>Reference</internal_Image_type>
-                        <internal_link_text>New query</internal_link_text>
-                        <internal_link_id>4</internal_link_id>
-                      </ImageItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="127">
-                  <SegmentId>5316ac54-4b69-47e1-88c5-e23b2ac0afc3</SegmentId>
-                  <ImageItem
-                    internal_item_id="1"
-                    internal_item_parent_id="127"
-                    trans_unit_id="127-1"
-                    internal_item_type="Image">
-                    <internal_items />
-                    <internal_Image_type>Reference</internal_Image_type>
-                    <internal_link_text>New query</internal_link_text>
-                    <internal_link_id>4</internal_link_id>
-                  </ImageItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <Identifier>2.</Identifier>
-            <IndentsLength>
-              <int>0</int>
-              <int>3</int>
-            </IndentsLength>
-          </ListItem>
-          <ListItem>
-            <MarkdownParagraphBlock
-              item_id="6052fab8-d913-44c1-a452-25dbfd9ef1c9"
-              item_type="NormalParagraph"
-              item_footer=""
-              trans_unit_id="6052fab8-d913-44c1-a452-25dbfd9ef1c9">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>bdc37bcc-1914-4b79-b5c8-9974ce7a3005</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="128">
-                      <SegmentId>7cf46af8-7340-4188-b9b8-d8e5b41c3fb2</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="128"
-                        trans_unit_id="128-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="128">
-                  <SegmentId>7cf46af8-7340-4188-b9b8-d8e5b41c3fb2</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="128"
-                    trans_unit_id="128-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <MarkdownCodeBlock
-              item_id="e40a70da-fefe-4949-99c9-959b8b1d919b"
-              item_type="CodeBlock"
-              item_footer="footer_not_set"
-              trans_unit_id="e40a70da-fefe-4949-99c9-959b8b1d919b">
-              <code_block> SELECT
- CustomerId
- ,Title
- ,FirstName
- ,LastName
- ,CompanyName
- FROM SalesLT.Customer;
-
-</code_block>
-            </MarkdownCodeBlock>
-            <Identifier>3.</Identifier>
-            <IndentsLength>
-              <int>0</int>
-              <int>3</int>
-              <int>3</int>
-              <int>3</int>
-              <int>3</int>
-              <int>3</int>
-              <int>3</int>
-              <int>3</int>
-            </IndentsLength>
-          </ListItem>
-          <ListItem>
-            <MarkdownParagraphBlock
-              item_id="12ba0a78-40ce-4088-8bfc-f776839103c2"
-              item_type="NormalParagraph"
-              item_footer=""
-              trans_unit_id="12ba0a78-40ce-4088-8bfc-f776839103c2">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>864f970a-f688-46d4-954c-3e79eed02a59</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="129">
-                      <SegmentId>52afbbf9-3370-495c-a65b-2c678ff45b68</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="129"
-                        trans_unit_id="129-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                      <MarkdownInternalBoldItem
-                        internal_item_id="2"
-                        internal_item_parent_id="129"
-                        trans_unit_id="129-2"
-                        internal_item_type="Bold">
-                        <internal_items />
-                        <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                      </MarkdownInternalBoldItem>
-                      <InternalNormalItem
-                        internal_item_id="3"
-                        internal_item_parent_id="129"
-                        trans_unit_id="129-3"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                    <MarkdownSegment
-                      trans_unit_id="130">
-                      <SegmentId>9a8ab844-928e-451f-92cf-4d067cd081c2</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="130"
-                        trans_unit_id="130-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="129">
-                  <SegmentId>52afbbf9-3370-495c-a65b-2c678ff45b68</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="129"
-                    trans_unit_id="129-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                  <MarkdownInternalBoldItem
-                    internal_item_id="2"
-                    internal_item_parent_id="129"
-                    trans_unit_id="129-2"
-                    internal_item_type="Bold">
-                    <internal_items />
-                    <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                  </MarkdownInternalBoldItem>
-                  <InternalNormalItem
-                    internal_item_id="3"
-                    internal_item_parent_id="129"
-                    trans_unit_id="129-3"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-                <MarkdownSegment
-                  trans_unit_id="130">
-                  <SegmentId>9a8ab844-928e-451f-92cf-4d067cd081c2</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="130"
-                    trans_unit_id="130-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <MarkdownParagraphBlock
-              item_id="6bc1aea5-6205-4e70-aa36-32ec6da03874"
-              item_type="NormalParagraph"
-              item_footer="footer_not_set"
-              trans_unit_id="6bc1aea5-6205-4e70-aa36-32ec6da03874">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>66720da1-950a-4d58-bdf3-2a1ec074e040</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="131">
-                      <SegmentId>2f2e21bb-bd38-47c7-9726-8cc1ba5850db</SegmentId>
-                      <ImageItem
-                        internal_item_id="1"
-                        internal_item_parent_id="131"
-                        trans_unit_id="131-1"
-                        internal_item_type="Image">
-                        <internal_items />
-                        <internal_Image_type>Reference</internal_Image_type>
-                        <internal_link_text>Sucess</internal_link_text>
-                        <internal_link_id>5</internal_link_id>
-                      </ImageItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="131">
-                  <SegmentId>2f2e21bb-bd38-47c7-9726-8cc1ba5850db</SegmentId>
-                  <ImageItem
-                    internal_item_id="1"
-                    internal_item_parent_id="131"
-                    trans_unit_id="131-1"
-                    internal_item_type="Image">
-                    <internal_items />
-                    <internal_Image_type>Reference</internal_Image_type>
-                    <internal_link_text>Sucess</internal_link_text>
-                    <internal_link_id>5</internal_link_id>
-                  </ImageItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <Identifier>4.</Identifier>
-            <IndentsLength>
-              <int>0</int>
-              <int>3</int>
-            </IndentsLength>
-          </ListItem>
-        </inner_list_items>
-        <ListType>Number</ListType>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownHeaderBlock"
-        item_id="aa2a3b29-13ed-4721-93ab-e92e736da1ce"
-        item_type="Header"
-        item_footer="footer_not_set"
-        trans_unit_id="aa2a3b29-13ed-4721-93ab-e92e736da1ce">
-        <segment
-          trans_unit_id="132">
-          <SegmentId>a99e1002-9b8f-4177-8e32-65373a6c0ec3</SegmentId>
-          <InternalNormalItem
-            internal_item_id="1"
-            internal_item_parent_id="132"
-            trans_unit_id="132-1"
-            internal_item_type="Normal">
-            <internal_items />
-          </InternalNormalItem>
-        </segment>
-        <header_type>Star</header_type>
-        <header_level>2</header_level>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownParagraphBlock"
-        item_id="a5a346c6-1b58-4a89-8152-6a3cc41d629e"
-        item_type="NormalParagraph"
-        item_footer="&#xA;&#xA;"
-        trans_unit_id="a5a346c6-1b58-4a89-8152-6a3cc41d629e">
-        <Lines>
-          <MarkdownLine>
-            <LineId>95a5689b-f7bc-47ab-b0bd-9be3760b6b0e</LineId>
-            <paragraph_segments>
-              <MarkdownSegment
-                trans_unit_id="133">
-                <SegmentId>c1d8e94d-6d5f-40f1-a5b7-d52355bfb3b4</SegmentId>
-                <InternalNormalItem
-                  internal_item_id="1"
-                  internal_item_parent_id="133"
-                  trans_unit_id="133-1"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-              </MarkdownSegment>
-              <MarkdownSegment
-                trans_unit_id="134">
-                <SegmentId>f6a973cd-00e0-4f9e-bae4-44f5ee7bf275</SegmentId>
-                <InternalNormalItem
-                  internal_item_id="1"
-                  internal_item_parent_id="134"
-                  trans_unit_id="134-1"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-                <LinkItem
-                  internal_item_id="2"
-                  internal_item_parent_id="134"
-                  trans_unit_id="134-2"
-                  internal_item_type="Link">
-                  <internal_items />
-                  <internal_link_type>Inline</internal_link_type>
-                  <internal_link_text>CREATE DATABASE (Azure SQL Database)</internal_link_text>
-                  <internal_link_url>https://msdn.microsoft.com/library/dn268335.aspx</internal_link_url>
-                  <internal_link_title />
-                </LinkItem>
-                <InternalNormalItem
-                  internal_item_id="3"
-                  internal_item_parent_id="134"
-                  trans_unit_id="134-3"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-                <LinkItem
-                  internal_item_id="4"
-                  internal_item_parent_id="134"
-                  trans_unit_id="134-4"
-                  internal_item_type="Link">
-                  <internal_items />
-                  <internal_link_type>Inline</internal_link_type>
-                  <internal_link_text>Managing Azure SQL Database using SQL Server Management Studio</internal_link_text>
-                  <internal_link_url>sql-database-manage-azure-ssms.md</internal_link_url>
-                  <internal_link_title />
-                </LinkItem>
-                <InternalNormalItem
-                  internal_item_id="5"
-                  internal_item_parent_id="134"
-                  trans_unit_id="134-5"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-              </MarkdownSegment>
-              <MarkdownSegment
-                trans_unit_id="135">
-                <SegmentId>7275865a-e1f6-49d8-8ace-149c383a755c</SegmentId>
-                <InternalNormalItem
-                  internal_item_id="1"
-                  internal_item_parent_id="135"
-                  trans_unit_id="135-1"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-              </MarkdownSegment>
-              <MarkdownSegment
-                trans_unit_id="136">
-                <SegmentId>4fbcfb6a-2b61-46e1-973b-1aabf952103f</SegmentId>
-                <InternalNormalItem
-                  internal_item_id="1"
-                  internal_item_parent_id="136"
-                  trans_unit_id="136-1"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-                <LinkItem
-                  internal_item_id="2"
-                  internal_item_parent_id="136"
-                  trans_unit_id="136-2"
-                  internal_item_type="Link">
-                  <internal_items />
-                  <internal_link_type>Inline</internal_link_type>
-                  <internal_link_text>Get started with SQL database auditing</internal_link_text>
-                  <internal_link_url>sql-database-auditing-get-started.md</internal_link_url>
-                  <internal_link_title />
-                </LinkItem>
-                <InternalNormalItem
-                  internal_item_id="3"
-                  internal_item_parent_id="136"
-                  trans_unit_id="136-3"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-              </MarkdownSegment>
-            </paragraph_segments>
-            <PrefixWSLength>0</PrefixWSLength>
-            <SuffixWSLength>0</SuffixWSLength>
-          </MarkdownLine>
-        </Lines>
-        <paragraph_segments>
-          <MarkdownSegment
-            trans_unit_id="133">
-            <SegmentId>c1d8e94d-6d5f-40f1-a5b7-d52355bfb3b4</SegmentId>
-            <InternalNormalItem
-              internal_item_id="1"
-              internal_item_parent_id="133"
-              trans_unit_id="133-1"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-          </MarkdownSegment>
-          <MarkdownSegment
-            trans_unit_id="134">
-            <SegmentId>f6a973cd-00e0-4f9e-bae4-44f5ee7bf275</SegmentId>
-            <InternalNormalItem
-              internal_item_id="1"
-              internal_item_parent_id="134"
-              trans_unit_id="134-1"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-            <LinkItem
-              internal_item_id="2"
-              internal_item_parent_id="134"
-              trans_unit_id="134-2"
-              internal_item_type="Link">
-              <internal_items />
-              <internal_link_type>Inline</internal_link_type>
-              <internal_link_text>CREATE DATABASE (Azure SQL Database)</internal_link_text>
-              <internal_link_url>https://msdn.microsoft.com/library/dn268335.aspx</internal_link_url>
-              <internal_link_title />
-            </LinkItem>
-            <InternalNormalItem
-              internal_item_id="3"
-              internal_item_parent_id="134"
-              trans_unit_id="134-3"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-            <LinkItem
-              internal_item_id="4"
-              internal_item_parent_id="134"
-              trans_unit_id="134-4"
-              internal_item_type="Link">
-              <internal_items />
-              <internal_link_type>Inline</internal_link_type>
-              <internal_link_text>Managing Azure SQL Database using SQL Server Management Studio</internal_link_text>
-              <internal_link_url>sql-database-manage-azure-ssms.md</internal_link_url>
-              <internal_link_title />
-            </LinkItem>
-            <InternalNormalItem
-              internal_item_id="5"
-              internal_item_parent_id="134"
-              trans_unit_id="134-5"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-          </MarkdownSegment>
-          <MarkdownSegment
-            trans_unit_id="135">
-            <SegmentId>7275865a-e1f6-49d8-8ace-149c383a755c</SegmentId>
-            <InternalNormalItem
-              internal_item_id="1"
-              internal_item_parent_id="135"
-              trans_unit_id="135-1"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-          </MarkdownSegment>
-          <MarkdownSegment
-            trans_unit_id="136">
-            <SegmentId>4fbcfb6a-2b61-46e1-973b-1aabf952103f</SegmentId>
-            <InternalNormalItem
-              internal_item_id="1"
-              internal_item_parent_id="136"
-              trans_unit_id="136-1"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-            <LinkItem
-              internal_item_id="2"
-              internal_item_parent_id="136"
-              trans_unit_id="136-2"
-              internal_item_type="Link">
-              <internal_items />
-              <internal_link_type>Inline</internal_link_type>
-              <internal_link_text>Get started with SQL database auditing</internal_link_text>
-              <internal_link_url>sql-database-auditing-get-started.md</internal_link_url>
-              <internal_link_title />
-            </LinkItem>
-            <InternalNormalItem
-              internal_item_id="3"
-              internal_item_parent_id="136"
-              trans_unit_id="136-3"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-          </MarkdownSegment>
-        </paragraph_segments>
-      </MarkdownBlockBase>
-    </ArrayOfMarkdownBlockBase>
-  </block_element>
-  <references>
-    <ArrayOfMarkdownLinkedReference xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <MarkdownLinkedReference
-        item_id="453379c9-8751-4907-8724-5f5a23d54b02"
-        item_type="LinkedReference"
-        item_footer="footer_not_set"
-        trans_unit_id="453379c9-8751-4907-8724-5f5a23d54b02">
-        <link_id>1</link_id>
-        <link_uri>./media/sql-database-connect-to-database/1-download.png</link_uri>
-        <link_title />
-      </MarkdownLinkedReference>
-      <MarkdownLinkedReference
-        item_id="98f16940-8608-41f2-9efe-8e289e3ace0f"
-        item_type="LinkedReference"
-        item_footer="footer_not_set"
-        trans_unit_id="98f16940-8608-41f2-9efe-8e289e3ace0f">
-        <link_id>2</link_id>
-        <link_uri>./media/sql-database-connect-to-database/2-connect.png</link_uri>
-        <link_title />
-      </MarkdownLinkedReference>
-      <MarkdownLinkedReference
-        item_id="6709f385-aaa5-4c76-8dbb-17e2dc18c874"
-        item_type="LinkedReference"
-        item_footer="footer_not_set"
-        trans_unit_id="6709f385-aaa5-4c76-8dbb-17e2dc18c874">
-        <link_id>3</link_id>
-        <link_uri>./media/sql-database-connect-to-database/3-connect-to-database.png</link_uri>
-        <link_title />
-      </MarkdownLinkedReference>
-      <MarkdownLinkedReference
-        item_id="1ae5419d-9364-4d11-8c72-3c14b9afbe34"
-        item_type="LinkedReference"
-        item_footer="footer_not_set"
-        trans_unit_id="1ae5419d-9364-4d11-8c72-3c14b9afbe34">
-        <link_id>4</link_id>
-        <link_uri>./media/sql-database-connect-to-database/4-run-query.png</link_uri>
-        <link_title />
-      </MarkdownLinkedReference>
-      <MarkdownLinkedReference
-        item_id="cbccf042-511f-4738-97fc-4799b7d57097"
-        item_type="LinkedReference"
-        item_footer="footer_not_set"
-        trans_unit_id="cbccf042-511f-4738-97fc-4799b7d57097">
-        <link_id>5</link_id>
-        <link_uri>./media/sql-database-connect-to-database/5-success.png</link_uri>
-        <link_title />
-      </MarkdownLinkedReference>
-    </ArrayOfMarkdownLinkedReference>
-  </references>
-</markdown_skeleton_root>
+{
+  "nodes": [
+    {
+      "content": "How to connect to an Azure SQL database using SSMS | Microsoft Azure",
+      "pos": [
+        99,
+        167
+      ]
+    },
+    {
+      "content": "Learn how to connect to an Azure SQL database using SSMS.",
+      "pos": [
+        206,
+        263
+      ]
+    },
+    {
+      "content": "Connect with SQL Server Management Studio",
+      "pos": [
+        679,
+        720
+      ]
+    },
+    {
+      "content": "Use the following steps to install SQL Server Management Studio (SSMS) and then use SSMS to connect and query your SQL Database.",
+      "pos": [
+        722,
+        850
+      ]
+    },
+    {
+      "content": "Prerequisites",
+      "pos": [
+        855,
+        868
+      ]
+    },
+    {
+      "pos": [
+        871,
+        1015
+      ],
+      "content": "An SQL Database AdventureWorks sample database as described in <bpt id=\"p1\">[</bpt>Getting Started with Microsoft Azure SQL Database<ept id=\"p1\">](sql-database-get-started.md)</ept>."
+    },
+    {
+      "content": "Install and start SQL Server Management Studio (SSMS)",
+      "pos": [
+        1020,
+        1073
+      ]
+    },
+    {
+      "pos": [
+        1077,
+        1307
+      ],
+      "content": "Go to the download page for <bpt id=\"p1\">[</bpt>SQL Server 2014 Express<ept id=\"p1\">](http://www.microsoft.com/download/details.aspx?id=42299)</ept>, click <bpt id=\"p2\">**</bpt>Download<ept id=\"p2\">**</ept>, and choose either the 32-bit version (x86) or the 64-bit version (x64) of the MgmtStudio download."
+    },
+    {
+      "content": "![MgtmtStudio32BIT or MgmtStudio64BIT][1]",
+      "pos": [
+        1313,
+        1354
+      ]
+    },
+    {
+      "content": "Follow the prompts as you install SSMS using the default settings.",
+      "pos": [
+        1359,
+        1425
+      ]
+    },
+    {
+      "content": "Once downloaded, search for SQL Server 2014 Management Studio on your PC and then start SSMS.",
+      "pos": [
+        1430,
+        1523
+      ]
+    },
+    {
+      "content": "Connect to your SQL Database",
+      "pos": [
+        1529,
+        1557
+      ]
+    },
+    {
+      "content": "Open SSMS.",
+      "pos": [
+        1561,
+        1571
+      ]
+    },
+    {
+      "pos": [
+        1575,
+        1722
+      ],
+      "content": "In the <bpt id=\"p1\">**</bpt>Connect to Server<ept id=\"p1\">**</ept> dialog box, in the <bpt id=\"p2\">**</bpt>Server name<ept id=\"p2\">**</ept> box, type the server name in the format <bpt id=\"p3\">*</bpt>&amp;lt;servername&gt;<ept id=\"p3\">*</ept>.<bpt id=\"p4\">**</bpt>database.windows.net<ept id=\"p4\">**</ept>."
+    },
+    {
+      "pos": [
+        1726,
+        1795
+      ],
+      "content": "In the <bpt id=\"p1\">**</bpt>Authentication<ept id=\"p1\">**</ept> list, select <bpt id=\"p2\">**</bpt>SQL Server Authentication<ept id=\"p2\">**</ept>."
+    },
+    {
+      "pos": [
+        1799,
+        1892
+      ],
+      "content": "Enter the <bpt id=\"p1\">**</bpt>Login<ept id=\"p1\">**</ept> and <bpt id=\"p2\">**</bpt>Password<ept id=\"p2\">**</ept> you specified when you created your SQL Database server."
+    },
+    {
+      "content": "![Connect to server dialog][2]",
+      "pos": [
+        1898,
+        1928
+      ]
+    },
+    {
+      "pos": [
+        1932,
+        1961
+      ],
+      "content": "Click the <bpt id=\"p1\">**</bpt>Options<ept id=\"p1\">**</ept> button."
+    },
+    {
+      "pos": [
+        1965,
+        2053
+      ],
+      "content": "In the <bpt id=\"p1\">**</bpt>Connect to database<ept id=\"p1\">**</ept> box, enter <bpt id=\"p2\">**</bpt>AdventureWorks<ept id=\"p2\">**</ept> and then click <bpt id=\"p3\">**</bpt>Connect<ept id=\"p3\">**</ept>."
+    },
+    {
+      "content": "![Connect to database][3]",
+      "pos": [
+        2059,
+        2084
+      ]
+    },
+    {
+      "content": "If the connection fails",
+      "pos": [
+        2090,
+        2113
+      ]
+    },
+    {
+      "content": "Make sure that the firewall of the logical server you have created allows connections from your local computer.",
+      "pos": [
+        2114,
+        2225
+      ]
+    },
+    {
+      "content": "For more information, see <bpt id=\"p1\">[</bpt>How to: Configure Firewall Settings (Azure SQL Database)<ept id=\"p1\">](https://msdn.microsoft.com/library/azure/jj553530.aspx)</ept>.",
+      "pos": [
+        2226,
+        2367
+      ]
+    },
+    {
+      "content": "Run sample queries",
+      "pos": [
+        2372,
+        2390
+      ]
+    },
+    {
+      "pos": [
+        2395,
+        2463
+      ],
+      "content": "In <bpt id=\"p1\">**</bpt>Object Explorer<ept id=\"p1\">**</ept>, navigate to the <bpt id=\"p2\">**</bpt>AdventureWorks<ept id=\"p2\">**</ept> database."
+    },
+    {
+      "pos": [
+        2467,
+        2522
+      ],
+      "content": "Right-click the database and then select <bpt id=\"p1\">**</bpt>New Query<ept id=\"p1\">**</ept>."
+    },
+    {
+      "content": "![New query][4]",
+      "pos": [
+        2528,
+        2543
+      ]
+    },
+    {
+      "content": "In the query window, copy and paste the following code.",
+      "pos": [
+        2548,
+        2603
+      ]
+    },
+    {
+      "content": "Click the <bpt id=\"p1\">**</bpt>Execute<ept id=\"p1\">**</ept> button.",
+      "pos": [
+        2747,
+        2776
+      ]
+    },
+    {
+      "content": "The following screen shot shows a successful query.",
+      "pos": [
+        2778,
+        2829
+      ]
+    },
+    {
+      "content": "![Sucess][5]",
+      "pos": [
+        2835,
+        2847
+      ]
+    },
+    {
+      "content": "Next steps",
+      "pos": [
+        2852,
+        2862
+      ]
+    },
+    {
+      "content": "You can use Transact-SQL statements to create or manage databases.",
+      "pos": [
+        2863,
+        2929
+      ]
+    },
+    {
+      "content": "For more information see <bpt id=\"p1\">[</bpt>CREATE DATABASE (Azure SQL Database)<ept id=\"p1\">](https://msdn.microsoft.com/library/dn268335.aspx)</ept> and <bpt id=\"p2\">[</bpt>Managing Azure SQL Database using SQL Server Management Studio<ept id=\"p2\">](sql-database-manage-azure-ssms.md)</ept>.",
+      "pos": [
+        2930,
+        3148
+      ]
+    },
+    {
+      "content": "You can also log events to Azure storage.",
+      "pos": [
+        3149,
+        3190
+      ]
+    },
+    {
+      "content": "See <bpt id=\"p1\">[</bpt>Get started with SQL database auditing<ept id=\"p1\">](sql-database-auditing-get-started.md)</ept> for more information.",
+      "pos": [
+        3191,
+        3295
+      ]
+    }
+  ],
+  "content": "<properties\n    urlDisplayName=\"How to connect to an Azure SQL database using SSMS\"\n    pageTitle=\"How to connect to an Azure SQL database using SSMS | Microsoft Azure\"\n    metaKeywords=\"\"\n    description=\"Learn how to connect to an Azure SQL database using SSMS.\"\n    metaCanonical=\"\"\n    services=\"sql-database\"\n    documentationCenter=\"\"\n    title=\"How to connect to an Azure SQL database using SSMS\"\n    authors=\"sidneyh\" solutions=\"\"\n    manager=\"jhubbard\" editor=\"\" />\n\n<tags\n    ms.service=\"sql-database\"\n    ms.workload=\"data-management\"\n    ms.tgt_pltfrm=\"na\"\n    ms.devlang=\"na\"\n    ms.topic=\"get-started-article\"\n    ms.date=\"07/15/2015\"\n    ms.author=\"sidneyh\" />\n\n# Connect with SQL Server Management Studio\n\nUse the following steps to install SQL Server Management Studio (SSMS) and then use SSMS to connect and query your SQL Database.\n\n## Prerequisites\n* An SQL Database AdventureWorks sample database as described in [Getting Started with Microsoft Azure SQL Database](sql-database-get-started.md).\n\n## Install and start SQL Server Management Studio (SSMS)\n1. Go to the download page for [SQL Server 2014 Express](http://www.microsoft.com/download/details.aspx?id=42299), click **Download**, and choose either the 32-bit version (x86) or the 64-bit version (x64) of the MgmtStudio download.\n\n    ![MgtmtStudio32BIT or MgmtStudio64BIT][1]\n2.  Follow the prompts as you install SSMS using the default settings.\n3.  Once downloaded, search for SQL Server 2014 Management Studio on your PC and then start SSMS.\n\n\n## Connect to your SQL Database\n1. Open SSMS.\n2. In the **Connect to Server** dialog box, in the **Server name** box, type the server name in the format *&lt;servername>*.**database.windows.net**.\n3. In the **Authentication** list, select **SQL Server Authentication**.\n4. Enter the **Login** and **Password** you specified when you created your SQL Database server.\n\n    ![Connect to server dialog][2]\n5. Click the **Options** button.\n6. In the **Connect to database** box, enter **AdventureWorks** and then click **Connect**.\n\n    ![Connect to database][3]\n\n### If the connection fails\nMake sure that the firewall of the logical server you have created allows connections from your local computer. For more information, see [How to: Configure Firewall Settings (Azure SQL Database)](https://msdn.microsoft.com/library/azure/jj553530.aspx).\n\n## Run sample queries\n\n1. In **Object Explorer**, navigate to the **AdventureWorks** database.\n2. Right-click the database and then select **New Query**.\n\n    ![New query][4]\n\n3. In the query window, copy and paste the following code.\n\n        SELECT\n        CustomerId\n        ,Title\n        ,FirstName\n        ,LastName\n        ,CompanyName\n        FROM SalesLT.Customer;\n\n4. Click the **Execute** button.  The following screen shot shows a successful query.\n\n    ![Sucess][5]\n\n## Next steps\nYou can use Transact-SQL statements to create or manage databases. For more information see [CREATE DATABASE (Azure SQL Database)](https://msdn.microsoft.com/library/dn268335.aspx) and [Managing Azure SQL Database using SQL Server Management Studio](sql-database-manage-azure-ssms.md). You can also log events to Azure storage. See [Get started with SQL database auditing](sql-database-auditing-get-started.md) for more information.\n\n<!--Image references-->\n\n[1]:./media/sql-database-connect-to-database/1-download.png\n[2]:./media/sql-database-connect-to-database/2-connect.png\n[3]:./media/sql-database-connect-to-database/3-connect-to-database.png\n[4]:./media/sql-database-connect-to-database/4-run-query.png\n[5]:./media/sql-database-connect-to-database/5-success.png\n"
+}
