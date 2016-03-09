@@ -183,24 +183,10 @@
       ]
     },
     {
-      "content": "https://microsoft-apiappeeb5bdsasd744e188be7fa26f239bd4b.azurewebsites.net/",
-      "pos": [
-        2313,
-        2388
-      ]
-    },
-    {
       "content": "The complete URL would be this:",
       "pos": [
         2394,
         2425
-      ]
-    },
-    {
-      "content": "https://microsoft-apiappeeb5bdsasd744e188be7fa26f239bd4b.azurewebsites.net/api/contacts/get/",
-      "pos": [
-        2435,
-        2527
       ]
     },
     {
@@ -253,9 +239,9 @@
       ]
     },
     {
-      "content": "<ph id=\"ph1\">&lt;!--todo: diagram showing different accessibility settings--&gt;</ph><bpt id=\"p1\">\n\n- **</bpt>Public (anonymous)<ept id=\"p1\">**</ept> - Anyone can call the API app from outside the resource group without being logged in.",
+      "content": "<bpt id=\"p1\">\n\n- **</bpt>Public (anonymous)<ept id=\"p1\">**</ept> - Anyone can call the API app from outside the resource group without being logged in.",
       "pos": [
-        3053,
+        3114,
         3227
       ]
     },
@@ -680,107 +666,9 @@
       ]
     },
     {
-      "content": "\"authentication\": [{\"type\": \"aad\"}]\n\n    The final apiapp.json file will resemble the following example:\n\n        {",
+      "content": "\"authentication\": [{\"type\": \"aad\"}]\n\n    The final apiapp.json file will resemble the following example:\n\n        {\n            \"$schema\": \"http://json-schema.org/schemas/2014-11-01/apiapp.json#\",\n            \"id\": \"ContactsList\",\n            \"namespace\": \"microsoft.com\",\n            \"gateway\": \"2015-01-14\",\n            \"version\": \"1.0.0\",\n            \"title\": \"ContactsList\",\n            \"summary\": \"\",\n            \"author\": \"\",\n            \"endpoints\": {\n                \"apiDefinition\": \"/swagger/docs/v1\",\n                \"status\": null\n            },\n            \"authentication\": [{\"type\": \"aad\"}]\n        }\n\n    This tutorial uses Azure Active Directory as an example.",
       "pos": [
         10593,
-        10708
-      ]
-    },
-    {
-      "content": "\"$schema\": \"http://json-schema.org/schemas/2014-11-01/apiapp.json",
-      "pos": [
-        10721,
-        10786
-      ]
-    },
-    {
-      "content": "<ph id=\"ph1\">\",</ph>\n            \"id\": \"Contacts",
-      "pos": [
-        10787,
-        10817
-      ]
-    },
-    {
-      "content": "<ph id=\"ph1\">ist\",</ph>\n            \"namespace\": \"micros",
-      "pos": [
-        10818,
-        10856
-      ]
-    },
-    {
-      "content": "<ph id=\"ph1\">ft.com\",</ph>\n            \"gateway\": \"",
-      "pos": [
-        10857,
-        10890
-      ]
-    },
-    {
-      "content": "<ph id=\"ph1\">015-01-14</ph>\",\n            \"ver",
-      "pos": [
-        10891,
-        10919
-      ]
-    },
-    {
-      "content": "<ph id=\"ph1\">ion\": \"1.</ph>0.0\",\n            \"title",
-      "pos": [
-        10920,
-        10953
-      ]
-    },
-    {
-      "content": "<ph id=\"ph1\">: \"Contac</ph>tsList\",",
-      "pos": [
-        10954,
-        10971
-      ]
-    },
-    {
-      "content": "<ph id=\"ph1\">      \"su</ph>mmary\": \"\",",
-      "pos": [
-        10978,
-        10998
-      ]
-    },
-    {
-      "content": "\"author\": \"\",",
-      "pos": [
-        11011,
-        11024
-      ]
-    },
-    {
-      "content": "<ph id=\"ph1\">            \"</ph>endpoints\": {\n                \"apiDe",
-      "pos": [
-        11025,
-        11074
-      ]
-    },
-    {
-      "content": "<ph id=\"ph1\">inition\": \"/s</ph>wagger/docs/v1",
-      "pos": [
-        11075,
-        11102
-      ]
-    },
-    {
-      "content": "<ph id=\"ph1\">,</ph>",
-      "pos": [
-        11103,
-        11104
-      ]
-    },
-    {
-      "content": "<ph id=\"ph1\">      \"st</ph>atus\": null\n            },",
-      "pos": [
-        11115,
-        11150
-      ]
-    },
-    {
-      "content": "<ph id=\"ph1\">   \"a</ph>uthentication\": [{\"type\": \"aad\"}]\n        }\n\n    This tutorial uses Azure Active Directory as an example.",
-      "pos": [
-        11160,
         11270
       ]
     },
@@ -827,65 +715,9 @@
       ]
     },
     {
-      "content": "var runtime = Runtime.FromAppSettings(Request);",
+      "content": "var runtime = Runtime.FromAppSettings(Request);\n        var user = runtime.CurrentUser;\n        TokenResult token = await user.GetRawTokenAsync(\"aad\");\n        var name = (string)token.Claims[\"name\"];\n        var email = (string)token.Claims[\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn\"];\n        return new Contact[]\n        {\n            new Contact { Id = 1, EmailAddress = email, Name = name }\n        };\n\n    Instead of the three sample contacts, the code returns contact information for the logged-on user.",
       "pos": [
         11681,
-        11728
-      ]
-    },
-    {
-      "content": "var user = runtime.CurrentUs",
-      "pos": [
-        11737,
-        11765
-      ]
-    },
-    {
-      "content": "<ph id=\"ph1\">r;</ph>\n        TokenResult token = await user.GetRawTokenAsync(\"",
-      "pos": [
-        11766,
-        11826
-      ]
-    },
-    {
-      "content": "<ph id=\"ph1\">ad\");</ph>\n        var name = (string)token.Claims",
-      "pos": [
-        11827,
-        11872
-      ]
-    },
-    {
-      "content": "<ph id=\"ph1\">\"name</ph>\"];\n        var email = (string)token.Claims[\"http://schemas.xmlsoap.org/ws/2005/05/identity/c",
-      "pos": [
-        11873,
-        11972
-      ]
-    },
-    {
-      "content": "<ph id=\"ph1\">aims/</ph>upn\"];\n        retur",
-      "pos": [
-        11973,
-        11998
-      ]
-    },
-    {
-      "content": "<ph id=\"ph1\"> new</ph> C",
-      "pos": [
-        11999,
-        12005
-      ]
-    },
-    {
-      "content": "<ph id=\"ph1\">ntact[]</ph>\n        {\n            new Contact { Id = 1, EmailAddress =",
-      "pos": [
-        12006,
-        12072
-      ]
-    },
-    {
-      "content": "<ph id=\"ph1\">email</ph>, Name = name }\n        };\n\n    Instead of the three sample contacts, the code returns contact information for the logged-on user.",
-      "pos": [
-        12073,
         12208
       ]
     },

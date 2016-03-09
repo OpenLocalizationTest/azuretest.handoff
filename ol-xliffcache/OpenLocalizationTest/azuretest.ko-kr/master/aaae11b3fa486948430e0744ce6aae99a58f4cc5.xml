@@ -1016,11 +1016,81 @@
       ]
     },
     {
+      "content": "Software",
       "pos": [
-        16898,
-        17459
-      ],
-      "content": "<ph id=\"ph1\">&lt;table&gt;</ph><ph id=\"ph2\">\n&lt;tr&gt;&lt;th&gt;</ph>Software<ph id=\"ph3\">&lt;/th&gt;&lt;th&gt;</ph>Source<ph id=\"ph4\">&lt;/th&gt;&lt;th&gt;</ph>Version<ph id=\"ph5\">&lt;/th&gt;&lt;/tr&gt;</ph><ph id=\"ph6\">\n&lt;tr&gt;&lt;td&gt;</ph>JRE <ph id=\"ph7\">&lt;/td&gt;&lt;td&gt;</ph><bpt id=\"p1\">[</bpt><ept id=\"p1\">JRE 8](http://www.oracle.com/technetwork/java/javase/downloads/server-jre8-downloads-2133154.html)</ept><ph id=\"ph8\"> &lt;/td&gt;&lt;td&gt;</ph>8U5<ph id=\"ph9\">&lt;/td&gt;&lt;/tr&gt;</ph><ph id=\"ph10\">\n&lt;tr&gt;&lt;td&gt;</ph>JNA <ph id=\"ph11\">&lt;/td&gt;&lt;td&gt;</ph><bpt id=\"p2\">[</bpt><ept id=\"p2\">JNA](https://github.com/twall/jna)</ept><ph id=\"ph12\"> &lt;/td&gt;&lt;td&gt;</ph> 3.2.7<ph id=\"ph13\">&lt;/td&gt;&lt;/tr&gt;</ph><ph id=\"ph14\">\n&lt;tr&gt;&lt;td&gt;</ph>Cassandra<ph id=\"ph15\">&lt;/td&gt;&lt;td&gt;</ph><bpt id=\"p3\">[</bpt><ept id=\"p3\">Apache Cassandra 2.0.8](http://www.apache.org/dist/cassandra/2.0.8/apache-cassandra-2.0.8-bin.tar.gz)</ept><ph id=\"ph16\">&lt;/td&gt;&lt;td&gt;</ph> 2.0.8<ph id=\"ph17\">&lt;/td&gt;&lt;/tr&gt;</ph><ph id=\"ph18\">\n&lt;tr&gt;&lt;td&gt;</ph>Ubuntu  <ph id=\"ph19\">&lt;/td&gt;&lt;td&gt;</ph><bpt id=\"p4\">[</bpt><ept id=\"p4\">Mcrosoft Azure Portal](http://azure.microsoft.com)</ept><ph id=\"ph20\"> &lt;/td&gt;&lt;td&gt;</ph>14.04 LTS<ph id=\"ph21\">&lt;/td&gt;&lt;/tr&gt;</ph><ph id=\"ph22\">\n&lt;/table&gt;</ph>"
+        16914,
+        16922
+      ]
+    },
+    {
+      "content": "Source",
+      "pos": [
+        16931,
+        16937
+      ]
+    },
+    {
+      "content": "Version",
+      "pos": [
+        16946,
+        16953
+      ]
+    },
+    {
+      "content": "JRE",
+      "pos": [
+        16972,
+        16975
+      ]
+    },
+    {
+      "content": "8U5",
+      "pos": [
+        17094,
+        17097
+      ]
+    },
+    {
+      "content": "JNA",
+      "pos": [
+        17116,
+        17119
+      ]
+    },
+    {
+      "content": "3.2.7",
+      "pos": [
+        17175,
+        17180
+      ]
+    },
+    {
+      "content": "Cassandra",
+      "pos": [
+        17199,
+        17208
+      ]
+    },
+    {
+      "content": "2.0.8",
+      "pos": [
+        17329,
+        17334
+      ]
+    },
+    {
+      "content": "Ubuntu",
+      "pos": [
+        17353,
+        17359
+      ]
+    },
+    {
+      "content": "14.04 LTS",
+      "pos": [
+        17431,
+        17440
+      ]
     },
     {
       "content": "Since downloading of JRE requires manual acceptance of Oracle license, to simplify the deployment, download all the required software to the desktop for later uploading into the Ubuntu template image we will be creating as a precursor to the cluster deployment.",
@@ -2605,24 +2675,10 @@
       ]
     },
     {
-      "content": "dc =EASTUS, rack =rack1",
-      "pos": [
-        33818,
-        33841
-      ]
-    },
-    {
       "content": "Edit cassandra.yaml to configure seed nodes as below:",
       "pos": [
         33845,
         33898
-      ]
-    },
-    {
-      "content": "Seeds: \"10.1.2.4,10.1.2.6,10.1.2.8,10.1.2.10\"",
-      "pos": [
-        33912,
-        33957
       ]
     },
     {
@@ -3137,64 +3193,6 @@
       ]
     },
     {
-      "pos": [
-        36047,
-        36454
-      ],
-      "content": "CREATE KEYSPACE customers_ks WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 3 };   \n    USE customers_ks;\n    CREATE TABLE Customers(customer_id int PRIMARY KEY, firstname text, lastname text);\n    INSERT INTO Customers(customer_id, firstname, lastname) VALUES(1, 'John', 'Doe');\n    INSERT INTO Customers(customer_id, firstname, lastname) VALUES (2, 'Jane', 'Doe');",
-      "leadings": [
-        "",
-        "    ",
-        "    ",
-        "    ",
-        "    "
-      ],
-      "nodes": [
-        {
-          "content": "CREATE KEYSPACE customers_ks WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 3 };",
-          "pos": [
-            0,
-            105
-          ]
-        },
-        {
-          "content": "USE customers_ks;",
-          "pos": [
-            113,
-            130
-          ]
-        },
-        {
-          "content": "CREATE TABLE Customers(customer_id int PRIMARY KEY, firstname text, lastname text);",
-          "pos": [
-            135,
-            218
-          ]
-        },
-        {
-          "content": "INSERT INTO Customers(customer_id, firstname, lastname) VALUES(1, 'John', 'Doe');",
-          "pos": [
-            223,
-            304
-          ]
-        },
-        {
-          "content": "INSERT INTO Customers(customer_id, firstname, lastname) VALUES (2, 'Jane', 'Doe');",
-          "pos": [
-            309,
-            391
-          ]
-        }
-      ]
-    },
-    {
-      "content": "SELECT * FROM Customers;",
-      "pos": [
-        36472,
-        36496
-      ]
-    },
-    {
       "content": "You should see a display like the one below:",
       "pos": [
         36498,
@@ -3286,9 +3284,9 @@
       ]
     },
     {
-      "content": "Multi-Region Deployment Process",
+      "content": "<ph id=\"ph1\">&lt;a id=\"tworegion\"&gt;</ph> <ph id=\"ph2\">&lt;/a&gt;</ph>Multi-Region Deployment Process",
       "pos": [
-        37066,
+        37043,
         37097
       ]
     },
@@ -4506,73 +4504,6 @@
       ]
     },
     {
-      "pos": [
-        44521,
-        44975
-      ],
-      "content": "CREATE KEYSPACE customers_ks\n    WITH REPLICATION = { 'class' : 'NetworkToplogyStrategy', 'WESTUS' : 3, 'EASTUS' : 3};\n    USE customers_ks;\n    CREATE TABLE Customers(customer_id int PRIMARY KEY, firstname text, lastname text);\n    INSERT INTO Customers(customer_id, firstname, lastname) VALUES(1, 'John', 'Doe');\n    INSERT INTO Customers(customer_id, firstname, lastname) VALUES (2, 'Jane', 'Doe');\n    SELECT * FROM Customers;",
-      "leadings": [
-        "",
-        "    ",
-        "    ",
-        "    ",
-        "    ",
-        "    ",
-        "    "
-      ],
-      "nodes": [
-        {
-          "content": "CREATE KEYSPACE customers_ks",
-          "pos": [
-            0,
-            28
-          ]
-        },
-        {
-          "content": "WITH REPLICATION = { 'class' : 'NetworkToplogyStrategy', 'WESTUS' : 3, 'EASTUS' : 3};",
-          "pos": [
-            33,
-            118
-          ]
-        },
-        {
-          "content": "USE customers_ks;",
-          "pos": [
-            123,
-            140
-          ]
-        },
-        {
-          "content": "CREATE TABLE Customers(customer_id int PRIMARY KEY, firstname text, lastname text);",
-          "pos": [
-            145,
-            228
-          ]
-        },
-        {
-          "content": "INSERT INTO Customers(customer_id, firstname, lastname) VALUES(1, 'John', 'Doe');",
-          "pos": [
-            233,
-            314
-          ]
-        },
-        {
-          "content": "INSERT INTO Customers(customer_id, firstname, lastname) VALUES (2, 'Jane', 'Doe');",
-          "pos": [
-            319,
-            401
-          ]
-        },
-        {
-          "content": "SELECT * FROM Customers;",
-          "pos": [
-            406,
-            430
-          ]
-        }
-      ]
-    },
-    {
       "content": "You should see a display like the one below:",
       "pos": [
         44977,
@@ -4661,57 +4592,6 @@
       "pos": [
         45323,
         45358
-      ]
-    },
-    {
-      "pos": [
-        45368,
-        45691
-      ],
-      "content": "USE customers_ks;\n    CREATE TABLE Customers(customer_id int PRIMARY KEY, firstname text, lastname text);\n    INSERT INTO Customers(customer_id, firstname, lastname) VALUES(1, 'John', 'Doe');\n    INSERT INTO Customers(customer_id, firstname, lastname) VALUES (2, 'Jane', 'Doe');\n    SELECT * FROM Customers;",
-      "leadings": [
-        "",
-        "    ",
-        "    ",
-        "    ",
-        "    "
-      ],
-      "nodes": [
-        {
-          "content": "USE customers_ks;",
-          "pos": [
-            0,
-            17
-          ]
-        },
-        {
-          "content": "CREATE TABLE Customers(customer_id int PRIMARY KEY, firstname text, lastname text);",
-          "pos": [
-            22,
-            105
-          ]
-        },
-        {
-          "content": "INSERT INTO Customers(customer_id, firstname, lastname) VALUES(1, 'John', 'Doe');",
-          "pos": [
-            110,
-            191
-          ]
-        },
-        {
-          "content": "INSERT INTO Customers(customer_id, firstname, lastname) VALUES (2, 'Jane', 'Doe');",
-          "pos": [
-            196,
-            278
-          ]
-        },
-        {
-          "content": "SELECT * FROM Customers;",
-          "pos": [
-            283,
-            307
-          ]
-        }
       ]
     },
     {
@@ -4831,754 +4711,6 @@
       "pos": [
         46332,
         46434
-      ]
-    },
-    {
-      "pos": [
-        46445,
-        46755
-      ],
-      "content": "var pooledCon = require('cassandra-client').PooledConnection;\n     var ksName = \"custsupport_ks\";\n     var cfName = \"customers_cf\";\n     var hostList = ['internal_loadbalancer_ip:9160'];\n     var ksConOptions = { hosts: hostList,\n                          keyspace: ksName, use_bigints: false };",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "var pooledCon = require('cassandra-client').PooledConnection;",
-          "pos": [
-            0,
-            61
-          ]
-        },
-        {
-          "content": "var ksName = \"custsupport_ks\";",
-          "pos": [
-            67,
-            97
-          ]
-        },
-        {
-          "content": "var cfName = \"customers_cf\";",
-          "pos": [
-            103,
-            131
-          ]
-        },
-        {
-          "content": "var hostList = ['internal_loadbalancer_ip:9160'];",
-          "pos": [
-            137,
-            186
-          ]
-        },
-        {
-          "content": "var ksConOptions = { hosts: hostList,",
-          "pos": [
-            192,
-            229
-          ]
-        },
-        {
-          "content": "keyspace: ksName, use_bigints: false };",
-          "pos": [
-            256,
-            295
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
-        46773,
-        47494
-      ],
-      "content": "function createKeyspace(callback){\n        var cql = 'CREATE KEYSPACE ' + ksName + ' WITH strategy_class=SimpleStrategy AND strategy_options:replication_factor=1';\n        var sysConOptions = { hosts: hostList,  \n                              keyspace: 'system', use_bigints: false };\n        var con = new pooledCon(sysConOptions);\n        con.execute(cql,[],function(err) {\n        if (err) {\n          console.log(\"Failed to create Keyspace: \" + ksName);\n          console.log(err);\n        }\n        else {\n          console.log(\"Created Keyspace: \" + ksName);\n          callback(ksConOptions, populateCustomerData);\n        }\n        });\n        con.shutdown();\n     }",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "function createKeyspace(callback){",
-          "pos": [
-            0,
-            34
-          ]
-        },
-        {
-          "content": "var cql = 'CREATE KEYSPACE ' + ksName + ' WITH strategy_class=SimpleStrategy AND strategy_options:replication_factor=1';",
-          "pos": [
-            43,
-            163
-          ]
-        },
-        {
-          "content": "var sysConOptions = { hosts: hostList,",
-          "pos": [
-            172,
-            210
-          ]
-        },
-        {
-          "content": "keyspace: 'system', use_bigints: false };",
-          "pos": [
-            243,
-            284
-          ]
-        },
-        {
-          "content": "var con = new pooledCon(sysConOptions);",
-          "pos": [
-            293,
-            332
-          ]
-        },
-        {
-          "content": "con.execute(cql,[],function(err) {",
-          "pos": [
-            341,
-            375
-          ]
-        },
-        {
-          "content": "if (err) {",
-          "pos": [
-            384,
-            394
-          ]
-        },
-        {
-          "content": "console.log(\"Failed to create Keyspace: \" + ksName);",
-          "pos": [
-            405,
-            457
-          ]
-        },
-        {
-          "content": "console.log(err);",
-          "pos": [
-            468,
-            485
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            494,
-            495
-          ]
-        },
-        {
-          "content": "else {",
-          "pos": [
-            504,
-            510
-          ]
-        },
-        {
-          "content": "console.log(\"Created Keyspace: \" + ksName);",
-          "pos": [
-            521,
-            564
-          ]
-        },
-        {
-          "content": "callback(ksConOptions, populateCustomerData);",
-          "pos": [
-            575,
-            620
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            629,
-            630
-          ]
-        },
-        {
-          "content": "});",
-          "pos": [
-            639,
-            642
-          ]
-        },
-        {
-          "content": "con.shutdown();",
-          "pos": [
-            651,
-            666
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            672,
-            673
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
-        47513,
-        48196
-      ],
-      "content": "function createColumnFamily(ksConOptions, callback){\n       var params = ['customers_cf','custid','varint','custname',\n                     'text','custaddress','text'];\n       var cql = 'CREATE COLUMNFAMILY ? (? ? PRIMARY KEY,? ?, ? ?)';\n     var con =  new pooledCon(ksConOptions);\n       con.execute(cql,params,function(err) {\n           if (err) {\n              console.log(\"Failed to create column family: \" + params[0]);\n              console.log(err);\n           }\n           else {\n              console.log(\"Created column family: \" + params[0]);\n              callback();\n           }\n       });\n       con.shutdown();\n     }",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "function createColumnFamily(ksConOptions, callback){",
-          "pos": [
-            0,
-            52
-          ]
-        },
-        {
-          "content": "var params = ['customers_cf','custid','varint','custname',",
-          "pos": [
-            60,
-            118
-          ]
-        },
-        {
-          "content": "'text','custaddress','text'];",
-          "pos": [
-            140,
-            169
-          ]
-        },
-        {
-          "content": "var cql = 'CREATE COLUMNFAMILY ? (? ? PRIMARY KEY,? ?, ? ?)';",
-          "pos": [
-            177,
-            238
-          ],
-          "nodes": [
-            {
-              "content": "var cql = 'CREATE COLUMNFAMILY ?",
-              "pos": [
-                0,
-                32
-              ]
-            },
-            {
-              "content": "(?",
-              "pos": [
-                33,
-                35
-              ]
-            },
-            {
-              "content": "?",
-              "pos": [
-                36,
-                37
-              ]
-            },
-            {
-              "content": "PRIMARY KEY,?",
-              "pos": [
-                38,
-                51
-              ]
-            },
-            {
-              "content": "?, ?",
-              "pos": [
-                52,
-                56
-              ]
-            },
-            {
-              "content": "?)';",
-              "pos": [
-                57,
-                61
-              ]
-            }
-          ]
-        },
-        {
-          "content": "var con =  new pooledCon(ksConOptions);",
-          "pos": [
-            244,
-            283
-          ]
-        },
-        {
-          "content": "con.execute(cql,params,function(err) {",
-          "pos": [
-            291,
-            329
-          ]
-        },
-        {
-          "content": "if (err) {",
-          "pos": [
-            341,
-            351
-          ]
-        },
-        {
-          "content": "console.log(\"Failed to create column family: \" + params[0]);",
-          "pos": [
-            366,
-            426
-          ]
-        },
-        {
-          "content": "console.log(err);",
-          "pos": [
-            441,
-            458
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            470,
-            471
-          ]
-        },
-        {
-          "content": "else {",
-          "pos": [
-            483,
-            489
-          ]
-        },
-        {
-          "content": "console.log(\"Created column family: \" + params[0]);",
-          "pos": [
-            504,
-            555
-          ]
-        },
-        {
-          "content": "callback();",
-          "pos": [
-            570,
-            581
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            593,
-            594
-          ]
-        },
-        {
-          "content": "});",
-          "pos": [
-            602,
-            605
-          ]
-        },
-        {
-          "content": "con.shutdown();",
-          "pos": [
-            613,
-            628
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            634,
-            635
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
-        48215,
-        48375
-      ],
-      "content": "//populate Data\n     function populateCustomerData() {\n        var params = ['John','Infinity Dr, TX', 1];\n        updateCustomer(ksConOptions,params);",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "//populate Data",
-          "pos": [
-            0,
-            15
-          ]
-        },
-        {
-          "content": "function populateCustomerData() {",
-          "pos": [
-            21,
-            54
-          ]
-        },
-        {
-          "content": "var params = ['John','Infinity Dr, TX', 1];",
-          "pos": [
-            63,
-            106
-          ]
-        },
-        {
-          "content": "updateCustomer(ksConOptions,params);",
-          "pos": [
-            115,
-            151
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
-        48396,
-        48490
-      ],
-      "content": "params = ['Tom','Fermat Ln, WA', 2];\n        updateCustomer(ksConOptions,params);\n     }",
-      "leadings": [
-        "",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "params = ['Tom','Fermat Ln, WA', 2];",
-          "pos": [
-            0,
-            36
-          ]
-        },
-        {
-          "content": "updateCustomer(ksConOptions,params);",
-          "pos": [
-            45,
-            81
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            87,
-            88
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
-        48508,
-        48966
-      ],
-      "content": "//update will also insert the record if none exists\n     function updateCustomer(ksConOptions,params)\n     {\n       var cql = 'UPDATE customers_cf SET custname=?,custaddress=? where custid=?';\n       var con = new pooledCon(ksConOptions);\n       con.execute(cql,params,function(err) {\n           if (err) console.log(err);\n           else console.log(\"Inserted customer : \" + params[0]);\n       });\n       con.shutdown();\n     }",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "//update will also insert the record if none exists",
-          "pos": [
-            0,
-            51
-          ]
-        },
-        {
-          "content": "function updateCustomer(ksConOptions,params)",
-          "pos": [
-            57,
-            101
-          ]
-        },
-        {
-          "content": "{",
-          "pos": [
-            107,
-            108
-          ]
-        },
-        {
-          "content": "var cql = 'UPDATE customers_cf SET custname=?,custaddress=? where custid=?';",
-          "pos": [
-            116,
-            192
-          ],
-          "nodes": [
-            {
-              "content": "var cql = 'UPDATE customers_cf SET custname=?,custaddress=?",
-              "pos": [
-                0,
-                59
-              ]
-            },
-            {
-              "content": "where custid=?';",
-              "pos": [
-                60,
-                76
-              ]
-            }
-          ]
-        },
-        {
-          "content": "var con = new pooledCon(ksConOptions);",
-          "pos": [
-            200,
-            238
-          ]
-        },
-        {
-          "content": "con.execute(cql,params,function(err) {",
-          "pos": [
-            246,
-            284
-          ]
-        },
-        {
-          "content": "if (err) console.log(err);",
-          "pos": [
-            296,
-            322
-          ]
-        },
-        {
-          "content": "else console.log(\"Inserted customer : \" + params[0]);",
-          "pos": [
-            334,
-            387
-          ]
-        },
-        {
-          "content": "});",
-          "pos": [
-            395,
-            398
-          ]
-        },
-        {
-          "content": "con.shutdown();",
-          "pos": [
-            406,
-            421
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            427,
-            428
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
-        48984,
-        49484
-      ],
-      "content": "//read the two rows inserted above\n     function readCustomer(ksConOptions)\n     {\n       var cql = 'SELECT * FROM customers_cf WHERE custid IN (1,2)';\n       var con = new pooledCon(ksConOptions);\n       con.execute(cql,[],function(err,rows) {\n           if (err) \n              console.log(err);\n           else \n              for (var i=0; i<rows.length; i++)\n                 console.log(JSON.stringify(rows[i]));\n         });\n        con.shutdown();\n     }",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "//read the two rows inserted above",
-          "pos": [
-            0,
-            34
-          ]
-        },
-        {
-          "content": "function readCustomer(ksConOptions)",
-          "pos": [
-            40,
-            75
-          ]
-        },
-        {
-          "content": "{",
-          "pos": [
-            81,
-            82
-          ]
-        },
-        {
-          "content": "var cql = 'SELECT * FROM customers_cf WHERE custid IN (1,2)';",
-          "pos": [
-            90,
-            151
-          ]
-        },
-        {
-          "content": "var con = new pooledCon(ksConOptions);",
-          "pos": [
-            159,
-            197
-          ]
-        },
-        {
-          "content": "con.execute(cql,[],function(err,rows) {",
-          "pos": [
-            205,
-            244
-          ]
-        },
-        {
-          "content": "if (err)",
-          "pos": [
-            256,
-            264
-          ]
-        },
-        {
-          "content": "console.log(err);",
-          "pos": [
-            280,
-            297
-          ]
-        },
-        {
-          "content": "else",
-          "pos": [
-            309,
-            313
-          ]
-        },
-        {
-          "content": "for (var i=0; i&lt;rows.length; i++)",
-          "pos": [
-            329,
-            362
-          ]
-        },
-        {
-          "content": "console.log(JSON.stringify(rows[i]));",
-          "pos": [
-            380,
-            417
-          ]
-        },
-        {
-          "content": "});",
-          "pos": [
-            427,
-            430
-          ]
-        },
-        {
-          "content": "con.shutdown();",
-          "pos": [
-            439,
-            454
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            460,
-            461
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
-        49502,
-        49599
-      ],
-      "content": "//exectue the code\n     createKeyspace(createColumnFamily);\n     readCustomer(ksConOptions)",
-      "leadings": [
-        "",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "//exectue the code",
-          "pos": [
-            0,
-            18
-          ]
-        },
-        {
-          "content": "createKeyspace(createColumnFamily);",
-          "pos": [
-            24,
-            59
-          ]
-        },
-        {
-          "content": "readCustomer(ksConOptions)",
-          "pos": [
-            65,
-            91
-          ]
-        }
       ]
     },
     {

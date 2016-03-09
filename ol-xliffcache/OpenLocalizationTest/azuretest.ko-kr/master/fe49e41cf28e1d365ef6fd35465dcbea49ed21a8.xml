@@ -78,25 +78,25 @@
       ]
     },
     {
-      "content": "Create an App Service Gateway",
       "pos": [
-        1766,
+        1737,
         1795
-      ]
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"create-gateway\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Create an App Service Gateway"
     },
     {
-      "content": "Register your app for authentication and configure App Services",
       "pos": [
-        1975,
+        1952,
         2038
-      ]
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"register\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Register your app for authentication and configure App Services"
     },
     {
-      "content": "Restrict permissions to authenticated users",
       "pos": [
-        2193,
+        2167,
         2236
-      ]
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"permissions\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Restrict permissions to authenticated users"
     },
     {
       "content": "In Visual Studio or Xamarin Studio, run the client project on a device or emulator.",
@@ -120,11 +120,11 @@
       ]
     },
     {
-      "content": "Add authentication to the app",
       "pos": [
-        2939,
+        2906,
         2968
-      ]
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"add-authentication\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Add authentication to the app"
     },
     {
       "pos": [
@@ -134,125 +134,11 @@
       "content": "Add the following property to the <bpt id=\"p1\">**</bpt>TodoActivity<ept id=\"p1\">**</ept> class:"
     },
     {
-      "content": "private MobileServiceUser user;",
-      "pos": [
-        3044,
-        3075
-      ]
-    },
-    {
       "pos": [
         3080,
         3135
       ],
       "content": "Add the following method to the <bpt id=\"p1\">**</bpt>TodoActivity<ept id=\"p1\">**</ept> class:"
-    },
-    {
-      "pos": [
-        3150,
-        3628
-      ],
-      "content": "private async Task Authenticate()\n         {\n             try\n             {\n                 user = await client.LoginAsync(this, MobileServiceAuthenticationProvider.Facebook);\n                 CreateAndShowDialog(string.Format(\"you are now logged in - {0}\", user.UserId), \"Logged in!\");\n             }\n             catch (Exception ex)\n             {\n                 CreateAndShowDialog(ex, \"Authentication failed\");\n             }\n         }",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "private async Task Authenticate()",
-          "pos": [
-            0,
-            33
-          ]
-        },
-        {
-          "content": "{",
-          "pos": [
-            43,
-            44
-          ]
-        },
-        {
-          "content": "try",
-          "pos": [
-            58,
-            61
-          ]
-        },
-        {
-          "content": "{",
-          "pos": [
-            75,
-            76
-          ]
-        },
-        {
-          "content": "user = await client.LoginAsync(this, MobileServiceAuthenticationProvider.Facebook);",
-          "pos": [
-            94,
-            177
-          ]
-        },
-        {
-          "content": "CreateAndShowDialog(string.Format(\"you are now logged in - {0}\", user.UserId), \"Logged in!\");",
-          "pos": [
-            195,
-            288
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            302,
-            303
-          ]
-        },
-        {
-          "content": "catch (Exception ex)",
-          "pos": [
-            317,
-            337
-          ]
-        },
-        {
-          "content": "{",
-          "pos": [
-            351,
-            352
-          ]
-        },
-        {
-          "content": "CreateAndShowDialog(ex, \"Authentication failed\");",
-          "pos": [
-            370,
-            419
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            433,
-            434
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            444,
-            445
-          ]
-        }
-      ]
     },
     {
       "content": "This creates a new method to authenticate a user.",
@@ -288,48 +174,6 @@
         4180
       ],
       "content": "In the <bpt id=\"p1\">**</bpt>OnCreate<ept id=\"p1\">**</ept> method, add the following line of code after the code that instantiates the <ph id=\"ph1\">`MobileServiceClient`</ph> object."
-    },
-    {
-      "pos": [
-        4190,
-        4392
-      ],
-      "content": "// Create the Mobile Service Client instance, using the provided\n     // Mobile Service URL, Gateway URL and key\n     client = new MobileServiceClient (applicationURL, gatewayURL, applicationKey);",
-      "leadings": [
-        "",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "// Create the Mobile Service Client instance, using the provided",
-          "pos": [
-            0,
-            64
-          ]
-        },
-        {
-          "content": "// Mobile Service URL, Gateway URL and key",
-          "pos": [
-            70,
-            112
-          ]
-        },
-        {
-          "content": "client = new MobileServiceClient (applicationURL, gatewayURL, applicationKey);",
-          "pos": [
-            118,
-            196
-          ]
-        }
-      ]
-    },
-    {
-      "content": "await Authenticate(); // Added for authentication",
-      "pos": [
-        4410,
-        4459
-      ]
     },
     {
       "content": "This call starts the authentication process and awaits it asynchronously.",

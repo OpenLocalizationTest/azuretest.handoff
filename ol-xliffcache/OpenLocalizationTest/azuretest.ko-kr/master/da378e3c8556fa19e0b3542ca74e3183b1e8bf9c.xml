@@ -406,9 +406,9 @@
       ]
     },
     {
-      "content": "<ph id=\"ph1\">&lt;!-- --&gt;</ph>\nThe following code example creates two entity objects and adds each",
+      "content": "The following code example creates two entity objects and adds each",
       "pos": [
-        5930,
+        5939,
         6006
       ]
     },
@@ -518,9 +518,23 @@
       ]
     },
     {
-      "content": "<ph id=\"ph1\">// Retrieve the storage account from the connection string.\n    CloudStorageAccount storageAccount = CloudStorageAccount.Parse(\n        CloudConfigurationManager.GetSetting(\"StorageConnectionString\"));\n\n    // Create the table client.\n    CloudTableClient tableClient = storageAccount.CreateCloudTableClient();\n\n    // Create the CloudTable object that represents the \"people\" table.\n    CloudTable table = tableClient.GetTableReference(\"people\");\n\n    // Construct the query operation for all customer entities where PartitionKey=\"Smith\".\n    TableQuery&lt;CustomerEntity&gt;</ph> query = new TableQuery<ph id=\"ph2\">&lt;CustomerEntity&gt;</ph>().Where(TableQuery.GenerateFilterCondition(\"PartitionKey\", QueryComparisons.Equal, \"Smith\"));\n\n    // Print the fields for each customer.",
+      "content": "<ph id=\"ph1\">// Retrieve the storage account from the connection string.\n    CloudStorageAccount storageAccount = CloudStorageAccount.Parse(\n        CloudConfigurationManager.GetSetting(\"StorageConnectionString\"));\n\n    // Create the table client.\n    CloudTableClient tableClient = storageAccount.CreateCloudTableClient();\n\n    // Create the CloudTable object that represents the \"people\" table.\n    CloudTable table = tableClient.GetTableReference(\"people\");\n\n    // Construct the query operation for all customer entities where PartitionKey=\"Smith\".\n    TableQuery</ph>",
       "pos": [
         7639,
+        8193
+      ]
+    },
+    {
+      "content": "query = new TableQuery",
+      "pos": [
+        8210,
+        8232
+      ]
+    },
+    {
+      "content": "().Where(TableQuery.GenerateFilterCondition(\"PartitionKey\", QueryComparisons.Equal, \"Smith\"));\n\n    // Print the fields for each customer.",
+      "pos": [
+        8248,
         8386
       ]
     },
@@ -567,9 +581,23 @@
       ]
     },
     {
-      "content": "<ph id=\"ph1\">// Retrieve the storage account from the connection string.\n    CloudStorageAccount storageAccount = CloudStorageAccount.Parse(\n        CloudConfigurationManager.GetSetting(\"StorageConnectionString\"));\n\n    // Create the table client.\n    CloudTableClient tableClient = storageAccount.CreateCloudTableClient();\n\n    // Create the CloudTable object that represents the \"people\" table.\n    CloudTable table = tableClient.GetTableReference(\"people\");\n\n    // Create the table query.\n    TableQuery&lt;CustomerEntity&gt;</ph> rangeQuery = new TableQuery<ph id=\"ph2\">&lt;CustomerEntity&gt;</ph>().Where(",
+      "content": "<ph id=\"ph1\">// Retrieve the storage account from the connection string.\n    CloudStorageAccount storageAccount = CloudStorageAccount.Parse(\n        CloudConfigurationManager.GetSetting(\"StorageConnectionString\"));\n\n    // Create the table client.\n    CloudTableClient tableClient = storageAccount.CreateCloudTableClient();\n\n    // Create the CloudTable object that represents the \"people\" table.\n    CloudTable table = tableClient.GetTableReference(\"people\");\n\n    // Create the table query.\n    TableQuery</ph>",
       "pos": [
         8999,
+        9493
+      ]
+    },
+    {
+      "content": "rangeQuery = new TableQuery",
+      "pos": [
+        9510,
+        9537
+      ]
+    },
+    {
+      "content": "().Where(",
+      "pos": [
+        9553,
         9562
       ]
     },
@@ -651,9 +679,16 @@
       ]
     },
     {
-      "content": "<ph id=\"ph1\">// Retrieve the storage account from the connection string.\n    CloudStorageAccount storageAccount = CloudStorageAccount.Parse(\n        CloudConfigurationManager.GetSetting(\"StorageConnectionString\"));\n\n    // Create the table client.\n    CloudTableClient tableClient = storageAccount.CreateCloudTableClient();\n\n    // Create the CloudTable object that represents the \"people\" table.\n    CloudTable table = tableClient.GetTableReference(\"people\");\n\n    // Create a retrieve operation that takes a customer entity.\n    TableOperation retrieveOperation = TableOperation.Retrieve&lt;CustomerEntity&gt;</ph>(\"Smith\", \"Ben\");\n\n    // Execute the retrieve operation.",
+      "content": "<ph id=\"ph1\">// Retrieve the storage account from the connection string.\n    CloudStorageAccount storageAccount = CloudStorageAccount.Parse(\n        CloudConfigurationManager.GetSetting(\"StorageConnectionString\"));\n\n    // Create the table client.\n    CloudTableClient tableClient = storageAccount.CreateCloudTableClient();\n\n    // Create the CloudTable object that represents the \"people\" table.\n    CloudTable table = tableClient.GetTableReference(\"people\");\n\n    // Create a retrieve operation that takes a customer entity.\n    TableOperation retrieveOperation = TableOperation.Retrieve</ph>",
       "pos": [
         10547,
+        11123
+      ]
+    },
+    {
+      "content": "(\"Smith\", \"Ben\");\n\n    // Execute the retrieve operation.",
+      "pos": [
+        11139,
         11196
       ]
     },
@@ -791,9 +826,16 @@
       ]
     },
     {
-      "content": "<ph id=\"ph1\">// Retrieve the storage account from the connection string.\n    CloudStorageAccount storageAccount = CloudStorageAccount.Parse(\n        CloudConfigurationManager.GetSetting(\"StorageConnectionString\"));\n\n    // Create the table client.\n    CloudTableClient tableClient = storageAccount.CreateCloudTableClient();\n\n    // Create the CloudTable object that represents the \"people\" table.\n    CloudTable table = tableClient.GetTableReference(\"people\");\n\n    // Create a retrieve operation that takes a customer entity.\n    TableOperation retrieveOperation = TableOperation.Retrieve&lt;CustomerEntity&gt;</ph>(\"Smith\", \"Ben\");\n\n    // Execute the operation.",
+      "content": "<ph id=\"ph1\">// Retrieve the storage account from the connection string.\n    CloudStorageAccount storageAccount = CloudStorageAccount.Parse(\n        CloudConfigurationManager.GetSetting(\"StorageConnectionString\"));\n\n    // Create the table client.\n    CloudTableClient tableClient = storageAccount.CreateCloudTableClient();\n\n    // Create the CloudTable object that represents the \"people\" table.\n    CloudTable table = tableClient.GetTableReference(\"people\");\n\n    // Create a retrieve operation that takes a customer entity.\n    TableOperation retrieveOperation = TableOperation.Retrieve</ph>",
       "pos": [
         12345,
+        12921
+      ]
+    },
+    {
+      "content": "(\"Smith\", \"Ben\");\n\n    // Execute the operation.",
+      "pos": [
+        12937,
         12985
       ]
     },
@@ -945,9 +987,16 @@
       ]
     },
     {
-      "content": "<ph id=\"ph1\">// Retrieve the storage account from the connection string.\n    CloudStorageAccount storageAccount = CloudStorageAccount.Parse(\n        CloudConfigurationManager.GetSetting(\"StorageConnectionString\"));\n\n    // Create the table client.\n    CloudTableClient tableClient = storageAccount.CreateCloudTableClient();\n\n    // Create the CloudTable object that represents the \"people\" table.\n    CloudTable table = tableClient.GetTableReference(\"people\");\n\n    // Create a retrieve operation that takes a customer entity.\n    TableOperation retrieveOperation = TableOperation.Retrieve&lt;CustomerEntity&gt;</ph>(\"Smith\", \"Ben\");\n\n    // Execute the operation.",
+      "content": "<ph id=\"ph1\">// Retrieve the storage account from the connection string.\n    CloudStorageAccount storageAccount = CloudStorageAccount.Parse(\n        CloudConfigurationManager.GetSetting(\"StorageConnectionString\"));\n\n    // Create the table client.\n    CloudTableClient tableClient = storageAccount.CreateCloudTableClient();\n\n    // Create the CloudTable object that represents the \"people\" table.\n    CloudTable table = tableClient.GetTableReference(\"people\");\n\n    // Create a retrieve operation that takes a customer entity.\n    TableOperation retrieveOperation = TableOperation.Retrieve</ph>",
       "pos": [
         14501,
+        15077
+      ]
+    },
+    {
+      "content": "(\"Smith\", \"Ben\");\n\n    // Execute the operation.",
+      "pos": [
+        15093,
         15141
       ]
     },
@@ -1043,9 +1092,30 @@
       ]
     },
     {
-      "content": "<ph id=\"ph1\">// Retrieve the storage account from the connection string.\n    CloudStorageAccount storageAccount = CloudStorageAccount.Parse(\n        CloudConfigurationManager.GetSetting(\"StorageConnectionString\"));\n\n    // Create the table client.\n    CloudTableClient tableClient = storageAccount.CreateCloudTableClient();\n\n    // Create the CloudTable that represents the \"people\" table.\n    CloudTable table = tableClient.GetTableReference(\"people\");\n\n    // Define the query, and select only the Email property.\n    TableQuery&lt;DynamicTableEntity&gt;</ph> projectionQuery = new TableQuery<ph id=\"ph2\">&lt;DynamicTableEntity&gt;</ph>().Select(new string[] { \"Email\" });\n\n    <ph id=\"ph3\">// Define an entity resolver to work with the entity after retrieval.\n    EntityResolver&lt;string&gt;</ph> resolver = (pk, rk, ts, props, etag) =&gt; props.ContainsKey(\"Email\") ?",
+      "content": "<ph id=\"ph1\">// Retrieve the storage account from the connection string.\n    CloudStorageAccount storageAccount = CloudStorageAccount.Parse(\n        CloudConfigurationManager.GetSetting(\"StorageConnectionString\"));\n\n    // Create the table client.\n    CloudTableClient tableClient = storageAccount.CreateCloudTableClient();\n\n    // Create the CloudTable that represents the \"people\" table.\n    CloudTable table = tableClient.GetTableReference(\"people\");\n\n    // Define the query, and select only the Email property.\n    TableQuery</ph>",
       "pos": [
         16501,
+        17018
+      ]
+    },
+    {
+      "content": "projectionQuery = new TableQuery",
+      "pos": [
+        17039,
+        17071
+      ]
+    },
+    {
+      "content": "().Select(new string[] { \"Email\" });\n\n    <ph id=\"ph1\">// Define an entity resolver to work with the entity after retrieval.\n    EntityResolver</ph>",
+      "pos": [
+        17091,
+        17221
+      ]
+    },
+    {
+      "content": "resolver = (pk, rk, ts, props, etag) =&gt; props.ContainsKey(\"Email\") ?",
+      "pos": [
+        17230,
         17298
       ]
     },
@@ -1078,9 +1148,16 @@
       ]
     },
     {
-      "content": "<ph id=\"ph1\">// Retrieve the storage account from the connection string.\n    CloudStorageAccount storageAccount = CloudStorageAccount.Parse(\n        CloudConfigurationManager.GetSetting(\"StorageConnectionString\"));\n\n    // Create the table client.\n    CloudTableClient tableClient = storageAccount.CreateCloudTableClient();\n\n    // Create the CloudTable that represents the \"people\" table.\n    CloudTable table = tableClient.GetTableReference(\"people\");\n\n    // Create a retrieve operation that expects a customer entity.\n    TableOperation retrieveOperation = TableOperation.Retrieve&lt;CustomerEntity&gt;</ph>(\"Smith\", \"Ben\");\n\n    // Execute the operation.",
+      "content": "<ph id=\"ph1\">// Retrieve the storage account from the connection string.\n    CloudStorageAccount storageAccount = CloudStorageAccount.Parse(\n        CloudConfigurationManager.GetSetting(\"StorageConnectionString\"));\n\n    // Create the table client.\n    CloudTableClient tableClient = storageAccount.CreateCloudTableClient();\n\n    // Create the CloudTable that represents the \"people\" table.\n    CloudTable table = tableClient.GetTableReference(\"people\");\n\n    // Create a retrieve operation that expects a customer entity.\n    TableOperation retrieveOperation = TableOperation.Retrieve</ph>",
       "pos": [
         17692,
+        18263
+      ]
+    },
+    {
+      "content": "(\"Smith\", \"Ben\");\n\n    // Execute the operation.",
+      "pos": [
+        18279,
         18327
       ]
     },
@@ -1183,9 +1260,30 @@
       ]
     },
     {
-      "content": "<ph id=\"ph1\">// Initialize a default TableQuery to retrieve all the entities in the table.\n    TableQuery&lt;CustomerEntity&gt;</ph> tableQuery = new TableQuery<ph id=\"ph2\">&lt;CustomerEntity&gt;</ph>();\n\n    <ph id=\"ph3\">// Initialize the continuation token to null to start from the beginning of the table.\n    TableContinuationToken continuationToken = null;\n\n    do\n    {\n        // Retrieve a segment (up to 1,000 entities).\n        TableQuerySegment&lt;CustomerEntity&gt;</ph> tableQueryResult =",
+      "content": "<ph id=\"ph1\">// Initialize a default TableQuery to retrieve all the entities in the table.\n    TableQuery</ph>",
       "pos": [
         20207,
+        20299
+      ]
+    },
+    {
+      "content": "tableQuery = new TableQuery",
+      "pos": [
+        20316,
+        20343
+      ]
+    },
+    {
+      "content": "();\n\n    <ph id=\"ph1\">// Initialize the continuation token to null to start from the beginning of the table.\n    TableContinuationToken continuationToken = null;\n\n    do\n    {\n        // Retrieve a segment (up to 1,000 entities).\n        TableQuerySegment</ph>",
+      "pos": [
+        20359,
+        20601
+      ]
+    },
+    {
+      "content": "tableQueryResult =",
+      "pos": [
+        20618,
         20636
       ]
     },
@@ -1218,10 +1316,73 @@
       ]
     },
     {
-      "content": "to learn about more complex storage tasks:\n\n<ph id=\"ph1\">&lt;ul&gt;</ph><ph id=\"ph2\">\n&lt;li&gt;</ph>View the Table service reference documentation for complete details about available APIs:\n  <ph id=\"ph3\">&lt;ul&gt;</ph><ph id=\"ph4\">\n    &lt;li&gt;&lt;a href=\"http://go.microsoft.com/fwlink/?LinkID=390731&amp;clcid=0x409\"&gt;</ph>Storage Client Library for .NET reference<ph id=\"ph5\">&lt;/a&gt;</ph><ph id=\"ph6\">\n    &lt;/li&gt;</ph><ph id=\"ph7\">\n    &lt;li&gt;&lt;a href=\"http://msdn.microsoft.com/library/azure/dd179355\"&gt;</ph>REST API reference<ph id=\"ph8\">&lt;/a&gt;&lt;/li&gt;</ph><ph id=\"ph9\">\n  &lt;/ul&gt;</ph><ph id=\"ph10\">\n&lt;/li&gt;</ph><ph id=\"ph11\">\n&lt;li&gt;</ph>Learn about more advanced tasks you can perform with Azure Storage by reviewing <ph id=\"ph12\">&lt;a href=\"http://msdn.microsoft.com/library/azure/gg433040.aspx\"&gt;</ph>Azure Storage documentation<ph id=\"ph13\">&lt;/a&gt;</ph>.<ph id=\"ph14\">&lt;/li&gt;</ph><ph id=\"ph15\">\n&lt;li&gt;</ph>Learn how to simplify the code you write to work with Azure Storage by using the <ph id=\"ph16\">&lt;a href=\"../websites-dotnet-webjobs-sdk/\"&gt;</ph>Azure WebJobs SDK<ph id=\"ph17\">&lt;/a&gt;</ph>.<ph id=\"ph18\">&lt;/li&gt;</ph><ph id=\"ph19\">\n&lt;li&gt;</ph>View more feature guides to learn about additional options for storing data in Azure:\n  <ph id=\"ph20\">&lt;ul&gt;</ph><ph id=\"ph21\">\n    &lt;li&gt;</ph>Use <ph id=\"ph22\">&lt;a href=\"/documentation/articles/storage-dotnet-how-to-use-blobs/\"&gt;</ph>Blob storage<ph id=\"ph23\">&lt;/a&gt;</ph> to store unstructured data.<ph id=\"ph24\">&lt;/li&gt;</ph><ph id=\"ph25\">\n    &lt;li&gt;</ph>Use <ph id=\"ph26\">&lt;a href=\"/documentation/articles/storage-dotnet-how-to-use-queues/\"&gt;</ph>Queue storage<ph id=\"ph27\">&lt;/a&gt;</ph> to store structured data.<ph id=\"ph28\">&lt;/li&gt;</ph><ph id=\"ph29\">\n    &lt;li&gt;</ph>Use <ph id=\"ph30\">&lt;a href=\"/documentation/articles/sql-database-dotnet-how-to-use/\"&gt;</ph>SQL Database<ph id=\"ph31\">&lt;/a&gt;</ph> to store relational data.<ph id=\"ph32\">&lt;/li&gt;</ph><ph id=\"ph33\">\n  &lt;/ul&gt;</ph><ph id=\"ph34\">\n&lt;/li&gt;</ph><ph id=\"ph35\">\n&lt;/ul&gt;</ph><ph id=\"ph36\">\n\n  [Download and install the Azure SDK for .NET]: /develop/net/\n  [Creating an Azure Project in Visual Studio]: http://msdn.microsoft.com/library/azure/ee405487.aspx\n\n  [Blob5]: ./media/storage-dotnet-how-to-use-table-storage/blob5.png\n  [Blob6]: ./media/storage-dotnet-how-to-use-table-storage/blob6.png\n  [Blob7]: ./media/storage-dotnet-how-to-use-table-storage/blob7.png\n  [Blob8]: ./media/storage-dotnet-how-to-use-table-storage/blob8.png\n  [Blob9]: ./media/storage-dotnet-how-to-use-table-storage/blob9.png\n\n  [Introducing Upsert and Query Projection blog post]: http://blogs.msdn.com/b/windowsazurestorage/archive/2011/09/15/windows-azure-tables-introducing-upsert-and-query-projection.aspx\n  [.NET Client Library reference]: http://go.microsoft.com/fwlink/?LinkID=390731&amp;clcid=0x409\n  [Storing and accessing data in Azure]: http://msdn.microsoft.com/library/azure/gg433040.aspx\n  [Azure Storage Team blog]: http://blogs.msdn.com/b/windowsazurestorage/\n  [Configure Azure Storage connection strings]: http://msdn.microsoft.com/library/azure/ee758697.aspx\n  [OData]: http://nuget.org/packages/Microsoft.Data.OData/5.0.2\n  [Edm]: http://nuget.org/packages/Microsoft.Data.Edm/5.0.2\n  [Spatial]: http://nuget.org/packages/System.Spatial/5.0.2\n  [How to: Programmatically access Table storage]: #tablestorage</ph>",
+      "content": "to learn about more complex storage tasks:",
       "pos": [
         21286,
-        23828
+        21328
+      ]
+    },
+    {
+      "content": "View the Table service reference documentation for complete details about available APIs:",
+      "pos": [
+        21339,
+        21428
+      ]
+    },
+    {
+      "content": "Storage Client Library for .NET reference<ph id=\"ph1\">&lt;/a&gt;</ph><ph id=\"ph2\">\n    </ph>",
+      "pos": [
+        21512,
+        21562
+      ]
+    },
+    {
+      "content": "REST API reference",
+      "pos": [
+        21635,
+        21653
+      ]
+    },
+    {
+      "content": "Learn about more advanced tasks you can perform with Azure Storage by reviewing <ph id=\"ph1\">&lt;a href=\"http://msdn.microsoft.com/library/azure/gg433040.aspx\"&gt;</ph>Azure Storage documentation<ph id=\"ph2\">&lt;/a&gt;</ph>.",
+      "pos": [
+        21681,
+        21857
+      ]
+    },
+    {
+      "content": "Learn how to simplify the code you write to work with Azure Storage by using the <ph id=\"ph1\">&lt;a href=\"../websites-dotnet-webjobs-sdk/\"&gt;</ph>Azure WebJobs SDK<ph id=\"ph2\">&lt;/a&gt;</ph>.",
+      "pos": [
+        21867,
+        22012
+      ]
+    },
+    {
+      "content": "View more feature guides to learn about additional options for storing data in Azure:",
+      "pos": [
+        22022,
+        22107
+      ]
+    },
+    {
+      "content": "Use <ph id=\"ph1\">&lt;a href=\"/documentation/articles/storage-dotnet-how-to-use-blobs/\"&gt;</ph>Blob storage<ph id=\"ph2\">&lt;/a&gt;</ph> to store unstructured data.",
+      "pos": [
+        22123,
+        22238
+      ]
+    },
+    {
+      "content": "Use <ph id=\"ph1\">&lt;a href=\"/documentation/articles/storage-dotnet-how-to-use-queues/\"&gt;</ph>Queue storage<ph id=\"ph2\">&lt;/a&gt;</ph> to store structured data.",
+      "pos": [
+        22252,
+        22367
+      ]
+    },
+    {
+      "content": "Use <ph id=\"ph1\">&lt;a href=\"/documentation/articles/sql-database-dotnet-how-to-use/\"&gt;</ph>SQL Database<ph id=\"ph2\">&lt;/a&gt;</ph> to store relational data.",
+      "pos": [
+        22381,
+        22493
       ]
     }
   ],

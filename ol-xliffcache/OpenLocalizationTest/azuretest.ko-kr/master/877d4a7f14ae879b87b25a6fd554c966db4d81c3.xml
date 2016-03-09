@@ -162,11 +162,11 @@
       "content": "Complete the <bpt id=\"p1\">[</bpt>quickstart tutorial<ept id=\"p1\">](../app-service-mobile-dotnet-backend-xamarin-ios-get-started-preview.md)</ept>."
     },
     {
-      "content": "Register app for push notifications",
       "pos": [
-        2684,
+        2663,
         2719
-      ]
+      ],
+      "content": "<ph id=\"ph1\">&lt;a id=\"register\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Register app for push notifications"
     },
     {
       "content": "Configure Azure to send push notifications",
@@ -176,32 +176,32 @@
       ]
     },
     {
-      "content": "Update the server project to send push notifications",
       "pos": [
-        3030,
+        3004,
         3082
-      ]
+      ],
+      "content": "<ph id=\"ph1\">&lt;a id=\"update-server\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Update the server project to send push notifications"
     },
     {
-      "content": "Deploy server project to Azure",
       "pos": [
-        3260,
+        3226,
         3290
-      ]
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"publish-the-service\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Deploy server project to Azure"
     },
     {
-      "content": "Configure your Xamarin.iOS project",
       "pos": [
-        3477,
+        3449,
         3511
-      ]
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"configure-app\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Configure your Xamarin.iOS project"
     },
     {
-      "content": "Add push notifications to your app",
       "pos": [
-        3684,
+        3661,
         3718
-      ]
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"add-push\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Add push notifications to your app"
     },
     {
       "pos": [
@@ -212,108 +212,10 @@
     },
     {
       "pos": [
-        3848,
-        4055
-      ],
-      "content": "public MobileServiceClient GetClient {\n         get\n         {\n             return client;\n         }\n         private set\n         {\n             client = value;\n         }\n     }",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "public MobileServiceClient GetClient {",
-          "pos": [
-            0,
-            38
-          ]
-        },
-        {
-          "content": "get",
-          "pos": [
-            48,
-            51
-          ]
-        },
-        {
-          "content": "{",
-          "pos": [
-            61,
-            62
-          ]
-        },
-        {
-          "content": "return client;",
-          "pos": [
-            76,
-            90
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            100,
-            101
-          ]
-        },
-        {
-          "content": "private set",
-          "pos": [
-            111,
-            122
-          ]
-        },
-        {
-          "content": "{",
-          "pos": [
-            132,
-            133
-          ]
-        },
-        {
-          "content": "client = value;",
-          "pos": [
-            147,
-            162
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            172,
-            173
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            179,
-            180
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
         4060,
         4138
       ],
       "content": "Add the following <ph id=\"ph1\">`using`</ph> statement to the top of the <bpt id=\"p1\">**</bpt>AppDelegate.cs<ept id=\"p1\">**</ept> file."
-    },
-    {
-      "content": "using Microsoft.WindowsAzure.MobileServices;",
-      "pos": [
-        4148,
-        4192
-      ]
     },
     {
       "pos": [
@@ -324,217 +226,10 @@
     },
     {
       "pos": [
-        4269,
-        4663
-      ],
-      "content": "public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)\n     {\n         // registers for push for iOS8\n         var settings = UIUserNotificationSettings.GetSettingsForTypes(\n             UIUserNotificationType.Alert \n             | UIUserNotificationType.Badge \n             | UIUserNotificationType.Sound, \n             new NSSet());",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)",
-          "pos": [
-            0,
-            93
-          ]
-        },
-        {
-          "content": "{",
-          "pos": [
-            99,
-            100
-          ]
-        },
-        {
-          "content": "// registers for push for iOS8",
-          "pos": [
-            110,
-            140
-          ]
-        },
-        {
-          "content": "var settings = UIUserNotificationSettings.GetSettingsForTypes(",
-          "pos": [
-            150,
-            212
-          ]
-        },
-        {
-          "content": "UIUserNotificationType.Alert",
-          "pos": [
-            226,
-            254
-          ]
-        },
-        {
-          "content": "| UIUserNotificationType.Badge",
-          "pos": [
-            269,
-            299
-          ]
-        },
-        {
-          "content": "| UIUserNotificationType.Sound,",
-          "pos": [
-            314,
-            345
-          ]
-        },
-        {
-          "content": "new NSSet());",
-          "pos": [
-            360,
-            373
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
-        4677,
-        4831
-      ],
-      "content": "UIApplication.SharedApplication.RegisterUserNotificationSettings(settings); \n         UIApplication.SharedApplication.RegisterForRemoteNotifications();",
-      "leadings": [
-        "",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "UIApplication.SharedApplication.RegisterUserNotificationSettings(settings);",
-          "pos": [
-            0,
-            75
-          ]
-        },
-        {
-          "content": "UIApplication.SharedApplication.RegisterForRemoteNotifications();",
-          "pos": [
-            86,
-            151
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
-        4845,
-        4867
-      ],
-      "content": "return true;\n     }",
-      "leadings": [
-        "",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "return true;",
-          "pos": [
-            0,
-            12
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            18,
-            19
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
         4872,
         4946
       ],
       "content": "In the same file, override the <bpt id=\"p1\">**</bpt>RegisteredForRemoteNotifications<ept id=\"p1\">**</ept> event:"
-    },
-    {
-      "pos": [
-        4956,
-        5147
-      ],
-      "content": "public override void RegisteredForRemoteNotifications(UIApplication application, NSData deviceToken)\n     {\n         MobileServiceClient client = QSTodoService.DefaultService.GetClient;",
-      "leadings": [
-        "",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "public override void RegisteredForRemoteNotifications(UIApplication application, NSData deviceToken)",
-          "pos": [
-            0,
-            100
-          ]
-        },
-        {
-          "content": "{",
-          "pos": [
-            106,
-            107
-          ]
-        },
-        {
-          "content": "MobileServiceClient client = QSTodoService.DefaultService.GetClient;",
-          "pos": [
-            117,
-            185
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
-        5161,
-        5298
-      ],
-      "content": "// Register for push with your mobile app\n         var push = client.GetPush();\n         push.RegisterAsync(deviceToken);\n     }",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "// Register for push with your mobile app",
-          "pos": [
-            0,
-            41
-          ]
-        },
-        {
-          "content": "var push = client.GetPush();",
-          "pos": [
-            51,
-            79
-          ]
-        },
-        {
-          "content": "push.RegisterAsync(deviceToken);",
-          "pos": [
-            89,
-            121
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            127,
-            128
-          ]
-        }
-      ]
     },
     {
       "pos": [
@@ -544,150 +239,6 @@
       "content": "Then, override the <bpt id=\"p1\">**</bpt>DidReceivedRemoteNotification<ept id=\"p1\">**</ept> event:"
     },
     {
-      "pos": [
-        5372,
-        5624
-      ],
-      "content": "public override void DidReceiveRemoteNotification (UIApplication application, NSDictionary userInfo, Action<UIBackgroundFetchResult> completionHandler)\n     {\n         NSDictionary aps = userInfo.ObjectForKey(new NSString(\"aps\")) as NSDictionary;",
-      "leadings": [
-        "",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "public override void DidReceiveRemoteNotification (UIApplication application, NSDictionary userInfo, Action",
-          "pos": [
-            0,
-            107
-          ]
-        },
-        {
-          "content": "completionHandler)",
-          "pos": [
-            133,
-            151
-          ]
-        },
-        {
-          "content": "{",
-          "pos": [
-            157,
-            158
-          ]
-        },
-        {
-          "content": "NSDictionary aps = userInfo.ObjectForKey(new NSString(\"aps\")) as NSDictionary;",
-          "pos": [
-            168,
-            246
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
-        5638,
-        5800
-      ],
-      "content": "string alert = string.Empty;\n         if (aps.ContainsKey(new NSString(\"alert\")))\n             alert = (aps [new NSString(\"alert\")] as NSString).ToString();",
-      "leadings": [
-        "",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "string alert = string.Empty;",
-          "pos": [
-            0,
-            28
-          ]
-        },
-        {
-          "content": "if (aps.ContainsKey(new NSString(\"alert\")))",
-          "pos": [
-            38,
-            81
-          ]
-        },
-        {
-          "content": "alert = (aps [new NSString(\"alert\")] as NSString).ToString();",
-          "pos": [
-            95,
-            156
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
-        5814,
-        6038
-      ],
-      "content": "//show alert\n         if (!string.IsNullOrEmpty(alert))\n         {\n             UIAlertView avAlert = new UIAlertView(\"Notification\", alert, null, \"OK\", null);\n             avAlert.Show();\n         }\n     }",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "//show alert",
-          "pos": [
-            0,
-            12
-          ]
-        },
-        {
-          "content": "if (!string.IsNullOrEmpty(alert))",
-          "pos": [
-            22,
-            55
-          ]
-        },
-        {
-          "content": "{",
-          "pos": [
-            65,
-            66
-          ]
-        },
-        {
-          "content": "UIAlertView avAlert = new UIAlertView(\"Notification\", alert, null, \"OK\", null);",
-          "pos": [
-            80,
-            159
-          ]
-        },
-        {
-          "content": "avAlert.Show();",
-          "pos": [
-            173,
-            188
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            198,
-            199
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            205,
-            206
-          ]
-        }
-      ]
-    },
-    {
       "content": "Your app is now updated to support push notifications.",
       "pos": [
         6040,
@@ -695,11 +246,11 @@
       ]
     },
     {
-      "content": "Test push notifications in your app",
       "pos": [
-        6118,
+        6099,
         6153
-      ]
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"test\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Test push notifications in your app"
     },
     {
       "pos": [

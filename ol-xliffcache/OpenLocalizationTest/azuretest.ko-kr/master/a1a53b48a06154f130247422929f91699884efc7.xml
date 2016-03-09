@@ -22,11 +22,11 @@
       ]
     },
     {
-      "content": "Introduction",
       "pos": [
-        611,
+        584,
         623
-      ]
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"introduction\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Introduction"
     },
     {
       "content": "This tutorial will show PHP developers how to leverage Azure Active Directory to enable single sign-on for users of Office 365 customers.",
@@ -177,48 +177,6 @@
     },
     {
       "pos": [
-        2005,
-        2251
-      ],
-      "content": "<!DOCTYPE>\n     <html>\n     <head>\n         <meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\">\n         <title>Index</title>\n     </head>\n     <body>\n         ##Index Page\n     </body>\n     </html>",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "&lt;!DOCTYPE&gt;",
-          "pos": [
-            0,
-            10
-          ]
-        },
-        {
-          "content": "Index",
-          "pos": [
-            133,
-            138
-          ]
-        },
-        {
-          "content": "Index Page",
-          "pos": [
-            183,
-            193
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
         2257,
         2367
       ],
@@ -330,13 +288,6 @@
       "content": "To import the required <bpt id=\"p1\">**</bpt>MSOnlineExtended<ept id=\"p1\">**</ept> module, type the following command and press Enter:"
     },
     {
-      "content": "Import-Module MSOnlineExtended -Force",
-      "pos": [
-        3915,
-        3952
-      ]
-    },
-    {
       "content": "To connect to your Office 365 directory, you will need to provide the company's administrator credentials.",
       "pos": [
         3956,
@@ -348,13 +299,6 @@
       "pos": [
         4063,
         4150
-      ]
-    },
-    {
-      "content": "Connect-MsolService",
-      "pos": [
-        4160,
-        4179
       ]
     },
     {
@@ -372,124 +316,10 @@
       ]
     },
     {
-      "content": "New-MsolServicePrincipal -ServicePrincipalNames @(\"phpSample/localhost\") -DisplayName \"Federation Sample Website\" -Type Symmetric -Usage Verify -StartDate \"12/01/2012\" -EndDate \"12/01/2013\"",
-      "pos": [
-        4301,
-        4490
-      ]
-    },
-    {
       "content": "This step will output information similar to the following:",
       "pos": [
         4492,
         4551
-      ]
-    },
-    {
-      "pos": [
-        4561,
-        5263
-      ],
-      "content": "The following symmetric key was created as one was not supplied qY+Drf20Zz+A4t2w e3PebCopoCugO76My+JMVsqNBFc=\n     DisplayName           : Federation Sample PHP Website\n     ServicePrincipalNames : {phpSample/localhost}\n     ObjectId              : 59cab09a-3f5d-4e86-999c-2e69f682d90d\n     AppPrincipalId        : 7829c758-2bef-43df-a685-717089474505\n     TrustedForDelegation  : False\n     AccountEnabled        : True\n     KeyType               : Symmetric\n     KeyId                 : f1735cbe-aa46-421b-8a1c-03b8f9bb3565\n     StartDate             : 12/01/2012 08:00:00 a.m.\n     EndDate               : 12/01/2013 08:00:00 a.m.\n     Usage                 : Verify",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "The following symmetric key was created as one was not supplied qY+Drf20Zz+A4t2w e3PebCopoCugO76My+JMVsqNBFc=",
-          "pos": [
-            0,
-            109
-          ]
-        },
-        {
-          "content": "DisplayName           : Federation Sample PHP Website",
-          "pos": [
-            115,
-            168
-          ]
-        },
-        {
-          "content": "ServicePrincipalNames : {phpSample/localhost}",
-          "pos": [
-            174,
-            219
-          ]
-        },
-        {
-          "content": "ObjectId              : 59cab09a-3f5d-4e86-999c-2e69f682d90d",
-          "pos": [
-            225,
-            285
-          ]
-        },
-        {
-          "content": "AppPrincipalId        : 7829c758-2bef-43df-a685-717089474505",
-          "pos": [
-            291,
-            351
-          ]
-        },
-        {
-          "content": "TrustedForDelegation  : False",
-          "pos": [
-            357,
-            386
-          ]
-        },
-        {
-          "content": "AccountEnabled        : True",
-          "pos": [
-            392,
-            420
-          ]
-        },
-        {
-          "content": "KeyType               : Symmetric",
-          "pos": [
-            426,
-            459
-          ]
-        },
-        {
-          "content": "KeyId                 : f1735cbe-aa46-421b-8a1c-03b8f9bb3565",
-          "pos": [
-            465,
-            525
-          ]
-        },
-        {
-          "content": "StartDate             : 12/01/2012 08:00:00 a.m.",
-          "pos": [
-            531,
-            579
-          ]
-        },
-        {
-          "content": "EndDate               : 12/01/2013 08:00:00 a.m.",
-          "pos": [
-            585,
-            633
-          ]
-        },
-        {
-          "content": "Usage                 : Verify",
-          "pos": [
-            639,
-            669
-          ]
-        }
       ]
     },
     {
@@ -557,20 +387,6 @@
       ]
     },
     {
-      "content": "$replyUrl = New-MsolServicePrincipalAddresses –Address \"https://localhost/phpSample\"",
-      "pos": [
-        5766,
-        5850
-      ]
-    },
-    {
-      "content": "Set-MsolServicePrincipal –AppPrincipalId \"7829c758-2bef-43df-a685-717089474505\" –Addresses $replyUrl",
-      "pos": [
-        5861,
-        5961
-      ]
-    },
-    {
       "content": "The web application has now been provisioned in the directory and it can be used for web single sign-on by company employees.",
       "pos": [
         5968,
@@ -621,62 +437,10 @@
     },
     {
       "pos": [
-        6826,
-        7265
+        7275,
+        7357
       ],
-      "content": "federation.trustedissuers.issuer=https://accounts.accesscontrol.windows.net/v2/wsfederation\n     federation.trustedissuers.thumbprint=qY+Drf20Zz+A4t2we3PebCopoCugO76My+JMVsqNBFc=\n     federation.trustedissuers.friendlyname=Fabrikam\n     federation.audienceuris=spn:7829c758-2bef-43df-a685-717089474505\n     federation.realm=spn:7829c758-2bef-43df-a685-717089474505\n     federation.reply=https://localhost/phpSample/index.php",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "federation.trustedissuers.issuer=https://accounts.accesscontrol.windows.net/v2/wsfederation",
-          "pos": [
-            0,
-            91
-          ]
-        },
-        {
-          "content": "federation.trustedissuers.thumbprint=qY+Drf20Zz+A4t2we3PebCopoCugO76My+JMVsqNBFc=",
-          "pos": [
-            97,
-            178
-          ]
-        },
-        {
-          "content": "federation.trustedissuers.friendlyname=Fabrikam",
-          "pos": [
-            184,
-            231
-          ]
-        },
-        {
-          "content": "federation.audienceuris=spn:7829c758-2bef-43df-a685-717089474505",
-          "pos": [
-            237,
-            301
-          ]
-        },
-        {
-          "content": "federation.realm=spn:7829c758-2bef-43df-a685-717089474505",
-          "pos": [
-            307,
-            364
-          ]
-        },
-        {
-          "content": "federation.reply=https://localhost/phpSample/index.php",
-          "pos": [
-            370,
-            424
-          ]
-        }
-      ]
+      "content": "<ph id=\"ph1\">[AZURE.NOTE]</ph> The <bpt id=\"p1\">**</bpt>audienceuris<ept id=\"p1\">**</ept> and <bpt id=\"p2\">**</bpt>realm<ept id=\"p2\">**</ept> values must be prefaced by \"spn:\"."
     },
     {
       "pos": [
@@ -708,392 +472,10 @@
     },
     {
       "pos": [
-        7819,
-        8739
-      ],
-      "content": "<?php\n     ini_set('include_path', ini_get('include_path').';c:\\phpLibraries\\;');\n     require_once ('federation/FederatedLoginManager.php');\n     session_start();\n     $token = $_POST['wresult'];\n     $loginManager = new FederatedLoginManager();\n     if (!$loginManager->isAuthenticated()) {\n         if (isset ($token)) {\n             try {\n                 $loginManager->authenticate($token);\n             } catch (Exception $e) {\n                 print_r($e->getMessage());\n             }  \n         } else {\n             $returnUrl = \"https://\" . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];\n             header('Pragma: no-cache');\n             header('Cache-Control: no-cache, must-revalidate');\n             header(\"Location: \" . FederatedLoginManager :: getFederatedLoginUrl($returnUrl), true, 302);\n             exit();\n         }\n     }\n     ?>",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "&lt;?php",
-          "pos": [
-            0,
-            5
-          ]
-        },
-        {
-          "content": "ini_set('include_path', ini_get('include_path').';c:\\phpLibraries\\;');",
-          "pos": [
-            11,
-            81
-          ]
-        },
-        {
-          "content": "require_once ('federation/FederatedLoginManager.php');",
-          "pos": [
-            87,
-            141
-          ]
-        },
-        {
-          "content": "session_start();",
-          "pos": [
-            147,
-            163
-          ]
-        },
-        {
-          "content": "$token = $_POST['wresult'];",
-          "pos": [
-            169,
-            196
-          ]
-        },
-        {
-          "content": "$loginManager = new FederatedLoginManager();",
-          "pos": [
-            202,
-            246
-          ]
-        },
-        {
-          "content": "if (!$loginManager-&gt;isAuthenticated()) {",
-          "pos": [
-            252,
-            292
-          ]
-        },
-        {
-          "content": "if (isset ($token)) {",
-          "pos": [
-            302,
-            323
-          ]
-        },
-        {
-          "content": "try {",
-          "pos": [
-            337,
-            342
-          ]
-        },
-        {
-          "content": "$loginManager-&gt;authenticate($token);",
-          "pos": [
-            360,
-            396
-          ]
-        },
-        {
-          "content": "} catch (Exception $e) {",
-          "pos": [
-            410,
-            434
-          ]
-        },
-        {
-          "content": "print_r($e-&gt;getMessage());",
-          "pos": [
-            452,
-            478
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            492,
-            493
-          ]
-        },
-        {
-          "content": "} else {",
-          "pos": [
-            505,
-            513
-          ]
-        },
-        {
-          "content": "$returnUrl = \"https://\" . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];",
-          "pos": [
-            527,
-            598
-          ],
-          "nodes": [
-            {
-              "content": "$returnUrl = \"https://\" .",
-              "pos": [
-                0,
-                25
-              ]
-            },
-            {
-              "content": "$_SERVER['HTTP_HOST'] .",
-              "pos": [
-                26,
-                49
-              ]
-            },
-            {
-              "content": "$_SERVER['PHP_SELF'];",
-              "pos": [
-                50,
-                71
-              ]
-            }
-          ]
-        },
-        {
-          "content": "header('Pragma: no-cache');",
-          "pos": [
-            612,
-            639
-          ]
-        },
-        {
-          "content": "header('Cache-Control: no-cache, must-revalidate');",
-          "pos": [
-            653,
-            704
-          ]
-        },
-        {
-          "content": "header(\"Location: \" . FederatedLoginManager :: getFederatedLoginUrl($returnUrl), true, 302);",
-          "pos": [
-            718,
-            810
-          ],
-          "nodes": [
-            {
-              "content": "header(\"Location: \" .",
-              "pos": [
-                0,
-                21
-              ]
-            },
-            {
-              "content": "FederatedLoginManager :: getFederatedLoginUrl($returnUrl), true, 302);",
-              "pos": [
-                22,
-                92
-              ]
-            }
-          ]
-        },
-        {
-          "content": "exit();",
-          "pos": [
-            824,
-            831
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            841,
-            842
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            848,
-            849
-          ]
-        },
-        {
-          "content": "?&gt;",
-          "pos": [
-            855,
-            857
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
         8745,
         8830
       ],
       "content": "Open the <bpt id=\"p1\">**</bpt>index.php<ept id=\"p1\">**</ept> page and update its contents to secure the page, then save it:"
-    },
-    {
-      "pos": [
-        8840,
-        9563
-      ],
-      "content": "<?php\n     require_once (dirname(__FILE__) . '/secureResource.php');\n     ?>\n     <!DOCTYPE html>\n     <html>\n     <head>\n         <meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\">\n         <title>Index Page</title>\n     </head>\n     <body>\n         <h2>Index Page</h2>\n         <h3>Welcome <strong><?php print_r($loginManager->getPrincipal()->getName()); ?></strong>!</h3>\n         <h4>Claim list:</h4>\n         <ul>\n             <?php\n             foreach ($loginManager->getClaims() as $claim) {\n                 print_r('<li>' . $claim->toString() . '</li>');\n             }\n             ?>  \n         </ul>\n     </body>\n     </html>",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "&lt;?php",
-          "pos": [
-            0,
-            5
-          ]
-        },
-        {
-          "content": "     require_once (dirname(__FILE__) . '/secureResource.php');",
-          "pos": [
-            6,
-            68
-          ],
-          "nodes": [
-            {
-              "content": "require_once (dirname(<bpt id=\"p1\">__</bpt>FILE<ept id=\"p1\">__</ept>) .",
-              "pos": [
-                5,
-                38
-              ]
-            },
-            {
-              "content": "'/secureResource.php');",
-              "pos": [
-                39,
-                62
-              ]
-            }
-          ]
-        },
-        {
-          "content": "?&gt;",
-          "pos": [
-            74,
-            76
-          ]
-        },
-        {
-          "content": "<ph id=\"ph1\">         &lt;title&gt;</ph>Index Page<ph id=\"ph2\">&lt;/title&gt;</ph>",
-          "pos": [
-            204,
-            238
-          ]
-        },
-        {
-          "content": "<ph id=\"ph1\">         &lt;h2&gt;</ph>Index Page<ph id=\"ph2\">&lt;/h2&gt;</ph>",
-          "pos": [
-            264,
-            292
-          ]
-        },
-        {
-          "content": "<ph id=\"ph1\">         &lt;h3&gt;</ph>Welcome <ph id=\"ph2\">&lt;strong&gt;</ph><ph id=\"ph3\">         &lt;h3&gt;Welcome &lt;strong&gt;&lt;?php print_r($loginManager-&gt;getPrincipal()-&gt;getName()); ?&gt;&lt;/strong&gt;</ph>!<ph id=\"ph4\">&lt;/h3&gt;</ph>",
-          "pos": [
-            293,
-            396
-          ]
-        },
-        {
-          "content": "<ph id=\"ph1\">         &lt;h4&gt;</ph>Claim list:<ph id=\"ph2\">&lt;/h4&gt;</ph>",
-          "pos": [
-            397,
-            426
-          ]
-        },
-        {
-          "content": "&lt;?php",
-          "pos": [
-            454,
-            459
-          ]
-        },
-        {
-          "content": "foreach ($loginManager-&gt;getClaims() as $claim) {",
-          "pos": [
-            473,
-            521
-          ]
-        },
-        {
-          "content": "                 print_r('<li>' . $claim->toString() . '</li>');",
-          "pos": [
-            522,
-            586
-          ],
-          "nodes": [
-            {
-              "content": "print_r('<ph id=\"ph1\">&lt;li&gt;</ph>' .",
-              "pos": [
-                17,
-                33
-              ]
-            },
-            {
-              "content": "$claim-&gt;toString() .",
-              "pos": [
-                34,
-                54
-              ]
-            },
-            {
-              "content": "'<ph id=\"ph1\">&lt;/li&gt;</ph>');",
-              "pos": [
-                55,
-                64
-              ]
-            }
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            600,
-            601
-          ]
-        },
-        {
-          "content": "?&gt;",
-          "pos": [
-            615,
-            617
-          ]
-        }
-      ]
     },
     {
       "content": "From the <bpt id=\"p1\">**</bpt>Run<ept id=\"p1\">**</ept> menu, click <bpt id=\"p2\">**</bpt>Run<ept id=\"p2\">**</ept>.",

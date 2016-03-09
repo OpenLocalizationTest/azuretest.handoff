@@ -225,13 +225,6 @@
       "content": "In Visual Studio in the Tools menu, click <bpt id=\"p1\">**</bpt>NuGet Package Manager<ept id=\"p1\">**</ept> &gt; <bpt id=\"p2\">**</bpt>Package Manager Console<ept id=\"p2\">**</ept>, select Nuget.org as the <bpt id=\"p3\">**</bpt>Package source<ept id=\"p3\">**</ept> and execute the following command in the console window:"
     },
     {
-      "content": "Install-Package Microsoft.AspNet.WebApi.Cors",
-      "pos": [
-        3824,
-        3868
-      ]
-    },
-    {
       "content": "This installs the CORS support required by the backend.",
       "pos": [
         3876,
@@ -246,53 +239,11 @@
       ]
     },
     {
-      "content": "using System.Web.Http.Cors;",
-      "pos": [
-        4033,
-        4060
-      ]
-    },
-    {
       "pos": [
         4065,
         4177
       ],
       "content": "Next, add the following code to the <bpt id=\"p1\">**</bpt>WebApiConfig.Register<ept id=\"p1\">**</ept> method after the <bpt id=\"p2\">**</bpt>HttpConfiguration<ept id=\"p2\">**</ept> is created:"
-    },
-    {
-      "pos": [
-        4187,
-        4371
-      ],
-      "content": "// Enable CORS support for localhost port 8000, all headers and methods.\n     var cors = new EnableCorsAttribute(\"http://localhost:8000\", \"*\", \"*\");\n     config.EnableCors(cors);",
-      "leadings": [
-        "",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "// Enable CORS support for localhost port 8000, all headers and methods.",
-          "pos": [
-            0,
-            72
-          ]
-        },
-        {
-          "content": "var cors = new EnableCorsAttribute(\"http://localhost:8000\", \"<bpt id=\"p1\">*</bpt>\", \"<ept id=\"p1\">*</ept>\");",
-          "pos": [
-            78,
-            148
-          ]
-        },
-        {
-          "content": "config.EnableCors(cors);",
-          "pos": [
-            154,
-            178
-          ]
-        }
-      ]
     },
     {
       "content": "Save your updates.",
@@ -393,23 +344,9 @@
       ]
     },
     {
-      "content": "Open the URL",
+      "content": "Open the URL <ph id=\"ph1\">&lt;a href=\"http://localhost:8000/\" target=\"_blank\"&gt;</ph>http://localhost:8000/<ph id=\"ph2\">&lt;/a&gt;</ph> in a web browser to start the app.",
       "pos": [
         5701,
-        5713
-      ]
-    },
-    {
-      "content": "http://localhost:8000/",
-      "pos": [
-        5763,
-        5785
-      ]
-    },
-    {
-      "content": "in a web browser to start the app.",
-      "pos": [
-        5790,
         5824
       ]
     },

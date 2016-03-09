@@ -267,27 +267,6 @@
       "content": "In Windows 2012 R2, use the <ph id=\"ph1\">`principalsallowedtodelegateto`</ph> property on the Connector server to enable the Application Proxy to delegate for the Connector server, where the published server is <ph id=\"ph2\">`sharepointserviceaccount`</ph> and the delegating server is <ph id=\"ph3\">`connectormachineaccount`</ph>."
     },
     {
-      "content": "$connector= Get-ADComputer -Identity connectormachineaccount -server dc.connectordomain.com",
-      "pos": [
-        4580,
-        4671
-      ]
-    },
-    {
-      "content": "Set-ADComputer -Identity sharepointserviceaccount -PrincipalsAllowedToDelegateToAccount $connector",
-      "pos": [
-        4681,
-        4779
-      ]
-    },
-    {
-      "content": "Get-ADComputer sharepointserviceaccount -Properties PrincipalsAllowedToDelegateToAccount",
-      "pos": [
-        4789,
-        4877
-      ]
-    },
-    {
       "pos": [
         4881,
         5013
@@ -379,9 +358,9 @@
       ]
     },
     {
-      "content": "<ph id=\"ph1\">&lt;br&gt;</ph><ph id=\"ph2\">&lt;br&gt;</ph> Select <bpt id=\"p1\">**</bpt>Integrated Windows Authentication<ept id=\"p1\">**</ept> (IWA) if your application uses IWA and you can configure Kerberos Constrained Delegation (KCD) to enable SSO for this application.",
+      "content": "Select <bpt id=\"p1\">**</bpt>Integrated Windows Authentication<ept id=\"p1\">**</ept> (IWA) if your application uses IWA and you can configure Kerberos Constrained Delegation (KCD) to enable SSO for this application.",
       "pos": [
-        6242,
+        6251,
         6426
       ]
     },
@@ -393,9 +372,9 @@
       ]
     },
     {
-      "content": "<ph id=\"ph1\">&lt;br&gt;</ph><ph id=\"ph2\">&lt;br&gt;</ph> Select <bpt id=\"p1\">**</bpt>None<ept id=\"p1\">**</ept> if your application does not use IWA.",
+      "content": "Select <bpt id=\"p1\">**</bpt>None<ept id=\"p1\">**</ept> if your application does not use IWA.",
       "pos": [
-        6559,
+        6568,
         6621
       ]
     },

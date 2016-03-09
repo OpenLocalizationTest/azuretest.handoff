@@ -464,13 +464,6 @@
       ]
     },
     {
-      "content": "using Microsoft.Azure.Mobile.Server.Config;",
-      "pos": [
-        5048,
-        5091
-      ]
-    },
-    {
       "pos": [
         5096,
         5207
@@ -479,96 +472,10 @@
     },
     {
       "pos": [
-        5217,
-        5333
-      ],
-      "content": "[MobileAppController] \n     public class CustomController : ApiController\n     {\n           //...\n     }",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "[MobileAppController]",
-          "pos": [
-            0,
-            21
-          ]
-        },
-        {
-          "content": "public class CustomController : ApiController",
-          "pos": [
-            28,
-            73
-          ]
-        },
-        {
-          "content": "{",
-          "pos": [
-            79,
-            80
-          ]
-        },
-        {
-          "content": "//...",
-          "pos": [
-            92,
-            97
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            103,
-            104
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
         5338,
         5501
       ],
       "content": "Browse to the App_Startup folder, open the WebApiConfig.cs project file and add a call to the  <bpt id=\"p1\">**</bpt>MapApiControllers<ept id=\"p1\">**</ept> extension method, as in the following example:"
-    },
-    {
-      "pos": [
-        5511,
-        5602
-      ],
-      "content": "new MobileAppConfiguration()\n         .MapApiControllers()\n         .ApplyTo(config);",
-      "leadings": [
-        "",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "new MobileAppConfiguration()",
-          "pos": [
-            0,
-            28
-          ]
-        },
-        {
-          "content": ".MapApiControllers()",
-          "pos": [
-            38,
-            58
-          ]
-        },
-        {
-          "content": ".ApplyTo(config);",
-          "pos": [
-            68,
-            85
-          ]
-        }
-      ]
     },
     {
       "pos": [
@@ -663,60 +570,10 @@
     },
     {
       "pos": [
-        7551,
-        7685
-      ],
-      "content": "new MobileAppConfiguration()\n         // other features...\n         .AddAppServiceAuthentication()\n         .ApplyTo(config);",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "new MobileAppConfiguration()",
-          "pos": [
-            0,
-            28
-          ]
-        },
-        {
-          "content": "// other features...",
-          "pos": [
-            38,
-            58
-          ]
-        },
-        {
-          "content": ".AddAppServiceAuthentication()",
-          "pos": [
-            68,
-            98
-          ]
-        },
-        {
-          "content": ".ApplyTo(config);",
-          "pos": [
-            108,
-            125
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
         7690,
         7802
       ],
       "content": "In the Startup.cs project file,aAdd the following line of code at the beginning of the <bpt id=\"p1\">**</bpt>Configuration<ept id=\"p1\">**</ept> method:"
-    },
-    {
-      "content": "app.UseMobileAppAuthentication(config);",
-      "pos": [
-        7812,
-        7851
-      ]
     },
     {
       "content": "This adds the OWIN middleware component that enables your Azure Mobile App to validate tokens issued by the associated App Service gateway.",
@@ -796,49 +653,6 @@
       "content": "Browse to the App_Startup folder, open the WebApiConfig.cs project file and add a call to the <bpt id=\"p1\">**</bpt>AddPushNotifications<ept id=\"p1\">**</ept> extension method during initialization, which looks like the following:"
     },
     {
-      "pos": [
-        9297,
-        9424
-      ],
-      "content": "new MobileAppConfiguration()\n         // other features...\n         .AddPushNotifications()\n         .ApplyTo(config);",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "new MobileAppConfiguration()",
-          "pos": [
-            0,
-            28
-          ]
-        },
-        {
-          "content": "// other features...",
-          "pos": [
-            38,
-            58
-          ]
-        },
-        {
-          "content": ".AddPushNotifications()",
-          "pos": [
-            68,
-            91
-          ]
-        },
-        {
-          "content": ".ApplyTo(config);",
-          "pos": [
-            101,
-            118
-          ]
-        }
-      ]
-    },
-    {
       "content": "This creates the push notification registration endpoint in your server project.",
       "pos": [
         9430,
@@ -867,158 +681,10 @@
       ]
     },
     {
-      "pos": [
-        9790,
-        9871
-      ],
-      "content": "using System.Collections.Generic;\n     using Microsoft.Azure.NotificationHubs;",
-      "leadings": [
-        "",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "using System.Collections.Generic;",
-          "pos": [
-            0,
-            33
-          ]
-        },
-        {
-          "content": "using Microsoft.Azure.NotificationHubs;",
-          "pos": [
-            39,
-            78
-          ]
-        }
-      ]
-    },
-    {
       "content": "Add the following code that creates a Notification Hubs client:",
       "pos": [
         9876,
         9939
-      ]
-    },
-    {
-      "pos": [
-        9949,
-        10167
-      ],
-      "content": "// Get the settings for the server project.\n     HttpConfiguration config = this.Configuration;\n     ServiceSettingsDictionary settings = \n         config.GetMobileAppSettingsProvider().GetMobileAppSettings();",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "// Get the settings for the server project.",
-          "pos": [
-            0,
-            43
-          ]
-        },
-        {
-          "content": "HttpConfiguration config = this.Configuration;",
-          "pos": [
-            49,
-            95
-          ]
-        },
-        {
-          "content": "ServiceSettingsDictionary settings =",
-          "pos": [
-            101,
-            137
-          ]
-        },
-        {
-          "content": "config.GetMobileAppSettingsProvider().GetMobileAppSettings();",
-          "pos": [
-            148,
-            209
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
-        10185,
-        10462
-      ],
-      "content": "// Get the Notification Hubs credentials for the Mobile App.\n     string notificationHubName = settings.NotificationHubName;\n     string notificationHubConnection = settings\n         .Connections[MobileAppSettingsKeys.NotificationHubConnectionString].ConnectionString;",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "// Get the Notification Hubs credentials for the Mobile App.",
-          "pos": [
-            0,
-            60
-          ]
-        },
-        {
-          "content": "string notificationHubName = settings.NotificationHubName;",
-          "pos": [
-            66,
-            124
-          ]
-        },
-        {
-          "content": "string notificationHubConnection = settings",
-          "pos": [
-            130,
-            173
-          ]
-        },
-        {
-          "content": ".Connections[MobileAppSettingsKeys.NotificationHubConnectionString].ConnectionString;",
-          "pos": [
-            183,
-            268
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
-        10472,
-        10661
-      ],
-      "content": "// Create a new Notification Hub client.\n     NotificationHubClient hub = NotificationHubClient\n     .CreateClientFromConnectionString(notificationHubConnection, notificationHubName);",
-      "leadings": [
-        "",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "// Create a new Notification Hub client.",
-          "pos": [
-            0,
-            40
-          ]
-        },
-        {
-          "content": "NotificationHubClient hub = NotificationHubClient",
-          "pos": [
-            46,
-            95
-          ]
-        },
-        {
-          "content": ".CreateClientFromConnectionString(notificationHubConnection, notificationHubName);",
-          "pos": [
-            101,
-            183
-          ]
-        }
       ]
     },
     {

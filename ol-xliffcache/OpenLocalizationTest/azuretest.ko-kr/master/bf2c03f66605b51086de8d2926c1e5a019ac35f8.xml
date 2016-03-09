@@ -92,11 +92,11 @@
       ]
     },
     {
-      "content": "Create the API app in Azure",
       "pos": [
-        1851,
+        1829,
         1878
-      ]
+      ],
+      "content": "<ph id=\"ph1\">&lt;a id=\"provision\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Create the API app in Azure"
     },
     {
       "content": "In this section, you use the Visual Studio <bpt id=\"p1\">**</bpt>Publish Web<ept id=\"p1\">**</ept> wizard to create an API app in Azure.",
@@ -113,11 +113,11 @@
       ]
     },
     {
-      "content": "Deploy your code to the new Azure API app",
       "pos": [
-        2190,
+        2171,
         2231
-      ]
+      ],
+      "content": "<ph id=\"ph1\">&lt;a id=\"deploy\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Deploy your code to the new Azure API app"
     },
     {
       "pos": [
@@ -240,65 +240,6 @@
     },
     {
       "pos": [
-        3699,
-        3912
-      ],
-      "content": "[HttpPost]\n     public HttpResponseMessage Post([FromBody] Contact contact)\n     {\n         // todo: save the contact somewhere\n         return Request.CreateResponse(HttpStatusCode.Created);\n     }",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "[HttpPost]",
-          "pos": [
-            0,
-            10
-          ]
-        },
-        {
-          "content": "public HttpResponseMessage Post([FromBody] Contact contact)",
-          "pos": [
-            16,
-            75
-          ]
-        },
-        {
-          "content": "{",
-          "pos": [
-            81,
-            82
-          ]
-        },
-        {
-          "content": "// todo: save the contact somewhere",
-          "pos": [
-            92,
-            127
-          ]
-        },
-        {
-          "content": "return Request.CreateResponse(HttpStatusCode.Created);",
-          "pos": [
-            137,
-            191
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            197,
-            198
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
         3918,
         4011
       ],
@@ -309,179 +250,6 @@
       "pos": [
         4017,
         4086
-      ]
-    },
-    {
-      "pos": [
-        4096,
-        4643
-      ],
-      "content": "public class ContactsController : ApiController\n     {\n         [HttpGet]\n         public IEnumerable<Contact> Get()\n         {\n             return new Contact[]{\n                         new Contact { Id = 1, EmailAddress = \"barney@contoso.com\", Name = \"Barney Poland\"},\n                         new Contact { Id = 2, EmailAddress = \"lacy@contoso.com\", Name = \"Lacy Barrera\"},\n                         new Contact { Id = 3, EmailAddress = \"lora@microsoft.com\", Name = \"Lora Riggs\"}\n                     };\n         }",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "public class ContactsController : ApiController",
-          "pos": [
-            0,
-            47
-          ]
-        },
-        {
-          "content": "{",
-          "pos": [
-            53,
-            54
-          ]
-        },
-        {
-          "content": "[HttpGet]",
-          "pos": [
-            64,
-            73
-          ]
-        },
-        {
-          "content": "public IEnumerable",
-          "pos": [
-            83,
-            101
-          ]
-        },
-        {
-          "content": "Get()",
-          "pos": [
-            111,
-            116
-          ]
-        },
-        {
-          "content": "{",
-          "pos": [
-            126,
-            127
-          ]
-        },
-        {
-          "content": "return new Contact[]{",
-          "pos": [
-            141,
-            162
-          ]
-        },
-        {
-          "content": "new Contact { Id = 1, EmailAddress = \"barney@contoso.com\", Name = \"Barney Poland\"},",
-          "pos": [
-            188,
-            271
-          ]
-        },
-        {
-          "content": "new Contact { Id = 2, EmailAddress = \"lacy@contoso.com\", Name = \"Lacy Barrera\"},",
-          "pos": [
-            297,
-            377
-          ]
-        },
-        {
-          "content": "new Contact { Id = 3, EmailAddress = \"lora@microsoft.com\", Name = \"Lora Riggs\"}",
-          "pos": [
-            403,
-            482
-          ]
-        },
-        {
-          "content": "};",
-          "pos": [
-            504,
-            506
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            516,
-            517
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
-        4665,
-        4908
-      ],
-      "content": "[HttpPost]\n         public HttpResponseMessage Post([FromBody] Contact contact)\n         {\n             // todo: save the contact somewhere\n             return Request.CreateResponse(HttpStatusCode.Created);\n         }\n     }",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "[HttpPost]",
-          "pos": [
-            0,
-            10
-          ]
-        },
-        {
-          "content": "public HttpResponseMessage Post([FromBody] Contact contact)",
-          "pos": [
-            20,
-            79
-          ]
-        },
-        {
-          "content": "{",
-          "pos": [
-            89,
-            90
-          ]
-        },
-        {
-          "content": "// todo: save the contact somewhere",
-          "pos": [
-            104,
-            139
-          ]
-        },
-        {
-          "content": "return Request.CreateResponse(HttpStatusCode.Created);",
-          "pos": [
-            153,
-            207
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            217,
-            218
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            224,
-            225
-          ]
-        }
       ]
     },
     {

@@ -78,25 +78,25 @@
       ]
     },
     {
-      "content": "Create an App Service Gateway",
       "pos": [
-        1754,
+        1725,
         1783
-      ]
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"create-gateway\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Create an App Service Gateway"
     },
     {
-      "content": "Register your app for authentication and configure App Services",
       "pos": [
-        1963,
+        1940,
         2026
-      ]
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"register\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Register your app for authentication and configure App Services"
     },
     {
-      "content": "Restrict permissions to authenticated users",
       "pos": [
-        2181,
+        2155,
         2224
-      ]
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"permissions\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Restrict permissions to authenticated users"
     },
     {
       "content": "&amp;nbsp;&amp;nbsp;4.",
@@ -155,11 +155,11 @@
       ]
     },
     {
-      "content": "Add authentication to the app",
       "pos": [
-        3041,
+        3008,
         3070
-      ]
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"add-authentication\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Add authentication to the app"
     },
     {
       "content": "In this section, you will modify the app to display a login screen before displaying data.",
@@ -198,105 +198,6 @@
     },
     {
       "pos": [
-        3873,
-        4243
-      ],
-      "content": "public async Task Authenticate(UIViewController view)\n     {\n         try\n         {\n             user = await client.LoginAsync(view, MobileServiceAuthenticationProvider.Facebook);\n         }\n         catch (Exception ex)\n         {\n             Console.Error.WriteLine (@\"ERROR - AUTHENTICATION FAILED {0}\", ex.Message);\n         }\n     }",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "public async Task Authenticate(UIViewController view)",
-          "pos": [
-            0,
-            53
-          ]
-        },
-        {
-          "content": "{",
-          "pos": [
-            59,
-            60
-          ]
-        },
-        {
-          "content": "try",
-          "pos": [
-            70,
-            73
-          ]
-        },
-        {
-          "content": "{",
-          "pos": [
-            83,
-            84
-          ]
-        },
-        {
-          "content": "user = await client.LoginAsync(view, MobileServiceAuthenticationProvider.Facebook);",
-          "pos": [
-            98,
-            181
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            191,
-            192
-          ]
-        },
-        {
-          "content": "catch (Exception ex)",
-          "pos": [
-            202,
-            222
-          ]
-        },
-        {
-          "content": "{",
-          "pos": [
-            232,
-            233
-          ]
-        },
-        {
-          "content": "Console.Error.WriteLine (@\"ERROR - AUTHENTICATION FAILED {0}\", ex.Message);",
-          "pos": [
-            247,
-            322
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            332,
-            333
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            339,
-            340
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
         4250,
         4471
       ],
@@ -317,138 +218,6 @@
       ]
     },
     {
-      "pos": [
-        4626,
-        4710
-      ],
-      "content": "public override async void ViewDidLoad ()\n     {\n         base.ViewDidLoad ();",
-      "leadings": [
-        "",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "public override async void ViewDidLoad ()",
-          "pos": [
-            0,
-            41
-          ]
-        },
-        {
-          "content": "{",
-          "pos": [
-            47,
-            48
-          ]
-        },
-        {
-          "content": "base.ViewDidLoad ();",
-          "pos": [
-            58,
-            78
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
-        4724,
-        4821
-      ],
-      "content": "todoService = QSTodoService.DefaultService;\n        await todoService.InitializeStoreAsync ();",
-      "leadings": [
-        "",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "todoService = QSTodoService.DefaultService;",
-          "pos": [
-            0,
-            43
-          ]
-        },
-        {
-          "content": "await todoService.InitializeStoreAsync ();",
-          "pos": [
-            52,
-            94
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
-        4834,
-        4939
-      ],
-      "content": "RefreshControl.ValueChanged += async (sender, e) => {\n             await RefreshAsync ();\n        }",
-      "leadings": [
-        "",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "RefreshControl.ValueChanged += async (sender, e) =&gt; {",
-          "pos": [
-            0,
-            53
-          ]
-        },
-        {
-          "content": "await RefreshAsync ();",
-          "pos": [
-            67,
-            89
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            98,
-            99
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
-        4953,
-        5040
-      ],
-      "content": "// Comment out the call to RefreshAsync\n         // await RefreshAsync ();\n     }",
-      "leadings": [
-        "",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "// Comment out the call to RefreshAsync",
-          "pos": [
-            0,
-            39
-          ]
-        },
-        {
-          "content": "// await RefreshAsync ();",
-          "pos": [
-            49,
-            74
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            80,
-            81
-          ]
-        }
-      ]
-    },
-    {
       "content": "Modify the method <bpt id=\"p1\">**</bpt>RefreshAsync<ept id=\"p1\">**</ept> to authenticate and display a login screen if the <bpt id=\"p2\">**</bpt>User<ept id=\"p2\">**</ept> property is null.",
       "pos": [
         5046,
@@ -460,89 +229,6 @@
       "pos": [
         5158,
         5216
-      ]
-    },
-    {
-      "pos": [
-        5226,
-        5552
-      ],
-      "content": "// start of RefreshAsync method\n     if (todoService.User == null) {\n         await QSTodoService.DefaultService.Authenticate (this);\n         if (todoService.User == null) {\n             Console.WriteLine (\"couldn't login!!\");\n             return;\n         }\n     }\n     // rest of RefreshAsync method",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "// start of RefreshAsync method",
-          "pos": [
-            0,
-            31
-          ]
-        },
-        {
-          "content": "if (todoService.User == null) {",
-          "pos": [
-            37,
-            68
-          ]
-        },
-        {
-          "content": "await QSTodoService.DefaultService.Authenticate (this);",
-          "pos": [
-            78,
-            133
-          ]
-        },
-        {
-          "content": "if (todoService.User == null) {",
-          "pos": [
-            143,
-            174
-          ]
-        },
-        {
-          "content": "Console.WriteLine (\"couldn't login!!\");",
-          "pos": [
-            188,
-            227
-          ]
-        },
-        {
-          "content": "return;",
-          "pos": [
-            241,
-            248
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            258,
-            259
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            265,
-            266
-          ]
-        },
-        {
-          "content": "// rest of RefreshAsync method",
-          "pos": [
-            272,
-            302
-          ]
-        }
       ]
     },
     {

@@ -267,9 +267,9 @@
       ]
     },
     {
-      "content": "<ph id=\"ph1\">&lt;!-- MSDN has 2 art files plus a API topic link list --&gt;</ph><ph id=\"ph2\">\n\n\n##</ph> Create Data Source\n\nYou can create a new data source within an Azure Search service using an HTTP POST request.",
+      "content": "<ph id=\"ph1\">\n\n\n##</ph> Create Data Source\n\nYou can create a new data source within an Azure Search service using an HTTP POST request.",
       "pos": [
-        3904,
+        3960,
         4077
       ]
     },
@@ -2101,10 +2101,409 @@
       ]
     },
     {
-      "content": "Mapping between SQL Data Types and Azure Search Data Types\n\n<ph id=\"ph1\">&lt;table style=\"font-size:12\"&gt;</ph><ph id=\"ph2\">\n&lt;tr&gt;</ph><ph id=\"ph3\">\n&lt;td&gt;</ph>SQL data type<ph id=\"ph4\">&lt;/td&gt;</ph><ph id=\"ph5\">  \n&lt;td&gt;</ph>Allowed target index field types<ph id=\"ph6\">&lt;/td&gt;</ph><ph id=\"ph7\">\n&lt;td&gt;</ph>Notes<ph id=\"ph8\">&lt;/td&gt;</ph><ph id=\"ph9\">\n&lt;/tr&gt;</ph><ph id=\"ph10\">\n&lt;tr&gt;</ph><ph id=\"ph11\">\n&lt;td&gt;</ph>bit<ph id=\"ph12\">&lt;/td&gt;</ph><ph id=\"ph13\">\n&lt;td&gt;</ph>Edm.Boolean, Edm.String<ph id=\"ph14\">&lt;/td&gt;</ph><ph id=\"ph15\">\n&lt;td&gt;&lt;/td&gt;</ph><ph id=\"ph16\">\n&lt;/tr&gt;</ph><ph id=\"ph17\">\n&lt;tr&gt;</ph><ph id=\"ph18\">\n&lt;td&gt;</ph>int, smallint, tinyint<ph id=\"ph19\">&lt;/td&gt;</ph><ph id=\"ph20\">\n&lt;td&gt;</ph>Edm.Int32, Edm.Int64, Edm.String<ph id=\"ph21\">&lt;/td&gt;</ph><ph id=\"ph22\">\n&lt;td&gt;&lt;/td&gt;</ph><ph id=\"ph23\">\n&lt;/tr&gt;</ph><ph id=\"ph24\">\n&lt;tr&gt;</ph><ph id=\"ph25\">\n&lt;td&gt;</ph>bigint<ph id=\"ph26\">&lt;/td&gt;</ph><ph id=\"ph27\">\n&lt;td&gt;</ph>Edm.Int64, Edm.String<ph id=\"ph28\">&lt;/td&gt;</ph><ph id=\"ph29\">\n&lt;td&gt;&lt;/td&gt;</ph><ph id=\"ph30\">\n&lt;/tr&gt;</ph><ph id=\"ph31\">\n&lt;tr&gt;</ph><ph id=\"ph32\">\n&lt;td&gt;</ph>real, float<ph id=\"ph33\">&lt;/td&gt;</ph><ph id=\"ph34\">\n&lt;td&gt;</ph>Edm.Double, Edm.String<ph id=\"ph35\">&lt;/td&gt;</ph><ph id=\"ph36\">\n&lt;td&gt;&lt;/td&gt;</ph><ph id=\"ph37\">\n&lt;/tr&gt;</ph><ph id=\"ph38\">\n&lt;tr&gt;</ph><ph id=\"ph39\">\n&lt;td&gt;</ph>smallmoney, money<ph id=\"ph40\">&lt;br&gt;</ph>decimal<ph id=\"ph41\">&lt;br&gt;</ph>numeric\n<ph id=\"ph42\">&lt;/td&gt;</ph><ph id=\"ph43\">\n&lt;td&gt;</ph>Edm.String<ph id=\"ph44\">&lt;/td&gt;</ph><ph id=\"ph45\">\n&lt;td&gt;</ph>Azure Search does not support converting decimal types into Edm.Double because this would lose precision\n<ph id=\"ph46\">&lt;/td&gt;</ph><ph id=\"ph47\">\n&lt;/tr&gt;</ph><ph id=\"ph48\">\n&lt;tr&gt;</ph><ph id=\"ph49\">\n&lt;td&gt;</ph>char, nchar, varchar, nvarchar<ph id=\"ph50\">&lt;/td&gt;</ph><ph id=\"ph51\">\n&lt;td&gt;</ph>Edm.String<ph id=\"ph52\">&lt;br/&gt;</ph>Collection(Edm.String)<ph id=\"ph53\">&lt;/td&gt;</ph><ph id=\"ph54\">\n&lt;td&gt;</ph>See <bpt id=\"p1\">[</bpt><ept id=\"p1\">Field Mapping Functions](#FieldMappingFunctions)</ept> in this document for details on how to transform a string column into a Collection(Edm.String)<ph id=\"ph55\">&lt;/td&gt;</ph><ph id=\"ph56\">\n&lt;/tr&gt;</ph><ph id=\"ph57\">\n&lt;tr&gt;</ph><ph id=\"ph58\">\n&lt;td&gt;</ph>smalldatetime, datetime, datetime2, date, datetimeoffset<ph id=\"ph59\">&lt;/td&gt;</ph><ph id=\"ph60\">\n&lt;td&gt;</ph>Edm.DateTimeOffset, Edm.String<ph id=\"ph61\">&lt;/td&gt;</ph><ph id=\"ph62\">\n&lt;td&gt;&lt;/td&gt;</ph><ph id=\"ph63\">\n&lt;/tr&gt;</ph><ph id=\"ph64\">\n&lt;tr&gt;</ph><ph id=\"ph65\">\n&lt;td&gt;</ph>uniqueidentifer<ph id=\"ph66\">&lt;/td&gt;</ph><ph id=\"ph67\">\n&lt;td&gt;</ph>Edm.String<ph id=\"ph68\">&lt;/td&gt;</ph><ph id=\"ph69\">\n&lt;td&gt;&lt;/td&gt;</ph><ph id=\"ph70\">\n&lt;/tr&gt;</ph><ph id=\"ph71\">\n&lt;tr&gt;</ph><ph id=\"ph72\">\n&lt;td&gt;</ph>geography<ph id=\"ph73\">&lt;/td&gt;</ph><ph id=\"ph74\">\n&lt;td&gt;</ph>Edm.GeographyPoint<ph id=\"ph75\">&lt;/td&gt;</ph><ph id=\"ph76\">\n&lt;td&gt;</ph>Only geography instances of type POINT with SRID 4326 (which is the default) are supported<ph id=\"ph77\">&lt;/td&gt;</ph><ph id=\"ph78\">\n&lt;/tr&gt;</ph><ph id=\"ph79\">\n&lt;tr&gt;</ph><ph id=\"ph80\">\n&lt;td&gt;</ph>rowversion<ph id=\"ph81\">&lt;/td&gt;</ph><ph id=\"ph82\">\n&lt;td&gt;</ph>N/A<ph id=\"ph83\">&lt;/td&gt;</ph><ph id=\"ph84\">\n&lt;td&gt;</ph>Row-version columns cannot be stored in the search index, but they can be used for change tracking<ph id=\"ph85\">&lt;/td&gt;</ph><ph id=\"ph86\">\n&lt;/tr&gt;</ph><ph id=\"ph87\">\n&lt;tr&gt;</ph><ph id=\"ph88\">\n&lt;td&gt;</ph>time, timespan<ph id=\"ph89\">&lt;br&gt;</ph>binary, varbinary, image,<ph id=\"ph90\">&lt;br&gt;</ph>xml, geometry, CLR types<ph id=\"ph91\">&lt;/td&gt;</ph><ph id=\"ph92\">\n&lt;td&gt;</ph>N/A<ph id=\"ph93\">&lt;/td&gt;</ph><ph id=\"ph94\">\n&lt;td&gt;</ph>Not supported<ph id=\"ph95\">&lt;/td&gt;</ph><ph id=\"ph96\">\n&lt;/tr&gt;</ph><ph id=\"ph97\">\n&lt;/table&gt;</ph><ph id=\"ph98\">\n\n##</ph> Mapping between JSON Data Types and Azure Search Data Types\n\n<ph id=\"ph99\">&lt;table style=\"font-size:12\"&gt;</ph><ph id=\"ph100\">\n&lt;tr&gt;</ph><ph id=\"ph101\">\n&lt;td&gt;</ph>JSON data type<ph id=\"ph102\">&lt;/td&gt;</ph><ph id=\"ph103\"> \n&lt;td&gt;</ph>Allowed target index field types<ph id=\"ph104\">&lt;/td&gt;</ph><ph id=\"ph105\">\n&lt;td&gt;</ph>Notes<ph id=\"ph106\">&lt;/td&gt;</ph><ph id=\"ph107\">\n&lt;/tr&gt;</ph><ph id=\"ph108\">\n&lt;tr&gt;</ph><ph id=\"ph109\">\n&lt;td&gt;</ph>bool<ph id=\"ph110\">&lt;/td&gt;</ph><ph id=\"ph111\">\n&lt;td&gt;</ph>Edm.Boolean, Edm.String<ph id=\"ph112\">&lt;/td&gt;</ph><ph id=\"ph113\">\n&lt;td&gt;&lt;/td&gt;</ph><ph id=\"ph114\">\n&lt;/tr&gt;</ph><ph id=\"ph115\">\n&lt;tr&gt;</ph><ph id=\"ph116\">\n&lt;td&gt;</ph>Integral numbers<ph id=\"ph117\">&lt;/td&gt;</ph><ph id=\"ph118\">\n&lt;td&gt;</ph>Edm.Int32, Edm.Int64, Edm.String<ph id=\"ph119\">&lt;/td&gt;</ph><ph id=\"ph120\">\n&lt;td&gt;&lt;/td&gt;</ph><ph id=\"ph121\">\n&lt;/tr&gt;</ph><ph id=\"ph122\">\n&lt;tr&gt;</ph><ph id=\"ph123\">\n&lt;td&gt;</ph>Floating-point numbers<ph id=\"ph124\">&lt;/td&gt;</ph><ph id=\"ph125\">\n&lt;td&gt;</ph>Edm.Double, Edm.String<ph id=\"ph126\">&lt;/td&gt;</ph><ph id=\"ph127\">\n&lt;td&gt;&lt;/td&gt;</ph><ph id=\"ph128\">\n&lt;/tr&gt;</ph><ph id=\"ph129\">\n&lt;tr&gt;</ph><ph id=\"ph130\">\n&lt;td&gt;</ph>string<ph id=\"ph131\">&lt;/td&gt;</ph><ph id=\"ph132\">\n&lt;td&gt;</ph>Edm.String<ph id=\"ph133\">&lt;/td&gt;</ph><ph id=\"ph134\">\n&lt;td&gt;&lt;/td&gt;</ph><ph id=\"ph135\">\n&lt;/tr&gt;</ph><ph id=\"ph136\">\n&lt;tr&gt;</ph><ph id=\"ph137\">\n&lt;td&gt;</ph>arrays of primitive types, e.g. [ \"a\", \"b\", \"c\" ]<ph id=\"ph138\">&lt;/td&gt;</ph><ph id=\"ph139\">\n&lt;td&gt;</ph>Collection(Edm.String)<ph id=\"ph140\">&lt;/td&gt;</ph><ph id=\"ph141\">\n&lt;td&gt;&lt;/td&gt;</ph><ph id=\"ph142\">\n&lt;/tr&gt;</ph><ph id=\"ph143\">\n&lt;tr&gt;</ph><ph id=\"ph144\">\n&lt;td&gt;</ph>Strings that look like dates<ph id=\"ph145\">&lt;/td&gt;</ph><ph id=\"ph146\">\n&lt;td&gt;</ph>Edm.DateTimeOffset, Edm.String<ph id=\"ph147\">&lt;/td&gt;</ph><ph id=\"ph148\">\n&lt;td&gt;&lt;/td&gt;</ph><ph id=\"ph149\">\n&lt;/tr&gt;</ph><ph id=\"ph150\">\n&lt;tr&gt;</ph><ph id=\"ph151\">\n&lt;td&gt;</ph>GeoJSON point objects<ph id=\"ph152\">&lt;/td&gt;</ph><ph id=\"ph153\">\n&lt;td&gt;</ph>Edm.GeographyPoint<ph id=\"ph154\">&lt;/td&gt;</ph><ph id=\"ph155\">\n&lt;td&gt;</ph>GeoJSON points are JSON objects in the following format: { \"type\" : \"Point\", \"coordinates\" : [long, lat] } <ph id=\"ph156\">&lt;/td&gt;</ph><ph id=\"ph157\">\n&lt;/tr&gt;</ph><ph id=\"ph158\">\n&lt;tr&gt;</ph><ph id=\"ph159\">\n&lt;td&gt;</ph>Other JSON objects<ph id=\"ph160\">&lt;/td&gt;</ph><ph id=\"ph161\">\n&lt;td&gt;</ph>N/A<ph id=\"ph162\">&lt;/td&gt;</ph><ph id=\"ph163\">\n&lt;td&gt;</ph>Not supported; Azure Search currently supports only primitive types and string collections<ph id=\"ph164\">&lt;/td&gt;</ph><ph id=\"ph165\">\n&lt;/tr&gt;</ph><ph id=\"ph166\">\n&lt;/table&gt;</ph>",
+      "content": "Mapping between SQL Data Types and Azure Search Data Types",
       "pos": [
         39249,
-        41871
+        39307
+      ]
+    },
+    {
+      "content": "SQL data type",
+      "pos": [
+        39347,
+        39360
+      ]
+    },
+    {
+      "content": "Allowed target index field types",
+      "pos": [
+        39372,
+        39404
+      ]
+    },
+    {
+      "content": "Notes",
+      "pos": [
+        39414,
+        39419
+      ]
+    },
+    {
+      "content": "bit",
+      "pos": [
+        39440,
+        39443
+      ]
+    },
+    {
+      "content": "Edm.Boolean, Edm.String",
+      "pos": [
+        39453,
+        39476
+      ]
+    },
+    {
+      "content": "int, smallint, tinyint",
+      "pos": [
+        39507,
+        39529
+      ]
+    },
+    {
+      "content": "Edm.Int32, Edm.Int64, Edm.String",
+      "pos": [
+        39539,
+        39571
+      ]
+    },
+    {
+      "content": "bigint",
+      "pos": [
+        39602,
+        39608
+      ]
+    },
+    {
+      "content": "Edm.Int64, Edm.String",
+      "pos": [
+        39618,
+        39639
+      ]
+    },
+    {
+      "content": "real, float",
+      "pos": [
+        39670,
+        39681
+      ]
+    },
+    {
+      "content": "Edm.Double, Edm.String",
+      "pos": [
+        39691,
+        39713
+      ]
+    },
+    {
+      "content": "smallmoney, money",
+      "pos": [
+        39744,
+        39761
+      ]
+    },
+    {
+      "content": "decimal",
+      "pos": [
+        39765,
+        39772
+      ]
+    },
+    {
+      "content": "numeric",
+      "pos": [
+        39776,
+        39783
+      ]
+    },
+    {
+      "content": "Edm.String",
+      "pos": [
+        39794,
+        39804
+      ]
+    },
+    {
+      "content": "Azure Search does not support converting decimal types into Edm.Double because this would lose precision",
+      "pos": [
+        39814,
+        39918
+      ]
+    },
+    {
+      "content": "char, nchar, varchar, nvarchar",
+      "pos": [
+        39940,
+        39970
+      ]
+    },
+    {
+      "content": "Edm.String",
+      "pos": [
+        39980,
+        39990
+      ]
+    },
+    {
+      "content": "Collection(Edm.String)",
+      "pos": [
+        39995,
+        40017
+      ]
+    },
+    {
+      "content": "See <bpt id=\"p1\">[</bpt><ept id=\"p1\">Field Mapping Functions](#FieldMappingFunctions)</ept> in this document for details on how to transform a string column into a Collection(Edm.String)",
+      "pos": [
+        40027,
+        40175
+      ]
+    },
+    {
+      "content": "smalldatetime, datetime, datetime2, date, datetimeoffset",
+      "pos": [
+        40196,
+        40252
+      ]
+    },
+    {
+      "content": "Edm.DateTimeOffset, Edm.String",
+      "pos": [
+        40262,
+        40292
+      ]
+    },
+    {
+      "content": "uniqueidentifer",
+      "pos": [
+        40323,
+        40338
+      ]
+    },
+    {
+      "content": "Edm.String",
+      "pos": [
+        40348,
+        40358
+      ]
+    },
+    {
+      "content": "geography",
+      "pos": [
+        40389,
+        40398
+      ]
+    },
+    {
+      "content": "Edm.GeographyPoint",
+      "pos": [
+        40408,
+        40426
+      ]
+    },
+    {
+      "content": "Only geography instances of type POINT with SRID 4326 (which is the default) are supported",
+      "pos": [
+        40436,
+        40526
+      ]
+    },
+    {
+      "content": "rowversion",
+      "pos": [
+        40547,
+        40557
+      ]
+    },
+    {
+      "content": "N/A",
+      "pos": [
+        40567,
+        40570
+      ]
+    },
+    {
+      "content": "Row-version columns cannot be stored in the search index, but they can be used for change tracking",
+      "pos": [
+        40580,
+        40678
+      ]
+    },
+    {
+      "content": "time, timespan",
+      "pos": [
+        40699,
+        40713
+      ]
+    },
+    {
+      "content": "binary, varbinary, image,",
+      "pos": [
+        40717,
+        40742
+      ]
+    },
+    {
+      "content": "xml, geometry, CLR types",
+      "pos": [
+        40746,
+        40770
+      ]
+    },
+    {
+      "content": "N/A",
+      "pos": [
+        40780,
+        40783
+      ]
+    },
+    {
+      "content": "Not supported",
+      "pos": [
+        40793,
+        40806
+      ]
+    },
+    {
+      "content": "<ph id=\"ph1\">\n\n##</ph> Mapping between JSON Data Types and Azure Search Data Types",
+      "pos": [
+        40826,
+        40890
+      ]
+    },
+    {
+      "content": "JSON data type",
+      "pos": [
+        40930,
+        40944
+      ]
+    },
+    {
+      "content": "Allowed target index field types",
+      "pos": [
+        40955,
+        40987
+      ]
+    },
+    {
+      "content": "Notes",
+      "pos": [
+        40997,
+        41002
+      ]
+    },
+    {
+      "content": "bool",
+      "pos": [
+        41023,
+        41027
+      ]
+    },
+    {
+      "content": "Edm.Boolean, Edm.String",
+      "pos": [
+        41037,
+        41060
+      ]
+    },
+    {
+      "content": "Integral numbers",
+      "pos": [
+        41091,
+        41107
+      ]
+    },
+    {
+      "content": "Edm.Int32, Edm.Int64, Edm.String",
+      "pos": [
+        41117,
+        41149
+      ]
+    },
+    {
+      "content": "Floating-point numbers",
+      "pos": [
+        41180,
+        41202
+      ]
+    },
+    {
+      "content": "Edm.Double, Edm.String",
+      "pos": [
+        41212,
+        41234
+      ]
+    },
+    {
+      "content": "string",
+      "pos": [
+        41265,
+        41271
+      ]
+    },
+    {
+      "content": "Edm.String",
+      "pos": [
+        41281,
+        41291
+      ]
+    },
+    {
+      "content": "arrays of primitive types, e.g. [ \"a\", \"b\", \"c\" ]",
+      "pos": [
+        41322,
+        41371
+      ]
+    },
+    {
+      "content": "Collection(Edm.String)",
+      "pos": [
+        41381,
+        41403
+      ]
+    },
+    {
+      "content": "Strings that look like dates",
+      "pos": [
+        41434,
+        41462
+      ]
+    },
+    {
+      "content": "Edm.DateTimeOffset, Edm.String",
+      "pos": [
+        41472,
+        41502
+      ]
+    },
+    {
+      "content": "GeoJSON point objects",
+      "pos": [
+        41533,
+        41554
+      ]
+    },
+    {
+      "content": "Edm.GeographyPoint",
+      "pos": [
+        41564,
+        41582
+      ]
+    },
+    {
+      "content": "GeoJSON points are JSON objects in the following format: { \"type\" : \"Point\", \"coordinates\" : [long, lat] }",
+      "pos": [
+        41592,
+        41698
+      ]
+    },
+    {
+      "content": "Other JSON objects",
+      "pos": [
+        41720,
+        41738
+      ]
+    },
+    {
+      "content": "N/A",
+      "pos": [
+        41748,
+        41751
+      ]
+    },
+    {
+      "content": "Not supported; Azure Search currently supports only primitive types and string collections",
+      "pos": [
+        41761,
+        41851
       ]
     }
   ],

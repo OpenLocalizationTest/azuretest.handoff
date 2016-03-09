@@ -106,32 +106,32 @@
       ]
     },
     {
-      "content": "Review your server project configuration (optional)",
       "pos": [
-        1876,
+        1855,
         1927
-      ]
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"review\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Review your server project configuration (optional)"
     },
     {
-      "content": "Register your application with the Azure Active Directory",
       "pos": [
-        2113,
+        2078,
         2170
-      ]
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"register-application\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Register your application with the Azure Active Directory"
     },
     {
-      "content": "Configure the application to require authentication",
       "pos": [
-        2324,
+        2287,
         2375
-      ]
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"require-authentication\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Configure the application to require authentication"
     },
     {
-      "content": "Add a reference to the Active Directory Authentication Library",
       "pos": [
-        2551,
+        2528,
         2613
-      ]
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"add-adal\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Add a reference to the Active Directory Authentication Library"
     },
     {
       "content": "Download the [Active Directory Authentication Library for iOS].",
@@ -197,11 +197,11 @@
       ]
     },
     {
-      "content": "Add authentication code to the client app",
       "pos": [
-        3285,
+        3247,
         3326
-      ]
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"add-authentication-code\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Add authentication code to the client app"
     },
     {
       "content": "In the QSTodoListViewController, include ADAL with the following:",
@@ -211,293 +211,10 @@
       ]
     },
     {
-      "content": "import \"ADALiOS/ADAuthenticationContext.h\"",
-      "pos": [
-        3407,
-        3449
-      ]
-    },
-    {
       "content": "Then add the following method:",
       "pos": [
         3454,
         3484
-      ]
-    },
-    {
-      "pos": [
-        3496,
-        3667
-      ],
-      "content": "(void) loginAndGetData\n{\n  MSClient *client = self.todoService.client;\n  if (client.currentUser != nil) {\n      return;\n  }",
-      "leadings": [
-        "",
-        "        ",
-        "          ",
-        "          ",
-        "          ",
-        "          "
-      ],
-      "nodes": [
-        {
-          "content": "(void) loginAndGetData",
-          "pos": [
-            0,
-            22
-          ]
-        },
-        {
-          "content": "{",
-          "pos": [
-            23,
-            24
-          ]
-        },
-        {
-          "content": "MSClient *client = self.todoService.client;",
-          "pos": [
-            27,
-            70
-          ]
-        },
-        {
-          "content": "if (client.currentUser != nil) {",
-          "pos": [
-            73,
-            105
-          ]
-        },
-        {
-          "content": "return;",
-          "pos": [
-            112,
-            119
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            122,
-            123
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
-        3681,
-        3925
-      ],
-      "content": "NSString *authority = @\"<INSERT-AUTHORITY-HERE>\";\n  NSString *resourceURI = @\"<INSERT-RESOURCE-URI-HERE>\";\n  NSString *clientID = @\"<INSERT-CLIENT-ID-HERE>\";\n  NSString *redirectURI = @\"<INSERT-REDIRECT-URI-HERE>\";",
-      "leadings": [
-        "",
-        "          ",
-        "          ",
-        "          "
-      ],
-      "nodes": [
-        {
-          "content": "NSString *authority = @\"&lt;INSERT-AUTHORITY-HERE&gt;\";",
-          "pos": [
-            0,
-            49
-          ]
-        },
-        {
-          "content": "NSString *resourceURI = @\"&lt;INSERT-RESOURCE-URI-HERE&gt;\";",
-          "pos": [
-            52,
-            106
-          ]
-        },
-        {
-          "content": "NSString *clientID = @\"&lt;INSERT-CLIENT-ID-HERE&gt;\";",
-          "pos": [
-            109,
-            157
-          ]
-        },
-        {
-          "content": "NSString *redirectURI = @\"&lt;INSERT-REDIRECT-URI-HERE&gt;\";",
-          "pos": [
-            160,
-            214
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
-        3939,
-        4180
-      ],
-      "content": "ADAuthenticationError *error;\n  ADAuthenticationContext *authContext = [ADAuthenticationContext authenticationContextWithAuthority:authority error:&error];\n  NSURL *redirectUri = [[NSURL alloc]initWithString:redirectURI];",
-      "leadings": [
-        "",
-        "          ",
-        "          "
-      ],
-      "nodes": [
-        {
-          "content": "ADAuthenticationError *error;",
-          "pos": [
-            0,
-            29
-          ]
-        },
-        {
-          "content": "ADAuthenticationContext *authContext = [ADAuthenticationContext authenticationContextWithAuthority:authority error:&amp;error];",
-          "pos": [
-            32,
-            155
-          ]
-        },
-        {
-          "content": "NSURL *redirectUri = [[NSURL alloc]initWithString:redirectURI];",
-          "pos": [
-            158,
-            221
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
-        4194,
-        4890
-      ],
-      "content": "[authContext acquireTokenWithResource:resourceURI clientId:clientID redirectUri:redirectUri completionBlock:^(ADAuthenticationResult *result) {\n      if (result.tokenCacheStoreItem == nil)\n      {\n          return;\n      }\n      else\n      {\n          NSDictionary *payload = @{\n              @\"access_token\" : result.tokenCacheStoreItem.accessToken\n          };\n          [client loginWithProvider:@\"windowsazureactivedirectory\" token:payload completion:^(MSUser *user, NSError *error) {\n              [self refresh];\n          }];\n      }\n  }];\n}",
-      "leadings": [
-        "",
-        "          ",
-        "          ",
-        "          ",
-        "          ",
-        "          ",
-        "          ",
-        "          ",
-        "          ",
-        "          ",
-        "          ",
-        "          ",
-        "          ",
-        "          ",
-        "          ",
-        "        "
-      ],
-      "nodes": [
-        {
-          "content": "[authContext acquireTokenWithResource:resourceURI clientId:clientID redirectUri:redirectUri completionBlock:^(ADAuthenticationResult *result) {",
-          "pos": [
-            0,
-            143
-          ]
-        },
-        {
-          "content": "if (result.tokenCacheStoreItem == nil)",
-          "pos": [
-            150,
-            188
-          ]
-        },
-        {
-          "content": "{",
-          "pos": [
-            195,
-            196
-          ]
-        },
-        {
-          "content": "return;",
-          "pos": [
-            207,
-            214
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            221,
-            222
-          ]
-        },
-        {
-          "content": "else",
-          "pos": [
-            229,
-            233
-          ]
-        },
-        {
-          "content": "{",
-          "pos": [
-            240,
-            241
-          ]
-        },
-        {
-          "content": "NSDictionary *payload = @{",
-          "pos": [
-            252,
-            278
-          ]
-        },
-        {
-          "content": "@\"access_token\" : result.tokenCacheStoreItem.accessToken",
-          "pos": [
-            293,
-            349
-          ]
-        },
-        {
-          "content": "};",
-          "pos": [
-            360,
-            362
-          ]
-        },
-        {
-          "content": "[client loginWithProvider:@\"windowsazureactivedirectory\" token:payload completion:^(MSUser *user, NSError *error) {",
-          "pos": [
-            373,
-            488
-          ]
-        },
-        {
-          "content": "[self refresh];",
-          "pos": [
-            503,
-            518
-          ]
-        },
-        {
-          "content": "}];",
-          "pos": [
-            529,
-            532
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            539,
-            540
-          ]
-        },
-        {
-          "content": "}];",
-          "pos": [
-            543,
-            546
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            547,
-            548
-          ]
-        }
       ]
     },
     {
@@ -557,18 +274,11 @@
       "content": "In the QSTodoListViewController, modify <ph id=\"ph1\">`viewDidLoad`</ph> by replacing <ph id=\"ph2\">`[self refresh]`</ph> with the following:"
     },
     {
-      "content": "[self loginAndGetData];",
       "pos": [
-        6061,
-        6084
-      ]
-    },
-    {
-      "content": "Test the client using authentication",
-      "pos": [
-        6115,
+        6089,
         6151
-      ]
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"test-client\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Test the client using authentication"
     },
     {
       "content": "From the Product menu, click Run to start the app",

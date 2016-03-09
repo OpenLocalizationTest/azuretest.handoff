@@ -1618,10 +1618,10 @@
       ]
     },
     {
-      "content": "LIS 4.0 Required",
+      "content": "<ph id=\"ph1\">\n        &lt;a href=\"http://go.microsoft.com/fwlink/?LinkID=403033&amp;clcid=0x409\"&gt;</ph> LIS 4.0 Required <ph id=\"ph2\">&lt;/a&gt;</ph><ph id=\"ph3\"> </ph>",
       "pos": [
-        24262,
-        24278
+        24184,
+        24284
       ]
     },
     {
@@ -1639,10 +1639,10 @@
       ]
     },
     {
-      "content": "LIS 4.0 Recommended",
+      "content": "<ph id=\"ph1\">\n        &lt;a href=\"http://go.microsoft.com/fwlink/?LinkID=403033&amp;clcid=0x409\"&gt;</ph> LIS 4.0 Recommended <ph id=\"ph2\">&lt;/a&gt;</ph><ph id=\"ph3\"> </ph>",
       "pos": [
-        24470,
-        24489
+        24392,
+        24495
       ]
     },
     {
@@ -1982,13 +1982,6 @@
       ]
     },
     {
-      "content": "New-AzureStorageAccount -StorageAccountName \"yourpremiumaccount\" -Location \"West US\" -Type \"Premium_LRS\"",
-      "pos": [
-        29165,
-        29269
-      ]
-    },
-    {
       "content": "Next, create a new DS-Series VM and specify that you want Premium Storage by running the following PowerShell cmdlets in the console window.",
       "pos": [
         29274,
@@ -2017,176 +2010,10 @@
       ]
     },
     {
-      "pos": [
-        29548,
-        30254
-      ],
-      "content": "$storageAccount = \"yourpremiumaccount\"\n     $adminName = \"youradmin\"\n     $adminPassword = \"yourpassword\"\n     $vmName =\"yourVM\"\n     $location = \"West US\"\n     $imageName = \"a699494373c04fc0bc8f2bb1389d6106__Windows-Server-2012-R2-201409.01-en.us-127GB.vhd\"\n     $vmSize =\"Standard_DS2\"\n     $OSDiskPath = \"https://\" + $storageAccount + \".blob.core.windows.net/vhds/\" + $vmName + \"_OS_PIO.vhd\"\n     $vm = New-AzureVMConfig -Name $vmName -ImageName $imageName -InstanceSize $vmSize -MediaLocation $OSDiskPath\n     Add-AzureProvisioningConfig -Windows -VM $vm -AdminUsername $adminName -Password $adminPassword\n     New-AzureVM -ServiceName $vmName -VMs $VM -Location $location",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "$storageAccount = \"yourpremiumaccount\"",
-          "pos": [
-            0,
-            38
-          ]
-        },
-        {
-          "content": "$adminName = \"youradmin\"",
-          "pos": [
-            44,
-            68
-          ]
-        },
-        {
-          "content": "$adminPassword = \"yourpassword\"",
-          "pos": [
-            74,
-            105
-          ]
-        },
-        {
-          "content": "$vmName =\"yourVM\"",
-          "pos": [
-            111,
-            128
-          ]
-        },
-        {
-          "content": "$location = \"West US\"",
-          "pos": [
-            134,
-            155
-          ]
-        },
-        {
-          "content": "$imageName = \"a699494373c04fc0bc8f2bb1389d6106__Windows-Server-2012-R2-201409.01-en.us-127GB.vhd\"",
-          "pos": [
-            161,
-            258
-          ]
-        },
-        {
-          "content": "$vmSize =\"Standard_DS2\"",
-          "pos": [
-            264,
-            287
-          ]
-        },
-        {
-          "content": "$OSDiskPath = \"https://\" + $storageAccount + \".blob.core.windows.net/vhds/\" + $vmName + \"_OS_PIO.vhd\"",
-          "pos": [
-            293,
-            394
-          ]
-        },
-        {
-          "content": "$vm = New-AzureVMConfig -Name $vmName -ImageName $imageName -InstanceSize $vmSize -MediaLocation $OSDiskPath",
-          "pos": [
-            400,
-            508
-          ]
-        },
-        {
-          "content": "Add-AzureProvisioningConfig -Windows -VM $vm -AdminUsername $adminName -Password $adminPassword",
-          "pos": [
-            514,
-            609
-          ]
-        },
-        {
-          "content": "New-AzureVM -ServiceName $vmName -VMs $VM -Location $location",
-          "pos": [
-            615,
-            676
-          ]
-        }
-      ]
-    },
-    {
       "content": "If you want more disk space for your VM, attach a new data disk to an existing DS-series VM or GS-series VM after it is created by running the following PowerShell cmdlets in the console window:",
       "pos": [
         30259,
         30453
-      ]
-    },
-    {
-      "pos": [
-        30463,
-        30909
-      ],
-      "content": "$storageAccount = \"yourpremiumaccount\"\n     $vmName =\"yourVM\"\n     $vm = Get-AzureVM -ServiceName $vmName -Name $vmName\n     $LunNo = 1\n     $path = \"http://\" + $storageAccount + \".blob.core.windows.net/vhds/\" + \"myDataDisk_\" + $LunNo + \"_PIO.vhd\"\n     $label = \"Disk \" + $LunNo\n     Add-AzureDataDisk -CreateNew -MediaLocation $path -DiskSizeInGB 128 -DiskLabel $label -LUN $LunNo -HostCaching ReadOnly -VM $vm | Update-AzureVm",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "$storageAccount = \"yourpremiumaccount\"",
-          "pos": [
-            0,
-            38
-          ]
-        },
-        {
-          "content": "$vmName =\"yourVM\"",
-          "pos": [
-            44,
-            61
-          ]
-        },
-        {
-          "content": "$vm = Get-AzureVM -ServiceName $vmName -Name $vmName",
-          "pos": [
-            67,
-            119
-          ]
-        },
-        {
-          "content": "$LunNo = 1",
-          "pos": [
-            125,
-            135
-          ]
-        },
-        {
-          "content": "$path = \"http://\" + $storageAccount + \".blob.core.windows.net/vhds/\" + \"myDataDisk_\" + $LunNo + \"_PIO.vhd\"",
-          "pos": [
-            141,
-            247
-          ]
-        },
-        {
-          "content": "$label = \"Disk \" + $LunNo",
-          "pos": [
-            253,
-            278
-          ]
-        },
-        {
-          "content": "Add-AzureDataDisk -CreateNew -MediaLocation $path -DiskSizeInGB 128 -DiskLabel $label -LUN $LunNo -HostCaching ReadOnly -VM $vm | Update-AzureVm",
-          "pos": [
-            284,
-            428
-          ]
-        }
       ]
     },
     {

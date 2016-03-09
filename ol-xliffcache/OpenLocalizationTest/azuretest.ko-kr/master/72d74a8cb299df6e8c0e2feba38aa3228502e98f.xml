@@ -113,11 +113,11 @@
       "content": "Complete the <bpt id=\"p1\">[</bpt>quickstart tutorial<ept id=\"p1\">](../app-service-mobile-dotnet-backend-windows-store-dotnet-get-started-preview.md)</ept>."
     },
     {
-      "content": "Create a Notification Hub",
       "pos": [
-        2274,
+        2245,
         2299
-      ]
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"create-gateway\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Create a Notification Hub"
     },
     {
       "content": "Follow these steps to create a new Notification Hub to handle push notifications.",
@@ -316,11 +316,11 @@
       ]
     },
     {
-      "content": "Update the server to send push notifications",
       "pos": [
-        4837,
+        4810,
         4881
-      ]
+      ],
+      "content": "<ph id=\"ph1\">&lt;a id=\"update-service\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Update the server to send push notifications"
     },
     {
       "content": "Now that push notifications are enabled in the app, you must update your app backend to send push notifications.",
@@ -352,341 +352,10 @@
     },
     {
       "pos": [
-        5336,
-        5469
-      ],
-      "content": "using System.Collections.Generic;\n     using Microsoft.Azure.NotificationHubs;\n     using Microsoft.Azure.Mobile.Server.Config;",
-      "leadings": [
-        "",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "using System.Collections.Generic;",
-          "pos": [
-            0,
-            33
-          ]
-        },
-        {
-          "content": "using Microsoft.Azure.NotificationHubs;",
-          "pos": [
-            39,
-            78
-          ]
-        },
-        {
-          "content": "using Microsoft.Azure.Mobile.Server.Config;",
-          "pos": [
-            84,
-            127
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
         5479,
         5568
       ],
       "content": "In the <bpt id=\"p1\">**</bpt>PostTodoItem<ept id=\"p1\">**</ept> method, add the following code after the call to <bpt id=\"p2\">**</bpt>InsertAsync<ept id=\"p2\">**</ept>:"
-    },
-    {
-      "pos": [
-        5580,
-        5812
-      ],
-      "content": "// Get the settings for the server project.\n     HttpConfiguration config = this.Configuration;\n     MobileAppSettingsDictionary settings = \n         this.Configuration.GetMobileAppSettingsProvider().GetMobileAppSettings();",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "// Get the settings for the server project.",
-          "pos": [
-            0,
-            43
-          ]
-        },
-        {
-          "content": "HttpConfiguration config = this.Configuration;",
-          "pos": [
-            49,
-            95
-          ]
-        },
-        {
-          "content": "MobileAppSettingsDictionary settings =",
-          "pos": [
-            101,
-            139
-          ]
-        },
-        {
-          "content": "this.Configuration.GetMobileAppSettingsProvider().GetMobileAppSettings();",
-          "pos": [
-            150,
-            223
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
-        5830,
-        6107
-      ],
-      "content": "// Get the Notification Hubs credentials for the Mobile App.\n     string notificationHubName = settings.NotificationHubName;\n     string notificationHubConnection = settings\n         .Connections[MobileAppSettingsKeys.NotificationHubConnectionString].ConnectionString;",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "// Get the Notification Hubs credentials for the Mobile App.",
-          "pos": [
-            0,
-            60
-          ]
-        },
-        {
-          "content": "string notificationHubName = settings.NotificationHubName;",
-          "pos": [
-            66,
-            124
-          ]
-        },
-        {
-          "content": "string notificationHubConnection = settings",
-          "pos": [
-            130,
-            173
-          ]
-        },
-        {
-          "content": ".Connections[MobileAppSettingsKeys.NotificationHubConnectionString].ConnectionString;",
-          "pos": [
-            183,
-            268
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
-        6117,
-        6306
-      ],
-      "content": "// Create a new Notification Hub client.\n     NotificationHubClient hub = NotificationHubClient\n     .CreateClientFromConnectionString(notificationHubConnection, notificationHubName);",
-      "leadings": [
-        "",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "// Create a new Notification Hub client.",
-          "pos": [
-            0,
-            40
-          ]
-        },
-        {
-          "content": "NotificationHubClient hub = NotificationHubClient",
-          "pos": [
-            46,
-            95
-          ]
-        },
-        {
-          "content": ".CreateClientFromConnectionString(notificationHubConnection, notificationHubName);",
-          "pos": [
-            101,
-            183
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
-        6316,
-        6527
-      ],
-      "content": "// Define a WNS payload\n     var windowsToastPayload = @\"<toast><visual><binding template=\"\"ToastText01\"\"><text id=\"\"1\"\">\" \n                             + item.Text + @\"</text></binding></visual></toast>\";",
-      "leadings": [
-        "",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "// Define a WNS payload",
-          "pos": [
-            0,
-            23
-          ]
-        },
-        {
-          "content": "var windowsToastPayload = @\"",
-          "pos": [
-            29,
-            57
-          ]
-        },
-        {
-          "content": "&lt;binding template=\"\"ToastText01\"\"&gt;&lt;text id=\"\"1\"\"&gt;\"",
-          "pos": [
-            72,
-            122
-          ]
-        },
-        {
-          "content": "+ item.Text + @\"",
-          "pos": [
-            153,
-            169
-          ]
-        },
-        {
-          "content": "\";",
-          "pos": [
-            203,
-            205
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
-        6537,
-        6705
-      ],
-      "content": "try\n     {\n         // Send the push notification and log the results.\n         var result = await hub.SendWindowsNativeNotificationAsync(windowsToastPayload);",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "try",
-          "pos": [
-            0,
-            3
-          ]
-        },
-        {
-          "content": "{",
-          "pos": [
-            9,
-            10
-          ]
-        },
-        {
-          "content": "// Send the push notification and log the results.",
-          "pos": [
-            20,
-            70
-          ]
-        },
-        {
-          "content": "var result = await hub.SendWindowsNativeNotificationAsync(windowsToastPayload);",
-          "pos": [
-            80,
-            159
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
-        6719,
-        7065
-      ],
-      "content": "// Write the success result to the logs.\n         config.Services.GetTraceWriter().Info(result.State.ToString());\n     }\n     catch (System.Exception ex)\n     {\n         // Write the failure result to the logs.\n         config.Services.GetTraceWriter()\n             .Error(ex.Message, null, \"Push.SendAsync Error\");\n     }",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "// Write the success result to the logs.",
-          "pos": [
-            0,
-            40
-          ]
-        },
-        {
-          "content": "config.Services.GetTraceWriter().Info(result.State.ToString());",
-          "pos": [
-            50,
-            113
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            119,
-            120
-          ]
-        },
-        {
-          "content": "catch (System.Exception ex)",
-          "pos": [
-            126,
-            153
-          ]
-        },
-        {
-          "content": "{",
-          "pos": [
-            159,
-            160
-          ]
-        },
-        {
-          "content": "// Write the failure result to the logs.",
-          "pos": [
-            170,
-            210
-          ]
-        },
-        {
-          "content": "config.Services.GetTraceWriter()",
-          "pos": [
-            220,
-            252
-          ]
-        },
-        {
-          "content": ".Error(ex.Message, null, \"Push.SendAsync Error\");",
-          "pos": [
-            266,
-            315
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            321,
-            322
-          ]
-        }
-      ]
     },
     {
       "content": "This code tells the notification hub to send a push notification after a new item is insertion.",
@@ -696,18 +365,18 @@
       ]
     },
     {
-      "content": "Publish the mobile backend to Azure",
       "pos": [
-        7206,
+        7172,
         7241
-      ]
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"publish-the-service\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Publish the mobile backend to Azure"
     },
     {
-      "content": "Add push notifications to your app",
       "pos": [
-        7426,
+        7399,
         7460
-      ]
+      ],
+      "content": "<ph id=\"ph1\">&lt;a id=\"update-service\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Add push notifications to your app"
     },
     {
       "pos": [
@@ -746,107 +415,10 @@
     },
     {
       "pos": [
-        7989,
-        8072
-      ],
-      "content": "using System.Threading.Tasks;  \n     using Windows.Networking.PushNotifications;",
-      "leadings": [
-        "",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "using System.Threading.Tasks;",
-          "pos": [
-            0,
-            29
-          ]
-        },
-        {
-          "content": "using Windows.Networking.PushNotifications;",
-          "pos": [
-            37,
-            80
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
         8084,
         8186
       ],
       "content": "In the same file, add the following <bpt id=\"p1\">**</bpt>InitNotificationsAsync<ept id=\"p1\">**</ept> method definition to the <bpt id=\"p2\">**</bpt>App<ept id=\"p2\">**</ept> class:"
-    },
-    {
-      "pos": [
-        8200,
-        8385
-      ],
-      "content": "private async Task InitNotificationsAsync()\n     {\n         var channel = await PushNotificationChannelManager\n             .CreatePushNotificationChannelForApplicationAsync();",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "private async Task InitNotificationsAsync()",
-          "pos": [
-            0,
-            43
-          ]
-        },
-        {
-          "content": "{",
-          "pos": [
-            49,
-            50
-          ]
-        },
-        {
-          "content": "var channel = await PushNotificationChannelManager",
-          "pos": [
-            60,
-            110
-          ]
-        },
-        {
-          "content": ".CreatePushNotificationChannelForApplicationAsync();",
-          "pos": [
-            124,
-            176
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
-        8399,
-        8470
-      ],
-      "content": "await App.MobileService.GetPush().RegisterAsync(channel.Uri);\n     }",
-      "leadings": [
-        "",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "await App.MobileService.GetPush().RegisterAsync(channel.Uri);",
-          "pos": [
-            0,
-            61
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            67,
-            68
-          ]
-        }
-      ]
     },
     {
       "content": "This code retrieves the ChannelURI for the app from WNS, and then registers that ChannelURI with your App Service Mobile App.",
@@ -861,68 +433,6 @@
         8834
       ],
       "content": "At the top of the <bpt id=\"p1\">**</bpt>OnLaunched<ept id=\"p1\">**</ept> event handler in <bpt id=\"p2\">**</bpt>App.xaml.cs<ept id=\"p2\">**</ept>, add the <bpt id=\"p3\">**</bpt>async<ept id=\"p3\">**</ept> modifier to the method definition and add the following call to the new <bpt id=\"p4\">**</bpt>InitNotificationsAsync<ept id=\"p4\">**</ept> method, as in the following example:"
-    },
-    {
-      "pos": [
-        8844,
-        8966
-      ],
-      "content": "protected async override void OnLaunched(LaunchActivatedEventArgs e)\n     {\n         await InitNotificationsAsync();",
-      "leadings": [
-        "",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "protected async override void OnLaunched(LaunchActivatedEventArgs e)",
-          "pos": [
-            0,
-            68
-          ]
-        },
-        {
-          "content": "{",
-          "pos": [
-            74,
-            75
-          ]
-        },
-        {
-          "content": "await InitNotificationsAsync();",
-          "pos": [
-            85,
-            116
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
-        8980,
-        8996
-      ],
-      "content": "// ...\n     }",
-      "leadings": [
-        "",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "// ...",
-          "pos": [
-            0,
-            6
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            12,
-            13
-          ]
-        }
-      ]
     },
     {
       "content": "This guarantees that the short-lived ChannelURI is registered each time the application is launched.",
@@ -960,11 +470,11 @@
       ]
     },
     {
-      "content": "Test push notifications in your app",
       "pos": [
-        9441,
+        9424,
         9476
-      ]
+      ],
+      "content": "<ph id=\"ph1\">&lt;a id=\"test\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Test push notifications in your app"
     },
     {
       "content": "test",

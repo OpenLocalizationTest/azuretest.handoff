@@ -176,11 +176,11 @@
       ]
     },
     {
-      "content": "Add App Service SDK generated client code",
       "pos": [
-        3270,
+        3248,
         3311
-      ]
+      ],
+      "content": "<ph id=\"ph1\">&lt;a id=\"addclient\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Add App Service SDK generated client code"
     },
     {
       "content": "Add code to call the API app",
@@ -202,163 +202,6 @@
         3745
       ],
       "content": "Open <bpt id=\"p1\">*</bpt>Program.cs<ept id=\"p1\">*</ept>, and add the following code inside the <ph id=\"ph1\">`Main`</ph> method."
-    },
-    {
-      "content": "var client = new ContactsList();",
-      "pos": [
-        3755,
-        3787
-      ]
-    },
-    {
-      "pos": [
-        3805,
-        4020
-      ],
-      "content": "// Send GET request.\n     var contacts = client.Contacts.Get();\n     foreach (var c in contacts)\n     {\n         Console.WriteLine(\"{0}: {1} {2}\",\n             c.Id, c.Name, c.EmailAddress);\n     }",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "// Send GET request.",
-          "pos": [
-            0,
-            20
-          ]
-        },
-        {
-          "content": "var contacts = client.Contacts.Get();",
-          "pos": [
-            26,
-            63
-          ]
-        },
-        {
-          "content": "foreach (var c in contacts)",
-          "pos": [
-            69,
-            96
-          ]
-        },
-        {
-          "content": "{",
-          "pos": [
-            102,
-            103
-          ]
-        },
-        {
-          "content": "Console.WriteLine(\"{0}: {1} {2}\",",
-          "pos": [
-            113,
-            146
-          ]
-        },
-        {
-          "content": "c.Id, c.Name, c.EmailAddress);",
-          "pos": [
-            160,
-            190
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            196,
-            197
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
-        4038,
-        4298
-      ],
-      "content": "// Send POST request.\n     client.Contacts.Post(new Models.Contact\n     {\n         EmailAddress = \"lkahn@contoso.com\",\n         Name = \"Loretta Kahn\",\n         Id = 4\n     });\n     Console.WriteLine(\"Finished\");\n     Console.ReadLine();",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "// Send POST request.",
-          "pos": [
-            0,
-            21
-          ]
-        },
-        {
-          "content": "client.Contacts.Post(new Models.Contact",
-          "pos": [
-            27,
-            66
-          ]
-        },
-        {
-          "content": "{",
-          "pos": [
-            72,
-            73
-          ]
-        },
-        {
-          "content": "EmailAddress = \"lkahn@contoso.com\",",
-          "pos": [
-            83,
-            118
-          ]
-        },
-        {
-          "content": "Name = \"Loretta Kahn\",",
-          "pos": [
-            128,
-            150
-          ]
-        },
-        {
-          "content": "Id = 4",
-          "pos": [
-            160,
-            166
-          ]
-        },
-        {
-          "content": "});",
-          "pos": [
-            172,
-            175
-          ]
-        },
-        {
-          "content": "Console.WriteLine(\"Finished\");",
-          "pos": [
-            181,
-            211
-          ]
-        },
-        {
-          "content": "Console.ReadLine();",
-          "pos": [
-            217,
-            236
-          ]
-        }
-      ]
     },
     {
       "content": "Press CTRL+F5 to run the application.",
@@ -515,44 +358,10 @@
       ]
     },
     {
-      "pos": [
-        5969,
-        6124
-      ],
-      "content": "private const string GATEWAY_URL = \"https://resourcegroupnameb4f3d966dfa43b6607f30.azurewebsites.net/\";\n     private const string URL_TOKEN = \"#token=\";",
-      "leadings": [
-        "",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "private const string GATEWAY_URL = \"https://resourcegroupnameb4f3d966dfa43b6607f30.azurewebsites.net/\";",
-          "pos": [
-            0,
-            103
-          ]
-        },
-        {
-          "content": "private const string URL_TOKEN = \"#token=\";",
-          "pos": [
-            109,
-            152
-          ]
-        }
-      ]
-    },
-    {
       "content": "In the form designer, double-click the button to add a click handler, and then in the handler method add code to go to the login URL for the gateway, for example:",
       "pos": [
         6129,
         6291
-      ]
-    },
-    {
-      "content": "webBrowser1.Navigate(string.Format(@\"{0}login/[authprovider]\", GATEWAY_URL));",
-      "pos": [
-        6301,
-        6378
       ]
     },
     {
@@ -570,202 +379,11 @@
       ]
     },
     {
-      "content": "webBrowser1.Navigate(string.Format(@\"{0}login/aad\", GATEWAY_URL));",
-      "pos": [
-        6591,
-        6657
-      ]
-    },
-    {
       "pos": [
         6662,
         6780
       ],
       "content": "Add a <ph id=\"ph1\">`DocumentCompleted`</ph> event handler for the web browser control, and add the following code to the handler method."
-    },
-    {
-      "pos": [
-        6790,
-        7214
-      ],
-      "content": "if (e.Url.AbsoluteUri.IndexOf(URL_TOKEN) > -1)\n     {\n         var encodedJson = e.Url.AbsoluteUri.Substring(e.Url.AbsoluteUri.IndexOf(URL_TOKEN) + URL_TOKEN.Length);\n         var decodedJson = Uri.UnescapeDataString(encodedJson);\n         var result = JsonConvert.DeserializeObject<dynamic>(decodedJson);\n         string userId = result.user.userId;\n         string userToken = result.authenticationToken;",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "if (e.Url.AbsoluteUri.IndexOf(URL_TOKEN) &gt; -1)",
-          "pos": [
-            0,
-            46
-          ]
-        },
-        {
-          "content": "{",
-          "pos": [
-            52,
-            53
-          ]
-        },
-        {
-          "content": "var encodedJson = e.Url.AbsoluteUri.Substring(e.Url.AbsoluteUri.IndexOf(URL_TOKEN) + URL_TOKEN.Length);",
-          "pos": [
-            63,
-            166
-          ]
-        },
-        {
-          "content": "var decodedJson = Uri.UnescapeDataString(encodedJson);",
-          "pos": [
-            176,
-            230
-          ]
-        },
-        {
-          "content": "var result = JsonConvert.DeserializeObject",
-          "pos": [
-            240,
-            282
-          ]
-        },
-        {
-          "content": "(decodedJson);",
-          "pos": [
-            291,
-            305
-          ]
-        },
-        {
-          "content": "string userId = result.user.userId;",
-          "pos": [
-            315,
-            350
-          ]
-        },
-        {
-          "content": "string userToken = result.authenticationToken;",
-          "pos": [
-            360,
-            406
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
-        7236,
-        7357
-      ],
-      "content": "var appServiceClient = new AppServiceClient(GATEWAY_URL);\n         appServiceClient.SetCurrentUser(userId, userToken);",
-      "leadings": [
-        "",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "var appServiceClient = new AppServiceClient(GATEWAY_URL);",
-          "pos": [
-            0,
-            57
-          ]
-        },
-        {
-          "content": "appServiceClient.SetCurrentUser(userId, userToken);",
-          "pos": [
-            67,
-            118
-          ]
-        }
-      ]
-    },
-    {
-      "pos": [
-        7379,
-        7814
-      ],
-      "content": "var contactsListClient = appServiceClient.CreateContactsList();\n         var contacts = contactsListClient.Contacts.Get();\n         foreach (Contact contact in contacts)\n         {\n             textBox1.Text += contact.Name + \" \" + contact.EmailAddress + System.Environment.NewLine;\n         }\n         //appServiceClient.Logout();\n         //webBrowser1.Navigate(string.Format(@\"{0}login/aad\", GW_URL));\n     }",
-      "leadings": [
-        "",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   ",
-        "   "
-      ],
-      "nodes": [
-        {
-          "content": "var contactsListClient = appServiceClient.CreateContactsList();",
-          "pos": [
-            0,
-            63
-          ]
-        },
-        {
-          "content": "var contacts = contactsListClient.Contacts.Get();",
-          "pos": [
-            73,
-            122
-          ]
-        },
-        {
-          "content": "foreach (Contact contact in contacts)",
-          "pos": [
-            132,
-            169
-          ]
-        },
-        {
-          "content": "{",
-          "pos": [
-            179,
-            180
-          ]
-        },
-        {
-          "content": "textBox1.Text += contact.Name + \" \" + contact.EmailAddress + System.Environment.NewLine;",
-          "pos": [
-            194,
-            282
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            292,
-            293
-          ]
-        },
-        {
-          "content": "//appServiceClient.Logout();",
-          "pos": [
-            303,
-            331
-          ]
-        },
-        {
-          "content": "//webBrowser1.Navigate(string.Format(@\"{0}login/aad\", GW_URL));",
-          "pos": [
-            341,
-            404
-          ]
-        },
-        {
-          "content": "}",
-          "pos": [
-            410,
-            411
-          ]
-        }
-      ]
     },
     {
       "content": "The code you've added runs after the user logs in using the web browser control.",
@@ -817,11 +435,11 @@
       ]
     },
     {
-      "content": "Server flow vs. client flow",
       "pos": [
-        8583,
+        8559,
         8610
-      ]
+      ],
+      "content": "<ph id=\"ph1\">&lt;a id=\"client-flow\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Server flow vs. client flow"
     },
     {
       "content": "The sample application illustrates <bpt id=\"p1\">[</bpt>server flow<ept id=\"p1\">](../app-service/app-service-authentication-overview.md#server-flow)</ept>, which means the gateway gets the identity provider's access token.",
