@@ -1,2382 +1,354 @@
-﻿<markdown_skeleton_root>
-  <block_element>
-    <ArrayOfMarkdownBlockBase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <MarkdownBlockBase
-        xsi:type="MarkdownAzureMetadataBlock"
-        item_id="b542a6c1-b1fd-40be-8e4f-cdcb106ad3d1"
-        item_type="AzureMetadata"
-        item_footer="footer_not_set"
-        trans_unit_id="b542a6c1-b1fd-40be-8e4f-cdcb106ad3d1">
-        <LocalizeItemList>
-          <MarkdownInternalXmlItem
-            internal_item_id="b9872dfd-140b-4399-bf5e-61fbacef8d56"
-            trans_unit_id="101"
-            internal_item_type="Xml">
-            <internal_items />
-          </MarkdownInternalXmlItem>
-          <MarkdownInternalXmlItem
-            internal_item_id="265e8770-645b-4cf2-970f-87ed1fa254ad"
-            trans_unit_id="102"
-            internal_item_type="Xml">
-            <internal_items />
-          </MarkdownInternalXmlItem>
-        </LocalizeItemList>
-        <ItemValue>&lt;properties 
-    title="Upgrade to the latest elastic database client library" 
-    pageTitle="b9872dfd-140b-4399-bf5e-61fbacef8d56" 
-    description="265e8770-645b-4cf2-970f-87ed1fa254ad" 
-    metaKeywords="sharding,elastic scale, Azure SQL DB sharding" 
-    services="sql-database" 
-    documentationCenter="" 
-    manager="jeffreyg" 
-    authors="sidneyh"/&gt;
-
-&lt;tags 
-    ms.service="sql-database" 
-    ms.workload="sql-database" 
-    ms.tgt_pltfrm="na" 
-    ms.devlang="na" 
-    ms.topic="article" 
-    ms.date="05/17/2015" 
-    ms.author="sidneyh" /&gt;
-
-</ItemValue>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownHeaderBlock"
-        item_id="d46c98e1-95ec-45b8-a258-815905d1d498"
-        item_type="Header"
-        item_footer="footer_not_set"
-        trans_unit_id="d46c98e1-95ec-45b8-a258-815905d1d498">
-        <segment
-          trans_unit_id="103">
-          <SegmentId>decb0a26-9912-4331-ae6a-e7c33b53f85a</SegmentId>
-          <InternalNormalItem
-            internal_item_id="1"
-            internal_item_parent_id="103"
-            trans_unit_id="103-1"
-            internal_item_type="Normal">
-            <internal_items />
-          </InternalNormalItem>
-        </segment>
-        <header_type>Star</header_type>
-        <header_level>1</header_level>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownParagraphBlock"
-        item_id="302a228b-9264-4600-833e-da734e78d3bd"
-        item_type="NormalParagraph"
-        item_footer=""
-        trans_unit_id="302a228b-9264-4600-833e-da734e78d3bd">
-        <Lines>
-          <MarkdownLine>
-            <LineId>4a8f1c33-c532-419a-ac77-29d5108f13a2</LineId>
-            <paragraph_segments>
-              <MarkdownSegment
-                trans_unit_id="104">
-                <SegmentId>96738ff4-9fa3-439d-89f5-eb1a6222ce5a</SegmentId>
-                <InternalNormalItem
-                  internal_item_id="1"
-                  internal_item_parent_id="104"
-                  trans_unit_id="104-1"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-                <LinkItem
-                  internal_item_id="2"
-                  internal_item_parent_id="104"
-                  trans_unit_id="104-2"
-                  internal_item_type="Link">
-                  <internal_items />
-                  <internal_link_type>Inline</internal_link_type>
-                  <internal_link_text>NuGet</internal_link_text>
-                  <internal_link_url>https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Client/</internal_link_url>
-                  <internal_link_title />
-                </LinkItem>
-                <InternalNormalItem
-                  internal_item_id="3"
-                  internal_item_parent_id="104"
-                  trans_unit_id="104-3"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-              </MarkdownSegment>
-              <MarkdownSegment
-                trans_unit_id="105">
-                <SegmentId>4a769528-1274-438c-983f-20344df52ec3</SegmentId>
-                <InternalNormalItem
-                  internal_item_id="1"
-                  internal_item_parent_id="105"
-                  trans_unit_id="105-1"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-              </MarkdownSegment>
-            </paragraph_segments>
-            <PrefixWSLength>0</PrefixWSLength>
-            <SuffixWSLength>0</SuffixWSLength>
-          </MarkdownLine>
-        </Lines>
-        <paragraph_segments>
-          <MarkdownSegment
-            trans_unit_id="104">
-            <SegmentId>96738ff4-9fa3-439d-89f5-eb1a6222ce5a</SegmentId>
-            <InternalNormalItem
-              internal_item_id="1"
-              internal_item_parent_id="104"
-              trans_unit_id="104-1"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-            <LinkItem
-              internal_item_id="2"
-              internal_item_parent_id="104"
-              trans_unit_id="104-2"
-              internal_item_type="Link">
-              <internal_items />
-              <internal_link_type>Inline</internal_link_type>
-              <internal_link_text>NuGet</internal_link_text>
-              <internal_link_url>https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Client/</internal_link_url>
-              <internal_link_title />
-            </LinkItem>
-            <InternalNormalItem
-              internal_item_id="3"
-              internal_item_parent_id="104"
-              trans_unit_id="104-3"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-          </MarkdownSegment>
-          <MarkdownSegment
-            trans_unit_id="105">
-            <SegmentId>4a769528-1274-438c-983f-20344df52ec3</SegmentId>
-            <InternalNormalItem
-              internal_item_id="1"
-              internal_item_parent_id="105"
-              trans_unit_id="105-1"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-          </MarkdownSegment>
-        </paragraph_segments>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownHeaderBlock"
-        item_id="686abfc8-f87e-4dd9-89a8-2a25718f07e7"
-        item_type="Header"
-        item_footer="footer_not_set"
-        trans_unit_id="686abfc8-f87e-4dd9-89a8-2a25718f07e7">
-        <segment
-          trans_unit_id="106">
-          <SegmentId>318a45a5-a0f1-46a6-b924-5be25d7ff0ba</SegmentId>
-          <InternalNormalItem
-            internal_item_id="1"
-            internal_item_parent_id="106"
-            trans_unit_id="106-1"
-            internal_item_type="Normal">
-            <internal_items />
-          </InternalNormalItem>
-        </segment>
-        <header_type>Star</header_type>
-        <header_level>2</header_level>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownParagraphBlock"
-        item_id="a351efe5-26fa-4c06-b861-5b2933b705c9"
-        item_type="NormalParagraph"
-        item_footer=""
-        trans_unit_id="a351efe5-26fa-4c06-b861-5b2933b705c9">
-        <Lines>
-          <MarkdownLine>
-            <LineId>8c61b396-80db-404c-b8f1-c278bbca047c</LineId>
-            <paragraph_segments>
-              <MarkdownSegment
-                trans_unit_id="107">
-                <SegmentId>7076d5ff-67bf-40a9-b7c6-957b263c06e2</SegmentId>
-                <InternalNormalItem
-                  internal_item_id="1"
-                  internal_item_parent_id="107"
-                  trans_unit_id="107-1"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-              </MarkdownSegment>
-            </paragraph_segments>
-            <PrefixWSLength>0</PrefixWSLength>
-            <SuffixWSLength>0</SuffixWSLength>
-          </MarkdownLine>
-        </Lines>
-        <paragraph_segments>
-          <MarkdownSegment
-            trans_unit_id="107">
-            <SegmentId>7076d5ff-67bf-40a9-b7c6-957b263c06e2</SegmentId>
-            <InternalNormalItem
-              internal_item_id="1"
-              internal_item_parent_id="107"
-              trans_unit_id="107-1"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-          </MarkdownSegment>
-        </paragraph_segments>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownParagraphBlock"
-        item_id="78e5fc92-1e4e-401f-9a4d-9c0af3ca4443"
-        item_type="NormalParagraph"
-        item_footer=""
-        trans_unit_id="78e5fc92-1e4e-401f-9a4d-9c0af3ca4443">
-        <Lines>
-          <MarkdownLine>
-            <LineId>789c9b60-bfed-41a3-9543-c5c6dceea926</LineId>
-            <paragraph_segments>
-              <MarkdownSegment
-                trans_unit_id="108">
-                <SegmentId>f7cc063a-3ca3-4d2c-8b06-851173839dbe</SegmentId>
-                <InternalNormalItem
-                  internal_item_id="1"
-                  internal_item_parent_id="108"
-                  trans_unit_id="108-1"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-              </MarkdownSegment>
-              <MarkdownSegment
-                trans_unit_id="109">
-                <SegmentId>da500459-4b78-455b-be59-52e35cc4c10a</SegmentId>
-                <InternalNormalItem
-                  internal_item_id="1"
-                  internal_item_parent_id="109"
-                  trans_unit_id="109-1"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-              </MarkdownSegment>
-            </paragraph_segments>
-            <PrefixWSLength>0</PrefixWSLength>
-            <SuffixWSLength>0</SuffixWSLength>
-          </MarkdownLine>
-        </Lines>
-        <paragraph_segments>
-          <MarkdownSegment
-            trans_unit_id="108">
-            <SegmentId>f7cc063a-3ca3-4d2c-8b06-851173839dbe</SegmentId>
-            <InternalNormalItem
-              internal_item_id="1"
-              internal_item_parent_id="108"
-              trans_unit_id="108-1"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-          </MarkdownSegment>
-          <MarkdownSegment
-            trans_unit_id="109">
-            <SegmentId>da500459-4b78-455b-be59-52e35cc4c10a</SegmentId>
-            <InternalNormalItem
-              internal_item_id="1"
-              internal_item_parent_id="109"
-              trans_unit_id="109-1"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-          </MarkdownSegment>
-        </paragraph_segments>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownParagraphBlock"
-        item_id="33f91e7a-4d3b-40a1-871e-b0f200f13506"
-        item_type="NormalParagraph"
-        item_footer=""
-        trans_unit_id="33f91e7a-4d3b-40a1-871e-b0f200f13506">
-        <Lines>
-          <MarkdownLine>
-            <LineId>22f167ed-e88d-4a38-9edc-038451598385</LineId>
-            <paragraph_segments>
-              <MarkdownSegment
-                trans_unit_id="110">
-                <SegmentId>d78135d8-abe3-4ff0-b052-cab94454281e</SegmentId>
-                <InternalNormalItem
-                  internal_item_id="1"
-                  internal_item_parent_id="110"
-                  trans_unit_id="110-1"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-              </MarkdownSegment>
-              <MarkdownSegment
-                trans_unit_id="111">
-                <SegmentId>0a0a78ad-859c-4137-a6bd-921cb14cb36f</SegmentId>
-                <InternalNormalItem
-                  internal_item_id="1"
-                  internal_item_parent_id="111"
-                  trans_unit_id="111-1"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-              </MarkdownSegment>
-            </paragraph_segments>
-            <PrefixWSLength>0</PrefixWSLength>
-            <SuffixWSLength>0</SuffixWSLength>
-          </MarkdownLine>
-        </Lines>
-        <paragraph_segments>
-          <MarkdownSegment
-            trans_unit_id="110">
-            <SegmentId>d78135d8-abe3-4ff0-b052-cab94454281e</SegmentId>
-            <InternalNormalItem
-              internal_item_id="1"
-              internal_item_parent_id="110"
-              trans_unit_id="110-1"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-          </MarkdownSegment>
-          <MarkdownSegment
-            trans_unit_id="111">
-            <SegmentId>0a0a78ad-859c-4137-a6bd-921cb14cb36f</SegmentId>
-            <InternalNormalItem
-              internal_item_id="1"
-              internal_item_parent_id="111"
-              trans_unit_id="111-1"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-          </MarkdownSegment>
-        </paragraph_segments>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownListBlock"
-        item_id="4e08821b-1a51-4e2a-af92-6a85ea5b148f"
-        item_type="List"
-        item_footer=""
-        trans_unit_id="4e08821b-1a51-4e2a-af92-6a85ea5b148f">
-        <inner_list_items>
-          <ListItem>
-            <MarkdownParagraphBlock
-              item_id="ce539611-e3bf-40a4-bac0-11ab88905a2b"
-              item_type="NormalParagraph"
-              item_footer="footer_not_set"
-              trans_unit_id="ce539611-e3bf-40a4-bac0-11ab88905a2b">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>b952d6a9-532b-40c6-8b07-a6b768a02ffe</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="112">
-                      <SegmentId>eb013fe2-4326-49c4-9411-a6108200a41c</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="112"
-                        trans_unit_id="112-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                      <MarkdownInternalBoldItem
-                        internal_item_id="2"
-                        internal_item_parent_id="112"
-                        trans_unit_id="112-2"
-                        internal_item_type="Bold">
-                        <internal_items />
-                        <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                      </MarkdownInternalBoldItem>
-                      <InternalNormalItem
-                        internal_item_id="3"
-                        internal_item_parent_id="112"
-                        trans_unit_id="112-3"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                      <MarkdownInternalBoldItem
-                        internal_item_id="4"
-                        internal_item_parent_id="112"
-                        trans_unit_id="112-4"
-                        internal_item_type="Bold">
-                        <internal_items />
-                        <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                      </MarkdownInternalBoldItem>
-                      <InternalNormalItem
-                        internal_item_id="5"
-                        internal_item_parent_id="112"
-                        trans_unit_id="112-5"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                      <MarkdownInternalBoldItem
-                        internal_item_id="6"
-                        internal_item_parent_id="112"
-                        trans_unit_id="112-6"
-                        internal_item_type="Bold">
-                        <internal_items />
-                        <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                      </MarkdownInternalBoldItem>
-                      <InternalNormalItem
-                        internal_item_id="7"
-                        internal_item_parent_id="112"
-                        trans_unit_id="112-7"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="112">
-                  <SegmentId>eb013fe2-4326-49c4-9411-a6108200a41c</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="112"
-                    trans_unit_id="112-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                  <MarkdownInternalBoldItem
-                    internal_item_id="2"
-                    internal_item_parent_id="112"
-                    trans_unit_id="112-2"
-                    internal_item_type="Bold">
-                    <internal_items />
-                    <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                  </MarkdownInternalBoldItem>
-                  <InternalNormalItem
-                    internal_item_id="3"
-                    internal_item_parent_id="112"
-                    trans_unit_id="112-3"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                  <MarkdownInternalBoldItem
-                    internal_item_id="4"
-                    internal_item_parent_id="112"
-                    trans_unit_id="112-4"
-                    internal_item_type="Bold">
-                    <internal_items />
-                    <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                  </MarkdownInternalBoldItem>
-                  <InternalNormalItem
-                    internal_item_id="5"
-                    internal_item_parent_id="112"
-                    trans_unit_id="112-5"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                  <MarkdownInternalBoldItem
-                    internal_item_id="6"
-                    internal_item_parent_id="112"
-                    trans_unit_id="112-6"
-                    internal_item_type="Bold">
-                    <internal_items />
-                    <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                  </MarkdownInternalBoldItem>
-                  <InternalNormalItem
-                    internal_item_id="7"
-                    internal_item_parent_id="112"
-                    trans_unit_id="112-7"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <Identifier> *</Identifier>
-            <IndentsLength>
-              <int>0</int>
-            </IndentsLength>
-          </ListItem>
-          <ListItem>
-            <MarkdownParagraphBlock
-              item_id="6e4d3be1-6189-4251-b815-1192566dd21f"
-              item_type="NormalParagraph"
-              item_footer=""
-              trans_unit_id="6e4d3be1-6189-4251-b815-1192566dd21f">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>c8cd51b1-ac5a-487c-86c9-e1b2870cf381</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="113">
-                      <SegmentId>f94d6043-9bd7-4438-81c4-87b43c096241</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="113"
-                        trans_unit_id="113-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                      <MarkdownInternalBoldItem
-                        internal_item_id="2"
-                        internal_item_parent_id="113"
-                        trans_unit_id="113-2"
-                        internal_item_type="Bold">
-                        <internal_items />
-                        <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                      </MarkdownInternalBoldItem>
-                      <InternalNormalItem
-                        internal_item_id="3"
-                        internal_item_parent_id="113"
-                        trans_unit_id="113-3"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                      <MarkdownInternalBoldItem
-                        internal_item_id="4"
-                        internal_item_parent_id="113"
-                        trans_unit_id="113-4"
-                        internal_item_type="Bold">
-                        <internal_items />
-                        <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                      </MarkdownInternalBoldItem>
-                      <InternalNormalItem
-                        internal_item_id="5"
-                        internal_item_parent_id="113"
-                        trans_unit_id="113-5"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                      <MarkdownInternalBoldItem
-                        internal_item_id="6"
-                        internal_item_parent_id="113"
-                        trans_unit_id="113-6"
-                        internal_item_type="Bold">
-                        <internal_items />
-                        <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                      </MarkdownInternalBoldItem>
-                      <InternalNormalItem
-                        internal_item_id="7"
-                        internal_item_parent_id="113"
-                        trans_unit_id="113-7"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-                <MarkdownLine>
-                  <LineId>ed3cafc8-ad9b-4dc1-8bf6-c5f6805cfa12</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="114">
-                      <SegmentId>16b12406-434b-4bf8-9ad1-1bc029418383</SegmentId>
-                      <ImageItem
-                        internal_item_id="1"
-                        internal_item_parent_id="114"
-                        trans_unit_id="114-1"
-                        internal_item_type="Image">
-                        <internal_items />
-                        <internal_Image_type>Reference</internal_Image_type>
-                        <internal_link_text>Upgrade Nuget Pacakges</internal_link_text>
-                        <internal_link_id>1</internal_link_id>
-                      </ImageItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>2</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="113">
-                  <SegmentId>f94d6043-9bd7-4438-81c4-87b43c096241</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="113"
-                    trans_unit_id="113-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                  <MarkdownInternalBoldItem
-                    internal_item_id="2"
-                    internal_item_parent_id="113"
-                    trans_unit_id="113-2"
-                    internal_item_type="Bold">
-                    <internal_items />
-                    <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                  </MarkdownInternalBoldItem>
-                  <InternalNormalItem
-                    internal_item_id="3"
-                    internal_item_parent_id="113"
-                    trans_unit_id="113-3"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                  <MarkdownInternalBoldItem
-                    internal_item_id="4"
-                    internal_item_parent_id="113"
-                    trans_unit_id="113-4"
-                    internal_item_type="Bold">
-                    <internal_items />
-                    <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                  </MarkdownInternalBoldItem>
-                  <InternalNormalItem
-                    internal_item_id="5"
-                    internal_item_parent_id="113"
-                    trans_unit_id="113-5"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                  <MarkdownInternalBoldItem
-                    internal_item_id="6"
-                    internal_item_parent_id="113"
-                    trans_unit_id="113-6"
-                    internal_item_type="Bold">
-                    <internal_items />
-                    <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                  </MarkdownInternalBoldItem>
-                  <InternalNormalItem
-                    internal_item_id="7"
-                    internal_item_parent_id="113"
-                    trans_unit_id="113-7"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-                <MarkdownSegment
-                  trans_unit_id="114">
-                  <SegmentId>16b12406-434b-4bf8-9ad1-1bc029418383</SegmentId>
-                  <ImageItem
-                    internal_item_id="1"
-                    internal_item_parent_id="114"
-                    trans_unit_id="114-1"
-                    internal_item_type="Image">
-                    <internal_items />
-                    <internal_Image_type>Reference</internal_Image_type>
-                    <internal_link_text>Upgrade Nuget Pacakges</internal_link_text>
-                    <internal_link_id>1</internal_link_id>
-                  </ImageItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <Identifier> *</Identifier>
-            <IndentsLength>
-              <int>0</int>
-              <int>2</int>
-            </IndentsLength>
-          </ListItem>
-          <ListItem>
-            <MarkdownParagraphBlock
-              item_id="bd0be77e-02b2-4713-ba16-3979c1168236"
-              item_type="NormalParagraph"
-              item_footer="footer_not_set"
-              trans_unit_id="bd0be77e-02b2-4713-ba16-3979c1168236">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>bcf6d809-ce11-4155-a633-75dda09b3c70</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="115">
-                      <SegmentId>68c31ff7-488c-4cf0-87da-3ed45b78c44b</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="115"
-                        trans_unit_id="115-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="115">
-                  <SegmentId>68c31ff7-488c-4cf0-87da-3ed45b78c44b</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="115"
-                    trans_unit_id="115-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <Identifier> *</Identifier>
-            <IndentsLength>
-              <int>0</int>
-            </IndentsLength>
-          </ListItem>
-        </inner_list_items>
-        <ListType>Charactor</ListType>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownParagraphBlock"
-        item_id="ccba1adf-a90b-4c06-bcf1-03b64845367f"
-        item_type="NormalParagraph"
-        item_footer=""
-        trans_unit_id="ccba1adf-a90b-4c06-bcf1-03b64845367f">
-        <Lines>
-          <MarkdownLine>
-            <LineId>ee00c299-f908-41ed-8d6a-9ff59b7ad7e2</LineId>
-            <paragraph_segments>
-              <MarkdownSegment
-                trans_unit_id="116">
-                <SegmentId>2cf2bcc8-8ffd-4a40-8c4b-fa60ab8f746a</SegmentId>
-                <InternalNormalItem
-                  internal_item_id="1"
-                  internal_item_parent_id="116"
-                  trans_unit_id="116-1"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-              </MarkdownSegment>
-              <MarkdownSegment
-                trans_unit_id="117">
-                <SegmentId>219541a3-f469-4228-8e49-98cd61b5472c</SegmentId>
-                <InternalNormalItem
-                  internal_item_id="1"
-                  internal_item_parent_id="117"
-                  trans_unit_id="117-1"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-                <MarkdownInternalBoldItem
-                  internal_item_id="2"
-                  internal_item_parent_id="117"
-                  trans_unit_id="117-2"
-                  internal_item_type="Bold">
-                  <internal_items />
-                  <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                </MarkdownInternalBoldItem>
-                <InternalNormalItem
-                  internal_item_id="3"
-                  internal_item_parent_id="117"
-                  trans_unit_id="117-3"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-                <LinkItem
-                  internal_item_id="4"
-                  internal_item_parent_id="117"
-                  trans_unit_id="117-4"
-                  internal_item_type="Link">
-                  <internal_items />
-                  <internal_link_type>Inline</internal_link_type>
-                  <internal_link_text>download the new library version</internal_link_text>
-                  <internal_link_url>https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Client/</internal_link_url>
-                  <internal_link_title />
-                </LinkItem>
-                <InternalNormalItem
-                  internal_item_id="5"
-                  internal_item_parent_id="117"
-                  trans_unit_id="117-5"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-              </MarkdownSegment>
-            </paragraph_segments>
-            <PrefixWSLength>0</PrefixWSLength>
-            <SuffixWSLength>0</SuffixWSLength>
-          </MarkdownLine>
-        </Lines>
-        <paragraph_segments>
-          <MarkdownSegment
-            trans_unit_id="116">
-            <SegmentId>2cf2bcc8-8ffd-4a40-8c4b-fa60ab8f746a</SegmentId>
-            <InternalNormalItem
-              internal_item_id="1"
-              internal_item_parent_id="116"
-              trans_unit_id="116-1"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-          </MarkdownSegment>
-          <MarkdownSegment
-            trans_unit_id="117">
-            <SegmentId>219541a3-f469-4228-8e49-98cd61b5472c</SegmentId>
-            <InternalNormalItem
-              internal_item_id="1"
-              internal_item_parent_id="117"
-              trans_unit_id="117-1"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-            <MarkdownInternalBoldItem
-              internal_item_id="2"
-              internal_item_parent_id="117"
-              trans_unit_id="117-2"
-              internal_item_type="Bold">
-              <internal_items />
-              <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-            </MarkdownInternalBoldItem>
-            <InternalNormalItem
-              internal_item_id="3"
-              internal_item_parent_id="117"
-              trans_unit_id="117-3"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-            <LinkItem
-              internal_item_id="4"
-              internal_item_parent_id="117"
-              trans_unit_id="117-4"
-              internal_item_type="Link">
-              <internal_items />
-              <internal_link_type>Inline</internal_link_type>
-              <internal_link_text>download the new library version</internal_link_text>
-              <internal_link_url>https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Client/</internal_link_url>
-              <internal_link_title />
-            </LinkItem>
-            <InternalNormalItem
-              internal_item_id="5"
-              internal_item_parent_id="117"
-              trans_unit_id="117-5"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-          </MarkdownSegment>
-        </paragraph_segments>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownParagraphBlock"
-        item_id="502004e1-d882-431c-9b29-80c2cbedb501"
-        item_type="NormalParagraph"
-        item_footer=""
-        trans_unit_id="502004e1-d882-431c-9b29-80c2cbedb501">
-        <Lines>
-          <MarkdownLine>
-            <LineId>5609ecd3-5139-4074-9db8-8a596ffede5d</LineId>
-            <paragraph_segments>
-              <MarkdownSegment
-                trans_unit_id="118">
-                <SegmentId>e16cf598-3794-4947-bbff-25a44fde65e1</SegmentId>
-                <InternalNormalItem
-                  internal_item_id="1"
-                  internal_item_parent_id="118"
-                  trans_unit_id="118-1"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-              </MarkdownSegment>
-              <MarkdownSegment
-                trans_unit_id="119">
-                <SegmentId>12a42389-588c-45e1-9b40-edf3ad43a6d7</SegmentId>
-                <InternalNormalItem
-                  internal_item_id="1"
-                  internal_item_parent_id="119"
-                  trans_unit_id="119-1"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-                <LinkItem
-                  internal_item_id="2"
-                  internal_item_parent_id="119"
-                  trans_unit_id="119-2"
-                  internal_item_type="Link">
-                  <internal_items />
-                  <internal_link_type>Inline</internal_link_type>
-                  <internal_link_text>download and deploy the latest version of the tool</internal_link_text>
-                  <internal_link_url>https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Service.SplitMerge/</internal_link_url>
-                  <internal_link_title />
-                </LinkItem>
-                <InternalNormalItem
-                  internal_item_id="3"
-                  internal_item_parent_id="119"
-                  trans_unit_id="119-3"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-              </MarkdownSegment>
-              <MarkdownSegment
-                trans_unit_id="120">
-                <SegmentId>c94d692b-7dd1-4179-bfc2-c90749e3b5a6</SegmentId>
-                <InternalNormalItem
-                  internal_item_id="1"
-                  internal_item_parent_id="120"
-                  trans_unit_id="120-1"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-                <LinkItem
-                  internal_item_id="2"
-                  internal_item_parent_id="120"
-                  trans_unit_id="120-2"
-                  internal_item_type="Link">
-                  <internal_items />
-                  <internal_link_type>Inline</internal_link_type>
-                  <internal_link_text>here</internal_link_text>
-                  <internal_link_url>sql-database-elastic-scale-overview-split-and-merge.md</internal_link_url>
-                  <internal_link_title />
-                </LinkItem>
-                <InternalNormalItem
-                  internal_item_id="3"
-                  internal_item_parent_id="120"
-                  trans_unit_id="120-3"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-              </MarkdownSegment>
-            </paragraph_segments>
-            <PrefixWSLength>0</PrefixWSLength>
-            <SuffixWSLength>0</SuffixWSLength>
-          </MarkdownLine>
-        </Lines>
-        <paragraph_segments>
-          <MarkdownSegment
-            trans_unit_id="118">
-            <SegmentId>e16cf598-3794-4947-bbff-25a44fde65e1</SegmentId>
-            <InternalNormalItem
-              internal_item_id="1"
-              internal_item_parent_id="118"
-              trans_unit_id="118-1"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-          </MarkdownSegment>
-          <MarkdownSegment
-            trans_unit_id="119">
-            <SegmentId>12a42389-588c-45e1-9b40-edf3ad43a6d7</SegmentId>
-            <InternalNormalItem
-              internal_item_id="1"
-              internal_item_parent_id="119"
-              trans_unit_id="119-1"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-            <LinkItem
-              internal_item_id="2"
-              internal_item_parent_id="119"
-              trans_unit_id="119-2"
-              internal_item_type="Link">
-              <internal_items />
-              <internal_link_type>Inline</internal_link_type>
-              <internal_link_text>download and deploy the latest version of the tool</internal_link_text>
-              <internal_link_url>https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Service.SplitMerge/</internal_link_url>
-              <internal_link_title />
-            </LinkItem>
-            <InternalNormalItem
-              internal_item_id="3"
-              internal_item_parent_id="119"
-              trans_unit_id="119-3"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-          </MarkdownSegment>
-          <MarkdownSegment
-            trans_unit_id="120">
-            <SegmentId>c94d692b-7dd1-4179-bfc2-c90749e3b5a6</SegmentId>
-            <InternalNormalItem
-              internal_item_id="1"
-              internal_item_parent_id="120"
-              trans_unit_id="120-1"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-            <LinkItem
-              internal_item_id="2"
-              internal_item_parent_id="120"
-              trans_unit_id="120-2"
-              internal_item_type="Link">
-              <internal_items />
-              <internal_link_type>Inline</internal_link_type>
-              <internal_link_text>here</internal_link_text>
-              <internal_link_url>sql-database-elastic-scale-overview-split-and-merge.md</internal_link_url>
-              <internal_link_title />
-            </LinkItem>
-            <InternalNormalItem
-              internal_item_id="3"
-              internal_item_parent_id="120"
-              trans_unit_id="120-3"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-          </MarkdownSegment>
-        </paragraph_segments>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownParagraphBlock"
-        item_id="7db94927-641c-4e9d-b261-90d067af2516"
-        item_type="NormalParagraph"
-        item_footer=""
-        trans_unit_id="7db94927-641c-4e9d-b261-90d067af2516">
-        <Lines>
-          <MarkdownLine>
-            <LineId>fa29b87a-4085-42fb-8cf8-63c6b060fd36</LineId>
-            <paragraph_segments>
-              <MarkdownSegment
-                trans_unit_id="121">
-                <SegmentId>bfb17427-b019-4a8c-95d8-0f6f43722a0e</SegmentId>
-                <InternalNormalItem
-                  internal_item_id="1"
-                  internal_item_parent_id="121"
-                  trans_unit_id="121-1"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-              </MarkdownSegment>
-              <MarkdownSegment
-                trans_unit_id="122">
-                <SegmentId>e033bdc8-14d3-4430-9648-c41115e1a3bd</SegmentId>
-                <InternalNormalItem
-                  internal_item_id="1"
-                  internal_item_parent_id="122"
-                  trans_unit_id="122-1"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-              </MarkdownSegment>
-              <MarkdownSegment
-                trans_unit_id="123">
-                <SegmentId>0394ed37-fc02-49bb-afd2-59239a6887a2</SegmentId>
-                <InternalNormalItem
-                  internal_item_id="1"
-                  internal_item_parent_id="123"
-                  trans_unit_id="123-1"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-              </MarkdownSegment>
-              <MarkdownSegment
-                trans_unit_id="124">
-                <SegmentId>7260a3e2-e370-49b8-9263-857c061b08f9</SegmentId>
-                <InternalNormalItem
-                  internal_item_id="1"
-                  internal_item_parent_id="124"
-                  trans_unit_id="124-1"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-              </MarkdownSegment>
-              <MarkdownSegment
-                trans_unit_id="125">
-                <SegmentId>391b5443-1e0d-43a7-a47d-7481a55dc4b8</SegmentId>
-                <InternalNormalItem
-                  internal_item_id="1"
-                  internal_item_parent_id="125"
-                  trans_unit_id="125-1"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-              </MarkdownSegment>
-            </paragraph_segments>
-            <PrefixWSLength>0</PrefixWSLength>
-            <SuffixWSLength>0</SuffixWSLength>
-          </MarkdownLine>
-        </Lines>
-        <paragraph_segments>
-          <MarkdownSegment
-            trans_unit_id="121">
-            <SegmentId>bfb17427-b019-4a8c-95d8-0f6f43722a0e</SegmentId>
-            <InternalNormalItem
-              internal_item_id="1"
-              internal_item_parent_id="121"
-              trans_unit_id="121-1"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-          </MarkdownSegment>
-          <MarkdownSegment
-            trans_unit_id="122">
-            <SegmentId>e033bdc8-14d3-4430-9648-c41115e1a3bd</SegmentId>
-            <InternalNormalItem
-              internal_item_id="1"
-              internal_item_parent_id="122"
-              trans_unit_id="122-1"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-          </MarkdownSegment>
-          <MarkdownSegment
-            trans_unit_id="123">
-            <SegmentId>0394ed37-fc02-49bb-afd2-59239a6887a2</SegmentId>
-            <InternalNormalItem
-              internal_item_id="1"
-              internal_item_parent_id="123"
-              trans_unit_id="123-1"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-          </MarkdownSegment>
-          <MarkdownSegment
-            trans_unit_id="124">
-            <SegmentId>7260a3e2-e370-49b8-9263-857c061b08f9</SegmentId>
-            <InternalNormalItem
-              internal_item_id="1"
-              internal_item_parent_id="124"
-              trans_unit_id="124-1"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-          </MarkdownSegment>
-          <MarkdownSegment
-            trans_unit_id="125">
-            <SegmentId>391b5443-1e0d-43a7-a47d-7481a55dc4b8</SegmentId>
-            <InternalNormalItem
-              internal_item_id="1"
-              internal_item_parent_id="125"
-              trans_unit_id="125-1"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-          </MarkdownSegment>
-        </paragraph_segments>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownParagraphBlock"
-        item_id="dca39bc1-56e0-4505-a662-0babefc9cddd"
-        item_type="NormalParagraph"
-        item_footer=""
-        trans_unit_id="dca39bc1-56e0-4505-a662-0babefc9cddd">
-        <Lines>
-          <MarkdownLine>
-            <LineId>d28e0434-f7f4-44a7-91c5-ef3627aadd7c</LineId>
-            <paragraph_segments>
-              <MarkdownSegment
-                trans_unit_id="126">
-                <SegmentId>f1aebd01-6427-4ecf-add5-2ca9e318d63c</SegmentId>
-                <MarkdownInternalBoldItem
-                  internal_item_id="1"
-                  internal_item_parent_id="126"
-                  trans_unit_id="126-1"
-                  internal_item_type="Bold">
-                  <internal_items />
-                  <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                </MarkdownInternalBoldItem>
-              </MarkdownSegment>
-            </paragraph_segments>
-            <PrefixWSLength>0</PrefixWSLength>
-            <SuffixWSLength>0</SuffixWSLength>
-          </MarkdownLine>
-        </Lines>
-        <paragraph_segments>
-          <MarkdownSegment
-            trans_unit_id="126">
-            <SegmentId>f1aebd01-6427-4ecf-add5-2ca9e318d63c</SegmentId>
-            <MarkdownInternalBoldItem
-              internal_item_id="1"
-              internal_item_parent_id="126"
-              trans_unit_id="126-1"
-              internal_item_type="Bold">
-              <internal_items />
-              <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-            </MarkdownInternalBoldItem>
-          </MarkdownSegment>
-        </paragraph_segments>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownListBlock"
-        item_id="2a2957d0-5478-4683-a0cf-1ed1ea1a6b53"
-        item_type="List"
-        item_footer=""
-        trans_unit_id="2a2957d0-5478-4683-a0cf-1ed1ea1a6b53">
-        <inner_list_items>
-          <ListItem>
-            <MarkdownParagraphBlock
-              item_id="08ea9f3d-5e60-4799-8e1b-3a212f32bef0"
-              item_type="NormalParagraph"
-              item_footer=""
-              trans_unit_id="08ea9f3d-5e60-4799-8e1b-3a212f32bef0">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>6aba470a-1b16-4d1f-97f8-26a7de3c9c74</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="127">
-                      <SegmentId>fbe6bd32-32cf-4e71-8876-dd1e82970b0b</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="127"
-                        trans_unit_id="127-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                      <LinkItem
-                        internal_item_id="2"
-                        internal_item_parent_id="127"
-                        trans_unit_id="127-2"
-                        internal_item_type="Link">
-                        <internal_items />
-                        <internal_link_type>Inline</internal_link_type>
-                        <internal_link_text>here</internal_link_text>
-                        <internal_link_url>http://nuget.org/nuget.exe</internal_link_url>
-                        <internal_link_title />
-                      </LinkItem>
-                      <InternalNormalItem
-                        internal_item_id="3"
-                        internal_item_parent_id="127"
-                        trans_unit_id="127-3"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="127">
-                  <SegmentId>fbe6bd32-32cf-4e71-8876-dd1e82970b0b</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="127"
-                    trans_unit_id="127-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                  <LinkItem
-                    internal_item_id="2"
-                    internal_item_parent_id="127"
-                    trans_unit_id="127-2"
-                    internal_item_type="Link">
-                    <internal_items />
-                    <internal_link_type>Inline</internal_link_type>
-                    <internal_link_text>here</internal_link_text>
-                    <internal_link_url>http://nuget.org/nuget.exe</internal_link_url>
-                    <internal_link_title />
-                  </LinkItem>
-                  <InternalNormalItem
-                    internal_item_id="3"
-                    internal_item_parent_id="127"
-                    trans_unit_id="127-3"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <Identifier>1.</Identifier>
-            <IndentsLength>
-              <int>0</int>
-            </IndentsLength>
-          </ListItem>
-          <ListItem>
-            <MarkdownParagraphBlock
-              item_id="61c48d6b-0dbf-47df-bc4f-a1c37e15fd44"
-              item_type="NormalParagraph"
-              item_footer=""
-              trans_unit_id="61c48d6b-0dbf-47df-bc4f-a1c37e15fd44">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>80a354c4-f8db-4404-a4f9-9a2ff4d83ae1</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="128">
-                      <SegmentId>941ca5cb-391f-4440-86bd-d9522214e1b8</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="128"
-                        trans_unit_id="128-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-                <MarkdownLine>
-                  <LineId>2f4969db-927d-4a9b-8d2c-a43d2861d860</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="129">
-                      <SegmentId>93490af9-df6f-43d6-95f1-81afcfe97c8f</SegmentId>
-                      <CodeSpanItem
-                        internal_item_id="1"
-                        internal_item_parent_id="129"
-                        trans_unit_id="129-1"
-                        internal_item_type="CodeSpan">
-                        <internal_items />
-                        <ItemValue>nuget install Microsoft.Azure.SqlDatabase.ElasticScale.Client</ItemValue>
-                      </CodeSpanItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>0</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="128">
-                  <SegmentId>941ca5cb-391f-4440-86bd-d9522214e1b8</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="128"
-                    trans_unit_id="128-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-                <MarkdownSegment
-                  trans_unit_id="129">
-                  <SegmentId>93490af9-df6f-43d6-95f1-81afcfe97c8f</SegmentId>
-                  <CodeSpanItem
-                    internal_item_id="1"
-                    internal_item_parent_id="129"
-                    trans_unit_id="129-1"
-                    internal_item_type="CodeSpan">
-                    <internal_items />
-                    <ItemValue>nuget install Microsoft.Azure.SqlDatabase.ElasticScale.Client</ItemValue>
-                  </CodeSpanItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <Identifier>2.</Identifier>
-            <IndentsLength>
-              <int>0</int>
-              <int>0</int>
-            </IndentsLength>
-          </ListItem>
-          <ListItem>
-            <MarkdownParagraphBlock
-              item_id="c2f199c7-a4ba-43d3-b9a6-c8773bd9a111"
-              item_type="NormalParagraph"
-              item_footer=""
-              trans_unit_id="c2f199c7-a4ba-43d3-b9a6-c8773bd9a111">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>1bec9f5b-d666-4caf-8cc0-130f803f4df7</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="130">
-                      <SegmentId>77d8f5f9-584e-4fcd-9d7a-a5b9c1859f0b</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="130"
-                        trans_unit_id="130-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-                <MarkdownLine>
-                  <LineId>28ab8f7f-7ea9-4d42-bdc4-b0b360313e66</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="131">
-                      <SegmentId>c279253b-cab4-4e03-9335-4de43ab060f5</SegmentId>
-                      <CodeSpanItem
-                        internal_item_id="1"
-                        internal_item_parent_id="131"
-                        trans_unit_id="131-1"
-                        internal_item_type="CodeSpan">
-                        <internal_items />
-                        <ItemValue>cd .\Microsoft.Azure.SqlDatabase.ElasticScale.Client.1.0.0\lib\net45</ItemValue>
-                      </CodeSpanItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>0</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="130">
-                  <SegmentId>77d8f5f9-584e-4fcd-9d7a-a5b9c1859f0b</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="130"
-                    trans_unit_id="130-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-                <MarkdownSegment
-                  trans_unit_id="131">
-                  <SegmentId>c279253b-cab4-4e03-9335-4de43ab060f5</SegmentId>
-                  <CodeSpanItem
-                    internal_item_id="1"
-                    internal_item_parent_id="131"
-                    trans_unit_id="131-1"
-                    internal_item_type="CodeSpan">
-                    <internal_items />
-                    <ItemValue>cd .\Microsoft.Azure.SqlDatabase.ElasticScale.Client.1.0.0\lib\net45</ItemValue>
-                  </CodeSpanItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <Identifier>3.</Identifier>
-            <IndentsLength>
-              <int>0</int>
-              <int>0</int>
-            </IndentsLength>
-          </ListItem>
-          <ListItem>
-            <MarkdownParagraphBlock
-              item_id="db6a570a-69cb-4527-bfc6-2e166f4cb63f"
-              item_type="NormalParagraph"
-              item_footer=""
-              trans_unit_id="db6a570a-69cb-4527-bfc6-2e166f4cb63f">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>7b6d79b0-8365-44db-b19d-06484bc4b05e</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="132">
-                      <SegmentId>ae760f20-4a13-49a4-9fc7-43b5125ed1a7</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="132"
-                        trans_unit_id="132-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                      <LinkItem
-                        internal_item_id="2"
-                        internal_item_parent_id="132"
-                        trans_unit_id="132-2"
-                        internal_item_type="Link">
-                        <internal_items />
-                        <internal_link_type>Inline</internal_link_type>
-                        <internal_link_text>Script Center</internal_link_text>
-                        <internal_link_url>https://gallery.technet.microsoft.com/scriptcenter/Azure-SQL-Database-Elastic-6442e6a9</internal_link_url>
-                        <internal_link_title />
-                      </LinkItem>
-                      <InternalNormalItem
-                        internal_item_id="3"
-                        internal_item_parent_id="132"
-                        trans_unit_id="132-3"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="132">
-                  <SegmentId>ae760f20-4a13-49a4-9fc7-43b5125ed1a7</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="132"
-                    trans_unit_id="132-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                  <LinkItem
-                    internal_item_id="2"
-                    internal_item_parent_id="132"
-                    trans_unit_id="132-2"
-                    internal_item_type="Link">
-                    <internal_items />
-                    <internal_link_type>Inline</internal_link_type>
-                    <internal_link_text>Script Center</internal_link_text>
-                    <internal_link_url>https://gallery.technet.microsoft.com/scriptcenter/Azure-SQL-Database-Elastic-6442e6a9</internal_link_url>
-                    <internal_link_title />
-                  </LinkItem>
-                  <InternalNormalItem
-                    internal_item_id="3"
-                    internal_item_parent_id="132"
-                    trans_unit_id="132-3"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <Identifier>4.</Identifier>
-            <IndentsLength>
-              <int>0</int>
-            </IndentsLength>
-          </ListItem>
-          <ListItem>
-            <MarkdownParagraphBlock
-              item_id="73f94c02-de75-4078-a2ee-d0990fedb82f"
-              item_type="NormalParagraph"
-              item_footer="footer_not_set"
-              trans_unit_id="73f94c02-de75-4078-a2ee-d0990fedb82f">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>83db4002-b093-4ce2-8a9a-b63b825b0bfa</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="133">
-                      <SegmentId>265e5837-7726-4090-899f-946b968383f8</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="133"
-                        trans_unit_id="133-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="133">
-                  <SegmentId>265e5837-7726-4090-899f-946b968383f8</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="133"
-                    trans_unit_id="133-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <Identifier>5.</Identifier>
-            <IndentsLength>
-              <int>0</int>
-            </IndentsLength>
-          </ListItem>
-        </inner_list_items>
-        <ListType>Number</ListType>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownParagraphBlock"
-        item_id="c43c2180-487e-4bc5-8517-c5a1af93f76e"
-        item_type="NormalParagraph"
-        item_footer=""
-        trans_unit_id="c43c2180-487e-4bc5-8517-c5a1af93f76e">
-        <Lines>
-          <MarkdownLine>
-            <LineId>b48f43ca-763f-4b83-9d09-55bd6d5a1944</LineId>
-            <paragraph_segments>
-              <MarkdownSegment
-                trans_unit_id="134">
-                <SegmentId>5ef2c147-18d4-4773-a3b0-555fbd12ec8d</SegmentId>
-                <MarkdownInternalBoldItem
-                  internal_item_id="1"
-                  internal_item_parent_id="134"
-                  trans_unit_id="134-1"
-                  internal_item_type="Bold">
-                  <internal_items />
-                  <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                </MarkdownInternalBoldItem>
-              </MarkdownSegment>
-            </paragraph_segments>
-            <PrefixWSLength>0</PrefixWSLength>
-            <SuffixWSLength>0</SuffixWSLength>
-          </MarkdownLine>
-        </Lines>
-        <paragraph_segments>
-          <MarkdownSegment
-            trans_unit_id="134">
-            <SegmentId>5ef2c147-18d4-4773-a3b0-555fbd12ec8d</SegmentId>
-            <MarkdownInternalBoldItem
-              internal_item_id="1"
-              internal_item_parent_id="134"
-              trans_unit_id="134-1"
-              internal_item_type="Bold">
-              <internal_items />
-              <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-            </MarkdownInternalBoldItem>
-          </MarkdownSegment>
-        </paragraph_segments>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownParagraphBlock"
-        item_id="79b598e1-6870-47e0-b9c4-dd877464fcd9"
-        item_type="NormalParagraph"
-        item_footer=""
-        trans_unit_id="79b598e1-6870-47e0-b9c4-dd877464fcd9">
-        <Lines>
-          <MarkdownLine>
-            <LineId>bd88be79-dfb5-48db-987a-f9e0c1cc74fd</LineId>
-            <paragraph_segments>
-              <MarkdownSegment
-                trans_unit_id="135">
-                <SegmentId>fcec276d-ecf4-467d-b14a-89ae02c22dfa</SegmentId>
-                <InternalNormalItem
-                  internal_item_id="1"
-                  internal_item_parent_id="135"
-                  trans_unit_id="135-1"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-                <LinkItem
-                  internal_item_id="2"
-                  internal_item_parent_id="135"
-                  trans_unit_id="135-2"
-                  internal_item_type="Link">
-                  <internal_items />
-                  <internal_link_type>Inline</internal_link_type>
-                  <internal_link_text>UpgradeLocalStore</internal_link_text>
-                  <internal_link_url>https://msdn.microsoft.com/library/azure/microsoft.azure.sqldatabase.elasticscale.shardmanagement.shardmapmanager.upgradelocalstore.aspx</internal_link_url>
-                  <internal_link_title />
-                </LinkItem>
-                <InternalNormalItem
-                  internal_item_id="3"
-                  internal_item_parent_id="135"
-                  trans_unit_id="135-3"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-                <LinkItem
-                  internal_item_id="4"
-                  internal_item_parent_id="135"
-                  trans_unit_id="135-4"
-                  internal_item_type="Link">
-                  <internal_items />
-                  <internal_link_type>Inline</internal_link_type>
-                  <internal_link_text>UpgradeGlobalStore</internal_link_text>
-                  <internal_link_url>https://msdn.microsoft.com/library/azure/microsoft.azure.sqldatabase.elasticscale.shardmanagement.shardmapmanager.upgradeglobalstore.aspx</internal_link_url>
-                  <internal_link_title />
-                </LinkItem>
-                <InternalNormalItem
-                  internal_item_id="5"
-                  internal_item_parent_id="135"
-                  trans_unit_id="135-5"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-              </MarkdownSegment>
-            </paragraph_segments>
-            <PrefixWSLength>0</PrefixWSLength>
-            <SuffixWSLength>0</SuffixWSLength>
-          </MarkdownLine>
-        </Lines>
-        <paragraph_segments>
-          <MarkdownSegment
-            trans_unit_id="135">
-            <SegmentId>fcec276d-ecf4-467d-b14a-89ae02c22dfa</SegmentId>
-            <InternalNormalItem
-              internal_item_id="1"
-              internal_item_parent_id="135"
-              trans_unit_id="135-1"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-            <LinkItem
-              internal_item_id="2"
-              internal_item_parent_id="135"
-              trans_unit_id="135-2"
-              internal_item_type="Link">
-              <internal_items />
-              <internal_link_type>Inline</internal_link_type>
-              <internal_link_text>UpgradeLocalStore</internal_link_text>
-              <internal_link_url>https://msdn.microsoft.com/library/azure/microsoft.azure.sqldatabase.elasticscale.shardmanagement.shardmapmanager.upgradelocalstore.aspx</internal_link_url>
-              <internal_link_title />
-            </LinkItem>
-            <InternalNormalItem
-              internal_item_id="3"
-              internal_item_parent_id="135"
-              trans_unit_id="135-3"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-            <LinkItem
-              internal_item_id="4"
-              internal_item_parent_id="135"
-              trans_unit_id="135-4"
-              internal_item_type="Link">
-              <internal_items />
-              <internal_link_type>Inline</internal_link_type>
-              <internal_link_text>UpgradeGlobalStore</internal_link_text>
-              <internal_link_url>https://msdn.microsoft.com/library/azure/microsoft.azure.sqldatabase.elasticscale.shardmanagement.shardmapmanager.upgradeglobalstore.aspx</internal_link_url>
-              <internal_link_title />
-            </LinkItem>
-            <InternalNormalItem
-              internal_item_id="5"
-              internal_item_parent_id="135"
-              trans_unit_id="135-5"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-          </MarkdownSegment>
-        </paragraph_segments>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownCodeBlock"
-        item_id="e54517a7-aa33-4537-a2c0-80a6e35b7610"
-        item_type="CodeBlock"
-        item_footer="footer_not_set"
-        trans_unit_id="e54517a7-aa33-4537-a2c0-80a6e35b7610">
-        <code_block>ShardMapManager smm =
-   ShardMapManagerFactory.GetSqlShardMapManager
-   (connStr, ShardMapManagerLoadPolicy.Lazy); 
-smm.UpgradeGlobalStore(); 
-
-foreach (ShardLocation loc in
- smm.GetDistinctShardLocations()) 
-{   
-   smm.UpgradeLocalStore(loc); 
-} 
-
-</code_block>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownParagraphBlock"
-        item_id="531156ad-5e7b-4728-961c-0a8958c34763"
-        item_type="NormalParagraph"
-        item_footer=""
-        trans_unit_id="531156ad-5e7b-4728-961c-0a8958c34763">
-        <Lines>
-          <MarkdownLine>
-            <LineId>52b9b85d-efcf-45f2-8ac6-073eecc7f699</LineId>
-            <paragraph_segments>
-              <MarkdownSegment
-                trans_unit_id="136">
-                <SegmentId>d4cea35d-e1ac-4aa0-a272-8d36d99da97f</SegmentId>
-                <InternalNormalItem
-                  internal_item_id="1"
-                  internal_item_parent_id="136"
-                  trans_unit_id="136-1"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-              </MarkdownSegment>
-              <MarkdownSegment
-                trans_unit_id="137">
-                <SegmentId>9934396e-c9ff-4899-b5ae-5fe4faa0f126</SegmentId>
-                <InternalNormalItem
-                  internal_item_id="1"
-                  internal_item_parent_id="137"
-                  trans_unit_id="137-1"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-              </MarkdownSegment>
-            </paragraph_segments>
-            <PrefixWSLength>0</PrefixWSLength>
-            <SuffixWSLength>0</SuffixWSLength>
-          </MarkdownLine>
-        </Lines>
-        <paragraph_segments>
-          <MarkdownSegment
-            trans_unit_id="136">
-            <SegmentId>d4cea35d-e1ac-4aa0-a272-8d36d99da97f</SegmentId>
-            <InternalNormalItem
-              internal_item_id="1"
-              internal_item_parent_id="136"
-              trans_unit_id="136-1"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-          </MarkdownSegment>
-          <MarkdownSegment
-            trans_unit_id="137">
-            <SegmentId>9934396e-c9ff-4899-b5ae-5fe4faa0f126</SegmentId>
-            <InternalNormalItem
-              internal_item_id="1"
-              internal_item_parent_id="137"
-              trans_unit_id="137-1"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-          </MarkdownSegment>
-        </paragraph_segments>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownParagraphBlock"
-        item_id="144f24bc-dc64-43f3-a7a8-1db1fc6287e6"
-        item_type="NormalParagraph"
-        item_footer=""
-        trans_unit_id="144f24bc-dc64-43f3-a7a8-1db1fc6287e6">
-        <Lines>
-          <MarkdownLine>
-            <LineId>9d9b7e92-2e07-4ed3-9702-c51d8ce5092d</LineId>
-            <paragraph_segments>
-              <MarkdownSegment
-                trans_unit_id="138">
-                <SegmentId>2693b016-8c54-4f42-9aab-bb67113d573f</SegmentId>
-                <MarkdownInternalBoldItem
-                  internal_item_id="1"
-                  internal_item_parent_id="138"
-                  trans_unit_id="138-1"
-                  internal_item_type="Bold">
-                  <internal_items />
-                  <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                </MarkdownInternalBoldItem>
-                <InternalNormalItem
-                  internal_item_id="2"
-                  internal_item_parent_id="138"
-                  trans_unit_id="138-2"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-              </MarkdownSegment>
-              <MarkdownSegment
-                trans_unit_id="139">
-                <SegmentId>15e21f54-180d-47c8-84d5-2d6f2744e97e</SegmentId>
-                <InternalNormalItem
-                  internal_item_id="1"
-                  internal_item_parent_id="139"
-                  trans_unit_id="139-1"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-              </MarkdownSegment>
-              <MarkdownSegment
-                trans_unit_id="140">
-                <SegmentId>ad8398ba-4246-4710-9c43-c152c52964b2</SegmentId>
-                <InternalNormalItem
-                  internal_item_id="1"
-                  internal_item_parent_id="140"
-                  trans_unit_id="140-1"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-              </MarkdownSegment>
-              <MarkdownSegment
-                trans_unit_id="141">
-                <SegmentId>03800709-39d5-4657-b2b9-bf37815319b6</SegmentId>
-                <InternalNormalItem
-                  internal_item_id="1"
-                  internal_item_parent_id="141"
-                  trans_unit_id="141-1"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-              </MarkdownSegment>
-            </paragraph_segments>
-            <PrefixWSLength>0</PrefixWSLength>
-            <SuffixWSLength>0</SuffixWSLength>
-          </MarkdownLine>
-        </Lines>
-        <paragraph_segments>
-          <MarkdownSegment
-            trans_unit_id="138">
-            <SegmentId>2693b016-8c54-4f42-9aab-bb67113d573f</SegmentId>
-            <MarkdownInternalBoldItem
-              internal_item_id="1"
-              internal_item_parent_id="138"
-              trans_unit_id="138-1"
-              internal_item_type="Bold">
-              <internal_items />
-              <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-            </MarkdownInternalBoldItem>
-            <InternalNormalItem
-              internal_item_id="2"
-              internal_item_parent_id="138"
-              trans_unit_id="138-2"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-          </MarkdownSegment>
-          <MarkdownSegment
-            trans_unit_id="139">
-            <SegmentId>15e21f54-180d-47c8-84d5-2d6f2744e97e</SegmentId>
-            <InternalNormalItem
-              internal_item_id="1"
-              internal_item_parent_id="139"
-              trans_unit_id="139-1"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-          </MarkdownSegment>
-          <MarkdownSegment
-            trans_unit_id="140">
-            <SegmentId>ad8398ba-4246-4710-9c43-c152c52964b2</SegmentId>
-            <InternalNormalItem
-              internal_item_id="1"
-              internal_item_parent_id="140"
-              trans_unit_id="140-1"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-          </MarkdownSegment>
-          <MarkdownSegment
-            trans_unit_id="141">
-            <SegmentId>03800709-39d5-4657-b2b9-bf37815319b6</SegmentId>
-            <InternalNormalItem
-              internal_item_id="1"
-              internal_item_parent_id="141"
-              trans_unit_id="141-1"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-          </MarkdownSegment>
-        </paragraph_segments>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownHeaderBlock"
-        item_id="a62ab271-d384-4af7-b85a-029a6d7f1247"
-        item_type="Header"
-        item_footer="footer_not_set"
-        trans_unit_id="a62ab271-d384-4af7-b85a-029a6d7f1247">
-        <segment
-          trans_unit_id="142">
-          <SegmentId>bc29cea5-ed18-4a11-b569-506bd401ba47</SegmentId>
-          <InternalNormalItem
-            internal_item_id="1"
-            internal_item_parent_id="142"
-            trans_unit_id="142-1"
-            internal_item_type="Normal">
-            <internal_items />
-          </InternalNormalItem>
-        </segment>
-        <header_type>Star</header_type>
-        <header_level>2</header_level>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownParagraphBlock"
-        item_id="f3abc876-d280-40eb-970f-fbe3d8944aba"
-        item_type="NormalParagraph"
-        item_footer=""
-        trans_unit_id="f3abc876-d280-40eb-970f-fbe3d8944aba">
-        <Lines>
-          <MarkdownLine>
-            <LineId>dc9732be-2eb1-4055-82f5-2173d8ff864d</LineId>
-            <paragraph_segments>
-              <MarkdownSegment
-                trans_unit_id="143">
-                <SegmentId>22fea104-d4c5-4a26-af44-2156672ae4cd</SegmentId>
-                <MarkdownInternalBoldItem
-                  internal_item_id="1"
-                  internal_item_parent_id="143"
-                  trans_unit_id="143-1"
-                  internal_item_type="Bold">
-                  <internal_items />
-                  <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                </MarkdownInternalBoldItem>
-              </MarkdownSegment>
-            </paragraph_segments>
-            <PrefixWSLength>0</PrefixWSLength>
-            <SuffixWSLength>0</SuffixWSLength>
-          </MarkdownLine>
-        </Lines>
-        <paragraph_segments>
-          <MarkdownSegment
-            trans_unit_id="143">
-            <SegmentId>22fea104-d4c5-4a26-af44-2156672ae4cd</SegmentId>
-            <MarkdownInternalBoldItem
-              internal_item_id="1"
-              internal_item_parent_id="143"
-              trans_unit_id="143-1"
-              internal_item_type="Bold">
-              <internal_items />
-              <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-            </MarkdownInternalBoldItem>
-          </MarkdownSegment>
-        </paragraph_segments>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownListBlock"
-        item_id="9e9d97ba-51c4-4d59-88ca-7ce43d38b431"
-        item_type="List"
-        item_footer=""
-        trans_unit_id="9e9d97ba-51c4-4d59-88ca-7ce43d38b431">
-        <inner_list_items>
-          <ListItem>
-            <MarkdownParagraphBlock
-              item_id="e6bd1ebe-54e4-47e6-b6f5-f351b5350365"
-              item_type="NormalParagraph"
-              item_footer="footer_not_set"
-              trans_unit_id="e6bd1ebe-54e4-47e6-b6f5-f351b5350365">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>64cd6811-7f40-4024-b017-a4db879ae9c5</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="144">
-                      <SegmentId>e8085e86-23f1-4bdb-8d46-94ac57487b13</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="144"
-                        trans_unit_id="144-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="144">
-                  <SegmentId>e8085e86-23f1-4bdb-8d46-94ac57487b13</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="144"
-                    trans_unit_id="144-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <Identifier>*</Identifier>
-            <IndentsLength>
-              <int>0</int>
-            </IndentsLength>
-          </ListItem>
-          <ListItem>
-            <MarkdownParagraphBlock
-              item_id="2bee8e9f-73d7-4355-98e2-a724d2f3d129"
-              item_type="NormalParagraph"
-              item_footer="footer_not_set"
-              trans_unit_id="2bee8e9f-73d7-4355-98e2-a724d2f3d129">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>0e96f5e8-6551-4653-82ac-1ae5c60fa71e</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="145">
-                      <SegmentId>4dd97974-36ca-420a-9e75-eadb63d172cd</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="145"
-                        trans_unit_id="145-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="145">
-                  <SegmentId>4dd97974-36ca-420a-9e75-eadb63d172cd</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="145"
-                    trans_unit_id="145-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <Identifier>*</Identifier>
-            <IndentsLength>
-              <int>0</int>
-            </IndentsLength>
-          </ListItem>
-        </inner_list_items>
-        <ListType>Charactor</ListType>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownParagraphBlock"
-        item_id="12802a4c-0687-47c5-a34c-477b2bf6bff4"
-        item_type="NormalParagraph"
-        item_footer=""
-        trans_unit_id="12802a4c-0687-47c5-a34c-477b2bf6bff4">
-        <Lines>
-          <MarkdownLine>
-            <LineId>63426055-1e8a-4fd7-aee0-df8c4eaa10de</LineId>
-            <paragraph_segments>
-              <MarkdownSegment
-                trans_unit_id="146">
-                <SegmentId>97c6df62-791d-45ff-8c8e-b9e8fc44f924</SegmentId>
-                <MarkdownInternalBoldItem
-                  internal_item_id="1"
-                  internal_item_parent_id="146"
-                  trans_unit_id="146-1"
-                  internal_item_type="Bold">
-                  <internal_items />
-                  <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                </MarkdownInternalBoldItem>
-              </MarkdownSegment>
-            </paragraph_segments>
-            <PrefixWSLength>0</PrefixWSLength>
-            <SuffixWSLength>0</SuffixWSLength>
-          </MarkdownLine>
-        </Lines>
-        <paragraph_segments>
-          <MarkdownSegment
-            trans_unit_id="146">
-            <SegmentId>97c6df62-791d-45ff-8c8e-b9e8fc44f924</SegmentId>
-            <MarkdownInternalBoldItem
-              internal_item_id="1"
-              internal_item_parent_id="146"
-              trans_unit_id="146-1"
-              internal_item_type="Bold">
-              <internal_items />
-              <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-            </MarkdownInternalBoldItem>
-          </MarkdownSegment>
-        </paragraph_segments>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownListBlock"
-        item_id="aeed8c4c-7ab8-4774-93ae-7cf6839919ea"
-        item_type="List"
-        item_footer=""
-        trans_unit_id="aeed8c4c-7ab8-4774-93ae-7cf6839919ea">
-        <inner_list_items>
-          <ListItem>
-            <MarkdownParagraphBlock
-              item_id="cabdd7e9-e2aa-4c83-97fc-325b25b64ac9"
-              item_type="NormalParagraph"
-              item_footer="footer_not_set"
-              trans_unit_id="cabdd7e9-e2aa-4c83-97fc-325b25b64ac9">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>ca76b2d9-085b-4209-950a-5e39d3620eab</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="147">
-                      <SegmentId>949b3376-9dd5-4da8-8b0e-e85c534a265e</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="147"
-                        trans_unit_id="147-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="147">
-                  <SegmentId>949b3376-9dd5-4da8-8b0e-e85c534a265e</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="147"
-                    trans_unit_id="147-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <Identifier>*</Identifier>
-            <IndentsLength>
-              <int>0</int>
-            </IndentsLength>
-          </ListItem>
-          <ListItem>
-            <MarkdownParagraphBlock
-              item_id="37ad9bfb-3880-4799-84c5-93dc8373a4cf"
-              item_type="NormalParagraph"
-              item_footer="footer_not_set"
-              trans_unit_id="37ad9bfb-3880-4799-84c5-93dc8373a4cf">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>ad493595-267a-4662-ad5c-0f04369a0d71</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="148">
-                      <SegmentId>c6a72216-b7dc-4204-b6a8-4c3336a9bc88</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="148"
-                        trans_unit_id="148-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="148">
-                  <SegmentId>c6a72216-b7dc-4204-b6a8-4c3336a9bc88</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="148"
-                    trans_unit_id="148-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <Identifier>*</Identifier>
-            <IndentsLength>
-              <int>0</int>
-            </IndentsLength>
-          </ListItem>
-          <ListItem>
-            <MarkdownParagraphBlock
-              item_id="9f6bd21d-d8e6-448f-8a1b-dbce9f8b63c6"
-              item_type="NormalParagraph"
-              item_footer="footer_not_set"
-              trans_unit_id="9f6bd21d-d8e6-448f-8a1b-dbce9f8b63c6">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>582009f6-813b-4e13-afff-6571aaaae919</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="149">
-                      <SegmentId>fb35bb71-c366-44d0-8f1b-1e36944c4411</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="149"
-                        trans_unit_id="149-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="149">
-                  <SegmentId>fb35bb71-c366-44d0-8f1b-1e36944c4411</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="149"
-                    trans_unit_id="149-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <Identifier>*</Identifier>
-            <IndentsLength>
-              <int>0</int>
-            </IndentsLength>
-          </ListItem>
-        </inner_list_items>
-        <ListType>Charactor</ListType>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownParagraphBlock"
-        item_id="eaa3c3e5-5f8a-479f-8df3-705d8a36acfe"
-        item_type="NormalParagraph"
-        item_footer=""
-        trans_unit_id="eaa3c3e5-5f8a-479f-8df3-705d8a36acfe">
-        <Lines>
-          <MarkdownLine>
-            <LineId>9857323e-cef1-452a-8a71-28d96a09f5c6</LineId>
-            <paragraph_segments>
-              <MarkdownSegment
-                trans_unit_id="150">
-                <SegmentId>fb7d87eb-f9bf-45ca-a003-3f989f493fd9</SegmentId>
-                <MarkdownInternalBoldItem
-                  internal_item_id="1"
-                  internal_item_parent_id="150"
-                  trans_unit_id="150-1"
-                  internal_item_type="Bold">
-                  <internal_items />
-                  <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                </MarkdownInternalBoldItem>
-              </MarkdownSegment>
-            </paragraph_segments>
-            <PrefixWSLength>0</PrefixWSLength>
-            <SuffixWSLength>0</SuffixWSLength>
-          </MarkdownLine>
-        </Lines>
-        <paragraph_segments>
-          <MarkdownSegment
-            trans_unit_id="150">
-            <SegmentId>fb7d87eb-f9bf-45ca-a003-3f989f493fd9</SegmentId>
-            <MarkdownInternalBoldItem
-              internal_item_id="1"
-              internal_item_parent_id="150"
-              trans_unit_id="150-1"
-              internal_item_type="Bold">
-              <internal_items />
-              <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-            </MarkdownInternalBoldItem>
-          </MarkdownSegment>
-        </paragraph_segments>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownParagraphBlock"
-        item_id="8a705d8f-00ba-454b-a9f5-65d6781fca55"
-        item_type="NormalParagraph"
-        item_footer="&#xA;"
-        trans_unit_id="8a705d8f-00ba-454b-a9f5-65d6781fca55">
-        <Lines>
-          <MarkdownLine>
-            <LineId>6d4e4a27-cdb4-4ab2-9c8d-6b271de9c211</LineId>
-            <paragraph_segments>
-              <MarkdownSegment
-                trans_unit_id="151">
-                <SegmentId>a6c219ce-3d69-45ce-841c-323a20f3f742</SegmentId>
-                <InternalNormalItem
-                  internal_item_id="1"
-                  internal_item_parent_id="151"
-                  trans_unit_id="151-1"
-                  internal_item_type="Normal">
-                  <internal_items />
-                </InternalNormalItem>
-              </MarkdownSegment>
-            </paragraph_segments>
-            <PrefixWSLength>0</PrefixWSLength>
-            <SuffixWSLength>0</SuffixWSLength>
-          </MarkdownLine>
-        </Lines>
-        <paragraph_segments>
-          <MarkdownSegment
-            trans_unit_id="151">
-            <SegmentId>a6c219ce-3d69-45ce-841c-323a20f3f742</SegmentId>
-            <InternalNormalItem
-              internal_item_id="1"
-              internal_item_parent_id="151"
-              trans_unit_id="151-1"
-              internal_item_type="Normal">
-              <internal_items />
-            </InternalNormalItem>
-          </MarkdownSegment>
-        </paragraph_segments>
-      </MarkdownBlockBase>
-      <MarkdownBlockBase
-        xsi:type="MarkdownParagraphBlock"
-        item_id="d061bad5-12cf-4b02-9131-45c1f0b0a242"
-        item_type="NormalParagraph"
-        item_footer="&#xA;&#xA;"
-        trans_unit_id="d061bad5-12cf-4b02-9131-45c1f0b0a242">
-        <Lines>
-          <MarkdownLine>
-            <LineId>a2c0f087-a2bd-4bdb-91f7-986ef0cb8191</LineId>
-            <paragraph_segments>
-              <MarkdownSegment
-                trans_unit_id="152">
-                <SegmentId>15f06938-e3ac-4c31-8c29-1a6b78b178d4</SegmentId>
-                <MarkdownInternalTokenItem
-                  internal_item_id="1"
-                  internal_item_parent_id="152"
-                  trans_unit_id="152-1"
-                  internal_item_type="Token">
-                  <internal_items />
-                  <TokenPrefix>AZURE.INCLUDE </TokenPrefix>
-                  <TokenShortName>elastic-scale-include</TokenShortName>
-                  <TokenHyperLink>../../includes/elastic-scale-include.md</TokenHyperLink>
-                </MarkdownInternalTokenItem>
-              </MarkdownSegment>
-            </paragraph_segments>
-            <PrefixWSLength>0</PrefixWSLength>
-            <SuffixWSLength>0</SuffixWSLength>
-          </MarkdownLine>
-        </Lines>
-        <paragraph_segments>
-          <MarkdownSegment
-            trans_unit_id="152">
-            <SegmentId>15f06938-e3ac-4c31-8c29-1a6b78b178d4</SegmentId>
-            <MarkdownInternalTokenItem
-              internal_item_id="1"
-              internal_item_parent_id="152"
-              trans_unit_id="152-1"
-              internal_item_type="Token">
-              <internal_items />
-              <TokenPrefix>AZURE.INCLUDE </TokenPrefix>
-              <TokenShortName>elastic-scale-include</TokenShortName>
-              <TokenHyperLink>../../includes/elastic-scale-include.md</TokenHyperLink>
-            </MarkdownInternalTokenItem>
-          </MarkdownSegment>
-        </paragraph_segments>
-      </MarkdownBlockBase>
-    </ArrayOfMarkdownBlockBase>
-  </block_element>
-  <references>
-    <ArrayOfMarkdownLinkedReference xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <MarkdownLinkedReference
-        item_id="a9e51d92-db36-449f-85f0-ca6162540701"
-        item_type="LinkedReference"
-        item_footer="footer_not_set"
-        trans_unit_id="a9e51d92-db36-449f-85f0-ca6162540701">
-        <link_id>1</link_id>
-        <link_uri>./media/sql-database-elastic-scale-upgrade-client-library/nuget-upgrade.png</link_uri>
-        <link_title />
-      </MarkdownLinkedReference>
-    </ArrayOfMarkdownLinkedReference>
-  </references>
-</markdown_skeleton_root>
+{
+  "nodes": [
+    {
+      "content": "Upgrade to the latest elastic database client library",
+      "pos": [
+        95,
+        148
+      ]
+    },
+    {
+      "content": "Upgrade instructions using PowerShell and C",
+      "pos": [
+        168,
+        211
+      ]
+    },
+    {
+      "content": "Upgrade to the latest elastic database client library",
+      "pos": [
+        582,
+        635
+      ]
+    },
+    {
+      "content": "New versions of the elastic database client library are  available through <bpt id=\"p1\">[</bpt>NuGet<ept id=\"p1\">](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Client/)</ept> and the NuGetPackage Manager interface in Visual Studio.",
+      "pos": [
+        637,
+        857
+      ]
+    },
+    {
+      "content": "Upgrades contain bug fixes and support for new capabilities of the client library.",
+      "pos": [
+        858,
+        940
+      ]
+    },
+    {
+      "content": "Upgrade steps",
+      "pos": [
+        945,
+        958
+      ]
+    },
+    {
+      "content": "Upgrading requires you to rebuild your application with the new library, as well as change your existing Shard Map Manager metadata stored in your Azure SQL Databases to support new features.",
+      "pos": [
+        960,
+        1151
+      ]
+    },
+    {
+      "content": "Follow the sequence below to upgrade your applications, the Shard Map Manager database, and the local Shard Map Manager metadata on each shard.",
+      "pos": [
+        1153,
+        1296
+      ]
+    },
+    {
+      "content": "Performing upgrade steps in this order ensures that old versions of the client library are no longer present in your environment when metadata objects are updated, which means that old-version metadata objects won’t be created after upgrade.",
+      "pos": [
+        1298,
+        1539
+      ]
+    },
+    {
+      "content": "1. Upgrade your applications.",
+      "pos": [
+        1546,
+        1575
+      ]
+    },
+    {
+      "content": "In Visual Studio, download and reference the latest client library version into all of your development projects that use the library; then rebuild and deploy.",
+      "pos": [
+        1578,
+        1737
+      ]
+    },
+    {
+      "pos": [
+        1743,
+        1866
+      ],
+      "content": "In your Visual Studio solution, select <bpt id=\"p1\">**</bpt>Tools<ept id=\"p1\">**</ept> --&gt; <bpt id=\"p2\">**</bpt>NuGet Package Manager<ept id=\"p2\">**</ept> --&gt;  <bpt id=\"p3\">**</bpt>Manage NuGet Packages for Solution<ept id=\"p3\">**</ept>."
+    },
+    {
+      "pos": [
+        1871,
+        2075
+      ],
+      "content": "In the left panel, select **Updates**, and then select the **Update** button on the package **Azure SQL Database Elastic Scale Client Library** that appears in the window.\n ![Upgrade Nuget Pacakges][1]",
+      "leadings": [
+        "",
+        "   "
+      ],
+      "nodes": [
+        {
+          "content": "In the left panel, select <bpt id=\"p1\">**</bpt>Updates<ept id=\"p1\">**</ept>, and then select the <bpt id=\"p2\">**</bpt>Update<ept id=\"p2\">**</ept> button on the package <bpt id=\"p3\">**</bpt>Azure SQL Database Elastic Scale Client Library<ept id=\"p3\">**</ept> that appears in the window.",
+          "pos": [
+            0,
+            171
+          ]
+        },
+        {
+          "content": "![Upgrade Nuget Pacakges][1]",
+          "pos": [
+            173,
+            201
+          ]
+        }
+      ]
+    },
+    {
+      "content": "Build and Deploy.",
+      "pos": [
+        2081,
+        2098
+      ]
+    },
+    {
+      "content": "2. Upgrade your scripts.",
+      "pos": [
+        2103,
+        2127
+      ]
+    },
+    {
+      "content": "If you are using <bpt id=\"p1\">**</bpt>PowerShell<ept id=\"p1\">**</ept> scripts to manage shards, <bpt id=\"p2\">[</bpt>download the new library version<ept id=\"p2\">](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Client/)</ept> and copy it into the directory from which you execute scripts.",
+      "pos": [
+        2130,
+        2366
+      ]
+    },
+    {
+      "content": "3. Upgrade your split-merge service.",
+      "pos": [
+        2371,
+        2407
+      ]
+    },
+    {
+      "content": "If you use the elastic database split-merge tool to reorganize sharded data, <bpt id=\"p1\">[</bpt>download and deploy the latest version of the tool<ept id=\"p1\">](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Service.SplitMerge/)</ept>.",
+      "pos": [
+        2410,
+        2633
+      ]
+    },
+    {
+      "content": "Detailed upgrade steps for the Service can be found <bpt id=\"p1\">[</bpt>here<ept id=\"p1\">](sql-database-elastic-scale-overview-split-and-merge.md)</ept>.",
+      "pos": [
+        2634,
+        2749
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>4. Upgrade your Shard Map Manager DBs<ept id=\"p1\">**</ept>.",
+      "pos": [
+        2752,
+        2794
+      ]
+    },
+    {
+      "content": "Upgrade the metadata supporting your Shard Maps in Azure SQL Database.",
+      "pos": [
+        2795,
+        2865
+      ]
+    },
+    {
+      "content": "There are two ways you can accomplish this, using PowerShell or C#.",
+      "pos": [
+        2867,
+        2934
+      ]
+    },
+    {
+      "content": "Both options are shown below.",
+      "pos": [
+        2935,
+        2964
+      ]
+    },
+    {
+      "content": "Option 1: Upgrade metadata using PowerShell",
+      "pos": [
+        2969,
+        3012
+      ]
+    },
+    {
+      "pos": [
+        3020,
+        3132
+      ],
+      "content": "Download the latest command-line utility for NuGet from <bpt id=\"p1\">[</bpt>here<ept id=\"p1\">](http://nuget.org/nuget.exe)</ept> and save to a folder."
+    },
+    {
+      "content": "Open a Command Prompt, navigate to the same folder, and issue the command:",
+      "pos": [
+        3138,
+        3212
+      ]
+    },
+    {
+      "content": "Navigate to the subfolder containing the new client DLL version you have just downloaded, for example:",
+      "pos": [
+        3281,
+        3383
+      ]
+    },
+    {
+      "pos": [
+        3459,
+        3680
+      ],
+      "content": "Download the elastic database client upgrade scriptlet from the <bpt id=\"p1\">[</bpt>Script Center<ept id=\"p1\">](https://gallery.technet.microsoft.com/scriptcenter/Azure-SQL-Database-Elastic-6442e6a9)</ept>, and save it into the same folder containing the DLL."
+    },
+    {
+      "content": "From that folder, run “PowerShell .\\upgrade.ps1” from the command prompt and follow the prompts.",
+      "pos": [
+        3685,
+        3781
+      ]
+    },
+    {
+      "content": "Option 2: Upgrade metadata using C",
+      "pos": [
+        3787,
+        3821
+      ]
+    },
+    {
+      "pos": [
+        3827,
+        4334
+      ],
+      "content": "Alternatively, create a Visual Studio application that opens your ShardMapManager, iterates over all shards, and performs the metadata upgrade by calling the methods <bpt id=\"p1\">[</bpt>UpgradeLocalStore<ept id=\"p1\">](https://msdn.microsoft.com/library/azure/microsoft.azure.sqldatabase.elasticscale.shardmanagement.shardmapmanager.upgradelocalstore.aspx)</ept> and <bpt id=\"p2\">[</bpt>UpgradeGlobalStore<ept id=\"p2\">](https://msdn.microsoft.com/library/azure/microsoft.azure.sqldatabase.elasticscale.shardmanagement.shardmapmanager.upgradeglobalstore.aspx)</ept> as in this example:"
+    },
+    {
+      "content": "These techniques for metadata upgrades can be applied multiple times without harm.",
+      "pos": [
+        4628,
+        4710
+      ]
+    },
+    {
+      "content": "For example, if an older client version inadvertently creates a shard after you have already updated, you can run upgrade again across all shards to ensure that the latest metadata version is present throughout your infrastructure.",
+      "pos": [
+        4711,
+        4942
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>Note:<ept id=\"p1\">**</ept>  New versions of the client library published to-date continue to work with prior versions of the Shard Map Manager metadata on Azure SQL DB, and vice-versa.",
+      "pos": [
+        4945,
+        5112
+      ]
+    },
+    {
+      "content": "However to take advantage of some of the new features in the latest client, metadata needs to be upgraded.",
+      "pos": [
+        5115,
+        5221
+      ]
+    },
+    {
+      "content": "Note that metadata upgrades will not affect any user-data or application-specific data, only objects created and used by the Shard Map Manager.",
+      "pos": [
+        5224,
+        5367
+      ]
+    },
+    {
+      "content": "And applications continue to operate through the upgrade sequence described above.",
+      "pos": [
+        5369,
+        5451
+      ]
+    },
+    {
+      "content": "Elastic database client version history",
+      "pos": [
+        5457,
+        5496
+      ]
+    },
+    {
+      "content": "Version 1.0 -- April 2015",
+      "pos": [
+        5501,
+        5526
+      ]
+    },
+    {
+      "content": "General availability release",
+      "pos": [
+        5532,
+        5560
+      ]
+    },
+    {
+      "content": "Added support for Datetime types as sharding keys",
+      "pos": [
+        5563,
+        5612
+      ]
+    },
+    {
+      "content": "Version 0.8 – March 2015",
+      "pos": [
+        5616,
+        5640
+      ]
+    },
+    {
+      "content": "Async support added for data-dependent routing with the new ShardMap.OpenConnectionForKeyAsync methods.",
+      "pos": [
+        5646,
+        5749
+      ]
+    },
+    {
+      "content": "Public KeyType property added to ShardMap",
+      "pos": [
+        5753,
+        5794
+      ]
+    },
+    {
+      "content": "Added improvements supporting database restore and disaster recovery scenarios for shards",
+      "pos": [
+        5798,
+        5887
+      ]
+    },
+    {
+      "content": "Version 0.7 – October 2014",
+      "pos": [
+        5892,
+        5918
+      ]
+    },
+    {
+      "content": "Initial Preview version",
+      "pos": [
+        5923,
+        5946
+      ]
+    }
+  ],
+  "content": "<properties \n    title=\"Upgrade to the latest elastic database client library\" \n    pageTitle=\"Upgrade to the latest elastic database client library\" \n    description=\"Upgrade instructions using PowerShell and C#\" \n    metaKeywords=\"sharding,elastic scale, Azure SQL DB sharding\" \n    services=\"sql-database\" \n    documentationCenter=\"\" \n    manager=\"jeffreyg\" \n    authors=\"sidneyh\"/>\n\n<tags \n    ms.service=\"sql-database\" \n    ms.workload=\"sql-database\" \n    ms.tgt_pltfrm=\"na\" \n    ms.devlang=\"na\" \n    ms.topic=\"article\" \n    ms.date=\"05/17/2015\" \n    ms.author=\"sidneyh\" />\n\n# Upgrade to the latest elastic database client library\n\nNew versions of the elastic database client library are  available through [NuGet](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Client/) and the NuGetPackage Manager interface in Visual Studio. Upgrades contain bug fixes and support for new capabilities of the client library.\n\n## Upgrade steps\n\nUpgrading requires you to rebuild your application with the new library, as well as change your existing Shard Map Manager metadata stored in your Azure SQL Databases to support new features.\n\nFollow the sequence below to upgrade your applications, the Shard Map Manager database, and the local Shard Map Manager metadata on each shard.  Performing upgrade steps in this order ensures that old versions of the client library are no longer present in your environment when metadata objects are updated, which means that old-version metadata objects won’t be created after upgrade.   \n\n**1. Upgrade your applications.** In Visual Studio, download and reference the latest client library version into all of your development projects that use the library; then rebuild and deploy. \n\n * In your Visual Studio solution, select **Tools** --> **NuGet Package Manager** -->  **Manage NuGet Packages for Solution**. \n * In the left panel, select **Updates**, and then select the **Update** button on the package **Azure SQL Database Elastic Scale Client Library** that appears in the window.\n    ![Upgrade Nuget Pacakges][1]\n \n * Build and Deploy. \n\n**2. Upgrade your scripts.** If you are using **PowerShell** scripts to manage shards, [download the new library version](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Client/) and copy it into the directory from which you execute scripts. \n\n**3. Upgrade your split-merge service.** If you use the elastic database split-merge tool to reorganize sharded data, [download and deploy the latest version of the tool](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Service.SplitMerge/). Detailed upgrade steps for the Service can be found [here](sql-database-elastic-scale-overview-split-and-merge.md). \n\n**4. Upgrade your Shard Map Manager DBs**. Upgrade the metadata supporting your Shard Maps in Azure SQL Database.  There are two ways you can accomplish this, using PowerShell or C#. Both options are shown below.\n\n***Option 1: Upgrade metadata using PowerShell***\n\n1. Download the latest command-line utility for NuGet from [here](http://nuget.org/nuget.exe) and save to a folder. \n\n2. Open a Command Prompt, navigate to the same folder, and issue the command:\n`nuget install Microsoft.Azure.SqlDatabase.ElasticScale.Client`\n\n3. Navigate to the subfolder containing the new client DLL version you have just downloaded, for example:\n`cd .\\Microsoft.Azure.SqlDatabase.ElasticScale.Client.1.0.0\\lib\\net45`\n\n4. Download the elastic database client upgrade scriptlet from the [Script Center](https://gallery.technet.microsoft.com/scriptcenter/Azure-SQL-Database-Elastic-6442e6a9), and save it into the same folder containing the DLL.\n\n5. From that folder, run “PowerShell .\\upgrade.ps1” from the command prompt and follow the prompts.\n \n***Option 2: Upgrade metadata using C#***\n\nAlternatively, create a Visual Studio application that opens your ShardMapManager, iterates over all shards, and performs the metadata upgrade by calling the methods [UpgradeLocalStore](https://msdn.microsoft.com/library/azure/microsoft.azure.sqldatabase.elasticscale.shardmanagement.shardmapmanager.upgradelocalstore.aspx) and [UpgradeGlobalStore](https://msdn.microsoft.com/library/azure/microsoft.azure.sqldatabase.elasticscale.shardmanagement.shardmapmanager.upgradeglobalstore.aspx) as in this example: \n\n    ShardMapManager smm =\n       ShardMapManagerFactory.GetSqlShardMapManager\n       (connStr, ShardMapManagerLoadPolicy.Lazy); \n    smm.UpgradeGlobalStore(); \n    \n    foreach (ShardLocation loc in\n     smm.GetDistinctShardLocations()) \n    {   \n       smm.UpgradeLocalStore(loc); \n    } \n\nThese techniques for metadata upgrades can be applied multiple times without harm. For example, if an older client version inadvertently creates a shard after you have already updated, you can run upgrade again across all shards to ensure that the latest metadata version is present throughout your infrastructure. \n\n**Note:**  New versions of the client library published to-date continue to work with prior versions of the Shard Map Manager metadata on Azure SQL DB, and vice-versa.   However to take advantage of some of the new features in the latest client, metadata needs to be upgraded.   Note that metadata upgrades will not affect any user-data or application-specific data, only objects created and used by the Shard Map Manager.  And applications continue to operate through the upgrade sequence described above. \n\n## Elastic database client version history \n\n**Version 1.0 -- April 2015**\n\n* General availability release\n* Added support for Datetime types as sharding keys\n\n**Version 0.8 – March 2015**\n\n* Async support added for data-dependent routing with the new ShardMap.OpenConnectionForKeyAsync methods. \n* Public KeyType property added to ShardMap \n* Added improvements supporting database restore and disaster recovery scenarios for shards \n\n**Version 0.7 – October 2014** \n\nInitial Preview version \n\n\n[AZURE.INCLUDE [elastic-scale-include](../../includes/elastic-scale-include.md)]  \n\n\n<!--Image references-->\n[1]:./media/sql-database-elastic-scale-upgrade-client-library/nuget-upgrade.png\n "
+}
