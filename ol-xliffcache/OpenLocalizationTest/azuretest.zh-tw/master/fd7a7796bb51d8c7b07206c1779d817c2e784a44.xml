@@ -1,439 +1,54 @@
-﻿<markdown_skeleton_root>
-  <block_element>
-    <ArrayOfMarkdownBlockBase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <MarkdownBlockBase
-        xsi:type="MarkdownListBlock"
-        item_id="2fcb9bcd-c755-4b31-bc16-ae31f261aa18"
-        item_type="List"
-        item_footer="&#xA;&#xA;&#xA;&#xA;"
-        trans_unit_id="2fcb9bcd-c755-4b31-bc16-ae31f261aa18">
-        <inner_list_items>
-          <ListItem>
-            <MarkdownParagraphBlock
-              item_id="4d8530a2-8a27-4afb-9f3e-cf7360832081"
-              item_type="NormalParagraph"
-              item_footer=""
-              trans_unit_id="4d8530a2-8a27-4afb-9f3e-cf7360832081">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>6be70a3f-52d1-4677-b6e5-38528352ded1</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="101">
-                      <SegmentId>1817a883-154d-4422-a0f2-d2210e1e42c5</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="101"
-                        trans_unit_id="101-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                      <MarkdownInternalBoldItem
-                        internal_item_id="2"
-                        internal_item_parent_id="101"
-                        trans_unit_id="101-2"
-                        internal_item_type="Bold">
-                        <internal_items />
-                        <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                      </MarkdownInternalBoldItem>
-                      <InternalNormalItem
-                        internal_item_id="3"
-                        internal_item_parent_id="101"
-                        trans_unit_id="101-3"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                    <MarkdownSegment
-                      trans_unit_id="102">
-                      <SegmentId>50d0df85-2971-4731-9d3e-68a43826172c</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="102"
-                        trans_unit_id="102-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                      <CodeSpanItem
-                        internal_item_id="2"
-                        internal_item_parent_id="102"
-                        trans_unit_id="102-2"
-                        internal_item_type="CodeSpan">
-                        <internal_items />
-                        <ItemValue>PostTodoItem</ItemValue>
-                      </CodeSpanItem>
-                      <InternalNormalItem
-                        internal_item_id="3"
-                        internal_item_parent_id="102"
-                        trans_unit_id="102-3"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="101">
-                  <SegmentId>1817a883-154d-4422-a0f2-d2210e1e42c5</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="101"
-                    trans_unit_id="101-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                  <MarkdownInternalBoldItem
-                    internal_item_id="2"
-                    internal_item_parent_id="101"
-                    trans_unit_id="101-2"
-                    internal_item_type="Bold">
-                    <internal_items />
-                    <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                  </MarkdownInternalBoldItem>
-                  <InternalNormalItem
-                    internal_item_id="3"
-                    internal_item_parent_id="101"
-                    trans_unit_id="101-3"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-                <MarkdownSegment
-                  trans_unit_id="102">
-                  <SegmentId>50d0df85-2971-4731-9d3e-68a43826172c</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="102"
-                    trans_unit_id="102-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                  <CodeSpanItem
-                    internal_item_id="2"
-                    internal_item_parent_id="102"
-                    trans_unit_id="102-2"
-                    internal_item_type="CodeSpan">
-                    <internal_items />
-                    <ItemValue>PostTodoItem</ItemValue>
-                  </CodeSpanItem>
-                  <InternalNormalItem
-                    internal_item_id="3"
-                    internal_item_parent_id="102"
-                    trans_unit_id="102-3"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <MarkdownCodeBlock
-              item_id="5e211237-abd0-4143-a35b-66d2c8d17e27"
-              item_type="CodeBlock"
-              item_footer="footer_not_set"
-              trans_unit_id="5e211237-abd0-4143-a35b-66d2c8d17e27">
-              <code_block> public async Task&lt;IHttpActionResult&gt; PostTodoItem(TodoItem item)
- {
-     TodoItem current = await InsertAsync(item);
-
-     // Create a WNS native toast.
-     WindowsPushMessage message = new WindowsPushMessage();
-
-     // Define the XML paylod for a WNS native toast notification 
-     // that contains the text of the inserted item.
-     message.XmlPayload = @"&lt;?xml version=""1.0"" encoding=""utf-8""?&gt;" +
-                          @"&lt;toast&gt;&lt;visual&gt;&lt;binding template=""ToastText01""&gt;" +
-                          @"&lt;text id=""1""&gt;" + item.Text + @"&lt;/text&gt;" +
-                          @"&lt;/binding&gt;&lt;/visual&gt;&lt;/toast&gt;";
-     try
-     {
-         var result = await Services.Push.SendAsync(message);
-         Services.Log.Info(result.State.ToString());
-     }
-     catch (System.Exception ex)
-     {
-         Services.Log.Error(ex.Message, null, "Push.SendAsync Error");
-     }
-     return CreatedAtRoute("Tables", new { id = current.Id }, current);
- }
-
-</code_block>
-            </MarkdownCodeBlock>
-            <MarkdownParagraphBlock
-              item_id="272a0d19-5d53-4f4e-a488-0c0f690c7700"
-              item_type="NormalParagraph"
-              item_footer="footer_not_set"
-              trans_unit_id="272a0d19-5d53-4f4e-a488-0c0f690c7700">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>5acc7a16-4c08-4a33-a6bd-ceb014d0a141</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="103">
-                      <SegmentId>41323bd7-3923-4f37-afda-907295986c85</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="103"
-                        trans_unit_id="103-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                    <MarkdownSegment
-                      trans_unit_id="104">
-                      <SegmentId>87f111e5-2f03-44a8-b965-a1f9986e06e9</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="104"
-                        trans_unit_id="104-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                      <MarkdownInternalBoldItem
-                        internal_item_id="2"
-                        internal_item_parent_id="104"
-                        trans_unit_id="104-2"
-                        internal_item_type="Bold">
-                        <internal_items />
-                        <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                      </MarkdownInternalBoldItem>
-                      <InternalNormalItem
-                        internal_item_id="3"
-                        internal_item_parent_id="104"
-                        trans_unit_id="104-3"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="103">
-                  <SegmentId>41323bd7-3923-4f37-afda-907295986c85</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="103"
-                    trans_unit_id="103-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-                <MarkdownSegment
-                  trans_unit_id="104">
-                  <SegmentId>87f111e5-2f03-44a8-b965-a1f9986e06e9</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="104"
-                    trans_unit_id="104-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                  <MarkdownInternalBoldItem
-                    internal_item_id="2"
-                    internal_item_parent_id="104"
-                    trans_unit_id="104-2"
-                    internal_item_type="Bold">
-                    <internal_items />
-                    <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
-                  </MarkdownInternalBoldItem>
-                  <InternalNormalItem
-                    internal_item_id="3"
-                    internal_item_parent_id="104"
-                    trans_unit_id="104-3"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <MarkdownNoteBlock
-              item_id="57054d2e-be67-4f3e-a61b-e41649fbc015"
-              item_type="Note"
-              item_footer=""
-              trans_unit_id="57054d2e-be67-4f3e-a61b-e41649fbc015">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>3bf8093b-cca7-448e-8b85-ad2f69ccf197</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="105">
-                      <SegmentId>22c32b42-449c-426b-9d15-499a71481bf5</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="105"
-                        trans_unit_id="105-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                    <MarkdownSegment
-                      trans_unit_id="106">
-                      <SegmentId>ec9ab6f8-d2e6-4934-b305-e3373cd24323</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="106"
-                        trans_unit_id="106-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                      <LinkItem
-                        internal_item_id="2"
-                        internal_item_parent_id="106"
-                        trans_unit_id="106-2"
-                        internal_item_type="Link">
-                        <internal_items />
-                        <internal_link_type>Inline</internal_link_type>
-                        <internal_link_text>Supporting multiple device platforms from a single mobile service</internal_link_text>
-                        <internal_link_url>../articles/mobile-services-how-to-use-multiple-clients-single-service.md#push</internal_link_url>
-                        <internal_link_title />
-                      </LinkItem>
-                      <InternalNormalItem
-                        internal_item_id="3"
-                        internal_item_parent_id="106"
-                        trans_unit_id="106-3"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>0</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <NoteSign> &gt;[AZURE.NOTE] </NoteSign>
-              <Prefixes>
-                <string />
-              </Prefixes>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="105">
-                  <SegmentId>22c32b42-449c-426b-9d15-499a71481bf5</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="105"
-                    trans_unit_id="105-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-                <MarkdownSegment
-                  trans_unit_id="106">
-                  <SegmentId>ec9ab6f8-d2e6-4934-b305-e3373cd24323</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="106"
-                    trans_unit_id="106-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                  <LinkItem
-                    internal_item_id="2"
-                    internal_item_parent_id="106"
-                    trans_unit_id="106-2"
-                    internal_item_type="Link">
-                    <internal_items />
-                    <internal_link_type>Inline</internal_link_type>
-                    <internal_link_text>Supporting multiple device platforms from a single mobile service</internal_link_text>
-                    <internal_link_url>../articles/mobile-services-how-to-use-multiple-clients-single-service.md#push</internal_link_url>
-                    <internal_link_title />
-                  </LinkItem>
-                  <InternalNormalItem
-                    internal_item_id="3"
-                    internal_item_parent_id="106"
-                    trans_unit_id="106-3"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownNoteBlock>
-            <Identifier>1.</Identifier>
-            <IndentsLength>
-              <int>0</int>
-              <int>3</int>
-              <int>3</int>
-              <int>3</int>
-              <int>3</int>
-              <int>3</int>
-              <int>3</int>
-              <int>3</int>
-              <int>3</int>
-              <int>3</int>
-              <int>3</int>
-              <int>3</int>
-              <int>3</int>
-              <int>3</int>
-              <int>3</int>
-              <int>3</int>
-              <int>3</int>
-              <int>3</int>
-              <int>3</int>
-              <int>3</int>
-              <int>3</int>
-              <int>3</int>
-              <int>3</int>
-              <int>3</int>
-              <int>3</int>
-            </IndentsLength>
-          </ListItem>
-          <ListItem>
-            <MarkdownParagraphBlock
-              item_id="92b1cb3b-a9c5-4d84-a362-0e89ddc37184"
-              item_type="NormalParagraph"
-              item_footer="footer_not_set"
-              trans_unit_id="92b1cb3b-a9c5-4d84-a362-0e89ddc37184">
-              <Lines>
-                <MarkdownLine>
-                  <LineId>3b7f4352-915e-41a6-91ae-9e36c14853e6</LineId>
-                  <paragraph_segments>
-                    <MarkdownSegment
-                      trans_unit_id="107">
-                      <SegmentId>892916e2-ec69-49fa-ad32-9b1f202eb047</SegmentId>
-                      <InternalNormalItem
-                        internal_item_id="1"
-                        internal_item_parent_id="107"
-                        trans_unit_id="107-1"
-                        internal_item_type="Normal">
-                        <internal_items />
-                      </InternalNormalItem>
-                    </MarkdownSegment>
-                  </paragraph_segments>
-                  <PrefixWSLength>1</PrefixWSLength>
-                  <SuffixWSLength>0</SuffixWSLength>
-                </MarkdownLine>
-              </Lines>
-              <paragraph_segments>
-                <MarkdownSegment
-                  trans_unit_id="107">
-                  <SegmentId>892916e2-ec69-49fa-ad32-9b1f202eb047</SegmentId>
-                  <InternalNormalItem
-                    internal_item_id="1"
-                    internal_item_parent_id="107"
-                    trans_unit_id="107-1"
-                    internal_item_type="Normal">
-                    <internal_items />
-                  </InternalNormalItem>
-                </MarkdownSegment>
-              </paragraph_segments>
-            </MarkdownParagraphBlock>
-            <Identifier>2.</Identifier>
-            <IndentsLength>
-              <int>0</int>
-            </IndentsLength>
-          </ListItem>
-        </inner_list_items>
-        <ListType>Number</ListType>
-      </MarkdownBlockBase>
-    </ArrayOfMarkdownBlockBase>
-  </block_element>
-  <references>
-    <ArrayOfMarkdownLinkedReference xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
-  </references>
-</markdown_skeleton_root>
+{
+  "nodes": [
+    {
+      "content": "In Visual Studio Solution Explorer, expand the <bpt id=\"p1\">**</bpt>Controllers<ept id=\"p1\">**</ept> folder in the mobile service project.",
+      "pos": [
+        4,
+        104
+      ]
+    },
+    {
+      "content": "Open TodoItemController.cs and update the <ph id=\"ph1\">`PostTodoItem`</ph> method definition with the following code:",
+      "pos": [
+        105,
+        204
+      ]
+    },
+    {
+      "content": "This code sends a push notification (with the text of the inserted item) after inserting a todo item.",
+      "pos": [
+        1318,
+        1419
+      ]
+    },
+    {
+      "content": "In the event of an error, the code will add an error log entry which is viewable on the <bpt id=\"p1\">**</bpt>Logs<ept id=\"p1\">**</ept> tab of the mobile service in the Management Portal.",
+      "pos": [
+        1420,
+        1568
+      ]
+    },
+    {
+      "content": "<ph id=\"ph1\">[AZURE.NOTE]</ph> You can use template notifications to send a single push notification to clients on multiple platforms.",
+      "pos": [
+        1575,
+        1691
+      ]
+    },
+    {
+      "content": "For more information, see <bpt id=\"p1\">[</bpt>Supporting multiple device platforms from a single mobile service<ept id=\"p1\">](../articles/mobile-services-how-to-use-multiple-clients-single-service.md#push)</ept>.",
+      "pos": [
+        1692,
+        1866
+      ]
+    },
+    {
+      "content": "Republish the mobile service project to Azure.",
+      "pos": [
+        1871,
+        1917
+      ]
+    }
+  ],
+  "content": "\n1. In Visual Studio Solution Explorer, expand the **Controllers** folder in the mobile service project. Open TodoItemController.cs and update the `PostTodoItem` method definition with the following code:  \n\n        public async Task<IHttpActionResult> PostTodoItem(TodoItem item)\n        {\n            TodoItem current = await InsertAsync(item);\n\n            // Create a WNS native toast.\n            WindowsPushMessage message = new WindowsPushMessage();\n\n            // Define the XML paylod for a WNS native toast notification \n            // that contains the text of the inserted item.\n            message.XmlPayload = @\"<?xml version=\"\"1.0\"\" encoding=\"\"utf-8\"\"?>\" +\n                                 @\"<toast><visual><binding template=\"\"ToastText01\"\">\" +\n                                 @\"<text id=\"\"1\"\">\" + item.Text + @\"</text>\" +\n                                 @\"</binding></visual></toast>\";\n            try\n            {\n                var result = await Services.Push.SendAsync(message);\n                Services.Log.Info(result.State.ToString());\n            }\n            catch (System.Exception ex)\n            {\n                Services.Log.Error(ex.Message, null, \"Push.SendAsync Error\");\n            }\n            return CreatedAtRoute(\"Tables\", new { id = current.Id }, current);\n        }\n\n    This code sends a push notification (with the text of the inserted item) after inserting a todo item. In the event of an error, the code will add an error log entry which is viewable on the **Logs** tab of the mobile service in the Management Portal.\n\n    >[AZURE.NOTE] You can use template notifications to send a single push notification to clients on multiple platforms. For more information, see [Supporting multiple device platforms from a single mobile service](../articles/mobile-services-how-to-use-multiple-clients-single-service.md#push).\n\n2. Republish the mobile service project to Azure.\n\n\n"
+}
