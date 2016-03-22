@@ -1,0 +1,1614 @@
+{
+  "nodes": [
+    {
+      "content": "Create a REST service using ASP.NET Web API and SQL Database in Azure App Service",
+      "pos": [
+        28,
+        109
+      ]
+    },
+    {
+      "content": "A tutorial that teaches you how to deploy an app that uses the ASP.NET Web API to an Azure web app by using Visual Studio.",
+      "pos": [
+        129,
+        251
+      ]
+    },
+    {
+      "content": "Create a REST service using ASP.NET Web API and SQL Database in Azure App Service",
+      "pos": [
+        607,
+        688
+      ]
+    },
+    {
+      "pos": [
+        690,
+        908
+      ],
+      "content": "This tutorial shows how to deploy an ASP.NET web app to an <bpt id=\"p1\">[</bpt>Azure App Service<ept id=\"p1\">](http://go.microsoft.com/fwlink/?LinkId=529714)</ept> by using the Publish Web wizard in Visual Studio 2013 or Visual Studio 2013 for Web Express."
+    },
+    {
+      "content": "You can open an Azure account for free, and if you don't already have Visual Studio 2013, the SDK automatically installs Visual Studio 2013 for Web Express.",
+      "pos": [
+        911,
+        1067
+      ]
+    },
+    {
+      "content": "So you can start developing for Azure entirely for free.",
+      "pos": [
+        1068,
+        1124
+      ]
+    },
+    {
+      "content": "This tutorial assumes that you have no prior experience using Azure.",
+      "pos": [
+        1126,
+        1194
+      ]
+    },
+    {
+      "content": "On completing this tutorial, you'll have a simple web app up and running in the cloud.",
+      "pos": [
+        1195,
+        1281
+      ]
+    },
+    {
+      "content": "You'll learn:",
+      "pos": [
+        1284,
+        1297
+      ]
+    },
+    {
+      "content": "How to enable your machine for Azure development by installing the Azure SDK.",
+      "pos": [
+        1301,
+        1378
+      ]
+    },
+    {
+      "content": "How to create a Visual Studio ASP.NET MVC 5 project and publish it to an Azure app.",
+      "pos": [
+        1381,
+        1464
+      ]
+    },
+    {
+      "content": "How to use the ASP.NET Web API to enable Restful API calls.",
+      "pos": [
+        1467,
+        1526
+      ]
+    },
+    {
+      "content": "How to use a SQL database to store data in Azure.",
+      "pos": [
+        1529,
+        1578
+      ]
+    },
+    {
+      "content": "How to publish application updates to Azure.",
+      "pos": [
+        1581,
+        1625
+      ]
+    },
+    {
+      "content": "You'll build a simple contact list web application that is built on ASP.NET MVC 5 and uses the ADO.NET Entity Framework for database access.",
+      "pos": [
+        1627,
+        1767
+      ]
+    },
+    {
+      "content": "The following illustration shows the completed application:",
+      "pos": [
+        1768,
+        1827
+      ]
+    },
+    {
+      "content": "screenshot of web site",
+      "pos": [
+        1831,
+        1853
+      ]
+    },
+    {
+      "content": "Create the project",
+      "pos": [
+        2145,
+        2163
+      ]
+    },
+    {
+      "content": "Start Visual Studio 2013.",
+      "pos": [
+        2168,
+        2193
+      ]
+    },
+    {
+      "pos": [
+        2197,
+        2242
+      ],
+      "content": "From the <bpt id=\"p1\">**</bpt>File<ept id=\"p1\">**</ept> menu click <bpt id=\"p2\">**</bpt>New Project<ept id=\"p2\">**</ept>."
+    },
+    {
+      "content": "In the <bpt id=\"p1\">**</bpt>New Project<ept id=\"p1\">**</ept> dialog box, expand <bpt id=\"p2\">**</bpt>Visual C#<ept id=\"p2\">**</ept> and select <bpt id=\"p3\">**</bpt>Web<ept id=\"p3\">**</ept>  and then select <bpt id=\"p4\">**</bpt>ASP.NET MVC 5 Web Application<ept id=\"p4\">**</ept>.",
+      "pos": [
+        2246,
+        2372
+      ]
+    },
+    {
+      "content": "Name the application <bpt id=\"p1\">**</bpt>ContactManager<ept id=\"p1\">**</ept> and click <bpt id=\"p2\">**</bpt>OK<ept id=\"p2\">**</ept>.",
+      "pos": [
+        2373,
+        2430
+      ]
+    },
+    {
+      "content": "New Project dialog box",
+      "pos": [
+        2438,
+        2460
+      ]
+    },
+    {
+      "content": "]",
+      "pos": [
+        2532,
+        2533
+      ]
+    },
+    {
+      "pos": [
+        2538,
+        2669
+      ],
+      "content": "In the <bpt id=\"p1\">**</bpt>New ASP.NET Project<ept id=\"p1\">**</ept> dialog box, select the <bpt id=\"p2\">**</bpt>MVC<ept id=\"p2\">**</ept> template, check <bpt id=\"p3\">**</bpt>Web API<ept id=\"p3\">**</ept> and then click <bpt id=\"p4\">**</bpt>Change Authentication<ept id=\"p4\">**</ept>."
+    },
+    {
+      "content": "New ASP.NET Project dialog box",
+      "pos": [
+        2677,
+        2707
+      ]
+    },
+    {
+      "pos": [
+        2784,
+        2880
+      ],
+      "content": "In the <bpt id=\"p1\">**</bpt>Change Authentication<ept id=\"p1\">**</ept> dialog box, click <bpt id=\"p2\">**</bpt>No Authentication<ept id=\"p2\">**</ept>, and then click <bpt id=\"p3\">**</bpt>OK<ept id=\"p3\">**</ept>."
+    },
+    {
+      "content": "No Authentication",
+      "pos": [
+        2888,
+        2905
+      ]
+    },
+    {
+      "content": "The sample application you're creating won't have features that require users to log in.",
+      "pos": [
+        2990,
+        3078
+      ]
+    },
+    {
+      "content": "For information about how to implement authentication and authorization features, see the <bpt id=\"p1\">[</bpt>Next Steps<ept id=\"p1\">](#nextsteps)</ept> section at the end of this tutorial.",
+      "pos": [
+        3079,
+        3230
+      ]
+    },
+    {
+      "pos": [
+        3236,
+        3292
+      ],
+      "content": "In the <bpt id=\"p1\">**</bpt>New ASP.NET Project<ept id=\"p1\">**</ept> dialog box, click <bpt id=\"p2\">**</bpt>OK<ept id=\"p2\">**</ept>."
+    },
+    {
+      "content": "New ASP.NET Project dialog box",
+      "pos": [
+        3300,
+        3330
+      ]
+    },
+    {
+      "content": "If you have not previously signed in to Azure, you will be prompted to sign in.",
+      "pos": [
+        3404,
+        3483
+      ]
+    },
+    {
+      "content": "The configuration wizard will suggest a unique name based on <bpt id=\"p1\">*</bpt>ContactManager<ept id=\"p1\">*</ept> (see the image below).",
+      "pos": [
+        3488,
+        3588
+      ]
+    },
+    {
+      "content": "Select a region near you.",
+      "pos": [
+        3589,
+        3614
+      ]
+    },
+    {
+      "content": "You can use <bpt id=\"p1\">[</bpt>azurespeed.com<ept id=\"p1\">]</ept><bpt id=\"p2\">(http://www.azurespeed.com/ \"</bpt>AzureSpeed.com<ept id=\"p2\">\")</ept> to find the lowest latency data center.",
+      "pos": [
+        3615,
+        3728
+      ]
+    },
+    {
+      "pos": [
+        3733,
+        3852
+      ],
+      "content": "If you haven't created a database server before, select <bpt id=\"p1\">**</bpt>Create new server<ept id=\"p1\">**</ept>, enter a database user name and password."
+    },
+    {
+      "content": "Configure Azure Website",
+      "pos": [
+        3860,
+        3883
+      ]
+    },
+    {
+      "content": "If you have a database server, use that to create a new database.",
+      "pos": [
+        3962,
+        4027
+      ]
+    },
+    {
+      "content": "Database servers are a precious resource, and you generally want to create multiple databases on the same server for testing and development rather than creating a database server per database.",
+      "pos": [
+        4028,
+        4221
+      ]
+    },
+    {
+      "content": "Make sure your web site and database are in the same region.",
+      "pos": [
+        4222,
+        4282
+      ]
+    },
+    {
+      "content": "Configure Azure Website",
+      "pos": [
+        4286,
+        4309
+      ]
+    },
+    {
+      "content": "Set the page header and footer",
+      "pos": [
+        4396,
+        4426
+      ]
+    },
+    {
+      "pos": [
+        4432,
+        4526
+      ],
+      "content": "In <bpt id=\"p1\">**</bpt>Solution Explorer<ept id=\"p1\">**</ept>, expand the <bpt id=\"p2\">*</bpt>Views\\Shared<ept id=\"p2\">*</ept> folder and open the <bpt id=\"p3\">*</bpt>_Layout.cshtml<ept id=\"p3\">*</ept> file."
+    },
+    {
+      "content": "_Layout.cshtml in Solution Explorer",
+      "pos": [
+        4534,
+        4569
+      ]
+    },
+    {
+      "pos": [
+        4586,
+        4672
+      ],
+      "content": "Replace the contents of the <bpt id=\"p1\">*</bpt>Views\\Shared_Layout.cshtml<ept id=\"p1\">*</ept> file with the following code:"
+    },
+    {
+      "pos": [
+        6045,
+        6191
+      ],
+      "content": "The markup above changes the app name from \"My ASP.NET App\" to \"Contact Manager\", and it removes the links to <bpt id=\"p1\">**</bpt>Home<ept id=\"p1\">**</ept>, <bpt id=\"p2\">**</bpt>About<ept id=\"p2\">**</ept> and <bpt id=\"p3\">**</bpt>Contact<ept id=\"p3\">**</ept>."
+    },
+    {
+      "content": "Run the application locally",
+      "pos": [
+        6197,
+        6224
+      ]
+    },
+    {
+      "pos": [
+        6229,
+        6423
+      ],
+      "content": "Press CTRL+F5 to run the application.\nThe application home page appears in the default browser.\n ![To Do List home page](./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/rr5.PNG)",
+      "leadings": [
+        "",
+        "",
+        "   "
+      ],
+      "nodes": [
+        {
+          "content": "Press CTRL+F5 to run the application.",
+          "pos": [
+            0,
+            37
+          ]
+        },
+        {
+          "content": "The application home page appears in the default browser.",
+          "pos": [
+            38,
+            95
+          ]
+        },
+        {
+          "content": "To Do List home page",
+          "pos": [
+            99,
+            119
+          ]
+        }
+      ]
+    },
+    {
+      "content": "This is all you need to do for now to create the application that you'll deploy to Azure.",
+      "pos": [
+        6425,
+        6514
+      ]
+    },
+    {
+      "content": "Later you'll add database functionality.",
+      "pos": [
+        6515,
+        6555
+      ]
+    },
+    {
+      "content": "Deploy the application to Azure",
+      "pos": [
+        6560,
+        6591
+      ]
+    },
+    {
+      "pos": [
+        6596,
+        6708
+      ],
+      "content": "In Visual Studio, right-click the project in <bpt id=\"p1\">**</bpt>Solution Explorer<ept id=\"p1\">**</ept> and select <bpt id=\"p2\">**</bpt>Publish<ept id=\"p2\">**</ept> from the context menu."
+    },
+    {
+      "content": "Publish in project context menu",
+      "pos": [
+        6716,
+        6747
+      ]
+    },
+    {
+      "pos": [
+        6773,
+        6806
+      ],
+      "content": "The <bpt id=\"p1\">**</bpt>Publish Web<ept id=\"p1\">**</ept> wizard opens."
+    },
+    {
+      "pos": [
+        6812,
+        6830
+      ],
+      "content": "Click <bpt id=\"p1\">**</bpt>Publish<ept id=\"p1\">**</ept>."
+    },
+    {
+      "content": "Settings tab",
+      "pos": [
+        6834,
+        6846
+      ]
+    },
+    {
+      "content": "Visual Studio begins the process of copying the files to the Azure server.",
+      "pos": [
+        6919,
+        6993
+      ]
+    },
+    {
+      "content": "The <bpt id=\"p1\">**</bpt>Output<ept id=\"p1\">**</ept> window shows what deployment actions were taken and reports successful completion of the deployment.",
+      "pos": [
+        6994,
+        7109
+      ]
+    },
+    {
+      "content": "The default browser automatically opens to the URL of the deployed site.",
+      "pos": [
+        7115,
+        7187
+      ]
+    },
+    {
+      "content": "The application you created is now running in the cloud.",
+      "pos": [
+        7193,
+        7249
+      ]
+    },
+    {
+      "content": "To Do List home page running in Azure",
+      "pos": [
+        7261,
+        7298
+      ]
+    },
+    {
+      "content": "Add a database to the application",
+      "pos": [
+        7310,
+        7343
+      ]
+    },
+    {
+      "content": "Next, you'll update the MVC application to add the ability to display and update contacts and store the data in a database.",
+      "pos": [
+        7345,
+        7468
+      ]
+    },
+    {
+      "content": "The application will use the Entity Framework to create the database and to read and update data in the database.",
+      "pos": [
+        7469,
+        7582
+      ]
+    },
+    {
+      "content": "Add data model classes for the contacts",
+      "pos": [
+        7588,
+        7627
+      ]
+    },
+    {
+      "content": "You begin by creating a simple data model in code.",
+      "pos": [
+        7629,
+        7679
+      ]
+    },
+    {
+      "pos": [
+        7684,
+        7775
+      ],
+      "content": "In <bpt id=\"p1\">**</bpt>Solution Explorer<ept id=\"p1\">**</ept>, right-click the Models folder, click <bpt id=\"p2\">**</bpt>Add<ept id=\"p2\">**</ept>, and then <bpt id=\"p3\">**</bpt>Class<ept id=\"p3\">**</ept>."
+    },
+    {
+      "content": "Add Class in Models folder context menu",
+      "pos": [
+        7783,
+        7822
+      ]
+    },
+    {
+      "pos": [
+        7838,
+        7935
+      ],
+      "content": "In the <bpt id=\"p1\">**</bpt>Add New Item<ept id=\"p1\">**</ept> dialog box, name the new class file <bpt id=\"p2\">*</bpt>Contact.cs<ept id=\"p2\">*</ept>, and then click <bpt id=\"p3\">**</bpt>Add<ept id=\"p3\">**</ept>."
+    },
+    {
+      "content": "Add New Item dialog box",
+      "pos": [
+        7943,
+        7966
+      ]
+    },
+    {
+      "content": "Replace the contents of the Contacts.cs file with the following code.",
+      "pos": [
+        7982,
+        8051
+      ]
+    },
+    {
+      "content": "The <bpt id=\"p1\">**</bpt>Contacts<ept id=\"p1\">**</ept> class defines the data that you will store for each contact, plus a primary key, ContactID, that is needed by the database.",
+      "pos": [
+        8850,
+        8990
+      ]
+    },
+    {
+      "content": "You can get more information about data models in the <bpt id=\"p1\">[</bpt>Next Steps<ept id=\"p1\">](#nextsteps)</ept> section at the end of this tutorial.",
+      "pos": [
+        8991,
+        9106
+      ]
+    },
+    {
+      "content": "Create web pages that enable app users to work with the contacts",
+      "pos": [
+        9112,
+        9176
+      ]
+    },
+    {
+      "content": "The ASP.NET MVC the scaffolding feature can automatically generate code that performs create, read, update, and delete (CRUD) actions.",
+      "pos": [
+        9178,
+        9312
+      ]
+    },
+    {
+      "content": "Add a Controller and a view for the data",
+      "pos": [
+        9317,
+        9357
+      ]
+    },
+    {
+      "pos": [
+        9362,
+        9418
+      ],
+      "content": "In <bpt id=\"p1\">**</bpt>Solution Explorer<ept id=\"p1\">**</ept>, expand the Controllers folder."
+    },
+    {
+      "content": "Build the project <bpt id=\"p1\">**</bpt>(Ctrl+Shift+B)<ept id=\"p1\">**</ept>.",
+      "pos": [
+        9423,
+        9460
+      ]
+    },
+    {
+      "content": "(You must build the project before using scaffolding mechanism.)",
+      "pos": [
+        9461,
+        9525
+      ]
+    },
+    {
+      "pos": [
+        9531,
+        9615
+      ],
+      "content": "Right-click the Controllers folder and click <bpt id=\"p1\">**</bpt>Add<ept id=\"p1\">**</ept>, and then click <bpt id=\"p2\">**</bpt>Controller<ept id=\"p2\">**</ept>."
+    },
+    {
+      "content": "Add Controller in Controllers folder context menu",
+      "pos": [
+        9623,
+        9672
+      ]
+    },
+    {
+      "pos": [
+        9690,
+        9805
+      ],
+      "content": "In the <bpt id=\"p1\">**</bpt>Add Scaffold<ept id=\"p1\">**</ept> dialog box, select <bpt id=\"p2\">**</bpt>MVC Controller with views, using Entity Framework<ept id=\"p2\">**</ept> and click <bpt id=\"p3\">**</bpt>Add<ept id=\"p3\">**</ept>."
+    },
+    {
+      "content": "Add controller",
+      "pos": [
+        9810,
+        9824
+      ]
+    },
+    {
+      "content": "Set the controller name to <bpt id=\"p1\">**</bpt>HomeController<ept id=\"p1\">**</ept>.",
+      "pos": [
+        9902,
+        9948
+      ]
+    },
+    {
+      "content": "Select <bpt id=\"p1\">**</bpt>Contact<ept id=\"p1\">**</ept> as your model class.",
+      "pos": [
+        9949,
+        9988
+      ]
+    },
+    {
+      "content": "Click the <bpt id=\"p1\">**</bpt>New data context<ept id=\"p1\">**</ept> button and accept the default \"ContactManager.Models.ContactManagerContext\" for the <bpt id=\"p2\">**</bpt>New data context type<ept id=\"p2\">**</ept>.",
+      "pos": [
+        9989,
+        10130
+      ]
+    },
+    {
+      "content": "Click <bpt id=\"p1\">**</bpt>Add<ept id=\"p1\">**</ept>.",
+      "pos": [
+        10131,
+        10145
+      ]
+    },
+    {
+      "content": "Add Controller dialog box",
+      "pos": [
+        10153,
+        10178
+      ]
+    },
+    {
+      "content": "A dialog box will prompt you: \"A file with the name HomeController already exits.",
+      "pos": [
+        10256,
+        10337
+      ]
+    },
+    {
+      "content": "Do you want to replace it?\".",
+      "pos": [
+        10338,
+        10366
+      ]
+    },
+    {
+      "content": "Click <bpt id=\"p1\">**</bpt>Yes<ept id=\"p1\">**</ept>.",
+      "pos": [
+        10367,
+        10381
+      ]
+    },
+    {
+      "content": "We are overwriting the Home Controller that was created with the new project.",
+      "pos": [
+        10382,
+        10459
+      ]
+    },
+    {
+      "content": "We will use the new Home Controller for our contact list.",
+      "pos": [
+        10460,
+        10517
+      ]
+    },
+    {
+      "pos": [
+        10523,
+        10629
+      ],
+      "content": "Visual Studio creates a controller methods and views for CRUD database operations for <bpt id=\"p1\">**</bpt>Contact<ept id=\"p1\">**</ept> objects."
+    },
+    {
+      "content": "Enable Migrations, create the database, add sample data and a data initializer",
+      "pos": [
+        10634,
+        10712
+      ]
+    },
+    {
+      "pos": [
+        10717,
+        10882
+      ],
+      "content": "The next task is to enable the <bpt id=\"p1\">[</bpt>Code First Migrations<ept id=\"p1\">](http://curah.microsoft.com/55220)</ept> feature in order to create the database based on the data model you created."
+    },
+    {
+      "pos": [
+        10887,
+        10982
+      ],
+      "content": "In the <bpt id=\"p1\">**</bpt>Tools<ept id=\"p1\">**</ept> menu, select <bpt id=\"p2\">**</bpt>Library Package Manager<ept id=\"p2\">**</ept> and then <bpt id=\"p3\">**</bpt>Package Manager Console<ept id=\"p3\">**</ept>."
+    },
+    {
+      "content": "Package Manager Console in Tools menu",
+      "pos": [
+        10990,
+        11027
+      ]
+    },
+    {
+      "pos": [
+        11045,
+        11116
+      ],
+      "content": "In the <bpt id=\"p1\">**</bpt>Package Manager Console<ept id=\"p1\">**</ept> window, enter the following command:"
+    },
+    {
+      "pos": [
+        11152,
+        11311
+      ],
+      "content": "The <bpt id=\"p1\">**</bpt>enable-migrations<ept id=\"p1\">**</ept> command creates a <bpt id=\"p2\">*</bpt>Migrations<ept id=\"p2\">*</ept> folder and it puts in that folder a <bpt id=\"p3\">*</bpt>Configuration.cs<ept id=\"p3\">*</ept> file that you can edit to configure Migrations."
+    },
+    {
+      "pos": [
+        11317,
+        11388
+      ],
+      "content": "In the <bpt id=\"p1\">**</bpt>Package Manager Console<ept id=\"p1\">**</ept> window, enter the following command:"
+    },
+    {
+      "content": "The <bpt id=\"p1\">**</bpt>add-migration Initial<ept id=\"p1\">**</ept> command generates a class named <bpt id=\"p2\">**</bpt>&amp;lt;date_stamp&amp;gt;Initial<ept id=\"p2\">**</ept> that creates the database.",
+      "pos": [
+        11425,
+        11543
+      ]
+    },
+    {
+      "content": "The first parameter ( <bpt id=\"p1\">*</bpt>Initial<ept id=\"p1\">*</ept> ) is arbitrary and used to create the name of the file.",
+      "pos": [
+        11544,
+        11631
+      ]
+    },
+    {
+      "content": "You can see the new class files in <bpt id=\"p1\">**</bpt>Solution Explorer<ept id=\"p1\">**</ept>.",
+      "pos": [
+        11632,
+        11689
+      ]
+    },
+    {
+      "pos": [
+        11695,
+        11853
+      ],
+      "content": "In the <bpt id=\"p1\">**</bpt>Initial<ept id=\"p1\">**</ept> class, the <bpt id=\"p2\">**</bpt>Up<ept id=\"p2\">**</ept> method creates the Contacts table, and the <bpt id=\"p3\">**</bpt>Down<ept id=\"p3\">**</ept> method (used when you want to return to the previous state) drops it."
+    },
+    {
+      "pos": [
+        11858,
+        11902
+      ],
+      "content": "Open the <bpt id=\"p1\">*</bpt>Migrations\\Configuration.cs<ept id=\"p1\">*</ept> file."
+    },
+    {
+      "content": "Add the following namespaces.",
+      "pos": [
+        11908,
+        11937
+      ]
+    },
+    {
+      "pos": [
+        11982,
+        12032
+      ],
+      "content": "Replace the <bpt id=\"p1\">*</bpt>Seed<ept id=\"p1\">*</ept> method with the following code:"
+    },
+    {
+      "content": "This code above will initialize the database with the contact information.",
+      "pos": [
+        14024,
+        14098
+      ]
+    },
+    {
+      "content": "For more information on seeding the database, see <bpt id=\"p1\">[</bpt>Debugging Entity Framework (EF) DBs<ept id=\"p1\">](http://blogs.msdn.com/b/rickandy/archive/2013/02/12/seeding-and-debugging-entity-framework-ef-dbs.aspx)</ept>.",
+      "pos": [
+        14099,
+        14291
+      ]
+    },
+    {
+      "pos": [
+        14297,
+        14350
+      ],
+      "content": "In the <bpt id=\"p1\">**</bpt>Package Manager Console<ept id=\"p1\">**</ept> enter the command:"
+    },
+    {
+      "content": "Package Manager Console commands",
+      "pos": [
+        14383,
+        14415
+      ]
+    },
+    {
+      "content": "The <bpt id=\"p1\">**</bpt>update-database<ept id=\"p1\">**</ept> runs the first migration which creates the database.",
+      "pos": [
+        14434,
+        14510
+      ]
+    },
+    {
+      "content": "By default, the database is created as a SQL Server Express LocalDB database.",
+      "pos": [
+        14511,
+        14588
+      ]
+    },
+    {
+      "content": "Press CTRL+F5 to run the application.",
+      "pos": [
+        14593,
+        14630
+      ]
+    },
+    {
+      "content": "The application shows the seed data and provides edit, details and delete links.",
+      "pos": [
+        14633,
+        14713
+      ]
+    },
+    {
+      "content": "MVC view of data",
+      "pos": [
+        14717,
+        14733
+      ]
+    },
+    {
+      "content": "Edit the View",
+      "pos": [
+        14745,
+        14758
+      ]
+    },
+    {
+      "content": "Open the <bpt id=\"p1\">*</bpt>Views\\Home\\Index.cshtml<ept id=\"p1\">*</ept> file.",
+      "pos": [
+        14763,
+        14803
+      ]
+    },
+    {
+      "content": "In the next step, we will replace the generated markup with code that uses <bpt id=\"p1\">[</bpt>jQuery<ept id=\"p1\">](http://jquery.com/)</ept> and <bpt id=\"p2\">[</bpt>Knockout.js<ept id=\"p2\">](http://knockoutjs.com/)</ept>.",
+      "pos": [
+        14804,
+        14950
+      ]
+    },
+    {
+      "content": "This new code retrieves the list of contacts from using web API and JSON and then binds the contact data to the UI using knockout.js.",
+      "pos": [
+        14951,
+        15084
+      ]
+    },
+    {
+      "content": "For more information, see the <bpt id=\"p1\">[</bpt>Next Steps<ept id=\"p1\">](#nextsteps)</ept> section at the end of this tutorial.",
+      "pos": [
+        15085,
+        15176
+      ]
+    },
+    {
+      "content": "Replace the contents of the file with the following code.",
+      "pos": [
+        15183,
+        15240
+      ]
+    },
+    {
+      "pos": [
+        19193,
+        19274
+      ],
+      "content": "Right-click the Content folder and click <bpt id=\"p1\">**</bpt>Add<ept id=\"p1\">**</ept>, and then click <bpt id=\"p2\">**</bpt>New Item...<ept id=\"p2\">**</ept>."
+    },
+    {
+      "content": "Add style sheet in Content folder context menu",
+      "pos": [
+        19282,
+        19328
+      ]
+    },
+    {
+      "pos": [
+        19346,
+        19500
+      ],
+      "content": "In the **Add New Item** dialog box, enter **Style** in the upper right search box and then select **Style Sheet**.\n ![Add New Item dialog box][rxStyle]",
+      "leadings": [
+        "",
+        "   "
+      ],
+      "nodes": [
+        {
+          "content": "In the <bpt id=\"p1\">**</bpt>Add New Item<ept id=\"p1\">**</ept> dialog box, enter <bpt id=\"p2\">**</bpt>Style<ept id=\"p2\">**</ept> in the upper right search box and then select <bpt id=\"p3\">**</bpt>Style Sheet<ept id=\"p3\">**</ept>.",
+          "pos": [
+            0,
+            114
+          ]
+        },
+        {
+          "content": "<ph id=\"ph1\"> ![</ph>Add New Item dialog box<ph id=\"ph2\">][rxStyle]</ph>",
+          "pos": [
+            115,
+            151
+          ]
+        }
+      ]
+    },
+    {
+      "content": "Name the file <bpt id=\"p1\">*</bpt>Contacts.css<ept id=\"p1\">*</ept> and click <bpt id=\"p2\">**</bpt>Add<ept id=\"p2\">**</ept>.",
+      "pos": [
+        19505,
+        19552
+      ]
+    },
+    {
+      "content": "Replace the contents of the file with the following code.",
+      "pos": [
+        19553,
+        19610
+      ]
+    },
+    {
+      "content": "We will use this style sheet for the layout, colors and styles used in the contact manager app.",
+      "pos": [
+        20907,
+        21002
+      ]
+    },
+    {
+      "pos": [
+        21007,
+        21049
+      ],
+      "content": "Open the <bpt id=\"p1\">*</bpt>App_Start\\BundleConfig.cs<ept id=\"p1\">*</ept> file."
+    },
+    {
+      "pos": [
+        21055,
+        21151
+      ],
+      "content": "Add the following code to register the <bpt id=\"p1\">[</bpt>Knockout<ept id=\"p1\">]</ept><bpt id=\"p2\">(http://knockoutjs.com/index.html \"</bpt>KO<ept id=\"p2\">\")</ept> plugin."
+    },
+    {
+      "content": "This sample using knockout to simplify dynamic JavaScript code that handles the screen templates.",
+      "pos": [
+        21282,
+        21379
+      ]
+    },
+    {
+      "content": "Modify the contents/css entry to register the <bpt id=\"p1\">*</bpt>contacts.css<ept id=\"p1\">*</ept> style sheet.",
+      "pos": [
+        21384,
+        21457
+      ]
+    },
+    {
+      "content": "Change the following line:",
+      "pos": [
+        21458,
+        21484
+      ]
+    },
+    {
+      "content": "To:",
+      "pos": [
+        21646,
+        21649
+      ]
+    },
+    {
+      "content": "In the Package Manager Console, run the following command to install Knockout.",
+      "pos": [
+        21851,
+        21929
+      ]
+    },
+    {
+      "content": "Install-Package knockoutjs",
+      "pos": [
+        21935,
+        21961
+      ]
+    },
+    {
+      "content": "Add a controller for the Web API Restful interface",
+      "pos": [
+        21965,
+        22015
+      ]
+    },
+    {
+      "pos": [
+        22020,
+        22115
+      ],
+      "content": "In <bpt id=\"p1\">**</bpt>Solution Explorer<ept id=\"p1\">**</ept>, right-click Controllers and click <bpt id=\"p2\">**</bpt>Add<ept id=\"p2\">**</ept> and then <bpt id=\"p3\">**</bpt>Controller....<ept id=\"p3\">**</ept>"
+    },
+    {
+      "pos": [
+        22121,
+        22248
+      ],
+      "content": "In the <bpt id=\"p1\">**</bpt>Add Scaffold<ept id=\"p1\">**</ept> dialog box, enter <bpt id=\"p2\">**</bpt>Web API 2 Controller with actions, using Entity Framework<ept id=\"p2\">**</ept> and then click <bpt id=\"p3\">**</bpt>Add<ept id=\"p3\">**</ept>."
+    },
+    {
+      "content": "Add API controller",
+      "pos": [
+        22256,
+        22274
+      ]
+    },
+    {
+      "content": "In the <bpt id=\"p1\">**</bpt>Add Controller<ept id=\"p1\">**</ept> dialog box, enter \"ContactsController\" as your controller name.",
+      "pos": [
+        22351,
+        22440
+      ]
+    },
+    {
+      "content": "Select \"Contact (ContactManager.Models)\" for the <bpt id=\"p1\">**</bpt>Model class<ept id=\"p1\">**</ept>.",
+      "pos": [
+        22441,
+        22506
+      ]
+    },
+    {
+      "content": "Keep the default value for the <bpt id=\"p1\">**</bpt>Data context class<ept id=\"p1\">**</ept>.",
+      "pos": [
+        22508,
+        22562
+      ]
+    },
+    {
+      "pos": [
+        22568,
+        22582
+      ],
+      "content": "Click <bpt id=\"p1\">**</bpt>Add<ept id=\"p1\">**</ept>."
+    },
+    {
+      "content": "Run the application locally",
+      "pos": [
+        22588,
+        22615
+      ]
+    },
+    {
+      "content": "Press CTRL+F5 to run the application.",
+      "pos": [
+        22620,
+        22657
+      ]
+    },
+    {
+      "content": "Index page",
+      "pos": [
+        22665,
+        22675
+      ]
+    },
+    {
+      "content": "Enter a contact and click <bpt id=\"p1\">**</bpt>Add<ept id=\"p1\">**</ept>.",
+      "pos": [
+        22691,
+        22725
+      ]
+    },
+    {
+      "content": "The app returns to the home page and displays the contact you entered.",
+      "pos": [
+        22726,
+        22796
+      ]
+    },
+    {
+      "content": "Index page with to-do list items",
+      "pos": [
+        22804,
+        22836
+      ]
+    },
+    {
+      "pos": [
+        22856,
+        22908
+      ],
+      "content": "In the browser, append <bpt id=\"p1\">**</bpt>/api/contacts<ept id=\"p1\">**</ept> to the URL."
+    },
+    {
+      "content": "The resulting URL will resemble http://localhost:1234/api/contacts.",
+      "pos": [
+        22914,
+        22981
+      ]
+    },
+    {
+      "content": "The RESTful web API you added returns the stored contacts.",
+      "pos": [
+        22982,
+        23040
+      ]
+    },
+    {
+      "content": "Firefox and Chrome will display the data in XML format.",
+      "pos": [
+        23041,
+        23096
+      ]
+    },
+    {
+      "content": "Index page with to-do list items",
+      "pos": [
+        23104,
+        23136
+      ]
+    },
+    {
+      "content": "Add XSRF Protection",
+      "pos": [
+        23732,
+        23751
+      ]
+    },
+    {
+      "content": "Cross-site request forgery (also known as XSRF or CSRF) is an attack against web-hosted applications whereby a malicious website can influence the interaction between a client browser and a website trusted by that browser.",
+      "pos": [
+        23753,
+        23975
+      ]
+    },
+    {
+      "content": "These attacks are made possible because web browsers will send authentication tokens automatically with every request to a website.",
+      "pos": [
+        23976,
+        24107
+      ]
+    },
+    {
+      "content": "The canonical example is an authentication cookie, such as ASP.NET's Forms Authentication ticket.",
+      "pos": [
+        24108,
+        24205
+      ]
+    },
+    {
+      "content": "However, websites which use any persistent authentication mechanism (such as Windows Authentication, Basic, and so forth) can be targeted by these attacks.",
+      "pos": [
+        24206,
+        24361
+      ]
+    },
+    {
+      "content": "An XSRF attack is distinct from a phishing attack.",
+      "pos": [
+        24363,
+        24413
+      ]
+    },
+    {
+      "content": "Phishing attacks require interaction from the victim.",
+      "pos": [
+        24414,
+        24467
+      ]
+    },
+    {
+      "content": "In a phishing attack, a malicious website will mimic the target website, and the victim is fooled into providing sensitive information to the attacker.",
+      "pos": [
+        24468,
+        24619
+      ]
+    },
+    {
+      "content": "In an XSRF attack, there is often no interaction necessary from the victim.",
+      "pos": [
+        24620,
+        24695
+      ]
+    },
+    {
+      "content": "Rather, the attacker is relying on the browser automatically sending all relevant cookies to the destination website.",
+      "pos": [
+        24696,
+        24813
+      ]
+    },
+    {
+      "pos": [
+        24815,
+        25010
+      ],
+      "content": "For more information, see the <bpt id=\"p1\">[</bpt>Open Web Application Security Project<ept id=\"p1\">](https://www.owasp.org/index.php/Main_Page)</ept> (OWASP) <bpt id=\"p2\">[</bpt>XSRF<ept id=\"p2\">](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF))</ept>."
+    },
+    {
+      "pos": [
+        25015,
+        25117
+      ],
+      "content": "In <bpt id=\"p1\">**</bpt>Solution Explorer<ept id=\"p1\">**</ept>, right <bpt id=\"p2\">**</bpt>ContactManager<ept id=\"p2\">**</ept> project and click <bpt id=\"p3\">**</bpt>Add<ept id=\"p3\">**</ept> and then click <bpt id=\"p4\">**</bpt>Class<ept id=\"p4\">**</ept>."
+    },
+    {
+      "pos": [
+        25122,
+        25206
+      ],
+      "content": "Name the file <bpt id=\"p1\">*</bpt>ValidateHttpAntiForgeryTokenAttribute.cs<ept id=\"p1\">*</ept> and add the following code:"
+    },
+    {
+      "pos": [
+        28123,
+        28258
+      ],
+      "content": "Add the following <bpt id=\"p1\">*</bpt>using<ept id=\"p1\">*</ept> statement to the contracts controller so you have access to the <bpt id=\"p2\">**</bpt>[ValidateHttpAntiForgeryToken]<ept id=\"p2\">**</ept> attribute."
+    },
+    {
+      "content": "using ContactManager.Filters;",
+      "pos": [
+        28264,
+        28293
+      ]
+    },
+    {
+      "content": "Add the <bpt id=\"p1\">**</bpt>[ValidateHttpAntiForgeryToken]<ept id=\"p1\">**</ept> attribute to the Post methods of the <bpt id=\"p2\">**</bpt>ContactsController<ept id=\"p2\">**</ept> to protect it from XSRF threats.",
+      "pos": [
+        28298,
+        28433
+      ]
+    },
+    {
+      "content": "You will add it to the \"PutContact\",  \"PostContact\" and <bpt id=\"p1\">**</bpt>DeleteContact<ept id=\"p1\">**</ept> action methods.",
+      "pos": [
+        28434,
+        28523
+      ]
+    },
+    {
+      "pos": [
+        28529,
+        28638
+      ],
+      "content": "[ValidateHttpAntiForgeryToken]\n     public IHttpActionResult PutContact(int id, Contact contact)\n     {",
+      "leadings": [
+        "",
+        "   ",
+        "   "
+      ],
+      "nodes": [
+        {
+          "content": "[ValidateHttpAntiForgeryToken]",
+          "pos": [
+            0,
+            30
+          ]
+        },
+        {
+          "content": "public IHttpActionResult PutContact(int id, Contact contact)",
+          "pos": [
+            36,
+            96
+          ]
+        },
+        {
+          "content": "{",
+          "pos": [
+            102,
+            103
+          ]
+        }
+      ]
+    },
+    {
+      "pos": [
+        28643,
+        28749
+      ],
+      "content": "Update the <bpt id=\"p1\">*</bpt>Scripts<ept id=\"p1\">*</ept> section of the <bpt id=\"p2\">*</bpt>Views\\Home\\Index.cshtml<ept id=\"p2\">*</ept> file to include code to get the XSRF tokens."
+    },
+    {
+      "content": "Publish the application update to Azure and SQL Database",
+      "pos": [
+        30666,
+        30722
+      ]
+    },
+    {
+      "content": "To publish the application, you repeat the procedure you followed earlier.",
+      "pos": [
+        30724,
+        30798
+      ]
+    },
+    {
+      "pos": [
+        30803,
+        30876
+      ],
+      "content": "In <bpt id=\"p1\">**</bpt>Solution Explorer<ept id=\"p1\">**</ept>, right click the project and select <bpt id=\"p2\">**</bpt>Publish<ept id=\"p2\">**</ept>."
+    },
+    {
+      "content": "Publish",
+      "pos": [
+        30884,
+        30891
+      ]
+    },
+    {
+      "pos": [
+        30902,
+        30929
+      ],
+      "content": "Click the <bpt id=\"p1\">**</bpt>Settings<ept id=\"p1\">**</ept> tab."
+    },
+    {
+      "content": "Under <bpt id=\"p1\">**</bpt>ContactsManagerContext(ContactsManagerContext)<ept id=\"p1\">**</ept>, click the <bpt id=\"p2\">**</bpt>v<ept id=\"p2\">**</ept> icon to change <bpt id=\"p3\">*</bpt>Remote connection string<ept id=\"p3\">*</ept> to the connection string for the contact database.",
+      "pos": [
+        30939,
+        31105
+      ]
+    },
+    {
+      "content": "Click <bpt id=\"p1\">**</bpt>ContactDB<ept id=\"p1\">**</ept>.",
+      "pos": [
+        31106,
+        31126
+      ]
+    },
+    {
+      "content": "Settings",
+      "pos": [
+        31134,
+        31142
+      ]
+    },
+    {
+      "pos": [
+        31219,
+        31299
+      ],
+      "content": "Check the box for <bpt id=\"p1\">**</bpt>Execute Code First Migrations (runs on application start)<ept id=\"p1\">**</ept>."
+    },
+    {
+      "content": "Click <bpt id=\"p1\">**</bpt>Next<ept id=\"p1\">**</ept> and then click <bpt id=\"p2\">**</bpt>Preview<ept id=\"p2\">**</ept>.",
+      "pos": [
+        31304,
+        31346
+      ]
+    },
+    {
+      "content": "Visual Studio displays a list of the files that will be added or updated.",
+      "pos": [
+        31347,
+        31420
+      ]
+    },
+    {
+      "content": "Click <bpt id=\"p1\">**</bpt>Publish<ept id=\"p1\">**</ept>.",
+      "pos": [
+        31425,
+        31443
+      ]
+    },
+    {
+      "content": "After the deployment completes, the browser opens to the home page of the application.",
+      "pos": [
+        31444,
+        31530
+      ]
+    },
+    {
+      "content": "Index page with no contacts",
+      "pos": [
+        31538,
+        31565
+      ]
+    },
+    {
+      "content": "The Visual Studio publish process automatically configured the connection string in the deployed <bpt id=\"p1\">*</bpt>Web.config<ept id=\"p1\">*</ept> file to point to the SQL database.",
+      "pos": [
+        31582,
+        31726
+      ]
+    },
+    {
+      "content": "It also configured Code First Migrations to automatically upgrade the database to the latest version the first time the application accesses the database after deployment.",
+      "pos": [
+        31727,
+        31898
+      ]
+    },
+    {
+      "content": "As a result of this configuration, Code First created the database by running the code in the <bpt id=\"p1\">**</bpt>Initial<ept id=\"p1\">**</ept> class that you created earlier.",
+      "pos": [
+        31904,
+        32041
+      ]
+    },
+    {
+      "content": "It did this the first time the application tried to access the database after deployment.",
+      "pos": [
+        32042,
+        32131
+      ]
+    },
+    {
+      "content": "Enter a contact as you did when you ran the app locally, to verify that database deployment succeeded.",
+      "pos": [
+        32136,
+        32238
+      ]
+    },
+    {
+      "content": "When you see that the item you enter is saved and appears on the contact manager page, you know that it has been stored in the database.",
+      "pos": [
+        32240,
+        32376
+      ]
+    },
+    {
+      "content": "Index page with contacts",
+      "pos": [
+        32380,
+        32404
+      ]
+    },
+    {
+      "content": "The application is now running in the cloud, using SQL Database to store its data.",
+      "pos": [
+        32421,
+        32503
+      ]
+    },
+    {
+      "content": "After you finish testing the application in Azure, delete it.",
+      "pos": [
+        32504,
+        32565
+      ]
+    },
+    {
+      "content": "The application is public and doesn't have a mechanism to limit access.",
+      "pos": [
+        32566,
+        32637
+      ]
+    },
+    {
+      "content": "<ph id=\"ph1\">[AZURE.NOTE]</ph> If you want to get started with Azure App Service before signing up for an Azure account, go to <bpt id=\"p1\">[</bpt>Try App Service<ept id=\"p1\">](http://go.microsoft.com/fwlink/?LinkId=523751)</ept>, where you can immediately create a short-lived starter web app in App Service.",
+      "pos": [
+        32640,
+        32893
+      ]
+    },
+    {
+      "content": "No credit cards required; no commitments.",
+      "pos": [
+        32894,
+        32935
+      ]
+    },
+    {
+      "content": "Next Steps",
+      "pos": [
+        32940,
+        32950
+      ]
+    },
+    {
+      "content": "A real application would require authentication and authorization, and you would use the membership database for that purpose.",
+      "pos": [
+        32952,
+        33078
+      ]
+    },
+    {
+      "content": "The tutorial <bpt id=\"p1\">[</bpt>Deploy a Secure ASP.NET MVC application with OAuth, Membership and SQL Database<ept id=\"p1\">](web-sites-dotnet-deploy-aspnet-mvc-app-membership-oauth-sql-database.md)</ept> is based on this tutorial and shows how to deploy a web application with the membership database.",
+      "pos": [
+        33079,
+        33344
+      ]
+    },
+    {
+      "content": "Another way to store data in an Azure application is to use Azure storage, which provide non-relational data storage in the form of blobs and tables.",
+      "pos": [
+        33346,
+        33495
+      ]
+    },
+    {
+      "content": "The following links provide more information on Web API, ASP.NET MVC and Window Azure.",
+      "pos": [
+        33496,
+        33582
+      ]
+    },
+    {
+      "content": "Getting Started with Entity Framework using MVC",
+      "pos": [
+        33589,
+        33636
+      ]
+    },
+    {
+      "content": "Intro to ASP.NET MVC 5",
+      "pos": [
+        33665,
+        33687
+      ]
+    },
+    {
+      "content": "Your First ASP.NET Web API",
+      "pos": [
+        33761,
+        33787
+      ]
+    },
+    {
+      "content": "Debugging WAWS",
+      "pos": [
+        33893,
+        33907
+      ]
+    },
+    {
+      "pos": [
+        33958,
+        34226
+      ],
+      "content": "This tutorial and the sample application was written by <bpt id=\"p1\">[</bpt>Rick Anderson<ept id=\"p1\">](http://blogs.msdn.com/b/rickandy/)</ept> (Twitter <bpt id=\"p2\">[</bpt>@RickAndMSFT<ept id=\"p2\">](https://twitter.com/RickAndMSFT)</ept>) with assistance from Tom Dykstra and Barry Dorrans (Twitter <bpt id=\"p3\">[</bpt>@blowdart<ept id=\"p3\">](https://twitter.com/blowdart)</ept>)."
+    },
+    {
+      "content": "Please leave feedback on what you liked or what you would like to see improved, not only about the tutorial itself but also about the products that it demonstrates.",
+      "pos": [
+        34229,
+        34393
+      ]
+    },
+    {
+      "content": "Your feedback will help us prioritize improvements.",
+      "pos": [
+        34394,
+        34445
+      ]
+    },
+    {
+      "content": "We are especially interested in finding out how much interest there is in more automation for the process of configuring and deploying the membership database.",
+      "pos": [
+        34446,
+        34605
+      ]
+    },
+    {
+      "content": "What's changed",
+      "pos": [
+        34611,
+        34625
+      ]
+    },
+    {
+      "pos": [
+        34628,
+        34796
+      ],
+      "content": "For a guide to the change from Websites to App Service see: <bpt id=\"p1\">[</bpt>Azure App Service and Its Impact on Existing Azure Services<ept id=\"p1\">](http://go.microsoft.com/fwlink/?LinkId=529714)</ept>"
+    },
+    {
+      "pos": [
+        34799,
+        34958
+      ],
+      "content": "For a guide to the change of the old portal to the new portal see: <bpt id=\"p1\">[</bpt>Reference for navigating the preview portal<ept id=\"p1\">](http://go.microsoft.com/fwlink/?LinkId=529715)</ept>"
+    },
+    {
+      "content": "test",
+      "pos": [
+        40347,
+        40351
+      ]
+    }
+  ],
+  "content": "<properties \n    pageTitle=\"Create a REST service using ASP.NET Web API and SQL Database in Azure App Service\" \n    description=\"A tutorial that teaches you how to deploy an app that uses the ASP.NET Web API to an Azure web app by using Visual Studio.\" \n    services=\"app-service\\web\" \n    documentationCenter=\".net\" \n    authors=\"Rick-Anderson\" \n    writer=\"Rick-Anderson\" \n    manager=\"wpickett\" \n    editor=\"\"/>\n\n<tags \n    ms.service=\"app-service-web\" \n    ms.workload=\"web\" \n    ms.tgt_pltfrm=\"na\" \n    ms.devlang=\"dotnet\" \n    ms.topic=\"article\" \n    ms.date=\"08/31/2015\" \n    ms.author=\"riande\"/>\n\n# Create a REST service using ASP.NET Web API and SQL Database in Azure App Service\n\nThis tutorial shows how to deploy an ASP.NET web app to an [Azure App Service](http://go.microsoft.com/fwlink/?LinkId=529714) by using the Publish Web wizard in Visual Studio 2013 or Visual Studio 2013 for Web Express. \n\nYou can open an Azure account for free, and if you don't already have Visual Studio 2013, the SDK automatically installs Visual Studio 2013 for Web Express. So you can start developing for Azure entirely for free.\n\nThis tutorial assumes that you have no prior experience using Azure. On completing this tutorial, you'll have a simple web app up and running in the cloud.\n \nYou'll learn:\n\n* How to enable your machine for Azure development by installing the Azure SDK.\n* How to create a Visual Studio ASP.NET MVC 5 project and publish it to an Azure app.\n* How to use the ASP.NET Web API to enable Restful API calls.\n* How to use a SQL database to store data in Azure.\n* How to publish application updates to Azure.\n\nYou'll build a simple contact list web application that is built on ASP.NET MVC 5 and uses the ADO.NET Entity Framework for database access. The following illustration shows the completed application:\n\n![screenshot of web site][intro001]\n\n<!-- the next line produces the \"Set up the development environment\" section as see at http://azure.microsoft.com/documentation/articles/web-sites-dotnet-get-started/ -->\n[AZURE.INCLUDE [create-account-and-websites-note](../../includes/create-account-and-websites-note.md)]\n\n### Create the project\n\n1. Start Visual Studio 2013.\n1. From the **File** menu click **New Project**.\n3. In the **New Project** dialog box, expand **Visual C#** and select **Web**  and then select **ASP.NET MVC 5 Web Application**. Name the application **ContactManager** and click **OK**.\n\n    ![New Project dialog box](./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/rr4.PNG)]\n\n1. In the **New ASP.NET Project** dialog box, select the **MVC** template, check **Web API** and then click **Change Authentication**.\n\n    ![New ASP.NET Project dialog box](./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/rt3.PNG)\n\n1. In the **Change Authentication** dialog box, click **No Authentication**, and then click **OK**.\n\n    ![No Authentication](./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/GS13noauth.png)\n\n    The sample application you're creating won't have features that require users to log in. For information about how to implement authentication and authorization features, see the [Next Steps](#nextsteps) section at the end of this tutorial. \n\n1. In the **New ASP.NET Project** dialog box, click **OK**.\n\n    ![New ASP.NET Project dialog box](./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/rt3.PNG)\n\nIf you have not previously signed in to Azure, you will be prompted to sign in.\n\n1. The configuration wizard will suggest a unique name based on *ContactManager* (see the image below). Select a region near you. You can use [azurespeed.com](http://www.azurespeed.com/ \"AzureSpeed.com\") to find the lowest latency data center. \n2. If you haven't created a database server before, select **Create new server**, enter a database user name and password.\n\n    ![Configure Azure Website](./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/configAz.PNG)\n\nIf you have a database server, use that to create a new database. Database servers are a precious resource, and you generally want to create multiple databases on the same server for testing and development rather than creating a database server per database. Make sure your web site and database are in the same region.\n\n![Configure Azure Website](./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/configWithDB.PNG)\n\n### Set the page header and footer\n\n\n1. In **Solution Explorer**, expand the *Views\\Shared* folder and open the *_Layout.cshtml* file.\n\n    ![_Layout.cshtml in Solution Explorer][newapp004]\n\n1. Replace the contents of the *Views\\Shared_Layout.cshtml* file with the following code:\n\n\n        <!DOCTYPE html>\n        <html lang=\"en\">\n        <head>\n            <meta charset=\"utf-8\" />\n            <title>@ViewBag.Title - Contact Manager</title>\n            <link href=\"~/favicon.ico\" rel=\"shortcut icon\" type=\"image/x-icon\" />\n            <meta name=\"viewport\" content=\"width=device-width\" />\n            @Styles.Render(\"~/Content/css\")\n            @Scripts.Render(\"~/bundles/modernizr\")\n        </head>\n        <body>\n            <header>\n                <div class=\"content-wrapper\">\n                    <div class=\"float-left\">\n                        <p class=\"site-title\">@Html.ActionLink(\"Contact Manager\", \"Index\", \"Home\")</p>\n                    </div>\n                </div>\n            </header>\n            <div id=\"body\">\n                @RenderSection(\"featured\", required: false)\n                <section class=\"content-wrapper main-content clear-fix\">\n                    @RenderBody()\n                </section>\n            </div>\n            <footer>\n                <div class=\"content-wrapper\">\n                    <div class=\"float-left\">\n                        <p>&copy; @DateTime.Now.Year - Contact Manager</p>\n                    </div>\n                </div>\n            </footer>\n            @Scripts.Render(\"~/bundles/jquery\")\n            @RenderSection(\"scripts\", required: false)\n        </body>\n        </html>\n            \nThe markup above changes the app name from \"My ASP.NET App\" to \"Contact Manager\", and it removes the links to **Home**, **About** and **Contact**.\n\n### Run the application locally\n\n1. Press CTRL+F5 to run the application.\nThe application home page appears in the default browser.\n    ![To Do List home page](./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/rr5.PNG)\n\nThis is all you need to do for now to create the application that you'll deploy to Azure. Later you'll add database functionality.\n\n## Deploy the application to Azure\n\n1. In Visual Studio, right-click the project in **Solution Explorer** and select **Publish** from the context menu.\n\n    ![Publish in project context menu][PublishVSSolution]\n\n    The **Publish Web** wizard opens.\n\n12. Click **Publish**.\n\n![Settings tab](./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/pw.png)\n\nVisual Studio begins the process of copying the files to the Azure server. The **Output** window shows what deployment actions were taken and reports successful completion of the deployment.\n\n14. The default browser automatically opens to the URL of the deployed site.\n\n    The application you created is now running in the cloud.\n    \n    ![To Do List home page running in Azure][rxz2]\n\n## Add a database to the application\n\nNext, you'll update the MVC application to add the ability to display and update contacts and store the data in a database. The application will use the Entity Framework to create the database and to read and update data in the database.\n\n### Add data model classes for the contacts\n\nYou begin by creating a simple data model in code.\n\n1. In **Solution Explorer**, right-click the Models folder, click **Add**, and then **Class**.\n\n    ![Add Class in Models folder context menu][adddb001]\n\n2. In the **Add New Item** dialog box, name the new class file *Contact.cs*, and then click **Add**.\n\n    ![Add New Item dialog box][adddb002]\n\n3. Replace the contents of the Contacts.cs file with the following code.\n\n        using System.Globalization;\n        namespace ContactManager.Models\n        {\n            public class Contact\n            {\n                public int ContactId { get; set; }\n                public string Name { get; set; }\n                public string Address { get; set; }\n                public string City { get; set; }\n                public string State { get; set; }\n                public string Zip { get; set; }\n                public string Email { get; set; }\n                public string Twitter { get; set; }\n                public string Self\n                {\n                    get { return string.Format(CultureInfo.CurrentCulture,\n                         \"api/contacts/{0}\", this.ContactId); }\n                    set { }\n                }\n            }\n        }\n\nThe **Contacts** class defines the data that you will store for each contact, plus a primary key, ContactID, that is needed by the database. You can get more information about data models in the [Next Steps](#nextsteps) section at the end of this tutorial.\n\n### Create web pages that enable app users to work with the contacts\n\nThe ASP.NET MVC the scaffolding feature can automatically generate code that performs create, read, update, and delete (CRUD) actions.\n\n## Add a Controller and a view for the data\n\n1. In **Solution Explorer**, expand the Controllers folder.\n\n3. Build the project **(Ctrl+Shift+B)**. (You must build the project before using scaffolding mechanism.) \n\n4. Right-click the Controllers folder and click **Add**, and then click **Controller**.\n\n    ![Add Controller in Controllers folder context menu][addcode001]\n\n1. In the **Add Scaffold** dialog box, select **MVC Controller with views, using Entity Framework** and click **Add**.\n\n ![Add controller](./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/rrAC.PNG)\n\n6. Set the controller name to **HomeController**. Select **Contact** as your model class. Click the **New data context** button and accept the default \"ContactManager.Models.ContactManagerContext\" for the **New data context type**. Click **Add**.\n\n    ![Add Controller dialog box](./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/rr9.PNG)\n\n    A dialog box will prompt you: \"A file with the name HomeController already exits. Do you want to replace it?\". Click **Yes**. We are overwriting the Home Controller that was created with the new project. We will use the new Home Controller for our contact list.\n\n    Visual Studio creates a controller methods and views for CRUD database operations for **Contact** objects.\n\n## Enable Migrations, create the database, add sample data and a data initializer ##\n\nThe next task is to enable the [Code First Migrations](http://curah.microsoft.com/55220) feature in order to create the database based on the data model you created.\n\n1. In the **Tools** menu, select **Library Package Manager** and then **Package Manager Console**.\n\n    ![Package Manager Console in Tools menu][addcode008]\n\n2. In the **Package Manager Console** window, enter the following command:\n\n        enable-migrations \n  \n    The **enable-migrations** command creates a *Migrations* folder and it puts in that folder a *Configuration.cs* file that you can edit to configure Migrations. \n\n2. In the **Package Manager Console** window, enter the following command:\n\n        add-migration Initial\n\n    The **add-migration Initial** command generates a class named **&lt;date_stamp&gt;Initial** that creates the database. The first parameter ( *Initial* ) is arbitrary and used to create the name of the file. You can see the new class files in **Solution Explorer**.\n\n    In the **Initial** class, the **Up** method creates the Contacts table, and the **Down** method (used when you want to return to the previous state) drops it.\n\n3. Open the *Migrations\\Configuration.cs* file. \n\n4. Add the following namespaces. \n\n         using ContactManager.Models;\n\n5. Replace the *Seed* method with the following code:\n        \n        protected override void Seed(ContactManager.Models.ContactManagerContext context)\n        {\n            context.Contacts.AddOrUpdate(p => p.Name,\n               new Contact\n               {\n                   Name = \"Debra Garcia\",\n                   Address = \"1234 Main St\",\n                   City = \"Redmond\",\n                   State = \"WA\",\n                   Zip = \"10999\",\n                   Email = \"debra@example.com\",\n                   Twitter = \"debra_example\"\n               },\n                new Contact\n                {\n                    Name = \"Thorsten Weinrich\",\n                    Address = \"5678 1st Ave W\",\n                    City = \"Redmond\",\n                    State = \"WA\",\n                    Zip = \"10999\",\n                    Email = \"thorsten@example.com\",\n                    Twitter = \"thorsten_example\"\n                },\n                new Contact\n                {\n                    Name = \"Yuhong Li\",\n                    Address = \"9012 State st\",\n                    City = \"Redmond\",\n                    State = \"WA\",\n                    Zip = \"10999\",\n                    Email = \"yuhong@example.com\",\n                    Twitter = \"yuhong_example\"\n                },\n                new Contact\n                {\n                    Name = \"Jon Orton\",\n                    Address = \"3456 Maple St\",\n                    City = \"Redmond\",\n                    State = \"WA\",\n                    Zip = \"10999\",\n                    Email = \"jon@example.com\",\n                    Twitter = \"jon_example\"\n                },\n                new Contact\n                {\n                    Name = \"Diliana Alexieva-Bosseva\",\n                    Address = \"7890 2nd Ave E\",\n                    City = \"Redmond\",\n                    State = \"WA\",\n                    Zip = \"10999\",\n                    Email = \"diliana@example.com\",\n                    Twitter = \"diliana_example\"\n                }\n                );\n        }\n\n    This code above will initialize the database with the contact information. For more information on seeding the database, see [Debugging Entity Framework (EF) DBs](http://blogs.msdn.com/b/rickandy/archive/2013/02/12/seeding-and-debugging-entity-framework-ef-dbs.aspx).\n\n\n1. In the **Package Manager Console** enter the command:\n\n        update-database\n\n    ![Package Manager Console commands][addcode009]\n\n    The **update-database** runs the first migration which creates the database. By default, the database is created as a SQL Server Express LocalDB database.\n\n1. Press CTRL+F5 to run the application. \n\nThe application shows the seed data and provides edit, details and delete links.\n\n![MVC view of data][rxz3]\n\n## Edit the View\n\n1. Open the *Views\\Home\\Index.cshtml* file. In the next step, we will replace the generated markup with code that uses [jQuery](http://jquery.com/) and [Knockout.js](http://knockoutjs.com/). This new code retrieves the list of contacts from using web API and JSON and then binds the contact data to the UI using knockout.js. For more information, see the [Next Steps](#nextsteps) section at the end of this tutorial. \n\n\n2. Replace the contents of the file with the following code.\n\n        @model IEnumerable<ContactManager.Models.Contact>\n        @{\n            ViewBag.Title = \"Home\";\n        }\n        @section Scripts {\n            @Scripts.Render(\"~/bundles/knockout\")\n            <script type=\"text/javascript\">\n                function ContactsViewModel() {\n                    var self = this;\n                    self.contacts = ko.observableArray([]);\n                    self.addContact = function () {\n                        $.post(\"api/contacts\",\n                            $(\"#addContact\").serialize(),\n                            function (value) {\n                                self.contacts.push(value);\n                            },\n                            \"json\");\n                    }\n                    self.removeContact = function (contact) {\n                        $.ajax({\n                            type: \"DELETE\",\n                            url: contact.Self,\n                            success: function () {\n                                self.contacts.remove(contact);\n                            }\n                        });\n                    }\n\n                    $.getJSON(\"api/contacts\", function (data) {\n                        self.contacts(data);\n                    });\n                }\n                ko.applyBindings(new ContactsViewModel());  \n        </script>\n        }\n        <ul id=\"contacts\" data-bind=\"foreach: contacts\">\n            <li class=\"ui-widget-content ui-corner-all\">\n                <h1 data-bind=\"text: Name\" class=\"ui-widget-header\"></h1>\n                <div><span data-bind=\"text: $data.Address || 'Address?'\"></span></div>\n                <div>\n                    <span data-bind=\"text: $data.City || 'City?'\"></span>,\n                    <span data-bind=\"text: $data.State || 'State?'\"></span>\n                    <span data-bind=\"text: $data.Zip || 'Zip?'\"></span>\n                </div>\n                <div data-bind=\"if: $data.Email\"><a data-bind=\"attr: { href: 'mailto:' + Email }, text: Email\"></a></div>\n                <div data-bind=\"ifnot: $data.Email\"><span>Email?</span></div>\n                <div data-bind=\"if: $data.Twitter\"><a data-bind=\"attr: { href: 'http://twitter.com/' + Twitter }, text: '@@' + Twitter\"></a></div>\n                <div data-bind=\"ifnot: $data.Twitter\"><span>Twitter?</span></div>\n                <p><a data-bind=\"attr: { href: Self }, click: $root.removeContact\" class=\"removeContact ui-state-default ui-corner-all\">Remove</a></p>\n            </li>\n        </ul>\n        <form id=\"addContact\" data-bind=\"submit: addContact\">\n            <fieldset>\n                <legend>Add New Contact</legend>\n                <ol>\n                    <li>\n                        <label for=\"Name\">Name</label>\n                        <input type=\"text\" name=\"Name\" />\n                    </li>\n                    <li>\n                        <label for=\"Address\">Address</label>\n                        <input type=\"text\" name=\"Address\" >\n                    </li>\n                    <li>\n                        <label for=\"City\">City</label>\n                        <input type=\"text\" name=\"City\" />\n                    </li>\n                    <li>\n                        <label for=\"State\">State</label>\n                        <input type=\"text\" name=\"State\" />\n                    </li>\n                    <li>\n                        <label for=\"Zip\">Zip</label>\n                        <input type=\"text\" name=\"Zip\" />\n                    </li>\n                    <li>\n                        <label for=\"Email\">E-mail</label>\n                        <input type=\"text\" name=\"Email\" />\n                    </li>\n                    <li>\n                        <label for=\"Twitter\">Twitter</label>\n                        <input type=\"text\" name=\"Twitter\" />\n                    </li>\n                </ol>\n                <input type=\"submit\" value=\"Add\" />\n            </fieldset>\n        </form>\n\n3. Right-click the Content folder and click **Add**, and then click **New Item...**.\n\n    ![Add style sheet in Content folder context menu][addcode005]\n\n4. In the **Add New Item** dialog box, enter **Style** in the upper right search box and then select **Style Sheet**.\n    ![Add New Item dialog box][rxStyle]\n\n5. Name the file *Contacts.css* and click **Add**. Replace the contents of the file with the following code.\n    \n        .column {\n            float: left;\n            width: 50%;\n            padding: 0;\n            margin: 5px 0;\n        }\n        form ol {\n            list-style-type: none;\n            padding: 0;\n            margin: 0;\n        }\n        form li {\n            padding: 1px;\n            margin: 3px;\n        }\n        form input[type=\"text\"] {\n            width: 100%;\n        }\n        #addContact {\n            width: 300px;\n            float: left;\n            width:30%;\n        }\n        #contacts {\n            list-style-type: none;\n            margin: 0;\n            padding: 0;\n            float:left;\n            width: 70%;\n        }\n        #contacts li {\n            margin: 3px 3px 3px 0;\n            padding: 1px;\n            float: left;\n            width: 300px;\n            text-align: center;\n            background-image: none;\n            background-color: #F5F5F5;\n        }\n        #contacts li h1\n        {\n            padding: 0;\n            margin: 0;\n            background-image: none;\n            background-color: Orange;\n            color: White;\n            font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;\n        }\n        .removeContact, .viewImage\n        {\n            padding: 3px;\n            text-decoration: none;\n        }\n\n    We will use this style sheet for the layout, colors and styles used in the contact manager app.\n\n6. Open the *App_Start\\BundleConfig.cs* file.\n\n\n7. Add the following code to register the [Knockout](http://knockoutjs.com/index.html \"KO\") plugin.\n\n        bundles.Add(new ScriptBundle(\"~/bundles/knockout\").Include(\n                    \"~/Scripts/knockout-{version}.js\"));\n    This sample using knockout to simplify dynamic JavaScript code that handles the screen templates.\n\n8. Modify the contents/css entry to register the *contacts.css* style sheet. Change the following line:\n\n                 bundles.Add(new StyleBundle(\"~/Content/css\").Include(\n                   \"~/Content/bootstrap.css\",\n                   \"~/Content/site.css\"));\nTo:\n\n        bundles.Add(new StyleBundle(\"~/Content/css\").Include(\n                   \"~/Content/bootstrap.css\",\n                   \"~/Content/contacts.css\",\n                   \"~/Content/site.css\"));\n\n1. In the Package Manager Console, run the following command to install Knockout.\n\n    Install-Package knockoutjs\n## Add a controller for the Web API Restful interface\n\n1. In **Solution Explorer**, right-click Controllers and click **Add** and then **Controller....** \n\n1. In the **Add Scaffold** dialog box, enter **Web API 2 Controller with actions, using Entity Framework** and then click **Add**.\n\n    ![Add API controller](./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/rt1.PNG)\n\n4. In the **Add Controller** dialog box, enter \"ContactsController\" as your controller name. Select \"Contact (ContactManager.Models)\" for the **Model class**.  Keep the default value for the **Data context class**. \n\n6. Click **Add**.\n\n### Run the application locally\n\n1. Press CTRL+F5 to run the application.\n\n    ![Index page][intro001]\n\n2. Enter a contact and click **Add**. The app returns to the home page and displays the contact you entered.\n\n    ![Index page with to-do list items][addwebapi004]\n\n3. In the browser, append **/api/contacts** to the URL.\n\n    The resulting URL will resemble http://localhost:1234/api/contacts. The RESTful web API you added returns the stored contacts. Firefox and Chrome will display the data in XML format.\n\n    ![Index page with to-do list items][rxFFchrome]\n    \n\n    IE will prompt you to open or save the contacts.\n\n    ![Web API save dialog][addwebapi006]\n    \n    \n    You can open the returned contacts in notepad or a browser.\n    \n    This output can be consumed by another application such as mobile web page or application.\n\n    ![Web API save dialog][addwebapi007]\n\n    **Security Warning**: At this point, your application is insecure and vulnerable to CSRF attack. Later in the tutorial we will remove this vulnerability. For more information see [Preventing Cross-Site Request Forgery (CSRF) Attacks][prevent-csrf-attacks].\n## Add XSRF Protection\n\nCross-site request forgery (also known as XSRF or CSRF) is an attack against web-hosted applications whereby a malicious website can influence the interaction between a client browser and a website trusted by that browser. These attacks are made possible because web browsers will send authentication tokens automatically with every request to a website. The canonical example is an authentication cookie, such as ASP.NET's Forms Authentication ticket. However, websites which use any persistent authentication mechanism (such as Windows Authentication, Basic, and so forth) can be targeted by these attacks.\n\nAn XSRF attack is distinct from a phishing attack. Phishing attacks require interaction from the victim. In a phishing attack, a malicious website will mimic the target website, and the victim is fooled into providing sensitive information to the attacker. In an XSRF attack, there is often no interaction necessary from the victim. Rather, the attacker is relying on the browser automatically sending all relevant cookies to the destination website.\n\nFor more information, see the [Open Web Application Security Project](https://www.owasp.org/index.php/Main_Page) (OWASP) [XSRF](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)).\n\n1. In **Solution Explorer**, right **ContactManager** project and click **Add** and then click **Class**.\n\n2. Name the file *ValidateHttpAntiForgeryTokenAttribute.cs* and add the following code:\n\n        using System;\n        using System.Collections.Generic;\n        using System.Linq;\n        using System.Net;\n        using System.Net.Http;\n        using System.Web.Helpers;\n        using System.Web.Http.Controllers;\n        using System.Web.Http.Filters;\n        using System.Web.Mvc;\n        namespace ContactManager.Filters\n        {\n            public class ValidateHttpAntiForgeryTokenAttribute : AuthorizationFilterAttribute\n            {\n                public override void OnAuthorization(HttpActionContext actionContext)\n                {\n                    HttpRequestMessage request = actionContext.ControllerContext.Request;\n                    try\n                    {\n                        if (IsAjaxRequest(request))\n                        {\n                            ValidateRequestHeader(request);\n                        }\n                        else\n                        {\n                            AntiForgery.Validate();\n                        }\n                    }\n                    catch (HttpAntiForgeryException e)\n                    {\n                        actionContext.Response = request.CreateErrorResponse(HttpStatusCode.Forbidden, e);\n                    }\n                }\n                private bool IsAjaxRequest(HttpRequestMessage request)\n                {\n                    IEnumerable<string> xRequestedWithHeaders;\n                    if (request.Headers.TryGetValues(\"X-Requested-With\", out xRequestedWithHeaders))\n                    {\n                        string headerValue = xRequestedWithHeaders.FirstOrDefault();\n                        if (!String.IsNullOrEmpty(headerValue))\n                        {\n                            return String.Equals(headerValue, \"XMLHttpRequest\", StringComparison.OrdinalIgnoreCase);\n                        }\n                    }\n                    return false;\n                }\n                private void ValidateRequestHeader(HttpRequestMessage request)\n                {\n                    string cookieToken = String.Empty;\n                    string formToken = String.Empty;\n                    IEnumerable<string> tokenHeaders;\n                    if (request.Headers.TryGetValues(\"RequestVerificationToken\", out tokenHeaders))\n                    {\n                        string tokenValue = tokenHeaders.FirstOrDefault();\n                        if (!String.IsNullOrEmpty(tokenValue))\n                        {\n                            string[] tokens = tokenValue.Split(':');\n                            if (tokens.Length == 2)\n                            {\n                                cookieToken = tokens[0].Trim();\n                                formToken = tokens[1].Trim();\n                            }\n                        }\n                    }\n                    AntiForgery.Validate(cookieToken, formToken);\n                }\n            }\n        }\n\n1. Add the following *using* statement to the contracts controller so you have access to the **[ValidateHttpAntiForgeryToken]** attribute.\n\n    using ContactManager.Filters;\n\n1. Add the **[ValidateHttpAntiForgeryToken]** attribute to the Post methods of the **ContactsController** to protect it from XSRF threats. You will add it to the \"PutContact\",  \"PostContact\" and **DeleteContact** action methods.\n\n    [ValidateHttpAntiForgeryToken]\n        public IHttpActionResult PutContact(int id, Contact contact)\n        {\n\n1. Update the *Scripts* section of the *Views\\Home\\Index.cshtml* file to include code to get the XSRF tokens.\n\n         @section Scripts {\n            @Scripts.Render(\"~/bundles/knockout\")\n            <script type=\"text/javascript\">\n                @functions{\n                   public string TokenHeaderValue()\n                   {\n                      string cookieToken, formToken;\n                      AntiForgery.GetTokens(null, out cookieToken, out formToken);\n                      return cookieToken + \":\" + formToken;                \n                   }\n                }\n\n               function ContactsViewModel() {\n                  var self = this;\n                  self.contacts = ko.observableArray([]);\n                  self.addContact = function () {\n\n                     $.ajax({\n                        type: \"post\",\n                        url: \"api/contacts\",\n                        data: $(\"#addContact\").serialize(),\n                        dataType: \"json\",\n                        success: function (value) {\n                           self.contacts.push(value);\n                        },\n                        headers: {\n                           'RequestVerificationToken': '@TokenHeaderValue()'\n                        }\n                     });\n\n                  }\n                  self.removeContact = function (contact) {\n                     $.ajax({\n                        type: \"DELETE\",\n                        url: contact.Self,\n                        success: function () {\n                           self.contacts.remove(contact);\n                        },\n                        headers: {\n                           'RequestVerificationToken': '@TokenHeaderValue()'\n                        }\n\n                     });\n                  }\n\n                  $.getJSON(\"api/contacts\", function (data) {\n                     self.contacts(data);\n                  });\n               }\n               ko.applyBindings(new ContactsViewModel());\n            </script>\n\n\n## Publish the application update to Azure and SQL Database\n\nTo publish the application, you repeat the procedure you followed earlier.\n\n1. In **Solution Explorer**, right click the project and select **Publish**.\n\n    ![Publish][rxP]\n\n5. Click the **Settings** tab.\n    \n\n1. Under **ContactsManagerContext(ContactsManagerContext)**, click the **v** icon to change *Remote connection string* to the connection string for the contact database. Click **ContactDB**.\n\n    ![Settings](./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/rt5.png)\n\n7. Check the box for **Execute Code First Migrations (runs on application start)**.\n\n1. Click **Next** and then click **Preview**. Visual Studio displays a list of the files that will be added or updated.\n\n8. Click **Publish**.\nAfter the deployment completes, the browser opens to the home page of the application.\n\n    ![Index page with no contacts][intro001]\n\n    The Visual Studio publish process automatically configured the connection string in the deployed *Web.config* file to point to the SQL database. It also configured Code First Migrations to automatically upgrade the database to the latest version the first time the application accesses the database after deployment.\n\n    As a result of this configuration, Code First created the database by running the code in the **Initial** class that you created earlier. It did this the first time the application tried to access the database after deployment.\n\n9. Enter a contact as you did when you ran the app locally, to verify that database deployment succeeded.\n\nWhen you see that the item you enter is saved and appears on the contact manager page, you know that it has been stored in the database.\n\n![Index page with contacts][addwebapi004]\n\nThe application is now running in the cloud, using SQL Database to store its data. After you finish testing the application in Azure, delete it. The application is public and doesn't have a mechanism to limit access.\n\n>[AZURE.NOTE] If you want to get started with Azure App Service before signing up for an Azure account, go to [Try App Service](http://go.microsoft.com/fwlink/?LinkId=523751), where you can immediately create a short-lived starter web app in App Service. No credit cards required; no commitments.\n\n## Next Steps\n\nA real application would require authentication and authorization, and you would use the membership database for that purpose. The tutorial [Deploy a Secure ASP.NET MVC application with OAuth, Membership and SQL Database](web-sites-dotnet-deploy-aspnet-mvc-app-membership-oauth-sql-database.md) is based on this tutorial and shows how to deploy a web application with the membership database.\n\nAnother way to store data in an Azure application is to use Azure storage, which provide non-relational data storage in the form of blobs and tables. The following links provide more information on Web API, ASP.NET MVC and Window Azure.\n \n\n* [Getting Started with Entity Framework using MVC][EFCodeFirstMVCTutorial]\n* [Intro to ASP.NET MVC 5](http://www.asp.net/mvc/tutorials/mvc-5/introduction/getting-started)\n* [Your First ASP.NET Web API](http://www.asp.net/web-api/overview/getting-started-with-aspnet-web-api/tutorial-your-first-web-api)\n* [Debugging WAWS](web-sites-dotnet-troubleshoot-visual-studio.md)\n\nThis tutorial and the sample application was written by [Rick Anderson](http://blogs.msdn.com/b/rickandy/) (Twitter [@RickAndMSFT](https://twitter.com/RickAndMSFT)) with assistance from Tom Dykstra and Barry Dorrans (Twitter [@blowdart](https://twitter.com/blowdart)). \n\nPlease leave feedback on what you liked or what you would like to see improved, not only about the tutorial itself but also about the products that it demonstrates. Your feedback will help us prioritize improvements. We are especially interested in finding out how much interest there is in more automation for the process of configuring and deploying the membership database. \n\n## What's changed\n* For a guide to the change from Websites to App Service see: [Azure App Service and Its Impact on Existing Azure Services](http://go.microsoft.com/fwlink/?LinkId=529714)\n* For a guide to the change of the old portal to the new portal see: [Reference for navigating the preview portal](http://go.microsoft.com/fwlink/?LinkId=529715)\n\n<!-- bookmarks -->\n[Add an OAuth Provider]: #addOauth\n[Add Roles to the Membership Database]:#mbrDB\n[Create a Data Deployment Script]:#ppd\n[Update the Membership Database]:#ppd2\n[setupdbenv]: #bkmk_setupdevenv\n[setupwindowsazureenv]: #bkmk_setupwindowsazure\n[createapplication]: #bkmk_createmvc4app\n[deployapp1]: #bkmk_deploytowindowsazure1\n[adddb]: #bkmk_addadatabase\n[addcontroller]: #bkmk_addcontroller\n[addwebapi]: #bkmk_addwebapi\n[deploy2]: #bkmk_deploydatabaseupdate\n\n<!-- links -->\n[EFCodeFirstMVCTutorial]: http://www.asp.net/mvc/tutorials/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application\n[dbcontext-link]: http://msdn.microsoft.com/library/system.data.entity.dbcontext(v=VS.103).aspx\n\n\n<!-- images-->\n[rxE]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/rxE.png\n[rxP]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/rxP.png\n[rx22]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/\n[rxb2]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/rxb2.png\n[rxz]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/rxz.png\n[rxzz]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/rxzz.png\n[rxz2]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/rxz2.png\n[rxz3]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/rxz3.png\n[rxStyle]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/rxStyle.png\n[rxz4]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/rxz4.png\n[rxz44]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/rxz44.png\n[rxNewCtx]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/rxNewCtx.png\n[rxPrevDB]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/rxPrevDB.png\n[rxOverwrite]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/rxOverwrite.png\n[rxPWS]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/rxPWS.png\n[rxNewCtx]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/rxNewCtx.png\n[rxAddApiController]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/rxAddApiController.png\n[rxFFchrome]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/rxFFchrome.png\n[intro001]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/dntutmobil-intro-finished-web-app.png\n[rxCreateWSwithDB]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/rxCreateWSwithDB.png\n[setup007]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/dntutmobile-setup-azure-site-004.png\n[setup009]: ../Media/dntutmobile-setup-azure-site-006.png\n[newapp002]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/dntutmobile-createapp-002.png\n[newapp004]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/dntutmobile-createapp-004.png\n[firsdeploy007]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/dntutmobile-deploy1-publish-005.png\n[firsdeploy009]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/dntutmobile-deploy1-publish-007.png\n[adddb001]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/dntutmobile-adddatabase-001.png\n[adddb002]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/dntutmobile-adddatabase-002.png\n[addcode001]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/dntutmobile-controller-add-context-menu.png\n[addcode002]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/dntutmobile-controller-add-controller-dialog.png\n[addcode004]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/dntutmobile-controller-modify-index-context.png\n[addcode005]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/dntutmobile-controller-add-contents-context-menu.png\n[addcode007]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/dntutmobile-controller-modify-bundleconfig-context.png\n[addcode008]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/dntutmobile-migrations-package-manager-menu.png\n[addcode009]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/dntutmobile-migrations-package-manager-console.png\n[addwebapi004]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/dntutmobile-webapi-added-contact.png\n[addwebapi006]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/dntutmobile-webapi-save-returned-contacts.png\n[addwebapi007]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/dntutmobile-webapi-contacts-in-notepad.png\n[Add XSRF Protection]: #xsrf\n[WebPIAzureSdk20NetVS12]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/WebPIAzureSdk20NetVS12.png\n[Add XSRF Protection]: #xsrf\n[ImportPublishSettings]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/ImportPublishSettings.png\n[ImportPublishProfile]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/ImportPublishProfile.png\n[PublishVSSolution]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/PublishVSSolution.png\n[ValidateConnection]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/ValidateConnection.png\n[WebPIAzureSdk20NetVS12]: ./media/web-sites-dotnet-rest-service-aspnet-api-sql-database/WebPIAzureSdk20NetVS12.png\n[prevent-csrf-attacks]: http://www.asp.net/web-api/overview/security/preventing-cross-site-request-forgery-(csrf)-attacks\n \n\ntest\n"
+}

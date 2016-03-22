@@ -1,0 +1,796 @@
+{
+  "nodes": [
+    {
+      "content": "Microsoft Azure Subscription and Service Limits, Quotas, and Constraints",
+      "pos": [
+        27,
+        99
+      ]
+    },
+    {
+      "content": "Provides a list of common Azure subscription and service limits, quotas, and constraints.",
+      "pos": [
+        118,
+        207
+      ]
+    },
+    {
+      "content": "This includes information on how to increase limits along with maximum values.",
+      "pos": [
+        208,
+        286
+      ]
+    },
+    {
+      "content": "Azure Subscription and Service Limits, Quotas, and Constraints",
+      "pos": [
+        576,
+        638
+      ]
+    },
+    {
+      "content": "Overview",
+      "pos": [
+        643,
+        651
+      ]
+    },
+    {
+      "content": "This document specifies some of the most common Microsoft Azure limits.",
+      "pos": [
+        653,
+        724
+      ]
+    },
+    {
+      "content": "Note that this does not currently cover all Azure services.",
+      "pos": [
+        725,
+        784
+      ]
+    },
+    {
+      "content": "Over time, these limits will be expanded and updated to cover more of the platform.",
+      "pos": [
+        785,
+        868
+      ]
+    },
+    {
+      "content": "<ph id=\"ph1\">[AZURE.NOTE]</ph> If you want to raise the limit above the <bpt id=\"p1\">**</bpt>Default Limit<ept id=\"p1\">**</ept>, you can <bpt id=\"p2\">[</bpt>open an online customer support request at no charge<ept id=\"p2\">](http://azure.microsoft.com/blog/2014/06/04/azure-limits-quotas-increase-requests/)</ept>.",
+      "pos": [
+        872,
+        1091
+      ]
+    },
+    {
+      "content": "The limits cannot be raised above the <bpt id=\"p1\">**</bpt>Maximum Limit<ept id=\"p1\">**</ept> value in the tables below.",
+      "pos": [
+        1092,
+        1174
+      ]
+    },
+    {
+      "content": "If there is no <bpt id=\"p1\">**</bpt>Maximum Limit<ept id=\"p1\">**</ept> column, then the specified resource does not have adjustable limits.",
+      "pos": [
+        1175,
+        1276
+      ]
+    },
+    {
+      "content": "Limits and the Azure Resource Manager",
+      "pos": [
+        1281,
+        1318
+      ]
+    },
+    {
+      "content": "It is now possible to combine multiple Azure resources in to a single Azure Resource Group.",
+      "pos": [
+        1320,
+        1411
+      ]
+    },
+    {
+      "content": "When using Resource Groups, limits that once were global become managed at a regional level with the Azure Resource Manager.",
+      "pos": [
+        1412,
+        1536
+      ]
+    },
+    {
+      "content": "For more information about Azure Resource Groups, see <bpt id=\"p1\">[</bpt>Using resource groups to manage your Azure resources<ept id=\"p1\">](resource-group-portal.md)</ept>.",
+      "pos": [
+        1537,
+        1672
+      ]
+    },
+    {
+      "content": "In the limits below, a new table has been added to reflect any differences in limits when using the Azure Resource Manager.",
+      "pos": [
+        1674,
+        1797
+      ]
+    },
+    {
+      "content": "For example, there is a <bpt id=\"p1\">**</bpt>Subscription Limits<ept id=\"p1\">**</ept> table and a <bpt id=\"p2\">**</bpt>Subscription Limits - Azure Resource Manager<ept id=\"p2\">**</ept> table.",
+      "pos": [
+        1798,
+        1913
+      ]
+    },
+    {
+      "content": "When a limit applies to both scenarios, it is only shown in the first table.",
+      "pos": [
+        1914,
+        1990
+      ]
+    },
+    {
+      "content": "Unless otherwise indicated, limits are global across all regions.",
+      "pos": [
+        1991,
+        2056
+      ]
+    },
+    {
+      "content": "<ph id=\"ph1\">[AZURE.NOTE]</ph> It is important to emphasize that quotas for resources in Azure Resource Groups are per-region accessible by your subscription, and are not per-subscription, as the service management quotas are.",
+      "pos": [
+        2060,
+        2268
+      ]
+    },
+    {
+      "content": "Let's use core quotas as an example.",
+      "pos": [
+        2269,
+        2305
+      ]
+    },
+    {
+      "content": "If you need to request a quota increase with support for cores, you need to decide how many cores you want to use in which regions, and then make a specific request for Azure Resource Group core quotas for the amounts and regions that you want.",
+      "pos": [
+        2306,
+        2550
+      ]
+    },
+    {
+      "content": "Therefore, if you need to use 30 cores in West Europe to run your application there; you should specifically request 30 cores in West Europe.",
+      "pos": [
+        2551,
+        2692
+      ]
+    },
+    {
+      "content": "But you will not have a core quota increase in any other region -- only West Europe will have the 30-core quota.",
+      "pos": [
+        2693,
+        2805
+      ]
+    },
+    {
+      "content": "As a result, you may find it useful to consider deciding what your Azure Resource Group quotas need to be for your workload in any one region, and request that amount in each region into which you are considering deployment.",
+      "pos": [
+        2815,
+        3039
+      ]
+    },
+    {
+      "content": "See <bpt id=\"p1\">[</bpt>troubleshooting deployment issues<ept id=\"p1\">](resource-group-deploy-debug.md##authentication-subscription-role-and-quota-issues)</ept> for more help discovering your current quotas for specific regions.",
+      "pos": [
+        3040,
+        3230
+      ]
+    },
+    {
+      "content": "Service-specific limits",
+      "pos": [
+        3236,
+        3259
+      ]
+    },
+    {
+      "content": "Active Directory",
+      "pos": [
+        3264,
+        3280
+      ]
+    },
+    {
+      "content": "API Management",
+      "pos": [
+        3311,
+        3325
+      ]
+    },
+    {
+      "content": "App Service",
+      "pos": [
+        3354,
+        3365
+      ]
+    },
+    {
+      "content": "Application Insights",
+      "pos": [
+        3391,
+        3411
+      ]
+    },
+    {
+      "content": "Azure Redis Cache",
+      "pos": [
+        3446,
+        3463
+      ]
+    },
+    {
+      "content": "Azure RemoteApp",
+      "pos": [
+        3495,
+        3510
+      ]
+    },
+    {
+      "content": "Backup",
+      "pos": [
+        3540,
+        3546
+      ]
+    },
+    {
+      "content": "Batch",
+      "pos": [
+        3567,
+        3572
+      ]
+    },
+    {
+      "content": "CDN",
+      "pos": [
+        3592,
+        3595
+      ]
+    },
+    {
+      "content": "Cloud Services",
+      "pos": [
+        3613,
+        3627
+      ]
+    },
+    {
+      "content": "Data Factory",
+      "pos": [
+        3656,
+        3668
+      ]
+    },
+    {
+      "content": "DocumentDB",
+      "pos": [
+        3695,
+        3705
+      ]
+    },
+    {
+      "content": "Key Vault",
+      "pos": [
+        3730,
+        3739
+      ]
+    },
+    {
+      "content": "Media Services",
+      "pos": [
+        3763,
+        3777
+      ]
+    },
+    {
+      "content": "Mobile Engagement",
+      "pos": [
+        3806,
+        3823
+      ]
+    },
+    {
+      "content": "Mobile Services",
+      "pos": [
+        3855,
+        3870
+      ]
+    },
+    {
+      "content": "Multi-Factor Authentication",
+      "pos": [
+        3900,
+        3927
+      ]
+    },
+    {
+      "content": "Networking",
+      "pos": [
+        3962,
+        3972
+      ]
+    },
+    {
+      "content": "Notification Hub Service",
+      "pos": [
+        3997,
+        4021
+      ]
+    },
+    {
+      "content": "Operational Insights",
+      "pos": [
+        4060,
+        4080
+      ]
+    },
+    {
+      "content": "Resource Group",
+      "pos": [
+        4115,
+        4129
+      ]
+    },
+    {
+      "content": "Scheduler",
+      "pos": [
+        4158,
+        4167
+      ]
+    },
+    {
+      "content": "Search",
+      "pos": [
+        4191,
+        4197
+      ]
+    },
+    {
+      "content": "Service Bus",
+      "pos": [
+        4218,
+        4229
+      ]
+    },
+    {
+      "content": "Site Recovery",
+      "pos": [
+        4255,
+        4268
+      ]
+    },
+    {
+      "content": "SQL Database",
+      "pos": [
+        4296,
+        4308
+      ]
+    },
+    {
+      "content": "Storage",
+      "pos": [
+        4335,
+        4342
+      ]
+    },
+    {
+      "content": "StorSimple System",
+      "pos": [
+        4364,
+        4381
+      ]
+    },
+    {
+      "content": "Stream Analytics",
+      "pos": [
+        4413,
+        4429
+      ]
+    },
+    {
+      "content": "Subscription",
+      "pos": [
+        4460,
+        4472
+      ]
+    },
+    {
+      "content": "Virtual Machines",
+      "pos": [
+        4499,
+        4515
+      ]
+    },
+    {
+      "content": "Subscription Limits",
+      "pos": [
+        4549,
+        4568
+      ]
+    },
+    {
+      "content": "Subscription Limits",
+      "pos": [
+        4574,
+        4593
+      ]
+    },
+    {
+      "content": "Subscription Limits - Azure Resource Manager",
+      "pos": [
+        4686,
+        4730
+      ]
+    },
+    {
+      "content": "The following limits apply when using the Azure Resource Manager and Azure Resource Groups.",
+      "pos": [
+        4732,
+        4823
+      ]
+    },
+    {
+      "content": "Limits that have not changed with the Azure Resource Manager are not listed below.",
+      "pos": [
+        4824,
+        4906
+      ]
+    },
+    {
+      "content": "Please refer to the previous table for those limits.",
+      "pos": [
+        4907,
+        4959
+      ]
+    },
+    {
+      "content": "Resource Group Limits",
+      "pos": [
+        5099,
+        5120
+      ]
+    },
+    {
+      "content": "Virtual Machines Limits",
+      "pos": [
+        5220,
+        5243
+      ]
+    },
+    {
+      "content": "Virtual Machine Limits",
+      "pos": [
+        5249,
+        5271
+      ]
+    },
+    {
+      "content": "Virtual Machines Limits - Azure Resource Manager",
+      "pos": [
+        5373,
+        5421
+      ]
+    },
+    {
+      "content": "The following limits apply when using the Azure Resource Manager and Azure Resource Groups.",
+      "pos": [
+        5423,
+        5514
+      ]
+    },
+    {
+      "content": "Limits that have not changed with the Azure Resource Manager are not listed below.",
+      "pos": [
+        5515,
+        5597
+      ]
+    },
+    {
+      "content": "Please refer to the previous table for those limits.",
+      "pos": [
+        5598,
+        5650
+      ]
+    },
+    {
+      "content": "Networking Limits",
+      "pos": [
+        5798,
+        5815
+      ]
+    },
+    {
+      "content": "Networking Limits",
+      "pos": [
+        5821,
+        5838
+      ]
+    },
+    {
+      "content": "Traffic Manager Limits",
+      "pos": [
+        5937,
+        5959
+      ]
+    },
+    {
+      "content": "DNS Limits",
+      "pos": [
+        6047,
+        6057
+      ]
+    },
+    {
+      "content": "Storage Limits",
+      "pos": [
+        6120,
+        6134
+      ]
+    },
+    {
+      "content": "Standard Storage Limits",
+      "pos": [
+        6141,
+        6164
+      ]
+    },
+    {
+      "pos": [
+        6243,
+        6401
+      ],
+      "content": "For additional details on storage account limits, see <bpt id=\"p1\">[</bpt>Azure Storage Scalability and Performance Targets<ept id=\"p1\">](../articles/storage/storage-scalability-targets.md)</ept>."
+    },
+    {
+      "content": "Premium Storage Limits",
+      "pos": [
+        6409,
+        6431
+      ]
+    },
+    {
+      "content": "Storage Limits - Azure Resource Manager",
+      "pos": [
+        6548,
+        6587
+      ]
+    },
+    {
+      "content": "Cloud Services Limits",
+      "pos": [
+        6717,
+        6738
+      ]
+    },
+    {
+      "content": "App Service Limits",
+      "pos": [
+        6836,
+        6854
+      ]
+    },
+    {
+      "content": "The following App Service limits include limits for Web Apps, Mobile Apps, API Apps, and Logic Apps.",
+      "pos": [
+        6855,
+        6955
+      ]
+    },
+    {
+      "content": "Scheduler Limits",
+      "pos": [
+        7040,
+        7056
+      ]
+    },
+    {
+      "content": "Batch Limits",
+      "pos": [
+        7143,
+        7155
+      ]
+    },
+    {
+      "content": "DocumentDB Limits",
+      "pos": [
+        7235,
+        7252
+      ]
+    },
+    {
+      "content": "Mobile Engagement Limits",
+      "pos": [
+        7342,
+        7366
+      ]
+    },
+    {
+      "content": "Search Limits",
+      "pos": [
+        7470,
+        7483
+      ]
+    },
+    {
+      "pos": [
+        7560,
+        7692
+      ],
+      "content": "For additional details on Azure Search limits, see <bpt id=\"p1\">[</bpt>Limits and Constraints<ept id=\"p1\">](https://msdn.microsoft.com/library/azure/dn798934.aspx)</ept>."
+    },
+    {
+      "content": "Media Services Limits",
+      "pos": [
+        7698,
+        7719
+      ]
+    },
+    {
+      "content": "CDN Limits",
+      "pos": [
+        7814,
+        7824
+      ]
+    },
+    {
+      "content": "Mobile Services Limits",
+      "pos": [
+        7887,
+        7909
+      ]
+    },
+    {
+      "content": "Notification Hub Service Limits",
+      "pos": [
+        7996,
+        8027
+      ]
+    },
+    {
+      "content": "Service Bus Limits",
+      "pos": [
+        8117,
+        8135
+      ]
+    },
+    {
+      "content": "Data Factory Limits",
+      "pos": [
+        8225,
+        8244
+      ]
+    },
+    {
+      "content": "Stream Analytics Limits",
+      "pos": [
+        8338,
+        8361
+      ]
+    },
+    {
+      "content": "Active Directory Limits",
+      "pos": [
+        8462,
+        8485
+      ]
+    },
+    {
+      "content": "Azure RemoteApp Limits",
+      "pos": [
+        8586,
+        8608
+      ]
+    },
+    {
+      "content": "StorSimple System Limits",
+      "pos": [
+        8695,
+        8719
+      ]
+    },
+    {
+      "content": "Operational Insights Limits",
+      "pos": [
+        8809,
+        8836
+      ]
+    },
+    {
+      "content": "Backup Limits",
+      "pos": [
+        8933,
+        8946
+      ]
+    },
+    {
+      "content": "Site Recovery Limits",
+      "pos": [
+        9027,
+        9047
+      ]
+    },
+    {
+      "content": "Application Insights Limits",
+      "pos": [
+        9130,
+        9157
+      ]
+    },
+    {
+      "content": "API Management Limits",
+      "pos": [
+        9254,
+        9275
+      ]
+    },
+    {
+      "content": "Azure Redis Cache Limits",
+      "pos": [
+        9376,
+        9400
+      ]
+    },
+    {
+      "content": "Key Vault Limits",
+      "pos": [
+        9495,
+        9511
+      ]
+    },
+    {
+      "content": "Multi-Factor Authentication",
+      "pos": [
+        9586,
+        9613
+      ]
+    },
+    {
+      "content": "SQL Database Limits",
+      "pos": [
+        9703,
+        9722
+      ]
+    },
+    {
+      "pos": [
+        9724,
+        9830
+      ],
+      "content": "For SQL Database limits, see <bpt id=\"p1\">[</bpt>SQL Database Resource Limits<ept id=\"p1\">](sql-database/sql-database-resource-limits.md)</ept>."
+    },
+    {
+      "content": "See Also",
+      "pos": [
+        9835,
+        9843
+      ]
+    },
+    {
+      "content": "Understanding Azure Limits and Increases",
+      "pos": [
+        9846,
+        9886
+      ]
+    },
+    {
+      "content": "Virtual Machine and Cloud Service Sizes for Azure",
+      "pos": [
+        9973,
+        10022
+      ]
+    },
+    {
+      "content": "test",
+      "pos": [
+        10080,
+        10084
+      ]
+    }
+  ],
+  "content": "<properties\n    pageTitle=\"Microsoft Azure Subscription and Service Limits, Quotas, and Constraints\"\n    description=\"Provides a list of common Azure subscription and service limits, quotas, and constraints. This includes information on how to increase limits along with maximum values.\"\n    services=\"\"\n    documentationCenter=\"\"\n    authors=\"rothja\"\n    manager=\"jeffreyg\"\n    editor=\"monicar\"/>\n\n<tags\n    ms.service=\"multiple\"\n    ms.workload=\"multiple\"\n    ms.tgt_pltfrm=\"na\"\n    ms.devlang=\"na\"\n    ms.topic=\"article\"\n    ms.date=\"08/29/2015\"\n    ms.author=\"jroth\"/>\n\n# Azure Subscription and Service Limits, Quotas, and Constraints\n\n## Overview\n\nThis document specifies some of the most common Microsoft Azure limits. Note that this does not currently cover all Azure services. Over time, these limits will be expanded and updated to cover more of the platform.\n\n> [AZURE.NOTE] If you want to raise the limit above the **Default Limit**, you can [open an online customer support request at no charge](http://azure.microsoft.com/blog/2014/06/04/azure-limits-quotas-increase-requests/). The limits cannot be raised above the **Maximum Limit** value in the tables below. If there is no **Maximum Limit** column, then the specified resource does not have adjustable limits.\n\n## Limits and the Azure Resource Manager\n\nIt is now possible to combine multiple Azure resources in to a single Azure Resource Group. When using Resource Groups, limits that once were global become managed at a regional level with the Azure Resource Manager. For more information about Azure Resource Groups, see [Using resource groups to manage your Azure resources](resource-group-portal.md).\n\nIn the limits below, a new table has been added to reflect any differences in limits when using the Azure Resource Manager. For example, there is a **Subscription Limits** table and a **Subscription Limits - Azure Resource Manager** table. When a limit applies to both scenarios, it is only shown in the first table. Unless otherwise indicated, limits are global across all regions.\n\n> [AZURE.NOTE] It is important to emphasize that quotas for resources in Azure Resource Groups are per-region accessible by your subscription, and are not per-subscription, as the service management quotas are. Let's use core quotas as an example. If you need to request a quota increase with support for cores, you need to decide how many cores you want to use in which regions, and then make a specific request for Azure Resource Group core quotas for the amounts and regions that you want. Therefore, if you need to use 30 cores in West Europe to run your application there; you should specifically request 30 cores in West Europe. But you will not have a core quota increase in any other region -- only West Europe will have the 30-core quota.\n<!-- -->\nAs a result, you may find it useful to consider deciding what your Azure Resource Group quotas need to be for your workload in any one region, and request that amount in each region into which you are considering deployment. See [troubleshooting deployment issues](resource-group-deploy-debug.md##authentication-subscription-role-and-quota-issues) for more help discovering your current quotas for specific regions.\n\n\n## Service-specific limits\n\n- [Active Directory](#active-directory-limits)\n- [API Management](#api-management-limits)\n- [App Service](#app-service-limits)\n- [Application Insights](#application-insights-limits)\n- [Azure Redis Cache](#azure-redis-cache-limits)\n- [Azure RemoteApp](#azure-remoteapp-limits)\n- [Backup](#backup-limits)\n- [Batch](#batch-limits)\n- [CDN](#cdn-limits)\n- [Cloud Services](#cloud-services-limits)\n- [Data Factory](#data-factory-limits)\n- [DocumentDB](#documentdb-limits)\n- [Key Vault](#key-vault-limits)\n- [Media Services](#media-services-limits)\n- [Mobile Engagement](#mobile-engagement-limits)\n- [Mobile Services](#mobile-services-limits)\n- [Multi-Factor Authentication](#multi-factor-authentication)\n- [Networking](#networking-limits)\n- [Notification Hub Service](#notification-hub-service-limits)\n- [Operational Insights](#operational-insights-limits)\n- [Resource Group](#resource-group-limits)\n- [Scheduler](#scheduler-limits)\n- [Search](#search-limits)\n- [Service Bus](#service-bus-limits)\n- [Site Recovery](#site-recovery-limits)\n- [SQL Database](#sql-database-limits)\n- [Storage](#storage-limits)\n- [StorSimple System](#storsimple-system-limits)\n- [Stream Analytics](#stream-analytics-limits)\n- [Subscription](#subscription-limits)\n- [Virtual Machines](#virtual-machines-limits)\n\n\n### Subscription Limits\n#### Subscription Limits\n[AZURE.INCLUDE [azure-subscription-limits](../includes/azure-subscription-limits.md)]\n\n#### Subscription Limits - Azure Resource Manager\n\nThe following limits apply when using the Azure Resource Manager and Azure Resource Groups. Limits that have not changed with the Azure Resource Manager are not listed below. Please refer to the previous table for those limits.\n\n[AZURE.INCLUDE [azure-subscription-limits-azure-resource-manager](../includes/azure-subscription-limits-azure-resource-manager.md)]\n\n\n### Resource Group Limits\n\n[AZURE.INCLUDE [azure-resource-groups-limits](../includes/azure-resource-groups-limits.md)]\n\n\n### Virtual Machines Limits\n#### Virtual Machine Limits\n[AZURE.INCLUDE [azure-virtual-machines-limits](../includes/azure-virtual-machines-limits.md)]\n\n\n#### Virtual Machines Limits - Azure Resource Manager\n\nThe following limits apply when using the Azure Resource Manager and Azure Resource Groups. Limits that have not changed with the Azure Resource Manager are not listed below. Please refer to the previous table for those limits.\n\n[AZURE.INCLUDE [azure-virtual-machines-limits-azure-resource-manager](../includes/azure-virtual-machines-limits-azure-resource-manager.md)]\n\n\n### Networking Limits\n#### Networking Limits\n[AZURE.INCLUDE [azure-virtual-network-limits](../includes/azure-virtual-network-limits.md)]\n\n#### Traffic Manager Limits\n\n[AZURE.INCLUDE [traffic-manager-limits](../includes/traffic-manager-limits.md)]\n\n#### DNS Limits\n\n[AZURE.INCLUDE [dns-limits](../includes/dns-limits.md)]\n\n### Storage Limits\n\n#### Standard Storage Limits\n\n[AZURE.INCLUDE [azure-storage-limits](../includes/azure-storage-limits.md)]\n\nFor additional details on storage account limits, see [Azure Storage Scalability and Performance Targets](../articles/storage/storage-scalability-targets.md).\n\n\n#### Premium Storage Limits\n\n[AZURE.INCLUDE [azure-storage-limits-premium-storage](../includes/azure-storage-limits-premium-storage.md)]\n\n\n#### Storage Limits - Azure Resource Manager\n\n[AZURE.INCLUDE [azure-storage-limits-azure-resource-manager](../includes/azure-storage-limits-azure-resource-manager.md)]\n\n\n### Cloud Services Limits\n\n[AZURE.INCLUDE [azure-cloud-services-limits](../includes/azure-cloud-services-limits.md)]\n\n\n### App Service Limits\nThe following App Service limits include limits for Web Apps, Mobile Apps, API Apps, and Logic Apps.\n\n[AZURE.INCLUDE [azure-websites-limits](../includes/azure-websites-limits.md)]\n\n### Scheduler Limits\n\n[AZURE.INCLUDE [scheduler-limits-table](../includes/scheduler-limits-table.md)]\n\n### Batch Limits\n\n[AZURE.INCLUDE [azure-batch-limits](../includes/azure-batch-limits.md)]\n\n\n### DocumentDB Limits\n\n[AZURE.INCLUDE [azure-documentdb-limits](../includes/azure-documentdb-limits.md)]\n\n\n### Mobile Engagement Limits\n\n[AZURE.INCLUDE [azure-mobile-engagement-limits](../includes/azure-mobile-engagement-limits.md)]\n\n\n### Search Limits\n\n[AZURE.INCLUDE [azure-search-limits](../includes/azure-search-limits.md)]\n\nFor additional details on Azure Search limits, see [Limits and Constraints](https://msdn.microsoft.com/library/azure/dn798934.aspx).\n\n### Media Services Limits\n\n[AZURE.INCLUDE [azure-mediaservices-limits](../includes/azure-mediaservices-limits.md)]\n\n### CDN Limits\n\n[AZURE.INCLUDE [cdn-limits](../includes/cdn-limits.md)]\n\n### Mobile Services Limits\n\n[AZURE.INCLUDE [mobile-services-limits](../includes/mobile-services-limits.md)]\n\n### Notification Hub Service Limits\n\n[AZURE.INCLUDE [notification-hub-limits](../includes/notification-hub-limits.md)]\n\n\n### Service Bus Limits\n\n[AZURE.INCLUDE [azure-servicebus-limits](../includes/service-bus-quotas-table.md)]\n\n### Data Factory Limits\n\n[AZURE.INCLUDE [azure-data-factory-limits](../includes/azure-data-factory-limits.md)]\n\n\n### Stream Analytics Limits\n\n[AZURE.INCLUDE [stream-analytics-limits-table](../includes/stream-analytics-limits-table.md)]\n\n### Active Directory Limits\n\n[AZURE.INCLUDE [AAD-service-limits](../includes/active-directory-service-limits-include.md)]\n\n\n### Azure RemoteApp Limits\n\n[AZURE.INCLUDE [azure-remoteapp-limits](../includes/azure-remoteapp-limits.md)]\n\n### StorSimple System Limits\n\n[AZURE.INCLUDE [storsimple-limits-table](../includes/storsimple-limits-table.md)]\n\n\n### Operational Insights Limits\n\n[AZURE.INCLUDE [operational-insights-limits](../includes/operational-insights-limits.md)]\n\n### Backup Limits\n\n[AZURE.INCLUDE [azure-backup-limits](../includes/azure-backup-limits.md)]\n\n### Site Recovery Limits\n\n[AZURE.INCLUDE [site-recovery-limits](../includes/site-recovery-limits.md)]\n\n### Application Insights Limits\n\n[AZURE.INCLUDE [application-insights-limits](../includes/application-insights-limits.md)]\n\n### API Management Limits\n\n[AZURE.INCLUDE [api-management-service-limits](../includes/api-management-service-limits.md)]\n\n### Azure Redis Cache Limits\n\n[AZURE.INCLUDE [redis-cache-service-limits](../includes/redis-cache-service-limits.md)]\n\n### Key Vault Limits\n\n[AZURE.INCLUDE [key-vault-limits](../includes/key-vault-limits.md)]\n\n### Multi-Factor Authentication\n[AZURE.INCLUDE [azure-mfa-service-limits](../includes/azure-mfa-service-limits.md)]\n\n### SQL Database Limits\n\nFor SQL Database limits, see [SQL Database Resource Limits](sql-database/sql-database-resource-limits.md).\n\n## See Also\n\n[Understanding Azure Limits and Increases](http://azure.microsoft.com/blog/2014/06/04/azure-limits-quotas-increase-requests/)\n\n[Virtual Machine and Cloud Service Sizes for Azure](http://msdn.microsoft.com/library/azure/dn197896.aspx)\n\ntest\n"
+}
